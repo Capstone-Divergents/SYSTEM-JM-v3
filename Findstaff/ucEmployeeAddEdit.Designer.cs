@@ -173,7 +173,6 @@
             this.cbYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbYear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYear.ForeColor = System.Drawing.Color.Black;
             this.cbYear.FormattingEnabled = true;
@@ -232,7 +231,6 @@
             this.cbDay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbDay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDay.ForeColor = System.Drawing.Color.Black;
             this.cbDay.FormattingEnabled = true;
@@ -279,7 +277,6 @@
             this.cbMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbMonth.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonth.ForeColor = System.Drawing.Color.Black;
             this.cbMonth.FormattingEnabled = true;
@@ -414,7 +411,7 @@
             // 
             this.cbDept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbDept.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbDept.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbDept.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDept.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDept.FormattingEnabled = true;
             this.cbDept.Items.AddRange(new object[] {
@@ -794,7 +791,6 @@
             this.cbYear2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbYear2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbYear2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbYear2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbYear2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYear2.ForeColor = System.Drawing.Color.Black;
             this.cbYear2.FormattingEnabled = true;
@@ -852,7 +848,6 @@
             this.cbDay2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbDay2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDay2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDay2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbDay2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDay2.ForeColor = System.Drawing.Color.Black;
             this.cbDay2.FormattingEnabled = true;
@@ -898,7 +893,6 @@
             this.cbMonth2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbMonth2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbMonth2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMonth2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cbMonth2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonth2.ForeColor = System.Drawing.Color.Black;
             this.cbMonth2.FormattingEnabled = true;
@@ -1032,7 +1026,7 @@
             // 
             this.cbDept2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbDept2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbDept2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbDept2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDept2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDept2.FormattingEnabled = true;
             this.cbDept2.Location = new System.Drawing.Point(306, 539);
@@ -1350,6 +1344,7 @@
             // txtEmpId
             // 
             this.txtEmpId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtEmpId.Enabled = false;
             this.txtEmpId.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpId.ForeColor = System.Drawing.Color.Black;
             this.txtEmpId.Location = new System.Drawing.Point(305, 95);

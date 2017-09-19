@@ -34,12 +34,12 @@ namespace Findstaff
         {
             if(dgvJobCategory.Rows.Count != 0)
             {
+                ucJobCategoryAddEdit.txtID.Text = dgvJobCategory.SelectedRows[0].Cells[0].Value.ToString();
+                ucJobCategoryAddEdit.txtCategory2.Text = dgvJobCategory.SelectedRows[0].Cells[1].Value.ToString();
                 ucJobCategoryAddEdit.Dock = DockStyle.Fill;
                 ucJobCategoryAddEdit.Visible = true;
                 ucJobCategoryAddEdit.panel1.Visible = false;
                 ucJobCategoryAddEdit.panel2.Visible = true;
-                ucJobCategoryAddEdit.txtID.Text = dgvJobCategory.SelectedRows[0].Cells[0].Value.ToString();
-                ucJobCategoryAddEdit.txtCategory2.Text = dgvJobCategory.SelectedRows[0].Cells[1].Value.ToString();
             }
             else
             {

@@ -284,6 +284,27 @@
             this.label37 = new System.Windows.Forms.Label();
             this.dgvEducBack2 = new System.Windows.Forms.DataGridView();
             this.label38 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills)).BeginInit();
@@ -429,7 +450,7 @@
             this.cbYearEnd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbYearEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbYearEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbYearEnd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYearEnd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYearEnd.ForeColor = System.Drawing.Color.Black;
             this.cbYearEnd.FormattingEnabled = true;
             this.cbYearEnd.Items.AddRange(new object[] {
@@ -492,7 +513,7 @@
             this.cbMonthEnd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbMonthEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMonthEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbMonthEnd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonthEnd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonthEnd.ForeColor = System.Drawing.Color.Black;
             this.cbMonthEnd.FormattingEnabled = true;
             this.cbMonthEnd.Items.AddRange(new object[] {
@@ -530,7 +551,7 @@
             this.cbSkills.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbSkills.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSkills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbSkills.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSkills.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSkills.ForeColor = System.Drawing.Color.Black;
             this.cbSkills.FormattingEnabled = true;
             this.cbSkills.Items.AddRange(new object[] {
@@ -550,7 +571,7 @@
             this.cbPosition.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbPosition.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPosition.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPosition.ForeColor = System.Drawing.Color.Black;
             this.cbPosition.FormattingEnabled = true;
             this.cbPosition.Items.AddRange(new object[] {
@@ -577,7 +598,7 @@
             this.cbCivilStat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbCivilStat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCivilStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbCivilStat.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCivilStat.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCivilStat.ForeColor = System.Drawing.Color.Black;
             this.cbCivilStat.FormattingEnabled = true;
             this.cbCivilStat.Items.AddRange(new object[] {
@@ -705,7 +726,7 @@
             this.cbChildYear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbChildYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChildYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbChildYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbChildYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbChildYear.ForeColor = System.Drawing.Color.Black;
             this.cbChildYear.FormattingEnabled = true;
             this.cbChildYear.Items.AddRange(new object[] {
@@ -758,7 +779,7 @@
             this.cbChildDay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbChildDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChildDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbChildDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbChildDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbChildDay.ForeColor = System.Drawing.Color.Black;
             this.cbChildDay.FormattingEnabled = true;
             this.cbChildDay.Location = new System.Drawing.Point(374, 1891);
@@ -772,7 +793,7 @@
             this.cbChildMonth.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbChildMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChildMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbChildMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbChildMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbChildMonth.ForeColor = System.Drawing.Color.Black;
             this.cbChildMonth.FormattingEnabled = true;
             this.cbChildMonth.Items.AddRange(new object[] {
@@ -889,26 +910,8 @@
             this.dgvEmpHistory.AllowUserToResizeColumns = false;
             this.dgvEmpHistory.AllowUserToResizeRows = false;
             this.dgvEmpHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvEmpHistory.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvEmpHistory.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEmpHistory.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvEmpHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvEmpHistory.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvEmpHistory.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvEmpHistory.ColumnHeadersVisible = false;
             this.dgvEmpHistory.Location = new System.Drawing.Point(104, 1354);
             this.dgvEmpHistory.MultiSelect = false;
             this.dgvEmpHistory.Name = "dgvEmpHistory";
@@ -925,7 +928,7 @@
             this.cbYearStart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbYearStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbYearStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbYearStart.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYearStart.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYearStart.ForeColor = System.Drawing.Color.Black;
             this.cbYearStart.FormattingEnabled = true;
             this.cbYearStart.Items.AddRange(new object[] {
@@ -988,7 +991,7 @@
             this.cbMonthStart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbMonthStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMonthStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbMonthStart.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonthStart.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonthStart.ForeColor = System.Drawing.Color.Black;
             this.cbMonthStart.FormattingEnabled = true;
             this.cbMonthStart.Items.AddRange(new object[] {
@@ -1169,26 +1172,8 @@
             this.dgvSkills.AllowUserToResizeColumns = false;
             this.dgvSkills.AllowUserToResizeRows = false;
             this.dgvSkills.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvSkills.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvSkills.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvSkills.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvSkills.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvSkills.DefaultCellStyle = dataGridViewCellStyle4;
-            this.dgvSkills.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvSkills.ColumnHeadersVisible = false;
             this.dgvSkills.Location = new System.Drawing.Point(101, 781);
             this.dgvSkills.MultiSelect = false;
             this.dgvSkills.Name = "dgvSkills";
@@ -1205,7 +1190,7 @@
             this.cbProficiency.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbProficiency.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbProficiency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbProficiency.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbProficiency.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbProficiency.ForeColor = System.Drawing.Color.Black;
             this.cbProficiency.FormattingEnabled = true;
             this.cbProficiency.Items.AddRange(new object[] {
@@ -1349,7 +1334,7 @@
             this.cbSchoolType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbSchoolType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSchoolType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbSchoolType.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSchoolType.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSchoolType.ForeColor = System.Drawing.Color.Black;
             this.cbSchoolType.FormattingEnabled = true;
             this.cbSchoolType.Items.AddRange(new object[] {
@@ -1413,15 +1398,7 @@
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvContactPersons.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvContactPersons.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvContactPersons.DefaultCellStyle = dataGridViewCellStyle6;
-            this.dgvContactPersons.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvContactPersons.ColumnHeadersVisible = false;
             this.dgvContactPersons.Location = new System.Drawing.Point(104, 2307);
             this.dgvContactPersons.MultiSelect = false;
             this.dgvContactPersons.Name = "dgvContactPersons";
@@ -1461,15 +1438,7 @@
             dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvChildren.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvChildren.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvChildren.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dgvChildren.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvChildren.ColumnHeadersVisible = false;
             this.dgvChildren.Location = new System.Drawing.Point(104, 1979);
             this.dgvChildren.MultiSelect = false;
             this.dgvChildren.Name = "dgvChildren";
@@ -1701,7 +1670,7 @@
             this.cbYear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYear.ForeColor = System.Drawing.Color.Black;
             this.cbYear.FormattingEnabled = true;
             this.cbYear.Items.AddRange(new object[] {
@@ -1760,7 +1729,7 @@
             this.cbDay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDay.ForeColor = System.Drawing.Color.Black;
             this.cbDay.FormattingEnabled = true;
             this.cbDay.Items.AddRange(new object[] {
@@ -1806,7 +1775,7 @@
             this.cbMonth.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonth.ForeColor = System.Drawing.Color.Black;
             this.cbMonth.FormattingEnabled = true;
             this.cbMonth.Items.AddRange(new object[] {
@@ -2049,26 +2018,8 @@
             this.dgvEducBack.AllowUserToResizeColumns = false;
             this.dgvEducBack.AllowUserToResizeRows = false;
             this.dgvEducBack.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvEducBack.BackgroundColor = System.Drawing.Color.Gainsboro;
-            this.dgvEducBack.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvEducBack.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvEducBack.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvEducBack.DefaultCellStyle = dataGridViewCellStyle10;
-            this.dgvEducBack.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvEducBack.ColumnHeadersVisible = false;
             this.dgvEducBack.Location = new System.Drawing.Point(100, 475);
             this.dgvEducBack.MultiSelect = false;
             this.dgvEducBack.Name = "dgvEducBack";
@@ -2549,7 +2500,7 @@
             this.comboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.ForeColor = System.Drawing.Color.Black;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
@@ -2576,7 +2527,7 @@
             this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.ForeColor = System.Drawing.Color.Black;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
@@ -2622,7 +2573,7 @@
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -2827,6 +2778,7 @@
             this.btnCancel2.TabIndex = 57;
             this.btnCancel2.Text = "CANCEL";
             this.btnCancel2.UseVisualStyleBackColor = false;
+            this.btnCancel2.Click += new System.EventHandler(this.btnCancel2_Click);
             // 
             // btnSave
             // 
@@ -3005,7 +2957,7 @@
             this.comboBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox8.ForeColor = System.Drawing.Color.Black;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
@@ -3032,7 +2984,7 @@
             this.comboBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox9.ForeColor = System.Drawing.Color.Black;
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
@@ -3059,7 +3011,7 @@
             this.comboBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox10.ForeColor = System.Drawing.Color.Black;
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Items.AddRange(new object[] {
@@ -3582,7 +3534,7 @@
             this.comboBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.ForeColor = System.Drawing.Color.Black;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
@@ -3609,7 +3561,7 @@
             this.comboBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox7.ForeColor = System.Drawing.Color.Black;
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
@@ -3834,7 +3786,7 @@
             this.comboBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.ForeColor = System.Drawing.Color.Black;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
@@ -4001,7 +3953,7 @@
             this.comboBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.ForeColor = System.Drawing.Color.Black;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
@@ -4103,6 +4055,132 @@
             this.label38.Size = new System.Drawing.Size(340, 25);
             this.label38.TabIndex = 264;
             this.label38.Text = "EDUCATIONAL BACKGROUND\r\n";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Skill Name";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Proficiency";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "School Name";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "School Type";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Year Started";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Year Ended";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Degree";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Name of Child";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "Age";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Date of Birth";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Contact Number";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Employer";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Month of Employment";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Year of Employment";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Month of Leave";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Year of Leave";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Position";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Desciption of Duties";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Reason of Leaving";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             // 
             // ucAppAddEdit
             // 
@@ -4361,15 +4439,5 @@
         private System.Windows.Forms.ComboBox cbYearEnd;
         private System.Windows.Forms.ComboBox cbMonthEnd;
         private System.Windows.Forms.Label label3;
-        public System.Windows.Forms.DataGridView dgvEducBack;
-        public System.Windows.Forms.DataGridView dgvContactPersons;
-        public System.Windows.Forms.DataGridView dgvChildren;
-        public System.Windows.Forms.DataGridView dgvEmpHistory;
-        public System.Windows.Forms.DataGridView dgvSkills;
-        public System.Windows.Forms.DataGridView dgvEducBack2;
-        public System.Windows.Forms.DataGridView dgvSkills2;
-        public System.Windows.Forms.DataGridView dgvEmpHistory2;
-        public System.Windows.Forms.DataGridView dgvChildren2;
-        public System.Windows.Forms.DataGridView dgvContactPersons2;
     }
 }

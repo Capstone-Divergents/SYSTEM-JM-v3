@@ -139,12 +139,43 @@ namespace Findstaff
                     cbReq.Items.Add(dr[0].ToString());
                 }
                 dr.Close();
-                connection.Close();
+
+                cmd = "select reqname from genreqs_t where allocation = 'country'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    cbReq2.Items.Add(dr[0].ToString());
+                }
+                dr.Close();
+
+                cmd = "Select c.COUNTRY_ID'Country ID', g.Reqname'Requirement Name' from country_t c join countryreqs_t cr"
+                + " on c.country_id = cr.country_id join genreqs_t g on cr.req_id = g.req_id"
+                + " where c.countryname = '"+txtCountryName2.Text+"'";
+                using (connection)
+                {
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                    {
+                        DataSet ds = new DataSet();
+                        adapter.Fill(ds);
+                        dgvReq2.DataSource = ds.Tables[0];
+                    }
+                }
+                
+                for(int x = 0; x < dgvReq2.Rows.Count; x++)
+                {
+                    if (cbReq2.Items.Contains(dgvReq2.Rows[x].Cells[1].Value.ToString()))
+                    {
+                        cbReq2.Items.Remove(dgvReq2.Rows[x].Cells[1].Value.ToString());
+                    }
+                }
             }
             else
             {
                 cbReq.Items.Clear();
             }
+
+            connection.Close();
         }
 
         private void btnAddRequire_Click(object sender, EventArgs e)
@@ -163,7 +194,25 @@ namespace Findstaff
             {
                 cbReq.Items.Add(dgvCountry.SelectedRows[0].Cells[0].Value.ToString());
                 dgvCountry.Rows.Remove(dgvCountry.SelectedRows[0]);
+            }
+        }
 
+        private void btnAddRequire2_Click(object sender, EventArgs e)
+        {
+            if (cbReq2.Text != "")
+            {
+                dgvReq2.ColumnCount = 1;
+                dgvReq2.Rows.Add(cbReq2.Text);
+                cbReq2.Items.Remove(cbReq2.Text);
+            }
+        }
+
+        private void btnRemoveRequire2_Click(object sender, EventArgs e)
+        {
+            if (dgvReq2.Rows.Count != 0)
+            {
+                cbReq2.Items.Add(dgvReq2.SelectedRows[0].Cells[0].Value.ToString());
+                dgvReq2.Rows.Remove(dgvReq2.SelectedRows[0]);
             }
         }
     }

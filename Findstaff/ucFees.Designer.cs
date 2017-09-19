@@ -177,7 +177,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Controls.Add(this.lbl);
             this.Controls.Add(this.ucFeesAddEdit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -185,6 +184,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvFees);
             this.Controls.Add(this.txtFeeName);
+            this.Controls.Add(this.lbl);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucFees";
             this.Size = new System.Drawing.Size(1118, 400);

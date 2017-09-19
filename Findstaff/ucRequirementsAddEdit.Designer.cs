@@ -86,8 +86,7 @@
             this.cbDesignation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbDesignation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDesignation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDesignation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbDesignation.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDesignation.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDesignation.ForeColor = System.Drawing.Color.Black;
             this.cbDesignation.FormattingEnabled = true;
             this.cbDesignation.Items.AddRange(new object[] {
@@ -203,8 +202,7 @@
             this.cbDesignation1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbDesignation1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDesignation1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDesignation1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbDesignation1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDesignation1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDesignation1.ForeColor = System.Drawing.Color.Black;
             this.cbDesignation1.FormattingEnabled = true;
             this.cbDesignation1.Items.AddRange(new object[] {
