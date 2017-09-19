@@ -37,10 +37,14 @@ namespace Findstaff
 
         private void btnEmpEdit_Click(object sender, EventArgs e)
         {
+            ucEmployerAddEdit.txtEmpID.Text = dgvEmployer.SelectedRows[0].Cells[0].Value.ToString();
+            ucEmployerAddEdit.txtEmp2.Text = dgvEmployer.SelectedRows[0].Cells[1].Value.ToString();
+            ucEmployerAddEdit.txtPrincipal2.Text = dgvEmployer.SelectedRows[0].Cells[2].Value.ToString();
             ucEmployerAddEdit.Dock = DockStyle.Fill;
             ucEmployerAddEdit.Visible = true;
             ucEmployerAddEdit.panel1.Visible = false;
             ucEmployerAddEdit.panel2.Visible = true;
+            ucEmployerAddEdit.cbCountry2.Text = dgvEmployer.SelectedRows[0].Cells[3].Value.ToString();
         }
 
         private void btnEmpDel_Click(object sender, EventArgs e)
@@ -66,7 +70,9 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            string com = "Select EMPLOYER_ID'Employer ID', EMPLOYERNAME'Employer Name', FOREIGNPRIN'Foreign Principal' from employer_t";
+            string com = "select e.employer_id'Employer_ID', e.employername'Name of Employer', e.foreignprin'Foreign Principal', c.countryname'Country' "
+                + "from employer_t e join country_t c "
+                + "on e.country_id = c.country_id;";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))

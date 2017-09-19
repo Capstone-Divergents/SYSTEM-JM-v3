@@ -25,8 +25,8 @@ namespace Findstaff
 
         private void btnView_Click(object sender, EventArgs e)
         {
-            //ucAppView.Dock = DockStyle.Fill;
-            //ucAppView.Visible = true;
+            ucAppView.Dock = DockStyle.Fill;
+            ucAppView.Visible = true;
         }
     }
 }

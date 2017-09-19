@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblAddCountry = new System.Windows.Forms.Label();
             this.txtCountry = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -41,15 +45,15 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCancel2 = new System.Windows.Forms.Button();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.txtCountryID = new System.Windows.Forms.TextBox();
+            this.btnSave2 = new System.Windows.Forms.Button();
+            this.txtCountryID2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dataGridReq = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.btnAddReq = new System.Windows.Forms.Button();
             this.cbRequirementName = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtCountryName = new System.Windows.Forms.TextBox();
+            this.txtCountryName2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -231,15 +235,15 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btnCancel2);
-            this.panel2.Controls.Add(this.btnSave);
-            this.panel2.Controls.Add(this.txtCountryID);
+            this.panel2.Controls.Add(this.btnSave2);
+            this.panel2.Controls.Add(this.txtCountryID2);
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.dataGridReq);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.btnAddReq);
             this.panel2.Controls.Add(this.cbRequirementName);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.txtCountryName);
+            this.panel2.Controls.Add(this.txtCountryName2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
@@ -267,26 +271,26 @@
             this.btnCancel2.UseVisualStyleBackColor = false;
             this.btnCancel2.Click += new System.EventHandler(this.btnCancel2_Click);
             // 
-            // btnSave
+            // btnSave2
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(436, 370);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(120, 50);
-            this.btnSave.TabIndex = 273;
-            this.btnSave.Text = "SAVE";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            this.btnSave2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSave2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSave2.FlatAppearance.BorderSize = 0;
+            this.btnSave2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnSave2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSave2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave2.ForeColor = System.Drawing.Color.Black;
+            this.btnSave2.Location = new System.Drawing.Point(436, 370);
+            this.btnSave2.Name = "btnSave2";
+            this.btnSave2.Size = new System.Drawing.Size(120, 50);
+            this.btnSave2.TabIndex = 273;
+            this.btnSave2.Text = "SAVE";
+            this.btnSave2.UseVisualStyleBackColor = false;
+            this.btnSave2.Click += new System.EventHandler(this.btnSave_Click);
             // 
-            // txtCountryID
+            // txtCountryID2
             // 
             this.txtCountryID.BackColor = System.Drawing.Color.Gainsboro;
             this.txtCountryID.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -317,62 +321,50 @@
             this.dataGridReq.Size = new System.Drawing.Size(918, 150);
             this.dataGridReq.TabIndex = 269;
             // 
-            // button4
+            // btnRemoveRequire2
             // 
-            this.button4.BackColor = System.Drawing.Color.Gainsboro;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(918, 319);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 30);
-            this.button4.TabIndex = 267;
-            this.button4.Text = "REMOVE";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnRemoveRequire2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnRemoveRequire2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRemoveRequire2.FlatAppearance.BorderSize = 0;
+            this.btnRemoveRequire2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveRequire2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveRequire2.ForeColor = System.Drawing.Color.Black;
+            this.btnRemoveRequire2.Location = new System.Drawing.Point(918, 319);
+            this.btnRemoveRequire2.Name = "btnRemoveRequire2";
+            this.btnRemoveRequire2.Size = new System.Drawing.Size(100, 30);
+            this.btnRemoveRequire2.TabIndex = 267;
+            this.btnRemoveRequire2.Text = "REMOVE";
+            this.btnRemoveRequire2.UseVisualStyleBackColor = false;
+            this.btnRemoveRequire2.Click += new System.EventHandler(this.btnRemoveRequire2_Click);
             // 
-            // btnAddReq
+            // btnAddRequire2
             // 
-            this.btnAddReq.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddReq.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnAddReq.FlatAppearance.BorderSize = 0;
-            this.btnAddReq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddReq.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddReq.ForeColor = System.Drawing.Color.Black;
-            this.btnAddReq.Location = new System.Drawing.Point(453, 127);
-            this.btnAddReq.Name = "btnAddReq";
-            this.btnAddReq.Size = new System.Drawing.Size(100, 30);
-            this.btnAddReq.TabIndex = 266;
-            this.btnAddReq.Text = "ADD";
-            this.btnAddReq.UseVisualStyleBackColor = false;
+            this.btnAddRequire2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddRequire2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAddRequire2.FlatAppearance.BorderSize = 0;
+            this.btnAddRequire2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddRequire2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddRequire2.ForeColor = System.Drawing.Color.Black;
+            this.btnAddRequire2.Location = new System.Drawing.Point(453, 127);
+            this.btnAddRequire2.Name = "btnAddRequire2";
+            this.btnAddRequire2.Size = new System.Drawing.Size(100, 30);
+            this.btnAddRequire2.TabIndex = 266;
+            this.btnAddRequire2.Text = "ADD";
+            this.btnAddRequire2.UseVisualStyleBackColor = false;
+            this.btnAddRequire2.Click += new System.EventHandler(this.btnAddRequire2_Click);
             // 
-            // cbRequirementName
+            // cbReq2
             // 
-            this.cbRequirementName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbRequirementName.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbRequirementName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbRequirementName.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbRequirementName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbRequirementName.ForeColor = System.Drawing.Color.Black;
-            this.cbRequirementName.FormattingEnabled = true;
-            this.cbRequirementName.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.cbRequirementName.Location = new System.Drawing.Point(263, 129);
-            this.cbRequirementName.Name = "cbRequirementName";
-            this.cbRequirementName.Size = new System.Drawing.Size(184, 27);
-            this.cbRequirementName.TabIndex = 265;
+            this.cbReq2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbReq2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbReq2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbReq2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbReq2.ForeColor = System.Drawing.Color.Black;
+            this.cbReq2.FormattingEnabled = true;
+            this.cbReq2.Location = new System.Drawing.Point(263, 129);
+            this.cbReq2.Name = "cbReq2";
+            this.cbReq2.Size = new System.Drawing.Size(184, 27);
+            this.cbReq2.TabIndex = 265;
             // 
             // label1
             // 
@@ -385,16 +377,16 @@
             this.label1.TabIndex = 264;
             this.label1.Text = "Requirement Name:";
             // 
-            // txtCountryName
+            // txtCountryName2
             // 
-            this.txtCountryName.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtCountryName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCountryName.ForeColor = System.Drawing.Color.Black;
-            this.txtCountryName.Location = new System.Drawing.Point(535, 97);
-            this.txtCountryName.MaxLength = 30;
-            this.txtCountryName.Name = "txtCountryName";
-            this.txtCountryName.Size = new System.Drawing.Size(200, 26);
-            this.txtCountryName.TabIndex = 107;
+            this.txtCountryName2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtCountryName2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCountryName2.ForeColor = System.Drawing.Color.Black;
+            this.txtCountryName2.Location = new System.Drawing.Point(535, 97);
+            this.txtCountryName2.MaxLength = 30;
+            this.txtCountryName2.Name = "txtCountryName2";
+            this.txtCountryName2.Size = new System.Drawing.Size(200, 26);
+            this.txtCountryName2.TabIndex = 107;
             // 
             // label3
             // 
@@ -482,8 +474,26 @@
             this.dgvCountry.AllowUserToResizeColumns = false;
             this.dgvCountry.AllowUserToResizeRows = false;
             this.dgvCountry.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCountry.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvCountry.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCountry.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvCountry.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCountry.ColumnHeadersVisible = false;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCountry.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvCountry.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvCountry.Location = new System.Drawing.Point(100, 130);
             this.dgvCountry.MultiSelect = false;
             this.dgvCountry.Name = "dgvCountry";
@@ -531,8 +541,7 @@
             this.cbReq.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbReq.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbReq.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbReq.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbReq.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbReq.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbReq.ForeColor = System.Drawing.Color.Black;
             this.cbReq.FormattingEnabled = true;
             this.cbReq.Items.AddRange(new object[] {
@@ -635,17 +644,14 @@
         private System.Windows.Forms.Panel pnlButtons1;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.TextBox txtCountryID;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView dataGridReq;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnAddReq;
         private System.Windows.Forms.ComboBox cbRequirementName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtCountryName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dgvCountry;
         private System.Windows.Forms.Button btnRemoveRequire;
         private System.Windows.Forms.Button btnAddRequire;
         private System.Windows.Forms.Label label7;
@@ -656,7 +662,7 @@
         private System.Windows.Forms.Button btnAddCountry;
         public System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCancel2;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnSave2;
         public System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.ComboBox cbReq;
     }

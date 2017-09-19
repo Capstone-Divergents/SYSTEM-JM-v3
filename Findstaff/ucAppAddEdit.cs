@@ -138,8 +138,8 @@ namespace Findstaff
                     cmd = "insert into appworkex_t values ";
                     for (int x = 0; x < dgvEmpHistory.Rows.Count; x++)
                     {
-                        cmd += "('" + cID + "','" + dgvEmpHistory.Rows[x].Cells[0].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[1].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[2].Value.ToString() + "','" 
-                            + dgvEmpHistory.Rows[x].Cells[3].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[4].Value.ToString() + "','" 
+                        cmd += "('" + cID + "','" + dgvEmpHistory.Rows[x].Cells[0].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[1].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[2].Value.ToString() +"','"
+                            + dgvEmpHistory.Rows[x].Cells[3].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[4].Value.ToString() + "','"
                             + dgvEmpHistory.Rows[x].Cells[5].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[6].Value.ToString() + "','"
                             + dgvEmpHistory.Rows[x].Cells[7].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[8].Value.ToString() + "')";
                         if (x != dgvEmpHistory.Rows.Count - 1)
@@ -243,6 +243,7 @@ namespace Findstaff
                     cbPosition.Items.Add(dr[0].ToString());
                 }
                 dr.Close();
+
                 cmd = "Select skillname from Genskills_t;";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
@@ -251,6 +252,7 @@ namespace Findstaff
                     cbSkills.Items.Add(dr[0].ToString());
                 }
                 dr.Close();
+
                 connection.Close();
             }
             else
@@ -259,7 +261,8 @@ namespace Findstaff
                 cbSkills.Items.Clear();
             }
         }
-        
+
+        #region Validations
         private void txtLastName_Enter(object sender, EventArgs e)
         {
             txtLastName.Clear();
@@ -616,5 +619,11 @@ namespace Findstaff
                 txtContactPerson.Text = "";
             }
         }
+
+        private void btnCancel2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+        #endregion Validations
     }
 }

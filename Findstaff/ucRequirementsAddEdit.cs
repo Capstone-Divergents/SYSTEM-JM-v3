@@ -106,7 +106,7 @@ namespace Findstaff
             string cmd = "";
             if (txtRequirement2.Text == "")
             {
-                MessageBox.Show("Skill name must not be empty.", "Empty Fee Name Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Requirement name must not be empty.", "Empty Requirement Name Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {

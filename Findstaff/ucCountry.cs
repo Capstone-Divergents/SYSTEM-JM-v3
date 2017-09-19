@@ -31,6 +31,8 @@ namespace Findstaff
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            ucCountryAddEdit.txtCountryID2.Text = dgvCountry.SelectedRows[0].Cells[0].Value.ToString();
+            ucCountryAddEdit.txtCountryName2.Text = dgvCountry.SelectedRows[0].Cells[1].Value.ToString();
             ucCountryAddEdit.Dock = DockStyle.Fill;
             ucCountryAddEdit.Visible = true;
             ucCountryAddEdit.panel1.Visible = false;

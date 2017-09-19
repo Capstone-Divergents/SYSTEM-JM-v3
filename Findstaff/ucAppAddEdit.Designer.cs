@@ -28,6 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle17 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle18 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle19 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle20 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.cbYearEnd = new System.Windows.Forms.ComboBox();
             this.cbMonthEnd = new System.Windows.Forms.ComboBox();
@@ -181,7 +201,7 @@
             this.label76 = new System.Windows.Forms.Label();
             this.textBox32 = new System.Windows.Forms.TextBox();
             this.label77 = new System.Windows.Forms.Label();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dgvContactPersons2 = new System.Windows.Forms.DataGridView();
             this.label78 = new System.Windows.Forms.Label();
             this.button7 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
@@ -193,7 +213,7 @@
             this.label50 = new System.Windows.Forms.Label();
             this.textBox13 = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dgvChildren2 = new System.Windows.Forms.DataGridView();
             this.label52 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
             this.label60 = new System.Windows.Forms.Label();
@@ -227,7 +247,7 @@
             this.label74 = new System.Windows.Forms.Label();
             this.label75 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dgvEmpHistory2 = new System.Windows.Forms.DataGridView();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.label42 = new System.Windows.Forms.Label();
@@ -244,7 +264,7 @@
             this.label48 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvSkills2 = new System.Windows.Forms.DataGridView();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
@@ -262,8 +282,29 @@
             this.label36 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvEducBack2 = new System.Windows.Forms.DataGridView();
             this.label38 = new System.Windows.Forms.Label();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpHistory)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills)).BeginInit();
@@ -273,11 +314,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvEducBack)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContactPersons2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChildren2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpHistory2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSkills2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEducBack2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -400,7 +441,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(990, 450);
+            this.panel1.Size = new System.Drawing.Size(10, 450);
             this.panel1.TabIndex = 32;
             // 
             // cbYearEnd
@@ -409,7 +450,7 @@
             this.cbYearEnd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbYearEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbYearEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbYearEnd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYearEnd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYearEnd.ForeColor = System.Drawing.Color.Black;
             this.cbYearEnd.FormattingEnabled = true;
             this.cbYearEnd.Items.AddRange(new object[] {
@@ -472,7 +513,7 @@
             this.cbMonthEnd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbMonthEnd.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMonthEnd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbMonthEnd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonthEnd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonthEnd.ForeColor = System.Drawing.Color.Black;
             this.cbMonthEnd.FormattingEnabled = true;
             this.cbMonthEnd.Items.AddRange(new object[] {
@@ -510,7 +551,7 @@
             this.cbSkills.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbSkills.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSkills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbSkills.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSkills.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSkills.ForeColor = System.Drawing.Color.Black;
             this.cbSkills.FormattingEnabled = true;
             this.cbSkills.Items.AddRange(new object[] {
@@ -530,7 +571,7 @@
             this.cbPosition.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbPosition.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbPosition.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbPosition.ForeColor = System.Drawing.Color.Black;
             this.cbPosition.FormattingEnabled = true;
             this.cbPosition.Items.AddRange(new object[] {
@@ -557,7 +598,7 @@
             this.cbCivilStat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbCivilStat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCivilStat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbCivilStat.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCivilStat.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCivilStat.ForeColor = System.Drawing.Color.Black;
             this.cbCivilStat.FormattingEnabled = true;
             this.cbCivilStat.Items.AddRange(new object[] {
@@ -685,7 +726,7 @@
             this.cbChildYear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbChildYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChildYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbChildYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbChildYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbChildYear.ForeColor = System.Drawing.Color.Black;
             this.cbChildYear.FormattingEnabled = true;
             this.cbChildYear.Items.AddRange(new object[] {
@@ -738,7 +779,7 @@
             this.cbChildDay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbChildDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChildDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbChildDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbChildDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbChildDay.ForeColor = System.Drawing.Color.Black;
             this.cbChildDay.FormattingEnabled = true;
             this.cbChildDay.Location = new System.Drawing.Point(374, 1891);
@@ -752,7 +793,7 @@
             this.cbChildMonth.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbChildMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbChildMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbChildMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbChildMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbChildMonth.ForeColor = System.Drawing.Color.Black;
             this.cbChildMonth.FormattingEnabled = true;
             this.cbChildMonth.Items.AddRange(new object[] {
@@ -887,7 +928,7 @@
             this.cbYearStart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbYearStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbYearStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbYearStart.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYearStart.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYearStart.ForeColor = System.Drawing.Color.Black;
             this.cbYearStart.FormattingEnabled = true;
             this.cbYearStart.Items.AddRange(new object[] {
@@ -950,7 +991,7 @@
             this.cbMonthStart.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbMonthStart.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMonthStart.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbMonthStart.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonthStart.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonthStart.ForeColor = System.Drawing.Color.Black;
             this.cbMonthStart.FormattingEnabled = true;
             this.cbMonthStart.Items.AddRange(new object[] {
@@ -1149,7 +1190,7 @@
             this.cbProficiency.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbProficiency.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbProficiency.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbProficiency.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbProficiency.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbProficiency.ForeColor = System.Drawing.Color.Black;
             this.cbProficiency.FormattingEnabled = true;
             this.cbProficiency.Items.AddRange(new object[] {
@@ -1293,7 +1334,7 @@
             this.cbSchoolType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbSchoolType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSchoolType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbSchoolType.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbSchoolType.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSchoolType.ForeColor = System.Drawing.Color.Black;
             this.cbSchoolType.FormattingEnabled = true;
             this.cbSchoolType.Items.AddRange(new object[] {
@@ -1346,6 +1387,16 @@
             this.dgvContactPersons.AllowUserToResizeColumns = false;
             this.dgvContactPersons.AllowUserToResizeRows = false;
             this.dgvContactPersons.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvContactPersons.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvContactPersons.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvContactPersons.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvContactPersons.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvContactPersons.ColumnHeadersVisible = false;
             this.dgvContactPersons.Location = new System.Drawing.Point(104, 2307);
@@ -1376,6 +1427,16 @@
             this.dgvChildren.AllowUserToResizeColumns = false;
             this.dgvChildren.AllowUserToResizeRows = false;
             this.dgvChildren.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvChildren.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvChildren.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvChildren.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvChildren.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChildren.ColumnHeadersVisible = false;
             this.dgvChildren.Location = new System.Drawing.Point(104, 1979);
@@ -1609,7 +1670,7 @@
             this.cbYear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbYear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYear.ForeColor = System.Drawing.Color.Black;
             this.cbYear.FormattingEnabled = true;
             this.cbYear.Items.AddRange(new object[] {
@@ -1668,7 +1729,7 @@
             this.cbDay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDay.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDay.ForeColor = System.Drawing.Color.Black;
             this.cbDay.FormattingEnabled = true;
             this.cbDay.Items.AddRange(new object[] {
@@ -1714,7 +1775,7 @@
             this.cbMonth.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbMonth.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonth.ForeColor = System.Drawing.Color.Black;
             this.cbMonth.FormattingEnabled = true;
             this.cbMonth.Items.AddRange(new object[] {
@@ -1962,7 +2023,9 @@
             this.dgvEducBack.Location = new System.Drawing.Point(100, 475);
             this.dgvEducBack.MultiSelect = false;
             this.dgvEducBack.Name = "dgvEducBack";
+            this.dgvEducBack.ReadOnly = true;
             this.dgvEducBack.RowHeadersVisible = false;
+            this.dgvEducBack.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvEducBack.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvEducBack.Size = new System.Drawing.Size(840, 150);
             this.dgvEducBack.TabIndex = 140;
@@ -2437,7 +2500,7 @@
             this.comboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.ForeColor = System.Drawing.Color.Black;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
@@ -2464,7 +2527,7 @@
             this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.ForeColor = System.Drawing.Color.Black;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
@@ -2510,7 +2573,7 @@
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -2572,7 +2635,7 @@
             this.panel2.Controls.Add(this.label76);
             this.panel2.Controls.Add(this.textBox32);
             this.panel2.Controls.Add(this.label77);
-            this.panel2.Controls.Add(this.dataGridView5);
+            this.panel2.Controls.Add(this.dgvContactPersons2);
             this.panel2.Controls.Add(this.label78);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button6);
@@ -2584,7 +2647,7 @@
             this.panel2.Controls.Add(this.label50);
             this.panel2.Controls.Add(this.textBox13);
             this.panel2.Controls.Add(this.label51);
-            this.panel2.Controls.Add(this.dataGridView4);
+            this.panel2.Controls.Add(this.dgvChildren2);
             this.panel2.Controls.Add(this.label52);
             this.panel2.Controls.Add(this.textBox14);
             this.panel2.Controls.Add(this.label60);
@@ -2618,7 +2681,7 @@
             this.panel2.Controls.Add(this.label74);
             this.panel2.Controls.Add(this.label75);
             this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.dataGridView3);
+            this.panel2.Controls.Add(this.dgvEmpHistory2);
             this.panel2.Controls.Add(this.comboBox6);
             this.panel2.Controls.Add(this.comboBox7);
             this.panel2.Controls.Add(this.label42);
@@ -2635,7 +2698,7 @@
             this.panel2.Controls.Add(this.label48);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.button4);
-            this.panel2.Controls.Add(this.dataGridView2);
+            this.panel2.Controls.Add(this.dgvSkills2);
             this.panel2.Controls.Add(this.comboBox5);
             this.panel2.Controls.Add(this.label39);
             this.panel2.Controls.Add(this.textBox7);
@@ -2653,7 +2716,7 @@
             this.panel2.Controls.Add(this.label36);
             this.panel2.Controls.Add(this.textBox6);
             this.panel2.Controls.Add(this.label37);
-            this.panel2.Controls.Add(this.dataGridView1);
+            this.panel2.Controls.Add(this.dgvEducBack2);
             this.panel2.Controls.Add(this.label38);
             this.panel2.Controls.Add(this.comboBox1);
             this.panel2.Controls.Add(this.comboBox2);
@@ -2715,6 +2778,7 @@
             this.btnCancel2.TabIndex = 57;
             this.btnCancel2.Text = "CANCEL";
             this.btnCancel2.UseVisualStyleBackColor = false;
+            this.btnCancel2.Click += new System.EventHandler(this.btnCancel2_Click);
             // 
             // btnSave
             // 
@@ -2809,13 +2873,42 @@
             this.label77.TabIndex = 349;
             this.label77.Text = "Name of Contact Person:";
             // 
-            // dataGridView5
+            // dgvContactPersons2
             // 
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(104, 2233);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.Size = new System.Drawing.Size(820, 150);
-            this.dataGridView5.TabIndex = 348;
+            this.dgvContactPersons2.AllowUserToAddRows = false;
+            this.dgvContactPersons2.AllowUserToDeleteRows = false;
+            this.dgvContactPersons2.AllowUserToResizeColumns = false;
+            this.dgvContactPersons2.AllowUserToResizeRows = false;
+            this.dgvContactPersons2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvContactPersons2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvContactPersons2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvContactPersons2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvContactPersons2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvContactPersons2.DefaultCellStyle = dataGridViewCellStyle12;
+            this.dgvContactPersons2.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvContactPersons2.Location = new System.Drawing.Point(104, 2233);
+            this.dgvContactPersons2.MultiSelect = false;
+            this.dgvContactPersons2.Name = "dgvContactPersons2";
+            this.dgvContactPersons2.ReadOnly = true;
+            this.dgvContactPersons2.RowHeadersVisible = false;
+            this.dgvContactPersons2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvContactPersons2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvContactPersons2.Size = new System.Drawing.Size(820, 150);
+            this.dgvContactPersons2.TabIndex = 348;
             // 
             // label78
             // 
@@ -2864,7 +2957,7 @@
             this.comboBox8.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox8.ForeColor = System.Drawing.Color.Black;
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Items.AddRange(new object[] {
@@ -2891,7 +2984,7 @@
             this.comboBox9.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox9.ForeColor = System.Drawing.Color.Black;
             this.comboBox9.FormattingEnabled = true;
             this.comboBox9.Items.AddRange(new object[] {
@@ -2918,7 +3011,7 @@
             this.comboBox10.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox10.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox10.ForeColor = System.Drawing.Color.Black;
             this.comboBox10.FormattingEnabled = true;
             this.comboBox10.Items.AddRange(new object[] {
@@ -2994,13 +3087,42 @@
             this.label51.TabIndex = 337;
             this.label51.Text = "Name of Child:";
             // 
-            // dataGridView4
+            // dgvChildren2
             // 
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(104, 1905);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.Size = new System.Drawing.Size(820, 150);
-            this.dataGridView4.TabIndex = 336;
+            this.dgvChildren2.AllowUserToAddRows = false;
+            this.dgvChildren2.AllowUserToDeleteRows = false;
+            this.dgvChildren2.AllowUserToResizeColumns = false;
+            this.dgvChildren2.AllowUserToResizeRows = false;
+            this.dgvChildren2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvChildren2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvChildren2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvChildren2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
+            this.dgvChildren2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvChildren2.DefaultCellStyle = dataGridViewCellStyle14;
+            this.dgvChildren2.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvChildren2.Location = new System.Drawing.Point(104, 1905);
+            this.dgvChildren2.MultiSelect = false;
+            this.dgvChildren2.Name = "dgvChildren2";
+            this.dgvChildren2.ReadOnly = true;
+            this.dgvChildren2.RowHeadersVisible = false;
+            this.dgvChildren2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvChildren2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvChildren2.Size = new System.Drawing.Size(820, 150);
+            this.dgvChildren2.TabIndex = 336;
             // 
             // label52
             // 
@@ -3369,13 +3491,42 @@
             this.button5.Text = "ADD";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // dataGridView3
+            // dgvEmpHistory2
             // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(92, 1306);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(840, 150);
-            this.dataGridView3.TabIndex = 302;
+            this.dgvEmpHistory2.AllowUserToAddRows = false;
+            this.dgvEmpHistory2.AllowUserToDeleteRows = false;
+            this.dgvEmpHistory2.AllowUserToResizeColumns = false;
+            this.dgvEmpHistory2.AllowUserToResizeRows = false;
+            this.dgvEmpHistory2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEmpHistory2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvEmpHistory2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEmpHistory2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
+            this.dgvEmpHistory2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEmpHistory2.DefaultCellStyle = dataGridViewCellStyle16;
+            this.dgvEmpHistory2.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvEmpHistory2.Location = new System.Drawing.Point(92, 1306);
+            this.dgvEmpHistory2.MultiSelect = false;
+            this.dgvEmpHistory2.Name = "dgvEmpHistory2";
+            this.dgvEmpHistory2.ReadOnly = true;
+            this.dgvEmpHistory2.RowHeadersVisible = false;
+            this.dgvEmpHistory2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvEmpHistory2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEmpHistory2.Size = new System.Drawing.Size(840, 150);
+            this.dgvEmpHistory2.TabIndex = 302;
             // 
             // comboBox6
             // 
@@ -3383,7 +3534,7 @@
             this.comboBox6.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.ForeColor = System.Drawing.Color.Black;
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
@@ -3410,7 +3561,7 @@
             this.comboBox7.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox7.ForeColor = System.Drawing.Color.Black;
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
@@ -3592,13 +3743,42 @@
             this.button4.Text = "ADD";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // dgvSkills2
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(89, 766);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(840, 150);
-            this.dataGridView2.TabIndex = 283;
+            this.dgvSkills2.AllowUserToAddRows = false;
+            this.dgvSkills2.AllowUserToDeleteRows = false;
+            this.dgvSkills2.AllowUserToResizeColumns = false;
+            this.dgvSkills2.AllowUserToResizeRows = false;
+            this.dgvSkills2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvSkills2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvSkills2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle17.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle17.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle17.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle17.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle17.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle17.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvSkills2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle17;
+            this.dgvSkills2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle18.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle18.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle18.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle18.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle18.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle18.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvSkills2.DefaultCellStyle = dataGridViewCellStyle18;
+            this.dgvSkills2.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvSkills2.Location = new System.Drawing.Point(89, 766);
+            this.dgvSkills2.MultiSelect = false;
+            this.dgvSkills2.Name = "dgvSkills2";
+            this.dgvSkills2.ReadOnly = true;
+            this.dgvSkills2.RowHeadersVisible = false;
+            this.dgvSkills2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvSkills2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvSkills2.Size = new System.Drawing.Size(840, 150);
+            this.dgvSkills2.TabIndex = 283;
             // 
             // comboBox5
             // 
@@ -3606,7 +3786,7 @@
             this.comboBox5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.ForeColor = System.Drawing.Color.Black;
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
@@ -3773,7 +3953,7 @@
             this.comboBox4.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.ForeColor = System.Drawing.Color.Black;
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
@@ -3827,13 +4007,42 @@
             this.label37.TabIndex = 266;
             this.label37.Text = "School Name:";
             // 
-            // dataGridView1
+            // dgvEducBack2
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(97, 446);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(840, 150);
-            this.dataGridView1.TabIndex = 265;
+            this.dgvEducBack2.AllowUserToAddRows = false;
+            this.dgvEducBack2.AllowUserToDeleteRows = false;
+            this.dgvEducBack2.AllowUserToResizeColumns = false;
+            this.dgvEducBack2.AllowUserToResizeRows = false;
+            this.dgvEducBack2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvEducBack2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvEducBack2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle19.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle19.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle19.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle19.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle19.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle19.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvEducBack2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle19;
+            this.dgvEducBack2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle20.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle20.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle20.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle20.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle20.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle20.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvEducBack2.DefaultCellStyle = dataGridViewCellStyle20;
+            this.dgvEducBack2.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvEducBack2.Location = new System.Drawing.Point(97, 446);
+            this.dgvEducBack2.MultiSelect = false;
+            this.dgvEducBack2.Name = "dgvEducBack2";
+            this.dgvEducBack2.ReadOnly = true;
+            this.dgvEducBack2.RowHeadersVisible = false;
+            this.dgvEducBack2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvEducBack2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvEducBack2.Size = new System.Drawing.Size(840, 150);
+            this.dgvEducBack2.TabIndex = 265;
             // 
             // label38
             // 
@@ -3846,6 +4055,132 @@
             this.label38.Size = new System.Drawing.Size(340, 25);
             this.label38.TabIndex = 264;
             this.label38.Text = "EDUCATIONAL BACKGROUND\r\n";
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Skill Name";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Proficiency";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "School Name";
+            this.Column3.Name = "Column3";
+            this.Column3.ReadOnly = true;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "School Type";
+            this.Column4.Name = "Column4";
+            this.Column4.ReadOnly = true;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Year Started";
+            this.Column5.Name = "Column5";
+            this.Column5.ReadOnly = true;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Year Ended";
+            this.Column6.Name = "Column6";
+            this.Column6.ReadOnly = true;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Degree";
+            this.Column7.Name = "Column7";
+            this.Column7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.HeaderText = "Name of Child";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn6.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.HeaderText = "Age";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn7.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.HeaderText = "Date of Birth";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn8.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            this.dataGridViewTextBoxColumn9.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.HeaderText = "Contact Number";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.HeaderText = "Employer";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Address";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Month of Employment";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Year of Employment";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            this.dataGridViewTextBoxColumn4.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.HeaderText = "Month of Leave";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Year of Leave";
+            this.Column8.Name = "Column8";
+            this.Column8.ReadOnly = true;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Position";
+            this.Column9.Name = "Column9";
+            this.Column9.ReadOnly = true;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Desciption of Duties";
+            this.Column10.Name = "Column10";
+            this.Column10.ReadOnly = true;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Reason of Leaving";
+            this.Column11.Name = "Column11";
+            this.Column11.ReadOnly = true;
             // 
             // ucAppAddEdit
             // 
@@ -3868,11 +4203,11 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvContactPersons2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvChildren2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEmpHistory2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvSkills2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvEducBack2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -3899,7 +4234,6 @@
         private System.Windows.Forms.Label label53;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DataGridView dgvEducBack;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtWeight;
         private System.Windows.Forms.Label label13;
@@ -3916,9 +4250,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblAddApp;
-        private System.Windows.Forms.DataGridView dgvContactPersons;
         private System.Windows.Forms.Label label129;
-        private System.Windows.Forms.DataGridView dgvChildren;
         private System.Windows.Forms.Label label127;
         private System.Windows.Forms.TextBox txtSOccu;
         private System.Windows.Forms.Label label124;
@@ -3962,7 +4294,6 @@
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Button btnRemoveEmpHistory;
         private System.Windows.Forms.Button btnAddEmpHistory;
-        private System.Windows.Forms.DataGridView dgvEmpHistory;
         private System.Windows.Forms.ComboBox cbYearStart;
         private System.Windows.Forms.ComboBox cbMonthStart;
         private System.Windows.Forms.Label label11;
@@ -3978,7 +4309,6 @@
         private System.Windows.Forms.TextBox txtEmp;
         private System.Windows.Forms.Button btnRemoveSkills;
         private System.Windows.Forms.Button btnAddSkills;
-        private System.Windows.Forms.DataGridView dgvSkills;
         private System.Windows.Forms.ComboBox cbProficiency;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
@@ -4021,7 +4351,6 @@
         private System.Windows.Forms.Label label76;
         private System.Windows.Forms.TextBox textBox32;
         private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.DataGridView dataGridView5;
         private System.Windows.Forms.Label label78;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button6;
@@ -4033,7 +4362,6 @@
         private System.Windows.Forms.Label label50;
         private System.Windows.Forms.TextBox textBox13;
         private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.DataGridView dataGridView4;
         private System.Windows.Forms.Label label52;
         private System.Windows.Forms.TextBox textBox14;
         private System.Windows.Forms.Label label60;
@@ -4067,7 +4395,6 @@
         private System.Windows.Forms.Label label74;
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.ComboBox comboBox6;
         private System.Windows.Forms.ComboBox comboBox7;
         private System.Windows.Forms.Label label42;
@@ -4084,7 +4411,6 @@
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.TextBox textBox7;
@@ -4102,7 +4428,6 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Button btnCancel1;
         private System.Windows.Forms.Panel panel3;

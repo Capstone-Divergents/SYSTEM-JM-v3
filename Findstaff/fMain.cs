@@ -50,6 +50,7 @@ namespace Findstaff
             }
             dr.Close();
             connection.Close();
+
             lblName.Text = name;
             lblDept.Text = dept;
             if(dept == "Recruitment")

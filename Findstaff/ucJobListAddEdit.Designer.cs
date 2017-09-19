@@ -164,6 +164,8 @@
             // comboBox4
             // 
             this.comboBox4.BackColor = System.Drawing.Color.Gainsboro;
+            this.comboBox4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.ForeColor = System.Drawing.Color.Black;
             this.comboBox4.FormattingEnabled = true;
@@ -187,6 +189,8 @@
             // comboBox3
             // 
             this.comboBox3.BackColor = System.Drawing.Color.Gainsboro;
+            this.comboBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox3.ForeColor = System.Drawing.Color.Black;
             this.comboBox3.FormattingEnabled = true;
@@ -328,6 +332,8 @@
             // comboBox9
             // 
             this.comboBox9.BackColor = System.Drawing.Color.Gainsboro;
+            this.comboBox9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.comboBox9.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox9.ForeColor = System.Drawing.Color.Black;
             this.comboBox9.FormattingEnabled = true;
@@ -684,6 +690,8 @@
             // cbJob1
             // 
             this.cbJob1.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbJob1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbJob1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbJob1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbJob1.ForeColor = System.Drawing.Color.Black;
             this.cbJob1.FormattingEnabled = true;
@@ -695,6 +703,8 @@
             // cbJOrder1
             // 
             this.cbJOrder1.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbJOrder1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbJOrder1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbJOrder1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbJOrder1.ForeColor = System.Drawing.Color.Black;
             this.cbJOrder1.FormattingEnabled = true;
@@ -735,6 +745,8 @@
             // cbReqName
             // 
             this.cbReqName.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbReqName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbReqName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbReqName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbReqName.ForeColor = System.Drawing.Color.Black;
             this.cbReqName.FormattingEnabled = true;
@@ -774,6 +786,8 @@
             // cbSkillName
             // 
             this.cbSkillName.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbSkillName.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbSkillName.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbSkillName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbSkillName.ForeColor = System.Drawing.Color.Black;
             this.cbSkillName.FormattingEnabled = true;
@@ -864,6 +878,8 @@
             // cbProf
             // 
             this.cbProf.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbProf.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbProf.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbProf.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbProf.ForeColor = System.Drawing.Color.Black;
             this.cbProf.FormattingEnabled = true;
@@ -907,6 +923,8 @@
             // cbCategory1
             // 
             this.cbCategory1.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbCategory1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbCategory1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCategory1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategory1.ForeColor = System.Drawing.Color.Black;
             this.cbCategory1.FormattingEnabled = true;

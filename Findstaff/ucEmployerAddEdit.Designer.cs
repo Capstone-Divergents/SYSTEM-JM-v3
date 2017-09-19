@@ -40,7 +40,7 @@
             this.lblAddEmp = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCancel2 = new System.Windows.Forms.Button();
-            this.btnEditEmp = new System.Windows.Forms.Button();
+            this.btnEdit = new System.Windows.Forms.Button();
             this.cbCountry2 = new System.Windows.Forms.ComboBox();
             this.txtPrincipal2 = new System.Windows.Forms.TextBox();
             this.txtEmp2 = new System.Windows.Forms.TextBox();
@@ -106,6 +106,8 @@
             // cbCountry1
             // 
             this.cbCountry1.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbCountry1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbCountry1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCountry1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCountry1.ForeColor = System.Drawing.Color.Black;
             this.cbCountry1.FormattingEnabled = true;
@@ -187,7 +189,7 @@
             // panel2
             // 
             this.panel2.Controls.Add(this.btnCancel2);
-            this.panel2.Controls.Add(this.btnEditEmp);
+            this.panel2.Controls.Add(this.btnEdit);
             this.panel2.Controls.Add(this.cbCountry2);
             this.panel2.Controls.Add(this.txtPrincipal2);
             this.panel2.Controls.Add(this.txtEmp2);
@@ -219,25 +221,27 @@
             this.btnCancel2.UseVisualStyleBackColor = false;
             this.btnCancel2.Click += new System.EventHandler(this.btnCancel2_Click);
             // 
-            // btnEditEmp
+            // btnEdit
             // 
-            this.btnEditEmp.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnEditEmp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnEditEmp.FlatAppearance.BorderSize = 0;
-            this.btnEditEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditEmp.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditEmp.ForeColor = System.Drawing.Color.Black;
-            this.btnEditEmp.Location = new System.Drawing.Point(456, 330);
-            this.btnEditEmp.Name = "btnEditEmp";
-            this.btnEditEmp.Size = new System.Drawing.Size(150, 50);
-            this.btnEditEmp.TabIndex = 26;
-            this.btnEditEmp.Text = "EDIT EMPLOYER";
-            this.btnEditEmp.UseVisualStyleBackColor = false;
-            this.btnEditEmp.Click += new System.EventHandler(this.btnEditEmp_Click);
+            this.btnEdit.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnEdit.FlatAppearance.BorderSize = 0;
+            this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEdit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.ForeColor = System.Drawing.Color.Black;
+            this.btnEdit.Location = new System.Drawing.Point(456, 330);
+            this.btnEdit.Name = "btnEdit";
+            this.btnEdit.Size = new System.Drawing.Size(150, 50);
+            this.btnEdit.TabIndex = 26;
+            this.btnEdit.Text = "EDIT EMPLOYER";
+            this.btnEdit.UseVisualStyleBackColor = false;
+            this.btnEdit.Click += new System.EventHandler(this.btnEditEmp_Click);
             // 
             // cbCountry2
             // 
             this.cbCountry2.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbCountry2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbCountry2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCountry2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCountry2.ForeColor = System.Drawing.Color.Black;
             this.cbCountry2.FormattingEnabled = true;
@@ -271,6 +275,7 @@
             // txtEmpID
             // 
             this.txtEmpID.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtEmpID.Enabled = false;
             this.txtEmpID.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpID.ForeColor = System.Drawing.Color.Black;
             this.txtEmpID.Location = new System.Drawing.Point(512, 147);
@@ -368,11 +373,7 @@
         private System.Windows.Forms.Button btnCancel1;
         private System.Windows.Forms.Button btnAddEmp;
         private System.Windows.Forms.Button btnCancel2;
-        private System.Windows.Forms.Button btnEditEmp;
-        private System.Windows.Forms.ComboBox cbCountry2;
-        private System.Windows.Forms.TextBox txtPrincipal2;
-        private System.Windows.Forms.TextBox txtEmp2;
-        private System.Windows.Forms.TextBox txtEmpID;
+        private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Label lblPrincipal2;
         private System.Windows.Forms.Label lblCountry2;
         private System.Windows.Forms.Label lblEmp2;
@@ -380,5 +381,9 @@
         private System.Windows.Forms.Label lblEditEmp;
         public System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.ComboBox cbCountry2;
+        public System.Windows.Forms.TextBox txtPrincipal2;
+        public System.Windows.Forms.TextBox txtEmp2;
+        public System.Windows.Forms.TextBox txtEmpID;
     }
 }

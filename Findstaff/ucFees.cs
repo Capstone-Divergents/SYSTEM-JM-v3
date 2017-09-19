@@ -33,12 +33,12 @@ namespace Findstaff
         {
             if(dgvFees.Rows.Count != 0)
             {
+                ucFeesAddEdit.txtID.Text = dgvFees.SelectedRows[0].Cells[0].Value.ToString();
+                ucFeesAddEdit.txtFee2.Text = dgvFees.SelectedRows[0].Cells[1].Value.ToString();
                 ucFeesAddEdit.Dock = DockStyle.Fill;
                 ucFeesAddEdit.Visible = true;
                 ucFeesAddEdit.panel1.Visible = false;
                 ucFeesAddEdit.panel2.Visible = true;
-                ucFeesAddEdit.txtID.Text = dgvFees.SelectedRows[0].Cells[0].Value.ToString();
-                ucFeesAddEdit.txtFee2.Text = dgvFees.SelectedRows[0].Cells[1].Value.ToString();
             }
             else
             {
