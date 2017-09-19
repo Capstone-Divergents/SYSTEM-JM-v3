@@ -110,7 +110,7 @@
             this.btnRemoveFee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveFee.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveFee.ForeColor = System.Drawing.Color.Black;
-            this.btnRemoveFee.Location = new System.Drawing.Point(900, 390);
+            this.btnRemoveFee.Location = new System.Drawing.Point(900, 397);
             this.btnRemoveFee.Name = "btnRemoveFee";
             this.btnRemoveFee.Size = new System.Drawing.Size(100, 30);
             this.btnRemoveFee.TabIndex = 277;
@@ -139,8 +139,7 @@
             this.cbJobOrder1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbJobOrder1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbJobOrder1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbJobOrder1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbJobOrder1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbJobOrder1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbJobOrder1.ForeColor = System.Drawing.Color.Black;
             this.cbJobOrder1.FormattingEnabled = true;
             this.cbJobOrder1.Location = new System.Drawing.Point(215, 98);
@@ -327,8 +326,7 @@
             this.cbFees1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbFees1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFees1.Enabled = false;
-            this.cbFees1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbFees1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFees1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbFees1.ForeColor = System.Drawing.Color.Black;
             this.cbFees1.FormattingEnabled = true;
             this.cbFees1.Location = new System.Drawing.Point(193, 207);
@@ -401,7 +399,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(900, 390);
+            this.button4.Location = new System.Drawing.Point(900, 394);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 30);
             this.button4.TabIndex = 277;
@@ -578,8 +576,7 @@
             this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.ForeColor = System.Drawing.Color.Black;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {

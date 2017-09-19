@@ -15,6 +15,7 @@ namespace Findstaff
     {
         private MySqlConnection connection;
         MySqlCommand com = new MySqlCommand();
+        MySqlDataReader dr;
 
         public ucEmployerAddEdit()
         {
@@ -92,8 +93,42 @@ namespace Findstaff
 
         private void btnEditEmp_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Saved!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Hide();
+            connection.Open();
+            string cmd = "";
+            if (txtEmp2.Text == "")
+            {
+                MessageBox.Show("Employer name must not be empty.", "Empty Employer Name Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult rs = MessageBox.Show("Are you sure you want to update the record with the following details?"
+                    + "\nEmployer ID: " + txtEmpID.Text + "\nNew Employer Name: " + txtEmp2.Text
+                    + "\nNew Foreign Principal: " + txtPrincipal2 + "\nNew Country: " + cbCountry2.Text, "Confirmation", MessageBoxButtons.YesNo);
+
+                if (rs == DialogResult.Yes)
+                {
+                    string countID = "";
+                    cmd = "select country_id from country_t where countryname = '" + cbCountry2.Text + "'";
+                    com = new MySqlCommand(cmd, connection);
+                    dr = com.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        countID = dr[0].ToString();
+                    }
+                    dr.Close();
+
+                    cmd = "Update Employer_T set Employername = '" + txtEmp2.Text + "', Foreignprin = '" + txtPrincipal2.Text + "', Country_id = '" + countID + "' where Employer_id = '" + txtEmpID.Text + "';";
+                    com = new MySqlCommand(cmd, connection);
+                    com.ExecuteNonQuery();
+                    MessageBox.Show("Changes Saved!", "Updated Employer Record!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtEmpID.Clear();
+                    txtEmp2.Clear();
+                    txtPrincipal2.Clear();
+                    cbCountry2.SelectedIndex = -1;
+                    this.Hide();
+                }
+            }
+            connection.Close();
         }
 
         private void btnCancel2_Click(object sender, EventArgs e)
@@ -114,6 +149,7 @@ namespace Findstaff
                 while (dr.Read())
                 {
                     cbCountry1.Items.Add(dr[0].ToString());
+                    cbCountry2.Items.Add(dr[0].ToString());
                 }
                 dr.Close();
                 connection.Close();
@@ -121,6 +157,7 @@ namespace Findstaff
             else
             {
                 cbCountry1.Items.Clear();
+                cbCountry2.Items.Clear();
             }
         }
     }

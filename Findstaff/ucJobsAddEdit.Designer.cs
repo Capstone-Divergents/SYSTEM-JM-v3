@@ -40,7 +40,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCancel2 = new System.Windows.Forms.Button();
-            this.cbCategory1 = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtJobs2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,6 +47,7 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblEditJobs = new System.Windows.Forms.Label();
+            this.cbCategory1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -66,7 +66,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(518, 400);
+            this.panel1.Size = new System.Drawing.Size(10, 400);
             this.panel1.TabIndex = 2;
             // 
             // btnCancel1
@@ -106,8 +106,7 @@
             this.cbJobType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbJobType.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbJobType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbJobType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbJobType.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbJobType.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbJobType.ForeColor = System.Drawing.Color.Black;
             this.cbJobType.FormattingEnabled = true;
             this.cbJobType.Items.AddRange(new object[] {
@@ -135,8 +134,7 @@
             this.cbCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.cbCategory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbCategory.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbCategory.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCategory.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategory.ForeColor = System.Drawing.Color.Black;
             this.cbCategory.FormattingEnabled = true;
             this.cbCategory.Location = new System.Drawing.Point(486, 122);
@@ -193,8 +191,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnCancel2);
             this.panel2.Controls.Add(this.cbCategory1);
+            this.panel2.Controls.Add(this.btnCancel2);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.txtJobs2);
             this.panel2.Controls.Add(this.label4);
@@ -203,9 +201,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblEditJobs);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(524, 0);
+            this.panel2.Location = new System.Drawing.Point(1108, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(594, 400);
+            this.panel2.Size = new System.Drawing.Size(10, 400);
             this.panel2.TabIndex = 3;
             // 
             // btnCancel2
@@ -223,33 +221,6 @@
             this.btnCancel2.Text = "CANCEL";
             this.btnCancel2.UseVisualStyleBackColor = false;
             this.btnCancel2.Click += new System.EventHandler(this.btnCancel2_Click);
-            // 
-            // cbCategory1
-            // 
-            this.cbCategory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.cbCategory1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbCategory1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbCategory1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbCategory1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbCategory1.ForeColor = System.Drawing.Color.Black;
-            this.cbCategory1.FormattingEnabled = true;
-            this.cbCategory1.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.cbCategory1.Location = new System.Drawing.Point(504, 136);
-            this.cbCategory1.Name = "cbCategory1";
-            this.cbCategory1.Size = new System.Drawing.Size(200, 27);
-            this.cbCategory1.TabIndex = 281;
             // 
             // label3
             // 
@@ -271,7 +242,7 @@
             this.txtJobs2.Location = new System.Drawing.Point(504, 169);
             this.txtJobs2.MaxLength = 30;
             this.txtJobs2.Name = "txtJobs2";
-            this.txtJobs2.Size = new System.Drawing.Size(200, 26);
+            this.txtJobs2.Size = new System.Drawing.Size(216, 26);
             this.txtJobs2.TabIndex = 279;
             this.txtJobs2.TextChanged += new System.EventHandler(this.txtJobs2_TextChanged);
             // 
@@ -306,12 +277,13 @@
             // txtID
             // 
             this.txtID.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtID.Enabled = false;
             this.txtID.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.ForeColor = System.Drawing.Color.Black;
             this.txtID.Location = new System.Drawing.Point(504, 104);
             this.txtID.MaxLength = 30;
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(200, 26);
+            this.txtID.Size = new System.Drawing.Size(216, 26);
             this.txtID.TabIndex = 276;
             // 
             // label2
@@ -336,6 +308,19 @@
             this.lblEditJobs.Size = new System.Drawing.Size(155, 39);
             this.lblEditJobs.TabIndex = 274;
             this.lblEditJobs.Text = "Edit Jobs";
+            // 
+            // cbCategory1
+            // 
+            this.cbCategory1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbCategory1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbCategory1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbCategory1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbCategory1.ForeColor = System.Drawing.Color.Black;
+            this.cbCategory1.FormattingEnabled = true;
+            this.cbCategory1.Location = new System.Drawing.Point(504, 136);
+            this.cbCategory1.Name = "cbCategory1";
+            this.cbCategory1.Size = new System.Drawing.Size(216, 27);
+            this.cbCategory1.TabIndex = 283;
             // 
             // ucJobsAddEdit
             // 

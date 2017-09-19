@@ -128,6 +128,7 @@ namespace Findstaff
                         categID = dr[0].ToString();
                     }
                     dr.Close();
+
                     cmd = "Update Job_t set category_id = '" + categID + "', jobname = '" + txtJobs2.Text + "' where job_id = '" + txtID.Text + "';";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();

@@ -33,12 +33,12 @@ namespace Findstaff
         {
             if (dgvRequirements.Rows.Count != 0)
             {
+                ucRequirementsAddEdit.txtRequirementID.Text = dgvRequirements.SelectedRows[0].Cells[0].Value.ToString();
+                ucRequirementsAddEdit.txtRequirement2.Text = dgvRequirements.SelectedRows[0].Cells[1].Value.ToString();
                 ucRequirementsAddEdit.Dock = DockStyle.Fill;
                 ucRequirementsAddEdit.Visible = true;
                 ucRequirementsAddEdit.panel1.Visible = false;
                 ucRequirementsAddEdit.panel2.Visible = true;
-                ucRequirementsAddEdit.txtRequirementID.Text = dgvRequirements.SelectedRows[0].Cells[0].Value.ToString();
-                ucRequirementsAddEdit.txtRequirement2.Text = dgvRequirements.SelectedRows[0].Cells[1].Value.ToString();
                 ucRequirementsAddEdit.cbDesignation1.Text = dgvRequirements.SelectedRows[0].Cells[2].Value.ToString();
             }
             else
