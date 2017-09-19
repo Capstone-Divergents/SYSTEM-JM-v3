@@ -63,7 +63,7 @@ namespace Findstaff
             for(int x = 0;x < dgvSkills1.Rows.Count; x++)
             {
                 cmd2 = "select skill_id from genskills_t where skillname = '" + dgvSkills1.Rows[x].Cells[0].Value.ToString() + "'";
-                com = new MySqlCommand(cmd, connection);
+                com = new MySqlCommand(cmd2, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
                 {
@@ -82,7 +82,7 @@ namespace Findstaff
             for (int x = 0; x < dgvReqdDocs1.Rows.Count; x++)
             {
                 cmd2 = "select req_id from genreqs_t where reqname = '"+ dgvReqdDocs1.Rows[x].Cells[0].Value.ToString() + "'";
-                com = new MySqlCommand(cmd, connection);
+                com = new MySqlCommand(cmd2, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
                 {
@@ -99,6 +99,7 @@ namespace Findstaff
             com.ExecuteNonQuery();
             connection.Close();
             MessageBox.Show("Job Added!", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            cbJOrder1.SelectedIndex = -1;
             cbCategory1.SelectedIndex = -1;
             cbJob1.SelectedIndex = -1;
             txtReqApp1.Clear();
@@ -273,7 +274,7 @@ namespace Findstaff
         {
             connection.Open();
             cbJob1.Items.Clear();
-            cmd = "select j.jobname from job_t j join jobcategory_t c where j.category_id = c.category_id";
+            cmd = "select j.jobname from job_t j join jobcategory_t c on j.category_id = c.category_id where c.categoryname = '"+cbCategory1.Text+"'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
