@@ -259,7 +259,8 @@ namespace Findstaff
                 cbSkills.Items.Clear();
             }
         }
-        
+
+        #region Validations
         private void txtLastName_Enter(object sender, EventArgs e)
         {
             txtLastName.Clear();
@@ -616,5 +617,6 @@ namespace Findstaff
                 txtContactPerson.Text = "";
             }
         }
+        #endregion Validations
     }
 }

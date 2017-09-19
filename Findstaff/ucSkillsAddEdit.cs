@@ -55,6 +55,7 @@ namespace Findstaff
             {
                 MessageBox.Show("Table in the database will not be able to handle more records.");
             }
+
             if (cID != "")
             {
                 string check = "Select Count(Skillname) from Genskills_t where Skillname = '" + txtSkillName1.Text + "'";

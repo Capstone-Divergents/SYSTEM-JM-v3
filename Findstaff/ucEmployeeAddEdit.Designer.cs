@@ -783,9 +783,9 @@
             this.panel2.Controls.Add(this.txtEmpId);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(335, 0);
+            this.panel2.Location = new System.Drawing.Point(1108, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(783, 450);
+            this.panel2.Size = new System.Drawing.Size(10, 450);
             this.panel2.TabIndex = 3;
             this.panel2.VisibleChanged += new System.EventHandler(this.panel2_VisibleChanged);
             // 

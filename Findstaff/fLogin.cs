@@ -38,29 +38,6 @@ namespace Findstaff
             }
         }
         
-        private void txtUsername_MouseClick(object sender, MouseEventArgs e)
-        {
-            txtUsername.Clear();
-            txtUsername.ForeColor = Color.Black;
-        }
-        
-        private void txtUsername_TextChanged(object sender, EventArgs e)
-        {
-            txtUsername.ForeColor = Color.Black;
-        }
-
-        private void txtPassword_MouseClick(object sender, MouseEventArgs e)
-        {
-            txtPassword.Clear();
-            txtPassword.ForeColor = Color.Black;
-        }
-
-        private void txtPassword_TextChanged(object sender, EventArgs e)
-        {
-            txtPassword.ForeColor = Color.Black;
-            txtPassword.PasswordChar = '*';
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             connection.Open();
@@ -105,5 +82,30 @@ namespace Findstaff
             Connection con = new Connection();
             connection = con.dbConnection();
         }
+
+        #region Validations
+        private void txtUsername_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtUsername.Clear();
+            txtUsername.ForeColor = Color.Black;
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+            txtUsername.ForeColor = Color.Black;
+        }
+
+        private void txtPassword_MouseClick(object sender, MouseEventArgs e)
+        {
+            txtPassword.Clear();
+            txtPassword.ForeColor = Color.Black;
+        }
+
+        private void txtPassword_TextChanged(object sender, EventArgs e)
+        {
+            txtPassword.ForeColor = Color.Black;
+            txtPassword.PasswordChar = '•';
+        }
+        #endregion Validations
     }
 }

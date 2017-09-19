@@ -173,9 +173,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblEditRequirements);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(240, 0);
+            this.panel2.Location = new System.Drawing.Point(1108, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(878, 400);
+            this.panel2.Size = new System.Drawing.Size(10, 400);
             this.panel2.TabIndex = 2;
             // 
             // btnCancel2

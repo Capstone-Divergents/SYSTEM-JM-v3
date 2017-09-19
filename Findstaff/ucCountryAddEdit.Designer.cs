@@ -28,6 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblAddCountry = new System.Windows.Forms.Label();
             this.txtCountry = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,7 +48,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.txtCountryID = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dataGridReq = new System.Windows.Forms.DataGridView();
+            this.dgvCountry2 = new System.Windows.Forms.DataGridView();
             this.button4 = new System.Windows.Forms.Button();
             this.btnAddReq = new System.Windows.Forms.Button();
             this.cbRequirementName = new System.Windows.Forms.ComboBox();
@@ -66,7 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridEduc)).BeginInit();
             this.pnlButtons1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridReq)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCountry2)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCountry)).BeginInit();
             this.SuspendLayout();
@@ -234,7 +238,7 @@
             this.panel2.Controls.Add(this.btnSave);
             this.panel2.Controls.Add(this.txtCountryID);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.dataGridReq);
+            this.panel2.Controls.Add(this.dgvCountry2);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.btnAddReq);
             this.panel2.Controls.Add(this.cbRequirementName);
@@ -289,6 +293,7 @@
             // txtCountryID
             // 
             this.txtCountryID.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtCountryID.Enabled = false;
             this.txtCountryID.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCountryID.ForeColor = System.Drawing.Color.Black;
             this.txtCountryID.Location = new System.Drawing.Point(201, 97);
@@ -309,13 +314,42 @@
             this.label5.TabIndex = 271;
             this.label5.Text = "Country ID:";
             // 
-            // dataGridReq
+            // dgvCountry2
             // 
-            this.dataGridReq.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridReq.Location = new System.Drawing.Point(100, 163);
-            this.dataGridReq.Name = "dataGridReq";
-            this.dataGridReq.Size = new System.Drawing.Size(918, 150);
-            this.dataGridReq.TabIndex = 269;
+            this.dgvCountry2.AllowUserToAddRows = false;
+            this.dgvCountry2.AllowUserToDeleteRows = false;
+            this.dgvCountry2.AllowUserToResizeColumns = false;
+            this.dgvCountry2.AllowUserToResizeRows = false;
+            this.dgvCountry2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCountry2.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvCountry2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCountry2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.dgvCountry2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCountry2.DefaultCellStyle = dataGridViewCellStyle6;
+            this.dgvCountry2.GridColor = System.Drawing.Color.Gainsboro;
+            this.dgvCountry2.Location = new System.Drawing.Point(100, 163);
+            this.dgvCountry2.MultiSelect = false;
+            this.dgvCountry2.Name = "dgvCountry2";
+            this.dgvCountry2.ReadOnly = true;
+            this.dgvCountry2.RowHeadersVisible = false;
+            this.dgvCountry2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dgvCountry2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvCountry2.Size = new System.Drawing.Size(918, 150);
+            this.dgvCountry2.TabIndex = 269;
             // 
             // button4
             // 
@@ -482,8 +516,26 @@
             this.dgvCountry.AllowUserToResizeColumns = false;
             this.dgvCountry.AllowUserToResizeRows = false;
             this.dgvCountry.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvCountry.BackgroundColor = System.Drawing.Color.Gainsboro;
+            this.dgvCountry.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCountry.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvCountry.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCountry.ColumnHeadersVisible = false;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCountry.DefaultCellStyle = dataGridViewCellStyle8;
+            this.dgvCountry.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvCountry.Location = new System.Drawing.Point(100, 130);
             this.dgvCountry.MultiSelect = false;
             this.dgvCountry.Name = "dgvCountry";
@@ -614,7 +666,7 @@
             this.pnlButtons1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridReq)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCountry2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCountry)).EndInit();
@@ -637,7 +689,6 @@
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtCountryID;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DataGridView dataGridReq;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnAddReq;
         private System.Windows.Forms.ComboBox cbRequirementName;
@@ -645,7 +696,6 @@
         private System.Windows.Forms.TextBox txtCountryName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridView dgvCountry;
         private System.Windows.Forms.Button btnRemoveRequire;
         private System.Windows.Forms.Button btnAddRequire;
         private System.Windows.Forms.Label label7;
@@ -659,5 +709,7 @@
         private System.Windows.Forms.Button btnSave;
         public System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.ComboBox cbReq;
+        public System.Windows.Forms.DataGridView dgvCountry;
+        public System.Windows.Forms.DataGridView dgvCountry2;
     }
 }

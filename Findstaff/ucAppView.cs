@@ -26,14 +26,15 @@ namespace Findstaff
 
         }
 
-        private void btnCancel_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             this.Hide();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
+        private void ucAppView_VisibleChanged(object sender, EventArgs e)
         {
-            this.Hide();
+            Connection con = new Connection();
+            connection = con.dbConnection();
         }
     }
 }
