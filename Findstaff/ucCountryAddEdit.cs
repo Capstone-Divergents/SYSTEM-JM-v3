@@ -145,7 +145,7 @@ namespace Findstaff
                 dr = com.ExecuteReader();
                 while (dr.Read())
                 {
-                    cbReq2.Items.Add(dr[0].ToString());
+                    cbReq.Items.Add(dr[0].ToString());
                 }
                 dr.Close();
 
@@ -158,15 +158,15 @@ namespace Findstaff
                     {
                         DataSet ds = new DataSet();
                         adapter.Fill(ds);
-                        dgvReq2.DataSource = ds.Tables[0];
+                        dgvReq.DataSource = ds.Tables[0];
                     }
                 }
                 
-                for(int x = 0; x < dgvReq2.Rows.Count; x++)
+                for(int x = 0; x < dgvReq.Rows.Count; x++)
                 {
-                    if (cbReq2.Items.Contains(dgvReq2.Rows[x].Cells[1].Value.ToString()))
+                    if (cbReq2.Items.Contains(dgvReq.Rows[x].Cells[1].Value.ToString()))
                     {
-                        cbReq2.Items.Remove(dgvReq2.Rows[x].Cells[1].Value.ToString());
+                        cbReq2.Items.Remove(dgvReq.Rows[x].Cells[1].Value.ToString());
                     }
                 }
             }
@@ -201,18 +201,18 @@ namespace Findstaff
         {
             if (cbReq2.Text != "")
             {
-                dgvReq2.ColumnCount = 1;
-                dgvReq2.Rows.Add(cbReq2.Text);
+                dgvReq.ColumnCount = 1;
+                dgvReq.Rows.Add(cbReq2.Text);
                 cbReq2.Items.Remove(cbReq2.Text);
             }
         }
 
         private void btnRemoveRequire2_Click(object sender, EventArgs e)
         {
-            if (dgvReq2.Rows.Count != 0)
+            if (dgvReq.Rows.Count != 0)
             {
-                cbReq2.Items.Add(dgvReq2.SelectedRows[0].Cells[0].Value.ToString());
-                dgvReq2.Rows.Remove(dgvReq2.SelectedRows[0]);
+                cbReq2.Items.Add(dgvReq.SelectedRows[0].Cells[0].Value.ToString());
+                dgvReq.Rows.Remove(dgvReq.SelectedRows[0]);
             }
         }
     }
