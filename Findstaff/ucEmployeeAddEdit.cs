@@ -281,7 +281,8 @@ namespace Findstaff
             }
             dataReader.Close();
             connection.Close();
-            
+
+            empId = txtEmpId.Text;
             uname = txtUsername2.Text;
             pword = txtPassword2.Text;
             lname = txtLastName.Text;
