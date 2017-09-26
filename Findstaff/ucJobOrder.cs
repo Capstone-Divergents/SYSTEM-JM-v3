@@ -37,10 +37,15 @@ namespace Findstaff
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
+            ucJobOrderAddEdit.txtJobNo2.Text = dgvJobOrder.SelectedRows[0].Cells[0].Value.ToString();
             ucJobOrderAddEdit.Dock = DockStyle.Fill;
             ucJobOrderAddEdit.Visible = true;
             ucJobOrderAddEdit.panel1.Visible = false;
             ucJobOrderAddEdit.panel2.Visible = true;
+            ucJobOrderAddEdit.cbEmployer2.Text = dgvJobOrder.SelectedRows[0].Cells[1].Value.ToString();
+            //ucJobOrderAddEdit.cbMonth2.Text = dgvJobOrder.SelectedRows[0].Cells[2].Value.ToString();
+            //ucJobOrderAddEdit.cbDay2.Text = dgvJobOrder.SelectedRows[0].Cells[2].Value.ToString();
+            //ucJobOrderAddEdit.cbYear2.Text = dgvJobOrder.SelectedRows[0].Cells[2].Value.ToString();
         }
 
         private void ucJobOrder_VisibleChanged(object sender, EventArgs e)

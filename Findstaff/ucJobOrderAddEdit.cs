@@ -68,8 +68,39 @@ namespace Findstaff
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Saved!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Hide();
+            connection.Open();
+            string cmd = "";
+            if (txtJobNo.Text == "")
+            {
+                MessageBox.Show("Job Order Number must not be empty.", "Empty  Job Order Number Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult rs = MessageBox.Show("Are you sure you want to update the record with the following details?"
+                    + "\nJob Order No.: " + txtJobNo.Text + "\nNew Employer Name: " + cbEmployer.Text, "Confirmation", MessageBoxButtons.YesNo);
+
+                if (rs == DialogResult.Yes)
+                {
+                    string EmpID = "";
+                    cmd = "select employer_id from employer_t where employername = '" + cbEmployer2.Text + "'";
+                    com = new MySqlCommand(cmd, connection);
+                    dr = com.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        EmpID = dr[0].ToString();
+                    }
+                    dr.Close();
+
+                    cmd = "Update JobOrder_T set Employer_id = '" + EmpID + "' where joborder_id = '" + txtJobNo2.Text + "';";
+                    com = new MySqlCommand(cmd, connection);
+                    com.ExecuteNonQuery();
+                    MessageBox.Show("Changes Saved!", "Updated Job Order Record!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    txtJobNo2.Clear();
+                    cbEmployer2.SelectedIndex = -1;
+                    this.Hide();
+                }
+            }
+            connection.Close();
         }
 
         private void btnCancel2_Click(object sender, EventArgs e)
@@ -91,6 +122,7 @@ namespace Findstaff
                 while (dr.Read())
                 {
                     cbEmployer.Items.Add(dr[0].ToString());
+                    cbEmployer2.Items.Add(dr[0].ToString());
                 }
                 dr.Close();
                 connection.Close();
@@ -98,6 +130,7 @@ namespace Findstaff
             else
             {
                 cbEmployer.Items.Clear();
+                cbEmployer2.Items.Clear();
             }
         }
 
@@ -126,6 +159,35 @@ namespace Findstaff
                 for (int x = 1; x <= 28; x++)
                 {
                     cbDay.Items.Add(x);
+                }
+            }
+        }
+
+        private void cbMonth2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbDay2.Items.Clear();
+            if (cbMonth2.SelectedIndex == 0 || cbMonth2.SelectedIndex == 2 || cbMonth2.SelectedIndex == 4 ||
+                cbMonth2.SelectedIndex == 6 || cbMonth2.SelectedIndex == 7 || cbMonth2.SelectedIndex == 9 ||
+                cbMonth2.SelectedIndex == 11)
+            {
+                for (int x = 1; x <= 31; x++)
+                {
+                    cbDay2.Items.Add(x);
+                }
+            }
+            else if (cbMonth2.SelectedIndex == 3 || cbMonth2.SelectedIndex == 5 || cbMonth2.SelectedIndex == 8 ||
+                cbMonth2.SelectedIndex == 10)
+            {
+                for (int x = 1; x <= 30; x++)
+                {
+                    cbDay2.Items.Add(x);
+                }
+            }
+            else
+            {
+                for (int x = 1; x <= 28; x++)
+                {
+                    cbDay2.Items.Add(x);
                 }
             }
         }

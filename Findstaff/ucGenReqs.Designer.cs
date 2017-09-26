@@ -93,7 +93,7 @@
             this.rbRequirements.Name = "rbRequirements";
             this.rbRequirements.Size = new System.Drawing.Size(150, 40);
             this.rbRequirements.TabIndex = 4;
-            this.rbRequirements.Text = "Requirements";
+            this.rbRequirements.Text = "Documents";
             this.rbRequirements.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbRequirements.UseVisualStyleBackColor = false;
             this.rbRequirements.CheckedChanged += new System.EventHandler(this.rbRequirements_CheckedChanged);

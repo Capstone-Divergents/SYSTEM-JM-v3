@@ -18,11 +18,11 @@ namespace Findstaff
         public MySqlConnection dbConnection()
         {
             server = "localhost";
-            database = "rms1";
+            database = "rms";
             uid = "root";
             //password = "anterograde";
-            //password = "rootpass";
-            password = "camilo";
+            password = "rootpass";
+            //password = "camilo";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
