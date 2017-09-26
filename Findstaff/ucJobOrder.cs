@@ -15,6 +15,8 @@ namespace Findstaff
     {
         private MySqlConnection connection;
         MySqlCommand com = new MySqlCommand();
+        MySqlDataReader dr;
+        private string cmd = "";
 
         public ucJobOrder()
         {
@@ -37,15 +39,24 @@ namespace Findstaff
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            ucJobOrderAddEdit.txtJobNo2.Text = dgvJobOrder.SelectedRows[0].Cells[0].Value.ToString();
+            connection.Open();
             ucJobOrderAddEdit.Dock = DockStyle.Fill;
+            ucJobOrderAddEdit.txtJobNo2.Text = dgvJobOrder.SelectedRows[0].Cells[0].Value.ToString();
+            ucJobOrderAddEdit.cbEmployer2.Text = dgvJobOrder.SelectedRows[0].Cells[1].Value.ToString();
+            cmd = "select monthname(cntrctstart), day(cntrctstart), year(cntrctstart) from joborder_t where jorder_id = '" + dgvJobOrder.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucJobOrderAddEdit.cbMonth2.Text = dr[0].ToString();
+                ucJobOrderAddEdit.cbDay2.Text = dr[1].ToString();
+                ucJobOrderAddEdit.cbYear2.Text = dr[2].ToString();
+            }
+            dr.Close();
+            connection.Close();
             ucJobOrderAddEdit.Visible = true;
             ucJobOrderAddEdit.panel1.Visible = false;
             ucJobOrderAddEdit.panel2.Visible = true;
-            ucJobOrderAddEdit.cbEmployer2.Text = dgvJobOrder.SelectedRows[0].Cells[1].Value.ToString();
-            //ucJobOrderAddEdit.cbMonth2.Text = dgvJobOrder.SelectedRows[0].Cells[2].Value.ToString();
-            //ucJobOrderAddEdit.cbDay2.Text = dgvJobOrder.SelectedRows[0].Cells[2].Value.ToString();
-            //ucJobOrderAddEdit.cbYear2.Text = dgvJobOrder.SelectedRows[0].Cells[2].Value.ToString();
         }
 
         private void ucJobOrder_VisibleChanged(object sender, EventArgs e)
@@ -85,11 +96,16 @@ namespace Findstaff
             Connection con = new Connection();
             connection = con.dbConnection();
             connection.Open();
-            string cmd = "delete from joborder_t where jorder_id = '" + dgvJobOrder.SelectedRows[0].Cells[0].Value.ToString() + "';";
-            com = new MySqlCommand(cmd, connection);
-            com.ExecuteNonQuery();
-            dgvJobOrder.Rows.Remove(dgvJobOrder.SelectedRows[0]);
-            MessageBox.Show("Job Order Deleted!", "Job Order Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult rs = MessageBox.Show("Are you sure you want to delete the job order "+ dgvJobOrder.SelectedRows[0].Cells[0].Value.ToString() +"?"
+                +"\nAll jobs listed under this job order will be deleted, and forfeit any active applications.", "Delete Job Order", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(rs == DialogResult.Yes)
+            {
+                string cmd = "delete from joborder_t where jorder_id = '" + dgvJobOrder.SelectedRows[0].Cells[0].Value.ToString() + "';";
+                com = new MySqlCommand(cmd, connection);
+                com.ExecuteNonQuery();
+                dgvJobOrder.Rows.Remove(dgvJobOrder.SelectedRows[0]);
+                MessageBox.Show("Job Order Deleted!", "Job Order Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             connection.Close();
         }
     }
