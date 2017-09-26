@@ -60,8 +60,8 @@ namespace Findstaff
             Connection con = new Connection();
             connection = con.dbConnection();
             connection.Open();
-            cmd = "select jo.jorder_id'Job Order ID', j.jobname'Job', e.employername'Employer', jl.reqapp'No. of Required Applicants'"+
-                "from joborder_t jo join joblist_t jl on jo.JORDER_ID = jl.jorder_id join employer_t e on jo.employer_id = e.employer_id"+
+            cmd = "select jo.jorder_id'Job Order ID', j.jobname'Job', e.employername'Employer', jl.reqapp'No. of Required Applicants' "+
+                "from joborder_t jo join joblist_t jl on jo.JORDER_ID = jl.jorder_id join employer_t e on jo.employer_id = e.employer_id "+
                 "join job_t j on jl.job_id = j.job_id where jo.cntrctstat = 'Active' or jo.cntrctstat = 'Renewed';";
             using (connection)
             {

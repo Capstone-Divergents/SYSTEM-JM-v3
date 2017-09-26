@@ -29,7 +29,6 @@ namespace Findstaff
         private void ucEmployerView_Load(object sender, EventArgs e)
         {
             string emp = "", coun = "", prin = "";
-
             Connection con = new Connection();
             connection = con.dbConnection();
             connection.Open();
