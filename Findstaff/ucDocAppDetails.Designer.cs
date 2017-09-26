@@ -122,7 +122,7 @@
             this.pnlTabs.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTabs.Location = new System.Drawing.Point(0, 0);
             this.pnlTabs.Name = "pnlTabs";
-            this.pnlTabs.Size = new System.Drawing.Size(1067, 50);
+            this.pnlTabs.Size = new System.Drawing.Size(1050, 50);
             this.pnlTabs.TabIndex = 469;
             // 
             // btnPassed1
@@ -142,6 +142,7 @@
             this.btnPassed1.TabIndex = 471;
             this.btnPassed1.Text = "PASSED";
             this.btnPassed1.UseVisualStyleBackColor = false;
+            this.btnPassed1.Click += new System.EventHandler(this.btnPassed1_Click);
             // 
             // dgvBasicReqs
             // 
@@ -265,6 +266,7 @@
             this.btnPassed2.TabIndex = 479;
             this.btnPassed2.Text = "PASSED";
             this.btnPassed2.UseVisualStyleBackColor = false;
+            this.btnPassed2.Click += new System.EventHandler(this.btnPassed2_Click);
             // 
             // dgvAddlReqs
             // 
@@ -375,8 +377,9 @@
             this.Controls.Add(this.lblAppDetails);
             this.Controls.Add(this.pnlButtons);
             this.Name = "ucDocAppDetails";
-            this.Size = new System.Drawing.Size(1067, 500);
+            this.Size = new System.Drawing.Size(1050, 500);
             this.Load += new System.EventHandler(this.ucDocAppDetails_Load);
+            this.VisibleChanged += new System.EventHandler(this.ucDocAppDetails_VisibleChanged);
             this.pnlButtons.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvBasicReqs)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAddlReqs)).EndInit();
