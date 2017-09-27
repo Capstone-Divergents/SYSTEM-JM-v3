@@ -70,14 +70,14 @@ namespace Findstaff
         {
             connection.Open();
             string cmd = "";
-            if (txtJobNo.Text == "")
+            if (cbEmployer2.Text == "")
             {
                 MessageBox.Show("Job Order Number must not be empty.", "Empty  Job Order Number Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 DialogResult rs = MessageBox.Show("Are you sure you want to update the record with the following details?"
-                    + "\nJob Order No.: " + txtJobNo.Text + "\nNew Employer Name: " + cbEmployer.Text, "Confirmation", MessageBoxButtons.YesNo);
+                    + "\nJob Order No.: " + txtJobNo2.Text + "\nNew Employer Name: " + cbEmployer2.Text + "\nNew Contract Start: " + cbYear2.Text + "-" + (cbMonth2.SelectedIndex+1) + "-" + cbDay2.Text + "\nNew Contract End: " + (Convert.ToUInt32(cbYear2.Text) + 4).ToString() + "-" + (cbMonth2.SelectedIndex + 1) + "-" + cbDay2.Text, "Confirmation", MessageBoxButtons.YesNo);
 
                 if (rs == DialogResult.Yes)
                 {
@@ -91,12 +91,15 @@ namespace Findstaff
                     }
                     dr.Close();
 
-                    cmd = "Update JobOrder_T set Employer_id = '" + EmpID + "' where joborder_id = '" + txtJobNo2.Text + "';";
+                    cmd = "Update JobOrder_T set Employer_id = '" + EmpID + "' , CNTRCTSTART = '" + cbYear2.Text + "-" + (cbMonth2.SelectedIndex + 1) + "-" + cbDay2.Text + "' , CNTRCTEND = '" + (Convert.ToUInt32(cbYear2.Text) + 4).ToString() + "-" + (cbMonth2.SelectedIndex + 1) + "-" + cbDay2.Text + "' where jorder_id = '" + txtJobNo2.Text + "';";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Changes Saved!", "Updated Job Order Record!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtJobNo2.Clear();
                     cbEmployer2.SelectedIndex = -1;
+                    cbMonth2.SelectedIndex = -1;
+                    cbDay2.SelectedIndex = -1;
+                    cbYear2.SelectedIndex = -1;
                     this.Hide();
                 }
             }
