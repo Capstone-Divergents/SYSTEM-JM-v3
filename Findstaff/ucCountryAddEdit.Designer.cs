@@ -30,8 +30,8 @@ namespace Findstaff
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.lblAddCountry = new System.Windows.Forms.Label();
             this.txtCountry = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -247,9 +247,9 @@ namespace Findstaff
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(104, 0);
+            this.panel2.Location = new System.Drawing.Point(1108, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1014, 450);
+            this.panel2.Size = new System.Drawing.Size(10, 450);
             this.panel2.TabIndex = 1;
             // 
             // btnRemoveRequire2
@@ -260,7 +260,7 @@ namespace Findstaff
             this.btnRemoveRequire2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemoveRequire2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveRequire2.ForeColor = System.Drawing.Color.Black;
-            this.btnRemoveRequire2.Location = new System.Drawing.Point(918, 322);
+            this.btnRemoveRequire2.Location = new System.Drawing.Point(918, 319);
             this.btnRemoveRequire2.Name = "btnRemoveRequire2";
             this.btnRemoveRequire2.Size = new System.Drawing.Size(100, 30);
             this.btnRemoveRequire2.TabIndex = 279;
@@ -356,6 +356,7 @@ namespace Findstaff
             // cbReq2
             // 
             this.cbReq2.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbReq2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbReq2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbReq2.Location = new System.Drawing.Point(263, 133);
             this.cbReq2.Name = "cbReq2";
@@ -472,23 +473,23 @@ namespace Findstaff
             this.dgvCountry.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCountry.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvCountry.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCountry.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCountry.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCountry.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCountry.DefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCountry.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCountry.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvCountry.Location = new System.Drawing.Point(100, 130);
             this.dgvCountry.MultiSelect = false;
@@ -641,6 +642,7 @@ namespace Findstaff
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DataGridView dgvReq;
         private System.Windows.Forms.ComboBox cbReq2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -663,6 +665,5 @@ namespace Findstaff
         public TextBox txtCountryID2;
         private Button btnRemoveRequire2;
         private Button btnAddRequire2;
-        public DataGridView dgvReq;
     }
 }

@@ -15,6 +15,8 @@ namespace Findstaff
     {
         private MySqlConnection connection;
         MySqlCommand com = new MySqlCommand();
+        MySqlDataReader dr;
+        private string cmd = "";
 
         public ucEmployee()
         {
@@ -31,10 +33,55 @@ namespace Findstaff
 
         private void btnEmpUpd_Click(object sender, EventArgs e)
         {
+            ucEmployeeAddEdit.txtUsername2.Text = dgvEmployee.SelectedRows[0].Cells[0].Value.ToString();
+            ucEmployeeAddEdit.cbDept2.Text = dgvEmployee.SelectedRows[0].Cells[2].Value.ToString();
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            cmd = "select fname, lname from emp_t where username = '" + dgvEmployee.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucEmployeeAddEdit.txtFirstName2.Text = dr[0].ToString();
+                ucEmployeeAddEdit.txtLastName2.Text = dr[1].ToString();
+            }
+            dr.Close();
+
+            cmd = "select emp_id, pass, mname, gender, monthname(birthdate), day(birthdate), year(birthdate), addrss, contact, deptname from emp_t where username = '" + dgvEmployee.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucEmployeeAddEdit.txtEmpId.Text = dr[0].ToString();
+                ucEmployeeAddEdit.txtPassword2.Text = dr[1].ToString();
+                ucEmployeeAddEdit.txtMiddleName2.Text = dr[2].ToString();
+
+                if (dr.GetString(3) == "Male")
+                {
+                    ucEmployeeAddEdit.rbMale2.Select();
+                }
+                else
+                {
+                    ucEmployeeAddEdit.rbFemale2.Select();
+                }
+
+                ucEmployeeAddEdit.cbMonth2.Text = dr[4].ToString();
+                ucEmployeeAddEdit.cbDay2.Text = dr[5].ToString();
+                ucEmployeeAddEdit.cbYear2.Text = dr[6].ToString();
+                ucEmployeeAddEdit.txtAddress2.Text = dr[7].ToString();
+                ucEmployeeAddEdit.txtContact2.Text = dr[8].ToString();
+                ucEmployeeAddEdit.cbDept2.Text = dr[9].ToString();
+            }
+
+            dr.Close();
+            connection.Close();
+
             ucEmployeeAddEdit.Dock = DockStyle.Fill;
             ucEmployeeAddEdit.Visible = true;
             ucEmployeeAddEdit.panel1.Visible = false;
-            ucEmployeeAddEdit.panel2.Visible = true;
+            ucEmployeeAddEdit.panel2.Visible = true;    
         }
 
         private void btnEmpDel_Click(object sender, EventArgs e)
@@ -42,11 +89,15 @@ namespace Findstaff
             Connection con = new Connection();
             connection = con.dbConnection();
             connection.Open();
-            string cmd = "delete from emp_t where username = '" + dgvEmployee.SelectedRows[0].Cells[0].Value.ToString() + "';";
-            com = new MySqlCommand(cmd, connection);
-            com.ExecuteNonQuery();
-            dgvEmployee.Rows.Remove(dgvEmployee.SelectedRows[0]);
-            MessageBox.Show("Employee Deleted!", "Employee Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult rs = MessageBox.Show("Are you sure you want to delete this record?", "Confirmation", MessageBoxButtons.YesNo);
+            if (rs == DialogResult.Yes)
+            {
+                string cmd = "delete from emp_t where username = '" + dgvEmployee.SelectedRows[0].Cells[0].Value.ToString() + "';";
+                com = new MySqlCommand(cmd, connection);
+                com.ExecuteNonQuery();
+                dgvEmployee.Rows.Remove(dgvEmployee.SelectedRows[0]);
+                MessageBox.Show("Employee Deleted!", "Employee Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             connection.Close();
         }
 

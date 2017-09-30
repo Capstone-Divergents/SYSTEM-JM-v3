@@ -67,16 +67,17 @@
             this.lblAddEmp = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblDeptStatus2 = new System.Windows.Forms.Label();
             this.cbYear2 = new System.Windows.Forms.ComboBox();
             this.cbDay2 = new System.Windows.Forms.ComboBox();
             this.cbMonth2 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblGenderStatus2 = new System.Windows.Forms.Label();
+            this.lblBirthdayStatus2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblContactStatus2 = new System.Windows.Forms.Label();
+            this.lblAddressStatus2 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnSave = new System.Windows.Forms.Button();
+            this.btnSave2 = new System.Windows.Forms.Button();
             this.btnCancel2 = new System.Windows.Forms.Button();
             this.cbDept2 = new System.Windows.Forms.ComboBox();
             this.txtContact2 = new System.Windows.Forms.TextBox();
@@ -87,11 +88,11 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblFNameStatus2 = new System.Windows.Forms.Label();
+            this.lblLNameStatus2 = new System.Windows.Forms.Label();
+            this.lblConPassStatus2 = new System.Windows.Forms.Label();
+            this.lblPassStatus2 = new System.Windows.Forms.Label();
+            this.lblUserStatus2 = new System.Windows.Forms.Label();
             this.txtMiddleName2 = new System.Windows.Forms.TextBox();
             this.txtFirstName2 = new System.Windows.Forms.TextBox();
             this.txtLastName2 = new System.Windows.Forms.TextBox();
@@ -742,14 +743,15 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.lblDeptStatus2);
             this.panel2.Controls.Add(this.cbYear2);
             this.panel2.Controls.Add(this.cbDay2);
             this.panel2.Controls.Add(this.cbMonth2);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.lblGenderStatus2);
+            this.panel2.Controls.Add(this.lblBirthdayStatus2);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.lblContactStatus2);
+            this.panel2.Controls.Add(this.lblAddressStatus2);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.cbDept2);
             this.panel2.Controls.Add(this.txtContact2);
@@ -760,11 +762,11 @@
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label11);
-            this.panel2.Controls.Add(this.label12);
-            this.panel2.Controls.Add(this.label13);
-            this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.label16);
+            this.panel2.Controls.Add(this.lblFNameStatus2);
+            this.panel2.Controls.Add(this.lblLNameStatus2);
+            this.panel2.Controls.Add(this.lblConPassStatus2);
+            this.panel2.Controls.Add(this.lblPassStatus2);
+            this.panel2.Controls.Add(this.lblUserStatus2);
             this.panel2.Controls.Add(this.txtMiddleName2);
             this.panel2.Controls.Add(this.txtFirstName2);
             this.panel2.Controls.Add(this.txtLastName2);
@@ -780,11 +782,22 @@
             this.panel2.Controls.Add(this.txtEmpId);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(1108, 0);
+            this.panel2.Location = new System.Drawing.Point(316, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 450);
+            this.panel2.Size = new System.Drawing.Size(802, 450);
             this.panel2.TabIndex = 3;
-            this.panel2.VisibleChanged += new System.EventHandler(this.panel2_VisibleChanged);
+            // 
+            // lblDeptStatus2
+            // 
+            this.lblDeptStatus2.AutoSize = true;
+            this.lblDeptStatus2.BackColor = System.Drawing.Color.Transparent;
+            this.lblDeptStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeptStatus2.ForeColor = System.Drawing.Color.Red;
+            this.lblDeptStatus2.Location = new System.Drawing.Point(507, 542);
+            this.lblDeptStatus2.Name = "lblDeptStatus2";
+            this.lblDeptStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblDeptStatus2.TabIndex = 147;
+            this.lblDeptStatus2.Text = "*";
             // 
             // cbYear2
             // 
@@ -842,6 +855,7 @@
             this.cbYear2.Name = "cbYear2";
             this.cbYear2.Size = new System.Drawing.Size(100, 27);
             this.cbYear2.TabIndex = 146;
+            this.cbYear2.SelectedIndexChanged += new System.EventHandler(this.cbYear2_SelectedIndexChanged);
             // 
             // cbDay2
             // 
@@ -887,6 +901,7 @@
             this.cbDay2.Name = "cbDay2";
             this.cbDay2.Size = new System.Drawing.Size(75, 27);
             this.cbDay2.TabIndex = 145;
+            this.cbDay2.SelectedIndexChanged += new System.EventHandler(this.cbDay2_SelectedIndexChanged);
             // 
             // cbMonth2
             // 
@@ -913,30 +928,31 @@
             this.cbMonth2.Name = "cbMonth2";
             this.cbMonth2.Size = new System.Drawing.Size(131, 27);
             this.cbMonth2.TabIndex = 144;
+            this.cbMonth2.SelectedIndexChanged += new System.EventHandler(this.cbMonth2_SelectedIndexChanged);
             // 
-            // label2
+            // lblGenderStatus2
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Red;
-            this.label2.Location = new System.Drawing.Point(482, 400);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(17, 19);
-            this.label2.TabIndex = 143;
-            this.label2.Text = "*";
+            this.lblGenderStatus2.AutoSize = true;
+            this.lblGenderStatus2.BackColor = System.Drawing.Color.Transparent;
+            this.lblGenderStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenderStatus2.ForeColor = System.Drawing.Color.Red;
+            this.lblGenderStatus2.Location = new System.Drawing.Point(482, 400);
+            this.lblGenderStatus2.Name = "lblGenderStatus2";
+            this.lblGenderStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblGenderStatus2.TabIndex = 143;
+            this.lblGenderStatus2.Text = "*";
             // 
-            // label3
+            // lblBirthdayStatus2
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(629, 433);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(17, 19);
-            this.label3.TabIndex = 142;
-            this.label3.Text = "*";
+            this.lblBirthdayStatus2.AutoSize = true;
+            this.lblBirthdayStatus2.BackColor = System.Drawing.Color.Transparent;
+            this.lblBirthdayStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthdayStatus2.ForeColor = System.Drawing.Color.Red;
+            this.lblBirthdayStatus2.Location = new System.Drawing.Point(629, 433);
+            this.lblBirthdayStatus2.Name = "lblBirthdayStatus2";
+            this.lblBirthdayStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblBirthdayStatus2.TabIndex = 142;
+            this.lblBirthdayStatus2.Text = "*";
             // 
             // label4
             // 
@@ -950,33 +966,33 @@
             this.label4.TabIndex = 141;
             this.label4.Text = "Birthday :";
             // 
-            // label5
+            // lblContactStatus2
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Red;
-            this.label5.Location = new System.Drawing.Point(612, 506);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(17, 19);
-            this.label5.TabIndex = 140;
-            this.label5.Text = "*";
+            this.lblContactStatus2.AutoSize = true;
+            this.lblContactStatus2.BackColor = System.Drawing.Color.Transparent;
+            this.lblContactStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContactStatus2.ForeColor = System.Drawing.Color.Red;
+            this.lblContactStatus2.Location = new System.Drawing.Point(612, 506);
+            this.lblContactStatus2.Name = "lblContactStatus2";
+            this.lblContactStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblContactStatus2.TabIndex = 140;
+            this.lblContactStatus2.Text = "*";
             // 
-            // label6
+            // lblAddressStatus2
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Red;
-            this.label6.Location = new System.Drawing.Point(747, 470);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(17, 19);
-            this.label6.TabIndex = 139;
-            this.label6.Text = "*";
+            this.lblAddressStatus2.AutoSize = true;
+            this.lblAddressStatus2.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddressStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddressStatus2.ForeColor = System.Drawing.Color.Red;
+            this.lblAddressStatus2.Location = new System.Drawing.Point(747, 470);
+            this.lblAddressStatus2.Name = "lblAddressStatus2";
+            this.lblAddressStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblAddressStatus2.TabIndex = 139;
+            this.lblAddressStatus2.Text = "*";
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btnSave);
+            this.panel3.Controls.Add(this.btnSave2);
             this.panel3.Controls.Add(this.btnCancel2);
             this.panel3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel3.Location = new System.Drawing.Point(434, 635);
@@ -984,24 +1000,24 @@
             this.panel3.Size = new System.Drawing.Size(250, 80);
             this.panel3.TabIndex = 134;
             // 
-            // btnSave
+            // btnSave2
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnSave.FlatAppearance.BorderSize = 0;
-            this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(2, 3);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(120, 50);
-            this.btnSave.TabIndex = 56;
-            this.btnSave.Text = "SAVE";
-            this.btnSave.UseVisualStyleBackColor = false;
-            this.btnSave.Click += new System.EventHandler(this.button3_Click);
+            this.btnSave2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSave2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSave2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSave2.FlatAppearance.BorderSize = 0;
+            this.btnSave2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.btnSave2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
+            this.btnSave2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSave2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave2.ForeColor = System.Drawing.Color.Black;
+            this.btnSave2.Location = new System.Drawing.Point(2, 3);
+            this.btnSave2.Name = "btnSave2";
+            this.btnSave2.Size = new System.Drawing.Size(120, 50);
+            this.btnSave2.TabIndex = 56;
+            this.btnSave2.Text = "SAVE";
+            this.btnSave2.UseVisualStyleBackColor = false;
+            this.btnSave2.Click += new System.EventHandler(this.btnSave2_Click);
             // 
             // btnCancel2
             // 
@@ -1020,7 +1036,7 @@
             this.btnCancel2.TabIndex = 57;
             this.btnCancel2.Text = "CANCEL";
             this.btnCancel2.UseVisualStyleBackColor = false;
-            this.btnCancel2.Click += new System.EventHandler(this.button4_Click);
+            this.btnCancel2.Click += new System.EventHandler(this.btnCancel2_Click);
             // 
             // cbDept2
             // 
@@ -1029,10 +1045,17 @@
             this.cbDept2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbDept2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDept2.FormattingEnabled = true;
+            this.cbDept2.Items.AddRange(new object[] {
+            "Recruitment",
+            "Documentation",
+            "Accounting",
+            "Marketing",
+            "Operations"});
             this.cbDept2.Location = new System.Drawing.Point(306, 539);
             this.cbDept2.Name = "cbDept2";
             this.cbDept2.Size = new System.Drawing.Size(195, 27);
             this.cbDept2.TabIndex = 130;
+            this.cbDept2.SelectedIndexChanged += new System.EventHandler(this.cbDept2_SelectedIndexChanged);
             // 
             // txtContact2
             // 
@@ -1044,6 +1067,8 @@
             this.txtContact2.Name = "txtContact2";
             this.txtContact2.Size = new System.Drawing.Size(300, 26);
             this.txtContact2.TabIndex = 129;
+            this.txtContact2.TextChanged += new System.EventHandler(this.txtContact2_TextChanged);
+            this.txtContact2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContact2_KeyPress);
             // 
             // txtAddress2
             // 
@@ -1056,6 +1081,7 @@
             this.txtAddress2.Size = new System.Drawing.Size(436, 26);
             this.txtAddress2.TabIndex = 128;
             this.txtAddress2.Text = "House Number, Street, City/Province";
+            this.txtAddress2.TextChanged += new System.EventHandler(this.txtAddress2_TextChanged);
             // 
             // rbFemale2
             // 
@@ -1071,6 +1097,7 @@
             this.rbFemale2.TabStop = true;
             this.rbFemale2.Text = "Female";
             this.rbFemale2.UseVisualStyleBackColor = false;
+            this.rbFemale2.CheckedChanged += new System.EventHandler(this.rbFemale2_CheckedChanged);
             // 
             // rbMale2
             // 
@@ -1086,6 +1113,7 @@
             this.rbMale2.TabStop = true;
             this.rbMale2.Text = "Male";
             this.rbMale2.UseVisualStyleBackColor = false;
+            this.rbMale2.CheckedChanged += new System.EventHandler(this.rbMale2_CheckedChanged);
             // 
             // label8
             // 
@@ -1135,65 +1163,65 @@
             this.label11.TabIndex = 121;
             this.label11.Text = "Gender :";
             // 
-            // label12
+            // lblFNameStatus2
             // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.Color.Transparent;
-            this.label12.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Red;
-            this.label12.Location = new System.Drawing.Point(612, 330);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(17, 19);
-            this.label12.TabIndex = 120;
-            this.label12.Text = "*";
+            this.lblFNameStatus2.AutoSize = true;
+            this.lblFNameStatus2.BackColor = System.Drawing.Color.Transparent;
+            this.lblFNameStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFNameStatus2.ForeColor = System.Drawing.Color.Red;
+            this.lblFNameStatus2.Location = new System.Drawing.Point(612, 330);
+            this.lblFNameStatus2.Name = "lblFNameStatus2";
+            this.lblFNameStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblFNameStatus2.TabIndex = 120;
+            this.lblFNameStatus2.Text = "*";
             // 
-            // label13
+            // lblLNameStatus2
             // 
-            this.label13.AutoSize = true;
-            this.label13.BackColor = System.Drawing.Color.Transparent;
-            this.label13.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Red;
-            this.label13.Location = new System.Drawing.Point(612, 294);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(17, 19);
-            this.label13.TabIndex = 119;
-            this.label13.Text = "*";
+            this.lblLNameStatus2.AutoSize = true;
+            this.lblLNameStatus2.BackColor = System.Drawing.Color.Transparent;
+            this.lblLNameStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLNameStatus2.ForeColor = System.Drawing.Color.Red;
+            this.lblLNameStatus2.Location = new System.Drawing.Point(612, 294);
+            this.lblLNameStatus2.Name = "lblLNameStatus2";
+            this.lblLNameStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblLNameStatus2.TabIndex = 119;
+            this.lblLNameStatus2.Text = "*";
             // 
-            // label14
+            // lblConPassStatus2
             // 
-            this.label14.AutoSize = true;
-            this.label14.BackColor = System.Drawing.Color.Transparent;
-            this.label14.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Red;
-            this.label14.Location = new System.Drawing.Point(611, 206);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(17, 19);
-            this.label14.TabIndex = 118;
-            this.label14.Text = "*";
+            this.lblConPassStatus2.AutoSize = true;
+            this.lblConPassStatus2.BackColor = System.Drawing.Color.Transparent;
+            this.lblConPassStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConPassStatus2.ForeColor = System.Drawing.Color.Red;
+            this.lblConPassStatus2.Location = new System.Drawing.Point(611, 206);
+            this.lblConPassStatus2.Name = "lblConPassStatus2";
+            this.lblConPassStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblConPassStatus2.TabIndex = 118;
+            this.lblConPassStatus2.Text = "*";
             // 
-            // label15
+            // lblPassStatus2
             // 
-            this.label15.AutoSize = true;
-            this.label15.BackColor = System.Drawing.Color.Transparent;
-            this.label15.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Red;
-            this.label15.Location = new System.Drawing.Point(611, 170);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(17, 19);
-            this.label15.TabIndex = 117;
-            this.label15.Text = "*";
+            this.lblPassStatus2.AutoSize = true;
+            this.lblPassStatus2.BackColor = System.Drawing.Color.Transparent;
+            this.lblPassStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassStatus2.ForeColor = System.Drawing.Color.Red;
+            this.lblPassStatus2.Location = new System.Drawing.Point(611, 170);
+            this.lblPassStatus2.Name = "lblPassStatus2";
+            this.lblPassStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblPassStatus2.TabIndex = 117;
+            this.lblPassStatus2.Text = "*";
             // 
-            // label16
+            // lblUserStatus2
             // 
-            this.label16.AutoSize = true;
-            this.label16.BackColor = System.Drawing.Color.Transparent;
-            this.label16.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Red;
-            this.label16.Location = new System.Drawing.Point(611, 134);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(17, 19);
-            this.label16.TabIndex = 116;
-            this.label16.Text = "*";
+            this.lblUserStatus2.AutoSize = true;
+            this.lblUserStatus2.BackColor = System.Drawing.Color.Transparent;
+            this.lblUserStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserStatus2.ForeColor = System.Drawing.Color.Red;
+            this.lblUserStatus2.Location = new System.Drawing.Point(611, 134);
+            this.lblUserStatus2.Name = "lblUserStatus2";
+            this.lblUserStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblUserStatus2.TabIndex = 116;
+            this.lblUserStatus2.Text = "*";
             // 
             // txtMiddleName2
             // 
@@ -1207,6 +1235,7 @@
             this.txtMiddleName2.TabIndex = 115;
             this.txtMiddleName2.Text = "Middle Name";
             this.txtMiddleName2.TextChanged += new System.EventHandler(this.txtMiddleName2_TextChanged);
+            this.txtMiddleName2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtMiddleName2_KeyPress);
             // 
             // txtFirstName2
             // 
@@ -1220,6 +1249,7 @@
             this.txtFirstName2.TabIndex = 114;
             this.txtFirstName2.Text = "First Name";
             this.txtFirstName2.TextChanged += new System.EventHandler(this.txtFirstName2_TextChanged);
+            this.txtFirstName2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtFirstName2_KeyPress);
             // 
             // txtLastName2
             // 
@@ -1233,6 +1263,7 @@
             this.txtLastName2.TabIndex = 113;
             this.txtLastName2.Text = "Last Name";
             this.txtLastName2.TextChanged += new System.EventHandler(this.txtLastName2_TextChanged);
+            this.txtLastName2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLastName2_KeyPress);
             // 
             // label17
             // 
@@ -1293,6 +1324,8 @@
             this.txtConPass2.PasswordChar = '•';
             this.txtConPass2.Size = new System.Drawing.Size(300, 26);
             this.txtConPass2.TabIndex = 108;
+            this.txtConPass2.TextChanged += new System.EventHandler(this.txtConPass2_TextChanged);
+            this.txtConPass2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtConPass2_KeyPress);
             // 
             // txtPassword2
             // 
@@ -1305,6 +1338,8 @@
             this.txtPassword2.PasswordChar = '•';
             this.txtPassword2.Size = new System.Drawing.Size(300, 26);
             this.txtPassword2.TabIndex = 107;
+            this.txtPassword2.TextChanged += new System.EventHandler(this.txtPassword2_TextChanged);
+            this.txtPassword2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword2_KeyPress);
             // 
             // label21
             // 
@@ -1328,6 +1363,7 @@
             this.txtUsername2.Name = "txtUsername2";
             this.txtUsername2.Size = new System.Drawing.Size(300, 26);
             this.txtUsername2.TabIndex = 105;
+            this.txtUsername2.TextChanged += new System.EventHandler(this.txtUsername2_TextChanged);
             // 
             // label1
             // 
@@ -1388,8 +1424,6 @@
         private System.Windows.Forms.ComboBox cbDept;
         private System.Windows.Forms.TextBox txtContact;
         private System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.RadioButton rbFemale;
-        private System.Windows.Forms.RadioButton rbMale;
         private System.Windows.Forms.Label lblDept;
         private System.Windows.Forms.Label lblContact;
         private System.Windows.Forms.Label lblAddress;
@@ -1410,46 +1444,49 @@
         private System.Windows.Forms.TextBox txtPass;
         private System.Windows.Forms.Label lblAddEmp;
         private System.Windows.Forms.TextBox txtUsername;
-        private System.Windows.Forms.ComboBox cbYear2;
-        private System.Windows.Forms.ComboBox cbDay2;
-        private System.Windows.Forms.ComboBox cbMonth2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblGenderStatus2;
+        private System.Windows.Forms.Label lblBirthdayStatus2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblContactStatus2;
+        private System.Windows.Forms.Label lblAddressStatus2;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Button btnSave;
+        private System.Windows.Forms.Button btnSave2;
         private System.Windows.Forms.Button btnCancel2;
-        private System.Windows.Forms.ComboBox cbDept2;
-        private System.Windows.Forms.TextBox txtContact2;
-        private System.Windows.Forms.TextBox txtAddress2;
-        private System.Windows.Forms.RadioButton rbFemale2;
-        private System.Windows.Forms.RadioButton rbMale2;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox txtMiddleName2;
-        private System.Windows.Forms.TextBox txtFirstName2;
-        private System.Windows.Forms.TextBox txtLastName2;
+        private System.Windows.Forms.Label lblFNameStatus2;
+        private System.Windows.Forms.Label lblLNameStatus2;
+        private System.Windows.Forms.Label lblConPassStatus2;
+        private System.Windows.Forms.Label lblPassStatus2;
+        private System.Windows.Forms.Label lblUserStatus2;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.TextBox txtConPass2;
-        private System.Windows.Forms.TextBox txtPassword2;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox txtUsername2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtEmpId;
         public System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lblDeptStatus;
+        public System.Windows.Forms.ComboBox cbYear2;
+        public System.Windows.Forms.ComboBox cbDay2;
+        public System.Windows.Forms.ComboBox cbMonth2;
+        public System.Windows.Forms.ComboBox cbDept2;
+        public System.Windows.Forms.TextBox txtContact2;
+        public System.Windows.Forms.TextBox txtAddress2;
+        public System.Windows.Forms.RadioButton rbFemale2;
+        public System.Windows.Forms.RadioButton rbMale2;
+        public System.Windows.Forms.TextBox txtMiddleName2;
+        public System.Windows.Forms.TextBox txtFirstName2;
+        public System.Windows.Forms.TextBox txtLastName2;
+        public System.Windows.Forms.TextBox txtConPass2;
+        public System.Windows.Forms.TextBox txtPassword2;
+        public System.Windows.Forms.TextBox txtUsername2;
+        public System.Windows.Forms.TextBox txtEmpId;
+        private System.Windows.Forms.Label lblDeptStatus2;
+        private System.Windows.Forms.RadioButton rbFemale;
+        private System.Windows.Forms.RadioButton rbMale;
     }
 }

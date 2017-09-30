@@ -38,11 +38,10 @@ namespace Findstaff
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
-        {
-            connection.Open();
+        {   
             ucJobOrderAddEdit.Dock = DockStyle.Fill;
             ucJobOrderAddEdit.txtJobNo2.Text = dgvJobOrder.SelectedRows[0].Cells[0].Value.ToString();
-            ucJobOrderAddEdit.cbEmployer2.Text = dgvJobOrder.SelectedRows[0].Cells[1].Value.ToString();
+            connection.Open();
             cmd = "select monthname(cntrctstart), day(cntrctstart), year(cntrctstart) from joborder_t where jorder_id = '" + dgvJobOrder.SelectedRows[0].Cells[0].Value.ToString() + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
@@ -54,6 +53,8 @@ namespace Findstaff
             }
             dr.Close();
             connection.Close();
+            ucJobOrderAddEdit.cbEmployer2.Text = dgvJobOrder.SelectedRows[0].Cells[1].Value.ToString();
+
             ucJobOrderAddEdit.Visible = true;
             ucJobOrderAddEdit.panel1.Visible = false;
             ucJobOrderAddEdit.panel2.Visible = true;
