@@ -52,11 +52,15 @@ namespace Findstaff
             Connection con = new Connection();
             connection = con.dbConnection();
             connection.Open();
-            string cmd = "delete from job_t where job_id = '" + dgvJobs.SelectedRows[0].Cells[0].Value.ToString() + "';";
-            com = new MySqlCommand(cmd, connection);
-            com.ExecuteNonQuery();
-            dgvJobs.Rows.Remove(dgvJobs.SelectedRows[0]);
-            MessageBox.Show("Job Deleted!", "Job Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult rs = MessageBox.Show("Are you sure you want to delete this record?", "Confirmation", MessageBoxButtons.YesNo);
+            if (rs == DialogResult.Yes)
+            {
+                string cmd = "delete from job_t where job_id = '" + dgvJobs.SelectedRows[0].Cells[0].Value.ToString() + "';";
+                com = new MySqlCommand(cmd, connection);
+                com.ExecuteNonQuery();
+                dgvJobs.Rows.Remove(dgvJobs.SelectedRows[0]);
+                MessageBox.Show("Job Deleted!", "Job Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             connection.Close();
         }
 

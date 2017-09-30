@@ -51,11 +51,15 @@ namespace Findstaff
             Connection con = new Connection();
             connection = con.dbConnection();
             connection.Open();
-            string cmd = "delete from genskills_t where skill_id = '" + dgvSkills.SelectedRows[0].Cells[0].Value.ToString() + "';";
-            com = new MySqlCommand(cmd, connection);
-            com.ExecuteNonQuery();
-            dgvSkills.Rows.Remove(dgvSkills.SelectedRows[0]);
-            MessageBox.Show("Skills Deleted!", "Skills Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult rs = MessageBox.Show("Are you sure you want to delete this record?", "Confirmation", MessageBoxButtons.YesNo);
+            if (rs == DialogResult.Yes)
+            {
+                string cmd = "delete from genskills_t where skill_id = '" + dgvSkills.SelectedRows[0].Cells[0].Value.ToString() + "';";
+                com = new MySqlCommand(cmd, connection);
+                com.ExecuteNonQuery();
+                dgvSkills.Rows.Remove(dgvSkills.SelectedRows[0]);
+                MessageBox.Show("Skills Deleted!", "Skills Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             connection.Close();
         }
 
