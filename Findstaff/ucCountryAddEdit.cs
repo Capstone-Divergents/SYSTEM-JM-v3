@@ -164,9 +164,9 @@ namespace Findstaff
                 
                 for(int x = 0; x < dgvReq.Rows.Count; x++)
                 {
-                    if (cbReq2.Items.Contains(dgvReq.Rows[x].Cells[1].Value.ToString()))
+                    if (cbReq.Items.Contains(dgvReq.Rows[x].Cells[1].Value.ToString()))
                     {
-                        cbReq2.Items.Remove(dgvReq.Rows[x].Cells[1].Value.ToString());
+                        cbReq.Items.Remove(dgvReq.Rows[x].Cells[1].Value.ToString());
                     }
                 }
             }

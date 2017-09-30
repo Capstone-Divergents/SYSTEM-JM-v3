@@ -39,6 +39,17 @@ namespace Findstaff
             ucCountryAddEdit.panel2.Visible = true;
         }
 
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            string cmd = "delete from country_t where country_id = '" + dgvCountry.SelectedRows[0].Cells[0].Value.ToString() + "';";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+            dgvCountry.Rows.Remove(dgvCountry.SelectedRows[0]);
+            MessageBox.Show("Country Deleted!", "Coutry Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            connection.Close();
+        }
+
         private void ucCountryAddEdit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
@@ -55,17 +66,9 @@ namespace Findstaff
             }
         }
 
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void ucCountry_Load(object sender, EventArgs e)
         {
-            Connection con = new Connection();
-            connection = con.dbConnection();
-            connection.Open();
-            string cmd = "delete from country_t where country_id = '" + dgvCountry.SelectedRows[0].Cells[0].Value.ToString() + "';";
-            com = new MySqlCommand(cmd, connection);
-            com.ExecuteNonQuery();
-            dgvCountry.Rows.Remove(dgvCountry.SelectedRows[0]);
-            MessageBox.Show("Country Deleted!", "Coutry Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            connection.Close();
+
         }
     }
 }
