@@ -144,7 +144,6 @@
             this.ucCountryAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucCountryAddEdit.TabIndex = 51;
             this.ucCountryAddEdit.Visible = false;
-            this.ucCountryAddEdit.VisibleChanged += new System.EventHandler(this.ucCountryAddEdit_VisibleChanged);
             // 
             // ucCountry
             // 
@@ -160,19 +159,17 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucCountry";
             this.Size = new System.Drawing.Size(1118, 450);
-            this.Load += new System.EventHandler(this.ucCountry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCountry)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
-
         #endregion
         private System.Windows.Forms.Label lblCountry;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
-        private ucCountryAddEdit ucCountryAddEdit;
         public System.Windows.Forms.DataGridView dgvCountry;
+        private ucCountryAddEdit ucCountryAddEdit;
     }
 }

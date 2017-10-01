@@ -20,7 +20,7 @@ namespace Findstaff
         {
             InitializeComponent();
         }
-        
+
         private void btnAdd_Click(object sender, EventArgs e)
         {
             ucCountryAddEdit.Dock = DockStyle.Fill;
@@ -41,6 +41,8 @@ namespace Findstaff
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
+            Connection con = new Connection();
+            connection = con.dbConnection();
             connection.Open();
             string cmd = "delete from country_t where country_id = '" + dgvCountry.SelectedRows[0].Cells[0].Value.ToString() + "';";
             com = new MySqlCommand(cmd, connection);
@@ -64,11 +66,6 @@ namespace Findstaff
                     dgvCountry.DataSource = ds.Tables[0];
                 }
             }
-        }
-
-        private void ucCountry_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

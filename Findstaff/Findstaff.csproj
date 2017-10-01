@@ -388,7 +388,7 @@
     <EmbeddedResource Include="ucAppList.resx">
       <DependentUpon>ucAppList.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucCOuntry.resx">
+    <EmbeddedResource Include="ucCountry.resx">
       <DependentUpon>ucCountry.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucCountryAddEdit.resx">
