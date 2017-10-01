@@ -782,9 +782,9 @@
             this.panel2.Controls.Add(this.txtEmpId);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(316, 0);
+            this.panel2.Location = new System.Drawing.Point(231, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(802, 450);
+            this.panel2.Size = new System.Drawing.Size(887, 450);
             this.panel2.TabIndex = 3;
             // 
             // lblDeptStatus2

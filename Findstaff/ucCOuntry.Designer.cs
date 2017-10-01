@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvCountry = new System.Windows.Forms.DataGridView();
             this.lblCountry = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
@@ -48,23 +48,23 @@
             this.dgvCountry.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvCountry.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvCountry.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvCountry.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvCountry.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvCountry.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCountry.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvCountry.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvCountry.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvCountry.Location = new System.Drawing.Point(100, 100);
             this.dgvCountry.MultiSelect = false;
@@ -144,7 +144,6 @@
             this.ucCountryAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucCountryAddEdit.TabIndex = 51;
             this.ucCountryAddEdit.Visible = false;
-            this.ucCountryAddEdit.VisibleChanged += new System.EventHandler(this.ucCountryAddEdit_VisibleChanged);
             // 
             // ucCountry
             // 
@@ -160,19 +159,17 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucCountry";
             this.Size = new System.Drawing.Size(1118, 450);
-            this.Load += new System.EventHandler(this.ucCountry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCountry)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
-
         #endregion
         private System.Windows.Forms.Label lblCountry;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
-        private ucCountryAddEdit ucCountryAddEdit;
         public System.Windows.Forms.DataGridView dgvCountry;
+        private ucCountryAddEdit ucCountryAddEdit;
     }
 }
