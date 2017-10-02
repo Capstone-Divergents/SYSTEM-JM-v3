@@ -204,16 +204,7 @@ namespace Findstaff
                 {
                     dgvReq2.Rows.Add(reqlist[0,x], reqlist[1,x]);
                 }
-                //using (connection)
-                //{
-                //    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
-                //    {
-                //        DataSet ds = new DataSet();
-                //        adapter.Fill(ds);
-                //        dgvReq2.DataSource = ds.Tables[0];
-                //    }
-                //}
-
+                
                 for (int x = 0; x < dgvReq2.Rows.Count; x++)
                 {
                     if (cbReq2.Items.Contains(dgvReq2.Rows[x].Cells[1].Value.ToString()))
