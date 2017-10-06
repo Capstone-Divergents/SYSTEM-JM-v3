@@ -23,20 +23,20 @@ namespace Findstaff
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ucCountryAddEdit.Dock = DockStyle.Fill;
-            ucCountryAddEdit.Visible = true;
-            ucCountryAddEdit.panel1.Visible = true;
-            ucCountryAddEdit.panel2.Visible = false;
+            ucCountryAddEdit1.Dock = DockStyle.Fill;
+            ucCountryAddEdit1.Visible = true;
+            ucCountryAddEdit1.panel1.Visible = true;
+            ucCountryAddEdit1.panel2.Visible = false;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            ucCountryAddEdit.txtCountryID2.Text = dgvCountry.SelectedRows[0].Cells[0].Value.ToString();
-            ucCountryAddEdit.txtCountryName2.Text = dgvCountry.SelectedRows[0].Cells[1].Value.ToString();
-            ucCountryAddEdit.Dock = DockStyle.Fill;
-            ucCountryAddEdit.Visible = true;
-            ucCountryAddEdit.panel1.Visible = false;
-            ucCountryAddEdit.panel2.Visible = true;
+            ucCountryAddEdit1.txtCountryID2.Text = dgvCountry.SelectedRows[0].Cells[0].Value.ToString();
+            ucCountryAddEdit1.txtCountryName2.Text = dgvCountry.SelectedRows[0].Cells[1].Value.ToString();
+            ucCountryAddEdit1.Dock = DockStyle.Fill;
+            ucCountryAddEdit1.Visible = true;
+            ucCountryAddEdit1.panel1.Visible = false;
+            ucCountryAddEdit1.panel2.Visible = true;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -51,8 +51,8 @@ namespace Findstaff
             MessageBox.Show("Country Deleted!", "Coutry Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             connection.Close();
         }
-
-        private void ucCountryAddEdit_VisibleChanged(object sender, EventArgs e)
+        
+        private void ucCountryAddEdit1_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
             connection = con.dbConnection();
