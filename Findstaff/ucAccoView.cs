@@ -23,27 +23,7 @@ namespace Findstaff
 
         private void ucAccoView_Load(object sender, EventArgs e)
         {
-            string app = "", jname = "", jorder = "", emp = "";
 
-            Connection con = new Connection();
-            connection = con.dbConnection();
-            connection.Open();
-            string query = "SELECT * FROM EMP_T;";
-            com = new MySqlCommand(query, connection);
-            MySqlDataReader dataReader = com.ExecuteReader();
-            while (dataReader.Read())
-            {
-                //app = dataReader.GetString();
-                //jname = dataReader.GetString();
-                //jorder = dataReader.GetString();
-                //emp = dataReader.GetString();
-            }
-            connection.Close();
-
-            applicant.Text = app;
-            jobname.Text = jname;
-            joborder.Text = jorder;
-            employer.Text = emp;
         }
 
         private void btnPayBal_Click(object sender, EventArgs e)

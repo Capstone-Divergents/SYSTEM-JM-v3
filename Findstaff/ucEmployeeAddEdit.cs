@@ -14,7 +14,6 @@ namespace Findstaff
 {
     public partial class ucEmployeeAddEdit : UserControl
     {
-
         private MySqlConnection connection;
         MySqlCommand com = new MySqlCommand();
         MySqlDataReader dr;
@@ -27,6 +26,7 @@ namespace Findstaff
             panel2.Dock = DockStyle.Fill;
         }
 
+        #region btnAdd_Click
         private void btnAdd_Click(object sender, EventArgs e)
         {
             connection.Open();
@@ -201,7 +201,9 @@ namespace Findstaff
             lblDeptStatus.Text = "*";
             this.Hide();
         }
+        #endregion
 
+        #region btnSave2_Click
         private void btnSave2_Click(object sender, EventArgs e)
         {
             connection.Open();
@@ -306,8 +308,9 @@ namespace Findstaff
             lblDeptStatus2.Text = "*";
             this.Hide();
         }
+        #endregion
 
-        #region
+        #region Validations
         private void txtUsername_KeyPress(object sender, KeyPressEventArgs e)
         {
             if(Char.IsSymbol(e.KeyChar) || Char.IsWhiteSpace(e.KeyChar)|| Char.IsPunctuation(e.KeyChar))
