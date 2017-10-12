@@ -21,8 +21,8 @@ namespace Findstaff
             database = "rms";
             uid = "root";
             //password = "anterograde";
-            password = "rootpass";
-            //password = "camilo";
+            //password = "rootpass";
+            password = "camilo";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
             database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
