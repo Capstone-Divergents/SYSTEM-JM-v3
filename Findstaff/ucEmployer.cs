@@ -60,12 +60,6 @@ namespace Findstaff
             connection.Close();
         }
 
-        private void btnEmpView_Click(object sender, EventArgs e)
-        {
-            ucEmployerView.Dock = DockStyle.Fill;
-            ucEmployerView.Visible = true;
-        }
-
         private void ucEmployerAddEdit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
