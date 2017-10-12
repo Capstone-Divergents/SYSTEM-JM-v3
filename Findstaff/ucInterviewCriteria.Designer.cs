@@ -40,7 +40,7 @@
             this.txtJobOrderId = new System.Windows.Forms.TextBox();
             this.lblAppName = new System.Windows.Forms.Label();
             this.txtAppName = new System.Windows.Forms.TextBox();
-            this.lblVoice = new System.Windows.Forms.Label();
+            this.lblAnswering = new System.Windows.Forms.Label();
             this.lblVolume = new System.Windows.Forms.Label();
             this.lblVolume1 = new System.Windows.Forms.Label();
             this.lblVolume2 = new System.Windows.Forms.Label();
@@ -265,46 +265,6 @@
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
-            this.panel33 = new System.Windows.Forms.Panel();
-            this.cb33x1 = new System.Windows.Forms.RadioButton();
-            this.cb33x5 = new System.Windows.Forms.RadioButton();
-            this.cb33x2 = new System.Windows.Forms.RadioButton();
-            this.cb33x4 = new System.Windows.Forms.RadioButton();
-            this.cb33x3 = new System.Windows.Forms.RadioButton();
-            this.panel32 = new System.Windows.Forms.Panel();
-            this.cb32x1 = new System.Windows.Forms.RadioButton();
-            this.cb32x5 = new System.Windows.Forms.RadioButton();
-            this.cb32x2 = new System.Windows.Forms.RadioButton();
-            this.cb32x4 = new System.Windows.Forms.RadioButton();
-            this.cb32x3 = new System.Windows.Forms.RadioButton();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.cb31x1 = new System.Windows.Forms.RadioButton();
-            this.cb31x5 = new System.Windows.Forms.RadioButton();
-            this.cb31x2 = new System.Windows.Forms.RadioButton();
-            this.cb31x4 = new System.Windows.Forms.RadioButton();
-            this.cb31x3 = new System.Windows.Forms.RadioButton();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.cb30x1 = new System.Windows.Forms.RadioButton();
-            this.cb30x5 = new System.Windows.Forms.RadioButton();
-            this.cb30x2 = new System.Windows.Forms.RadioButton();
-            this.cb30x4 = new System.Windows.Forms.RadioButton();
-            this.cb30x3 = new System.Windows.Forms.RadioButton();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.cb29x1 = new System.Windows.Forms.RadioButton();
-            this.cb29x5 = new System.Windows.Forms.RadioButton();
-            this.cb29x2 = new System.Windows.Forms.RadioButton();
-            this.cb29x4 = new System.Windows.Forms.RadioButton();
-            this.cb29x3 = new System.Windows.Forms.RadioButton();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
             this.pnlButtons.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -334,11 +294,6 @@
             this.panel23.SuspendLayout();
             this.panel28.SuspendLayout();
             this.panel27.SuspendLayout();
-            this.panel33.SuspendLayout();
-            this.panel32.SuspendLayout();
-            this.panel31.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.panel29.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnClose
@@ -389,7 +344,7 @@
             this.pnlButtons.Controls.Add(this.btnEvaluate);
             this.pnlButtons.Controls.Add(this.btnClose);
             this.pnlButtons.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlButtons.Location = new System.Drawing.Point(454, 2100);
+            this.pnlButtons.Location = new System.Drawing.Point(445, 1850);
             this.pnlButtons.Name = "pnlButtons";
             this.pnlButtons.Size = new System.Drawing.Size(211, 80);
             this.pnlButtons.TabIndex = 496;
@@ -492,17 +447,17 @@
             this.txtAppName.Size = new System.Drawing.Size(300, 26);
             this.txtAppName.TabIndex = 497;
             // 
-            // lblVoice
+            // lblAnswering
             // 
-            this.lblVoice.AutoSize = true;
-            this.lblVoice.BackColor = System.Drawing.Color.Transparent;
-            this.lblVoice.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVoice.ForeColor = System.Drawing.Color.Black;
-            this.lblVoice.Location = new System.Drawing.Point(100, 255);
-            this.lblVoice.Name = "lblVoice";
-            this.lblVoice.Size = new System.Drawing.Size(83, 25);
-            this.lblVoice.TabIndex = 505;
-            this.lblVoice.Text = "VOICE";
+            this.lblAnswering.AutoSize = true;
+            this.lblAnswering.BackColor = System.Drawing.Color.Transparent;
+            this.lblAnswering.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAnswering.ForeColor = System.Drawing.Color.Black;
+            this.lblAnswering.Location = new System.Drawing.Point(100, 255);
+            this.lblAnswering.Name = "lblAnswering";
+            this.lblAnswering.Size = new System.Drawing.Size(227, 25);
+            this.lblAnswering.TabIndex = 505;
+            this.lblAnswering.Text = "ANSWERING SKILLS";
             // 
             // lblVolume
             // 
@@ -3080,487 +3035,12 @@
             this.label46.TabIndex = 594;
             this.label46.Text = "LISTENING SKILLS";
             // 
-            // panel33
-            // 
-            this.panel33.Controls.Add(this.cb33x1);
-            this.panel33.Controls.Add(this.cb33x5);
-            this.panel33.Controls.Add(this.cb33x2);
-            this.panel33.Controls.Add(this.cb33x4);
-            this.panel33.Controls.Add(this.cb33x3);
-            this.panel33.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel33.Location = new System.Drawing.Point(712, 2039);
-            this.panel33.Name = "panel33";
-            this.panel33.Size = new System.Drawing.Size(215, 19);
-            this.panel33.TabIndex = 616;
-            // 
-            // cb33x1
-            // 
-            this.cb33x1.AutoSize = true;
-            this.cb33x1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb33x1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb33x1.Location = new System.Drawing.Point(3, 3);
-            this.cb33x1.Name = "cb33x1";
-            this.cb33x1.Size = new System.Drawing.Size(14, 13);
-            this.cb33x1.TabIndex = 515;
-            this.cb33x1.UseVisualStyleBackColor = true;
-            // 
-            // cb33x5
-            // 
-            this.cb33x5.AutoSize = true;
-            this.cb33x5.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb33x5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb33x5.Location = new System.Drawing.Point(198, 3);
-            this.cb33x5.Name = "cb33x5";
-            this.cb33x5.Size = new System.Drawing.Size(14, 13);
-            this.cb33x5.TabIndex = 520;
-            this.cb33x5.UseVisualStyleBackColor = true;
-            // 
-            // cb33x2
-            // 
-            this.cb33x2.AutoSize = true;
-            this.cb33x2.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb33x2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb33x2.Location = new System.Drawing.Point(52, 3);
-            this.cb33x2.Name = "cb33x2";
-            this.cb33x2.Size = new System.Drawing.Size(14, 13);
-            this.cb33x2.TabIndex = 517;
-            this.cb33x2.UseVisualStyleBackColor = true;
-            // 
-            // cb33x4
-            // 
-            this.cb33x4.AutoSize = true;
-            this.cb33x4.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb33x4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb33x4.Location = new System.Drawing.Point(149, 3);
-            this.cb33x4.Name = "cb33x4";
-            this.cb33x4.Size = new System.Drawing.Size(14, 13);
-            this.cb33x4.TabIndex = 519;
-            this.cb33x4.UseVisualStyleBackColor = true;
-            // 
-            // cb33x3
-            // 
-            this.cb33x3.AutoSize = true;
-            this.cb33x3.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb33x3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb33x3.Location = new System.Drawing.Point(101, 3);
-            this.cb33x3.Name = "cb33x3";
-            this.cb33x3.Size = new System.Drawing.Size(14, 13);
-            this.cb33x3.TabIndex = 518;
-            this.cb33x3.UseVisualStyleBackColor = true;
-            // 
-            // panel32
-            // 
-            this.panel32.Controls.Add(this.cb32x1);
-            this.panel32.Controls.Add(this.cb32x5);
-            this.panel32.Controls.Add(this.cb32x2);
-            this.panel32.Controls.Add(this.cb32x4);
-            this.panel32.Controls.Add(this.cb32x3);
-            this.panel32.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel32.Location = new System.Drawing.Point(712, 1984);
-            this.panel32.Name = "panel32";
-            this.panel32.Size = new System.Drawing.Size(215, 19);
-            this.panel32.TabIndex = 615;
-            // 
-            // cb32x1
-            // 
-            this.cb32x1.AutoSize = true;
-            this.cb32x1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb32x1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb32x1.Location = new System.Drawing.Point(3, 3);
-            this.cb32x1.Name = "cb32x1";
-            this.cb32x1.Size = new System.Drawing.Size(14, 13);
-            this.cb32x1.TabIndex = 515;
-            this.cb32x1.UseVisualStyleBackColor = true;
-            // 
-            // cb32x5
-            // 
-            this.cb32x5.AutoSize = true;
-            this.cb32x5.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb32x5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb32x5.Location = new System.Drawing.Point(198, 3);
-            this.cb32x5.Name = "cb32x5";
-            this.cb32x5.Size = new System.Drawing.Size(14, 13);
-            this.cb32x5.TabIndex = 520;
-            this.cb32x5.UseVisualStyleBackColor = true;
-            // 
-            // cb32x2
-            // 
-            this.cb32x2.AutoSize = true;
-            this.cb32x2.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb32x2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb32x2.Location = new System.Drawing.Point(52, 3);
-            this.cb32x2.Name = "cb32x2";
-            this.cb32x2.Size = new System.Drawing.Size(14, 13);
-            this.cb32x2.TabIndex = 517;
-            this.cb32x2.UseVisualStyleBackColor = true;
-            // 
-            // cb32x4
-            // 
-            this.cb32x4.AutoSize = true;
-            this.cb32x4.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb32x4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb32x4.Location = new System.Drawing.Point(149, 3);
-            this.cb32x4.Name = "cb32x4";
-            this.cb32x4.Size = new System.Drawing.Size(14, 13);
-            this.cb32x4.TabIndex = 519;
-            this.cb32x4.UseVisualStyleBackColor = true;
-            // 
-            // cb32x3
-            // 
-            this.cb32x3.AutoSize = true;
-            this.cb32x3.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb32x3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb32x3.Location = new System.Drawing.Point(101, 3);
-            this.cb32x3.Name = "cb32x3";
-            this.cb32x3.Size = new System.Drawing.Size(14, 13);
-            this.cb32x3.TabIndex = 518;
-            this.cb32x3.UseVisualStyleBackColor = true;
-            // 
-            // panel31
-            // 
-            this.panel31.Controls.Add(this.cb31x1);
-            this.panel31.Controls.Add(this.cb31x5);
-            this.panel31.Controls.Add(this.cb31x2);
-            this.panel31.Controls.Add(this.cb31x4);
-            this.panel31.Controls.Add(this.cb31x3);
-            this.panel31.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel31.Location = new System.Drawing.Point(712, 1959);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(215, 19);
-            this.panel31.TabIndex = 614;
-            // 
-            // cb31x1
-            // 
-            this.cb31x1.AutoSize = true;
-            this.cb31x1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb31x1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb31x1.Location = new System.Drawing.Point(3, 3);
-            this.cb31x1.Name = "cb31x1";
-            this.cb31x1.Size = new System.Drawing.Size(14, 13);
-            this.cb31x1.TabIndex = 515;
-            this.cb31x1.UseVisualStyleBackColor = true;
-            // 
-            // cb31x5
-            // 
-            this.cb31x5.AutoSize = true;
-            this.cb31x5.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb31x5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb31x5.Location = new System.Drawing.Point(198, 3);
-            this.cb31x5.Name = "cb31x5";
-            this.cb31x5.Size = new System.Drawing.Size(14, 13);
-            this.cb31x5.TabIndex = 520;
-            this.cb31x5.UseVisualStyleBackColor = true;
-            // 
-            // cb31x2
-            // 
-            this.cb31x2.AutoSize = true;
-            this.cb31x2.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb31x2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb31x2.Location = new System.Drawing.Point(52, 3);
-            this.cb31x2.Name = "cb31x2";
-            this.cb31x2.Size = new System.Drawing.Size(14, 13);
-            this.cb31x2.TabIndex = 517;
-            this.cb31x2.UseVisualStyleBackColor = true;
-            // 
-            // cb31x4
-            // 
-            this.cb31x4.AutoSize = true;
-            this.cb31x4.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb31x4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb31x4.Location = new System.Drawing.Point(149, 3);
-            this.cb31x4.Name = "cb31x4";
-            this.cb31x4.Size = new System.Drawing.Size(14, 13);
-            this.cb31x4.TabIndex = 519;
-            this.cb31x4.UseVisualStyleBackColor = true;
-            // 
-            // cb31x3
-            // 
-            this.cb31x3.AutoSize = true;
-            this.cb31x3.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb31x3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb31x3.Location = new System.Drawing.Point(101, 3);
-            this.cb31x3.Name = "cb31x3";
-            this.cb31x3.Size = new System.Drawing.Size(14, 13);
-            this.cb31x3.TabIndex = 518;
-            this.cb31x3.UseVisualStyleBackColor = true;
-            // 
-            // panel30
-            // 
-            this.panel30.Controls.Add(this.cb30x1);
-            this.panel30.Controls.Add(this.cb30x5);
-            this.panel30.Controls.Add(this.cb30x2);
-            this.panel30.Controls.Add(this.cb30x4);
-            this.panel30.Controls.Add(this.cb30x3);
-            this.panel30.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel30.Location = new System.Drawing.Point(712, 1899);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(215, 19);
-            this.panel30.TabIndex = 613;
-            // 
-            // cb30x1
-            // 
-            this.cb30x1.AutoSize = true;
-            this.cb30x1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb30x1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb30x1.Location = new System.Drawing.Point(3, 3);
-            this.cb30x1.Name = "cb30x1";
-            this.cb30x1.Size = new System.Drawing.Size(14, 13);
-            this.cb30x1.TabIndex = 515;
-            this.cb30x1.UseVisualStyleBackColor = true;
-            // 
-            // cb30x5
-            // 
-            this.cb30x5.AutoSize = true;
-            this.cb30x5.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb30x5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb30x5.Location = new System.Drawing.Point(198, 3);
-            this.cb30x5.Name = "cb30x5";
-            this.cb30x5.Size = new System.Drawing.Size(14, 13);
-            this.cb30x5.TabIndex = 520;
-            this.cb30x5.UseVisualStyleBackColor = true;
-            // 
-            // cb30x2
-            // 
-            this.cb30x2.AutoSize = true;
-            this.cb30x2.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb30x2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb30x2.Location = new System.Drawing.Point(52, 3);
-            this.cb30x2.Name = "cb30x2";
-            this.cb30x2.Size = new System.Drawing.Size(14, 13);
-            this.cb30x2.TabIndex = 517;
-            this.cb30x2.UseVisualStyleBackColor = true;
-            // 
-            // cb30x4
-            // 
-            this.cb30x4.AutoSize = true;
-            this.cb30x4.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb30x4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb30x4.Location = new System.Drawing.Point(149, 3);
-            this.cb30x4.Name = "cb30x4";
-            this.cb30x4.Size = new System.Drawing.Size(14, 13);
-            this.cb30x4.TabIndex = 519;
-            this.cb30x4.UseVisualStyleBackColor = true;
-            // 
-            // cb30x3
-            // 
-            this.cb30x3.AutoSize = true;
-            this.cb30x3.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb30x3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb30x3.Location = new System.Drawing.Point(101, 3);
-            this.cb30x3.Name = "cb30x3";
-            this.cb30x3.Size = new System.Drawing.Size(14, 13);
-            this.cb30x3.TabIndex = 518;
-            this.cb30x3.UseVisualStyleBackColor = true;
-            // 
-            // panel29
-            // 
-            this.panel29.Controls.Add(this.cb29x1);
-            this.panel29.Controls.Add(this.cb29x5);
-            this.panel29.Controls.Add(this.cb29x2);
-            this.panel29.Controls.Add(this.cb29x4);
-            this.panel29.Controls.Add(this.cb29x3);
-            this.panel29.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel29.Location = new System.Drawing.Point(712, 1874);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(215, 19);
-            this.panel29.TabIndex = 612;
-            // 
-            // cb29x1
-            // 
-            this.cb29x1.AutoSize = true;
-            this.cb29x1.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb29x1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb29x1.Location = new System.Drawing.Point(3, 3);
-            this.cb29x1.Name = "cb29x1";
-            this.cb29x1.Size = new System.Drawing.Size(14, 13);
-            this.cb29x1.TabIndex = 515;
-            this.cb29x1.UseVisualStyleBackColor = true;
-            // 
-            // cb29x5
-            // 
-            this.cb29x5.AutoSize = true;
-            this.cb29x5.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb29x5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb29x5.Location = new System.Drawing.Point(198, 3);
-            this.cb29x5.Name = "cb29x5";
-            this.cb29x5.Size = new System.Drawing.Size(14, 13);
-            this.cb29x5.TabIndex = 520;
-            this.cb29x5.UseVisualStyleBackColor = true;
-            // 
-            // cb29x2
-            // 
-            this.cb29x2.AutoSize = true;
-            this.cb29x2.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb29x2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb29x2.Location = new System.Drawing.Point(52, 3);
-            this.cb29x2.Name = "cb29x2";
-            this.cb29x2.Size = new System.Drawing.Size(14, 13);
-            this.cb29x2.TabIndex = 517;
-            this.cb29x2.UseVisualStyleBackColor = true;
-            // 
-            // cb29x4
-            // 
-            this.cb29x4.AutoSize = true;
-            this.cb29x4.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb29x4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb29x4.Location = new System.Drawing.Point(149, 3);
-            this.cb29x4.Name = "cb29x4";
-            this.cb29x4.Size = new System.Drawing.Size(14, 13);
-            this.cb29x4.TabIndex = 519;
-            this.cb29x4.UseVisualStyleBackColor = true;
-            // 
-            // cb29x3
-            // 
-            this.cb29x3.AutoSize = true;
-            this.cb29x3.CheckAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.cb29x3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cb29x3.Location = new System.Drawing.Point(101, 3);
-            this.cb29x3.Name = "cb29x3";
-            this.cb29x3.Size = new System.Drawing.Size(14, 13);
-            this.cb29x3.TabIndex = 518;
-            this.cb29x3.UseVisualStyleBackColor = true;
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.BackColor = System.Drawing.Color.Transparent;
-            this.label47.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.Black;
-            this.label47.Location = new System.Drawing.Point(713, 1839);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(214, 19);
-            this.label47.TabIndex = 611;
-            this.label47.Text = "1          2          3          4          5";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.BackColor = System.Drawing.Color.Transparent;
-            this.label48.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.Black;
-            this.label48.Location = new System.Drawing.Point(150, 2014);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(130, 19);
-            this.label48.TabIndex = 610;
-            this.label48.Text = "Expressiveness";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.BackColor = System.Drawing.Color.Transparent;
-            this.label49.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.Black;
-            this.label49.Location = new System.Drawing.Point(150, 1929);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(93, 19);
-            this.label49.TabIndex = 609;
-            this.label49.Text = "Flexibility";
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.BackColor = System.Drawing.Color.Transparent;
-            this.label50.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label50.ForeColor = System.Drawing.Color.Black;
-            this.label50.Location = new System.Drawing.Point(180, 2039);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(227, 19);
-            this.label50.TabIndex = 608;
-            this.label50.Text = "Lively, animated, and spirited";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.BackColor = System.Drawing.Color.Transparent;
-            this.label51.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label51.ForeColor = System.Drawing.Color.Black;
-            this.label51.Location = new System.Drawing.Point(180, 1984);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(81, 19);
-            this.label51.TabIndex = 607;
-            this.label51.Text = "Vary tone";
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.BackColor = System.Drawing.Color.Transparent;
-            this.label52.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label52.ForeColor = System.Drawing.Color.Black;
-            this.label52.Location = new System.Drawing.Point(180, 1959);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(105, 19);
-            this.label52.TabIndex = 606;
-            this.label52.Text = "Vary Volume";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.BackColor = System.Drawing.Color.Transparent;
-            this.label53.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label53.ForeColor = System.Drawing.Color.Black;
-            this.label53.Location = new System.Drawing.Point(180, 1899);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(185, 19);
-            this.label53.TabIndex = 605;
-            this.label53.Text = "Not aware of being loud";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.BackColor = System.Drawing.Color.Transparent;
-            this.label54.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label54.ForeColor = System.Drawing.Color.Black;
-            this.label54.Location = new System.Drawing.Point(180, 1874);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(148, 19);
-            this.label54.TabIndex = 604;
-            this.label54.Text = "Don\'t strain to hear";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.BackColor = System.Drawing.Color.Transparent;
-            this.label55.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label55.ForeColor = System.Drawing.Color.Black;
-            this.label55.Location = new System.Drawing.Point(150, 1839);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(53, 19);
-            this.label55.TabIndex = 603;
-            this.label55.Text = "Clear";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.BackColor = System.Drawing.Color.Transparent;
-            this.label56.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(100, 1804);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(227, 25);
-            this.label56.TabIndex = 602;
-            this.label56.Text = "ANSWERING SKILLS";
-            // 
             // ucInterviewCriteria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Controls.Add(this.panel33);
-            this.Controls.Add(this.panel32);
-            this.Controls.Add(this.panel31);
-            this.Controls.Add(this.panel30);
-            this.Controls.Add(this.panel29);
-            this.Controls.Add(this.label47);
-            this.Controls.Add(this.label48);
-            this.Controls.Add(this.label49);
-            this.Controls.Add(this.label50);
-            this.Controls.Add(this.label51);
-            this.Controls.Add(this.label52);
-            this.Controls.Add(this.label53);
-            this.Controls.Add(this.label54);
-            this.Controls.Add(this.label55);
-            this.Controls.Add(this.label56);
             this.Controls.Add(this.panel28);
             this.Controls.Add(this.panel27);
             this.Controls.Add(this.label37);
@@ -3645,7 +3125,7 @@
             this.Controls.Add(this.lblVolume2);
             this.Controls.Add(this.lblVolume1);
             this.Controls.Add(this.lblVolume);
-            this.Controls.Add(this.lblVoice);
+            this.Controls.Add(this.lblAnswering);
             this.Controls.Add(this.lblEmpName);
             this.Controls.Add(this.lblJobName);
             this.Controls.Add(this.lblJobOrderId);
@@ -3657,7 +3137,7 @@
             this.Controls.Add(this.pnlButtons);
             this.Controls.Add(this.lblInterviewCriteria);
             this.Name = "ucInterviewCriteria";
-            this.Size = new System.Drawing.Size(1101, 450);
+            this.Size = new System.Drawing.Size(1084, 450);
             this.pnlButtons.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -3715,16 +3195,6 @@
             this.panel28.PerformLayout();
             this.panel27.ResumeLayout(false);
             this.panel27.PerformLayout();
-            this.panel33.ResumeLayout(false);
-            this.panel33.PerformLayout();
-            this.panel32.ResumeLayout(false);
-            this.panel32.PerformLayout();
-            this.panel31.ResumeLayout(false);
-            this.panel31.PerformLayout();
-            this.panel30.ResumeLayout(false);
-            this.panel30.PerformLayout();
-            this.panel29.ResumeLayout(false);
-            this.panel29.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3744,7 +3214,7 @@
         public System.Windows.Forms.TextBox txtJobOrderId;
         private System.Windows.Forms.Label lblAppName;
         public System.Windows.Forms.TextBox txtAppName;
-        private System.Windows.Forms.Label lblVoice;
+        private System.Windows.Forms.Label lblAnswering;
         public System.Windows.Forms.Label lblVolume;
         private System.Windows.Forms.Label lblVolume1;
         private System.Windows.Forms.Label lblVolume2;
@@ -3969,45 +3439,5 @@
         private System.Windows.Forms.Label label44;
         public System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Panel panel33;
-        private System.Windows.Forms.RadioButton cb33x1;
-        private System.Windows.Forms.RadioButton cb33x5;
-        private System.Windows.Forms.RadioButton cb33x2;
-        private System.Windows.Forms.RadioButton cb33x4;
-        private System.Windows.Forms.RadioButton cb33x3;
-        private System.Windows.Forms.Panel panel32;
-        private System.Windows.Forms.RadioButton cb32x1;
-        private System.Windows.Forms.RadioButton cb32x5;
-        private System.Windows.Forms.RadioButton cb32x2;
-        private System.Windows.Forms.RadioButton cb32x4;
-        private System.Windows.Forms.RadioButton cb32x3;
-        private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.RadioButton cb31x1;
-        private System.Windows.Forms.RadioButton cb31x5;
-        private System.Windows.Forms.RadioButton cb31x2;
-        private System.Windows.Forms.RadioButton cb31x4;
-        private System.Windows.Forms.RadioButton cb31x3;
-        private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.RadioButton cb30x1;
-        private System.Windows.Forms.RadioButton cb30x5;
-        private System.Windows.Forms.RadioButton cb30x2;
-        private System.Windows.Forms.RadioButton cb30x4;
-        private System.Windows.Forms.RadioButton cb30x3;
-        private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.RadioButton cb29x1;
-        private System.Windows.Forms.RadioButton cb29x5;
-        private System.Windows.Forms.RadioButton cb29x2;
-        private System.Windows.Forms.RadioButton cb29x4;
-        private System.Windows.Forms.RadioButton cb29x3;
-        public System.Windows.Forms.Label label47;
-        public System.Windows.Forms.Label label48;
-        public System.Windows.Forms.Label label49;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.Label label54;
-        public System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
     }
 }
