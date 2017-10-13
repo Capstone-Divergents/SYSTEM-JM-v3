@@ -36,11 +36,9 @@
             this.txtEmpName = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
             this.lblEmployer = new System.Windows.Forms.Label();
-            this.btnEmpView = new System.Windows.Forms.Button();
             this.btnEmpDel = new System.Windows.Forms.Button();
             this.btnEmpEdit = new System.Windows.Forms.Button();
             this.btnEmpAdd = new System.Windows.Forms.Button();
-            this.ucEmployerView = new Findstaff.ucEmployerView();
             this.ucEmployerAddEdit = new Findstaff.ucEmployerAddEdit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployer)).BeginInit();
             this.SuspendLayout();
@@ -147,22 +145,6 @@
             this.lblEmployer.TabIndex = 38;
             this.lblEmployer.Text = "Employer";
             // 
-            // btnEmpView
-            // 
-            this.btnEmpView.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnEmpView.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnEmpView.FlatAppearance.BorderSize = 0;
-            this.btnEmpView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmpView.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmpView.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpView.Location = new System.Drawing.Point(668, 365);
-            this.btnEmpView.Name = "btnEmpView";
-            this.btnEmpView.Size = new System.Drawing.Size(100, 50);
-            this.btnEmpView.TabIndex = 50;
-            this.btnEmpView.Text = "VIEW";
-            this.btnEmpView.UseVisualStyleBackColor = false;
-            this.btnEmpView.Click += new System.EventHandler(this.btnEmpView_Click);
-            // 
             // btnEmpDel
             // 
             this.btnEmpDel.BackColor = System.Drawing.Color.Gainsboro;
@@ -171,7 +153,7 @@
             this.btnEmpDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpDel.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpDel.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpDel.Location = new System.Drawing.Point(562, 365);
+            this.btnEmpDel.Location = new System.Drawing.Point(578, 365);
             this.btnEmpDel.Name = "btnEmpDel";
             this.btnEmpDel.Size = new System.Drawing.Size(100, 50);
             this.btnEmpDel.TabIndex = 49;
@@ -187,7 +169,7 @@
             this.btnEmpEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpEdit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpEdit.Location = new System.Drawing.Point(456, 365);
+            this.btnEmpEdit.Location = new System.Drawing.Point(472, 365);
             this.btnEmpEdit.Name = "btnEmpEdit";
             this.btnEmpEdit.Size = new System.Drawing.Size(100, 50);
             this.btnEmpEdit.TabIndex = 48;
@@ -203,22 +185,13 @@
             this.btnEmpAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpAdd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpAdd.Location = new System.Drawing.Point(350, 365);
+            this.btnEmpAdd.Location = new System.Drawing.Point(366, 365);
             this.btnEmpAdd.Name = "btnEmpAdd";
             this.btnEmpAdd.Size = new System.Drawing.Size(100, 50);
             this.btnEmpAdd.TabIndex = 47;
             this.btnEmpAdd.Text = "ADD";
             this.btnEmpAdd.UseVisualStyleBackColor = false;
             this.btnEmpAdd.Click += new System.EventHandler(this.btnEmpAdd_Click);
-            // 
-            // ucEmployerView
-            // 
-            this.ucEmployerView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucEmployerView.Location = new System.Drawing.Point(15, 0);
-            this.ucEmployerView.Name = "ucEmployerView";
-            this.ucEmployerView.Size = new System.Drawing.Size(10, 10);
-            this.ucEmployerView.TabIndex = 52;
-            this.ucEmployerView.Visible = false;
             // 
             // ucEmployerAddEdit
             // 
@@ -235,9 +208,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Controls.Add(this.ucEmployerView);
             this.Controls.Add(this.ucEmployerAddEdit);
-            this.Controls.Add(this.btnEmpView);
             this.Controls.Add(this.btnEmpDel);
             this.Controls.Add(this.btnEmpEdit);
             this.Controls.Add(this.btnEmpAdd);
@@ -262,12 +233,10 @@
         private System.Windows.Forms.TextBox txtEmpName;
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.Label lblEmployer;
-        private System.Windows.Forms.Button btnEmpView;
         private System.Windows.Forms.Button btnEmpDel;
         private System.Windows.Forms.Button btnEmpEdit;
         private System.Windows.Forms.Button btnEmpAdd;
         private ucEmployerAddEdit ucEmployerAddEdit;
-        private ucEmployerView ucEmployerView;
         public System.Windows.Forms.DataGridView dgvEmployer;
     }
 }

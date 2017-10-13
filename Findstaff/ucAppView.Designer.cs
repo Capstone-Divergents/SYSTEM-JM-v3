@@ -63,10 +63,7 @@
             this.label121 = new System.Windows.Forms.Label();
             this.label118 = new System.Windows.Forms.Label();
             this.label119 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
             this.label59 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
@@ -83,20 +80,19 @@
             this.height = new System.Windows.Forms.Label();
             this.weight = new System.Windows.Forms.Label();
             this.cityadd = new System.Windows.Forms.Label();
-            this.cityphoneno = new System.Windows.Forms.Label();
+            this.contactno = new System.Windows.Forms.Label();
             this.provadd = new System.Windows.Forms.Label();
-            this.provphoneno = new System.Windows.Forms.Label();
             this.fathersname = new System.Windows.Forms.Label();
             this.mothersname = new System.Windows.Forms.Label();
             this.spousename = new System.Windows.Forms.Label();
-            this.officephoneno = new System.Windows.Forms.Label();
-            this.cpno = new System.Windows.Forms.Label();
             this.fathersage = new System.Windows.Forms.Label();
             this.mothersage = new System.Windows.Forms.Label();
             this.spouseage = new System.Windows.Forms.Label();
             this.fathersoccupation = new System.Windows.Forms.Label();
             this.mothersoccupation = new System.Windows.Forms.Label();
             this.spouseoccupation = new System.Windows.Forms.Label();
+            this.appno = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEducBack)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmpHistory)).BeginInit();
@@ -110,7 +106,7 @@
             this.lblViewApp.AutoSize = true;
             this.lblViewApp.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblViewApp.ForeColor = System.Drawing.Color.Black;
-            this.lblViewApp.Location = new System.Drawing.Point(25, 25);
+            this.lblViewApp.Location = new System.Drawing.Point(25, 14);
             this.lblViewApp.Name = "lblViewApp";
             this.lblViewApp.Size = new System.Drawing.Size(254, 39);
             this.lblViewApp.TabIndex = 3;
@@ -384,7 +380,7 @@
             this.label127.AutoSize = true;
             this.label127.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label127.ForeColor = System.Drawing.Color.Black;
-            this.label127.Location = new System.Drawing.Point(102, 1244);
+            this.label127.Location = new System.Drawing.Point(102, 1241);
             this.label127.Name = "label127";
             this.label127.Size = new System.Drawing.Size(265, 19);
             this.label127.TabIndex = 305;
@@ -395,7 +391,7 @@
             this.label124.AutoSize = true;
             this.label124.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label124.ForeColor = System.Drawing.Color.Black;
-            this.label124.Location = new System.Drawing.Point(689, 1217);
+            this.label124.Location = new System.Drawing.Point(688, 1186);
             this.label124.Name = "label124";
             this.label124.Size = new System.Drawing.Size(98, 19);
             this.label124.TabIndex = 304;
@@ -406,7 +402,7 @@
             this.label125.AutoSize = true;
             this.label125.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label125.ForeColor = System.Drawing.Color.Black;
-            this.label125.Location = new System.Drawing.Point(519, 1217);
+            this.label125.Location = new System.Drawing.Point(474, 1186);
             this.label125.Name = "label125";
             this.label125.Size = new System.Drawing.Size(44, 19);
             this.label125.TabIndex = 303;
@@ -417,7 +413,7 @@
             this.label126.AutoSize = true;
             this.label126.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label126.ForeColor = System.Drawing.Color.Black;
-            this.label126.Location = new System.Drawing.Point(102, 1214);
+            this.label126.Location = new System.Drawing.Point(101, 1183);
             this.label126.Name = "label126";
             this.label126.Size = new System.Drawing.Size(115, 19);
             this.label126.TabIndex = 302;
@@ -428,7 +424,7 @@
             this.label120.AutoSize = true;
             this.label120.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label120.ForeColor = System.Drawing.Color.Black;
-            this.label120.Location = new System.Drawing.Point(689, 1186);
+            this.label120.Location = new System.Drawing.Point(688, 1155);
             this.label120.Name = "label120";
             this.label120.Size = new System.Drawing.Size(98, 19);
             this.label120.TabIndex = 301;
@@ -439,7 +435,7 @@
             this.label122.AutoSize = true;
             this.label122.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label122.ForeColor = System.Drawing.Color.Black;
-            this.label122.Location = new System.Drawing.Point(519, 1186);
+            this.label122.Location = new System.Drawing.Point(474, 1155);
             this.label122.Name = "label122";
             this.label122.Size = new System.Drawing.Size(44, 19);
             this.label122.TabIndex = 300;
@@ -450,7 +446,7 @@
             this.label123.AutoSize = true;
             this.label123.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label123.ForeColor = System.Drawing.Color.Black;
-            this.label123.Location = new System.Drawing.Point(102, 1183);
+            this.label123.Location = new System.Drawing.Point(101, 1152);
             this.label123.Name = "label123";
             this.label123.Size = new System.Drawing.Size(125, 19);
             this.label123.TabIndex = 299;
@@ -461,7 +457,7 @@
             this.label121.AutoSize = true;
             this.label121.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label121.ForeColor = System.Drawing.Color.Black;
-            this.label121.Location = new System.Drawing.Point(689, 1154);
+            this.label121.Location = new System.Drawing.Point(688, 1123);
             this.label121.Name = "label121";
             this.label121.Size = new System.Drawing.Size(98, 19);
             this.label121.TabIndex = 298;
@@ -472,7 +468,7 @@
             this.label118.AutoSize = true;
             this.label118.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label118.ForeColor = System.Drawing.Color.Black;
-            this.label118.Location = new System.Drawing.Point(519, 1154);
+            this.label118.Location = new System.Drawing.Point(474, 1123);
             this.label118.Name = "label118";
             this.label118.Size = new System.Drawing.Size(44, 19);
             this.label118.TabIndex = 297;
@@ -483,33 +479,11 @@
             this.label119.AutoSize = true;
             this.label119.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label119.ForeColor = System.Drawing.Color.Black;
-            this.label119.Location = new System.Drawing.Point(102, 1151);
+            this.label119.Location = new System.Drawing.Point(101, 1120);
             this.label119.Name = "label119";
             this.label119.Size = new System.Drawing.Size(120, 19);
             this.label119.TabIndex = 296;
             this.label119.Text = "Father\'s Name:";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label57.ForeColor = System.Drawing.Color.Black;
-            this.label57.Location = new System.Drawing.Point(517, 1118);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(161, 19);
-            this.label57.TabIndex = 295;
-            this.label57.Text = "Cell Phone Number :";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label58.ForeColor = System.Drawing.Color.Black;
-            this.label58.Location = new System.Drawing.Point(102, 1118);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(204, 19);
-            this.label58.TabIndex = 294;
-            this.label58.Text = "Provincial Phone Number :";
             // 
             // label59
             // 
@@ -522,34 +496,23 @@
             this.label59.TabIndex = 293;
             this.label59.Text = "Provincial Address/Birthplace :";
             // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label56.ForeColor = System.Drawing.Color.Black;
-            this.label56.Location = new System.Drawing.Point(517, 1054);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(176, 19);
-            this.label56.TabIndex = 292;
-            this.label56.Text = "Office Phone Number :";
-            // 
             // label55
             // 
             this.label55.AutoSize = true;
             this.label55.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label55.ForeColor = System.Drawing.Color.Black;
-            this.label55.Location = new System.Drawing.Point(102, 1054);
+            this.label55.Location = new System.Drawing.Point(102, 1019);
             this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(162, 19);
+            this.label55.Size = new System.Drawing.Size(140, 19);
             this.label55.TabIndex = 291;
-            this.label55.Text = "City Phone Number :";
+            this.label55.Text = "Contact Number :";
             // 
             // label54
             // 
             this.label54.AutoSize = true;
             this.label54.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label54.ForeColor = System.Drawing.Color.Black;
-            this.label54.Location = new System.Drawing.Point(102, 1022);
+            this.label54.Location = new System.Drawing.Point(102, 1052);
             this.label54.Name = "label54";
             this.label54.Size = new System.Drawing.Size(113, 19);
             this.label54.TabIndex = 290;
@@ -752,23 +715,23 @@
             this.cityadd.BackColor = System.Drawing.Color.Transparent;
             this.cityadd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cityadd.ForeColor = System.Drawing.Color.Black;
-            this.cityadd.Location = new System.Drawing.Point(221, 1022);
+            this.cityadd.Location = new System.Drawing.Point(221, 1052);
             this.cityadd.Name = "cityadd";
             this.cityadd.Size = new System.Drawing.Size(69, 19);
             this.cityadd.TabIndex = 317;
             this.cityadd.Text = "cityadd";
             // 
-            // cityphoneno
+            // contactno
             // 
-            this.cityphoneno.AutoSize = true;
-            this.cityphoneno.BackColor = System.Drawing.Color.Transparent;
-            this.cityphoneno.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cityphoneno.ForeColor = System.Drawing.Color.Black;
-            this.cityphoneno.Location = new System.Drawing.Point(270, 1054);
-            this.cityphoneno.Name = "cityphoneno";
-            this.cityphoneno.Size = new System.Drawing.Size(107, 19);
-            this.cityphoneno.TabIndex = 318;
-            this.cityphoneno.Text = "cityphoneno";
+            this.contactno.AutoSize = true;
+            this.contactno.BackColor = System.Drawing.Color.Transparent;
+            this.contactno.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactno.ForeColor = System.Drawing.Color.Black;
+            this.contactno.Location = new System.Drawing.Point(248, 1019);
+            this.contactno.Name = "contactno";
+            this.contactno.Size = new System.Drawing.Size(86, 19);
+            this.contactno.TabIndex = 318;
+            this.contactno.Text = "contactno";
             // 
             // provadd
             // 
@@ -782,25 +745,13 @@
             this.provadd.TabIndex = 319;
             this.provadd.Text = "provadd";
             // 
-            // provphoneno
-            // 
-            this.provphoneno.AutoSize = true;
-            this.provphoneno.BackColor = System.Drawing.Color.Transparent;
-            this.provphoneno.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.provphoneno.ForeColor = System.Drawing.Color.Black;
-            this.provphoneno.Location = new System.Drawing.Point(312, 1118);
-            this.provphoneno.Name = "provphoneno";
-            this.provphoneno.Size = new System.Drawing.Size(111, 19);
-            this.provphoneno.TabIndex = 320;
-            this.provphoneno.Text = "provphoneno";
-            // 
             // fathersname
             // 
             this.fathersname.AutoSize = true;
             this.fathersname.BackColor = System.Drawing.Color.Transparent;
             this.fathersname.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fathersname.ForeColor = System.Drawing.Color.Black;
-            this.fathersname.Location = new System.Drawing.Point(228, 1151);
+            this.fathersname.Location = new System.Drawing.Point(227, 1120);
             this.fathersname.Name = "fathersname";
             this.fathersname.Size = new System.Drawing.Size(108, 19);
             this.fathersname.TabIndex = 321;
@@ -812,7 +763,7 @@
             this.mothersname.BackColor = System.Drawing.Color.Transparent;
             this.mothersname.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mothersname.ForeColor = System.Drawing.Color.Black;
-            this.mothersname.Location = new System.Drawing.Point(233, 1183);
+            this.mothersname.Location = new System.Drawing.Point(232, 1152);
             this.mothersname.Name = "mothersname";
             this.mothersname.Size = new System.Drawing.Size(118, 19);
             this.mothersname.TabIndex = 322;
@@ -824,35 +775,11 @@
             this.spousename.BackColor = System.Drawing.Color.Transparent;
             this.spousename.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spousename.ForeColor = System.Drawing.Color.Black;
-            this.spousename.Location = new System.Drawing.Point(232, 1214);
+            this.spousename.Location = new System.Drawing.Point(231, 1183);
             this.spousename.Name = "spousename";
             this.spousename.Size = new System.Drawing.Size(107, 19);
             this.spousename.TabIndex = 323;
             this.spousename.Text = "spousename";
-            // 
-            // officephoneno
-            // 
-            this.officephoneno.AutoSize = true;
-            this.officephoneno.BackColor = System.Drawing.Color.Transparent;
-            this.officephoneno.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.officephoneno.ForeColor = System.Drawing.Color.Black;
-            this.officephoneno.Location = new System.Drawing.Point(699, 1054);
-            this.officephoneno.Name = "officephoneno";
-            this.officephoneno.Size = new System.Drawing.Size(121, 19);
-            this.officephoneno.TabIndex = 324;
-            this.officephoneno.Text = "officephoneno";
-            // 
-            // cpno
-            // 
-            this.cpno.AutoSize = true;
-            this.cpno.BackColor = System.Drawing.Color.Transparent;
-            this.cpno.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cpno.ForeColor = System.Drawing.Color.Black;
-            this.cpno.Location = new System.Drawing.Point(685, 1118);
-            this.cpno.Name = "cpno";
-            this.cpno.Size = new System.Drawing.Size(47, 19);
-            this.cpno.TabIndex = 325;
-            this.cpno.Text = "cpno";
             // 
             // fathersage
             // 
@@ -860,7 +787,7 @@
             this.fathersage.BackColor = System.Drawing.Color.Transparent;
             this.fathersage.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fathersage.ForeColor = System.Drawing.Color.Black;
-            this.fathersage.Location = new System.Drawing.Point(569, 1154);
+            this.fathersage.Location = new System.Drawing.Point(524, 1123);
             this.fathersage.Name = "fathersage";
             this.fathersage.Size = new System.Drawing.Size(92, 19);
             this.fathersage.TabIndex = 326;
@@ -872,7 +799,7 @@
             this.mothersage.BackColor = System.Drawing.Color.Transparent;
             this.mothersage.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mothersage.ForeColor = System.Drawing.Color.Black;
-            this.mothersage.Location = new System.Drawing.Point(569, 1186);
+            this.mothersage.Location = new System.Drawing.Point(524, 1155);
             this.mothersage.Name = "mothersage";
             this.mothersage.Size = new System.Drawing.Size(102, 19);
             this.mothersage.TabIndex = 327;
@@ -884,7 +811,7 @@
             this.spouseage.BackColor = System.Drawing.Color.Transparent;
             this.spouseage.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spouseage.ForeColor = System.Drawing.Color.Black;
-            this.spouseage.Location = new System.Drawing.Point(569, 1217);
+            this.spouseage.Location = new System.Drawing.Point(524, 1186);
             this.spouseage.Name = "spouseage";
             this.spouseage.Size = new System.Drawing.Size(91, 19);
             this.spouseage.TabIndex = 328;
@@ -896,7 +823,7 @@
             this.fathersoccupation.BackColor = System.Drawing.Color.Transparent;
             this.fathersoccupation.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fathersoccupation.ForeColor = System.Drawing.Color.Black;
-            this.fathersoccupation.Location = new System.Drawing.Point(793, 1154);
+            this.fathersoccupation.Location = new System.Drawing.Point(792, 1123);
             this.fathersoccupation.Name = "fathersoccupation";
             this.fathersoccupation.Size = new System.Drawing.Size(151, 19);
             this.fathersoccupation.TabIndex = 329;
@@ -908,7 +835,7 @@
             this.mothersoccupation.BackColor = System.Drawing.Color.Transparent;
             this.mothersoccupation.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mothersoccupation.ForeColor = System.Drawing.Color.Black;
-            this.mothersoccupation.Location = new System.Drawing.Point(793, 1186);
+            this.mothersoccupation.Location = new System.Drawing.Point(792, 1155);
             this.mothersoccupation.Name = "mothersoccupation";
             this.mothersoccupation.Size = new System.Drawing.Size(161, 19);
             this.mothersoccupation.TabIndex = 330;
@@ -920,11 +847,35 @@
             this.spouseoccupation.BackColor = System.Drawing.Color.Transparent;
             this.spouseoccupation.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spouseoccupation.ForeColor = System.Drawing.Color.Black;
-            this.spouseoccupation.Location = new System.Drawing.Point(793, 1217);
+            this.spouseoccupation.Location = new System.Drawing.Point(792, 1186);
             this.spouseoccupation.Name = "spouseoccupation";
             this.spouseoccupation.Size = new System.Drawing.Size(150, 19);
             this.spouseoccupation.TabIndex = 331;
             this.spouseoccupation.Text = "spouseoccupation";
+            // 
+            // appno
+            // 
+            this.appno.AutoSize = true;
+            this.appno.BackColor = System.Drawing.Color.Transparent;
+            this.appno.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.appno.ForeColor = System.Drawing.Color.Black;
+            this.appno.Location = new System.Drawing.Point(267, 64);
+            this.appno.Name = "appno";
+            this.appno.Size = new System.Drawing.Size(57, 19);
+            this.appno.TabIndex = 333;
+            this.appno.Text = "appno";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(112, 64);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(149, 19);
+            this.label3.TabIndex = 332;
+            this.label3.Text = "Applicant Number:";
             // 
             // ucAppView
             // 
@@ -932,20 +883,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Controls.Add(this.appno);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.spouseoccupation);
             this.Controls.Add(this.mothersoccupation);
             this.Controls.Add(this.fathersoccupation);
             this.Controls.Add(this.spouseage);
             this.Controls.Add(this.mothersage);
             this.Controls.Add(this.fathersage);
-            this.Controls.Add(this.cpno);
-            this.Controls.Add(this.officephoneno);
             this.Controls.Add(this.spousename);
             this.Controls.Add(this.mothersname);
             this.Controls.Add(this.fathersname);
-            this.Controls.Add(this.provphoneno);
             this.Controls.Add(this.provadd);
-            this.Controls.Add(this.cityphoneno);
+            this.Controls.Add(this.contactno);
             this.Controls.Add(this.cityadd);
             this.Controls.Add(this.weight);
             this.Controls.Add(this.height);
@@ -968,10 +918,7 @@
             this.Controls.Add(this.label121);
             this.Controls.Add(this.label118);
             this.Controls.Add(this.label119);
-            this.Controls.Add(this.label57);
-            this.Controls.Add(this.label58);
             this.Controls.Add(this.label59);
-            this.Controls.Add(this.label56);
             this.Controls.Add(this.label55);
             this.Controls.Add(this.label54);
             this.Controls.Add(this.label53);
@@ -990,7 +937,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblViewApp);
             this.Name = "ucAppView";
-            this.Size = new System.Drawing.Size(1067, 450);
+            this.Size = new System.Drawing.Size(1050, 450);
             this.VisibleChanged += new System.EventHandler(this.ucAppView_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEducBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills)).EndInit();
@@ -1026,10 +973,7 @@
         private System.Windows.Forms.Label label121;
         private System.Windows.Forms.Label label118;
         private System.Windows.Forms.Label label119;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label58;
         private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.Label label56;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label54;
         private System.Windows.Forms.Label label53;
@@ -1037,32 +981,31 @@
         private System.Windows.Forms.Panel pnlButtons1;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Button btnPrint;
-        private System.Windows.Forms.Label position;
-        private System.Windows.Forms.Label name;
-        private System.Windows.Forms.Label sex;
-        private System.Windows.Forms.Label civilstat;
-        private System.Windows.Forms.Label birthday;
-        private System.Windows.Forms.Label height;
-        private System.Windows.Forms.Label weight;
-        private System.Windows.Forms.Label cityadd;
-        private System.Windows.Forms.Label cityphoneno;
-        private System.Windows.Forms.Label provadd;
-        private System.Windows.Forms.Label provphoneno;
-        private System.Windows.Forms.Label fathersname;
-        private System.Windows.Forms.Label mothersname;
-        private System.Windows.Forms.Label spousename;
-        private System.Windows.Forms.Label officephoneno;
-        private System.Windows.Forms.Label cpno;
-        private System.Windows.Forms.Label fathersage;
-        private System.Windows.Forms.Label mothersage;
-        private System.Windows.Forms.Label spouseage;
-        private System.Windows.Forms.Label fathersoccupation;
-        private System.Windows.Forms.Label mothersoccupation;
-        private System.Windows.Forms.Label spouseoccupation;
         public System.Windows.Forms.DataGridView dgvEducBack;
         public System.Windows.Forms.DataGridView dgvSkills;
         public System.Windows.Forms.DataGridView dgvEmpHistory;
         public System.Windows.Forms.DataGridView dgvChildren;
         public System.Windows.Forms.DataGridView dgvContactPersons;
+        public System.Windows.Forms.Label position;
+        public System.Windows.Forms.Label name;
+        public System.Windows.Forms.Label sex;
+        public System.Windows.Forms.Label civilstat;
+        public System.Windows.Forms.Label birthday;
+        public System.Windows.Forms.Label height;
+        public System.Windows.Forms.Label weight;
+        public System.Windows.Forms.Label cityadd;
+        public System.Windows.Forms.Label contactno;
+        public System.Windows.Forms.Label provadd;
+        public System.Windows.Forms.Label fathersname;
+        public System.Windows.Forms.Label mothersname;
+        public System.Windows.Forms.Label spousename;
+        public System.Windows.Forms.Label fathersage;
+        public System.Windows.Forms.Label mothersage;
+        public System.Windows.Forms.Label spouseage;
+        public System.Windows.Forms.Label fathersoccupation;
+        public System.Windows.Forms.Label mothersoccupation;
+        public System.Windows.Forms.Label spouseoccupation;
+        public System.Windows.Forms.Label appno;
+        private System.Windows.Forms.Label label3;
     }
 }

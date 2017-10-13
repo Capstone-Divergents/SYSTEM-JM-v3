@@ -296,31 +296,29 @@
             this.Controls.Add(this.lblViewEmp);
             this.Name = "ucEmployeeView";
             this.Size = new System.Drawing.Size(1118, 450);
-            this.Load += new System.EventHandler(this.ucEmployeeView_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label gender;
         private System.Windows.Forms.Label lblGender;
-        private System.Windows.Forms.Label bday;
         private System.Windows.Forms.Label lblBirthday;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label empID;
         private System.Windows.Forms.Label lblEmpID;
-        private System.Windows.Forms.Label dept;
-        private System.Windows.Forms.Label contactNum;
-        private System.Windows.Forms.Label address;
-        private System.Windows.Forms.Label name;
-        private System.Windows.Forms.Label username;
         private System.Windows.Forms.Label lblDept;
         private System.Windows.Forms.Label lblContact;
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblViewEmp;
+        public System.Windows.Forms.Label gender;
+        public System.Windows.Forms.Label bday;
+        public System.Windows.Forms.Label empID;
+        public System.Windows.Forms.Label dept;
+        public System.Windows.Forms.Label contactNum;
+        public System.Windows.Forms.Label address;
+        public System.Windows.Forms.Label name;
+        public System.Windows.Forms.Label username;
     }
 }

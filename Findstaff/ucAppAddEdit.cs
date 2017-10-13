@@ -25,7 +25,8 @@ namespace Findstaff
             panel1.Dock = DockStyle.Fill;
             panel2.Dock = DockStyle.Fill;
         }
-        
+
+        #region btnAdd_Click
         private void btnAdd_Click(object sender, EventArgs e)
         {
             int ctr = 0;
@@ -140,8 +141,7 @@ namespace Findstaff
                     {
                         cmd += "('" + cID + "','" + dgvEmpHistory.Rows[x].Cells[0].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[1].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[2].Value.ToString() +"','"
                             + dgvEmpHistory.Rows[x].Cells[3].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[4].Value.ToString() + "','"
-                            + dgvEmpHistory.Rows[x].Cells[5].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[6].Value.ToString() + "','"
-                            + dgvEmpHistory.Rows[x].Cells[7].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[8].Value.ToString() + "')";
+                            + dgvEmpHistory.Rows[x].Cells[5].Value.ToString() + "','" + dgvEmpHistory.Rows[x].Cells[6].Value.ToString() + "')";
                         if (x != dgvEmpHistory.Rows.Count - 1)
                         {
                             cmd += ",";
@@ -154,13 +154,13 @@ namespace Findstaff
 
                 if (txtCityAddress.Text != "")
                 {
-                    cmd = "Insert into appaddress_t values ('"+cID+"','"+txtCityAddress.Text+"','Current','"+ txtPhoneNumber.Text+"','"+ txtCityPhone .Text+ "');";
+                    cmd = "Insert into appaddress_t values ('"+cID+"','"+txtCityAddress.Text+"','Current');";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                 }
                 if (txtProvAdd.Text != "")
                 {
-                    cmd = "Insert into appaddress_t values ('" + cID + "','" + txtProvAdd.Text + "','Provincial','" + txtProvNum.Text + "','" + txtProvCP.Text + "');";
+                    cmd = "Insert into appaddress_t values ('" + cID + "','" + txtProvAdd.Text + "','Provincial');";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                 }
@@ -209,24 +209,72 @@ namespace Findstaff
         {
             this.Hide();
         }
+        #endregion
 
+        #region btnSave_Click
         private void btnSave_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Saved!", "Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            this.Hide();
-        }
+            connection.Open();
+            string gender2 = "";
 
-        private void cbSchoolType_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            if(cbSchoolType.SelectedIndex == 2)
+            if (rbFemale2.Checked == true)
             {
-                txtDegree.Enabled = true;
+                gender2 = rbFemale2.Text;
+            }
+            if (rbMale2.Checked == true)
+            {
+                gender2 = rbMale2.Text;
+            }
+            string bdate2 = cbYear2.Text + "-" + (cbMonth2.SelectedIndex + 1).ToString() + "-" + cbDay2.Text;
+
+            if (txtAppNo.Text == "")
+            {
+                MessageBox.Show("Applicant Number must not be empty.", "Empty Applicant Number Field", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                txtDegree.Enabled = false;
+                DialogResult rs = MessageBox.Show("Are you sure you want to update the record with the following details?", "Confirmation", MessageBoxButtons.YesNo);
+
+                if (rs == DialogResult.Yes)
+                {
+                    cmd = "Update App_T set lname = '" + txtLastName2.Text + "', fname = '" + txtFirstName2.Text
+                        + "', mname = '" + txtMiddleName2.Text + "', position = '" + cbPosition2.Text + "', gender = '" + gender2
+                        + "', civilstat = '" + cbCivilStat2.Text + "', contact = '" + txtPhoneNumber2.Text
+                        + "', birthdate = '" + bdate2 + "', aheight = '" + txtHeight2.Text
+                        + "', aweight = '" + txtWeight2.Text + "' where app_id = '" + txtAppNo.Text + "';";
+                    com = new MySqlCommand(cmd, connection);
+                    com.ExecuteNonQuery();
+
+
+
+                    MessageBox.Show("Changes Saved!", "Updated Employee Record!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    txtAppNo.Clear();
+                    txtLastName2.Clear();
+                    txtFirstName2.Clear();
+                    txtMiddleName2.Clear();
+                    cbPosition2.SelectedIndex = -1;
+                    rbMale2.Checked = false;
+                    rbFemale2.Checked = false;
+                    cbCivilStat2.SelectedIndex = -1;
+                    txtPhoneNumber2.Clear();
+                    cbMonth2.SelectedIndex = -1;
+                    cbDay2.SelectedIndex = -1;
+                    cbYear2.SelectedIndex = -1;
+                    txtHeight2.Clear();
+                    txtWeight2.Clear();
+
+                    this.Hide();
+                }
             }
+            connection.Close();
+
+
+
+
+
         }
+        #endregion
 
         private void ucAppAddEdit_VisibleChanged(object sender, EventArgs e)
         {
@@ -238,9 +286,10 @@ namespace Findstaff
                 cmd = "Select jobname from job_t;";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
-                while (dr.Read())
+                while (dr.Read()) 
                 {
                     cbPosition.Items.Add(dr[0].ToString());
+                    cbPosition2.Items.Add(dr[0].ToString());
                 }
                 dr.Close();
 
@@ -250,6 +299,7 @@ namespace Findstaff
                 while (dr.Read())
                 {
                     cbSkills.Items.Add(dr[0].ToString());
+                    cbSkills2.Items.Add(dr[0].ToString());
                 }
                 dr.Close();
 
@@ -263,6 +313,18 @@ namespace Findstaff
         }
 
         #region Validations
+        private void cbSchoolType_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbSchoolType.SelectedIndex == 2)
+            {
+                txtDegree.Enabled = true;
+            }
+            else
+            {
+                txtDegree.Enabled = false;
+            }
+        }
+
         private void txtLastName_Enter(object sender, EventArgs e)
         {
             txtLastName.Clear();
@@ -400,10 +462,10 @@ namespace Findstaff
         private void btnAddEmpHistory_Click(object sender, EventArgs e)
         {
             if (txtEmp.Text != "" && txtEmpAdd.Text != "" && txtPos.Text != "" && cbMonthStart.Text != "" && cbYearStart.Text != "" &&
-                cbMonthEnd.Text != "" && cbYearEnd.Text != "" && rtxtDesc.Text != "" && txtReason.Text != "")
+                cbMonthEnd.Text != "" && cbYearEnd.Text != "")
             {
-                dgvEmpHistory.ColumnCount = 9;
-                dgvEmpHistory.Rows.Add(txtEmp.Text, txtEmpAdd.Text, txtPos.Text, cbMonthStart.Text, cbYearStart.Text, cbMonthEnd.Text, cbYearEnd.Text, rtxtDesc.Text, txtReason.Text);
+                dgvEmpHistory.ColumnCount = 7;
+                dgvEmpHistory.Rows.Add(txtEmp.Text, txtEmpAdd.Text, txtPos.Text, cbMonthStart.Text, cbYearStart.Text, cbMonthEnd.Text, cbYearEnd.Text);
                 txtEmp.Clear();
                 txtEmpAdd.Clear();
                 txtPos.Clear();
@@ -411,8 +473,6 @@ namespace Findstaff
                 cbYearStart.SelectedIndex = -1;
                 cbMonthEnd.SelectedIndex = -1;
                 cbYearEnd.SelectedIndex = -1;
-                rtxtDesc.Clear();
-                txtReason.Clear();
             }
         }
 
@@ -623,6 +683,269 @@ namespace Findstaff
         private void btnCancel2_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void cbSchoolType2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cbSchoolType2.SelectedIndex == 2)
+            {
+                txtDegree2.Enabled = true;
+            }
+            else
+            {
+                txtDegree2.Enabled = false;
+            }
+        }
+
+        private void txtLastName2_Enter(object sender, EventArgs e)
+        {
+            txtLastName2.Clear();
+            txtLastName2.ForeColor = Color.Black;
+        }
+
+        private void txtFirstName2_Enter(object sender, EventArgs e)
+        {
+            txtFirstName2.Clear();
+            txtFirstName2.ForeColor = Color.Black;
+        }
+
+        private void txtMiddleName2_Enter(object sender, EventArgs e)
+        {
+            txtMiddleName2.Clear();
+            txtMiddleName2.ForeColor = Color.Black;
+        }
+
+        private void cbMonth2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbDay2.Items.Clear();
+            if (cbMonth2.SelectedIndex == 0 || cbMonth2.SelectedIndex == 2 || cbMonth2.SelectedIndex == 4 ||
+                cbMonth2.SelectedIndex == 6 || cbMonth2.SelectedIndex == 7 || cbMonth2.SelectedIndex == 9 ||
+                cbMonth2.SelectedIndex == 11)
+            {
+                for (int x = 1; x <= 31; x++)
+                {
+                    cbDay2.Items.Add(x);
+                }
+            }
+            else if (cbMonth2.SelectedIndex == 3 || cbMonth2.SelectedIndex == 5 || cbMonth2.SelectedIndex == 8 ||
+                cbMonth2.SelectedIndex == 10)
+            {
+                for (int x = 1; x <= 30; x++)
+                {
+                    cbDay2.Items.Add(x);
+                }
+            }
+            else
+            {
+                for (int x = 1; x <= 28; x++)
+                {
+                    cbDay2.Items.Add(x);
+                }
+            }
+        }
+
+        private void rbMale2_Click(object sender, EventArgs e)
+        {
+            rbMale2.Checked = true;
+            rbFemale2.Checked = false;
+        }
+
+        private void rbFemale2_Click(object sender, EventArgs e)
+        {
+            rbMale2.Checked = false;
+            rbFemale2.Checked = true;
+        }
+
+        private void txtYearStarted2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar) || Char.IsPunctuation(e.KeyChar) || Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtYearEnded2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsLetter(e.KeyChar) || Char.IsPunctuation(e.KeyChar) || Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtHeight2_Enter(object sender, EventArgs e)
+        {
+            txtHeight.Clear();
+            txtHeight.ForeColor = Color.Black;
+        }
+
+        private void txtWeight2_Enter(object sender, EventArgs e)
+        {
+            txtWeight.Clear();
+            txtWeight.ForeColor = Color.Black;
+        }
+
+        private void txtLastName2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) || Char.IsPunctuation(e.KeyChar) || Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtFirstName2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) || Char.IsPunctuation(e.KeyChar) || Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void txtMiddleName2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (Char.IsDigit(e.KeyChar) || Char.IsPunctuation(e.KeyChar) || Char.IsSymbol(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void cbChildMonth2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbChildDay.Items.Clear();
+            if (cbChildMonth2.SelectedIndex == 0 || cbChildMonth2.SelectedIndex == 2 || cbChildMonth2.SelectedIndex == 4 ||
+                cbChildMonth2.SelectedIndex == 6 || cbChildMonth2.SelectedIndex == 7 || cbChildMonth2.SelectedIndex == 9 ||
+                cbChildMonth2.SelectedIndex == 11)
+            {
+                for (int x = 1; x <= 31; x++)
+                {
+                    cbChildDay2.Items.Add(x);
+                }
+            }
+            else if (cbChildMonth2.SelectedIndex == 3 || cbChildMonth2.SelectedIndex == 5 || cbChildMonth2.SelectedIndex == 8 ||
+                cbChildMonth2.SelectedIndex == 10)
+            {
+                for (int x = 1; x <= 30; x++)
+                {
+                    cbChildDay2.Items.Add(x);
+                }
+            }
+            else
+            {
+                for (int x = 1; x <= 28; x++)
+                {
+                    cbChildDay2.Items.Add(x);
+                }
+            }
+        }
+
+        private void btnAddEduc2_Click(object sender, EventArgs e)
+        {
+            if (txtSchoolName2.Text != "" && cbSchoolType2.Text != ""
+                && txtYearStarted2.Text != "" && txtYearEnded2.Text != "")
+            {
+                dgvEducBack2.ColumnCount = 5;
+                dgvEducBack2.Rows.Add(txtSchoolName2.Text, cbSchoolType2.Text, txtYearStarted2.Text, txtYearEnded2.Text, txtDegree2.Text);
+                txtSchoolName2.Clear();
+                cbSchoolType2.SelectedIndex = -1;
+                txtYearStarted2.Clear();
+                txtYearEnded2.Clear();
+                txtDegree2.Clear();
+            }
+        }
+
+        private void btnRemoveEduc2_Click(object sender, EventArgs e)
+        {
+            if (dgvEducBack2.Rows.Count != 0)
+            {
+                dgvEducBack2.Rows.Remove(dgvEducBack2.SelectedRows[0]);
+            }
+        }
+
+        private void btnAddEmpHistory2_Click(object sender, EventArgs e)
+        {
+            if (txtEmp2.Text != "" && txtEmpAdd2.Text != "" && txtPos2.Text != "" && cbMonthStart2.Text != "" && cbYearStart2.Text != "" &&
+                cbMonthEnd2.Text != "" && cbYearEnd2.Text != "")
+            {
+                dgvEmpHistory2.ColumnCount = 7;
+                dgvEmpHistory2.Rows.Add(txtEmp2.Text, txtEmpAdd2.Text, txtPos2.Text, cbMonthStart2.Text, cbYearStart2.Text, cbMonthEnd2.Text, cbYearEnd2.Text);
+                txtEmp2.Clear();
+                txtEmpAdd2.Clear();
+                txtPos2.Clear();
+                cbMonthStart2.SelectedIndex = -1;
+                cbYearStart2.SelectedIndex = -1;
+                cbMonthEnd2.SelectedIndex = -1;
+                cbYearEnd2.SelectedIndex = -1;
+            }
+        }
+
+        private void btnRemoveEmpHistory2_Click(object sender, EventArgs e)
+        {
+            if (dgvEmpHistory2.Rows.Count != 0)
+            {
+                dgvEmpHistory2.Rows.Remove(dgvEmpHistory.SelectedRows[0]);
+            }
+        }
+
+        private void btnAddSkills2_Click(object sender, EventArgs e)
+        {
+            if (cbSkills2.SelectedIndex != -1 && cbProficiency2.SelectedIndex != -1)
+            {
+                dgvSkills2.ColumnCount = 2;
+                dgvSkills2.Rows.Add(cbSkills2.Text, cbProficiency2.Text);
+                cbSkills2.Items.Remove(cbSkills2.Text);
+                cbSkills2.SelectedIndex = -1;
+                cbProficiency2.SelectedIndex = -1;
+            }
+        }
+
+        private void btnRemoveSkills2_Click(object sender, EventArgs e)
+        {
+            if (dgvSkills2.Rows.Count != 0)
+            {
+                cbSkills2.Items.Add(dgvSkills2.SelectedRows[0].Cells[0].Value.ToString());
+                dgvSkills2.Rows.Remove(dgvSkills2.SelectedRows[0]);
+            }
+        }
+
+        private void btnAddChild2_Click(object sender, EventArgs e)
+        {
+            if (txtChildName2.Text != "" && cbChildMonth2.Text != "" && cbChildDay2.Text != "" &&
+               cbChildYear2.Text != "" && txtChildAge2.Text != "")
+            {
+                dgvEmpHistory2.ColumnCount = 3;
+                dgvChildren2.Rows.Add(txtChildName2.Text, txtChildAge2.Text, cbChildYear2.Text + "-" + (cbChildMonth2.SelectedIndex + 1).ToString() + "-" + cbChildDay2.Text);
+                txtChildName2.Clear();
+                cbChildMonth2.SelectedIndex = -1;
+                cbChildDay2.SelectedIndex = -1;
+                cbChildYear2.SelectedIndex = -1;
+                txtChildAge2.Clear();
+            }
+        }
+
+        private void btnRemoveChild2_Click(object sender, EventArgs e)
+        {
+            if (dgvChildren2.Rows.Count != 0)
+            {
+                dgvChildren2.Rows.Remove(dgvChildren2.SelectedRows[0]);
+            }
+        }
+
+        private void btnAddContact2_Click(object sender, EventArgs e)
+        {
+            if (txtContactPerson2.Text != "" && txtContactNo2.Text != "")
+            {
+                dgvContactPersons2.ColumnCount = 2;
+                dgvContactPersons2.Rows.Add(txtContactPerson2.Text, txtContactNo2.Text);
+                txtContactPerson2.Clear();
+                txtContactNo2.Clear();
+            }
+        }
+
+        private void btnRemoveContact2_Click(object sender, EventArgs e)
+        {
+            if (dgvContactPersons2.Rows.Count != 0)
+            {
+                dgvContactPersons2.Rows.Remove(dgvContactPersons2.SelectedRows[0]);
+            }
         }
         #endregion Validations
     }

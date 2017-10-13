@@ -161,12 +161,6 @@
     <Compile Include="ucEmployer.Designer.cs">
       <DependentUpon>ucEmployer.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucEmployerView.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="ucEmployerView.Designer.cs">
-      <DependentUpon>ucEmployerView.cs</DependentUpon>
-    </Compile>
     <Compile Include="ucFees.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -423,9 +417,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucEmployer.resx">
       <DependentUpon>ucEmployer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="ucEmployerView.resx">
-      <DependentUpon>ucEmployerView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucFees.resx">
       <DependentUpon>ucFees.cs</DependentUpon>

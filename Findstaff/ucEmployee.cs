@@ -99,6 +99,23 @@ namespace Findstaff
 
         private void btnEmpView_Click(object sender, EventArgs e)
         {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+            string cmd = "select emp_id, username, Concat(fname , ' ' , mname, ' ', lname ), gender, birthdate, addrss, contact, deptname from emp_t where username = '" + dgvEmployee.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucEmployeeView.empID.Text = dr[0].ToString();
+                ucEmployeeView.username.Text = dr[1].ToString();
+                ucEmployeeView.name.Text = dr[2].ToString();
+                ucEmployeeView.gender.Text = dr[3].ToString();
+                ucEmployeeView.bday.Text = dr[4].ToString();
+                ucEmployeeView.address.Text = dr[5].ToString();
+                ucEmployeeView.contactNum.Text = dr[6].ToString();
+                ucEmployeeView.dept.Text = dr[7].ToString();
+            }
             ucEmployeeView.Dock = DockStyle.Fill;
             ucEmployeeView.Visible = true;
         }
