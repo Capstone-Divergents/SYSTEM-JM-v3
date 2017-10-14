@@ -33,6 +33,7 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblDept = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.rbReports = new System.Windows.Forms.RadioButton();
             this.rbMaintenance = new System.Windows.Forms.RadioButton();
             this.rbFlightBooking = new System.Windows.Forms.RadioButton();
             this.rbAcco = new System.Windows.Forms.RadioButton();
@@ -54,6 +55,7 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblCopyright = new System.Windows.Forms.Label();
+            this.ucReports = new Findstaff.ucReports();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -84,6 +86,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
+            this.panel1.Controls.Add(this.rbReports);
             this.panel1.Controls.Add(this.rbMaintenance);
             this.panel1.Controls.Add(this.rbFlightBooking);
             this.panel1.Controls.Add(this.rbAcco);
@@ -94,6 +97,28 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 450);
             this.panel1.TabIndex = 17;
+            // 
+            // rbReports
+            // 
+            this.rbReports.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(63)))));
+            this.rbReports.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rbReports.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rbReports.FlatAppearance.BorderSize = 0;
+            this.rbReports.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.rbReports.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.rbReports.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbReports.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbReports.ForeColor = System.Drawing.Color.White;
+            this.rbReports.Location = new System.Drawing.Point(0, 298);
+            this.rbReports.Name = "rbReports";
+            this.rbReports.Size = new System.Drawing.Size(200, 48);
+            this.rbReports.TabIndex = 14;
+            this.rbReports.Text = "Reports";
+            this.rbReports.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbReports.UseVisualStyleBackColor = false;
+            this.rbReports.CheckedChanged += new System.EventHandler(this.rbReports_CheckedChanged);
             // 
             // rbMaintenance
             // 
@@ -235,6 +260,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.ucReports);
             this.panel2.Controls.Add(this.ucFlightBooking);
             this.panel2.Controls.Add(this.ucJobOrderManagement);
             this.panel2.Controls.Add(this.ucMaintenance);
@@ -405,6 +431,15 @@
             this.lblCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCopyright.Visible = false;
             // 
+            // ucReports
+            // 
+            this.ucReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucReports.Location = new System.Drawing.Point(3, 348);
+            this.ucReports.Name = "ucReports";
+            this.ucReports.Size = new System.Drawing.Size(200, 48);
+            this.ucReports.TabIndex = 7;
+            this.ucReports.Visible = false;
+            // 
             // fMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -462,5 +497,7 @@
         private System.Windows.Forms.RadioButton rbMaintenance;
         public System.Windows.Forms.RadioButton rbFlightBooking;
         private ucFlightBooking ucFlightBooking;
+        private System.Windows.Forms.RadioButton rbReports;
+        private ucReports ucReports;
     }
 }

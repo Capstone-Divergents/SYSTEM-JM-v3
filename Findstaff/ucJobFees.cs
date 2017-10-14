@@ -55,5 +55,31 @@ namespace Findstaff
             }
             connection.Close();
         }
+
+        public void searchData(string valueToFind)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            string cmd = "select jo.jorder_id'Job Order ID', count(jf.fee_id)'No. of Fees' from joborder_t jo join jobfees_t jf on jo.jorder_id = jf.jorder_id WHERE jf.jorder_id LIKE '%" + valueToFind + "%'";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvJobFees.DataSource = table;
+        }
+
+        private void txtSearch_TextChanged(object sender, EventArgs e)
+        {
+            searchData(txtSearch.Text);
+        }
+
+        private void ucJobFees_Load(object sender, EventArgs e)
+        {
+            searchData(txtSearch.Text);
+        }
     }
 }

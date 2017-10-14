@@ -36,6 +36,9 @@
             this.lblJobs = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
             this.ucJobsAddEdit = new Findstaff.ucJobsAddEdit();
+            this.txtSkillName = new System.Windows.Forms.TextBox();
+            this.lbl = new System.Windows.Forms.Label();
+            this.btnSearch = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJobs)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,7 +101,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvJobs.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvJobs.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvJobs.Location = new System.Drawing.Point(100, 100);
+            this.dgvJobs.Location = new System.Drawing.Point(100, 104);
             this.dgvJobs.MultiSelect = false;
             this.dgvJobs.Name = "dgvJobs";
             this.dgvJobs.ReadOnly = true;
@@ -146,6 +149,44 @@
             this.ucJobsAddEdit.Visible = false;
             this.ucJobsAddEdit.VisibleChanged += new System.EventHandler(this.ucJobsAddEdit_VisibleChanged);
             // 
+            // txtSkillName
+            // 
+            this.txtSkillName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtSkillName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSkillName.ForeColor = System.Drawing.Color.DimGray;
+            this.txtSkillName.Location = new System.Drawing.Point(164, 68);
+            this.txtSkillName.MaxLength = 30;
+            this.txtSkillName.Name = "txtSkillName";
+            this.txtSkillName.Size = new System.Drawing.Size(231, 26);
+            this.txtSkillName.TabIndex = 112;
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.BackColor = System.Drawing.Color.Transparent;
+            this.lbl.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.ForeColor = System.Drawing.Color.Black;
+            this.lbl.Location = new System.Drawing.Point(98, 73);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(65, 19);
+            this.lbl.TabIndex = 113;
+            this.lbl.Text = "Search:";
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnSearch.FlatAppearance.BorderSize = 0;
+            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.ForeColor = System.Drawing.Color.Black;
+            this.btnSearch.Location = new System.Drawing.Point(403, 65);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(100, 30);
+            this.btnSearch.TabIndex = 277;
+            this.btnSearch.Text = "SEARCH";
+            this.btnSearch.UseVisualStyleBackColor = false;
+            // 
             // ucJobs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -157,6 +198,9 @@
             this.Controls.Add(this.dgvJobs);
             this.Controls.Add(this.lblJobs);
             this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSkillName);
+            this.Controls.Add(this.lbl);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucJobs";
             this.Size = new System.Drawing.Size(1118, 400);
@@ -174,5 +218,8 @@
         private System.Windows.Forms.Button btnAdd;
         private ucJobsAddEdit ucJobsAddEdit;
         public System.Windows.Forms.DataGridView dgvJobs;
+        private System.Windows.Forms.TextBox txtSkillName;
+        private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Button btnSearch;
     }
 }

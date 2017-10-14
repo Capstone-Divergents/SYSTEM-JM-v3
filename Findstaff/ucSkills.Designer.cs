@@ -141,7 +141,7 @@
             // txtSkillName
             // 
             this.txtSkillName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtSkillName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSkillName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSkillName.ForeColor = System.Drawing.Color.DimGray;
             this.txtSkillName.Location = new System.Drawing.Point(164, 72);
             this.txtSkillName.MaxLength = 30;

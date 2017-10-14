@@ -151,7 +151,7 @@
             // txtCategoryName
             // 
             this.txtCategoryName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtCategoryName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCategoryName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCategoryName.ForeColor = System.Drawing.Color.DimGray;
             this.txtCategoryName.Location = new System.Drawing.Point(166, 78);
             this.txtCategoryName.MaxLength = 30;
