@@ -103,7 +103,7 @@ namespace Findstaff
             {
                 DialogResult rs = MessageBox.Show("Are you sure you want to update the record with the following details?"
                     + "\nEmployer ID: " + txtEmpID.Text + "\nNew Employer Name: " + txtEmp2.Text
-                    + "\nNew Foreign Principal: " + txtPrincipal2 + "\nNew Country: " + cbCountry2.Text, "Confirmation", MessageBoxButtons.YesNo);
+                    + "\nNew Foreign Principal: " + txtPrincipal2.Text + "\nNew Country: " + cbCountry2.Text, "Confirmation", MessageBoxButtons.YesNo);
 
                 if (rs == DialogResult.Yes)
                 {

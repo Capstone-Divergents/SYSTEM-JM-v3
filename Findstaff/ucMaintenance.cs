@@ -74,7 +74,10 @@ namespace Findstaff
             ucCountry.Visible = true;
             ucGenReqs.Visible = false;
 
-            cmd = "select c.COUNTRY_ID'Country ID', c.COUNTRYNAME'Name of Country', count(cr.req_id)'No. of requirements' from country_t c join countryreqs_t cr on  c.country_id = cr.country_id group by c.country_id;";
+            cmd = "select c.COUNTRY_ID'Country ID', c.COUNTRYNAME'Name of Country', count(cr.req_id)'No. of requirements'"
+                    + " from country_t c join countryreqs_t cr on"
+                    + " c.country_id = cr.country_id"
+                    + " group by c.country_id";
             using (connection)
             {
                 using (adapter = new MySqlDataAdapter(cmd, connection))

@@ -23,32 +23,35 @@ namespace Findstaff
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            ucCountryAddEdit1.Dock = DockStyle.Fill;
-            ucCountryAddEdit1.Visible = true;
-            ucCountryAddEdit1.panel1.Visible = true;
-            ucCountryAddEdit1.panel2.Visible = false;
+            ucCountryAddEdit.Dock = DockStyle.Fill;
+            ucCountryAddEdit.Visible = true;
+            ucCountryAddEdit.panel1.Visible = true;
+            ucCountryAddEdit.panel2.Visible = false;
         }
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            ucCountryAddEdit1.txtCountryID2.Text = dgvCountry.SelectedRows[0].Cells[0].Value.ToString();
-            ucCountryAddEdit1.txtCountryName2.Text = dgvCountry.SelectedRows[0].Cells[1].Value.ToString();
-            ucCountryAddEdit1.Dock = DockStyle.Fill;
-            ucCountryAddEdit1.Visible = true;
-            ucCountryAddEdit1.panel1.Visible = false;
-            ucCountryAddEdit1.panel2.Visible = true;
+            ucCountryAddEdit.txtCountryID2.Text = dgvCountry.SelectedRows[0].Cells[0].Value.ToString();
+            ucCountryAddEdit.txtCountryName2.Text = dgvCountry.SelectedRows[0].Cells[1].Value.ToString();
+            ucCountryAddEdit.Dock = DockStyle.Fill;
+            ucCountryAddEdit.Visible = true;
+            ucCountryAddEdit.panel1.Visible = false;
+            ucCountryAddEdit.panel2.Visible = true;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Connection con = new Connection();
-            connection = con.dbConnection();
             connection.Open();
-            string cmd = "delete from country_t where country_id = '" + dgvCountry.SelectedRows[0].Cells[0].Value.ToString() + "';";
-            com = new MySqlCommand(cmd, connection);
-            com.ExecuteNonQuery();
-            dgvCountry.Rows.Remove(dgvCountry.SelectedRows[0]);
-            MessageBox.Show("Country Deleted!", "Coutry Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            DialogResult rs = MessageBox.Show("Are you sure you want to delete the country " + dgvCountry.SelectedRows[0].Cells[1].Value.ToString()
+                + " from the list of countries?", "Delete Country Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if(rs == DialogResult.Yes)
+            {
+                string cmd = "delete from country_t where country_id = '" + dgvCountry.SelectedRows[0].Cells[0].Value.ToString() + "';";
+                com = new MySqlCommand(cmd, connection);
+                com.ExecuteNonQuery();
+                dgvCountry.Rows.Remove(dgvCountry.SelectedRows[0]);
+                MessageBox.Show("Country Deleted!", "Coutry Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             connection.Close();
         }
         
@@ -56,7 +59,10 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            string com = "select c.COUNTRY_ID'Country ID', c.COUNTRYNAME'Name of Country', count(cr.req_id)'No. of requirements' from country_t c join countryreqs_t cr on  c.country_id = cr.country_id group by c.country_id";
+            string com = "select c.COUNTRY_ID'Country ID', c.COUNTRYNAME'Name of Country', count(cr.req_id)'No. of requirements'"
+                    + " from country_t c join countryreqs_t cr on"
+                    + " c.country_id = cr.country_id"
+                    + " group by c.country_id";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))

@@ -42,17 +42,15 @@ namespace Findstaff
         {
             connection.Open();
             string empID = "";
-            cmd = "select emp_id, count(*) from emp_t where username = '"+txtUsername.Text+"' and pass = '"+txtPassword.Text+"';";
+            cmd = "select emp_id from emp_t where username = '"+txtUsername.Text+"' and pass = '"+txtPassword.Text+"';";
             com = new MySqlCommand(cmd, connection);
-            bool read = false;
             dr = com.ExecuteReader();
             while (dr.Read())
             {
                 empID = dr[0].ToString();
-                read = true;
             }
             dr.Close();
-            if(read)
+            if(empID != "")
             {
                 cmd = "insert into logs_t (emp_id, intime) values ('"+empID+"', current_timestamp())";
                 com = new MySqlCommand(cmd, connection);
