@@ -43,7 +43,7 @@
             this.cbYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYear.ForeColor = System.Drawing.Color.Black;
             this.cbYear.FormattingEnabled = true;
-            this.cbYear.Location = new System.Drawing.Point(394, 79);
+            this.cbYear.Location = new System.Drawing.Point(392, 79);
             this.cbYear.Name = "cbYear";
             this.cbYear.Size = new System.Drawing.Size(110, 27);
             this.cbYear.TabIndex = 53;
@@ -54,7 +54,7 @@
             this.cbDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDay.ForeColor = System.Drawing.Color.Black;
             this.cbDay.FormattingEnabled = true;
-            this.cbDay.Location = new System.Drawing.Point(311, 78);
+            this.cbDay.Location = new System.Drawing.Point(309, 78);
             this.cbDay.Name = "cbDay";
             this.cbDay.Size = new System.Drawing.Size(77, 27);
             this.cbDay.TabIndex = 52;
@@ -70,14 +70,15 @@
             "February",
             "March",
             "April",
-            "May June",
+            "May",
+            "June",
             "July",
             "August",
             "September",
             "October",
             "November",
             "December"});
-            this.cbMonth.Location = new System.Drawing.Point(105, 78);
+            this.cbMonth.Location = new System.Drawing.Point(103, 78);
             this.cbMonth.Name = "cbMonth";
             this.cbMonth.Size = new System.Drawing.Size(200, 27);
             this.cbMonth.TabIndex = 51;
@@ -89,7 +90,7 @@
             this.lblJob.BackColor = System.Drawing.Color.Transparent;
             this.lblJob.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJob.ForeColor = System.Drawing.Color.Black;
-            this.lblJob.Location = new System.Drawing.Point(51, 82);
+            this.lblJob.Location = new System.Drawing.Point(49, 82);
             this.lblJob.Name = "lblJob";
             this.lblJob.Size = new System.Drawing.Size(49, 19);
             this.lblJob.TabIndex = 50;

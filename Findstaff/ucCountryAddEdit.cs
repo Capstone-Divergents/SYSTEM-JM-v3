@@ -141,21 +141,49 @@ namespace Findstaff
         {
             if (cbReq2.Text != "")
             {
+                string reqId = "";
                 dgvReq2.Rows.Add(txtCountryID2.Text, cbReq2.Text);
+                cmd = "Select req_id from genreqs_t where reqname = '" + cbReq2.Text + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    reqId = dr[0].ToString();
+                }
+                dr.Close();
+                cmd = "insert into countryreqs_t values ('"+txtCountryID2.Text+"','"+reqId+"')";
+                com = new MySqlCommand(cmd, connection);
+                com.ExecuteNonQuery();
                 cbReq2.Items.Remove(cbReq2.Text);
             }
         }
 
         private void btnRemoveRequire2_Click(object sender, EventArgs e)
         {
+            connection.Open();
             if(dgvReq2.Rows.Count != 0)
             {
-                DialogResult dr = MessageBox.Show("Are you sure you want to remove the document " + dgvReq2.SelectedRows[0].Cells[1].Value.ToString()
-                    + " from the list of ducuments in the ");
-
-                cbReq2.Items.Add(dgvReq2.SelectedRows[0].Cells[1].Value.ToString());
-                dgvReq2.Rows.Remove(dgvReq2.SelectedRows[0]);
+                DialogResult a = MessageBox.Show("Are you sure you want to remove the document " + dgvReq2.SelectedRows[0].Cells[1].Value.ToString()
+                    + " from the list of documents", "Remove Documents from Country", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if(a == DialogResult.Yes)
+                {
+                    string reqId = "";
+                    cbReq2.Items.Add(dgvReq2.SelectedRows[0].Cells[1].Value.ToString());
+                    cmd = "Select req_id from genreqs_t where reqname = '" + dgvReq2.SelectedRows[0].Cells[1].Value.ToString() + "'";
+                    com = new MySqlCommand(cmd, connection);
+                    dr = com.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        reqId = dr[0].ToString();
+                    }
+                    dr.Close();
+                    dgvReq2.Rows.Remove(dgvReq2.SelectedRows[0]);
+                    cmd = "delete from countryreqs_t where country_id = '"+txtCountryID2.Text+"' and req_id = '"+reqId+"'";
+                    com = new MySqlCommand(cmd, connection);
+                    com.ExecuteNonQuery();
+                }
             }
+            connection.Close();
         }
 
         private void ucCountryAddEdit_VisibleChanged(object sender, EventArgs e)
