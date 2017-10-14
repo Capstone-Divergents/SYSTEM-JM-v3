@@ -28,6 +28,7 @@ namespace Findstaff
             ucAcco.Dock = DockStyle.Fill;
             ucFlightBooking.Dock = DockStyle.Fill;
             ucMaintenance.Dock = DockStyle.Fill;
+            ucReports.Dock = DockStyle.Fill;
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -61,6 +62,7 @@ namespace Findstaff
                 rbAcco.Enabled = false;
                 rbFlightBooking.Enabled = false;
                 rbMaintenance.Enabled = false;
+                rbReports.Enabled = false;
             }
             else if (dept == "Documentation")
             {
@@ -70,6 +72,7 @@ namespace Findstaff
                 rbAcco.Enabled = false;
                 rbFlightBooking.Enabled = true;
                 rbMaintenance.Enabled = false;
+                rbReports.Enabled = false;
             }
             else if (dept == "Accounting")
             {
@@ -79,6 +82,7 @@ namespace Findstaff
                 rbAcco.Enabled = true;
                 rbFlightBooking.Enabled = false;
                 rbMaintenance.Enabled = false;
+                rbReports.Enabled = false;
             }
             else if (dept == "Marketing")
             {
@@ -88,6 +92,7 @@ namespace Findstaff
                 rbAcco.Enabled = false;
                 rbFlightBooking.Enabled = false;
                 rbMaintenance.Enabled = true;
+                rbReports.Enabled = false;
             }
         }
 
@@ -134,6 +139,7 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucFlightBooking.Visible = false;
             ucMaintenance.Visible = false;
+            ucReports.Visible = false;
         }
 
         private void rbRecruitment_CheckedChanged(object sender, EventArgs e)
@@ -144,6 +150,7 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucFlightBooking.Visible = false;
             ucMaintenance.Visible = false;
+            ucReports.Visible = false;
         }
 
         private void rbDocumentation_CheckedChanged(object sender, EventArgs e)
@@ -154,6 +161,7 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucFlightBooking.Visible = false;
             ucMaintenance.Visible = false;
+            ucReports.Visible = false;
         }
 
         private void rbAcco_CheckedChanged(object sender, EventArgs e)
@@ -164,6 +172,7 @@ namespace Findstaff
             ucAcco.Visible = true;
             ucFlightBooking.Visible = false;
             ucMaintenance.Visible = false;
+            ucReports.Visible = false;
         }
 
         private void rbFlightBooking_CheckedChanged(object sender, EventArgs e)
@@ -174,6 +183,7 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucFlightBooking.Visible = true;
             ucMaintenance.Visible = false;
+            ucReports.Visible = false;
         }
 
         private void rbMaintenance_CheckedChanged(object sender, EventArgs e)
@@ -184,6 +194,18 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucFlightBooking.Visible = false;
             ucMaintenance.Visible = true;
+            ucReports.Visible = false;
+        }
+
+        private void rbReports_CheckedChanged(object sender, EventArgs e)
+        {
+            ucJobOrderManagement.Visible = false;
+            ucRecruitment.Visible = false;
+            ucDocumentation.Visible = false;
+            ucAcco.Visible = false;
+            ucFlightBooking.Visible = false;
+            ucMaintenance.Visible = false;
+            ucReports.Visible = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)

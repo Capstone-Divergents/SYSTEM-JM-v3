@@ -142,7 +142,7 @@
             // txtFeeName
             // 
             this.txtFeeName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtFeeName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFeeName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFeeName.ForeColor = System.Drawing.Color.DimGray;
             this.txtFeeName.Location = new System.Drawing.Point(167, 68);
             this.txtFeeName.MaxLength = 30;
