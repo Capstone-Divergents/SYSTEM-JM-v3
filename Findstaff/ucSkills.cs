@@ -81,7 +81,7 @@ namespace Findstaff
             connection = con.dbConnection();
             connection.Open();
 
-            string cmd = "Select skill_id 'Skill ID', skillname 'Skill Name' from Genskills_t WHERE skillname LIKE '%" + valueToFind + "%'";
+            string cmd = "Select skill_id 'Skill ID', skillname 'Skill Name' from Genskills_t WHERE concat(skill_id, skillname) LIKE '%" + valueToFind + "%'";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();
 

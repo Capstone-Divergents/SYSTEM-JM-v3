@@ -54,7 +54,26 @@ namespace Findstaff
             }
             connection.Close();
         }
-        
+
+        //public void searchData(string valueToFind)
+        //{
+        //    Connection con = new Connection();
+        //    connection = con.dbConnection();
+        //    connection.Open();
+
+        //    string cmd = "select c.COUNTRY_ID'Country ID', c.COUNTRYNAME'Name of Country', count(cr.req_id)'No. of requirements'"
+        //            + " from country_t c join countryreqs_t cr on"
+        //            + " c.country_id = cr.country_id"
+        //            + " group by c.country_id WHERE concat(c.country_id, c.countryname) LIKE '%" + valueToFind + "%'";
+        //    com = new MySqlCommand(cmd, connection);
+        //    com.ExecuteNonQuery();
+
+        //    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+        //    DataTable table = new DataTable();
+        //    adapter.Fill(table);
+        //    dgvCountry.DataSource = table;
+        //}
+
         private void ucCountryAddEdit1_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
@@ -72,6 +91,16 @@ namespace Findstaff
                     dgvCountry.DataSource = ds.Tables[0];
                 }
             }
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            //searchData(txtName.Text);
+        }
+
+        private void ucCountry_Load(object sender, EventArgs e)
+        {
+            //searchData(txtName.Text);
         }
     }
 }

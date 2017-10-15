@@ -190,6 +190,24 @@ namespace Findstaff
             ucJobListView.Visible = true;
         }
 
+        public void searchData(string valueToFind)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            string cmd = "select jo.jorder_id'Job Order ID', j.jobname'Job', e.employername'Employer', jl.reqapp'No. of Required Applicants' " +
+                "from joborder_t jo join joblist_t jl on jo.JORDER_ID = jl.jorder_id join employer_t e on jo.employer_id = e.employer_id " +
+                "join job_t j on jl.job_id = j.job_id where jo.cntrctstat = 'Active' or jo.cntrctstat = 'Renewed' AND concat(jo.jorder_id, j.jobname, e.employername, jl.reqapp) LIKE '%" + valueToFind + "%'";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvJobList.DataSource = table;
+        }
+
         private void ucJobListAddEdit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
@@ -208,6 +226,16 @@ namespace Findstaff
                 }
             }
             connection.Close();
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
+        }
+
+        private void ucJobList_Load(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
         }
     }
 }

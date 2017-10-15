@@ -60,6 +60,24 @@ namespace Findstaff
             connection.Close();
         }
 
+        public void searchData(string valueToFind)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            string cmd = "select e.employer_id'Employer_ID', e.employername'Name of Employer', e.foreignprin'Foreign Principal', c.countryname'Country' "
+                + "from employer_t e join country_t c "
+                + "on e.country_id = c.country_id WHERE concat(e.employer_id, e.employername, e.foreignprin, c.countryname) LIKE '%" + valueToFind + "%'";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvEmployer.DataSource = table;
+        }
+
         private void ucEmployerAddEdit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
@@ -76,6 +94,16 @@ namespace Findstaff
                     dgvEmployer.DataSource = ds.Tables[0];
                 }
             }
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
+        }
+
+        private void ucEmployer_Load(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
         }
     }
 }

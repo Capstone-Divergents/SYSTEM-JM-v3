@@ -82,7 +82,7 @@ namespace Findstaff
             connection = con.dbConnection();
             connection.Open();
 
-            string cmd = "Select Category_ID'Category ID', categoryname'Category Name' from jobcategory_t WHERE categoryname LIKE '%" + valueToFind + "%'";
+            string cmd = "Select Category_ID'Category ID', categoryname'Category Name' from jobcategory_t WHERE concat(Category_ID, categoryname) LIKE '%" + valueToFind + "%'";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();
 

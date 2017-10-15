@@ -81,7 +81,7 @@ namespace Findstaff
             connection = con.dbConnection();
             connection.Open();
 
-            string cmd = "Select Fee_ID'Fee ID', Feename'Fee Name' from Genfees_t WHERE Feename LIKE '%" + valueToFind + "%'";
+            string cmd = "Select Fee_ID'Fee ID', Feename'Fee Name' from Genfees_t WHERE concat(Fee_ID , ' ', Feename) LIKE '%" + valueToFind + "%'";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();
 

@@ -60,6 +60,22 @@ namespace Findstaff
             connection.Close();
         }
 
+        public void searchData(string valueToFind)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            string cmd = "select j.job_id'Job ID', j.Jobname'Job Name', c.categoryname'Category', j.jobtype'Type of Job' from jobcategory_t c join job_t j on c.category_id = j.category_id WHERE concat(j.job_id, j.Jobname, c.categoryname, j.jobtype) LIKE '%" + valueToFind + "%'";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvJobs.DataSource = table;
+        }
+
         private void ucJobsAddEdit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
@@ -74,6 +90,16 @@ namespace Findstaff
                     dgvJobs.DataSource = ds.Tables[0];
                 }
             }
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
+        }
+
+        private void ucJobs_Load(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
         }
     }
 }

@@ -120,6 +120,22 @@ namespace Findstaff
             ucEmployeeView.Visible = true;
         }
 
+        public void searchData(string valueToFind)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            string cmd = "select username'Username', Concat(fname , ' ' , lname)'Employee Name', DEPTNAME'Department' from Emp_t WHERE Concat(username, fname , ' ' , lname, deptname) LIKE '%" + valueToFind + "%'";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvEmployee.DataSource = table;
+        }
+
         private void ucEmployeeAddEdit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
@@ -134,6 +150,16 @@ namespace Findstaff
                     dgvEmployee.DataSource = ds.Tables[0];
                 }
             }
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
+        }
+
+        private void ucEmployee_Load(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
         }
     }
 }

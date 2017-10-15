@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvJobOrder = new System.Windows.Forms.DataGridView();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtJobOrderSearch = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.lblJobOrderId = new System.Windows.Forms.Label();
             this.lblJobOrder = new System.Windows.Forms.Label();
             this.btnAdvanceSearch = new System.Windows.Forms.Button();
@@ -52,23 +51,23 @@
             this.dgvJobOrder.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvJobOrder.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvJobOrder.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvJobOrder.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvJobOrder.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvJobOrder.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvJobOrder.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvJobOrder.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvJobOrder.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvJobOrder.Location = new System.Drawing.Point(100, 140);
             this.dgvJobOrder.MultiSelect = false;
@@ -80,31 +79,17 @@
             this.dgvJobOrder.Size = new System.Drawing.Size(918, 200);
             this.dgvJobOrder.TabIndex = 51;
             // 
-            // btnSearch
+            // txtName
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Location = new System.Drawing.Point(377, 94);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(100, 30);
-            this.btnSearch.TabIndex = 50;
-            this.btnSearch.Text = "SEARCH";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // txtJobOrderSearch
-            // 
-            this.txtJobOrderSearch.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtJobOrderSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJobOrderSearch.ForeColor = System.Drawing.Color.Black;
-            this.txtJobOrderSearch.Location = new System.Drawing.Point(171, 97);
-            this.txtJobOrderSearch.MaxLength = 30;
-            this.txtJobOrderSearch.Name = "txtJobOrderSearch";
-            this.txtJobOrderSearch.Size = new System.Drawing.Size(200, 26);
-            this.txtJobOrderSearch.TabIndex = 49;
+            this.txtName.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Black;
+            this.txtName.Location = new System.Drawing.Point(171, 97);
+            this.txtName.MaxLength = 30;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(200, 26);
+            this.txtName.TabIndex = 49;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // lblJobOrderId
             // 
@@ -137,7 +122,7 @@
             this.btnAdvanceSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdvanceSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdvanceSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnAdvanceSearch.Location = new System.Drawing.Point(483, 94);
+            this.btnAdvanceSearch.Location = new System.Drawing.Point(377, 95);
             this.btnAdvanceSearch.Name = "btnAdvanceSearch";
             this.btnAdvanceSearch.Size = new System.Drawing.Size(250, 30);
             this.btnAdvanceSearch.TabIndex = 53;
@@ -214,13 +199,13 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnAdvanceSearch);
             this.Controls.Add(this.dgvJobOrder);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtJobOrderSearch);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblJobOrderId);
             this.Controls.Add(this.lblJobOrder);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucJobOrder";
             this.Size = new System.Drawing.Size(1118, 450);
+            this.Load += new System.EventHandler(this.ucJobOrder_Load);
             this.VisibleChanged += new System.EventHandler(this.ucJobOrder_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgvJobOrder)).EndInit();
             this.ResumeLayout(false);
@@ -229,8 +214,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox txtJobOrderSearch;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblJobOrderId;
         private System.Windows.Forms.Label lblJobOrder;
         private System.Windows.Forms.Button btnAdvanceSearch;
