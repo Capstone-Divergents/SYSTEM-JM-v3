@@ -20,8 +20,8 @@ namespace Findstaff
             server = "localhost";
             database = "rms";
             uid = "root";
-            password = "anterograde";
-            //password = "rootpass";
+            //password = "anterograde";
+            password = "rootpass";
             //password = "camilo";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +

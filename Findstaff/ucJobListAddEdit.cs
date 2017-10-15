@@ -183,20 +183,24 @@ namespace Findstaff
                     cbJOrder1.Items.Add(dr[0]);
                 }
                 dr.Close();
+
                 cmd = "Select categoryname from jobcategory_t";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
                 {
                     cbCategory1.Items.Add(dr[0]);
+                    cbCategory2.Items.Add(dr[0]);
                 }
                 dr.Close();
+
                 cmd = "Select skillname from genskills_t";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
                 {
                     cbSkillName.Items.Add(dr[0]);
+                    cbSkillName2.Items.Add(dr[0]);
                 }
                 dr.Close();
                 cmd = "Select Reqname from genreqs_t where allocation = 'job'";
@@ -205,6 +209,7 @@ namespace Findstaff
                 while (dr.Read())
                 {
                     cbReqName.Items.Add(dr[0]);
+                    cbReqName2.Items.Add(dr[0]);
                 }
                 dr.Close();
                 connection.Close();
@@ -214,6 +219,8 @@ namespace Findstaff
                 cbJOrder1.Items.Clear();
                 cbSkillName.Items.Clear();
                 cbReqName.Items.Clear();
+                cbSkillName2.Items.Clear();
+                cbReqName2.Items.Clear();
             }
         }
 
