@@ -249,9 +249,9 @@ namespace Findstaff
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label4);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(16, 0);
+            this.panel2.Location = new System.Drawing.Point(32, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1102, 450);
+            this.panel2.Size = new System.Drawing.Size(1086, 450);
             this.panel2.TabIndex = 1;
             // 
             // btnCancel2
@@ -408,7 +408,7 @@ namespace Findstaff
             this.txtCountryName2.Enabled = false;
             this.txtCountryName2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCountryName2.ForeColor = System.Drawing.Color.Black;
-            this.txtCountryName2.Location = new System.Drawing.Point(450, 97);
+            this.txtCountryName2.Location = new System.Drawing.Point(453, 97);
             this.txtCountryName2.MaxLength = 30;
             this.txtCountryName2.Name = "txtCountryName2";
             this.txtCountryName2.Size = new System.Drawing.Size(175, 26);

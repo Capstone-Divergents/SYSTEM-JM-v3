@@ -151,6 +151,7 @@ namespace Findstaff
                     reqId = dr[0].ToString();
                 }
                 dr.Close();
+
                 cmd = "insert into countryreqs_t values ('"+txtCountryID2.Text+"','"+reqId+"')";
                 com = new MySqlCommand(cmd, connection);
                 com.ExecuteNonQuery();
@@ -213,6 +214,7 @@ namespace Findstaff
                     y++;
                 }
                 dr.Close();
+
                 string[,] reqlist = new string[2,y];
                 cmd = "Select c.COUNTRY_ID'Country ID', g.Reqname'Requirement Name' from country_t c join countryreqs_t cr"
                 + " on c.country_id = cr.country_id join genreqs_t g on cr.req_id = g.req_id"
@@ -247,7 +249,6 @@ namespace Findstaff
                 cbReq2.Items.Clear();
                 dgvReq2.Rows.Clear();
             }
-
             connection.Close();
         }
     }
