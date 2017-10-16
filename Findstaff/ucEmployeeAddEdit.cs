@@ -81,7 +81,7 @@ namespace Findstaff
                             gender = rbMale.Text;
                         }
                         string bdate = cbYear.Text + "-" + (cbMonth.SelectedIndex + 1).ToString() + "-" + cbDay.Text;
-                        cmd = "Insert into emp_t(emp_id, Username, pass, lname, fname, mname, gender, birthdate, addrss, contact, deptname) values" +
+                        cmd = "Insert into emp_t(Username, pass, lname, fname, mname, gender, birthdate, addrss, contact, deptname) values" +
                                 " ('" + txtUsername.Text + "','" + txtPass.Text
                                 + "','" + txtLastName.Text + "','" + txtFirstName.Text
                                 + "','" + mname + "','" + gender + "','" + bdate + "', '" + txtAddress.Text
@@ -659,20 +659,6 @@ namespace Findstaff
             BirthdayChecker2();
         }
 
-        private void rbMale2_CheckedChanged(object sender, EventArgs e)
-        {
-            rbFemale2.Checked = false;
-            rbMale2.Checked = true;
-            lblGenderStatus2.Text = "";
-        }
-
-        private void rbFemale2_CheckedChanged(object sender, EventArgs e)
-        {
-            rbMale2.Checked = false;
-            rbFemale2.Checked = true;
-            lblGenderStatus2.Text = "";
-        }
-
         private void txtAddress2_TextChanged(object sender, EventArgs e)
         {
             if (txtAddress2.Text != "")
@@ -807,6 +793,20 @@ namespace Findstaff
             {
                 lblUserStatus2.Text = "* Username must be at least 8 characters!";
             }
+        }
+
+        private void rbMale2_Click(object sender, EventArgs e)
+        {
+            rbFemale2.Checked = false;
+            rbMale2.Checked = true;
+            lblGenderStatus2.Text = "";
+        }
+
+        private void rbFemale2_Click(object sender, EventArgs e)
+        {
+            rbMale2.Checked = false;
+            rbFemale2.Checked = true;
+            lblGenderStatus2.Text = "";
         }
     }
     #endregion

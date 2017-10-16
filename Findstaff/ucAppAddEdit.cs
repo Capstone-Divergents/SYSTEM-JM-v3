@@ -302,7 +302,6 @@ namespace Findstaff
                     cbSkills2.Items.Add(dr[0].ToString());
                 }
                 dr.Close();
-
                 connection.Close();
             }
             else

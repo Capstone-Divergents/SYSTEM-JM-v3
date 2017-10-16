@@ -39,7 +39,7 @@ namespace Findstaff
                     ctr = int.Parse(com.ExecuteScalar() + "");
                     if (ctr == 0)
                     {
-                        cmd = "Insert into Country_t (Country_id, countryname) values ('" + txtCountryName1.Text + "')";
+                        cmd = "Insert into Country_t (countryname) values ('" + txtCountryName1.Text + "')";
                         com = new MySqlCommand(cmd, connection);
                         com.ExecuteNonQuery();
                         cmd = "Select country_id from country_t where countryname = '"+txtCountryName1.Text+"'";

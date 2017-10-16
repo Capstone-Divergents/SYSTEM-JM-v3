@@ -171,6 +171,7 @@
             this.ucFeesAddEdit.Size = new System.Drawing.Size(16, 17);
             this.ucFeesAddEdit.TabIndex = 101;
             this.ucFeesAddEdit.Visible = false;
+            this.ucFeesAddEdit.VisibleChanged += new System.EventHandler(this.ucFeesAddEdit_VisibleChanged);
             // 
             // ucFees
             // 

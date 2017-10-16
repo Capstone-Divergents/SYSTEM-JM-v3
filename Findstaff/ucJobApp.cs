@@ -381,19 +381,20 @@ namespace Findstaff
 
         private void btnAppMatchInt_Click(object sender, EventArgs e)
         {
-            string[,] apps = new string[dgvAppMatch.SelectedRows.Count, 2];
+            int length = dgvAppMatch.SelectedRows.Count;
+            string[,] apps = new string[length, 2];
             string[] job = new string[3];
             job[0] = cbEmployer.Text;
             job[1] = cbJobOrder.Text;
             job[2] = cbJob.Text;
-            for (int x = 0; x < dgvAppMatch.SelectedRows.Count; x++)
+            for (int x = 0; x < length; x++)
             {
                 apps[x, 0] = dgvAppMatch.SelectedRows[x].Cells[0].Value.ToString();
                 apps[x, 1] = dgvAppMatch.SelectedRows[x].Cells[1].Value.ToString();
             }
             MessageBox.Show(apps.Length.ToString());
             InitialInterviewDate intdate = new InitialInterviewDate();
-            intdate.initComponents(apps, job);
+            intdate.initComponents(apps, job, length);
             intdate.Show();
         }
     }

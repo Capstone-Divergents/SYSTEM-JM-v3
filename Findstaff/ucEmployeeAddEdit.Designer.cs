@@ -1097,7 +1097,7 @@
             this.rbFemale2.TabStop = true;
             this.rbFemale2.Text = "Female";
             this.rbFemale2.UseVisualStyleBackColor = false;
-            this.rbFemale2.CheckedChanged += new System.EventHandler(this.rbFemale2_CheckedChanged);
+            this.rbFemale2.Click += new System.EventHandler(this.rbFemale2_Click);
             // 
             // rbMale2
             // 
@@ -1113,7 +1113,7 @@
             this.rbMale2.TabStop = true;
             this.rbMale2.Text = "Male";
             this.rbMale2.UseVisualStyleBackColor = false;
-            this.rbMale2.CheckedChanged += new System.EventHandler(this.rbMale2_CheckedChanged);
+            this.rbMale2.Click += new System.EventHandler(this.rbMale2_Click);
             // 
             // label8
             // 
