@@ -40,6 +40,75 @@ namespace Findstaff
 
         private void btnEmpEdit_Click(object sender, EventArgs e)
         {
+            ucJobListAddEdit.cbJOrder2.Text = dgvJobList.SelectedRows[0].Cells[0].Value.ToString();
+            ucJobListAddEdit.cbJob2.Text = dgvJobList.SelectedRows[0].Cells[1].Value.ToString();
+            ucJobListAddEdit.txtEmployer2.Text = dgvJobList.SelectedRows[0].Cells[2].Value.ToString();
+            ucJobListAddEdit.txtReqApp2.Text = dgvJobList.SelectedRows[0].Cells[3].Value.ToString();
+
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+            string cmd = "select e.employername from employer_t e join joblist_t jl on e.employer_id = jl.employer_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucJobListAddEdit.txtEmployer2.Text = dr[0].ToString();
+            }
+            dr.Close();
+
+            cmd = "select reqapp, salary, heightreq, weightreq from joblist_t where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucJobListAddEdit.txtReqApp2.Text = dr[0].ToString();
+                ucJobListAddEdit.txtSalary2.Text = dr[1].ToString();
+                ucJobListAddEdit.txtHeight2.Text = dr[2].ToString();
+                ucJobListAddEdit.txtWeight2.Text = dr[3].ToString();
+            }
+            dr.Close();
+
+            cmd = "select j.jobname from job_t j join joblist_t jl on j.job_id = jl.job_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucJobListAddEdit.cbJob2.Text = dr[0].ToString();
+            }
+            dr.Close();
+
+            cmd = "select jc.categoryname from jobcategory_t jc join joblist_t jl on jc.category_id = jl.category_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucJobListAddEdit.cbCategory2.Text = dr[0].ToString();
+            }
+            dr.Close();
+
+            cmd = "select g.skillname'Skill Name', js.proflevel'Proficiency Level' from jobskills_t js join genskills_t g on js.skill_id = g.skill_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    ucJobListAddEdit.dgvSkills2.DataSource = ds.Tables[0];
+                }
+            }
+
+            cmd = "select g.reqname'Requirement Name' from jobdocs_t j join genreqs_t g on j.req_id = g.req_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    ucJobListAddEdit.dgvReqDocs2.DataSource = ds.Tables[0];
+                }
+            }
+
             ucJobListAddEdit.Dock = DockStyle.Fill;
             ucJobListAddEdit.Visible = true;
             ucJobListAddEdit.panel1.Visible = false;
@@ -121,6 +190,24 @@ namespace Findstaff
             ucJobListView.Visible = true;
         }
 
+        public void searchData(string valueToFind)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            string cmd = "select jo.jorder_id'Job Order ID', j.jobname'Job', e.employername'Employer', jl.reqapp'No. of Required Applicants' " +
+                "from joborder_t jo join joblist_t jl on jo.JORDER_ID = jl.jorder_id join employer_t e on jo.employer_id = e.employer_id " +
+                "join job_t j on jl.job_id = j.job_id where jo.cntrctstat = 'Active' or jo.cntrctstat = 'Renewed' AND concat(jo.jorder_id, j.jobname, e.employername, jl.reqapp) LIKE '%" + valueToFind + "%'";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvJobList.DataSource = table;
+        }
+
         private void ucJobListAddEdit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
@@ -139,6 +226,16 @@ namespace Findstaff
                 }
             }
             connection.Close();
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
+        }
+
+        private void ucJobList_Load(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
         }
     }
 }

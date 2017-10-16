@@ -310,6 +310,24 @@ namespace Findstaff
         }
         #endregion
 
+        public void searchData(string valueToFind)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            string cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', job.jobname'Applying for' "
+                    + "from app_t app join job_t job "
+                    + "on app.position = job.jobname WHERE concat(app.app_id, app.lname, ', ', app.fname, ' ', app.mname, job.jobname) LIKE '%" + valueToFind + "%'";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvApplicant.DataSource = table;
+        }
+
         private void ucAppAddEdit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
@@ -326,6 +344,16 @@ namespace Findstaff
                     dgvApplicant.DataSource = ds.Tables[0];
                 }
             }
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
+        }
+
+        private void ucApplicant_Load(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
         }
     }
 }

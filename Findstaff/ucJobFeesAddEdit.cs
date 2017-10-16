@@ -97,12 +97,14 @@ namespace Findstaff
                     cbJobOrder1.Items.Add(dr[0]);
                 }
                 dr.Close();
+
                 cmd = "Select feename from genfees_t;";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
                 {
                     cbFees1.Items.Add(dr[0]);
+                    cbFees2.Items.Add(dr[0]);
                 }
                 dr.Close();
                 connection.Close();

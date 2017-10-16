@@ -31,8 +31,8 @@
             this.rbJobApplicant = new System.Windows.Forms.RadioButton();
             this.rbApplicantList = new System.Windows.Forms.RadioButton();
             this.pnlTabs = new System.Windows.Forms.Panel();
-            this.rbInterviewInit = new System.Windows.Forms.RadioButton();
             this.rbInterviewFin = new System.Windows.Forms.RadioButton();
+            this.rbInterviewInit = new System.Windows.Forms.RadioButton();
             this.ucJobApp = new Findstaff.ucJobApp();
             this.ucAppList = new Findstaff.ucAppList();
             this.ucInterviewInit = new Findstaff.ucInterviewInit();
@@ -95,27 +95,6 @@
             this.pnlTabs.Size = new System.Drawing.Size(1118, 50);
             this.pnlTabs.TabIndex = 30;
             // 
-            // rbInterviewInit
-            // 
-            this.rbInterviewInit.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbInterviewInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(63)))));
-            this.rbInterviewInit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.rbInterviewInit.FlatAppearance.BorderSize = 0;
-            this.rbInterviewInit.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
-            this.rbInterviewInit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.rbInterviewInit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rbInterviewInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbInterviewInit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbInterviewInit.ForeColor = System.Drawing.Color.White;
-            this.rbInterviewInit.Location = new System.Drawing.Point(542, 10);
-            this.rbInterviewInit.Name = "rbInterviewInit";
-            this.rbInterviewInit.Size = new System.Drawing.Size(200, 40);
-            this.rbInterviewInit.TabIndex = 3;
-            this.rbInterviewInit.Text = "Initial Interview";
-            this.rbInterviewInit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbInterviewInit.UseVisualStyleBackColor = false;
-            this.rbInterviewInit.CheckedChanged += new System.EventHandler(this.rbInterview_CheckedChanged);
-            // 
             // rbInterviewFin
             // 
             this.rbInterviewFin.Appearance = System.Windows.Forms.Appearance.Button;
@@ -136,6 +115,27 @@
             this.rbInterviewFin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbInterviewFin.UseVisualStyleBackColor = false;
             this.rbInterviewFin.CheckedChanged += new System.EventHandler(this.rbInterviewFin_CheckedChanged);
+            // 
+            // rbInterviewInit
+            // 
+            this.rbInterviewInit.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbInterviewInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(63)))));
+            this.rbInterviewInit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rbInterviewInit.FlatAppearance.BorderSize = 0;
+            this.rbInterviewInit.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.rbInterviewInit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.rbInterviewInit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbInterviewInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbInterviewInit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbInterviewInit.ForeColor = System.Drawing.Color.White;
+            this.rbInterviewInit.Location = new System.Drawing.Point(542, 10);
+            this.rbInterviewInit.Name = "rbInterviewInit";
+            this.rbInterviewInit.Size = new System.Drawing.Size(200, 40);
+            this.rbInterviewInit.TabIndex = 3;
+            this.rbInterviewInit.Text = "Initial Interview";
+            this.rbInterviewInit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbInterviewInit.UseVisualStyleBackColor = false;
+            this.rbInterviewInit.CheckedChanged += new System.EventHandler(this.rbInterview_CheckedChanged);
             // 
             // ucJobApp
             // 
@@ -185,6 +185,7 @@
             this.Controls.Add(this.pnlTabs);
             this.Name = "ucRecruitment";
             this.Size = new System.Drawing.Size(1118, 500);
+            this.VisibleChanged += new System.EventHandler(this.ucRecruitment_VisibleChanged);
             this.pnlTabs.ResumeLayout(false);
             this.ResumeLayout(false);
 

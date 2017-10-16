@@ -30,40 +30,15 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.txtMName = new System.Windows.Forms.TextBox();
-            this.txtFName = new System.Windows.Forms.TextBox();
             this.btnView = new System.Windows.Forms.Button();
             this.dgvAppList = new System.Windows.Forms.DataGridView();
             this.btnAdvSe = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtLName = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.lblalSearch = new System.Windows.Forms.Label();
             this.lblApplicantList = new System.Windows.Forms.Label();
             this.ucAppView = new Findstaff.ucAppView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppList)).BeginInit();
             this.SuspendLayout();
-            // 
-            // txtMName
-            // 
-            this.txtMName.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtMName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMName.ForeColor = System.Drawing.Color.Black;
-            this.txtMName.Location = new System.Drawing.Point(475, 97);
-            this.txtMName.MaxLength = 30;
-            this.txtMName.Name = "txtMName";
-            this.txtMName.Size = new System.Drawing.Size(120, 26);
-            this.txtMName.TabIndex = 46;
-            // 
-            // txtFName
-            // 
-            this.txtFName.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtFName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFName.ForeColor = System.Drawing.Color.Black;
-            this.txtFName.Location = new System.Drawing.Point(349, 97);
-            this.txtFName.MaxLength = 30;
-            this.txtFName.Name = "txtFName";
-            this.txtFName.Size = new System.Drawing.Size(120, 26);
-            this.txtFName.TabIndex = 45;
             // 
             // btnView
             // 
@@ -126,7 +101,7 @@
             this.btnAdvSe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdvSe.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdvSe.ForeColor = System.Drawing.Color.Black;
-            this.btnAdvSe.Location = new System.Drawing.Point(707, 94);
+            this.btnAdvSe.Location = new System.Drawing.Point(518, 96);
             this.btnAdvSe.Name = "btnAdvSe";
             this.btnAdvSe.Size = new System.Drawing.Size(250, 30);
             this.btnAdvSe.TabIndex = 42;
@@ -134,31 +109,17 @@
             this.btnAdvSe.UseVisualStyleBackColor = false;
             this.btnAdvSe.Click += new System.EventHandler(this.btnAdvSe_Click);
             // 
-            // btnSearch
+            // txtName
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Location = new System.Drawing.Point(601, 94);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(100, 30);
-            this.btnSearch.TabIndex = 41;
-            this.btnSearch.Text = "SEARCH";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // txtLName
-            // 
-            this.txtLName.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtLName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLName.ForeColor = System.Drawing.Color.Black;
-            this.txtLName.Location = new System.Drawing.Point(223, 97);
-            this.txtLName.MaxLength = 30;
-            this.txtLName.Name = "txtLName";
-            this.txtLName.Size = new System.Drawing.Size(120, 26);
-            this.txtLName.TabIndex = 40;
+            this.txtName.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Black;
+            this.txtName.Location = new System.Drawing.Point(223, 97);
+            this.txtName.MaxLength = 30;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(289, 26);
+            this.txtName.TabIndex = 40;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // lblalSearch
             // 
@@ -199,17 +160,16 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.ucAppView);
-            this.Controls.Add(this.txtMName);
-            this.Controls.Add(this.txtFName);
             this.Controls.Add(this.btnView);
             this.Controls.Add(this.dgvAppList);
             this.Controls.Add(this.btnAdvSe);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtLName);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblalSearch);
             this.Controls.Add(this.lblApplicantList);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucAppList";
             this.Size = new System.Drawing.Size(1118, 450);
+            this.Load += new System.EventHandler(this.ucAppList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppList)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -217,13 +177,9 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtMName;
-        private System.Windows.Forms.TextBox txtFName;
         private System.Windows.Forms.Button btnView;
         private System.Windows.Forms.Button btnAdvSe;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox txtLName;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblalSearch;
         private System.Windows.Forms.Label lblApplicantList;
         private ucAppView ucAppView;

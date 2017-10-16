@@ -38,6 +38,8 @@
             this.btnAdd = new System.Windows.Forms.Button();
             this.ucAppView = new Findstaff.ucAppView();
             this.ucAppAddEdit = new Findstaff.ucAppAddEdit();
+            this.txtName = new System.Windows.Forms.TextBox();
+            this.lblalSearch = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvApplicant)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +70,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvApplicant.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvApplicant.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvApplicant.Location = new System.Drawing.Point(100, 98);
+            this.dgvApplicant.Location = new System.Drawing.Point(100, 115);
             this.dgvApplicant.MultiSelect = false;
             this.dgvApplicant.Name = "dgvApplicant";
             this.dgvApplicant.ReadOnly = true;
@@ -173,6 +175,30 @@
             this.ucAppAddEdit.Visible = false;
             this.ucAppAddEdit.VisibleChanged += new System.EventHandler(this.ucAppAddEdit_VisibleChanged);
             // 
+            // txtName
+            // 
+            this.txtName.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Black;
+            this.txtName.Location = new System.Drawing.Point(221, 80);
+            this.txtName.MaxLength = 30;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(255, 26);
+            this.txtName.TabIndex = 52;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
+            // 
+            // lblalSearch
+            // 
+            this.lblalSearch.AutoSize = true;
+            this.lblalSearch.BackColor = System.Drawing.Color.Transparent;
+            this.lblalSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblalSearch.ForeColor = System.Drawing.Color.Black;
+            this.lblalSearch.Location = new System.Drawing.Point(98, 83);
+            this.lblalSearch.Name = "lblalSearch";
+            this.lblalSearch.Size = new System.Drawing.Size(117, 19);
+            this.lblalSearch.TabIndex = 51;
+            this.lblalSearch.Text = "Search Name :";
+            // 
             // ucApplicant
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -186,9 +212,12 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvApplicant);
             this.Controls.Add(this.lblApplicant);
+            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.lblalSearch);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucApplicant";
             this.Size = new System.Drawing.Size(1118, 450);
+            this.Load += new System.EventHandler(this.ucApplicant_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvApplicant)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -204,5 +233,7 @@
         private ucAppAddEdit ucAppAddEdit;
         private ucAppView ucAppView;
         public System.Windows.Forms.DataGridView dgvApplicant;
+        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.Label lblalSearch;
     }
 }

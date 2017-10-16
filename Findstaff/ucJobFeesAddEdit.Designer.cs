@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRemoveFee = new System.Windows.Forms.Button();
             this.btnStart1 = new System.Windows.Forms.Button();
@@ -51,20 +51,20 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnRemoveFee2 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtAmount2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEmployer2 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnCancel2 = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.dgvFees2 = new System.Windows.Forms.DataGridView();
-            this.button5 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnAddFee2 = new System.Windows.Forms.Button();
+            this.cbFees2 = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtJobID = new System.Windows.Forms.TextBox();
+            this.txtJobOrder2 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -96,7 +96,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(744, 450);
+            this.panel1.Size = new System.Drawing.Size(10, 450);
             this.panel1.TabIndex = 0;
             // 
             // btnRemoveFee
@@ -265,24 +265,24 @@
             this.dgvFees1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFees1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvFees1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFees1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFees1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvFees1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFees1.ColumnHeadersVisible = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFees1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFees1.DefaultCellStyle = dataGridViewCellStyle10;
             this.dgvFees1.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvFees1.Location = new System.Drawing.Point(100, 240);
             this.dgvFees1.MultiSelect = false;
@@ -362,40 +362,40 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
-            this.panel2.Controls.Add(this.button4);
+            this.panel2.Controls.Add(this.btnRemoveFee2);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.txtAmount2);
             this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.txtEmployer2);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Controls.Add(this.dgvFees2);
-            this.panel2.Controls.Add(this.button5);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.btnAddFee2);
+            this.panel2.Controls.Add(this.cbFees2);
             this.panel2.Controls.Add(this.label10);
-            this.panel2.Controls.Add(this.txtJobID);
+            this.panel2.Controls.Add(this.txtJobOrder2);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1108, 0);
+            this.panel2.Location = new System.Drawing.Point(64, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 450);
+            this.panel2.Size = new System.Drawing.Size(1054, 450);
             this.panel2.TabIndex = 1;
             // 
-            // button4
+            // btnRemoveFee2
             // 
-            this.button4.BackColor = System.Drawing.Color.Gainsboro;
-            this.button4.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Location = new System.Drawing.Point(900, 394);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 30);
-            this.button4.TabIndex = 277;
-            this.button4.Text = "REMOVE";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnRemoveFee2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnRemoveFee2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnRemoveFee2.FlatAppearance.BorderSize = 0;
+            this.btnRemoveFee2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemoveFee2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveFee2.ForeColor = System.Drawing.Color.Black;
+            this.btnRemoveFee2.Location = new System.Drawing.Point(900, 394);
+            this.btnRemoveFee2.Name = "btnRemoveFee2";
+            this.btnRemoveFee2.Size = new System.Drawing.Size(100, 30);
+            this.btnRemoveFee2.TabIndex = 277;
+            this.btnRemoveFee2.Text = "REMOVE";
+            this.btnRemoveFee2.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -408,16 +408,16 @@
             this.label4.TabIndex = 284;
             this.label4.Text = "JOB ORDER FEES";
             // 
-            // textBox3
+            // txtAmount2
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.ForeColor = System.Drawing.Color.Black;
-            this.textBox3.Location = new System.Drawing.Point(543, 207);
-            this.textBox3.MaxLength = 30;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 26);
-            this.textBox3.TabIndex = 283;
+            this.txtAmount2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtAmount2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmount2.ForeColor = System.Drawing.Color.Black;
+            this.txtAmount2.Location = new System.Drawing.Point(543, 207);
+            this.txtAmount2.MaxLength = 30;
+            this.txtAmount2.Name = "txtAmount2";
+            this.txtAmount2.Size = new System.Drawing.Size(200, 26);
+            this.txtAmount2.TabIndex = 283;
             // 
             // label5
             // 
@@ -431,16 +431,17 @@
             this.label5.TabIndex = 282;
             this.label5.Text = "Amount: P";
             // 
-            // textBox4
+            // txtEmployer2
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.ForeColor = System.Drawing.Color.Black;
-            this.textBox4.Location = new System.Drawing.Point(513, 97);
-            this.textBox4.MaxLength = 30;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(200, 26);
-            this.textBox4.TabIndex = 281;
+            this.txtEmployer2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtEmployer2.Enabled = false;
+            this.txtEmployer2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployer2.ForeColor = System.Drawing.Color.Black;
+            this.txtEmployer2.Location = new System.Drawing.Point(513, 97);
+            this.txtEmployer2.MaxLength = 30;
+            this.txtEmployer2.Name = "txtEmployer2";
+            this.txtEmployer2.Size = new System.Drawing.Size(200, 26);
+            this.txtEmployer2.TabIndex = 281;
             // 
             // label6
             // 
@@ -512,23 +513,23 @@
             this.dgvFees2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFees2.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvFees2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFees2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFees2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
             this.dgvFees2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFees2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFees2.DefaultCellStyle = dataGridViewCellStyle12;
             this.dgvFees2.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvFees2.Location = new System.Drawing.Point(100, 240);
             this.dgvFees2.MultiSelect = false;
@@ -540,46 +541,33 @@
             this.dgvFees2.Size = new System.Drawing.Size(900, 150);
             this.dgvFees2.TabIndex = 278;
             // 
-            // button5
+            // btnAddFee2
             // 
-            this.button5.BackColor = System.Drawing.Color.Gainsboro;
-            this.button5.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.Color.Black;
-            this.button5.Location = new System.Drawing.Point(749, 204);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(100, 30);
-            this.button5.TabIndex = 276;
-            this.button5.Text = "ADD";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnAddFee2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddFee2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAddFee2.FlatAppearance.BorderSize = 0;
+            this.btnAddFee2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddFee2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFee2.ForeColor = System.Drawing.Color.Black;
+            this.btnAddFee2.Location = new System.Drawing.Point(749, 204);
+            this.btnAddFee2.Name = "btnAddFee2";
+            this.btnAddFee2.Size = new System.Drawing.Size(100, 30);
+            this.btnAddFee2.TabIndex = 276;
+            this.btnAddFee2.Text = "ADD";
+            this.btnAddFee2.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // cbFees2
             // 
-            this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.ForeColor = System.Drawing.Color.Black;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.comboBox1.Location = new System.Drawing.Point(263, 207);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(184, 27);
-            this.comboBox1.TabIndex = 275;
+            this.cbFees2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbFees2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbFees2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbFees2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFees2.ForeColor = System.Drawing.Color.Black;
+            this.cbFees2.FormattingEnabled = true;
+            this.cbFees2.Location = new System.Drawing.Point(195, 206);
+            this.cbFees2.Name = "cbFees2";
+            this.cbFees2.Size = new System.Drawing.Size(184, 27);
+            this.cbFees2.TabIndex = 275;
             // 
             // label10
             // 
@@ -588,21 +576,21 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(100, 210);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(157, 19);
+            this.label10.Size = new System.Drawing.Size(89, 19);
             this.label10.TabIndex = 274;
-            this.label10.Text = "Requirement Name:";
+            this.label10.Text = "Fee Name:";
             // 
-            // txtJobID
+            // txtJobOrder2
             // 
-            this.txtJobID.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtJobID.Enabled = false;
-            this.txtJobID.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtJobID.ForeColor = System.Drawing.Color.Black;
-            this.txtJobID.Location = new System.Drawing.Point(215, 97);
-            this.txtJobID.MaxLength = 30;
-            this.txtJobID.Name = "txtJobID";
-            this.txtJobID.Size = new System.Drawing.Size(200, 26);
-            this.txtJobID.TabIndex = 273;
+            this.txtJobOrder2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtJobOrder2.Enabled = false;
+            this.txtJobOrder2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJobOrder2.ForeColor = System.Drawing.Color.Black;
+            this.txtJobOrder2.Location = new System.Drawing.Point(215, 97);
+            this.txtJobOrder2.MaxLength = 30;
+            this.txtJobOrder2.Name = "txtJobOrder2";
+            this.txtJobOrder2.Size = new System.Drawing.Size(200, 26);
+            this.txtJobOrder2.TabIndex = 273;
             // 
             // label11
             // 
@@ -665,18 +653,12 @@
         private System.Windows.Forms.TextBox txtEmployer1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnCancel2;
         private System.Windows.Forms.Button btnSave;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox txtJobID;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         public System.Windows.Forms.Panel panel2;
@@ -685,5 +667,11 @@
         private System.Windows.Forms.Button btnStart1;
         public System.Windows.Forms.DataGridView dgvFees1;
         public System.Windows.Forms.DataGridView dgvFees2;
+        public System.Windows.Forms.TextBox txtAmount2;
+        public System.Windows.Forms.TextBox txtEmployer2;
+        public System.Windows.Forms.Button btnRemoveFee2;
+        public System.Windows.Forms.Button btnAddFee2;
+        public System.Windows.Forms.ComboBox cbFees2;
+        public System.Windows.Forms.TextBox txtJobOrder2;
     }
 }

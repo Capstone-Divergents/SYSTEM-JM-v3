@@ -13,6 +13,11 @@ namespace Findstaff
 {
     public partial class ucRecruitment : UserControl
     {
+        private MySqlConnection connection;
+        MySqlCommand com = new MySqlCommand();
+        MySqlDataAdapter adapter = new MySqlDataAdapter();
+        private string cmd = "";
+
         public ucRecruitment()
         {
             InitializeComponent();
@@ -24,6 +29,20 @@ namespace Findstaff
 
         private void rbApplicantList_CheckedChanged(object sender, EventArgs e)
         {
+            
+            cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', job.jobname'Applying for' "
+                    + "from app_t app join job_t job "
+                    + "on app.position = job.jobname ";
+            using (connection)
+            {
+                using (adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    ucAppList.dgvAppList.DataSource = ds.Tables[0];
+                }
+            }
+
             ucAppList.Visible = true;
             ucJobApp.Visible = false;
             ucInterviewInit.Visible = false;
@@ -52,6 +71,12 @@ namespace Findstaff
             ucJobApp.Visible = false;
             ucInterviewInit.Visible = false;
             ucInterviewFin.Visible = true;
+        }
+
+        private void ucRecruitment_VisibleChanged(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
         }
     }
 }

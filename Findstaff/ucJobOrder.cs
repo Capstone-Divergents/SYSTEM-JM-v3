@@ -76,6 +76,22 @@ namespace Findstaff
             }
         }
 
+        public void searchData(string valueToFind)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            string cmd = "Select J.jorder_id 'Job Order ID', e.employername'Employer', j.Cntrctstart 'Contract Start' from Joborder_t j join employer_t e on j.employer_id = e.employer_id WHERE concat(j.jorder_id, e.employername, j.Cntrctstart) LIKE '%" + valueToFind + "%'";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvJobOrder.DataSource = table;
+        }
+
         private void ucJobOrderAddEdit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
@@ -108,6 +124,16 @@ namespace Findstaff
                 MessageBox.Show("Job Order Deleted!", "Job Order Record Removed", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             connection.Close();
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
+        }
+
+        private void ucJobOrder_Load(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
         }
     }
 }

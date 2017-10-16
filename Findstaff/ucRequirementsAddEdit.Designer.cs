@@ -133,9 +133,9 @@
             this.lblAddRequirement.ForeColor = System.Drawing.Color.Black;
             this.lblAddRequirement.Location = new System.Drawing.Point(25, 25);
             this.lblAddRequirement.Name = "lblAddRequirement";
-            this.lblAddRequirement.Size = new System.Drawing.Size(308, 39);
+            this.lblAddRequirement.Size = new System.Drawing.Size(266, 39);
             this.lblAddRequirement.TabIndex = 270;
-            this.lblAddRequirement.Text = "Add Requirements";
+            this.lblAddRequirement.Text = "Add Documents";
             // 
             // txtRequirement
             // 
@@ -296,9 +296,9 @@
             this.lblEditRequirements.ForeColor = System.Drawing.Color.Black;
             this.lblEditRequirements.Location = new System.Drawing.Point(25, 25);
             this.lblEditRequirements.Name = "lblEditRequirements";
-            this.lblEditRequirements.Size = new System.Drawing.Size(309, 39);
+            this.lblEditRequirements.Size = new System.Drawing.Size(267, 39);
             this.lblEditRequirements.TabIndex = 274;
-            this.lblEditRequirements.Text = "Edit Requirements";
+            this.lblEditRequirements.Text = "Edit Documents";
             // 
             // ucRequirementsAddEdit
             // 
