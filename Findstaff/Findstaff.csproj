@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=6.9.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.DirectoryServices" />
@@ -124,6 +124,12 @@
     </Compile>
     <Compile Include="ucCountryAddEdit.Designer.cs">
       <DependentUpon>ucCountryAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCountryView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCountryView.Designer.cs">
+      <DependentUpon>ucCountryView.cs</DependentUpon>
     </Compile>
     <Compile Include="ucDocAppDetails.cs">
       <SubType>UserControl</SubType>
@@ -226,6 +232,12 @@
     </Compile>
     <Compile Include="ucJobApp.Designer.cs">
       <DependentUpon>ucJobApp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucJobFeesView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucJobFeesView.Designer.cs">
+      <DependentUpon>ucJobFeesView.cs</DependentUpon>
     </Compile>
     <Compile Include="ucJobList.cs">
       <SubType>UserControl</SubType>
@@ -406,6 +418,9 @@
     <EmbeddedResource Include="ucCountryAddEdit.resx">
       <DependentUpon>ucCountryAddEdit.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucCountryView.resx">
+      <DependentUpon>ucCountryView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucDocAppDetails.resx">
       <DependentUpon>ucDocAppDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -456,6 +471,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucJobApp.resx">
       <DependentUpon>ucJobApp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucJobFeesView.resx">
+      <DependentUpon>ucJobFeesView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucJobList.resx">
       <DependentUpon>ucJobList.cs</DependentUpon>

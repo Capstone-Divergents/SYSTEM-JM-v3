@@ -36,6 +36,8 @@
             this.lblJobFees = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnView = new System.Windows.Forms.Button();
+            this.ucJobFeesView = new Findstaff.ucJobFeesView();
             this.ucJobFeesAddEdit = new Findstaff.ucJobFeesAddEdit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJobFees)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +50,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEdit.Location = new System.Drawing.Point(562, 365);
+            this.btnEdit.Location = new System.Drawing.Point(509, 365);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(100, 50);
             this.btnEdit.TabIndex = 53;
@@ -64,7 +66,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(456, 365);
+            this.btnAdd.Location = new System.Drawing.Point(403, 365);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 50);
             this.btnAdd.TabIndex = 52;
@@ -144,6 +146,32 @@
             this.label8.TabIndex = 267;
             this.label8.Text = "Search:";
             // 
+            // btnView
+            // 
+            this.btnView.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnView.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnView.FlatAppearance.BorderSize = 0;
+            this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnView.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.ForeColor = System.Drawing.Color.Black;
+            this.btnView.Location = new System.Drawing.Point(615, 365);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(100, 50);
+            this.btnView.TabIndex = 271;
+            this.btnView.Text = "VIEW";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
+            // ucJobFeesView
+            // 
+            this.ucJobFeesView.AutoScroll = true;
+            this.ucJobFeesView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucJobFeesView.Location = new System.Drawing.Point(43, 12);
+            this.ucJobFeesView.Name = "ucJobFeesView";
+            this.ucJobFeesView.Size = new System.Drawing.Size(10, 10);
+            this.ucJobFeesView.TabIndex = 272;
+            this.ucJobFeesView.Visible = false;
+            // 
             // ucJobFeesAddEdit
             // 
             this.ucJobFeesAddEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -159,6 +187,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Controls.Add(this.ucJobFeesView);
             this.Controls.Add(this.ucJobFeesAddEdit);
             this.Controls.Add(this.txtSearch);
             this.Controls.Add(this.label8);
@@ -166,6 +195,7 @@
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvJobFees);
             this.Controls.Add(this.lblJobFees);
+            this.Controls.Add(this.btnView);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucJobFees";
             this.Size = new System.Drawing.Size(1118, 450);
@@ -185,5 +215,7 @@
         private System.Windows.Forms.Label label8;
         private ucJobFeesAddEdit ucJobFeesAddEdit;
         public System.Windows.Forms.DataGridView dgvJobFees;
+        private System.Windows.Forms.Button btnView;
+        private ucJobFeesView ucJobFeesView;
     }
 }

@@ -15,6 +15,8 @@ namespace Findstaff
     {
         private MySqlConnection connection;
         MySqlCommand com = new MySqlCommand();
+        MySqlDataReader dr;
+        private string cmd = "";
 
         public ucCountry()
         {
@@ -44,7 +46,7 @@ namespace Findstaff
             connection.Open();
             DialogResult rs = MessageBox.Show("Are you sure you want to delete the country " + dgvCountry.SelectedRows[0].Cells[1].Value.ToString()
                 + " from the list of countries?", "Delete Country Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(rs == DialogResult.Yes)
+            if (rs == DialogResult.Yes)
             {
                 string cmd = "delete from country_t where country_id = '" + dgvCountry.SelectedRows[0].Cells[0].Value.ToString() + "';";
                 com = new MySqlCommand(cmd, connection);
@@ -55,24 +57,58 @@ namespace Findstaff
             connection.Close();
         }
 
-        //public void searchData(string valueToFind)
-        //{
-        //    Connection con = new Connection();
-        //    connection = con.dbConnection();
-        //    connection.Open();
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+            string cmd = "select country_id, countryname from country_t where country_id = '" + dgvCountry.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucCountryView.countryid.Text = dr[0].ToString();
+                ucCountryView.countryname.Text = dr[1].ToString();
+            }
+            dr.Close();
 
-        //    string cmd = "select c.COUNTRY_ID'Country ID', c.COUNTRYNAME'Name of Country', count(cr.req_id)'No. of requirements'"
-        //            + " from country_t c join countryreqs_t cr on"
-        //            + " c.country_id = cr.country_id"
-        //            + " group by c.country_id WHERE concat(c.country_id, c.countryname) LIKE '%" + valueToFind + "%'";
-        //    com = new MySqlCommand(cmd, connection);
-        //    com.ExecuteNonQuery();
+            cmd = "Select c.COUNTRY_ID'Country ID', g.Reqname'Requirement Name' from country_t c join countryreqs_t cr"
+                + " on c.country_id = cr.country_id join genreqs_t g on cr.req_id = g.req_id"
+                + " where c.country_id = '" + dgvCountry.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    ucCountryView.dgvReq.DataSource = ds.Tables[0];
+                }
+            }
+            dr.Close();
 
-        //    MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
-        //    DataTable table = new DataTable();
-        //    adapter.Fill(table);
-        //    dgvCountry.DataSource = table;
-        //}
+            ucCountryView.Dock = DockStyle.Fill;
+            ucCountryView.Visible = true;
+        }
+
+
+        public void searchData(string valueToFind)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            string cmd = "select c.COUNTRY_ID'Country ID', c.COUNTRYNAME'Name of Country', count(cr.req_id)'No. of requirements'"
+                    + " from country_t c join countryreqs_t cr on"
+                    + " c.country_id = cr.country_id"
+                    + " WHERE concat(c.country_id, c.countryname) LIKE '%" + valueToFind + "%' group by c.country_id";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvCountry.DataSource = table;
+        }
 
         private void ucCountryAddEdit1_VisibleChanged(object sender, EventArgs e)
         {
@@ -95,12 +131,13 @@ namespace Findstaff
 
         private void txtName_TextChanged(object sender, EventArgs e)
         {
-            //searchData(txtName.Text);
+            searchData(txtName.Text);
         }
 
         private void ucCountry_Load(object sender, EventArgs e)
         {
-            //searchData(txtName.Text);
+            searchData(txtName.Text);
         }
+
     }
 }

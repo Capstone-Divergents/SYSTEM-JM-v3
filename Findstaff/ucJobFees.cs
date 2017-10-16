@@ -39,7 +39,7 @@ namespace Findstaff
             connection = con.dbConnection();
             connection.Open();
 
-            cmd = "select e.employername from employer_t e join joblist_t jl on e.employer_id = jl.employer_id where jorder_id = '" + dgvJobFees.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select e.employername from employer_t e join jobfees_t jf on e.employer_id = jf.employer_id where jorder_id = '" + dgvJobFees.SelectedRows[0].Cells[0].Value.ToString() + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
@@ -107,6 +107,37 @@ namespace Findstaff
         private void ucJobFees_Load(object sender, EventArgs e)
         {
             searchData(txtSearch.Text);
+        }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            cmd = "select e.employername, jf.jorder_id from employer_t e join jobfees_t jf on e.employer_id = jf.employer_id where jorder_id = '" + dgvJobFees.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucJobFeesView.jorderid.Text = dr[0].ToString();
+                ucJobFeesView.employername.Text = dr[1].ToString();
+            }
+            dr.Close();
+
+            cmd = "select g.feename'Fee Name', jf.amount'Amount' from jobfees_t jf join genfees_t g on jf.fee_id = g.fee_id where jorder_id = '" + dgvJobFees.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    ucJobFeesView.dgvFees.DataSource = ds.Tables[0];
+                }
+            }
+
+            ucJobFeesView.Dock = DockStyle.Fill;
+            ucJobFeesView.Visible = true;
         }
     }
 }
