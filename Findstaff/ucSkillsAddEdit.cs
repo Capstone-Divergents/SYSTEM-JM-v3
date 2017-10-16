@@ -27,43 +27,14 @@ namespace Findstaff
         {
             connection.Open();
             int ctr = 0;
-            string cID = "";
-            string cou = "select count(*) from genskills_t;";
-            MySqlCommand com = new MySqlCommand(cou, connection);
-            ctr = int.Parse(com.ExecuteScalar() + "");
-            if ((ctr + "").Length == 1)
-            {
-                cID = "S0000" + ctr + "";
-            }
-            else if ((ctr + "").Length == 2)
-            {
-                cID = "S000" + ctr + "";
-            }
-            else if ((ctr + "").Length == 3)
-            {
-                cID = "S00" + ctr + "";
-            }
-            else if ((ctr + "").Length == 4)
-            {
-                cID = "S0" + ctr + "";
-            }
-            else if ((ctr + "").Length == 5)
-            {
-                cID = "S" + ctr + "";
-            }
-            else
-            {
-                MessageBox.Show("Table in the database will not be able to handle more records.");
-            }
-
-            if (cID != "")
+            if(txtSkillName1.Text != "")
             {
                 string check = "Select Count(Skillname) from Genskills_t where Skillname = '" + txtSkillName1.Text + "'";
                 com = new MySqlCommand(check, connection);
                 ctr = int.Parse(com.ExecuteScalar() + "");
                 if (ctr == 0)
                 {
-                    string cmd = "Insert into Genskills_t (Skill_id, skillname) values ('" + cID + "','" + txtSkillName1.Text + "')";
+                    string cmd = "Insert into Genskills_t (skillname) values ('" + txtSkillName1.Text + "')";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Added!", "Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -74,6 +45,10 @@ namespace Findstaff
                 {
                     MessageBox.Show("Record already exists.", "Error Message");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Skill Name Field Empty", "Error Message");
             }
             connection.Close();
         }

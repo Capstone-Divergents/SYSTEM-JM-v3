@@ -30,60 +30,29 @@ namespace Findstaff
             if (txtRequirement.Text != "")
             {
                 int ctr = 0;
-                string cID = "";
-                string cou = "select count(*) from genreqs_t;";
-                com = new MySqlCommand(cou, connection);
+                string check = "Select Count(reqname) from Genreqs_t where reqname = '" + txtRequirement.Text + "'";
+                com = new MySqlCommand(check, connection);
                 ctr = int.Parse(com.ExecuteScalar() + "");
-                if ((ctr + "").Length == 1)
+                if (ctr == 0)
                 {
-                    cID = "R0000" + ctr + "";
-                }
-                else if ((ctr + "").Length == 2)
-                {
-                    cID = "R000" + ctr + "";
-                }
-                else if ((ctr + "").Length == 3)
-                {
-                    cID = "R00" + ctr + "";
-                }
-                else if ((ctr + "").Length == 4)
-                {
-                    cID = "R0" + ctr + "";
-                }
-                else if ((ctr + "").Length == 5)
-                {
-                    cID = "R" + ctr + "";
-                }
-                else
-                {
-                    MessageBox.Show("Table in the database will not be able to handle more records.");
-                }
-                if (cID != "")
-                {
-                    string check = "Select Count(reqname) from Genreqs_t where reqname = '" + txtRequirement.Text + "'";
-                    com = new MySqlCommand(check, connection);
-                    ctr = int.Parse(com.ExecuteScalar() + "");
-                    if (ctr == 0)
+                    if (cbDesignation.SelectedIndex != -1)
                     {
-                        if (cbDesignation.SelectedIndex != -1)
-                        {
-                            string cmd = "Insert into Genreqs_t (Req_id, reqname, allocation) values ('" + cID + "','" + txtRequirement.Text + "','" + cbDesignation.Text + "')";
-                            com = new MySqlCommand(cmd, connection);
-                            com.ExecuteNonQuery();
-                            MessageBox.Show("Requirement Record Added!", "Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            txtRequirement.Clear();
-                            cbDesignation.SelectedIndex = -1;
-                            this.Hide();
-                        }
-                        else
-                        {
-                            MessageBox.Show("No Requirement Designation", "Error Message");
-                        }
+                        string cmd = "Insert into Genreqs_t (reqname, allocation) values ('" + txtRequirement.Text + "','" + cbDesignation.Text + "')";
+                        com = new MySqlCommand(cmd, connection);
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Requirement Record Added!", "Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtRequirement.Clear();
+                        cbDesignation.SelectedIndex = -1;
+                        this.Hide();
                     }
-                    else if (ctr != 0)
+                    else
                     {
-                        MessageBox.Show("Record already exists.", "Error Message");
+                        MessageBox.Show("No Requirement Designation", "Error Message");
                     }
+                }
+                else if (ctr != 0)
+                {
+                    MessageBox.Show("Record already exists.", "Error Message");
                 }
             }
             else

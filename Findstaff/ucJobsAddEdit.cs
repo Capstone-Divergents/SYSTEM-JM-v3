@@ -37,34 +37,6 @@ namespace Findstaff
             if (jobname != "" && categ != "" && jobtype != "")
             {
                 int ctr = 0;
-                string cID = "";
-                string cou = "select count(*) from Job_t;";
-                com = new MySqlCommand(cou, connection);
-                ctr = int.Parse(com.ExecuteScalar() + "");
-                if ((ctr + "").Length == 1)
-                {
-                    cID = "J0000" + ctr + "";
-                }
-                else if ((ctr + "").Length == 2)
-                {
-                    cID = "J000" + ctr + "";
-                }
-                else if ((ctr + "").Length == 3)
-                {
-                    cID = "J00" + ctr + "";
-                }
-                else if ((ctr + "").Length == 4)
-                {
-                    cID = "J0" + ctr + "";
-                }
-                else if ((ctr + "").Length == 5)
-                {
-                    cID = "J" + ctr + "";
-                }
-                else
-                {
-                    MessageBox.Show("Table in the database will not be able to handle more records.");
-                }
                 string check = "Select Count(jobname) from job_t where jobname = '" + txtJobs.Text + "'";
                 com = new MySqlCommand(check, connection);
                 ctr = int.Parse(com.ExecuteScalar() + "");
@@ -78,7 +50,7 @@ namespace Findstaff
                         categID = dr[0].ToString();
                     }
                     dr.Close();
-                    cmd = "insert into job_t values ('" + categID + "','" + cID + "','" + jobname + "','" + jobtype + "');";
+                    cmd = "insert into job_t (category_id, jobname, jobtype) values ('" + categID + "','" + jobname + "','" + jobtype + "');";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Job Record Added!", "New Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
