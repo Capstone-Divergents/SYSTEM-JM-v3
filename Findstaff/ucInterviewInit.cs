@@ -30,7 +30,7 @@ namespace Findstaff
             connection.Open();
             string jobID = "", empID = "", jorder = dgvInitInt.SelectedRows[0].Cells[0].Value.ToString(), jobname = dgvInitInt.SelectedRows[0].Cells[1].Value.ToString(), employer = ""; 
             cmd = "select e.employername from employer_t e join joborder_t j "
-                + "on e.employer_id - j.employer_id where j.jorder_id = '"+jorder+"'";
+                + "on e.employer_id = j.employer_id where j.jorder_id = '"+jorder+"'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
@@ -54,7 +54,7 @@ namespace Findstaff
                 empID = dr[0].ToString();
             }
             dr.Close();
-            cmd = "select app.app_no, a.app_id, concat(a.lname, ', ', a.fname, ' ', a.mname) from applications_t app "
+            cmd = "select app.app_no'Application No.', a.app_id'Applicant ID', concat(a.lname, ', ', a.fname, ' ', a.mname)'Applicant Name' from applications_t app "
                 + "join app_t a on app.app_id = a.app_id where app.appstats = 'Active' and app.appstatus = 'Recruitment' "
                 + "and app.jorder_id = '"+ jorder + "' and app.job_id = '"+ jobID +"' and app.employer_id = '"+empID+"' and initinterviewstatus is null";
             using (connection)

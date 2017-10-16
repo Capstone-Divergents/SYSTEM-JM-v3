@@ -23,25 +23,8 @@ namespace Findstaff
 
         private void ucIntListInit_Load(object sender, EventArgs e)
         {
-            string jname = "", jorder = "", emp = "";
-
             Connection con = new Connection();
             connection = con.dbConnection();
-            connection.Open();
-            string query = "SELECT * FROM EMP_T;";
-            com = new MySqlCommand(query, connection);
-            MySqlDataReader dataReader = com.ExecuteReader();
-            while (dataReader.Read())
-            {
-                //jname = dataReader.GetString();
-                //jorder = dataReader.GetString();
-                //emp = dataReader.GetString();
-            }
-            connection.Close();
-
-            jobname.Text = jname;
-            joborder.Text = jorder;
-            employer.Text = emp;
         }
 
         private void btnIntApp_Click(object sender, EventArgs e)

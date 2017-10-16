@@ -392,7 +392,6 @@ namespace Findstaff
                 apps[x, 0] = dgvAppMatch.SelectedRows[x].Cells[0].Value.ToString();
                 apps[x, 1] = dgvAppMatch.SelectedRows[x].Cells[1].Value.ToString();
             }
-            MessageBox.Show(apps.Length.ToString());
             InitialInterviewDate intdate = new InitialInterviewDate();
             intdate.initComponents(apps, job, length);
             intdate.Show();
