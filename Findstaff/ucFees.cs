@@ -46,22 +46,6 @@ namespace Findstaff
             }
         }
 
-        private void ucFeesAddEdit_VisibleChanged(object sender, EventArgs e)
-        {
-            Connection con = new Connection();
-            connection = con.dbConnection();
-            string com = "Select Fee_ID'Fee ID', Feename'Fee Name' from Genfees_t";
-            using (connection)
-            {
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
-                {
-                    DataSet ds = new DataSet();
-                    adapter.Fill(ds);
-                    dgvFees.DataSource = ds.Tables[0];
-                }
-            }
-        }
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
             Connection con = new Connection();
@@ -99,6 +83,22 @@ namespace Findstaff
         private void ucFees_Load(object sender, EventArgs e)
         {
             searchData(txtFeeName.Text);
+        }
+
+        private void ucFeesAddEdit_VisibleChanged(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            string com = "Select Fee_ID'Fee ID', Feename'Fee Name' from Genfees_t";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvFees.DataSource = ds.Tables[0];
+                }
+            }
         }
     }
 }
