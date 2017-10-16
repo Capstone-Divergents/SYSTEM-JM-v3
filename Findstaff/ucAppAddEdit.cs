@@ -154,13 +154,13 @@ namespace Findstaff
 
                 if (txtCityAddress.Text != "")
                 {
-                    cmd = "Insert into appaddress_t values ('"+cID+"','"+txtCityAddress.Text+"','Current');";
+                    cmd = "Insert into appaddress_t (app_id, addrss, addcat) values ('"+cID+"','"+txtCityAddress.Text+"','Current');";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                 }
                 if (txtProvAdd.Text != "")
                 {
-                    cmd = "Insert into appaddress_t values ('" + cID + "','" + txtProvAdd.Text + "','Provincial');";
+                    cmd = "Insert into appaddress_t (app_id, addrss, addcat) values ('" + cID + "','" + txtProvAdd.Text + "','Provincial');";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                 }

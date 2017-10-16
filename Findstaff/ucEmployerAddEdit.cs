@@ -48,6 +48,7 @@ namespace Findstaff
                     com.ExecuteNonQuery();
                     MessageBox.Show("Added!", "Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtEmp1.Clear();
+                    txtPrincipal1.Clear();
                     this.Hide();
                 }
                 else if (ctr != 0)

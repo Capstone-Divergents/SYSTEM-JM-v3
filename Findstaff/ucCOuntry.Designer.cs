@@ -35,9 +35,11 @@
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.ucCountryAddEdit = new Findstaff.ucCountryAddEdit();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lbl = new System.Windows.Forms.Label();
+            this.btnView = new System.Windows.Forms.Button();
+            this.ucCountryAddEdit = new Findstaff.ucCountryAddEdit();
+            this.ucCountryView = new Findstaff.ucCountryView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCountry)).BeginInit();
             this.SuspendLayout();
             // 
@@ -97,7 +99,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(615, 350);
+            this.btnDelete.Location = new System.Drawing.Point(565, 350);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(100, 50);
             this.btnDelete.TabIndex = 50;
@@ -113,7 +115,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEdit.Location = new System.Drawing.Point(509, 350);
+            this.btnEdit.Location = new System.Drawing.Point(459, 350);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(100, 50);
             this.btnEdit.TabIndex = 49;
@@ -129,23 +131,13 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(403, 350);
+            this.btnAdd.Location = new System.Drawing.Point(353, 350);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 50);
             this.btnAdd.TabIndex = 48;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
-            // ucCountryAddEdit
-            // 
-            this.ucCountryAddEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucCountryAddEdit.ForeColor = System.Drawing.Color.Black;
-            this.ucCountryAddEdit.Location = new System.Drawing.Point(0, -2);
-            this.ucCountryAddEdit.Name = "ucCountryAddEdit";
-            this.ucCountryAddEdit.Size = new System.Drawing.Size(26, 24);
-            this.ucCountryAddEdit.TabIndex = 51;
-            this.ucCountryAddEdit.VisibleChanged += new System.EventHandler(this.ucCountryAddEdit1_VisibleChanged);
             // 
             // txtName
             // 
@@ -171,11 +163,48 @@
             this.lbl.TabIndex = 117;
             this.lbl.Text = "Search:";
             // 
+            // btnView
+            // 
+            this.btnView.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnView.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnView.FlatAppearance.BorderSize = 0;
+            this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnView.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.ForeColor = System.Drawing.Color.Black;
+            this.btnView.Location = new System.Drawing.Point(671, 350);
+            this.btnView.Name = "btnView";
+            this.btnView.Size = new System.Drawing.Size(100, 50);
+            this.btnView.TabIndex = 118;
+            this.btnView.Text = "VIEW";
+            this.btnView.UseVisualStyleBackColor = false;
+            this.btnView.Click += new System.EventHandler(this.btnView_Click);
+            // 
+            // ucCountryAddEdit
+            // 
+            this.ucCountryAddEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucCountryAddEdit.ForeColor = System.Drawing.Color.Black;
+            this.ucCountryAddEdit.Location = new System.Drawing.Point(0, -2);
+            this.ucCountryAddEdit.Name = "ucCountryAddEdit";
+            this.ucCountryAddEdit.Size = new System.Drawing.Size(26, 24);
+            this.ucCountryAddEdit.TabIndex = 51;
+            this.ucCountryAddEdit.VisibleChanged += new System.EventHandler(this.ucCountryAddEdit1_VisibleChanged);
+            // 
+            // ucCountryView
+            // 
+            this.ucCountryView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucCountryView.Location = new System.Drawing.Point(32, 3);
+            this.ucCountryView.Name = "ucCountryView";
+            this.ucCountryView.Size = new System.Drawing.Size(10, 10);
+            this.ucCountryView.TabIndex = 119;
+            this.ucCountryView.Visible = false;
+            // 
             // ucCountry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Controls.Add(this.ucCountryView);
+            this.Controls.Add(this.btnView);
             this.Controls.Add(this.ucCountryAddEdit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -202,5 +231,7 @@
         private ucCountryAddEdit ucCountryAddEdit;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lbl;
+        private System.Windows.Forms.Button btnView;
+        private ucCountryView ucCountryView;
     }
 }
