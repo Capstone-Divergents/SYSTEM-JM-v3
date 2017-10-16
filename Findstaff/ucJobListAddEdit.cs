@@ -56,7 +56,7 @@ namespace Findstaff
             dr.Close();
             cmd = "Select count(*) from joblist_t where jorder_id = '" + cbJOrder1.Text + "' and employer_id = '" + empID + "' and category_id = '" + catID + "' and job_id = '" + jobID + "'";
             com = new MySqlCommand(cmd, connection);
-            int ctr = int.Parse(com.ExecuteScalar().ToString());
+            int ctr = int.Parse(com.ExecuteScalar() + "");
             if(ctr == 0)
             {
                 cmd = "insert into joblist_t(jorder_id, Employer_id, category_id, job_id, reqapp, salary, heightreq, weightreq, placementfee)"

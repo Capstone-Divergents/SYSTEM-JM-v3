@@ -120,7 +120,7 @@ namespace Findstaff
             }
             dr.Close();
             string[,] apps = new string[y, 2];
-            cmd = "select app_id, concat(lname, ', ', fname, ' ', mname) from app_t where position = '" + cbJob.Text + "'";
+            cmd = "select app_id, concat(lname, ', ', fname, ' ', mname) from app_t  where position = '" + cbJob.Text + "' and (select count(appstats) from applications_t where appstats = 'Active') = 0";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())

@@ -167,7 +167,7 @@ namespace Findstaff
                         }
                         dr.Close();
                         cmd = "insert into applications_t (app_no, app_id, jorder_id, employer_id, category_id, job_id, initinterviewdate, appstats, appstatus) "
-                            + "values ('" + appNo + "','" + appId + "','" + jorder + "','" + empId + "','" + jobcateg + "','" + jobId + "','" + cbYear.Text + "-" + (cbMonth.SelectedIndex + 1) + "-" + cbMonth.Text + "','Active','Recruitment')";
+                            + "values ('" + appNo + "','" + appId + "','" + jorder + "','" + empId + "','" + jobcateg + "','" + jobId + "','" + cbYear.Text + "-" + (cbMonth.SelectedIndex + 1) + "-" + cbDay.Text + "','Active','Recruitment')";
                         com = new MySqlCommand(cmd, connection);
                         com.ExecuteNonQuery();
                     }

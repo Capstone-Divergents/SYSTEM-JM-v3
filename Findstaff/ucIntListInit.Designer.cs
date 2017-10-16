@@ -195,6 +195,7 @@
             // 
             // ucInterviewCriteria
             // 
+            this.ucInterviewCriteria.AutoScroll = true;
             this.ucInterviewCriteria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ucInterviewCriteria.Location = new System.Drawing.Point(0, 0);
             this.ucInterviewCriteria.Name = "ucInterviewCriteria";
@@ -234,11 +235,11 @@
         private System.Windows.Forms.Label lblJobOrder;
         private System.Windows.Forms.Label lblJob;
         public System.Windows.Forms.DataGridView dgvIntervieweeList;
-        private System.Windows.Forms.Label employer;
-        private System.Windows.Forms.Label joborder;
-        private System.Windows.Forms.Label jobname;
         private System.Windows.Forms.Button btnIntApp;
         private System.Windows.Forms.Button btnClose;
         private ucInterviewCriteria ucInterviewCriteria;
+        public System.Windows.Forms.Label employer;
+        public System.Windows.Forms.Label joborder;
+        public System.Windows.Forms.Label jobname;
     }
 }
