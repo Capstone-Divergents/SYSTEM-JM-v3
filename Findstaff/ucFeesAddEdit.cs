@@ -28,53 +28,29 @@ namespace Findstaff
         {
             connection.Open();
             int ctr = 0;
-            string cID = "";
-            string cou = "select count(*) from genfees_t;";
-            com = new MySqlCommand(cou, connection);
-            ctr = int.Parse(com.ExecuteScalar()+"");
-            if ((ctr+"").Length == 1)
-            {
-                cID = "F0000" + ctr + "";
-            }
-            else if ((ctr + "").Length == 2)
-            {
-                cID = "F000" + ctr + "";
-            }
-            else if ((ctr + "").Length == 3)
-            {
-                cID = "F00" + ctr + "";
-            }
-            else if ((ctr + "").Length == 4)
-            {
-                cID = "F0" + ctr + "";
-            }
-            else if ((ctr + "").Length == 5)
-            {
-                cID = "F" + ctr + "";
-            }
-            else
-            {
-                MessageBox.Show("Table in the database will not be able to handle more records.");
-            }
-            if(cID != "")
+            if(txtFees1.Text != "")
             {
                 string check = "Select Count(Feename) from Genfees_t where Feename = '" + txtFees1.Text + "'";
                 com = new MySqlCommand(check, connection);
                 ctr = int.Parse(com.ExecuteScalar() + "");
                 if (ctr == 0)
                 {
-                    string cmd = "Insert into Genfees_t (Fee_id, Feename) values ('" + cID + "','" + txtFees1.Text + "')";
+                    string cmd = "Insert into Genfees_t (Feename) values ('" + txtFees1.Text + "')";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Added!", "Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     txtFees1.Clear();
                     this.Hide();
-                    
+
                 }
                 else if (ctr != 0)
                 {
                     MessageBox.Show("Record already exists.", "Error Message");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Fee Text Field Empty","Add Fee Error");
             }
             connection.Close();
         }

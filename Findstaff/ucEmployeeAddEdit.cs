@@ -81,80 +81,47 @@ namespace Findstaff
                             gender = rbMale.Text;
                         }
                         string bdate = cbYear.Text + "-" + (cbMonth.SelectedIndex + 1).ToString() + "-" + cbDay.Text;
-                        int ctr = 0;
-                        string cID = "";
-                        string cou = "select count(*) from emp_t;";
-                        com = new MySqlCommand(cou, connection);
-                        ctr = int.Parse(com.ExecuteScalar() + "");
-                        if ((ctr + "").Length == 1)
-                        {
-                            cID = "E0000" + ctr + "";
-                        }
-                        else if ((ctr + "").Length == 2)
-                        {
-                            cID = "E000" + ctr + "";
-                        }
-                        else if ((ctr + "").Length == 3)
-                        {
-                            cID = "E00" + ctr + "";
-                        }
-                        else if ((ctr + "").Length == 4)
-                        {
-                            cID = "E0" + ctr + "";
-                        }
-                        else if ((ctr + "").Length == 5)
-                        {
-                            cID = "E" + ctr + "";
-                        }
-                        else
-                        {
-                            MessageBox.Show("Table in the database will not be able to handle more records.");
-                        }
-                        if (cID != "")
-                        {
-                            cmd = "Insert into emp_t(emp_id, Username, pass, lname, fname, mname, gender, birthdate, addrss, contact, deptname) values"+
-                                " ('" + cID + "','" + txtUsername.Text + "','" + txtPass.Text 
-                                + "','" + txtLastName.Text + "','" + txtFirstName.Text 
-                                + "','" + mname + "','" + gender + "','" + bdate + "', '"+txtAddress.Text
-                                +"','" + txtContact.Text + "','" + cbDept.Text + "')";
-                            com = new MySqlCommand(cmd, connection);
-                            com.ExecuteNonQuery();
-                            MessageBox.Show("Added!", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            txtUsername.Clear();
-                            lblUserStatus.Text = "*";
-                            txtPass.Clear();
-                            lblPassStatus.Text = "*";
-                            txtConPass.Clear();
-                            lblConPassStatus.Text = "*";
-                            txtLastName.Text = "Last Name";
-                            lblLNameStatus.Text = "*";
-                            txtLastName.ForeColor = Color.Gray;
-                            txtLastName.Font = new Font(txtLastName.Font, FontStyle.Italic);
-                            txtFirstName.Text = "First Name";
-                            lblFNameStatus.Text = "*";
-                            txtFirstName.ForeColor = Color.Gray;
-                            txtFirstName.Font = new Font(txtFirstName.Font, FontStyle.Italic);
-                            txtMiddleName.Text = "Middle Name";
-                            txtMiddleName.ForeColor = Color.Gray;
-                            txtMiddleName.Font = new Font(txtMiddleName.Font, FontStyle.Italic);
-                            rbMale.Checked = false;
-                            rbFemale.Checked = false;
-                            lblGenderStatus.Text = "*";
-                            cbMonth.SelectedIndex = -1;
-                            cbDay.Items.Clear();
-                            cbYear.SelectedIndex = -1;
-                            lblBirthdayStatus.Text = "*";
-                            txtAddress.Text = "House Number, Street, City/Province";
-                            txtAddress.ForeColor = Color.Gray;
-                            txtAddress.Font = new Font(txtAddress.Font, FontStyle.Italic);
-                            lblAddressStatus.Text = "*";
-                            txtContact.Clear();
-                            lblContactStatus.Text = "*";
-                            cbDept.SelectedIndex = -1;
-                            lblDeptStatus.Text = "*";
-                            this.Hide();
-                        }
+                        cmd = "Insert into emp_t(emp_id, Username, pass, lname, fname, mname, gender, birthdate, addrss, contact, deptname) values" +
+                                " ('" + txtUsername.Text + "','" + txtPass.Text
+                                + "','" + txtLastName.Text + "','" + txtFirstName.Text
+                                + "','" + mname + "','" + gender + "','" + bdate + "', '" + txtAddress.Text
+                                + "','" + txtContact.Text + "','" + cbDept.Text + "')";
+                        com = new MySqlCommand(cmd, connection);
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("Added!", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtUsername.Clear();
+                        lblUserStatus.Text = "*";
+                        txtPass.Clear();
+                        lblPassStatus.Text = "*";
+                        txtConPass.Clear();
+                        lblConPassStatus.Text = "*";
+                        txtLastName.Text = "Last Name";
+                        lblLNameStatus.Text = "*";
+                        txtLastName.ForeColor = Color.Gray;
+                        txtLastName.Font = new Font(txtLastName.Font, FontStyle.Italic);
+                        txtFirstName.Text = "First Name";
+                        lblFNameStatus.Text = "*";
+                        txtFirstName.ForeColor = Color.Gray;
+                        txtFirstName.Font = new Font(txtFirstName.Font, FontStyle.Italic);
+                        txtMiddleName.Text = "Middle Name";
+                        txtMiddleName.ForeColor = Color.Gray;
+                        txtMiddleName.Font = new Font(txtMiddleName.Font, FontStyle.Italic);
+                        rbMale.Checked = false;
+                        rbFemale.Checked = false;
+                        lblGenderStatus.Text = "*";
+                        cbMonth.SelectedIndex = -1;
+                        cbDay.Items.Clear();
+                        cbYear.SelectedIndex = -1;
+                        lblBirthdayStatus.Text = "*";
+                        txtAddress.Text = "House Number, Street, City/Province";
+                        txtAddress.ForeColor = Color.Gray;
+                        txtAddress.Font = new Font(txtAddress.Font, FontStyle.Italic);
+                        lblAddressStatus.Text = "*";
+                        txtContact.Clear();
+                        lblContactStatus.Text = "*";
+                        cbDept.SelectedIndex = -1;
+                        lblDeptStatus.Text = "*";
+                        this.Hide();
                     }
                 }
             }

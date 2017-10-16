@@ -28,35 +28,7 @@ namespace Findstaff
         {
             connection.Open();
             int ctr = 0;
-            string cID = "";
-            string cou = "select count(*) from employer_t;";
-            MySqlCommand com = new MySqlCommand(cou, connection);
-            ctr = int.Parse(com.ExecuteScalar() + "");
-            if ((ctr + "").Length == 1)
-            {
-                cID = "E0000" + ctr + "";
-            }
-            else if ((ctr + "").Length == 2)
-            {
-                cID = "E000" + ctr + "";
-            }
-            else if ((ctr + "").Length == 3)
-            {
-                cID = "E00" + ctr + "";
-            }
-            else if ((ctr + "").Length == 4)
-            {
-                cID = "E0" + ctr + "";
-            }
-            else if ((ctr + "").Length == 5)
-            {
-                cID = "E" + ctr + "";
-            }
-            else
-            {
-                MessageBox.Show("Table in the database will not be able to handle more records.");
-            }
-            if (cID != "")
+            if (txtEmp1.Text != "")
             {
                 string check = "Select Count(Employername) from employer_t where Employername = '" + txtEmp1.Text + "'";
                 com = new MySqlCommand(check, connection);
@@ -71,7 +43,7 @@ namespace Findstaff
                         countID = dr[0].ToString();
                     }
                     dr.Close();
-                    string cmd = "Insert into Employer_t (Employer_id, employername, foreignprin, country_id) values ('" + cID + "','" + txtEmp1.Text + "','"+txtPrincipal1.Text+"','"+countID+"')";
+                    string cmd = "Insert into Employer_t (employername, foreignprin, country_id) values ('" + txtEmp1.Text + "','"+txtPrincipal1.Text+"','"+countID+"')";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Added!", "Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -82,6 +54,10 @@ namespace Findstaff
                 {
                     MessageBox.Show("Record already exists.", "Error Message");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Employer text Field Empty", "Add Employer Error");
             }
             connection.Close();
         }

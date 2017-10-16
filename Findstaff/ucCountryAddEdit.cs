@@ -28,47 +28,28 @@ namespace Findstaff
         private void btnAddCountry_Click(object sender, EventArgs e)
         {
             connection.Open();
-            if(dgvCountry.Rows.Count != 0)
+            if(txtCountryName1.Text != "")
             {
                 int ctr = 0;
                 string cID = "", cmd2 = "";
-                string cou = "select count(*) from country_t;";
-                com = new MySqlCommand(cou, connection);
-                ctr = int.Parse(com.ExecuteScalar() + "");
-                if ((ctr + "").Length == 1)
-                {
-                    cID = "C0000" + ctr + "";
-                }
-                else if ((ctr + "").Length == 2)
-                {
-                    cID = "C000" + ctr + "";
-                }
-                else if ((ctr + "").Length == 3)
-                {
-                    cID = "C00" + ctr + "";
-                }
-                else if ((ctr + "").Length == 4)
-                {
-                    cID = "C0" + ctr + "";
-                }
-                else if ((ctr + "").Length == 5)
-                {
-                    cID = "C" + ctr + "";
-                }
-                else
-                {
-                    MessageBox.Show("Table in the database will not be able to handle more records.");
-                }
-                if (cID != "")
+                if (dgvCountry.Rows.Count != 0)
                 {
                     string check = "Select Count(Countryname) from Country_t where Countryname = '" + txtCountryName1.Text + "'";
                     com = new MySqlCommand(check, connection);
                     ctr = int.Parse(com.ExecuteScalar() + "");
                     if (ctr == 0)
                     {
-                        cmd = "Insert into Country_t (Country_id, countryname) values ('" + cID + "','" + txtCountryName1.Text + "')";
+                        cmd = "Insert into Country_t (Country_id, countryname) values ('" + txtCountryName1.Text + "')";
                         com = new MySqlCommand(cmd, connection);
                         com.ExecuteNonQuery();
+                        cmd = "Select country_id from country_t where countryname = '"+txtCountryName1.Text+"'";
+                        com = new MySqlCommand(cmd, connection);
+                        dr = com.ExecuteReader();
+                        while (dr.Read())
+                        {
+                            cID = dr[0].ToString();
+                        }
+                        dr.Close();
                         cmd = "Insert into countryreqs_t (country_id, req_id) values ";
                         for(int x = 0; x < dgvCountry.Rows.Count; x++)
                         {
@@ -98,6 +79,14 @@ namespace Findstaff
                         MessageBox.Show("Record already exists.", "Error Message");
                     }
                 }
+                else
+                {
+                    MessageBox.Show("No documents specified for the country", "Add Country Error");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Country Text Field Empty", "Add Country Error");
             }
             connection.Close();
         }
