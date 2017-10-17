@@ -93,6 +93,7 @@
             this.btnAdvSe.TabIndex = 55;
             this.btnAdvSe.Text = "ADVANCED SEARCH";
             this.btnAdvSe.UseVisualStyleBackColor = false;
+            this.btnAdvSe.Visible = false;
             this.btnAdvSe.Click += new System.EventHandler(this.btnAdvSe_Click);
             // 
             // btnSearch

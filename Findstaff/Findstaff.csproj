@@ -53,12 +53,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
-    <Compile Include="Deployed.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Deployed.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="fAdvSearch.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,7 +102,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="Reports.cs" />
     <Compile Include="ucAcco.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -385,10 +378,6 @@
     <Compile Include="ucSkillsAddEdit.Designer.cs">
       <DependentUpon>ucSkillsAddEdit.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Deployed.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>Deployed.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="fAdvSearch.resx">
       <DependentUpon>fAdvSearch.cs</DependentUpon>
     </EmbeddedResource>

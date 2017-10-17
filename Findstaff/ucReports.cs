@@ -23,7 +23,7 @@ namespace Findstaff
             InitializeComponent();
         }
 
-        private void btnPrint_Click(object sender, EventArgs e)
+        private void btnLoad_Click(object sender, EventArgs e)
         {
             Connection con = new Connection();
             connection = con.dbConnection();
@@ -104,9 +104,9 @@ namespace Findstaff
                     }
                 }
             }
-    }
+        }
 
-        private void btnLoad_Click(object sender, EventArgs e)
+        private void btnPrint_Click(object sender, EventArgs e)
         {
             Connection con = new Connection();
             connection = con.dbConnection();
