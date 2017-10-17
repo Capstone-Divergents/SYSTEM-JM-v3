@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMName = new System.Windows.Forms.TextBox();
             this.txtFName = new System.Windows.Forms.TextBox();
@@ -40,8 +40,8 @@
             this.lblSearch = new System.Windows.Forms.Label();
             this.btnCheckDetails = new System.Windows.Forms.Button();
             this.lblDocu = new System.Windows.Forms.Label();
-            this.ucDocAppDetails = new Findstaff.ucDocAppDetails();
             this.pnlTabs = new System.Windows.Forms.Panel();
+            this.ucDocAppDetails = new Findstaff.ucDocAppDetails();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentation)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,23 +85,23 @@
             this.dgvDocumentation.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDocumentation.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvDocumentation.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDocumentation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDocumentation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDocumentation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDocumentation.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDocumentation.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvDocumentation.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvDocumentation.Location = new System.Drawing.Point(100, 200);
             this.dgvDocumentation.MultiSelect = false;
@@ -196,6 +196,15 @@
             this.lblDocu.TabIndex = 45;
             this.lblDocu.Text = "Documentation";
             // 
+            // pnlTabs
+            // 
+            this.pnlTabs.BackColor = System.Drawing.Color.White;
+            this.pnlTabs.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlTabs.Location = new System.Drawing.Point(0, 0);
+            this.pnlTabs.Name = "pnlTabs";
+            this.pnlTabs.Size = new System.Drawing.Size(1118, 50);
+            this.pnlTabs.TabIndex = 59;
+            // 
             // ucDocAppDetails
             // 
             this.ucDocAppDetails.AutoScroll = true;
@@ -205,15 +214,7 @@
             this.ucDocAppDetails.Size = new System.Drawing.Size(15, 15);
             this.ucDocAppDetails.TabIndex = 54;
             this.ucDocAppDetails.Visible = false;
-            // 
-            // pnlTabs
-            // 
-            this.pnlTabs.BackColor = System.Drawing.Color.White;
-            this.pnlTabs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTabs.Location = new System.Drawing.Point(0, 0);
-            this.pnlTabs.Name = "pnlTabs";
-            this.pnlTabs.Size = new System.Drawing.Size(1118, 50);
-            this.pnlTabs.TabIndex = 59;
+            this.ucDocAppDetails.VisibleChanged += new System.EventHandler(this.ucDocAppDetails_VisibleChanged);
             // 
             // ucDocumentation
             // 

@@ -109,6 +109,7 @@
             this.ucIntListInit.Size = new System.Drawing.Size(10, 10);
             this.ucIntListInit.TabIndex = 44;
             this.ucIntListInit.Visible = false;
+            this.ucIntListInit.VisibleChanged += new System.EventHandler(this.ucIntListInit_VisibleChanged);
             // 
             // ucInterviewInit
             // 
@@ -121,7 +122,6 @@
             this.Controls.Add(this.lblInitInt);
             this.Name = "ucInterviewInit";
             this.Size = new System.Drawing.Size(1118, 450);
-            this.VisibleChanged += new System.EventHandler(this.ucInterviewInit_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInitInt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

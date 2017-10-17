@@ -108,6 +108,7 @@
             this.ucIntListFinal.Name = "ucIntListFinal";
             this.ucIntListFinal.Size = new System.Drawing.Size(10, 10);
             this.ucIntListFinal.TabIndex = 47;
+            this.ucIntListFinal.VisibleChanged += new System.EventHandler(this.ucIntListFinal_VisibleChanged);
             // 
             // ucInterviewFin
             // 

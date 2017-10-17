@@ -26,54 +26,57 @@ namespace Findstaff
 
         private void btnViewIntList_Click(object sender, EventArgs e)
         {
-            ucIntListInit.Dock = DockStyle.Fill;
-            connection.Open();
-            string jobID = "", empID = "", jorder = dgvInitInt.SelectedRows[0].Cells[0].Value.ToString(), jobname = dgvInitInt.SelectedRows[0].Cells[1].Value.ToString(), employer = ""; 
-            cmd = "select e.employername from employer_t e join joborder_t j "
-                + "on e.employer_id = j.employer_id where j.jorder_id = '"+jorder+"'";
-            com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while (dr.Read())
+            if(dgvInitInt.Rows.Count != 0)
             {
-                employer = dr[0].ToString();
-            }
-            dr.Close();
-            cmd = "select job_id from job_t where jobname = '" + jobname + "'";
-            com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                jobID = dr[0].ToString();
-            }
-            dr.Close();
-            cmd = "select employer_id from employer_t where employername = '" + employer + "'";
-            com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                empID = dr[0].ToString();
-            }
-            dr.Close();
-            cmd = "select app.app_no'Application No.', a.app_id'Applicant ID', concat(a.lname, ', ', a.fname, ' ', a.mname)'Applicant Name' from applications_t app "
-                + "join app_t a on app.app_id = a.app_id where app.appstats = 'Active' and app.appstatus = 'Recruitment' "
-                + "and app.jorder_id = '"+ jorder + "' and app.job_id = '"+ jobID +"' and app.employer_id = '"+empID+"' and initinterviewstatus is null";
-            using (connection)
-            {
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                ucIntListInit.Dock = DockStyle.Fill;
+                connection.Open();
+                string jobID = "", empID = "", jorder = dgvInitInt.SelectedRows[0].Cells[0].Value.ToString(), jobname = dgvInitInt.SelectedRows[0].Cells[1].Value.ToString(), employer = "";
+                cmd = "select e.employername from employer_t e join joborder_t j "
+                    + "on e.employer_id = j.employer_id where j.jorder_id = '" + jorder + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
                 {
-                    DataSet ds = new DataSet();
-                    adapter.Fill(ds);
-                    ucIntListInit.dgvIntervieweeList.DataSource = ds.Tables[0];
+                    employer = dr[0].ToString();
                 }
+                dr.Close();
+                cmd = "select job_id from job_t where jobname = '" + jobname + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    jobID = dr[0].ToString();
+                }
+                dr.Close();
+                cmd = "select employer_id from employer_t where employername = '" + employer + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    empID = dr[0].ToString();
+                }
+                dr.Close();
+                cmd = "select app.app_no'Application No.', a.app_id'Applicant ID', concat(a.lname, ', ', a.fname, ' ', a.mname)'Applicant Name', app.initinterviewdate'Interview Date' from applications_t app "
+                    + "join app_t a on app.app_id = a.app_id where app.appstats = 'Active' and app.appstatus = 'Recruitment' "
+                    + "and app.jorder_id = '" + jorder + "' and app.job_id = '" + jobID + "' and app.employer_id = '" + empID + "' and initinterviewstatus is null";
+                using (connection)
+                {
+                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                    {
+                        DataSet ds = new DataSet();
+                        adapter.Fill(ds);
+                        ucIntListInit.dgvIntervieweeList.DataSource = ds.Tables[0];
+                    }
+                }
+                ucIntListInit.joborder.Text = jorder;
+                ucIntListInit.jobname.Text = jobname;
+                ucIntListInit.employer.Text = employer;
+                connection.Close();
+                ucIntListInit.Visible = true;
             }
-            ucIntListInit.joborder.Text = jorder;
-            ucIntListInit.jobname.Text = jobname;
-            ucIntListInit.employer.Text = employer;
-            connection.Close();
-            ucIntListInit.Visible = true;
         }
-
-        private void ucInterviewInit_VisibleChanged(object sender, EventArgs e)
+        
+        private void ucIntListInit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
             connection = con.dbConnection();

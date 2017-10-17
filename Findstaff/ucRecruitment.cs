@@ -59,6 +59,19 @@ namespace Findstaff
         
         private void rbInterview_CheckedChanged(object sender, EventArgs e)
         {
+            cmd = "Select j.jorder_id'Job Order No.', jb.jobname'Job Name', count(a.appstats)'No. of Interviewees' from joblist_t j "
+                + "join job_t jb on j.job_id = jb.job_id join applications_t a "
+                + "on a.jorder_id = j.jorder_id and a.job_id = jb.job_id "
+                + "where a.appstats = 'Active' and a.initinterviewstatus is null group by j.jorder_id, jb.jobname";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    ucInterviewInit.dgvInitInt.DataSource = ds.Tables[0];
+                }
+            }
             ucAppList.Visible = false;
             ucJobApp.Visible = false;
             ucInterviewInit.Visible = true;
@@ -67,6 +80,19 @@ namespace Findstaff
 
         private void rbInterviewFin_CheckedChanged(object sender, EventArgs e)
         {
+            cmd = "Select j.jorder_id'Job Order No.', jb.jobname'Job Name', count(a.appstats)'No. of Interviewees' from joblist_t j "
+                + "join job_t jb on j.job_id = jb.job_id join applications_t a "
+                + "on a.jorder_id = j.jorder_id and a.job_id = jb.job_id "
+                + "where a.appstats = 'Active' and a.finalinterviewstatus is null group by j.jorder_id, jb.jobname";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    ucInterviewFin.dgvFinInt.DataSource = ds.Tables[0];
+                }
+            }
             ucAppList.Visible = false;
             ucJobApp.Visible = false;
             ucInterviewInit.Visible = false;

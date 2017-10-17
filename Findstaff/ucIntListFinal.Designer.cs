@@ -240,11 +240,11 @@
         private System.Windows.Forms.Label lblJobOrder;
         private System.Windows.Forms.Label lblIntervieweeList;
         public System.Windows.Forms.DataGridView dgvIntervieweeList;
-        private System.Windows.Forms.Label employer;
-        private System.Windows.Forms.Label joborder;
-        private System.Windows.Forms.Label jobname;
         private System.Windows.Forms.Button btnPassInt;
         private System.Windows.Forms.Button btnFailInt;
         private System.Windows.Forms.Button btnClose;
+        public System.Windows.Forms.Label employer;
+        public System.Windows.Forms.Label joborder;
+        public System.Windows.Forms.Label jobname;
     }
 }
