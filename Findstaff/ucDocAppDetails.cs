@@ -63,32 +63,32 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            connection.Open();
-            if (this.Visible == true)
-            {
-                cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g ;"
-                    +"join appdoc_t a on g.req_id = a.req_id "
-                    +"join applications_t app on app.App_id = a.App_id "
-                    +"where app.appstats = 'Active' and g.allocation = 'Basic'";
-                com = new MySqlCommand(cmd, connection);
-                using (adapter = new MySqlDataAdapter(cmd, connection))
-                {
-                    DataSet ds = new DataSet();
-                    adapter.Fill(ds);
-                    dgvBasicReqs.DataSource = ds.Tables[0];
-                }
-                cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g ;"
-                    + "join appdoc_t a on g.req_id = a.req_id "
-                    + "join applications_t app on app.App_id = a.App_id "
-                    + "where app.appstats = 'Active' and g.allocation <> 'Basic'";
-                com = new MySqlCommand(cmd, connection);
-                using (adapter = new MySqlDataAdapter(cmd, connection))
-                {
-                    DataSet ds = new DataSet();
-                    adapter.Fill(ds);
-                    dgvAddlReqs.DataSource = ds.Tables[0];
-                }
-            }
+            //connection.Open();
+            //if (this.Visible == true)
+            //{
+            //    cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g ;"
+            //        +"join appdoc_t a on g.req_id = a.req_id "
+            //        +"join applications_t app on app.App_id = a.App_id "
+            //        +"where app.appstats = 'Active' and g.allocation = 'Basic'";
+            //    com = new MySqlCommand(cmd, connection);
+            //    using (adapter = new MySqlDataAdapter(cmd, connection))
+            //    {
+            //        DataSet ds = new DataSet();
+            //        adapter.Fill(ds);
+            //        dgvBasicReqs.DataSource = ds.Tables[0];
+            //    }
+            //    cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g ;"
+            //        + "join appdoc_t a on g.req_id = a.req_id "
+            //        + "join applications_t app on app.App_id = a.App_id "
+            //        + "where app.appstats = 'Active' and g.allocation <> 'Basic'";
+            //    com = new MySqlCommand(cmd, connection);
+            //    using (adapter = new MySqlDataAdapter(cmd, connection))
+            //    {
+            //        DataSet ds = new DataSet();
+            //        adapter.Fill(ds);
+            //        dgvAddlReqs.DataSource = ds.Tables[0];
+            //    }
+            //}
             connection.Close();
         }
 

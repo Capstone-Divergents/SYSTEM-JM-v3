@@ -15,6 +15,7 @@ namespace Findstaff
     {
         private MySqlConnection connection;
         MySqlCommand com = new MySqlCommand();
+        private string jorder = "", job = "", employername = "", appname = "", appno = ""; 
 
         public ucIntListInit()
         {
@@ -29,6 +30,16 @@ namespace Findstaff
 
         private void btnIntApp_Click(object sender, EventArgs e)
         {
+            jorder = joborder.Text;
+            job = jobname.Text;
+            employername = employer.Text;
+            appno = dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString();
+            appname = dgvIntervieweeList.SelectedRows[0].Cells[2].Value.ToString();
+            ucInterviewCriteria.txtAppName.Text = appname;
+            ucInterviewCriteria.txtAppNo.Text = appno;
+            ucInterviewCriteria.txtJobOrderId.Text = jorder;
+            ucInterviewCriteria.txtJobName.Text = job;
+            ucInterviewCriteria.txtEmpName.Text = employername;
             ucInterviewCriteria.Dock = DockStyle.Fill;
             ucInterviewCriteria.Visible = true;
         }

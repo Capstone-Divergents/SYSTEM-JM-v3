@@ -265,6 +265,8 @@
             this.label44 = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
+            this.lblAppNo = new System.Windows.Forms.Label();
+            this.txtAppNo = new System.Windows.Forms.TextBox();
             this.pnlButtons.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -355,7 +357,7 @@
             this.lblEmpName.BackColor = System.Drawing.Color.Transparent;
             this.lblEmpName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpName.ForeColor = System.Drawing.Color.Black;
-            this.lblEmpName.Location = new System.Drawing.Point(100, 196);
+            this.lblEmpName.Location = new System.Drawing.Point(100, 214);
             this.lblEmpName.Name = "lblEmpName";
             this.lblEmpName.Size = new System.Drawing.Size(138, 19);
             this.lblEmpName.TabIndex = 504;
@@ -367,7 +369,7 @@
             this.lblJobName.BackColor = System.Drawing.Color.Transparent;
             this.lblJobName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobName.ForeColor = System.Drawing.Color.Black;
-            this.lblJobName.Location = new System.Drawing.Point(100, 164);
+            this.lblJobName.Location = new System.Drawing.Point(100, 182);
             this.lblJobName.Name = "lblJobName";
             this.lblJobName.Size = new System.Drawing.Size(90, 19);
             this.lblJobName.TabIndex = 503;
@@ -379,7 +381,7 @@
             this.lblJobOrderId.BackColor = System.Drawing.Color.Transparent;
             this.lblJobOrderId.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobOrderId.ForeColor = System.Drawing.Color.Black;
-            this.lblJobOrderId.Location = new System.Drawing.Point(100, 132);
+            this.lblJobOrderId.Location = new System.Drawing.Point(100, 150);
             this.lblJobOrderId.Name = "lblJobOrderId";
             this.lblJobOrderId.Size = new System.Drawing.Size(113, 19);
             this.lblJobOrderId.TabIndex = 502;
@@ -391,10 +393,9 @@
             this.txtEmpName.Enabled = false;
             this.txtEmpName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpName.ForeColor = System.Drawing.Color.Black;
-            this.txtEmpName.Location = new System.Drawing.Point(244, 193);
+            this.txtEmpName.Location = new System.Drawing.Point(244, 211);
             this.txtEmpName.MaxLength = 30;
             this.txtEmpName.Name = "txtEmpName";
-            this.txtEmpName.PasswordChar = '•';
             this.txtEmpName.Size = new System.Drawing.Size(300, 26);
             this.txtEmpName.TabIndex = 501;
             // 
@@ -404,10 +405,9 @@
             this.txtJobName.Enabled = false;
             this.txtJobName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJobName.ForeColor = System.Drawing.Color.Black;
-            this.txtJobName.Location = new System.Drawing.Point(244, 161);
+            this.txtJobName.Location = new System.Drawing.Point(244, 179);
             this.txtJobName.MaxLength = 30;
             this.txtJobName.Name = "txtJobName";
-            this.txtJobName.PasswordChar = '•';
             this.txtJobName.Size = new System.Drawing.Size(300, 26);
             this.txtJobName.TabIndex = 500;
             // 
@@ -417,7 +417,7 @@
             this.txtJobOrderId.Enabled = false;
             this.txtJobOrderId.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJobOrderId.ForeColor = System.Drawing.Color.Black;
-            this.txtJobOrderId.Location = new System.Drawing.Point(244, 129);
+            this.txtJobOrderId.Location = new System.Drawing.Point(244, 147);
             this.txtJobOrderId.MaxLength = 30;
             this.txtJobOrderId.Name = "txtJobOrderId";
             this.txtJobOrderId.Size = new System.Drawing.Size(300, 26);
@@ -429,7 +429,7 @@
             this.lblAppName.BackColor = System.Drawing.Color.Transparent;
             this.lblAppName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAppName.ForeColor = System.Drawing.Color.Black;
-            this.lblAppName.Location = new System.Drawing.Point(100, 100);
+            this.lblAppName.Location = new System.Drawing.Point(100, 86);
             this.lblAppName.Name = "lblAppName";
             this.lblAppName.Size = new System.Drawing.Size(136, 19);
             this.lblAppName.TabIndex = 498;
@@ -441,7 +441,7 @@
             this.txtAppName.Enabled = false;
             this.txtAppName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAppName.ForeColor = System.Drawing.Color.Black;
-            this.txtAppName.Location = new System.Drawing.Point(244, 97);
+            this.txtAppName.Location = new System.Drawing.Point(244, 83);
             this.txtAppName.MaxLength = 30;
             this.txtAppName.Name = "txtAppName";
             this.txtAppName.Size = new System.Drawing.Size(300, 26);
@@ -3035,12 +3035,38 @@
             this.label46.TabIndex = 594;
             this.label46.Text = "LISTENING SKILLS";
             // 
+            // lblAppNo
+            // 
+            this.lblAppNo.AutoSize = true;
+            this.lblAppNo.BackColor = System.Drawing.Color.Transparent;
+            this.lblAppNo.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAppNo.ForeColor = System.Drawing.Color.Black;
+            this.lblAppNo.Location = new System.Drawing.Point(100, 118);
+            this.lblAppNo.Name = "lblAppNo";
+            this.lblAppNo.Size = new System.Drawing.Size(126, 19);
+            this.lblAppNo.TabIndex = 603;
+            this.lblAppNo.Text = "Application No :";
+            // 
+            // txtAppNo
+            // 
+            this.txtAppNo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtAppNo.Enabled = false;
+            this.txtAppNo.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAppNo.ForeColor = System.Drawing.Color.Black;
+            this.txtAppNo.Location = new System.Drawing.Point(244, 115);
+            this.txtAppNo.MaxLength = 30;
+            this.txtAppNo.Name = "txtAppNo";
+            this.txtAppNo.Size = new System.Drawing.Size(300, 26);
+            this.txtAppNo.TabIndex = 602;
+            // 
             // ucInterviewCriteria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Controls.Add(this.lblAppNo);
+            this.Controls.Add(this.txtAppNo);
             this.Controls.Add(this.panel28);
             this.Controls.Add(this.panel27);
             this.Controls.Add(this.label37);
@@ -3137,7 +3163,8 @@
             this.Controls.Add(this.pnlButtons);
             this.Controls.Add(this.lblInterviewCriteria);
             this.Name = "ucInterviewCriteria";
-            this.Size = new System.Drawing.Size(1084, 450);
+            this.Size = new System.Drawing.Size(1067, 450);
+            this.Load += new System.EventHandler(this.ucInterviewCriteria_Load);
             this.pnlButtons.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -3439,5 +3466,7 @@
         private System.Windows.Forms.Label label44;
         public System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label lblAppNo;
+        public System.Windows.Forms.TextBox txtAppNo;
     }
 }

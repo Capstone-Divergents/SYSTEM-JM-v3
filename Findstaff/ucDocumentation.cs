@@ -35,6 +35,24 @@ namespace Findstaff
             ucDocAppDetails.Visible = true;
         }
 
+        private void ucDocAppDetails_VisibleChanged(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', count(ad.req_id)'No. of Documents to be passed' "
+                    + "from app_t app join appdoc_t ad "
+                    + "on app.app_id = ad.app_id ";
+            using (connection)
+            {
+                using (adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvDocumentation.DataSource = ds.Tables[0];
+                }
+            }
+        }
+
         private void ucDocumentation_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
