@@ -168,7 +168,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btnClose);
             this.Name = "ucCountryView";
-            this.Size = new System.Drawing.Size(1050, 400);
+            this.Size = new System.Drawing.Size(1118, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReq)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

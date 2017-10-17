@@ -386,7 +386,7 @@
             this.Controls.Add(this.lblCountry1);
             this.Controls.Add(this.lblEmp1);
             this.Name = "ucJobListView";
-            this.Size = new System.Drawing.Size(999, 423);
+            this.Size = new System.Drawing.Size(1101, 450);
             this.pnlEmpBtn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequiredDocs)).EndInit();
