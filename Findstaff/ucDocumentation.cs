@@ -31,7 +31,7 @@ namespace Findstaff
 
         private void btnCheckDetails_Click(object sender, EventArgs e)
         {
-            string appno = dgvDocumentation.SelectedRows[0].Cells[0].Value.ToString(), appname = dgvDocumentation.SelectedRows[0].Cells[0].Value.ToString();
+            string appno = dgvDocumentation.SelectedRows[0].Cells[0].Value.ToString(), appname = dgvDocumentation.SelectedRows[0].Cells[1].Value.ToString();
             ucDocAppDetails.init(appno, appname);
             ucDocAppDetails.Dock = DockStyle.Fill;
             ucDocAppDetails.Visible = true;

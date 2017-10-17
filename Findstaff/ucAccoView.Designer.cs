@@ -134,7 +134,6 @@
             this.dgvViewAcco.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvViewAcco.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvViewAcco.Location = new System.Drawing.Point(100, 220);
-            this.dgvViewAcco.MultiSelect = false;
             this.dgvViewAcco.Name = "dgvViewAcco";
             this.dgvViewAcco.ReadOnly = true;
             this.dgvViewAcco.RowHeadersVisible = false;
@@ -258,6 +257,7 @@
             this.Name = "ucAccoView";
             this.Size = new System.Drawing.Size(1118, 500);
             this.Load += new System.EventHandler(this.ucAccoView_Load);
+            this.VisibleChanged += new System.EventHandler(this.ucAccoView_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgvViewAcco)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -275,9 +275,9 @@
         private System.Windows.Forms.Panel pnlTabs;
         private System.Windows.Forms.Button btnClose;
         public System.Windows.Forms.DataGridView dgvViewAcco;
-        private System.Windows.Forms.Label applicant;
-        private System.Windows.Forms.Label jobname;
-        private System.Windows.Forms.Label joborder;
-        private System.Windows.Forms.Label employer;
+        public System.Windows.Forms.Label applicant;
+        public System.Windows.Forms.Label jobname;
+        public System.Windows.Forms.Label joborder;
+        public System.Windows.Forms.Label employer;
     }
 }

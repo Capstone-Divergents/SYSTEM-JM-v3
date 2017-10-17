@@ -19,7 +19,7 @@ namespace Findstaff
         MySqlDataAdapter adapter;
         private string cmd = "";
         private string appNo = "", appName = "";
-        private string jorder = "", jobID = "", empID = "", jobName = "", employerName = "", appname = "";
+        private string jorder = "", jobID = "", empID = "", jobName = "", employerName = "", appID = "";
 
         public ucDocAppDetails()
         {
@@ -28,8 +28,18 @@ namespace Findstaff
 
         public void init(string appno, string appname)
         {
+            connection.Open();
             appNo = appno;
             appName = appname;
+            cmd = "select app_id from app_t where concat(lname, ', ', fname, ' ', mname) = '" + appName + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                appID = dr[0].ToString();
+            }
+            dr.Close();
+            connection.Close();
         }
 
         private void ucDocAppDetails_Load(object sender, EventArgs e)
@@ -88,7 +98,7 @@ namespace Findstaff
                 {
                     for(x = 0; x < ctrJ; x++)
                     {
-                        cmd = "insert into payables_t (app_no, app_id, fee_id, feestatus) values ('" + appNo+"','"+appName+"','"+feeIDJ[x]+"','Balance')";
+                        cmd = "insert into payables_t (app_no, app_id, fee_id, feestatus) values ('" + appNo+"','"+appID+"','"+feeIDJ[x]+"','Balance')";
                         com = new MySqlCommand(cmd, connection);
                         com.ExecuteNonQuery();
                     }
@@ -97,7 +107,7 @@ namespace Findstaff
                 {
                     for (x = 0; x < ctrJ; x++)
                     {
-                        cmd = "insert into payables_t (app_no, app_id, fee_id, feestatus) values ('" + appNo + "','" + appName + "','" + feeIDJ[x] + "','Not Required')";
+                        cmd = "insert into payables_t (app_no, app_id, fee_id, feestatus) values ('" + appNo + "','" + appID + "','" + feeIDJ[x] + "','Not Required')";
                         com = new MySqlCommand(cmd, connection);
                         com.ExecuteNonQuery();
                     }
@@ -146,18 +156,10 @@ namespace Findstaff
                     employerName = dr[0].ToString();
                 }
                 dr.Close();
-                cmd = "select concat(lname, ', ', fname, ' ', mname) from app_t where app_id = '" + appName + "'";
-                com = new MySqlCommand(cmd, connection);
-                dr = com.ExecuteReader();
-                while (dr.Read())
-                {
-                    appname = dr[0].ToString();
-                }
-                dr.Close();
                 joborder.Text = jorder;
                 jobname.Text = jobName;
                 employer.Text = employerName;
-                applicant.Text = appname;
+                applicant.Text = appName;
                 dr.Close();
                 cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g "
                     + "join appdoc_t a on g.req_id = a.req_id "
@@ -207,7 +209,7 @@ namespace Findstaff
                 DialogResult dr1 = MessageBox.Show("Are you sure the following documents will be passed?\n\n" + docs, "Confirm Documents", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if(dr1 == DialogResult.Yes)
                 {
-                    string cmd2 = "", appID = "", appNO = "";
+                    string cmd2 = "";
                     cmd = "Update appdoc_t set docstat = 'Passed' where ";
                     for(int x = 0; x < dgvBasicReqs.SelectedRows.Count; x++)
                     {
@@ -263,7 +265,7 @@ namespace Findstaff
                 DialogResult dr1 = MessageBox.Show("Are you sure the following documents will be passed?\n\n" + docs, "Confirm Documents", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (dr1 == DialogResult.Yes)
                 {
-                    string cmd2 = "", appID = "", appNO = "";
+                    string cmd2 = "";
                     cmd = "Update appdoc_t set docstat = 'Passed' where ";
                     for (int x = 0; x < dgvAddlReqs.SelectedRows.Count; x++)
                     {
