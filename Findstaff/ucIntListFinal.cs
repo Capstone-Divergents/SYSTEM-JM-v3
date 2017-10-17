@@ -52,7 +52,7 @@ namespace Findstaff
                     x++;
                 }
                 dr.Close();
-                cmd = "select country_id from employer_t where employername = '" + employer + "'";
+                cmd = "select country_id from employer_t where employername = '" + employer.Text + "'";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
@@ -60,7 +60,7 @@ namespace Findstaff
                     country = dr[0].ToString();
                 }
                 dr.Close();
-                cmd = "Select category_id, job_id from job_t where jobname = '" + jobname + "'";
+                cmd = "Select category_id, job_id from job_t where jobname = '" + jobname.Text + "'";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
@@ -69,11 +69,11 @@ namespace Findstaff
                     jobID = dr[1].ToString();
                 }
                 dr.Close();
-                cmd = "select count(req_id) from jobdocs_t where jorder_id = '" + joborder + "' and job_id = '" + jobID + "'";
+                cmd = "select count(req_id) from jobdocs_t where jorder_id = '" + joborder.Text + "' and job_id = '" + jobID + "'";
                 com = new MySqlCommand(cmd, connection);
                 ctrJ = int.Parse(com.ExecuteScalar() + "");
                 string[] reqIDJob = new string[ctrJ];
-                cmd = "select req_id from jobdocs_t where jorder_id = '" + joborder + "' and job_id = '" + jobID + "'";
+                cmd = "select req_id from jobdocs_t where jorder_id = '" + joborder.Text + "' and job_id = '" + jobID + "'";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
@@ -98,19 +98,19 @@ namespace Findstaff
                 x = 0; y = 0; z = 0;
                 for (x = 0; x < ctrB; x++)
                 {
-                    cmd = "insert into appdoc_t (app_no, app_id, req_id, docstat) values ('" + dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString() + "','" + dgvIntervieweeList.SelectedRows[0].Cells[1].Value.ToString() + "','" + Convert.ToInt32(reqIDBasic[x]) + "','Required');";
+                    cmd = "insert into appdoc_t values ('" + dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString() + "','" + dgvIntervieweeList.SelectedRows[0].Cells[1].Value.ToString() + "','" + Convert.ToInt32(reqIDBasic[x]) + "','Required');";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                 }
                 for (y = 0; y < ctrJ; y++)
                 {
-                    cmd = "insert into appdoc_t (app_no, app_id, req_id, docstat) values ('" + dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString() + "','" + dgvIntervieweeList.SelectedRows[0].Cells[1].Value.ToString() + "','" + Convert.ToInt32(reqIDJob[x]) + "','Required');";
+                    cmd = "insert into appdoc_t values ('" + dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString() + "','" + dgvIntervieweeList.SelectedRows[0].Cells[1].Value.ToString() + "','" + Convert.ToInt32(reqIDJob[y]) + "','Required');";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                 }
                 for (z = 0; z < ctrC; z++)
                 {
-                    cmd = "insert into appdoc_t (app_no, app_id, req_id, docstat) values ('" + dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString() + "','" + dgvIntervieweeList.SelectedRows[0].Cells[1].Value.ToString() + "','" + Convert.ToInt32(reqIDCountry[x]) + "','Required');";
+                    cmd = "insert into appdoc_t values ('" + dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString() + "','" + dgvIntervieweeList.SelectedRows[0].Cells[1].Value.ToString() + "','" + Convert.ToInt32(reqIDCountry[z]) + "','Required');";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                 }

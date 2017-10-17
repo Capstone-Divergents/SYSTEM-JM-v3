@@ -18,40 +18,94 @@ namespace Findstaff
         MySqlDataReader dr;
         MySqlDataAdapter adapter;
         private string cmd = "";
+        private string appNo = "", appName = "";
+        private string jorder = "", jobID = "", empID = "", jobName = "", employerName = "", appname = "";
 
         public ucDocAppDetails()
         {
             InitializeComponent();
         }
 
+        public void init(string appno, string appname)
+        {
+            appNo = appno;
+            appName = appname;
+        }
+
         private void ucDocAppDetails_Load(object sender, EventArgs e)
         {
-            string app = "", jname = "", jorder = "", emp = "";
-
             Connection con = new Connection();
             connection = con.dbConnection();
-            connection.Open();
-            string query = "SELECT * FROM EMP_T;";
-            com = new MySqlCommand(query, connection);
-            MySqlDataReader dataReader = com.ExecuteReader();
-            while (dataReader.Read())
-            {
-                //app = dataReader.GetString();
-                //jname = dataReader.GetString();
-                //jorder = dataReader.GetString();
-                //emp = dataReader.GetString();
-            }
-            connection.Close();
-
-            applicant.Text = app;
-            jobname.Text = jname;
-            joborder.Text = jorder;
-            employer.Text = emp;
         }
 
         private void btnMoveToAcco_Click(object sender, EventArgs e)
         {
-
+            connection.Open();
+            int ctr = 0;
+            for (int x = 0; x < dgvBasicReqs.Rows.Count; x++)
+            {
+                if (dgvBasicReqs.Rows[x].Cells[1].Value.ToString() != "Passed")
+                {
+                    ctr++;
+                }
+            }
+            for (int x = 0; x < dgvAddlReqs.Rows.Count; x++)
+            {
+                if (dgvAddlReqs.Rows[x].Cells[1].Value.ToString() != "Passed")
+                {
+                    ctr++;
+                }
+            }
+            if(ctr == 0)
+            {
+                cmd = "update applications_t set appstatus = 'Accounting' where app_no = '"+appNo+"'";
+                com = new MySqlCommand(cmd, connection);
+                com.ExecuteNonQuery();
+                cmd = "select count(fee_id) from jobfees_t where jorder_id = '" + jorder + "'";
+                com = new MySqlCommand(cmd, connection);
+                int ctrJ = int.Parse(com.ExecuteScalar() + "");
+                string[] feeIDJ = new string[ctrJ];
+                int x = 0;
+                cmd = "select fee_id from jobfees_t where jorder_id = '" + jorder + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    feeIDJ[x] = dr[0].ToString();
+                    x++;
+                }
+                dr.Close();
+                string jobtype = "";
+                cmd = "select jobtype from job_t where jobname = '"+jobName+"'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    jobtype = dr[0].ToString();
+                }
+                dr.Close();
+                if(jobtype == "Skilled")
+                {
+                    for(x = 0; x < ctrJ; x++)
+                    {
+                        cmd = "insert into payables_t (app_no, app_id, fee_id, feestatus) values ('" + appNo+"','"+appName+"','"+feeIDJ[x]+"','Balance')";
+                        com = new MySqlCommand(cmd, connection);
+                        com.ExecuteNonQuery();
+                    }
+                }
+                else
+                {
+                    for (x = 0; x < ctrJ; x++)
+                    {
+                        cmd = "insert into payables_t (app_no, app_id, fee_id, feestatus) values ('" + appNo + "','" + appName + "','" + feeIDJ[x] + "','Not Required')";
+                        com = new MySqlCommand(cmd, connection);
+                        com.ExecuteNonQuery();
+                    }
+                }
+                MessageBox.Show("All documents passed.\nApplicant can now pay.","Fulfilled Document Requirements");
+                this.Hide();
+            }
+            connection.Close();
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -63,37 +117,75 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            //connection.Open();
-            //if (this.Visible == true)
-            //{
-            //    cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g ;"
-            //        +"join appdoc_t a on g.req_id = a.req_id "
-            //        +"join applications_t app on app.App_id = a.App_id "
-            //        +"where app.appstats = 'Active' and g.allocation = 'Basic'";
-            //    com = new MySqlCommand(cmd, connection);
-            //    using (adapter = new MySqlDataAdapter(cmd, connection))
-            //    {
-            //        DataSet ds = new DataSet();
-            //        adapter.Fill(ds);
-            //        dgvBasicReqs.DataSource = ds.Tables[0];
-            //    }
-            //    cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g ;"
-            //        + "join appdoc_t a on g.req_id = a.req_id "
-            //        + "join applications_t app on app.App_id = a.App_id "
-            //        + "where app.appstats = 'Active' and g.allocation <> 'Basic'";
-            //    com = new MySqlCommand(cmd, connection);
-            //    using (adapter = new MySqlDataAdapter(cmd, connection))
-            //    {
-            //        DataSet ds = new DataSet();
-            //        adapter.Fill(ds);
-            //        dgvAddlReqs.DataSource = ds.Tables[0];
-            //    }
-            //}
+            connection.Open();
+            if (this.Visible == true)
+            {
+                cmd = "select jorder_id, job_id, employer_id from applications_t where app_no = '"+appNo+"'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    jorder = dr[0].ToString();
+                    jobID = dr[1].ToString();
+                    empID = dr[2].ToString();
+                }
+                dr.Close();
+                cmd = "select jobname from job_t where job_id = '"+jobID+"'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    jobName = dr[0].ToString();
+                }
+                dr.Close();
+                cmd = "select employername from employer_t where employer_id = '" + empID + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    employerName = dr[0].ToString();
+                }
+                dr.Close();
+                cmd = "select concat(lname, ', ', fname, ' ', mname) from app_t where app_id = '" + appName + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    appname = dr[0].ToString();
+                }
+                dr.Close();
+                joborder.Text = jorder;
+                jobname.Text = jobName;
+                employer.Text = employerName;
+                applicant.Text = appname;
+                dr.Close();
+                cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g "
+                    + "join appdoc_t a on g.req_id = a.req_id "
+                    + "join applications_t app on app.App_no = a.App_no "
+                    + "where app.appstats = 'Active' and app.app_no = '"+appNo+"' and g.allocation = 'Basic'";
+                using (adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvBasicReqs.DataSource = ds.Tables[0];
+                }
+                cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g "
+                    + "join appdoc_t a on g.req_id = a.req_id "
+                    + "join applications_t app on app.App_no = a.App_no "
+                    + "where app.appstats = 'Active' and app.app_no = '" + appNo + "' and g.allocation <> 'Basic'";
+                using (adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvAddlReqs.DataSource = ds.Tables[0];
+                }
+            }
             connection.Close();
         }
 
         private void btnPassed1_Click(object sender, EventArgs e)
         {
+            connection.Open();
             bool passed = false;
             string docs = "";
             for(int x = 0; x < dgvBasicReqs.SelectedRows.Count; x++)
@@ -128,34 +220,28 @@ namespace Findstaff
                         }
                         dr.Close();
                     }
-                    cmd2 = "select app_id from app_t where concat(fname, ' ', mname, ' ', lname, ' ') = '" + applicant.Text + "'";
-                    com = new MySqlCommand(cmd2, connection);
-                    dr = com.ExecuteReader();
-                    while (dr.Read())
-                    {
-                        appID = dr[0].ToString();
-                    }
-                    dr.Close();
-                    cmd2 = "select app.app_no from applications_t app join app_t a on app.App_id = a.app_id where app.appstats = 'Active' and app_id = '" + appID + "'";
-                    while (dr.Read())
-                    {
-                        appNO = dr[0].ToString();
-                    }
-                    dr.Close();
-                    cmd += "app_no = '"+appNO+"'";
+                    cmd += "app_no = '"+appNo+"'";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Documents status changed to 'Passed'", "Documents Passed", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    for(int x = 0; x < dgvBasicReqs.SelectedRows.Count; x++)
+                    cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g "
+                    + "join appdoc_t a on g.req_id = a.req_id "
+                    + "join applications_t app on app.App_no = a.App_no "
+                    + "where app.appstats = 'Active' and app.app_no = '" + appNo + "' and g.allocation = 'Basic'";
+                    using (adapter = new MySqlDataAdapter(cmd, connection))
                     {
-                        dgvBasicReqs.SelectedRows[x].Cells[1].Equals("Passed");
+                        DataSet ds = new DataSet();
+                        adapter.Fill(ds);
+                        dgvBasicReqs.DataSource = ds.Tables[0];
                     }
                 }
             }
+            connection.Close();
         }
 
         private void btnPassed2_Click(object sender, EventArgs e)
         {
+            connection.Open();
             bool passed = false;
             string docs = "";
             for (int x = 0; x < dgvAddlReqs.SelectedRows.Count; x++)
@@ -190,31 +276,23 @@ namespace Findstaff
                         }
                         dr.Close();
                     }
-                    cmd2 = "select app_id from app_t where concat(fname, ' ', mname, ' ', lname, ' ') = '" + applicant.Text + "'";
-                    com = new MySqlCommand(cmd2, connection);
-                    dr = com.ExecuteReader();
-                    while (dr.Read())
-                    {
-                        appID = dr[0].ToString();
-                    }
-                    dr.Close();
-                    cmd2 = "select app.app_no from applications_t app join app_t a on app.App_id = a.app_id where app.appstats = 'Active' and app_id = '" + appID + "'";
-                    while (dr.Read())
-                    {
-                        appNO = dr[0].ToString();
-                    }
-                    dr.Close();
-                    cmd += "app_no = '" + appNO + "'";
+                    cmd += "app_no = '" + appNo + "'";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Documents status changed to 'Passed'", "Documents Passed", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    for (int x = 0; x < dgvAddlReqs.SelectedRows.Count; x++)
+                    cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g "
+                    + "join appdoc_t a on g.req_id = a.req_id "
+                    + "join applications_t app on app.App_no = a.App_no "
+                    + "where app.appstats = 'Active' and app.app_no = '" + appNo + "' and g.allocation <> 'Basic'";
+                    using (adapter = new MySqlDataAdapter(cmd, connection))
                     {
-                        dgvAddlReqs.SelectedRows[x].Cells[1].Equals("Passed");
+                        DataSet ds = new DataSet();
+                        adapter.Fill(ds);
+                        dgvAddlReqs.DataSource = ds.Tables[0];
                     }
                 }
             }
+            connection.Close();
         }
-
     }
 }

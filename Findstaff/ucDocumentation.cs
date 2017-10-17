@@ -31,6 +31,8 @@ namespace Findstaff
 
         private void btnCheckDetails_Click(object sender, EventArgs e)
         {
+            string appno = dgvDocumentation.SelectedRows[0].Cells[0].Value.ToString(), appname = dgvDocumentation.SelectedRows[0].Cells[0].Value.ToString();
+            ucDocAppDetails.init(appno, appname);
             ucDocAppDetails.Dock = DockStyle.Fill;
             ucDocAppDetails.Visible = true;
         }
@@ -41,7 +43,10 @@ namespace Findstaff
             connection = con.dbConnection();
             cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', count(ad.req_id)'No. of Documents to be passed' "
                     + "from app_t app join appdoc_t ad "
-                    + "on app.app_id = ad.app_id ";
+                    + "on app.app_id = ad.app_id "
+                    + "join applications_t a on a.app_no = ad.app_no "
+                    + "where a.appstatus = 'Documentation' and a.appstats = 'Active' "
+                    + "group by ad.app_no";
             using (connection)
             {
                 using (adapter = new MySqlDataAdapter(cmd, connection))
@@ -59,7 +64,10 @@ namespace Findstaff
             connection = con.dbConnection();
             cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', count(ad.req_id)'No. of Documents to be passed' "
                     + "from app_t app join appdoc_t ad "
-                    + "on app.app_id = ad.app_id ";
+                    + "on app.app_id = ad.app_id "
+                    + "join applications_t a on a.app_no = ad.app_no "
+                    + "where a.appstatus = 'Documentation' and a.appstats = 'Active' "
+                    + "group by ad.app_no";
             using (connection)
             {
                 using (adapter = new MySqlDataAdapter(cmd, connection))
