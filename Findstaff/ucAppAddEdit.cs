@@ -201,6 +201,7 @@ namespace Findstaff
                 }
                 MessageBox.Show("Applicant Added!", "New Applicant Record Saved", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.Hide();
+
             }
             connection.Close();
         }

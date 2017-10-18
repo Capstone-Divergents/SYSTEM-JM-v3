@@ -17,7 +17,7 @@ namespace Findstaff
         MySqlCommand com = new MySqlCommand();
         MySqlDataAdapter adapter;
         private string cmd = "";
-        private string appNo = "", appID = "", date;
+        private string appNo = "", appID = "";
         private string[] fees;
         private int balance = 0, count = 0;
 

@@ -103,6 +103,7 @@ namespace Findstaff
                 com = new MySqlCommand(cmd, connection);
                 com.ExecuteNonQuery();
                 MessageBox.Show("Job Added!", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                connection.Close();
                 cbJOrder1.SelectedIndex = -1;
                 cbCategory1.SelectedIndex = -1;
                 cbJob1.SelectedIndex = -1;
@@ -125,7 +126,6 @@ namespace Findstaff
             {
                 MessageBox.Show("A job record in the list exists.","Add Job to Listings Error");
             }
-            connection.Close();
         }
 
         private void btnCancel1_Click(object sender, EventArgs e)
@@ -334,5 +334,6 @@ namespace Findstaff
                 e.Handled = true;
             }
         }
+
     }
 }

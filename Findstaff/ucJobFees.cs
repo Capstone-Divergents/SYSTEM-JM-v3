@@ -70,7 +70,7 @@ namespace Findstaff
             Connection con = new Findstaff.Connection();
             connection = con.dbConnection();
             connection.Open();
-            cmd = "select jo.jorder_id'Job Order ID', count(jf.fee_id)'No. of Fees' from joborder_t jo join jobfees_t jf on jo.jorder_id = jf.jorder_id";
+            cmd = "select jo.jorder_id'Job Order ID', count(jf.fee_id)'No. of Fees' from joborder_t jo join jobfees_t jf on jo.jorder_id = jf.jorder_id group by jo.jorder_id";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
@@ -89,7 +89,7 @@ namespace Findstaff
             connection = con.dbConnection();
             connection.Open();
 
-            string cmd = "select jo.jorder_id'Job Order ID', count(jf.fee_id)'No. of Fees' from joborder_t jo join jobfees_t jf on jo.jorder_id = jf.jorder_id WHERE jf.jorder_id LIKE '%" + valueToFind + "%'";
+            string cmd = "select jo.jorder_id'Job Order ID', count(jf.fee_id)'No. of Fees' from joborder_t jo join jobfees_t jf on jo.jorder_id = jf.jorder_id WHERE jo.jorder_id LIKE '%" + valueToFind + "%' group by jf.jorder_id";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();
 
@@ -97,6 +97,7 @@ namespace Findstaff
             DataTable table = new DataTable();
             adapter.Fill(table);
             dgvJobFees.DataSource = table;
+            connection.Close();
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)
@@ -135,6 +136,7 @@ namespace Findstaff
                     ucJobFeesView.dgvFees.DataSource = ds.Tables[0];
                 }
             }
+            connection.Close();
 
             ucJobFeesView.Dock = DockStyle.Fill;
             ucJobFeesView.Visible = true;

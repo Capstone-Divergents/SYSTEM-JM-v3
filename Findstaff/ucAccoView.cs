@@ -18,7 +18,8 @@ namespace Findstaff
         MySqlDataReader dr;
         MySqlDataAdapter adapter;
         private string cmd = "";
-        private string appNo = "", appName = ""; private string jorder = "", jobID = "", empID = "", jobName = "", employerName = "", appID = "";
+        private string appNo = "", appName = "";
+        private string jorder = "", jobID = "", empID = "", jobName = "", employerName = "", appID = "";
 
         public ucAccoView()
         {

@@ -402,6 +402,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.lblJobApp);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucJobApp";
             this.Size = new System.Drawing.Size(1118, 450);
             this.VisibleChanged += new System.EventHandler(this.ucJobApp_VisibleChanged);

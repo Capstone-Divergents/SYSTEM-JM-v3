@@ -29,6 +29,7 @@ namespace Findstaff
             if(dgvInitInt.Rows.Count != 0)
             {
                 ucIntListInit.Dock = DockStyle.Fill;
+                ucIntListInit.Visible = true;
                 connection.Open();
                 string jobID = "", empID = "", jorder = dgvInitInt.SelectedRows[0].Cells[0].Value.ToString(), jobname = dgvInitInt.SelectedRows[0].Cells[1].Value.ToString(), employer = "";
                 cmd = "select e.employername from employer_t e join joborder_t j "
@@ -72,7 +73,6 @@ namespace Findstaff
                 ucIntListInit.jobname.Text = jobname;
                 ucIntListInit.employer.Text = employer;
                 connection.Close();
-                ucIntListInit.Visible = true;
             }
         }
         

@@ -30,10 +30,10 @@ namespace Findstaff
         {
             Connection con = new Findstaff.Connection();
             connection = con.dbConnection();
-            for (int x = DateTime.Now.Year + 10; x > DateTime.Now.Year; x--)
+            for (int x = DateTime.Now.Year + 10; x >= DateTime.Now.Year; x--)
             {
                 cbYear.Items.Add(x);
-                if(cbYear.Items.Count == 10)
+                if(cbYear.Items.Count == 11)
                 {
                     break;
                 }

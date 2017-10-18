@@ -53,6 +53,8 @@ namespace Findstaff
 
         private void cbEmployer_SelectedIndexChanged(object sender, EventArgs e)
         {
+            cbJobOrder.Items.Clear();
+            cbJob.Items.Clear();
             connection.Open();
             cmd = "Select j.jorder_id from joborder_t j join employer_t e "
                 + "on j.employer_id = e.employer_id "
@@ -73,6 +75,7 @@ namespace Findstaff
 
         private void cbJobOrder_SelectedIndexChanged(object sender, EventArgs e)
         {
+            cbJob.Items.Clear();
             connection.Open();
             cmd = "select job.jobname from joblist_t j join job_t job on j.job_id = job.job_id where j.jorder_id = '"+cbJobOrder.Text+"'";
             com = new MySqlCommand(cmd, connection);
@@ -93,6 +96,7 @@ namespace Findstaff
             cmd = "Select skill_id, proflevel from jobskills_t where jorder_id = '" + cbJobOrder.Text + "' and job_id = (select job_id from job_t where jobname = '" + cbJob.Text + "')";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
+            while(dr.Read())
             {
                 y++;
             }
@@ -120,7 +124,7 @@ namespace Findstaff
             }
             dr.Close();
             string[,] apps = new string[y, 2];
-            cmd = "select app_id, concat(lname, ', ', fname, ' ', mname) from app_t  where position = '" + cbJob.Text + "' and (select count(appstats) from applications_t where appstats = 'Active') = 0";
+            cmd = "select app_id, concat(lname, ', ', fname, ' ', mname) from app_t  where position = '" + cbJob.Text + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
@@ -167,7 +171,7 @@ namespace Findstaff
                         {
                             if (skill[d, 0] == skills[f, 0] && skills[f, 2] != "1")
                             {
-                                if (skill[d, 1] == skills[f, 1] || Convert.ToInt32(skill[d, 1]) > Convert.ToInt32(skills[f, 1]))
+                                if (Convert.ToInt32(skill[d, 1]) >= Convert.ToInt32(skills[f, 1]))
                                 {
                                     ctr++;
                                     skills[f, 2] = "1";
@@ -381,20 +385,23 @@ namespace Findstaff
 
         private void btnAppMatchInt_Click(object sender, EventArgs e)
         {
-            int length = dgvAppMatch.SelectedRows.Count;
-            string[,] apps = new string[length, 2];
-            string[] job = new string[3];
-            job[0] = cbEmployer.Text;
-            job[1] = cbJobOrder.Text;
-            job[2] = cbJob.Text;
-            for (int x = 0; x < length; x++)
+            if(dgvAppMatch.Rows.Count != 0)
             {
-                apps[x, 0] = dgvAppMatch.SelectedRows[x].Cells[0].Value.ToString();
-                apps[x, 1] = dgvAppMatch.SelectedRows[x].Cells[1].Value.ToString();
+                int length = dgvAppMatch.SelectedRows.Count;
+                string[,] apps = new string[length, 2];
+                string[] job = new string[3];
+                job[0] = cbEmployer.Text;
+                job[1] = cbJobOrder.Text;
+                job[2] = cbJob.Text;
+                for (int x = 0; x < length; x++)
+                {
+                    apps[x, 0] = dgvAppMatch.SelectedRows[x].Cells[0].Value.ToString();
+                    apps[x, 1] = dgvAppMatch.SelectedRows[x].Cells[1].Value.ToString();
+                }
+                InitialInterviewDate intdate = new InitialInterviewDate();
+                intdate.initComponents(apps, job, length);
+                intdate.Show();
             }
-            InitialInterviewDate intdate = new InitialInterviewDate();
-            intdate.initComponents(apps, job, length);
-            intdate.Show();
         }
     }
 }
