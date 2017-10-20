@@ -93,6 +93,18 @@ namespace Findstaff
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Balance Paid", "Payment");
+                    cmd = "select count(fee_id) from payables_t where feestatus <> 'Paid' and app_no = '"+appNo+"'";
+                    com = new MySqlCommand(cmd, connection);
+                    int cnt = int.Parse(com.ExecuteScalar() + "");
+                    if(cnt == 0)
+                    {
+                        cmd = "update applications_t set appstatus = 'Deployed' where app_no = '" + appNo + "'";
+                        com = new MySqlCommand(cmd, connection);
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("All fees are paid. Applicant status is deployed.", "Payment of Fees");
+                    }
+                    ucAccoView a = new ucAccoView();
+                    a.resetTable();
                     this.Close();
                 }
             }

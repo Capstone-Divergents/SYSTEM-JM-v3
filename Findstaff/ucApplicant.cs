@@ -330,9 +330,10 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', job.jobname'Applying for' "
+            cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', job.jobname'Applying for', a.appstatus'Under Department' "
                     + "from app_t app join job_t job "
-                    + "on app.position = job.jobname ";
+                    + "on app.position = job.jobname "
+                    + "left join applications_t a on app.app_id = a.app_id ";
             using (connection)
             {
                 using (adapter = new MySqlDataAdapter(cmd, connection))
