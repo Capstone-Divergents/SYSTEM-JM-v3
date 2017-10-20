@@ -9,13 +9,16 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
+using System.IO;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+
 namespace Findstaff
 {
     public partial class Payment : Form
     {
         private MySqlConnection connection;
         MySqlCommand com = new MySqlCommand();
-        MySqlDataAdapter adapter;
         private string cmd = "";
         private string appNo = "", appID = "";
         private string[] fees;
@@ -104,6 +107,44 @@ namespace Findstaff
                         com.ExecuteNonQuery();
                         MessageBox.Show("All fees are paid. Applicant status is deployed.", "Payment of Fees");
                     }
+
+                    //cmd = "select f.feename'Fee Name', j.amount'Amount', p.feestatus'Status', from genfees_t f " +
+                    //            "join payables_t p on f.fee_id = p.fee_id " +
+                    //            "join applications_t app on app.app_no = p.app_no " +
+                    //            "join jobfees_t j on j.jorder_id = j.jorder_id " +
+                    //            "where p.app_no = 'A000000001' and j.jorder_id = ";
+                    //com = new MySqlCommand(cmd, connection);
+                    //int cnt1 = int.Parse(com.ExecuteScalar() + "");
+                    //if (cnt1 == 0)
+                    //{
+                    //    Document doc = new Document(PageSize.A4, 30, 30, 50, 10);
+                    //    PdfWriter pdf = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\jmcamilo435\\Desktop\\Receipt.pdf", FileMode.Create));
+                    //    doc.Open();
+
+                    //    doc = Data(doc);
+
+                    //    doc.Close();
+                    //    MessageBox.Show("Receipt Created Successfully!");
+                    //}
+
+                    //cmd = "select concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', r.pay_id'Pay ID', r.amount'Amount', r.payment'Payment', r.chnge'Change', r.rdate'Date Paid' from receipts_t r " +
+                    //            "join payables_t p on r.pay_id = p.pay_id " +
+                    //            "join applications_t a on a.app_no = p.app_no " +
+                    //            "join app_t app on app.app_id = a.app_id " +
+                    //            "where r.pay_id = '" + payID + "';";
+                    //com = new MySqlCommand(cmd, connection);
+                    //int cnt2 = int.Parse(com.ExecuteScalar() + "");
+                    //if (cnt2 == 0)
+                    //{
+                    //    Document doc = new Document(PageSize.A4, 30, 30, 50, 10);
+                    //    PdfWriter pdf = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\jmcamilo435\\Desktop\\Receipt.pdf", FileMode.Create));
+                    //    doc.Open();
+
+                    //    doc = Data(doc);
+
+                    //    doc.Close();
+                    //    MessageBox.Show("Receipt Created Successfully!");
+                    //}
                     this.Close();
                     ucAccoView a = new ucAccoView();
                     a.resetTable();
@@ -111,10 +152,8 @@ namespace Findstaff
             }
             connection.Close();
             #endregion
-
-
         }
-
+        
         private void txtAmount_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (Char.IsSymbol(e.KeyChar) || Char.IsWhiteSpace(e.KeyChar) || Char.IsPunctuation(e.KeyChar)
