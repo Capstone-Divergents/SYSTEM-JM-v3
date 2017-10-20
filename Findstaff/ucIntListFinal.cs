@@ -60,6 +60,7 @@ namespace Findstaff
                 {
                     ctr = Convert.ToInt32(dr[0].ToString());
                 }
+                dr.Close();
                 if(ctr != 0)
                 {
                     int ctrB = 0, ctrJ = 0, ctrC = 0, x = 0, y = 0, z = 0;

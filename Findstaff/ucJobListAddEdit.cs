@@ -104,7 +104,6 @@ namespace Findstaff
                 com.ExecuteNonQuery();
                 MessageBox.Show("Job Added!", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 connection.Close();
-                cbJOrder1.SelectedIndex = -1;
                 cbCategory1.SelectedIndex = -1;
                 cbJob1.SelectedIndex = -1;
                 txtReqApp1.Clear();
