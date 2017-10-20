@@ -44,18 +44,18 @@ namespace Findstaff
             int total = 0;
             string[] fees = new string[dgvViewAcco.SelectedRows.Count];
             string fee = "";
-            for (int x = 0; x < dgvViewAcco.SelectedRows.Count; x++)
+            string jobtype = "";
+            cmd = "select j.jobtype from job_t j join applications_t a where a.app_no = '" + appNo + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
             {
-                string jobtype = "";
-                cmd = "select j.jobtype from job_t j join applications_t a where a.app_no = '"+appNo+"'";
-                com = new MySqlCommand(cmd, connection);
-                dr = com.ExecuteReader();
-                while (dr.Read())
-                {
-                    jobtype = dr[0].ToString();
-                }
-                dr.Close();
-                if(jobtype == "Skilled")
+                jobtype = dr[0].ToString();
+            }
+            dr.Close();
+            if (jobtype == "Skilled")
+            {
+                for (int x = 0; x < dgvViewAcco.SelectedRows.Count; x++)
                 {
                     cmd = "select fee_id from genfees_t where feename = '" + dgvViewAcco.SelectedRows[x].Cells[0].Value.ToString() + "'";
                     com = new MySqlCommand(cmd, connection);
@@ -67,22 +67,23 @@ namespace Findstaff
                     dr.Close();
                     fee += dgvViewAcco.SelectedRows[x].Cells[0].Value.ToString() + "\n";
                     total += Convert.ToInt32(dgvViewAcco.SelectedRows[x].Cells[1].Value.ToString());
-                    DialogResult y = MessageBox.Show("Are you sure you want to pay the balance(s)? \n" + fee, "Pay Balance?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-                    if (DialogResult.Yes == y)
-                    {
-                        Payment p = new Payment();
-                        p.init(appNo, appID, fees, total, dgvViewAcco.SelectedRows.Count);
-                        p.Show();
-                    }
+                    
                 }
-                else
+                DialogResult y = MessageBox.Show("Are you sure you want to pay the balance(s)? \n" + fee, "Pay Balance?", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (DialogResult.Yes == y)
                 {
-                    MessageBox.Show("Applicant doesn't need to pay the any fees.\nApplicant status already set to deployed.");
-                    cmd = "update applications_t set appstatus = 'Deployed' where app_no = '"+appNo+"'";
-                    com = new MySqlCommand(cmd, connection);
-                    com.ExecuteNonQuery();
-                    this.Hide();
+                    Payment p = new Payment();
+                    p.init(appNo, appID, fees, total, dgvViewAcco.SelectedRows.Count);
+                    p.Show();
                 }
+            }
+            else
+            {
+                MessageBox.Show("Applicant doesn't need to pay the any fees.\nApplicant status already set to deployed.");
+                cmd = "update applications_t set appstatus = 'Deployed' where app_no = '" + appNo + "'";
+                com = new MySqlCommand(cmd, connection);
+                com.ExecuteNonQuery();
+                this.Hide();
             }
             connection.Close();
         }

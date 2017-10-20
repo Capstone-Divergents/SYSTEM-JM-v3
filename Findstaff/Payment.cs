@@ -103,9 +103,9 @@ namespace Findstaff
                         com.ExecuteNonQuery();
                         MessageBox.Show("All fees are paid. Applicant status is deployed.", "Payment of Fees");
                     }
+                    this.Close();
                     ucAccoView a = new ucAccoView();
                     a.resetTable();
-                    this.Close();
                 }
             }
             connection.Close();

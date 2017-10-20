@@ -124,6 +124,7 @@
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucInterviewInit";
             this.Size = new System.Drawing.Size(1118, 450);
+            this.Load += new System.EventHandler(this.ucInterviewInit_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInitInt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
