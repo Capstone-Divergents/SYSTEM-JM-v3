@@ -119,6 +119,7 @@
             this.Controls.Add(this.btnViewIntList);
             this.Controls.Add(this.dgvFinInt);
             this.Controls.Add(this.lblFinInt);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucInterviewFin";
             this.Size = new System.Drawing.Size(1118, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dgvFinInt)).EndInit();

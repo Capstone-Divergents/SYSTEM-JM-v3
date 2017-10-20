@@ -231,6 +231,7 @@
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.btnCheckDetails);
             this.Controls.Add(this.lblDocu);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucDocumentation";
             this.Size = new System.Drawing.Size(1118, 500);
             this.VisibleChanged += new System.EventHandler(this.ucDocumentation_VisibleChanged);

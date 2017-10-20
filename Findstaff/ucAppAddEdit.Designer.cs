@@ -4098,6 +4098,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucAppAddEdit";
             this.Size = new System.Drawing.Size(1118, 450);
             this.VisibleChanged += new System.EventHandler(this.ucAppAddEdit_VisibleChanged);

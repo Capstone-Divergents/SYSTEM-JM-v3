@@ -3162,8 +3162,9 @@
             this.Controls.Add(this.txtAppName);
             this.Controls.Add(this.pnlButtons);
             this.Controls.Add(this.lblInterviewCriteria);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucInterviewCriteria";
-            this.Size = new System.Drawing.Size(1067, 450);
+            this.Size = new System.Drawing.Size(1050, 450);
             this.Load += new System.EventHandler(this.ucInterviewCriteria_Load);
             this.pnlButtons.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
