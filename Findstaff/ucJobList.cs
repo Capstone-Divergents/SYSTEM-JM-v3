@@ -164,7 +164,7 @@ namespace Findstaff
             }
             dr.Close();
 
-            cmd = "select g.skillname'Skill Name', js.proflevel'Proficiency Level' from jobskills_t js join genskills_t g on js.skill_id = g.skill_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select g.skillname'Skill Name', js.proflevel'Proficiency Level' from jobskills_t js join genskills_t g on js.skill_id = g.skill_id join job_t j on js.job_id = j.job_id where js.jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "' and j.jobname = '"+ dgvJobList.SelectedRows[0].Cells[1].Value.ToString() + "'";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))

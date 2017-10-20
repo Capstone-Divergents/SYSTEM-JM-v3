@@ -129,14 +129,14 @@
             this.dgvFees.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvFees.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvFees.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dgvFees.Location = new System.Drawing.Point(100, 100);
+            this.dgvFees.Location = new System.Drawing.Point(50, 111);
             this.dgvFees.MultiSelect = false;
             this.dgvFees.Name = "dgvFees";
             this.dgvFees.ReadOnly = true;
             this.dgvFees.RowHeadersVisible = false;
             this.dgvFees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvFees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFees.Size = new System.Drawing.Size(918, 200);
+            this.dgvFees.Size = new System.Drawing.Size(1018, 189);
             this.dgvFees.TabIndex = 106;
             // 
             // txtFeeName

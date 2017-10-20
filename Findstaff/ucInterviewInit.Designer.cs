@@ -80,14 +80,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvInitInt.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvInitInt.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvInitInt.Location = new System.Drawing.Point(100, 100);
+            this.dgvInitInt.Location = new System.Drawing.Point(50, 100);
             this.dgvInitInt.MultiSelect = false;
             this.dgvInitInt.Name = "dgvInitInt";
             this.dgvInitInt.ReadOnly = true;
             this.dgvInitInt.RowHeadersVisible = false;
             this.dgvInitInt.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvInitInt.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvInitInt.Size = new System.Drawing.Size(918, 200);
+            this.dgvInitInt.Size = new System.Drawing.Size(1018, 218);
             this.dgvInitInt.TabIndex = 42;
             // 
             // lblInitInt
@@ -104,6 +104,7 @@
             // ucIntListInit
             // 
             this.ucIntListInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucIntListInit.ForeColor = System.Drawing.Color.Black;
             this.ucIntListInit.Location = new System.Drawing.Point(0, 0);
             this.ucIntListInit.Name = "ucIntListInit";
             this.ucIntListInit.Size = new System.Drawing.Size(10, 10);
@@ -120,6 +121,7 @@
             this.Controls.Add(this.btnViewIntList);
             this.Controls.Add(this.dgvInitInt);
             this.Controls.Add(this.lblInitInt);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucInterviewInit";
             this.Size = new System.Drawing.Size(1118, 450);
             ((System.ComponentModel.ISupportInitialize)(this.dgvInitInt)).EndInit();
