@@ -116,7 +116,7 @@ namespace Findstaff
             connection = con.dbConnection();
             connection.Open();
 
-            cmd = "select e.employername, jf.jorder_id from employer_t e join jobfees_t jf on e.employer_id = jf.employer_id where jorder_id = '" + dgvJobFees.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select jf.jorder_id, e.employername from employer_t e join jobfees_t jf on e.employer_id = jf.employer_id where jorder_id = '" + dgvJobFees.SelectedRows[0].Cells[0].Value.ToString() + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())

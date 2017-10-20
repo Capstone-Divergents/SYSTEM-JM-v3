@@ -101,14 +101,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvJobFees.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvJobFees.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvJobFees.Location = new System.Drawing.Point(100, 130);
+            this.dgvJobFees.Location = new System.Drawing.Point(50, 130);
             this.dgvJobFees.MultiSelect = false;
             this.dgvJobFees.Name = "dgvJobFees";
             this.dgvJobFees.ReadOnly = true;
             this.dgvJobFees.RowHeadersVisible = false;
             this.dgvJobFees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvJobFees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvJobFees.Size = new System.Drawing.Size(918, 200);
+            this.dgvJobFees.Size = new System.Drawing.Size(1018, 200);
             this.dgvJobFees.TabIndex = 51;
             // 
             // lblJobFees

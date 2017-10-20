@@ -69,14 +69,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvJobOrder.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvJobOrder.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvJobOrder.Location = new System.Drawing.Point(100, 140);
+            this.dgvJobOrder.Location = new System.Drawing.Point(50, 140);
             this.dgvJobOrder.MultiSelect = false;
             this.dgvJobOrder.Name = "dgvJobOrder";
             this.dgvJobOrder.ReadOnly = true;
             this.dgvJobOrder.RowHeadersVisible = false;
             this.dgvJobOrder.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvJobOrder.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvJobOrder.Size = new System.Drawing.Size(918, 200);
+            this.dgvJobOrder.Size = new System.Drawing.Size(1018, 200);
             this.dgvJobOrder.TabIndex = 51;
             // 
             // txtName

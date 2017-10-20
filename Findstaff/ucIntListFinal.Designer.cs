@@ -71,14 +71,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvIntervieweeList.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvIntervieweeList.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvIntervieweeList.Location = new System.Drawing.Point(100, 140);
+            this.dgvIntervieweeList.Location = new System.Drawing.Point(52, 140);
             this.dgvIntervieweeList.MultiSelect = false;
             this.dgvIntervieweeList.Name = "dgvIntervieweeList";
             this.dgvIntervieweeList.ReadOnly = true;
             this.dgvIntervieweeList.RowHeadersVisible = false;
             this.dgvIntervieweeList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvIntervieweeList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvIntervieweeList.Size = new System.Drawing.Size(918, 200);
+            this.dgvIntervieweeList.Size = new System.Drawing.Size(1018, 200);
             this.dgvIntervieweeList.TabIndex = 51;
             // 
             // lblJob

@@ -70,14 +70,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCountry.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCountry.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvCountry.Location = new System.Drawing.Point(100, 120);
+            this.dgvCountry.Location = new System.Drawing.Point(54, 120);
             this.dgvCountry.MultiSelect = false;
             this.dgvCountry.Name = "dgvCountry";
             this.dgvCountry.ReadOnly = true;
             this.dgvCountry.RowHeadersVisible = false;
             this.dgvCountry.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCountry.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCountry.Size = new System.Drawing.Size(918, 200);
+            this.dgvCountry.Size = new System.Drawing.Size(1018, 200);
             this.dgvCountry.TabIndex = 43;
             // 
             // lblCountry

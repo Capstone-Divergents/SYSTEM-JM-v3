@@ -69,14 +69,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvEmployer.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvEmployer.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvEmployer.Location = new System.Drawing.Point(100, 140);
+            this.dgvEmployer.Location = new System.Drawing.Point(50, 140);
             this.dgvEmployer.MultiSelect = false;
             this.dgvEmployer.Name = "dgvEmployer";
             this.dgvEmployer.ReadOnly = true;
             this.dgvEmployer.RowHeadersVisible = false;
             this.dgvEmployer.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvEmployer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvEmployer.Size = new System.Drawing.Size(918, 200);
+            this.dgvEmployer.Size = new System.Drawing.Size(1018, 200);
             this.dgvEmployer.TabIndex = 43;
             // 
             // btnAdvSe
@@ -139,7 +139,7 @@
             this.btnEmpDel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpDel.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpDel.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpDel.Location = new System.Drawing.Point(578, 365);
+            this.btnEmpDel.Location = new System.Drawing.Point(616, 365);
             this.btnEmpDel.Name = "btnEmpDel";
             this.btnEmpDel.Size = new System.Drawing.Size(100, 50);
             this.btnEmpDel.TabIndex = 49;
@@ -155,7 +155,7 @@
             this.btnEmpEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpEdit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpEdit.Location = new System.Drawing.Point(472, 365);
+            this.btnEmpEdit.Location = new System.Drawing.Point(509, 365);
             this.btnEmpEdit.Name = "btnEmpEdit";
             this.btnEmpEdit.Size = new System.Drawing.Size(100, 50);
             this.btnEmpEdit.TabIndex = 48;
@@ -171,7 +171,7 @@
             this.btnEmpAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEmpAdd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEmpAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnEmpAdd.Location = new System.Drawing.Point(366, 365);
+            this.btnEmpAdd.Location = new System.Drawing.Point(403, 365);
             this.btnEmpAdd.Name = "btnEmpAdd";
             this.btnEmpAdd.Size = new System.Drawing.Size(100, 50);
             this.btnEmpAdd.TabIndex = 47;

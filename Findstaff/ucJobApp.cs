@@ -48,6 +48,8 @@ namespace Findstaff
             else
             {
                 cbEmployer.Items.Clear();
+                cbJobOrder.Items.Clear();
+                cbJob.Items.Clear();
             }
         }
 
@@ -93,15 +95,10 @@ namespace Findstaff
             dgvAppMatch.Rows.Clear();
             connection.Open();
             int y = 0;
-            cmd = "Select skill_id, proflevel from jobskills_t where jorder_id = '" + cbJobOrder.Text + "' and job_id = (select job_id from job_t where jobname = '" + cbJob.Text + "')";
+            cmd = "Select count(*) from jobskills_t where jorder_id = '" + cbJobOrder.Text + "' and job_id = (select job_id from job_t where jobname = '" + cbJob.Text + "')";
             com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while(dr.Read())
-            {
-                y++;
-            }
-            dr.Close();
-            string[,] skills = new string[y, 3];
+            y = int.Parse(com.ExecuteScalar() + "");
+            string[,] skills = new string[y, 2];
             int z = 0;
             cmd = "Select skill_id, proflevel from jobskills_t where jorder_id = '" + cbJobOrder.Text + "' and job_id = (select job_id from job_t where jobname = '" + cbJob.Text + "')";
             com = new MySqlCommand(cmd, connection);
@@ -115,81 +112,73 @@ namespace Findstaff
             dr.Close();
             y = 0;
             int a = 0;
-            cmd = "select app_id from app_t where position = '" + cbJob.Text + "'";
+            cmd = "select count(a.app_id) from app_t a left join applications_t b on a.app_id = b.app_id where (b.appstats is null or b.appstats <> 'Active') and position = '" + cbJob.Text + "'";
             com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while (dr.Read())
+            y = int.Parse(com.ExecuteScalar() + "");
+            if (y != 0)
             {
-                y++;
-            }
-            dr.Close();
-            string[,] apps = new string[y, 2];
-            cmd = "select app_id, concat(lname, ', ', fname, ' ', mname) from app_t  where position = '" + cbJob.Text + "'";
-            com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                apps[a, 0] = dr[0].ToString();
-                apps[a, 1] = dr[1].ToString();
-                a++;
-            }
-            dr.Close();
-            int ctr = 0;
-            dgvAppMatch.ColumnCount = 3;
-            dgvAppMatch.Columns[0].HeaderText = "Applicant ID";
-            dgvAppMatch.Columns[1].HeaderText = "Applicant Name";
-            dgvAppMatch.Columns[2].HeaderText = "Satisfactory Rating";
-            for (int x = 0; x < y; x++)
-            {
-                decimal rate = 0;
-                for (int b = 0; b < z; b++)
+                string[,] apps = new string[y, 2];
+                cmd = "select a.app_id, concat(a.lname, ', ', a.fname, ' ', a.mname) from app_t a left join applications_t b on a.app_id = b.app_id where (b.appstats is null or b.appstats <> 'Active') and position = '" + cbJob.Text + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
                 {
-                    int c = 0;
-                    cmd = "select skill_id, proficiency from appskills_t where app_id = '" + apps[x, 0] + "'";
-                    com = new MySqlCommand(cmd, connection);
-                    dr = com.ExecuteReader();
-                    while (dr.Read())
+                    apps[a, 0] = dr[0].ToString();
+                    apps[a, 1] = dr[1].ToString();
+                    a++;
+                }
+                dr.Close();
+                int ctr = 0;
+                dgvAppMatch.ColumnCount = 3;
+                dgvAppMatch.Columns[0].HeaderText = "Applicant ID";
+                dgvAppMatch.Columns[1].HeaderText = "Applicant Name";
+                dgvAppMatch.Columns[2].HeaderText = "Satisfactory Rating";
+                for (int x = 0; x < y; x++)
+                {
+                    decimal rate = 0;
+                    for (int b = 0; b < z; b++)
                     {
-                        c++;
-                    }
-                    dr.Close();
-                    string[,] skill = new string[c, 3];
-                    c = 0;
-                    cmd = "select skill_id, proficiency from appskills_t where app_id = '" + apps[x, 0] + "'";
-                    com = new MySqlCommand(cmd, connection);
-                    dr = com.ExecuteReader();
-                    while (dr.Read())
-                    {
-                        skill[c, 0] = dr[0].ToString();
-                        skill[c, 1] = dr[1].ToString();
-                        c++;
-                    }
-                    dr.Close();
-                    for (int d = 0; d < c; d++)
-                    {
-                        for (int f = 0; f < z; f++)
+                        int c = 0;
+                        cmd = "select skill_id, proficiency from appskills_t where app_id = '" + apps[x, 0] + "'";
+                        com = new MySqlCommand(cmd, connection);
+                        dr = com.ExecuteReader();
+                        while (dr.Read())
                         {
-                            if (skill[d, 0] == skills[f, 0] && skills[f, 2] != "1")
+                            c++;
+                        }
+                        dr.Close();
+                        string[,] skill = new string[c, 3];
+                        c = 0;
+                        cmd = "select skill_id, proficiency from appskills_t where app_id = '" + apps[x, 0] + "'";
+                        com = new MySqlCommand(cmd, connection);
+                        dr = com.ExecuteReader();
+                        while (dr.Read())
+                        {
+                            skill[c, 0] = dr[0].ToString();
+                            skill[c, 1] = dr[1].ToString();
+                            c++;
+                        }
+                        dr.Close();
+                        for (int d = 0; d < c; d++)
+                        {
+                            for (int f = 0; f < z; f++)
                             {
-                                if (Convert.ToInt32(skill[d, 1]) >= Convert.ToInt32(skills[f, 1]))
+                                if (skill[d, 0] == skills[f, 0])
                                 {
-                                    ctr++;
-                                    skills[f, 2] = "1";
-                                    break;
+                                    if (Convert.ToInt32(skill[d, 1]) >= Convert.ToInt32(skills[f, 1]))
+                                    {
+                                        ctr++;
+                                    }
                                 }
                             }
                         }
-                        for (int g = 0; g < z; g++)
-                        {
-                            skill[g, 2] = "0";
-                        }
-                        rate = Convert.ToDecimal(ctr / z) * 100;
-                        ctr = 0;
                     }
+                    rate = Convert.ToDecimal(ctr / z) * 100;
+                    dgvAppMatch.Rows.Add(apps[x, 0], apps[x, 1], rate);
+                    ctr = 0;
                 }
-                dgvAppMatch.Rows.Add(apps[x, 0], apps[x, 1], rate);
+                dgvAppMatch.Sort(dgvAppMatch.Columns[2], ListSortDirection.Descending);
             }
-            dgvAppMatch.Sort(dgvAppMatch.Columns[2], ListSortDirection.Descending);
             connection.Close();
         }
         
@@ -249,14 +238,9 @@ namespace Findstaff
                 appID = dr[0].ToString();
             }
             dr.Close();
-            cmd = "Select skill_id, proficiency from appskills_t where app_id = '"+appID+"'";
+            cmd = "Select count(skill_id) from appskills_t where app_id = '"+appID+"'";
             com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                skillctr++;
-            }
-            dr.Close();
+            skillctr = int.Parse(com.ExecuteScalar() + "");
             string[,] skills = new string[skillctr, 2];
             skillctr = 0;
             cmd = "Select skill_id, proficiency from appskills_t where app_id = '" + appID + "'";
@@ -343,7 +327,7 @@ namespace Findstaff
                         skillsctr++;
                     }
                     dr.Close();
-                    string[,] jobskill = new string[skillsctr, 3];
+                    string[,] jobskill = new string[skillsctr, 2];
                     skillsctr = 0;
                     cmd = "select skill_id, proflevel from jobskills_t where jorder_id = '" + jorders[x] + "' and job_id = '" + jobs[y] + "'";
                     com = new MySqlCommand(cmd, connection);
@@ -360,19 +344,13 @@ namespace Findstaff
                     {
                         for(int a = 0; a < skillsctr; a++)
                         {
-                            if(skills[z,0] == jobskill[a,0] && jobskill[a,2] != "1")
+                            if(skills[z,0] == jobskill[a,0])
                             {
                                 if(Convert.ToInt32(skills[z, 1]) > Convert.ToInt32(jobskill[a, 1]) || Convert.ToInt32(skills[z, 1]) == Convert.ToInt32(jobskill[a, 1]))
                                 {
                                     satisfactory++;
-                                    jobskill[a, 2] = "1";
-                                    break;
                                 }
                             }
-                        }
-                        for(int b = 0; b < skillctr; b++)
-                        {
-                            jobskill[b, 2] = "";
                         }
                     }
                     sat = Convert.ToDecimal(satisfactory / skillsctr) * 100;

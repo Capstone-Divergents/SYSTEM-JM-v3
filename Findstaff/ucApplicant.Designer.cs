@@ -70,14 +70,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvApplicant.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvApplicant.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvApplicant.Location = new System.Drawing.Point(100, 115);
+            this.dgvApplicant.Location = new System.Drawing.Point(50, 115);
             this.dgvApplicant.MultiSelect = false;
             this.dgvApplicant.Name = "dgvApplicant";
             this.dgvApplicant.ReadOnly = true;
             this.dgvApplicant.RowHeadersVisible = false;
             this.dgvApplicant.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvApplicant.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvApplicant.Size = new System.Drawing.Size(918, 230);
+            this.dgvApplicant.Size = new System.Drawing.Size(1018, 230);
             this.dgvApplicant.TabIndex = 44;
             // 
             // lblApplicant
