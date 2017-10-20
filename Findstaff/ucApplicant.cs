@@ -176,8 +176,6 @@ namespace Findstaff
         #region btnDelete_Click
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            Connection con = new Connection();
-            connection = con.dbConnection();
             connection.Open();
             string cmd = "delete from app_t where app_id = '" + dgvApplicant.SelectedRows[0].Cells[0].Value.ToString() + "';";
             com = new MySqlCommand(cmd, connection);
@@ -353,6 +351,8 @@ namespace Findstaff
 
         private void ucApplicant_Load(object sender, EventArgs e)
         {
+            Connection con = new Connection();
+            connection = con.dbConnection();
             searchData(txtName.Text);
         }
     }

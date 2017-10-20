@@ -28,18 +28,8 @@ namespace Findstaff
 
         public void init(string appno, string appname)
         {
-            connection.Open();
             appNo = appno;
-            appName = appname;
-            cmd = "select app_id from app_t where concat(lname, ', ', fname, ' ', mname) = '" + appName + "'";
-            com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                appID = dr[0].ToString();
-            }
-            dr.Close();
-            connection.Close();
+            appID = appname;
         }
 
         private void ucAccoView_Load(object sender, EventArgs e)
@@ -56,6 +46,7 @@ namespace Findstaff
             string fee = "";
             for (int x = 0; x < dgvViewAcco.SelectedRows.Count; x++)
             {
+
                 cmd = "select fee_id from genfees_t where feename = '" + dgvViewAcco.SelectedRows[x].Cells[0].Value.ToString() + "'";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
@@ -113,6 +104,14 @@ namespace Findstaff
                 while (dr.Read())
                 {
                     employerName = dr[0].ToString();
+                }
+                dr.Close();
+                cmd = "select concat(lname, ', ', fname, ' ', mname) from app_t where app_id = '" + appID + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    appName = dr[0].ToString();
                 }
                 dr.Close();
                 joborder.Text = jorder;

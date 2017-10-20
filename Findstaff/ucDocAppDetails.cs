@@ -28,18 +28,8 @@ namespace Findstaff
 
         public void init(string appno, string appname)
         {
-            connection.Open();
             appNo = appno;
-            appName = appname;
-            cmd = "select app_id from app_t where concat(lname, ', ', fname, ' ', mname) = '" + appName + "'";
-            com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                appID = dr[0].ToString();
-            }
-            dr.Close();
-            connection.Close();
+            appID = appname;
         }
 
         private void ucDocAppDetails_Load(object sender, EventArgs e)
@@ -156,6 +146,14 @@ namespace Findstaff
                     employerName = dr[0].ToString();
                 }
                 dr.Close();
+                cmd = "select concat(lname, ', ', fname, ' ', mname) from app_t where app_id = '" + appID + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    appName = dr[0].ToString();
+                }
+                dr.Close();
                 joborder.Text = jorder;
                 jobname.Text = jobName;
                 employer.Text = employerName;
@@ -210,21 +208,20 @@ namespace Findstaff
                 if(dr1 == DialogResult.Yes)
                 {
                     string cmd2 = "";
-                    cmd = "Update appdoc_t set docstat = 'Passed' where ";
                     for(int x = 0; x < dgvBasicReqs.SelectedRows.Count; x++)
                     {
+                        cmd = "Update appdoc_t set docstat = 'Passed' where ";
                         cmd2 = "select req_id from genreqs_t where reqname = '" + dgvBasicReqs.SelectedRows[x].Cells[0].Value.ToString() + "'";
                         com = new MySqlCommand(cmd2, connection);
                         dr = com.ExecuteReader();
                         while (dr.Read())
                         {
-                            cmd += "req_id = '" + dr[0].ToString() + "' and ";
+                            cmd += "req_id = '" + dr[0].ToString() + "' and app_no = '" + appNo + "'";
                         }
                         dr.Close();
+                        com = new MySqlCommand(cmd, connection);
+                        com.ExecuteNonQuery();
                     }
-                    cmd += "app_no = '"+appNo+"'";
-                    com = new MySqlCommand(cmd, connection);
-                    com.ExecuteNonQuery();
                     MessageBox.Show("Documents status changed to 'Passed'", "Documents Passed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g "
                     + "join appdoc_t a on g.req_id = a.req_id "
@@ -266,21 +263,21 @@ namespace Findstaff
                 if (dr1 == DialogResult.Yes)
                 {
                     string cmd2 = "";
-                    cmd = "Update appdoc_t set docstat = 'Passed' where ";
+                    
                     for (int x = 0; x < dgvAddlReqs.SelectedRows.Count; x++)
                     {
+                        cmd = "Update appdoc_t set docstat = 'Passed' where ";
                         cmd2 = "select req_id from genreqs_t where reqname = '" + dgvAddlReqs.SelectedRows[x].Cells[0].Value.ToString() + "'";
                         com = new MySqlCommand(cmd2, connection);
                         dr = com.ExecuteReader();
                         while (dr.Read())
                         {
-                            cmd += "req_id = '" + dr[0].ToString() + "' and ";
+                            cmd += "req_id = '" + dr[0].ToString() + "' and app_no = '" + appNo + "'";
                         }
                         dr.Close();
+                        com = new MySqlCommand(cmd, connection);
+                        com.ExecuteNonQuery();
                     }
-                    cmd += "app_no = '" + appNo + "'";
-                    com = new MySqlCommand(cmd, connection);
-                    com.ExecuteNonQuery();
                     MessageBox.Show("Documents status changed to 'Passed'", "Documents Passed", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     cmd = "SELECT g.reqname'Requirement Name', a.docstat'Status' FROM genreqs_t g "
                     + "join appdoc_t a on g.req_id = a.req_id "

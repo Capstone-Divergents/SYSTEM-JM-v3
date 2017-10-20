@@ -16,6 +16,7 @@ namespace Findstaff
         private MySqlConnection connection;
         MySqlCommand com = new MySqlCommand();
         MySqlDataAdapter adapter;
+        MySqlDataReader dr;
         private string cmd = "";
 
         public ucDocumentation()
@@ -41,7 +42,7 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', count(ad.req_id)'No. of Documents to be passed' "
+            cmd = "select a.app_no'Application No.', app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', count(ad.req_id)'No. of Documents to be passed' "
                     + "from app_t app join appdoc_t ad "
                     + "on app.app_id = ad.app_id "
                     + "join applications_t a on a.app_no = ad.app_no "
@@ -62,7 +63,7 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', count(ad.req_id)'No. of Documents to be passed' "
+            cmd = "select a.app_no'Application No.', app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', count(ad.req_id)'No. of Documents to be passed' "
                     + "from app_t app join appdoc_t ad "
                     + "on app.app_id = ad.app_id "
                     + "join applications_t a on a.app_no = ad.app_no "
