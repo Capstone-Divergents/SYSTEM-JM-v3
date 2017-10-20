@@ -79,5 +79,36 @@ namespace Findstaff
                 }
             }
         }
+
+        public void searchData(string valueToFind)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+
+            string cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', count(ad.req_id)'No. of Documents to be passed' "
+                    + "from app_t app join appdoc_t ad "
+                    + "on app.app_id = ad.app_id "
+                    + "join applications_t a on a.app_no = ad.app_no "
+                    + "where a.appstatus = 'Documentation' and a.appstats = 'Active' and concat(app.app_id , ' ', app.lname, ', ', app.fname, ' ', app.mname) LIKE '%" + valueToFind + "%' "
+                    + "group by ad.app_no ";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+
+            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
+            DataTable table = new DataTable();
+            adapter.Fill(table);
+            dgvDocumentation.DataSource = table;
+        }
+
+        private void txtName_TextChanged(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
+        }
+
+        private void ucDocumentation_Load(object sender, EventArgs e)
+        {
+            searchData(txtName.Text);
+        }
     }
 }

@@ -71,7 +71,6 @@
             this.label129 = new System.Windows.Forms.Label();
             this.pnlButtons1 = new System.Windows.Forms.Panel();
             this.btnClose = new System.Windows.Forms.Button();
-            this.btnPrint = new System.Windows.Forms.Button();
             this.position = new System.Windows.Forms.Label();
             this.name = new System.Windows.Forms.Label();
             this.sex = new System.Windows.Forms.Label();
@@ -581,11 +580,10 @@
             // 
             this.pnlButtons1.BackColor = System.Drawing.Color.Transparent;
             this.pnlButtons1.Controls.Add(this.btnClose);
-            this.pnlButtons1.Controls.Add(this.btnPrint);
             this.pnlButtons1.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlButtons1.Location = new System.Drawing.Point(425, 1704);
+            this.pnlButtons1.Location = new System.Drawing.Point(461, 1704);
             this.pnlButtons1.Name = "pnlButtons1";
-            this.pnlButtons1.Size = new System.Drawing.Size(250, 80);
+            this.pnlButtons1.Size = new System.Drawing.Size(127, 80);
             this.pnlButtons1.TabIndex = 309;
             // 
             // btnClose
@@ -599,31 +597,13 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Location = new System.Drawing.Point(128, 3);
+            this.btnClose.Location = new System.Drawing.Point(3, 3);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(120, 50);
             this.btnClose.TabIndex = 57;
             this.btnClose.Text = "CLOSE";
             this.btnClose.UseVisualStyleBackColor = false;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
-            // 
-            // btnPrint
-            // 
-            this.btnPrint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.btnPrint.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnPrint.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnPrint.FlatAppearance.BorderSize = 0;
-            this.btnPrint.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
-            this.btnPrint.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
-            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPrint.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPrint.ForeColor = System.Drawing.Color.Black;
-            this.btnPrint.Location = new System.Drawing.Point(2, 3);
-            this.btnPrint.Name = "btnPrint";
-            this.btnPrint.Size = new System.Drawing.Size(120, 50);
-            this.btnPrint.TabIndex = 56;
-            this.btnPrint.Text = "PRINT";
-            this.btnPrint.UseVisualStyleBackColor = false;
             // 
             // position
             // 
@@ -937,7 +917,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblViewApp);
             this.Name = "ucAppView";
-            this.Size = new System.Drawing.Size(1050, 450);
+            this.Size = new System.Drawing.Size(1033, 450);
             this.VisibleChanged += new System.EventHandler(this.ucAppView_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgvEducBack)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills)).EndInit();
@@ -980,7 +960,6 @@
         private System.Windows.Forms.Label label129;
         private System.Windows.Forms.Panel pnlButtons1;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Button btnPrint;
         public System.Windows.Forms.DataGridView dgvEducBack;
         public System.Windows.Forms.DataGridView dgvSkills;
         public System.Windows.Forms.DataGridView dgvEmpHistory;
