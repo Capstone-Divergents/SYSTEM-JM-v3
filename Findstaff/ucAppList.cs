@@ -156,9 +156,10 @@ namespace Findstaff
         {
             connection.Open();
 
-            string cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', job.jobname'Applying for' "
+            string cmd = cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', job.jobname'Applying for', a.appstatus'Under Department' "
                     + "from app_t app join job_t job "
-                    + "on app.position = job.jobname WHERE concat(app.app_id, app.lname, ', ', app.fname, ' ', app.mname, job.jobname) LIKE '%" + valueToFind + "%'";
+                    + "on app.position = job.jobname "
+                    + "left join applications_t a on app.app_id = a.app_id WHERE concat(app.app_id, app.lname, ', ', app.fname, ' ', app.mname, job.jobname) LIKE '%" + valueToFind + "%'";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();
 

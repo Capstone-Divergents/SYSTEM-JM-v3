@@ -57,12 +57,6 @@ namespace Findstaff
             connection.Open();
             if(Convert.ToInt32(txtAmount.Text) >= balance)
             {
-                for (int x = 0; x < count; x++)
-                {
-                    cmd = "update payables_t set feestatus = 'Paid', datepaid = current_date() where app_no = '"+appNo+"' and app_id = '"+appID+"' and fee_id = '"+fees[x]+"'";
-                    com = new MySqlCommand(cmd, connection);
-                    com.ExecuteNonQuery();
-                }
                 int ctr = 0;
                 cmd = "select count(*) from receipts_t";
                 com = new MySqlCommand(cmd, connection);
@@ -93,8 +87,26 @@ namespace Findstaff
                     cmd = "insert into receipts_t values ('"+payID+"','"+appID+"','"+lblBalance.Text+"','"+txtAmount.Text+"','"+ (Convert.ToInt32(txtAmount.Text) - Convert.ToInt32(lblBalance.Text))+"',current_date())";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
-                    MessageBox.Show("Balance Paid", "Payment");
+                    MessageBox.Show("Total Amount Paid: P" + lblBalance.Text + "\nPayment: P" + txtAmount.Text + "\nChange: P" + (Convert.ToInt32(txtAmount.Text) - Convert.ToInt32(lblBalance.Text)), "Payment Info");
+                    for (int x = 0; x < count; x++)
+                    {
+                        cmd = "update payables_t set feestatus = 'Paid', datepaid = current_date(), pay_id = '"+payID+"' where app_no = '" + appNo + "' and app_id = '" + appID + "' and fee_id = '" + fees[x] + "'";
+                        com = new MySqlCommand(cmd, connection);
+                        com.ExecuteNonQuery();
+                    }
+                    cmd = "select count(fee_id) from payables_t where feestatus <> 'Paid' and app_no = '"+appNo+"'";
+                    com = new MySqlCommand(cmd, connection);
+                    int cnt = int.Parse(com.ExecuteScalar() + "");
+                    if(cnt == 0)
+                    {
+                        cmd = "update applications_t set appstatus = 'Deployed' where app_no = '" + appNo + "'";
+                        com = new MySqlCommand(cmd, connection);
+                        com.ExecuteNonQuery();
+                        MessageBox.Show("All fees are paid. Applicant status is deployed.", "Payment of Fees");
+                    }
                     this.Close();
+                    ucAccoView a = new ucAccoView();
+                    a.resetTable();
                 }
             }
             connection.Close();
