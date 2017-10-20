@@ -219,6 +219,7 @@
             this.Controls.Add(this.lblEmp);
             this.Controls.Add(this.lblJobOrder);
             this.Controls.Add(this.lblIntervieweeList);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucIntListInit";
             this.Size = new System.Drawing.Size(1118, 450);
             this.Load += new System.EventHandler(this.ucIntListInit_Load);

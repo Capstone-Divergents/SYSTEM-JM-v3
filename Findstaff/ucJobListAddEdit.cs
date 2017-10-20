@@ -120,7 +120,7 @@ namespace Findstaff
                 {
                     cbSkillName.Items.Add(dgvReqdDocs1.Rows[x].Cells[0].Value.ToString());
                 }
-                dgvSkills1.Rows.Clear();
+                dgvReqdDocs1.Rows.Clear();
             }
             else
             {
@@ -149,7 +149,7 @@ namespace Findstaff
             {
                 cbSkillName.Items.Add(dgvReqdDocs1.Rows[x].Cells[0].Value.ToString());
             }
-            dgvSkills1.Rows.Clear();
+            dgvReqdDocs1.Rows.Clear();
             cbJOrder1.Enabled = true;
             btnAddSkill.Enabled = false;
             btnReqAdd.Enabled = false;
