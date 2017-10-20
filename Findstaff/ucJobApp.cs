@@ -238,14 +238,9 @@ namespace Findstaff
                 appID = dr[0].ToString();
             }
             dr.Close();
-            cmd = "Select skill_id, proficiency from appskills_t where app_id = '"+appID+"'";
+            cmd = "Select count(skill_id) from appskills_t where app_id = '"+appID+"'";
             com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                skillctr++;
-            }
-            dr.Close();
+            skillctr = int.Parse(com.ExecuteScalar() + "");
             string[,] skills = new string[skillctr, 2];
             skillctr = 0;
             cmd = "Select skill_id, proficiency from appskills_t where app_id = '" + appID + "'";
@@ -332,7 +327,7 @@ namespace Findstaff
                         skillsctr++;
                     }
                     dr.Close();
-                    string[,] jobskill = new string[skillsctr, 3];
+                    string[,] jobskill = new string[skillsctr, 2];
                     skillsctr = 0;
                     cmd = "select skill_id, proflevel from jobskills_t where jorder_id = '" + jorders[x] + "' and job_id = '" + jobs[y] + "'";
                     com = new MySqlCommand(cmd, connection);
@@ -349,19 +344,13 @@ namespace Findstaff
                     {
                         for(int a = 0; a < skillsctr; a++)
                         {
-                            if(skills[z,0] == jobskill[a,0] && jobskill[a,2] != "1")
+                            if(skills[z,0] == jobskill[a,0])
                             {
                                 if(Convert.ToInt32(skills[z, 1]) > Convert.ToInt32(jobskill[a, 1]) || Convert.ToInt32(skills[z, 1]) == Convert.ToInt32(jobskill[a, 1]))
                                 {
                                     satisfactory++;
-                                    jobskill[a, 2] = "1";
-                                    break;
                                 }
                             }
-                        }
-                        for(int b = 0; b < skillctr; b++)
-                        {
-                            jobskill[b, 2] = "";
                         }
                     }
                     sat = Convert.ToDecimal(satisfactory / skillsctr) * 100;

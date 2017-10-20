@@ -202,6 +202,7 @@
             this.ucInterviewCriteria.Size = new System.Drawing.Size(10, 10);
             this.ucInterviewCriteria.TabIndex = 493;
             this.ucInterviewCriteria.Visible = false;
+            this.ucInterviewCriteria.VisibleChanged += new System.EventHandler(this.ucInterviewCriteria_VisibleChanged);
             // 
             // ucIntListInit
             // 
