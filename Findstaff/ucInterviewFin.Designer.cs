@@ -80,14 +80,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvFinInt.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvFinInt.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvFinInt.Location = new System.Drawing.Point(100, 100);
+            this.dgvFinInt.Location = new System.Drawing.Point(50, 100);
             this.dgvFinInt.MultiSelect = false;
             this.dgvFinInt.Name = "dgvFinInt";
             this.dgvFinInt.ReadOnly = true;
             this.dgvFinInt.RowHeadersVisible = false;
             this.dgvFinInt.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvFinInt.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFinInt.Size = new System.Drawing.Size(918, 200);
+            this.dgvFinInt.Size = new System.Drawing.Size(1018, 218);
             this.dgvFinInt.TabIndex = 45;
             // 
             // lblFinInt
@@ -104,6 +104,7 @@
             // ucIntListFinal
             // 
             this.ucIntListFinal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucIntListFinal.ForeColor = System.Drawing.Color.Black;
             this.ucIntListFinal.Location = new System.Drawing.Point(0, 0);
             this.ucIntListFinal.Name = "ucIntListFinal";
             this.ucIntListFinal.Size = new System.Drawing.Size(10, 10);

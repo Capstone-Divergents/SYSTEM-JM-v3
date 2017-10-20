@@ -115,14 +115,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvIntervieweeList.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvIntervieweeList.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvIntervieweeList.Location = new System.Drawing.Point(100, 140);
+            this.dgvIntervieweeList.Location = new System.Drawing.Point(53, 140);
             this.dgvIntervieweeList.MultiSelect = false;
             this.dgvIntervieweeList.Name = "dgvIntervieweeList";
             this.dgvIntervieweeList.ReadOnly = true;
             this.dgvIntervieweeList.RowHeadersVisible = false;
             this.dgvIntervieweeList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvIntervieweeList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvIntervieweeList.Size = new System.Drawing.Size(918, 200);
+            this.dgvIntervieweeList.Size = new System.Drawing.Size(1018, 200);
             this.dgvIntervieweeList.TabIndex = 43;
             // 
             // employer
@@ -169,9 +169,9 @@
             this.btnIntApp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnIntApp.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIntApp.ForeColor = System.Drawing.Color.Black;
-            this.btnIntApp.Location = new System.Drawing.Point(425, 370);
+            this.btnIntApp.Location = new System.Drawing.Point(437, 370);
             this.btnIntApp.Name = "btnIntApp";
-            this.btnIntApp.Size = new System.Drawing.Size(150, 50);
+            this.btnIntApp.Size = new System.Drawing.Size(120, 50);
             this.btnIntApp.TabIndex = 491;
             this.btnIntApp.Text = "INTERVIEW APPLICANT";
             this.btnIntApp.UseVisualStyleBackColor = false;
@@ -185,9 +185,9 @@
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClose.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Location = new System.Drawing.Point(581, 370);
+            this.btnClose.Location = new System.Drawing.Point(563, 370);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 50);
+            this.btnClose.Size = new System.Drawing.Size(120, 50);
             this.btnClose.TabIndex = 492;
             this.btnClose.Text = "CLOSE";
             this.btnClose.UseVisualStyleBackColor = false;

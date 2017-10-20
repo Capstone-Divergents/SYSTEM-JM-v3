@@ -100,14 +100,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvJobCategory.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvJobCategory.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvJobCategory.Location = new System.Drawing.Point(100, 110);
+            this.dgvJobCategory.Location = new System.Drawing.Point(50, 117);
             this.dgvJobCategory.MultiSelect = false;
             this.dgvJobCategory.Name = "dgvJobCategory";
             this.dgvJobCategory.ReadOnly = true;
             this.dgvJobCategory.RowHeadersVisible = false;
             this.dgvJobCategory.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvJobCategory.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvJobCategory.Size = new System.Drawing.Size(918, 200);
+            this.dgvJobCategory.Size = new System.Drawing.Size(1018, 189);
             this.dgvJobCategory.TabIndex = 103;
             // 
             // lblJobCategory

@@ -100,14 +100,14 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSkills.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvSkills.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvSkills.Location = new System.Drawing.Point(100, 107);
+            this.dgvSkills.Location = new System.Drawing.Point(50, 107);
             this.dgvSkills.MultiSelect = false;
             this.dgvSkills.Name = "dgvSkills";
             this.dgvSkills.ReadOnly = true;
             this.dgvSkills.RowHeadersVisible = false;
             this.dgvSkills.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvSkills.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSkills.Size = new System.Drawing.Size(918, 200);
+            this.dgvSkills.Size = new System.Drawing.Size(1018, 200);
             this.dgvSkills.TabIndex = 103;
             // 
             // lblSkills

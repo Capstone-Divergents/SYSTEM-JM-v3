@@ -133,13 +133,13 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvViewAcco.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvViewAcco.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvViewAcco.Location = new System.Drawing.Point(100, 220);
+            this.dgvViewAcco.Location = new System.Drawing.Point(50, 220);
             this.dgvViewAcco.Name = "dgvViewAcco";
             this.dgvViewAcco.ReadOnly = true;
             this.dgvViewAcco.RowHeadersVisible = false;
             this.dgvViewAcco.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvViewAcco.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvViewAcco.Size = new System.Drawing.Size(918, 200);
+            this.dgvViewAcco.Size = new System.Drawing.Size(1018, 200);
             this.dgvViewAcco.TabIndex = 5;
             // 
             // btnPayBal
