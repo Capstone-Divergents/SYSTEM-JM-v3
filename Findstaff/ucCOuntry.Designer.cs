@@ -204,7 +204,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.ucCountryView);
-            this.Controls.Add(this.btnView);
             this.Controls.Add(this.ucCountryAddEdit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -213,6 +212,7 @@
             this.Controls.Add(this.lblCountry);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbl);
+            this.Controls.Add(this.btnView);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucCountry";
             this.Size = new System.Drawing.Size(1118, 450);

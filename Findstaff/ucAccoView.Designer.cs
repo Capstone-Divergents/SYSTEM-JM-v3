@@ -254,6 +254,7 @@
             this.Controls.Add(this.lblJobName);
             this.Controls.Add(this.lblApp);
             this.Controls.Add(this.lblViewAcco);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucAccoView";
             this.Size = new System.Drawing.Size(1118, 500);
             this.Load += new System.EventHandler(this.ucAccoView_Load);

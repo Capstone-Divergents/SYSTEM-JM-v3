@@ -374,6 +374,7 @@
             this.Controls.Add(this.pnlTabs);
             this.Controls.Add(this.lblAppDetails);
             this.Controls.Add(this.pnlButtons);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucDocAppDetails";
             this.Size = new System.Drawing.Size(1033, 500);
             this.Load += new System.EventHandler(this.ucDocAppDetails_Load);
