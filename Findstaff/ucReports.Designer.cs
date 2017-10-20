@@ -102,7 +102,8 @@
             "Selected",
             "For Deployment",
             "Deployed",
-            "Withdrawn"});
+            "Withdrawn",
+            "Select All"});
             this.cbUnderDept.Location = new System.Drawing.Point(251, 147);
             this.cbUnderDept.Name = "cbUnderDept";
             this.cbUnderDept.Size = new System.Drawing.Size(211, 27);

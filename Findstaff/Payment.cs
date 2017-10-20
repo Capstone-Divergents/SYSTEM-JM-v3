@@ -53,6 +53,7 @@ namespace Findstaff
 
         private void btnPay_Click(object sender, EventArgs e)
         {
+            #region Query
             connection.Open();
             if(Convert.ToInt32(txtAmount.Text) >= balance)
             {
@@ -97,6 +98,9 @@ namespace Findstaff
                 }
             }
             connection.Close();
+            #endregion
+
+
         }
 
         private void txtAmount_KeyPress(object sender, KeyPressEventArgs e)
