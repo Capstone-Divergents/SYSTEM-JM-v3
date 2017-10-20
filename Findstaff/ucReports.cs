@@ -202,6 +202,9 @@ namespace Findstaff
             Document doc = new Document(PageSize.LETTER, 10,10,10,10);
             PdfWriter pdf = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\jmcamilo435\\Desktop\\Report.pdf", FileMode.Create));
             doc.Open();
+            
+            doc.Add(new Paragraph("FINDSTAFF PLACEMENT SERVICES, INC.\n"));
+            doc.Add(new Paragraph("WERPA\n"));
 
             PdfPTable table = new PdfPTable(dgvReports.Columns.Count);
             for (int j = 0; j < dgvReports.Columns.Count; j++)

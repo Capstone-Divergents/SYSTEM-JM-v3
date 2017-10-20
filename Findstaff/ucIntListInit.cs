@@ -31,7 +31,7 @@ namespace Findstaff
                 jobID = dr[0].ToString();
             }
             dr.Close();
-            cmd = "select employer_id from job_t where employername = '" + employer.Text + "'";
+            cmd = "select employer_id from employer_t where employername = '" + employer.Text + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())

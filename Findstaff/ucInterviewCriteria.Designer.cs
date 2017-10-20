@@ -267,6 +267,12 @@
             this.label46 = new System.Windows.Forms.Label();
             this.lblAppNo = new System.Windows.Forms.Label();
             this.txtAppNo = new System.Windows.Forms.TextBox();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
             this.pnlButtons.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -3059,12 +3065,90 @@
             this.txtAppNo.Size = new System.Drawing.Size(300, 26);
             this.txtAppNo.TabIndex = 602;
             // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.Transparent;
+            this.label47.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Black;
+            this.label47.Location = new System.Drawing.Point(630, 86);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(77, 19);
+            this.label47.TabIndex = 604;
+            this.label47.Text = "Legend :";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.Transparent;
+            this.label48.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.Black;
+            this.label48.Location = new System.Drawing.Point(708, 86);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(74, 19);
+            this.label48.TabIndex = 605;
+            this.label48.Text = "1  -  Poor";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.Transparent;
+            this.label49.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.Black;
+            this.label49.Location = new System.Drawing.Point(708, 105);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(69, 19);
+            this.label49.TabIndex = 606;
+            this.label49.Text = "2  -  Fair";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.BackColor = System.Drawing.Color.Transparent;
+            this.label50.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.Black;
+            this.label50.Location = new System.Drawing.Point(708, 125);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(126, 19);
+            this.label50.TabIndex = 607;
+            this.label50.Text = "3  -  Satisfactory";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.BackColor = System.Drawing.Color.Transparent;
+            this.label51.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.Black;
+            this.label51.Location = new System.Drawing.Point(708, 144);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(166, 19);
+            this.label51.TabIndex = 608;
+            this.label51.Text = "4  -  Very Satisfactory";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.BackColor = System.Drawing.Color.Transparent;
+            this.label52.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.Black;
+            this.label52.Location = new System.Drawing.Point(708, 163);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(130, 19);
+            this.label52.TabIndex = 609;
+            this.label52.Text = "5  -  Outstanding";
+            // 
             // ucInterviewCriteria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Controls.Add(this.label52);
+            this.Controls.Add(this.label51);
+            this.Controls.Add(this.label50);
+            this.Controls.Add(this.label49);
+            this.Controls.Add(this.label48);
+            this.Controls.Add(this.label47);
             this.Controls.Add(this.lblAppNo);
             this.Controls.Add(this.txtAppNo);
             this.Controls.Add(this.panel28);
@@ -3164,7 +3248,7 @@
             this.Controls.Add(this.lblInterviewCriteria);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucInterviewCriteria";
-            this.Size = new System.Drawing.Size(1050, 450);
+            this.Size = new System.Drawing.Size(1033, 450);
             this.Load += new System.EventHandler(this.ucInterviewCriteria_Load);
             this.pnlButtons.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -3469,5 +3553,11 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label lblAppNo;
         public System.Windows.Forms.TextBox txtAppNo;
+        public System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label52;
     }
 }

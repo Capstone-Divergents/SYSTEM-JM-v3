@@ -182,11 +182,6 @@ namespace Findstaff
             connection.Close();
         }
         
-        private void btnJobSuggestInt_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtLast_MouseClick(object sender, MouseEventArgs e)
         {
             txtLast.Clear();
@@ -207,16 +202,19 @@ namespace Findstaff
 
         private void txtLast_TextChanged(object sender, EventArgs e)
         {
+            txtLast.Clear();
             txtLast.ForeColor = Color.Black;
         }
 
         private void txtFirst_TextChanged(object sender, EventArgs e)
         {
+            txtFirst.Clear();
             txtFirst.ForeColor = Color.Black;
         }
 
         private void txtMiddle_TextChanged(object sender, EventArgs e)
         {
+            txtMiddle.Clear();
             txtMiddle.ForeColor = Color.Black;
         }
 
@@ -380,6 +378,11 @@ namespace Findstaff
                 intdate.initComponents(apps, job, length);
                 intdate.Show();
             }
+        }
+
+        private void btnJobSuggestInt_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

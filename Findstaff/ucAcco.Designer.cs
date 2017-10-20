@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvAccounting = new System.Windows.Forms.DataGridView();
             this.btnAdvSe = new System.Windows.Forms.Button();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.lblSearch = new System.Windows.Forms.Label();
             this.btnViewAcco = new System.Windows.Forms.Button();
             this.lblAcco = new System.Windows.Forms.Label();
@@ -51,23 +50,23 @@
             this.dgvAccounting.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAccounting.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvAccounting.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAccounting.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAccounting.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvAccounting.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAccounting.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAccounting.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvAccounting.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvAccounting.Location = new System.Drawing.Point(50, 200);
             this.dgvAccounting.MultiSelect = false;
@@ -96,31 +95,17 @@
             this.btnAdvSe.Visible = false;
             this.btnAdvSe.Click += new System.EventHandler(this.btnAdvSe_Click);
             // 
-            // btnSearch
+            // txtName
             // 
-            this.btnSearch.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnSearch.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnSearch.FlatAppearance.BorderSize = 0;
-            this.btnSearch.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.Black;
-            this.btnSearch.Location = new System.Drawing.Point(381, 144);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(100, 30);
-            this.btnSearch.TabIndex = 54;
-            this.btnSearch.Text = "SEARCH";
-            this.btnSearch.UseVisualStyleBackColor = false;
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.ForeColor = System.Drawing.Color.Black;
-            this.txtSearch.Location = new System.Drawing.Point(175, 147);
-            this.txtSearch.MaxLength = 30;
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(200, 26);
-            this.txtSearch.TabIndex = 53;
+            this.txtName.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.ForeColor = System.Drawing.Color.Black;
+            this.txtName.Location = new System.Drawing.Point(175, 147);
+            this.txtName.MaxLength = 30;
+            this.txtName.Name = "txtName";
+            this.txtName.Size = new System.Drawing.Size(233, 26);
+            this.txtName.TabIndex = 53;
+            this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
             // lblSearch
             // 
@@ -167,6 +152,7 @@
             // 
             this.ucAccoView.AutoScroll = true;
             this.ucAccoView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucAccoView.ForeColor = System.Drawing.Color.Black;
             this.ucAccoView.Location = new System.Drawing.Point(0, 0);
             this.ucAccoView.Name = "ucAccoView";
             this.ucAccoView.Size = new System.Drawing.Size(15, 15);
@@ -192,14 +178,14 @@
             this.Controls.Add(this.ucAccoView);
             this.Controls.Add(this.dgvAccounting);
             this.Controls.Add(this.btnAdvSe);
-            this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.lblSearch);
             this.Controls.Add(this.btnViewAcco);
             this.Controls.Add(this.lblAcco);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucAcco";
             this.Size = new System.Drawing.Size(1118, 500);
+            this.Load += new System.EventHandler(this.ucAcco_Load);
             this.VisibleChanged += new System.EventHandler(this.ucAcco_VisibleChanged);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccounting)).EndInit();
             this.ResumeLayout(false);
@@ -209,8 +195,7 @@
 
         #endregion
         private System.Windows.Forms.Button btnAdvSe;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.TextBox txtSearch;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lblSearch;
         private System.Windows.Forms.Button btnViewAcco;
         private System.Windows.Forms.Label lblAcco;
