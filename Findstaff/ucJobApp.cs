@@ -382,7 +382,7 @@ namespace Findstaff
 
         private void btnJobSuggestInt_Click(object sender, EventArgs e)
         {
-
+            
         }
     }
 }
