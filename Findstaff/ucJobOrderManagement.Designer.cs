@@ -35,7 +35,6 @@
             this.rbEmployer = new System.Windows.Forms.RadioButton();
             this.ucJobFees = new Findstaff.ucJobFees();
             this.ucJobList = new Findstaff.ucJobList();
-            this.ucJobOrder = new Findstaff.ucJobOrder();
             this.ucEmployer = new Findstaff.ucEmployer();
             this.pnlTabs.SuspendLayout();
             this.SuspendLayout();
@@ -157,16 +156,6 @@
             this.ucJobList.TabIndex = 35;
             this.ucJobList.Visible = false;
             // 
-            // ucJobOrder
-            // 
-            this.ucJobOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucJobOrder.ForeColor = System.Drawing.Color.Black;
-            this.ucJobOrder.Location = new System.Drawing.Point(115, 56);
-            this.ucJobOrder.Name = "ucJobOrder";
-            this.ucJobOrder.Size = new System.Drawing.Size(100, 100);
-            this.ucJobOrder.TabIndex = 34;
-            this.ucJobOrder.Visible = false;
-            // 
             // ucEmployer
             // 
             this.ucEmployer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -184,7 +173,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.ucJobFees);
             this.Controls.Add(this.ucJobList);
-            this.Controls.Add(this.ucJobOrder);
             this.Controls.Add(this.ucEmployer);
             this.Controls.Add(this.pnlTabs);
             this.Name = "ucJobOrderManagement";
@@ -203,7 +191,6 @@
         private System.Windows.Forms.RadioButton rbJobOrder;
         private System.Windows.Forms.RadioButton rbEmployer;
         private ucEmployer ucEmployer;
-        private ucJobOrder ucJobOrder;
         private ucJobList ucJobList;
         private ucJobFees ucJobFees;
     }

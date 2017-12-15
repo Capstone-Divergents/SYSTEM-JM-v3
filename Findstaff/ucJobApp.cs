@@ -182,19 +182,19 @@ namespace Findstaff
             connection.Close();
         }
         
-        private void txtLast_MouseClick(object sender, MouseEventArgs e)
+        private void txtLast_Click(object sender, EventArgs e)
         {
             txtLast.Clear();
             txtLast.ForeColor = Color.Black;
         }
 
-        private void txtFirst_MouseClick(object sender, MouseEventArgs e)
+        private void txtFirst_Click(object sender, EventArgs e)
         {
             txtFirst.Clear();
             txtFirst.ForeColor = Color.Black;
         }
 
-        private void txtMiddle_MouseClick(object sender, MouseEventArgs e)
+        private void txtMiddle_Click(object sender, EventArgs e)
         {
             txtMiddle.Clear();
             txtMiddle.ForeColor = Color.Black;
@@ -202,19 +202,16 @@ namespace Findstaff
 
         private void txtLast_TextChanged(object sender, EventArgs e)
         {
-            txtLast.Clear();
             txtLast.ForeColor = Color.Black;
         }
 
         private void txtFirst_TextChanged(object sender, EventArgs e)
         {
-            txtFirst.Clear();
             txtFirst.ForeColor = Color.Black;
         }
 
         private void txtMiddle_TextChanged(object sender, EventArgs e)
         {
-            txtMiddle.Clear();
             txtMiddle.ForeColor = Color.Black;
         }
 
@@ -364,15 +361,14 @@ namespace Findstaff
             if(dgvAppMatch.Rows.Count != 0)
             {
                 int length = dgvAppMatch.SelectedRows.Count;
-                string[,] apps = new string[length, 2];
+                string[] apps = new string[length];
                 string[] job = new string[3];
                 job[0] = cbEmployer.Text;
                 job[1] = cbJobOrder.Text;
                 job[2] = cbJob.Text;
                 for (int x = 0; x < length; x++)
                 {
-                    apps[x, 0] = dgvAppMatch.SelectedRows[x].Cells[0].Value.ToString();
-                    apps[x, 1] = dgvAppMatch.SelectedRows[x].Cells[1].Value.ToString();
+                    apps[x] = dgvAppMatch.SelectedRows[x].Cells[0].Value.ToString();
                 }
                 InitialInterviewDate intdate = new InitialInterviewDate();
                 intdate.initComponents(apps, job, length);
@@ -382,7 +378,40 @@ namespace Findstaff
 
         private void btnJobSuggestInt_Click(object sender, EventArgs e)
         {
-            
+            if(dgvJobSuggest.Rows.Count != 0)
+            {
+                string name = txtLast.Text + " " + txtFirst.Text + " " + txtMiddle.Text, appid = "";
+                connection.Open();
+                cmd = "select app_id from app_t where concat(lname, ' ', fname, ' ', mname) = '"+name+"'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    appid = dr[0].ToString();
+                }
+                dr.Close();
+                string[] job = new string[3];
+                cmd = "select employer_id from joborder_t where jorder_id = '" + dgvJobSuggest.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    job[0] = dr[0].ToString();
+                }
+                job[1] = dgvJobSuggest.SelectedRows[0].Cells[0].Value.ToString();
+                cmd = "select job_id from job_t where jobname = '"+ dgvJobSuggest.SelectedRows[0].Cells[1].Value.ToString() + "'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    job[2] = dr[0].ToString();
+                }
+                dr.Close();
+                connection.Close();
+                JobSuggestInt jb = new JobSuggestInt();
+                jb.initComponents(appid, job);
+                jb.Show();
+            }
         }
     }
 }

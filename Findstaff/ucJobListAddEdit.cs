@@ -30,7 +30,7 @@ namespace Findstaff
         {
             string empID = "", catID = "", jobID = "";
             connection.Open();
-            cmd = "select employer_id from employer_t where employername = '" + txtEmployer1.Text + "'";
+            cmd = "select employer_id from employer_t where employername = '" + cbEmployer1.Text + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
@@ -54,13 +54,13 @@ namespace Findstaff
                 jobID = dr[0].ToString();
             }
             dr.Close();
-            cmd = "Select count(*) from joblist_t where jorder_id = '" + cbJOrder1.Text + "' and employer_id = '" + empID + "' and category_id = '" + catID + "' and job_id = '" + jobID + "'";
+            cmd = "Select count(*) from joblist_t where jorder_id = '" + cbEmployer1.Text + "' and employer_id = '" + empID + "' and category_id = '" + catID + "' and job_id = '" + jobID + "'";
             com = new MySqlCommand(cmd, connection);
             int ctr = int.Parse(com.ExecuteScalar() + "");
             if(ctr == 0)
             {
                 cmd = "insert into joblist_t(jorder_id, Employer_id, category_id, job_id, reqapp, salary, heightreq, weightreq, placementfee)"
-                + "values ('" + cbJOrder1.Text + "','" + empID + "','" + catID + "','" + jobID + "','" + txtReqApp1.Text + "','" + txtSalary1.Text + "','" + txtHeight.Text + "','" + txtWeight.Text + "','" + txtSalary1.Text + "')";
+                + "values ('" + cbEmployer1.Text + "','" + empID + "','" + catID + "','" + jobID + "','" + nddEmployees1.Value + "','" + txtSalary1.Text + "','" + txtHeight.Text + "','" + txtWeight.Text + "','" + txtSalary1.Text + "')";
                 com = new MySqlCommand(cmd, connection);
                 com.ExecuteNonQuery();
                 string cmd2 = "", sID = "", reqID = "";
@@ -75,7 +75,7 @@ namespace Findstaff
                         sID = dr[0].ToString();
                     }
                     dr.Close();
-                    cmd += "('" + cbJOrder1.Text + "','" + empID + "','" + catID + "','" + jobID + "','" + sID + "','" + dgvSkills1.Rows[x].Cells[1].Value.ToString() + "')";
+                    cmd += "('" + cbEmployer1.Text + "','" + empID + "','" + catID + "','" + jobID + "','" + sID + "','" + dgvSkills1.Rows[x].Cells[1].Value.ToString() + "')";
                     if (x < dgvSkills1.Rows.Count - 1)
                     {
                         cmd += ",";
@@ -94,7 +94,7 @@ namespace Findstaff
                         reqID = dr[0].ToString();
                     }
                     dr.Close();
-                    cmd += "('" + cbJOrder1.Text + "','" + empID + "','" + catID + "','" + jobID + "','" + reqID + "')";
+                    cmd += "('" + cbEmployer1.Text + "','" + empID + "','" + catID + "','" + jobID + "','" + reqID + "')";
                     if (x < dgvReqdDocs1.Rows.Count - 1)
                     {
                         cmd += ",";
@@ -106,7 +106,7 @@ namespace Findstaff
                 connection.Close();
                 cbCategory1.SelectedIndex = -1;
                 cbJob1.SelectedIndex = -1;
-                txtReqApp1.Clear();
+                nddEmployees1.Value = 1;
                 txtSalary1.Clear();
                 txtHeight.Clear();
                 txtWeight.Clear();
@@ -129,11 +129,17 @@ namespace Findstaff
 
         private void btnCancel1_Click(object sender, EventArgs e)
         {
-            cbJOrder1.Items.Clear();
-            txtEmployer1.Clear();
+            txtJobOrder1.Text = "";
+            cbEmployer1.Items.Clear();
             cbCategory1.Items.Clear();
             cbJob1.Items.Clear();
-            txtReqApp1.Clear();
+            cbMonth.SelectedIndex = -1;
+            cbDay.SelectedIndex = -1;
+            cbYear.SelectedIndex = -1;
+            rbMale1.Checked = false;
+            rbFemale1.Checked = false;
+            rbAll1.Checked = false;
+            nddEmployees1.Value = 1;
             txtSalary1.Clear();
             txtHeight.Clear();
             txtWeight.Clear();
@@ -149,7 +155,7 @@ namespace Findstaff
                 cbSkillName.Items.Add(dgvReqdDocs1.Rows[x].Cells[0].Value.ToString());
             }
             dgvReqdDocs1.Rows.Clear();
-            cbJOrder1.Enabled = true;
+            cbEmployer1.Enabled = true;
             btnAddSkill.Enabled = false;
             btnReqAdd.Enabled = false;
             btnAddAll.Enabled = false;
@@ -169,9 +175,9 @@ namespace Findstaff
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (cbJOrder1.Text != "")
+            if (cbEmployer1.Text != "")
             {
-                cbJOrder1.Enabled = false;
+                cbEmployer1.Enabled = false;
                 btnAddSkill.Enabled = true;
                 btnReqAdd.Enabled = true;
                 btnAddAll.Enabled = true;
@@ -190,7 +196,7 @@ namespace Findstaff
                 dr = com.ExecuteReader();
                 while (dr.Read())
                 {
-                    cbJOrder1.Items.Add(dr[0]);
+                    cbEmployer1.Items.Add(dr[0]);
                 }
                 dr.Close();
 
@@ -226,7 +232,7 @@ namespace Findstaff
             }
             else
             {
-                cbJOrder1.Items.Clear();
+                cbEmployer1.Items.Clear();
                 cbSkillName.Items.Clear();
                 cbReqName.Items.Clear();
                 cbSkillName2.Items.Clear();
@@ -237,12 +243,12 @@ namespace Findstaff
         private void cbJOrder1_SelectedIndexChanged(object sender, EventArgs e)
         {
             connection.Open();
-            cmd = "select e.employername from joborder_t j join employer_t e on j.employer_id = e.employer_id where j.jorder_id = '"+cbJOrder1.Text+"'";
+            cmd = "select e.employername from joborder_t j join employer_t e on j.employer_id = e.employer_id where j.jorder_id = '"+cbEmployer1.Text+"'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
             {
-                txtEmployer1.Text = dr[0].ToString();
+                cbEmployer2.Text = dr[0].ToString();
             }
             dr.Close();
             connection.Close();
@@ -334,5 +340,46 @@ namespace Findstaff
             }
         }
 
+        private void rbMale1_Click(object sender, EventArgs e)
+        {
+            rbMale1.Checked = true;
+            rbFemale1.Checked = false;
+            rbAll1.Checked = false;
+        }
+
+        private void rbFemale1_Click(object sender, EventArgs e)
+        {
+            rbMale1.Checked = false;
+            rbFemale1.Checked = true;
+            rbAll1.Checked = false;
+        }
+
+        private void rbAll1_Click(object sender, EventArgs e)
+        {
+            rbMale1.Checked = false;
+            rbFemale1.Checked = false;
+            rbAll1.Checked = true;
+        }
+
+        private void rbMale2_Click(object sender, EventArgs e)
+        {
+            rbMale2.Checked = true;
+            rbFemale2.Checked = false;
+            rbAll2.Checked = false;
+        }
+
+        private void rbFemale2_Click(object sender, EventArgs e)
+        {
+            rbMale2.Checked = false;
+            rbFemale2.Checked = true;
+            rbAll2.Checked = false;
+        }
+
+        private void rbAll2_Click(object sender, EventArgs e)
+        {
+            rbMale2.Checked = false;
+            rbFemale2.Checked = false;
+            rbAll2.Checked = true;
+        }
     }
 }

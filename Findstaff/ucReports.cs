@@ -227,7 +227,7 @@ namespace Findstaff
 
             #region PDF
             Document doc = new Document(PageSize.A4, 30, 30, 50, 10);
-            PdfWriter pdf = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\jmcamilo435\\Desktop\\Report.pdf", FileMode.Create));
+            PdfWriter pdf = PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\ralmojuela\\Desktop\\Report.pdf", FileMode.Create));
             doc.Open();
 
             doc = BindingData(doc);

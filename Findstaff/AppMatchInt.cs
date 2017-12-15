@@ -17,7 +17,7 @@ namespace Findstaff
         private MySqlConnection connection;
         private string cmd = "";
         private MySqlDataReader dr;
-        private string[,] apps;
+        private string[] apps;
         private string[] details = new string[3];
         private int len = 0;
 
@@ -40,13 +40,12 @@ namespace Findstaff
             }
         }
 
-        public void initComponents(String[,] applicants, String[] jorderinfo, int length)
+        public void initComponents(String[] applicants, String[] jorderinfo, int length)
         {
-            apps = new string[length, 2];
+            apps = new string[length];
             for (int x = 0; x < length; x++)
             {
-                apps[x, 0] = applicants[x, 0];
-                apps[x, 1] = applicants[x, 1];
+                apps[x] = applicants[x];
             }
             details[0] = jorderinfo[0];
             details[1] = jorderinfo[1];
@@ -91,7 +90,7 @@ namespace Findstaff
             connection.Open();
             if (cbMonth.Text != "" && cbDay.Text != "" && cbYear.Text != "")
             {
-                string jorder = "", empId = "", jobId = "", jobcateg = "", appId = "";
+                string jorder = "", empId = "", jobId = "", jobcateg = "";
                 cmd = "Select jl.jorder_id, jl.employer_id, jl.job_id, jc.category_id from joblist_t jl join joborder_t jo "
                     + "on jl.jorder_id = jo.jorder_id join job_t j "
                     + "on jl.job_id = j.job_id join jobcategory_t jc "
@@ -158,16 +157,8 @@ namespace Findstaff
                     }
                     if (appNo != "")
                     {
-                        cmd = "select app_id from app_t where concat (lname, ', ', fname, ' ', mname) = '" + apps[x, 1] + "'";
-                        com = new MySqlCommand(cmd, connection);
-                        dr = com.ExecuteReader();
-                        while (dr.Read())
-                        {
-                            appId = dr[0].ToString();
-                        }
-                        dr.Close();
                         cmd = "insert into applications_t (app_no, app_id, jorder_id, employer_id, category_id, job_id, initinterviewdate, appstats, appstatus) "
-                            + "values ('" + appNo + "','" + appId + "','" + jorder + "','" + empId + "','" + jobcateg + "','" + jobId + "','" + cbYear.Text + "-" + (cbMonth.SelectedIndex + 1) + "-" + cbDay.Text + "','Active','Recruitment')";
+                            + "values ('" + appNo + "','" + apps[x] + "','" + jorder + "','" + empId + "','" + jobcateg + "','" + jobId + "','" + cbYear.Text + "-" + (cbMonth.SelectedIndex + 1) + "-" + cbDay.Text + "','Active','Recruitment')";
                         com = new MySqlCommand(cmd, connection);
                         com.ExecuteNonQuery();
                     }

@@ -98,6 +98,7 @@ namespace Findstaff
             DataTable table = new DataTable();
             adapter.Fill(table);
             dgvAccounting.DataSource = table;
+            connection.Close();
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)

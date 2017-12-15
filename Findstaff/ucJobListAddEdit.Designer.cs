@@ -38,6 +38,20 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbYear2 = new System.Windows.Forms.ComboBox();
+            this.cbDay2 = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.cbMonth2 = new System.Windows.Forms.ComboBox();
+            this.cbJobName2 = new System.Windows.Forms.ComboBox();
+            this.cbEmployer2 = new System.Windows.Forms.ComboBox();
+            this.btnAddSkills2 = new System.Windows.Forms.Button();
+            this.lblJOrder = new System.Windows.Forms.Label();
+            this.nddEmployees2 = new System.Windows.Forms.NumericUpDown();
+            this.rbAll2 = new System.Windows.Forms.RadioButton();
+            this.rbFemale2 = new System.Windows.Forms.RadioButton();
+            this.rbMale2 = new System.Windows.Forms.RadioButton();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.cbCategory2 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.cbReqName2 = new System.Windows.Forms.ComboBox();
@@ -60,21 +74,25 @@
             this.txtHeight2 = new System.Windows.Forms.TextBox();
             this.label27 = new System.Windows.Forms.Label();
             this.txtSalary2 = new System.Windows.Forms.TextBox();
-            this.txtReqApp2 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.cbJob2 = new System.Windows.Forms.TextBox();
-            this.lblNoOfEmpReqd2 = new System.Windows.Forms.Label();
-            this.txtEmployer2 = new System.Windows.Forms.TextBox();
-            this.cbJOrder2 = new System.Windows.Forms.TextBox();
             this.label23 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.lblEditJobList = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txtEmployer1 = new System.Windows.Forms.TextBox();
+            this.cbYear = new System.Windows.Forms.ComboBox();
+            this.cbDay = new System.Windows.Forms.ComboBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cbMonth = new System.Windows.Forms.ComboBox();
+            this.nddEmployees1 = new System.Windows.Forms.NumericUpDown();
+            this.rbAll1 = new System.Windows.Forms.RadioButton();
+            this.rbFemale1 = new System.Windows.Forms.RadioButton();
+            this.rbMale1 = new System.Windows.Forms.RadioButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtJobOrder1 = new System.Windows.Forms.TextBox();
             this.cbJob1 = new System.Windows.Forms.ComboBox();
-            this.cbJOrder1 = new System.Windows.Forms.ComboBox();
+            this.cbEmployer1 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.btnReqRemove = new System.Windows.Forms.Button();
             this.cbReqName = new System.Windows.Forms.ComboBox();
@@ -102,19 +120,19 @@
             this.dgvSkills1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAdd = new System.Windows.Forms.Button();
             this.txtSalary1 = new System.Windows.Forms.TextBox();
             this.lblNoOfEmpReqd = new System.Windows.Forms.Label();
-            this.txtReqApp1 = new System.Windows.Forms.TextBox();
             this.lblPrincipal1 = new System.Windows.Forms.Label();
             this.lblCountry1 = new System.Windows.Forms.Label();
             this.lblEmp1 = new System.Windows.Forms.Label();
             this.lblAddJobList = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nddEmployees2)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReqDocs2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills2)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nddEmployees1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReqdDocs1)).BeginInit();
             this.pnlEmpBtn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills1)).BeginInit();
@@ -123,6 +141,20 @@
             // panel2
             // 
             this.panel2.AutoScroll = true;
+            this.panel2.Controls.Add(this.cbYear2);
+            this.panel2.Controls.Add(this.cbDay2);
+            this.panel2.Controls.Add(this.label14);
+            this.panel2.Controls.Add(this.cbMonth2);
+            this.panel2.Controls.Add(this.cbJobName2);
+            this.panel2.Controls.Add(this.cbEmployer2);
+            this.panel2.Controls.Add(this.btnAddSkills2);
+            this.panel2.Controls.Add(this.lblJOrder);
+            this.panel2.Controls.Add(this.nddEmployees2);
+            this.panel2.Controls.Add(this.rbAll2);
+            this.panel2.Controls.Add(this.rbFemale2);
+            this.panel2.Controls.Add(this.rbMale2);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.cbCategory2);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.cbReqName2);
@@ -143,14 +175,9 @@
             this.panel2.Controls.Add(this.txtHeight2);
             this.panel2.Controls.Add(this.label27);
             this.panel2.Controls.Add(this.txtSalary2);
-            this.panel2.Controls.Add(this.txtReqApp2);
             this.panel2.Controls.Add(this.label16);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label21);
-            this.panel2.Controls.Add(this.cbJob2);
-            this.panel2.Controls.Add(this.lblNoOfEmpReqd2);
-            this.panel2.Controls.Add(this.txtEmployer2);
-            this.panel2.Controls.Add(this.cbJOrder2);
             this.panel2.Controls.Add(this.label23);
             this.panel2.Controls.Add(this.label25);
             this.panel2.Controls.Add(this.lblEditJobList);
@@ -161,6 +188,243 @@
             this.panel2.Size = new System.Drawing.Size(10, 450);
             this.panel2.TabIndex = 17;
             // 
+            // cbYear2
+            // 
+            this.cbYear2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbYear2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbYear2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbYear2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYear2.ForeColor = System.Drawing.Color.Black;
+            this.cbYear2.FormattingEnabled = true;
+            this.cbYear2.Items.AddRange(new object[] {
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010",
+            "2009",
+            "2008",
+            "2007",
+            "2006",
+            "2005",
+            "2004",
+            "2003",
+            "2002",
+            "2001"});
+            this.cbYear2.Location = new System.Drawing.Point(447, 215);
+            this.cbYear2.Name = "cbYear2";
+            this.cbYear2.Size = new System.Drawing.Size(83, 27);
+            this.cbYear2.TabIndex = 282;
+            // 
+            // cbDay2
+            // 
+            this.cbDay2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbDay2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbDay2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDay2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDay2.ForeColor = System.Drawing.Color.Black;
+            this.cbDay2.FormattingEnabled = true;
+            this.cbDay2.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "15",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.cbDay2.Location = new System.Drawing.Point(381, 215);
+            this.cbDay2.Name = "cbDay2";
+            this.cbDay2.Size = new System.Drawing.Size(60, 27);
+            this.cbDay2.TabIndex = 281;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.ForeColor = System.Drawing.Color.Black;
+            this.label14.Location = new System.Drawing.Point(75, 219);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(117, 19);
+            this.label14.TabIndex = 280;
+            this.label14.Text = "Contract Start:";
+            // 
+            // cbMonth2
+            // 
+            this.cbMonth2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbMonth2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbMonth2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMonth2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonth2.ForeColor = System.Drawing.Color.Black;
+            this.cbMonth2.FormattingEnabled = true;
+            this.cbMonth2.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.cbMonth2.Location = new System.Drawing.Point(207, 215);
+            this.cbMonth2.Name = "cbMonth2";
+            this.cbMonth2.Size = new System.Drawing.Size(168, 27);
+            this.cbMonth2.TabIndex = 279;
+            // 
+            // cbJobName2
+            // 
+            this.cbJobName2.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbJobName2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbJobName2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbJobName2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbJobName2.ForeColor = System.Drawing.Color.Black;
+            this.cbJobName2.FormattingEnabled = true;
+            this.cbJobName2.Location = new System.Drawing.Point(207, 180);
+            this.cbJobName2.Name = "cbJobName2";
+            this.cbJobName2.Size = new System.Drawing.Size(300, 27);
+            this.cbJobName2.TabIndex = 107;
+            // 
+            // cbEmployer2
+            // 
+            this.cbEmployer2.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbEmployer2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbEmployer2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEmployer2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEmployer2.ForeColor = System.Drawing.Color.Black;
+            this.cbEmployer2.FormattingEnabled = true;
+            this.cbEmployer2.Location = new System.Drawing.Point(207, 114);
+            this.cbEmployer2.Name = "cbEmployer2";
+            this.cbEmployer2.Size = new System.Drawing.Size(300, 27);
+            this.cbEmployer2.TabIndex = 106;
+            // 
+            // btnAddSkills2
+            // 
+            this.btnAddSkills2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddSkills2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.btnAddSkills2.FlatAppearance.BorderSize = 0;
+            this.btnAddSkills2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddSkills2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddSkills2.ForeColor = System.Drawing.Color.Black;
+            this.btnAddSkills2.Location = new System.Drawing.Point(925, 318);
+            this.btnAddSkills2.Name = "btnAddSkills2";
+            this.btnAddSkills2.Size = new System.Drawing.Size(75, 30);
+            this.btnAddSkills2.TabIndex = 105;
+            this.btnAddSkills2.Text = "ADD";
+            this.btnAddSkills2.UseVisualStyleBackColor = false;
+            // 
+            // lblJOrder
+            // 
+            this.lblJOrder.AutoSize = true;
+            this.lblJOrder.BackColor = System.Drawing.Color.Transparent;
+            this.lblJOrder.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJOrder.ForeColor = System.Drawing.Color.Black;
+            this.lblJOrder.Location = new System.Drawing.Point(207, 86);
+            this.lblJOrder.Name = "lblJOrder";
+            this.lblJOrder.Size = new System.Drawing.Size(122, 19);
+            this.lblJOrder.TabIndex = 104;
+            this.lblJOrder.Text = "Job Order No. :";
+            // 
+            // nddEmployees2
+            // 
+            this.nddEmployees2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nddEmployees2.Location = new System.Drawing.Point(779, 118);
+            this.nddEmployees2.Name = "nddEmployees2";
+            this.nddEmployees2.Size = new System.Drawing.Size(174, 26);
+            this.nddEmployees2.TabIndex = 103;
+            // 
+            // rbAll2
+            // 
+            this.rbAll2.AutoSize = true;
+            this.rbAll2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAll2.Location = new System.Drawing.Point(887, 86);
+            this.rbAll2.Name = "rbAll2";
+            this.rbAll2.Size = new System.Drawing.Size(66, 23);
+            this.rbAll2.TabIndex = 102;
+            this.rbAll2.TabStop = true;
+            this.rbAll2.Text = "None";
+            this.rbAll2.UseVisualStyleBackColor = true;
+            this.rbAll2.Click += new System.EventHandler(this.rbAll2_Click);
+            // 
+            // rbFemale2
+            // 
+            this.rbFemale2.AutoSize = true;
+            this.rbFemale2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFemale2.Location = new System.Drawing.Point(797, 86);
+            this.rbFemale2.Name = "rbFemale2";
+            this.rbFemale2.Size = new System.Drawing.Size(81, 23);
+            this.rbFemale2.TabIndex = 101;
+            this.rbFemale2.TabStop = true;
+            this.rbFemale2.Text = "Female";
+            this.rbFemale2.UseVisualStyleBackColor = true;
+            this.rbFemale2.Click += new System.EventHandler(this.rbFemale2_Click);
+            // 
+            // rbMale2
+            // 
+            this.rbMale2.AutoSize = true;
+            this.rbMale2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMale2.Location = new System.Drawing.Point(726, 87);
+            this.rbMale2.Name = "rbMale2";
+            this.rbMale2.Size = new System.Drawing.Size(63, 23);
+            this.rbMale2.TabIndex = 100;
+            this.rbMale2.TabStop = true;
+            this.rbMale2.Text = "Male";
+            this.rbMale2.UseVisualStyleBackColor = true;
+            this.rbMale2.Click += new System.EventHandler(this.rbMale2_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(553, 89);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(172, 19);
+            this.label4.TabIndex = 99;
+            this.label4.Text = "Gender Specification: ";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(554, 121);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(219, 19);
+            this.label13.TabIndex = 98;
+            this.label13.Text = "No. of Employees Required :";
+            // 
             // cbCategory2
             // 
             this.cbCategory2.BackColor = System.Drawing.Color.Gainsboro;
@@ -169,7 +433,7 @@
             this.cbCategory2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategory2.ForeColor = System.Drawing.Color.Black;
             this.cbCategory2.FormattingEnabled = true;
-            this.cbCategory2.Location = new System.Drawing.Point(228, 136);
+            this.cbCategory2.Location = new System.Drawing.Point(207, 147);
             this.cbCategory2.Name = "cbCategory2";
             this.cbCategory2.Size = new System.Drawing.Size(300, 27);
             this.cbCategory2.TabIndex = 97;
@@ -180,7 +444,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(100, 139);
+            this.label2.Location = new System.Drawing.Point(105, 150);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 19);
             this.label2.TabIndex = 96;
@@ -287,17 +551,13 @@
             this.dgvReqDocs2.AllowUserToResizeColumns = false;
             this.dgvReqDocs2.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Empty;
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Empty;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Empty;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Empty;
             this.dgvReqDocs2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvReqDocs2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvReqDocs2.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvReqDocs2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
@@ -431,7 +691,7 @@
             this.dgvSkills2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
@@ -461,25 +721,23 @@
             // 
             this.txtWeight2.BackColor = System.Drawing.Color.Gainsboro;
             this.txtWeight2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWeight2.ForeColor = System.Drawing.Color.DimGray;
-            this.txtWeight2.Location = new System.Drawing.Point(709, 193);
+            this.txtWeight2.ForeColor = System.Drawing.Color.Black;
+            this.txtWeight2.Location = new System.Drawing.Point(768, 217);
             this.txtWeight2.MaxLength = 30;
             this.txtWeight2.Name = "txtWeight2";
             this.txtWeight2.Size = new System.Drawing.Size(150, 26);
             this.txtWeight2.TabIndex = 63;
-            this.txtWeight2.Text = "kg";
             // 
             // txtHeight2
             // 
             this.txtHeight2.BackColor = System.Drawing.Color.Gainsboro;
             this.txtHeight2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHeight2.ForeColor = System.Drawing.Color.DimGray;
-            this.txtHeight2.Location = new System.Drawing.Point(709, 161);
+            this.txtHeight2.ForeColor = System.Drawing.Color.Black;
+            this.txtHeight2.Location = new System.Drawing.Point(768, 185);
             this.txtHeight2.MaxLength = 30;
             this.txtHeight2.Name = "txtHeight2";
             this.txtHeight2.Size = new System.Drawing.Size(150, 26);
             this.txtHeight2.TabIndex = 62;
-            this.txtHeight2.Text = "cm";
             // 
             // label27
             // 
@@ -487,7 +745,7 @@
             this.label27.BackColor = System.Drawing.Color.Transparent;
             this.label27.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Black;
-            this.label27.Location = new System.Drawing.Point(100, 107);
+            this.label27.Location = new System.Drawing.Point(104, 118);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(90, 19);
             this.label27.TabIndex = 61;
@@ -497,24 +755,12 @@
             // 
             this.txtSalary2.BackColor = System.Drawing.Color.Gainsboro;
             this.txtSalary2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalary2.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSalary2.Location = new System.Drawing.Point(709, 129);
+            this.txtSalary2.ForeColor = System.Drawing.Color.Black;
+            this.txtSalary2.Location = new System.Drawing.Point(768, 153);
             this.txtSalary2.MaxLength = 30;
             this.txtSalary2.Name = "txtSalary2";
             this.txtSalary2.Size = new System.Drawing.Size(150, 26);
             this.txtSalary2.TabIndex = 60;
-            this.txtSalary2.Text = "/ month";
-            // 
-            // txtReqApp2
-            // 
-            this.txtReqApp2.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtReqApp2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReqApp2.ForeColor = System.Drawing.Color.Black;
-            this.txtReqApp2.Location = new System.Drawing.Point(320, 200);
-            this.txtReqApp2.MaxLength = 30;
-            this.txtReqApp2.Name = "txtReqApp2";
-            this.txtReqApp2.Size = new System.Drawing.Size(208, 26);
-            this.txtReqApp2.TabIndex = 59;
             // 
             // label16
             // 
@@ -522,11 +768,11 @@
             this.label16.BackColor = System.Drawing.Color.Transparent;
             this.label16.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(617, 197);
+            this.label16.Location = new System.Drawing.Point(624, 220);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(71, 19);
+            this.label16.Size = new System.Drawing.Size(123, 19);
             this.label16.TabIndex = 56;
-            this.label16.Text = "Weight :";
+            this.label16.Text = "Weight (in kg) :";
             // 
             // label17
             // 
@@ -534,11 +780,11 @@
             this.label17.BackColor = System.Drawing.Color.Transparent;
             this.label17.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(622, 165);
+            this.label17.Location = new System.Drawing.Point(626, 188);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(66, 19);
+            this.label17.Size = new System.Drawing.Size(121, 19);
             this.label17.TabIndex = 55;
-            this.label17.Text = "Height :";
+            this.label17.Text = "Height (in cm) :";
             // 
             // label21
             // 
@@ -546,58 +792,11 @@
             this.label21.BackColor = System.Drawing.Color.Transparent;
             this.label21.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
-            this.label21.Location = new System.Drawing.Point(606, 133);
+            this.label21.Location = new System.Drawing.Point(590, 156);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(82, 19);
+            this.label21.Size = new System.Drawing.Size(157, 19);
             this.label21.TabIndex = 51;
-            this.label21.Text = "Salary :  P";
-            // 
-            // cbJob2
-            // 
-            this.cbJob2.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbJob2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbJob2.ForeColor = System.Drawing.Color.Black;
-            this.cbJob2.Location = new System.Drawing.Point(228, 168);
-            this.cbJob2.MaxLength = 30;
-            this.cbJob2.Name = "cbJob2";
-            this.cbJob2.Size = new System.Drawing.Size(300, 26);
-            this.cbJob2.TabIndex = 49;
-            // 
-            // lblNoOfEmpReqd2
-            // 
-            this.lblNoOfEmpReqd2.AutoSize = true;
-            this.lblNoOfEmpReqd2.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoOfEmpReqd2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNoOfEmpReqd2.ForeColor = System.Drawing.Color.Black;
-            this.lblNoOfEmpReqd2.Location = new System.Drawing.Point(99, 203);
-            this.lblNoOfEmpReqd2.Name = "lblNoOfEmpReqd2";
-            this.lblNoOfEmpReqd2.Size = new System.Drawing.Size(219, 19);
-            this.lblNoOfEmpReqd2.TabIndex = 48;
-            this.lblNoOfEmpReqd2.Text = "No. of Employees Required :";
-            // 
-            // txtEmployer2
-            // 
-            this.txtEmployer2.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtEmployer2.Enabled = false;
-            this.txtEmployer2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmployer2.ForeColor = System.Drawing.Color.Black;
-            this.txtEmployer2.Location = new System.Drawing.Point(228, 104);
-            this.txtEmployer2.MaxLength = 30;
-            this.txtEmployer2.Name = "txtEmployer2";
-            this.txtEmployer2.Size = new System.Drawing.Size(300, 26);
-            this.txtEmployer2.TabIndex = 46;
-            // 
-            // cbJOrder2
-            // 
-            this.cbJOrder2.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbJOrder2.Enabled = false;
-            this.cbJOrder2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbJOrder2.ForeColor = System.Drawing.Color.Black;
-            this.cbJOrder2.Location = new System.Drawing.Point(228, 72);
-            this.cbJOrder2.MaxLength = 30;
-            this.cbJOrder2.Name = "cbJOrder2";
-            this.cbJOrder2.Size = new System.Drawing.Size(150, 26);
-            this.cbJOrder2.TabIndex = 44;
+            this.label21.Text = "Salary (monthly) :  P";
             // 
             // label23
             // 
@@ -605,7 +804,7 @@
             this.label23.BackColor = System.Drawing.Color.Transparent;
             this.label23.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(100, 171);
+            this.label23.Location = new System.Drawing.Point(104, 185);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(90, 19);
             this.label23.TabIndex = 43;
@@ -617,7 +816,7 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(100, 75);
+            this.label25.Location = new System.Drawing.Point(79, 86);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(122, 19);
             this.label25.TabIndex = 41;
@@ -631,16 +830,25 @@
             this.lblEditJobList.ForeColor = System.Drawing.Color.Black;
             this.lblEditJobList.Location = new System.Drawing.Point(25, 25);
             this.lblEditJobList.Name = "lblEditJobList";
-            this.lblEditJobList.Size = new System.Drawing.Size(206, 39);
+            this.lblEditJobList.Size = new System.Drawing.Size(240, 39);
             this.lblEditJobList.TabIndex = 57;
-            this.lblEditJobList.Text = "Edit Job List";
+            this.lblEditJobList.Text = "Edit Job Order";
             // 
             // panel1
             // 
             this.panel1.AutoScroll = true;
-            this.panel1.Controls.Add(this.txtEmployer1);
+            this.panel1.Controls.Add(this.cbYear);
+            this.panel1.Controls.Add(this.cbDay);
+            this.panel1.Controls.Add(this.label15);
+            this.panel1.Controls.Add(this.cbMonth);
+            this.panel1.Controls.Add(this.nddEmployees1);
+            this.panel1.Controls.Add(this.rbAll1);
+            this.panel1.Controls.Add(this.rbFemale1);
+            this.panel1.Controls.Add(this.rbMale1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.txtJobOrder1);
             this.panel1.Controls.Add(this.cbJob1);
-            this.panel1.Controls.Add(this.cbJOrder1);
+            this.panel1.Controls.Add(this.cbEmployer1);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.btnReqRemove);
             this.panel1.Controls.Add(this.cbReqName);
@@ -663,10 +871,8 @@
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.dgvSkills1);
-            this.panel1.Controls.Add(this.btnAdd);
             this.panel1.Controls.Add(this.txtSalary1);
             this.panel1.Controls.Add(this.lblNoOfEmpReqd);
-            this.panel1.Controls.Add(this.txtReqApp1);
             this.panel1.Controls.Add(this.lblPrincipal1);
             this.panel1.Controls.Add(this.lblCountry1);
             this.panel1.Controls.Add(this.lblEmp1);
@@ -674,20 +880,196 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 450);
+            this.panel1.Size = new System.Drawing.Size(813, 450);
             this.panel1.TabIndex = 16;
             // 
-            // txtEmployer1
+            // cbYear
             // 
-            this.txtEmployer1.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtEmployer1.Enabled = false;
-            this.txtEmployer1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmployer1.ForeColor = System.Drawing.Color.Black;
-            this.txtEmployer1.Location = new System.Drawing.Point(196, 129);
-            this.txtEmployer1.MaxLength = 50;
-            this.txtEmployer1.Name = "txtEmployer1";
-            this.txtEmployer1.Size = new System.Drawing.Size(300, 26);
-            this.txtEmployer1.TabIndex = 66;
+            this.cbYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbYear.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYear.ForeColor = System.Drawing.Color.Black;
+            this.cbYear.FormattingEnabled = true;
+            this.cbYear.Items.AddRange(new object[] {
+            "2017",
+            "2016",
+            "2015",
+            "2014",
+            "2013",
+            "2012",
+            "2011",
+            "2010"});
+            this.cbYear.Location = new System.Drawing.Point(436, 234);
+            this.cbYear.Name = "cbYear";
+            this.cbYear.Size = new System.Drawing.Size(83, 27);
+            this.cbYear.TabIndex = 282;
+            // 
+            // cbDay
+            // 
+            this.cbDay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbDay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDay.ForeColor = System.Drawing.Color.Black;
+            this.cbDay.FormattingEnabled = true;
+            this.cbDay.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31"});
+            this.cbDay.Location = new System.Drawing.Point(370, 234);
+            this.cbDay.Name = "cbDay";
+            this.cbDay.Size = new System.Drawing.Size(60, 27);
+            this.cbDay.TabIndex = 281;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.ForeColor = System.Drawing.Color.Black;
+            this.label15.Location = new System.Drawing.Point(69, 237);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(121, 19);
+            this.label15.TabIndex = 280;
+            this.label15.Text = "Contract Start :";
+            // 
+            // cbMonth
+            // 
+            this.cbMonth.AutoCompleteCustomSource.AddRange(new string[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.cbMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbMonth.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonth.ForeColor = System.Drawing.Color.Black;
+            this.cbMonth.FormattingEnabled = true;
+            this.cbMonth.Items.AddRange(new object[] {
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"});
+            this.cbMonth.Location = new System.Drawing.Point(196, 234);
+            this.cbMonth.Name = "cbMonth";
+            this.cbMonth.Size = new System.Drawing.Size(168, 27);
+            this.cbMonth.TabIndex = 279;
+            // 
+            // nddEmployees1
+            // 
+            this.nddEmployees1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nddEmployees1.Location = new System.Drawing.Point(772, 128);
+            this.nddEmployees1.Name = "nddEmployees1";
+            this.nddEmployees1.Size = new System.Drawing.Size(174, 26);
+            this.nddEmployees1.TabIndex = 71;
+            // 
+            // rbAll1
+            // 
+            this.rbAll1.AutoSize = true;
+            this.rbAll1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbAll1.Location = new System.Drawing.Point(880, 96);
+            this.rbAll1.Name = "rbAll1";
+            this.rbAll1.Size = new System.Drawing.Size(66, 23);
+            this.rbAll1.TabIndex = 70;
+            this.rbAll1.TabStop = true;
+            this.rbAll1.Text = "None";
+            this.rbAll1.UseVisualStyleBackColor = true;
+            this.rbAll1.Click += new System.EventHandler(this.rbAll1_Click);
+            // 
+            // rbFemale1
+            // 
+            this.rbFemale1.AutoSize = true;
+            this.rbFemale1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFemale1.Location = new System.Drawing.Point(790, 96);
+            this.rbFemale1.Name = "rbFemale1";
+            this.rbFemale1.Size = new System.Drawing.Size(81, 23);
+            this.rbFemale1.TabIndex = 69;
+            this.rbFemale1.TabStop = true;
+            this.rbFemale1.Text = "Female";
+            this.rbFemale1.UseVisualStyleBackColor = true;
+            this.rbFemale1.Click += new System.EventHandler(this.rbFemale1_Click);
+            // 
+            // rbMale1
+            // 
+            this.rbMale1.AutoSize = true;
+            this.rbMale1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMale1.Location = new System.Drawing.Point(719, 97);
+            this.rbMale1.Name = "rbMale1";
+            this.rbMale1.Size = new System.Drawing.Size(63, 23);
+            this.rbMale1.TabIndex = 68;
+            this.rbMale1.TabStop = true;
+            this.rbMale1.Text = "Male";
+            this.rbMale1.UseVisualStyleBackColor = true;
+            this.rbMale1.Click += new System.EventHandler(this.rbMale1_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(546, 99);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(172, 19);
+            this.label3.TabIndex = 67;
+            this.label3.Text = "Gender Specification: ";
+            // 
+            // txtJobOrder1
+            // 
+            this.txtJobOrder1.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtJobOrder1.Enabled = false;
+            this.txtJobOrder1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJobOrder1.ForeColor = System.Drawing.Color.Black;
+            this.txtJobOrder1.Location = new System.Drawing.Point(195, 96);
+            this.txtJobOrder1.MaxLength = 50;
+            this.txtJobOrder1.Name = "txtJobOrder1";
+            this.txtJobOrder1.Size = new System.Drawing.Size(300, 26);
+            this.txtJobOrder1.TabIndex = 66;
             // 
             // cbJob1
             // 
@@ -697,24 +1079,24 @@
             this.cbJob1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbJob1.ForeColor = System.Drawing.Color.Black;
             this.cbJob1.FormattingEnabled = true;
-            this.cbJob1.Location = new System.Drawing.Point(196, 196);
+            this.cbJob1.Location = new System.Drawing.Point(196, 199);
             this.cbJob1.Name = "cbJob1";
             this.cbJob1.Size = new System.Drawing.Size(300, 27);
             this.cbJob1.TabIndex = 65;
             // 
-            // cbJOrder1
+            // cbEmployer1
             // 
-            this.cbJOrder1.BackColor = System.Drawing.Color.Gainsboro;
-            this.cbJOrder1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbJOrder1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbJOrder1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbJOrder1.ForeColor = System.Drawing.Color.Black;
-            this.cbJOrder1.FormattingEnabled = true;
-            this.cbJOrder1.Location = new System.Drawing.Point(196, 95);
-            this.cbJOrder1.Name = "cbJOrder1";
-            this.cbJOrder1.Size = new System.Drawing.Size(300, 27);
-            this.cbJOrder1.TabIndex = 64;
-            this.cbJOrder1.SelectedIndexChanged += new System.EventHandler(this.cbJOrder1_SelectedIndexChanged);
+            this.cbEmployer1.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbEmployer1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbEmployer1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbEmployer1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEmployer1.ForeColor = System.Drawing.Color.Black;
+            this.cbEmployer1.FormattingEnabled = true;
+            this.cbEmployer1.Location = new System.Drawing.Point(196, 130);
+            this.cbEmployer1.Name = "cbEmployer1";
+            this.cbEmployer1.Size = new System.Drawing.Size(300, 27);
+            this.cbEmployer1.TabIndex = 64;
+            this.cbEmployer1.SelectedIndexChanged += new System.EventHandler(this.cbJOrder1_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -722,7 +1104,7 @@
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(66, 99);
+            this.label12.Location = new System.Drawing.Point(67, 100);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(122, 19);
             this.label12.TabIndex = 63;
@@ -846,7 +1228,6 @@
             // btnReqAdd
             // 
             this.btnReqAdd.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnReqAdd.Enabled = false;
             this.btnReqAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnReqAdd.FlatAppearance.BorderSize = 0;
             this.btnReqAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -863,7 +1244,6 @@
             // btnAddSkill
             // 
             this.btnAddSkill.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddSkill.Enabled = false;
             this.btnAddSkill.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAddSkill.FlatAppearance.BorderSize = 0;
             this.btnAddSkill.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -900,26 +1280,24 @@
             // 
             this.txtWeight.BackColor = System.Drawing.Color.Gainsboro;
             this.txtWeight.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtWeight.ForeColor = System.Drawing.Color.DimGray;
-            this.txtWeight.Location = new System.Drawing.Point(687, 208);
+            this.txtWeight.ForeColor = System.Drawing.Color.Black;
+            this.txtWeight.Location = new System.Drawing.Point(724, 232);
             this.txtWeight.MaxLength = 30;
             this.txtWeight.Name = "txtWeight";
             this.txtWeight.Size = new System.Drawing.Size(150, 26);
             this.txtWeight.TabIndex = 40;
-            this.txtWeight.Text = "kg";
             this.txtWeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtWeight_KeyPress);
             // 
             // txtHeight
             // 
             this.txtHeight.BackColor = System.Drawing.Color.Gainsboro;
             this.txtHeight.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtHeight.ForeColor = System.Drawing.Color.DimGray;
-            this.txtHeight.Location = new System.Drawing.Point(687, 172);
+            this.txtHeight.ForeColor = System.Drawing.Color.Black;
+            this.txtHeight.Location = new System.Drawing.Point(724, 198);
             this.txtHeight.MaxLength = 30;
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(150, 26);
             this.txtHeight.TabIndex = 39;
-            this.txtHeight.Text = "cm";
             this.txtHeight.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtHeight_KeyPress);
             // 
             // cbCategory1
@@ -930,7 +1308,7 @@
             this.cbCategory1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategory1.ForeColor = System.Drawing.Color.Black;
             this.cbCategory1.FormattingEnabled = true;
-            this.cbCategory1.Location = new System.Drawing.Point(196, 162);
+            this.cbCategory1.Location = new System.Drawing.Point(196, 165);
             this.cbCategory1.Name = "cbCategory1";
             this.cbCategory1.Size = new System.Drawing.Size(300, 27);
             this.cbCategory1.TabIndex = 38;
@@ -941,9 +1319,9 @@
             this.pnlEmpBtn.Controls.Add(this.btnCancel1);
             this.pnlEmpBtn.Controls.Add(this.btnAddAll);
             this.pnlEmpBtn.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlEmpBtn.Location = new System.Drawing.Point(460, 873);
+            this.pnlEmpBtn.Location = new System.Drawing.Point(433, 873);
             this.pnlEmpBtn.Name = "pnlEmpBtn";
-            this.pnlEmpBtn.Size = new System.Drawing.Size(210, 80);
+            this.pnlEmpBtn.Size = new System.Drawing.Size(240, 80);
             this.pnlEmpBtn.TabIndex = 34;
             // 
             // btnCancel1
@@ -954,9 +1332,9 @@
             this.btnCancel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCancel1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel1.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel1.Location = new System.Drawing.Point(108, 2);
+            this.btnCancel1.Location = new System.Drawing.Point(125, 2);
             this.btnCancel1.Name = "btnCancel1";
-            this.btnCancel1.Size = new System.Drawing.Size(100, 50);
+            this.btnCancel1.Size = new System.Drawing.Size(114, 50);
             this.btnCancel1.TabIndex = 9;
             this.btnCancel1.Text = "CANCEL";
             this.btnCancel1.UseVisualStyleBackColor = false;
@@ -965,7 +1343,6 @@
             // btnAddAll
             // 
             this.btnAddAll.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAddAll.Enabled = false;
             this.btnAddAll.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAddAll.FlatAppearance.BorderSize = 0;
             this.btnAddAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -973,9 +1350,9 @@
             this.btnAddAll.ForeColor = System.Drawing.Color.Black;
             this.btnAddAll.Location = new System.Drawing.Point(2, 2);
             this.btnAddAll.Name = "btnAddAll";
-            this.btnAddAll.Size = new System.Drawing.Size(100, 50);
+            this.btnAddAll.Size = new System.Drawing.Size(118, 50);
             this.btnAddAll.TabIndex = 8;
-            this.btnAddAll.Text = "ADD JOB";
+            this.btnAddAll.Text = "CREATE JOB ORDER";
             this.btnAddAll.UseVisualStyleBackColor = false;
             this.btnAddAll.Click += new System.EventHandler(this.btnAddAll_Click);
             // 
@@ -1033,11 +1410,11 @@
             this.label6.BackColor = System.Drawing.Color.Transparent;
             this.label6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(599, 211);
+            this.label6.Location = new System.Drawing.Point(584, 234);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 19);
+            this.label6.Size = new System.Drawing.Size(123, 19);
             this.label6.TabIndex = 26;
-            this.label6.Text = "Weight :";
+            this.label6.Text = "Weight (in kg) :";
             // 
             // label5
             // 
@@ -1045,11 +1422,11 @@
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(604, 176);
+            this.label5.Location = new System.Drawing.Point(586, 201);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 19);
+            this.label5.Size = new System.Drawing.Size(121, 19);
             this.label5.TabIndex = 25;
-            this.label5.Text = "Height :";
+            this.label5.Text = "Height (in cm) :";
             // 
             // label1
             // 
@@ -1057,11 +1434,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(588, 140);
+            this.label1.Location = new System.Drawing.Point(550, 165);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 19);
+            this.label1.Size = new System.Drawing.Size(157, 19);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Salary :  P";
+            this.label1.Text = "Salary (monthly) :  P";
             // 
             // dgvSkills1
             // 
@@ -1115,33 +1492,16 @@
             this.Column2.Name = "Column2";
             this.Column2.ReadOnly = true;
             // 
-            // btnAdd
-            // 
-            this.btnAdd.BackColor = System.Drawing.Color.Gainsboro;
-            this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.btnAdd.FlatAppearance.BorderSize = 0;
-            this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(502, 93);
-            this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 30);
-            this.btnAdd.TabIndex = 17;
-            this.btnAdd.Text = "START";
-            this.btnAdd.UseVisualStyleBackColor = false;
-            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
-            // 
             // txtSalary1
             // 
             this.txtSalary1.BackColor = System.Drawing.Color.Gainsboro;
             this.txtSalary1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSalary1.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSalary1.Location = new System.Drawing.Point(687, 136);
+            this.txtSalary1.ForeColor = System.Drawing.Color.Black;
+            this.txtSalary1.Location = new System.Drawing.Point(724, 165);
             this.txtSalary1.MaxLength = 30;
             this.txtSalary1.Name = "txtSalary1";
             this.txtSalary1.Size = new System.Drawing.Size(150, 26);
             this.txtSalary1.TabIndex = 16;
-            this.txtSalary1.Text = "/ month";
             this.txtSalary1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSalary1_KeyPress);
             // 
             // lblNoOfEmpReqd
@@ -1150,23 +1510,11 @@
             this.lblNoOfEmpReqd.BackColor = System.Drawing.Color.Transparent;
             this.lblNoOfEmpReqd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoOfEmpReqd.ForeColor = System.Drawing.Color.Black;
-            this.lblNoOfEmpReqd.Location = new System.Drawing.Point(100, 239);
+            this.lblNoOfEmpReqd.Location = new System.Drawing.Point(547, 131);
             this.lblNoOfEmpReqd.Name = "lblNoOfEmpReqd";
             this.lblNoOfEmpReqd.Size = new System.Drawing.Size(219, 19);
             this.lblNoOfEmpReqd.TabIndex = 15;
             this.lblNoOfEmpReqd.Text = "No. of Employees Required :";
-            // 
-            // txtReqApp1
-            // 
-            this.txtReqApp1.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtReqApp1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtReqApp1.ForeColor = System.Drawing.Color.Black;
-            this.txtReqApp1.Location = new System.Drawing.Point(321, 236);
-            this.txtReqApp1.MaxLength = 30;
-            this.txtReqApp1.Name = "txtReqApp1";
-            this.txtReqApp1.Size = new System.Drawing.Size(175, 26);
-            this.txtReqApp1.TabIndex = 11;
-            this.txtReqApp1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtReqApp1_KeyPress);
             // 
             // lblPrincipal1
             // 
@@ -1174,7 +1522,7 @@
             this.lblPrincipal1.BackColor = System.Drawing.Color.Transparent;
             this.lblPrincipal1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrincipal1.ForeColor = System.Drawing.Color.Black;
-            this.lblPrincipal1.Location = new System.Drawing.Point(100, 203);
+            this.lblPrincipal1.Location = new System.Drawing.Point(100, 206);
             this.lblPrincipal1.Name = "lblPrincipal1";
             this.lblPrincipal1.Size = new System.Drawing.Size(90, 19);
             this.lblPrincipal1.TabIndex = 7;
@@ -1186,7 +1534,7 @@
             this.lblCountry1.BackColor = System.Drawing.Color.Transparent;
             this.lblCountry1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCountry1.ForeColor = System.Drawing.Color.Black;
-            this.lblCountry1.Location = new System.Drawing.Point(100, 167);
+            this.lblCountry1.Location = new System.Drawing.Point(101, 170);
             this.lblCountry1.Name = "lblCountry1";
             this.lblCountry1.Size = new System.Drawing.Size(88, 19);
             this.lblCountry1.TabIndex = 6;
@@ -1198,7 +1546,7 @@
             this.lblEmp1.BackColor = System.Drawing.Color.Transparent;
             this.lblEmp1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmp1.ForeColor = System.Drawing.Color.Black;
-            this.lblEmp1.Location = new System.Drawing.Point(100, 131);
+            this.lblEmp1.Location = new System.Drawing.Point(100, 134);
             this.lblEmp1.Name = "lblEmp1";
             this.lblEmp1.Size = new System.Drawing.Size(90, 19);
             this.lblEmp1.TabIndex = 5;
@@ -1212,9 +1560,9 @@
             this.lblAddJobList.ForeColor = System.Drawing.Color.Black;
             this.lblAddJobList.Location = new System.Drawing.Point(25, 25);
             this.lblAddJobList.Name = "lblAddJobList";
-            this.lblAddJobList.Size = new System.Drawing.Size(205, 39);
+            this.lblAddJobList.Size = new System.Drawing.Size(239, 39);
             this.lblAddJobList.TabIndex = 33;
-            this.lblAddJobList.Text = "Add Job List";
+            this.lblAddJobList.Text = "Add Job Order";
             // 
             // ucJobListAddEdit
             // 
@@ -1228,11 +1576,13 @@
             this.VisibleChanged += new System.EventHandler(this.ucJobListAddEdit_VisibleChanged);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nddEmployees2)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReqDocs2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills2)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nddEmployees1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReqdDocs1)).EndInit();
             this.pnlEmpBtn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills1)).EndInit();
@@ -1251,10 +1601,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.TextBox txtSalary1;
         private System.Windows.Forms.Label lblNoOfEmpReqd;
-        private System.Windows.Forms.TextBox txtReqApp1;
         private System.Windows.Forms.Label lblPrincipal1;
         private System.Windows.Forms.Label lblCountry1;
         private System.Windows.Forms.Label lblEmp1;
@@ -1271,7 +1619,6 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label lblNoOfEmpReqd2;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label lblEditJobList;
@@ -1291,18 +1638,13 @@
         private System.Windows.Forms.Button btnReqRemove;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ComboBox cbJob1;
-        private System.Windows.Forms.ComboBox cbJOrder1;
+        private System.Windows.Forms.ComboBox cbEmployer1;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox txtEmployer1;
         public System.Windows.Forms.DataGridView dgvSkills2;
         public System.Windows.Forms.DataGridView dgvReqDocs2;
         public System.Windows.Forms.DataGridView dgvSkills1;
         public System.Windows.Forms.DataGridView dgvReqdDocs1;
         public System.Windows.Forms.TextBox txtSalary2;
-        public System.Windows.Forms.TextBox txtReqApp2;
-        public System.Windows.Forms.TextBox cbJob2;
-        public System.Windows.Forms.TextBox txtEmployer2;
-        public System.Windows.Forms.TextBox cbJOrder2;
         public System.Windows.Forms.Button button10;
         public System.Windows.Forms.Button button6;
         public System.Windows.Forms.ComboBox comboBox9;
@@ -1315,5 +1657,29 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.RadioButton rbAll1;
+        private System.Windows.Forms.RadioButton rbFemale1;
+        private System.Windows.Forms.RadioButton rbMale1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtJobOrder1;
+        private System.Windows.Forms.NumericUpDown nddEmployees1;
+        private System.Windows.Forms.NumericUpDown nddEmployees2;
+        private System.Windows.Forms.RadioButton rbAll2;
+        private System.Windows.Forms.RadioButton rbFemale2;
+        private System.Windows.Forms.RadioButton rbMale2;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label lblJOrder;
+        private System.Windows.Forms.Button btnAddSkills2;
+        public System.Windows.Forms.ComboBox cbJobName2;
+        public System.Windows.Forms.ComboBox cbEmployer2;
+        private System.Windows.Forms.ComboBox cbYear;
+        private System.Windows.Forms.ComboBox cbDay;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox cbMonth;
+        public System.Windows.Forms.ComboBox cbYear2;
+        public System.Windows.Forms.ComboBox cbDay2;
+        private System.Windows.Forms.Label label14;
+        public System.Windows.Forms.ComboBox cbMonth2;
     }
 }

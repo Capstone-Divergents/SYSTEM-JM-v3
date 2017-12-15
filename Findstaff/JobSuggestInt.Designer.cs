@@ -66,6 +66,7 @@
             this.btnSchedule.TabIndex = 63;
             this.btnSchedule.Text = "SCHEDULE";
             this.btnSchedule.UseVisualStyleBackColor = false;
+            this.btnSchedule.Click += new System.EventHandler(this.btnSchedule_Click);
             // 
             // cbYear
             // 
@@ -112,6 +113,7 @@
             this.cbMonth.Name = "cbMonth";
             this.cbMonth.Size = new System.Drawing.Size(200, 27);
             this.cbMonth.TabIndex = 60;
+            this.cbMonth.SelectedIndexChanged += new System.EventHandler(this.cbMonth_SelectedIndexChanged);
             // 
             // lblJob
             // 
@@ -154,6 +156,7 @@
             this.Name = "JobSuggestInt";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.JobSuggestInt_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -22,7 +22,7 @@ namespace Findstaff
         {
             InitializeComponent();
             ucEmployer.Dock = DockStyle.Fill;
-            ucJobOrder.Dock = DockStyle.Fill;
+            //ucJobOrder.Dock = DockStyle.Fill;
             ucJobList.Dock = DockStyle.Fill;
             ucJobFees.Dock = DockStyle.Fill;
         }
@@ -30,7 +30,7 @@ namespace Findstaff
         private void rbEmployer_CheckedChanged(object sender, EventArgs e)
         {
             ucEmployer.Visible = true;
-            ucJobOrder.Visible = false;
+            //ucJobOrder.Visible = false;
             ucJobList.Visible = false;
             ucJobFees.Visible = false;
 
@@ -50,7 +50,7 @@ namespace Findstaff
 
         private void rbJobOrder_CheckedChanged(object sender, EventArgs e)
         {
-            ucEmployer.Visible = false;
+            /*ucEmployer.Visible = false;
             ucJobOrder.Visible = true;
             ucJobList.Visible = false;
             ucJobFees.Visible = false;
@@ -64,13 +64,13 @@ namespace Findstaff
                     adapter.Fill(ds);
                     ucJobOrder.dgvJobOrder.DataSource = ds.Tables[0];
                 }
-            }
+            }*/
         }
 
         private void rbJobList_CheckedChanged(object sender, EventArgs e)
         {
             ucEmployer.Visible = false;
-            ucJobOrder.Visible = false;
+            //ucJobOrder.Visible = false;
             ucJobList.Visible = true;
             ucJobFees.Visible = false;
 
@@ -89,7 +89,7 @@ namespace Findstaff
         private void rbJobFees_CheckedChanged(object sender, EventArgs e)
         {
             ucEmployer.Visible = false;
-            ucJobOrder.Visible = false;
+            //ucJobOrder.Visible = false;
             ucJobList.Visible = false;
             ucJobFees.Visible = true;
 
