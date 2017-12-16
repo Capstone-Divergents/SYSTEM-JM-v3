@@ -48,9 +48,9 @@ namespace Findstaff
             }
         }
 
-        private void rbJobOrder_CheckedChanged(object sender, EventArgs e)
+       /* private void rbJobOrder_CheckedChanged(object sender, EventArgs e)
         {
-            /*ucEmployer.Visible = false;
+            ucEmployer.Visible = false;
             ucJobOrder.Visible = true;
             ucJobList.Visible = false;
             ucJobFees.Visible = false;
@@ -64,8 +64,8 @@ namespace Findstaff
                     adapter.Fill(ds);
                     ucJobOrder.dgvJobOrder.DataSource = ds.Tables[0];
                 }
-            }*/
-        }
+            }
+        }*/
 
         private void rbJobList_CheckedChanged(object sender, EventArgs e)
         {

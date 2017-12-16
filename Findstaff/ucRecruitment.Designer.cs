@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             this.rbJobApplicant = new System.Windows.Forms.RadioButton();
-            this.rbApplicantList = new System.Windows.Forms.RadioButton();
+            this.rbApplicant = new System.Windows.Forms.RadioButton();
             this.pnlTabs = new System.Windows.Forms.Panel();
+            this.rbDocu = new System.Windows.Forms.RadioButton();
             this.rbInterviewFin = new System.Windows.Forms.RadioButton();
             this.rbInterviewInit = new System.Windows.Forms.RadioButton();
-            this.ucJobApp = new Findstaff.ucJobApp();
-            this.ucAppList = new Findstaff.ucAppList();
-            this.ucInterviewInit = new Findstaff.ucInterviewInit();
+            this.ucApplicant = new Findstaff.ucApplicant();
             this.ucInterviewFin = new Findstaff.ucInterviewFin();
+            this.ucInterviewInit = new Findstaff.ucInterviewInit();
+            this.ucJobApp = new Findstaff.ucJobApp();
+            this.ucDocumentation = new Findstaff.ucDocumentation();
             this.pnlTabs.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +54,7 @@
             this.rbJobApplicant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbJobApplicant.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbJobApplicant.ForeColor = System.Drawing.Color.White;
-            this.rbJobApplicant.Location = new System.Drawing.Point(216, 10);
+            this.rbJobApplicant.Location = new System.Drawing.Point(155, 10);
             this.rbJobApplicant.Name = "rbJobApplicant";
             this.rbJobApplicant.Size = new System.Drawing.Size(320, 40);
             this.rbJobApplicant.TabIndex = 2;
@@ -61,39 +63,61 @@
             this.rbJobApplicant.UseVisualStyleBackColor = false;
             this.rbJobApplicant.CheckedChanged += new System.EventHandler(this.rbJobApplicant_CheckedChanged);
             // 
-            // rbApplicantList
+            // rbApplicant
             // 
-            this.rbApplicantList.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbApplicantList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(63)))));
-            this.rbApplicantList.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.rbApplicantList.FlatAppearance.BorderSize = 0;
-            this.rbApplicantList.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
-            this.rbApplicantList.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.rbApplicantList.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rbApplicantList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbApplicantList.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbApplicantList.ForeColor = System.Drawing.Color.White;
-            this.rbApplicantList.Location = new System.Drawing.Point(10, 10);
-            this.rbApplicantList.Name = "rbApplicantList";
-            this.rbApplicantList.Size = new System.Drawing.Size(200, 40);
-            this.rbApplicantList.TabIndex = 1;
-            this.rbApplicantList.Text = "Applicant List";
-            this.rbApplicantList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbApplicantList.UseVisualStyleBackColor = false;
-            this.rbApplicantList.CheckedChanged += new System.EventHandler(this.rbApplicantList_CheckedChanged);
+            this.rbApplicant.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbApplicant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(63)))));
+            this.rbApplicant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rbApplicant.FlatAppearance.BorderSize = 0;
+            this.rbApplicant.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.rbApplicant.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.rbApplicant.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbApplicant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbApplicant.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbApplicant.ForeColor = System.Drawing.Color.White;
+            this.rbApplicant.Location = new System.Drawing.Point(10, 10);
+            this.rbApplicant.Name = "rbApplicant";
+            this.rbApplicant.Size = new System.Drawing.Size(139, 40);
+            this.rbApplicant.TabIndex = 1;
+            this.rbApplicant.Text = "Applicant";
+            this.rbApplicant.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbApplicant.UseVisualStyleBackColor = false;
+            this.rbApplicant.CheckedChanged += new System.EventHandler(this.rbApplicant_CheckedChanged);
             // 
             // pnlTabs
             // 
             this.pnlTabs.BackColor = System.Drawing.Color.Gainsboro;
+            this.pnlTabs.Controls.Add(this.rbDocu);
             this.pnlTabs.Controls.Add(this.rbInterviewFin);
             this.pnlTabs.Controls.Add(this.rbInterviewInit);
             this.pnlTabs.Controls.Add(this.rbJobApplicant);
-            this.pnlTabs.Controls.Add(this.rbApplicantList);
+            this.pnlTabs.Controls.Add(this.rbApplicant);
             this.pnlTabs.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTabs.Location = new System.Drawing.Point(0, 0);
             this.pnlTabs.Name = "pnlTabs";
             this.pnlTabs.Size = new System.Drawing.Size(1118, 50);
             this.pnlTabs.TabIndex = 30;
+            // 
+            // rbDocu
+            // 
+            this.rbDocu.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbDocu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(63)))));
+            this.rbDocu.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.rbDocu.FlatAppearance.BorderSize = 0;
+            this.rbDocu.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.rbDocu.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.rbDocu.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbDocu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbDocu.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbDocu.ForeColor = System.Drawing.Color.White;
+            this.rbDocu.Location = new System.Drawing.Point(809, 10);
+            this.rbDocu.Name = "rbDocu";
+            this.rbDocu.Size = new System.Drawing.Size(200, 40);
+            this.rbDocu.TabIndex = 36;
+            this.rbDocu.Text = "Documents Collection";
+            this.rbDocu.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbDocu.UseVisualStyleBackColor = false;
+            this.rbDocu.CheckedChanged += new System.EventHandler(this.rbDocu_CheckedChanged);
             // 
             // rbInterviewFin
             // 
@@ -107,9 +131,9 @@
             this.rbInterviewFin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbInterviewFin.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbInterviewFin.ForeColor = System.Drawing.Color.White;
-            this.rbInterviewFin.Location = new System.Drawing.Point(748, 10);
+            this.rbInterviewFin.Location = new System.Drawing.Point(645, 10);
             this.rbInterviewFin.Name = "rbInterviewFin";
-            this.rbInterviewFin.Size = new System.Drawing.Size(200, 40);
+            this.rbInterviewFin.Size = new System.Drawing.Size(158, 40);
             this.rbInterviewFin.TabIndex = 4;
             this.rbInterviewFin.Text = "Final Interview";
             this.rbInterviewFin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -128,60 +152,73 @@
             this.rbInterviewInit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbInterviewInit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbInterviewInit.ForeColor = System.Drawing.Color.White;
-            this.rbInterviewInit.Location = new System.Drawing.Point(542, 10);
+            this.rbInterviewInit.Location = new System.Drawing.Point(481, 10);
             this.rbInterviewInit.Name = "rbInterviewInit";
-            this.rbInterviewInit.Size = new System.Drawing.Size(200, 40);
+            this.rbInterviewInit.Size = new System.Drawing.Size(158, 40);
             this.rbInterviewInit.TabIndex = 3;
             this.rbInterviewInit.Text = "Initial Interview";
             this.rbInterviewInit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbInterviewInit.UseVisualStyleBackColor = false;
             this.rbInterviewInit.CheckedChanged += new System.EventHandler(this.rbInterview_CheckedChanged);
             // 
-            // ucJobApp
+            // ucApplicant
             // 
-            this.ucJobApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucJobApp.Location = new System.Drawing.Point(216, 56);
-            this.ucJobApp.Name = "ucJobApp";
-            this.ucJobApp.Size = new System.Drawing.Size(320, 320);
-            this.ucJobApp.TabIndex = 32;
-            this.ucJobApp.Visible = false;
-            // 
-            // ucAppList
-            // 
-            this.ucAppList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucAppList.Location = new System.Drawing.Point(10, 56);
-            this.ucAppList.Name = "ucAppList";
-            this.ucAppList.Size = new System.Drawing.Size(200, 200);
-            this.ucAppList.TabIndex = 31;
-            this.ucAppList.Visible = false;
-            // 
-            // ucInterviewInit
-            // 
-            this.ucInterviewInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucInterviewInit.Location = new System.Drawing.Point(542, 56);
-            this.ucInterviewInit.Name = "ucInterviewInit";
-            this.ucInterviewInit.Size = new System.Drawing.Size(200, 200);
-            this.ucInterviewInit.TabIndex = 33;
-            this.ucInterviewInit.Visible = false;
+            this.ucApplicant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucApplicant.ForeColor = System.Drawing.Color.Black;
+            this.ucApplicant.Location = new System.Drawing.Point(10, 56);
+            this.ucApplicant.Name = "ucApplicant";
+            this.ucApplicant.Size = new System.Drawing.Size(100, 100);
+            this.ucApplicant.TabIndex = 35;
             // 
             // ucInterviewFin
             // 
             this.ucInterviewFin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucInterviewFin.Location = new System.Drawing.Point(748, 56);
+            this.ucInterviewFin.ForeColor = System.Drawing.Color.Black;
+            this.ucInterviewFin.Location = new System.Drawing.Point(645, 56);
             this.ucInterviewFin.Name = "ucInterviewFin";
-            this.ucInterviewFin.Size = new System.Drawing.Size(200, 200);
+            this.ucInterviewFin.Size = new System.Drawing.Size(100, 100);
             this.ucInterviewFin.TabIndex = 34;
             this.ucInterviewFin.Visible = false;
+            // 
+            // ucInterviewInit
+            // 
+            this.ucInterviewInit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucInterviewInit.ForeColor = System.Drawing.Color.Black;
+            this.ucInterviewInit.Location = new System.Drawing.Point(481, 56);
+            this.ucInterviewInit.Name = "ucInterviewInit";
+            this.ucInterviewInit.Size = new System.Drawing.Size(100, 100);
+            this.ucInterviewInit.TabIndex = 33;
+            this.ucInterviewInit.Visible = false;
+            // 
+            // ucJobApp
+            // 
+            this.ucJobApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucJobApp.ForeColor = System.Drawing.Color.Black;
+            this.ucJobApp.Location = new System.Drawing.Point(155, 56);
+            this.ucJobApp.Name = "ucJobApp";
+            this.ucJobApp.Size = new System.Drawing.Size(100, 100);
+            this.ucJobApp.TabIndex = 32;
+            this.ucJobApp.Visible = false;
+            // 
+            // ucDocumentation
+            // 
+            this.ucDocumentation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucDocumentation.ForeColor = System.Drawing.Color.Black;
+            this.ucDocumentation.Location = new System.Drawing.Point(809, 56);
+            this.ucDocumentation.Name = "ucDocumentation";
+            this.ucDocumentation.Size = new System.Drawing.Size(100, 100);
+            this.ucDocumentation.TabIndex = 36;
             // 
             // ucRecruitment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Controls.Add(this.ucDocumentation);
+            this.Controls.Add(this.ucApplicant);
             this.Controls.Add(this.ucInterviewFin);
             this.Controls.Add(this.ucInterviewInit);
             this.Controls.Add(this.ucJobApp);
-            this.Controls.Add(this.ucAppList);
             this.Controls.Add(this.pnlTabs);
             this.Name = "ucRecruitment";
             this.Size = new System.Drawing.Size(1118, 500);
@@ -193,13 +230,15 @@
 
         #endregion
         private System.Windows.Forms.RadioButton rbJobApplicant;
-        private System.Windows.Forms.RadioButton rbApplicantList;
+        private System.Windows.Forms.RadioButton rbApplicant;
         private System.Windows.Forms.Panel pnlTabs;
         private System.Windows.Forms.RadioButton rbInterviewInit;
-        private ucAppList ucAppList;
         private ucJobApp ucJobApp;
         private System.Windows.Forms.RadioButton rbInterviewFin;
         private ucInterviewInit ucInterviewInit;
         private ucInterviewFin ucInterviewFin;
+        private ucApplicant ucApplicant;
+        private System.Windows.Forms.RadioButton rbDocu;
+        private ucDocumentation ucDocumentation;
     }
 }

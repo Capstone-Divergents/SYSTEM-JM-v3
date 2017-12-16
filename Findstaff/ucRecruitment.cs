@@ -21,13 +21,15 @@ namespace Findstaff
         public ucRecruitment()
         {
             InitializeComponent();
-            ucAppList.Dock = DockStyle.Fill;
+            //ucAppList.Dock = DockStyle.Fill;
             ucJobApp.Dock = DockStyle.Fill;
             ucInterviewInit.Dock = DockStyle.Fill;
             ucInterviewFin.Dock = DockStyle.Fill;
+            ucApplicant.Dock = DockStyle.Fill;
+            ucDocumentation.Dock = DockStyle.Fill;
         }
 
-        private void rbApplicantList_CheckedChanged(object sender, EventArgs e)
+        /*private void rbApplicantList_CheckedChanged(object sender, EventArgs e)
         {
             
             cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', job.jobname'Applying for', a.appstatus'Under Department' "
@@ -48,14 +50,16 @@ namespace Findstaff
             ucJobApp.Visible = false;
             ucInterviewInit.Visible = false;
             ucInterviewFin.Visible = false;
-        }
+        }*/
 
         private void rbJobApplicant_CheckedChanged(object sender, EventArgs e)
         {
-            ucAppList.Visible = false;
+            //ucAppList.Visible = false;
             ucJobApp.Visible = true;
             ucInterviewInit.Visible = false;
             ucInterviewFin.Visible = false;
+            ucApplicant.Visible = false;
+            ucDocumentation.Visible = false;
         }
         
         private void rbInterview_CheckedChanged(object sender, EventArgs e)
@@ -73,10 +77,12 @@ namespace Findstaff
                     ucInterviewInit.dgvInitInt.DataSource = ds.Tables[0];
                 }
             }
-            ucAppList.Visible = false;
+            //ucAppList.Visible = false;
             ucJobApp.Visible = false;
             ucInterviewInit.Visible = true;
             ucInterviewFin.Visible = false;
+            ucApplicant.Visible = false;
+            ucDocumentation.Visible = false;
         }
 
         private void rbInterviewFin_CheckedChanged(object sender, EventArgs e)
@@ -94,10 +100,44 @@ namespace Findstaff
                     ucInterviewFin.dgvFinInt.DataSource = ds.Tables[0];
                 }
             }
-            ucAppList.Visible = false;
+            //ucAppList.Visible = false;
             ucJobApp.Visible = false;
             ucInterviewInit.Visible = false;
             ucInterviewFin.Visible = true;
+            ucApplicant.Visible = false;
+            ucDocumentation.Visible = false;
+        }
+
+        private void rbApplicant_CheckedChanged(object sender, EventArgs e)
+        {
+            cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', job.jobname'Applying for', a.appstatus'Under Department' "
+                    + "from app_t app join job_t job "
+                    + "on app.position = job.jobname "
+                    + "left join applications_t a on app.app_id = a.app_id ";
+            using (connection)
+            {
+                using (adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    ucApplicant.dgvApplicant.DataSource = ds.Tables[0];
+                }
+            }
+
+            ucJobApp.Visible = false;
+            ucInterviewInit.Visible = false;
+            ucInterviewFin.Visible = false;
+            ucApplicant.Visible = true;
+            ucDocumentation.Visible = false;
+        }
+
+        private void rbDocu_CheckedChanged(object sender, EventArgs e)
+        {
+            ucJobApp.Visible = false;
+            ucInterviewInit.Visible = false;
+            ucInterviewFin.Visible = false;
+            ucApplicant.Visible = false;
+            ucDocumentation.Visible = true;
         }
 
         private void ucRecruitment_VisibleChanged(object sender, EventArgs e)
