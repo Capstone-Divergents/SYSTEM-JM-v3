@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvDocumentation = new System.Windows.Forms.DataGridView();
             this.btnAdvSe = new System.Windows.Forms.Button();
@@ -37,7 +37,6 @@
             this.lblSearch = new System.Windows.Forms.Label();
             this.btnCheckDetails = new System.Windows.Forms.Button();
             this.lblDocu = new System.Windows.Forms.Label();
-            this.pnlTabs = new System.Windows.Forms.Panel();
             this.ucDocAppDetails = new Findstaff.ucDocAppDetails();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDocumentation)).BeginInit();
             this.SuspendLayout();
@@ -58,25 +57,25 @@
             this.dgvDocumentation.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDocumentation.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvDocumentation.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDocumentation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDocumentation.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDocumentation.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDocumentation.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDocumentation.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDocumentation.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvDocumentation.Location = new System.Drawing.Point(51, 200);
+            this.dgvDocumentation.Location = new System.Drawing.Point(51, 152);
             this.dgvDocumentation.MultiSelect = false;
             this.dgvDocumentation.Name = "dgvDocumentation";
             this.dgvDocumentation.ReadOnly = true;
@@ -94,7 +93,7 @@
             this.btnAdvSe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdvSe.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdvSe.ForeColor = System.Drawing.Color.Black;
-            this.btnAdvSe.Location = new System.Drawing.Point(429, 147);
+            this.btnAdvSe.Location = new System.Drawing.Point(429, 99);
             this.btnAdvSe.Name = "btnAdvSe";
             this.btnAdvSe.Size = new System.Drawing.Size(250, 30);
             this.btnAdvSe.TabIndex = 50;
@@ -108,7 +107,7 @@
             this.txtName.BackColor = System.Drawing.Color.Gainsboro;
             this.txtName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.DimGray;
-            this.txtName.Location = new System.Drawing.Point(223, 147);
+            this.txtName.Location = new System.Drawing.Point(223, 99);
             this.txtName.MaxLength = 30;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(200, 26);
@@ -121,7 +120,7 @@
             this.lblSearch.BackColor = System.Drawing.Color.Transparent;
             this.lblSearch.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSearch.ForeColor = System.Drawing.Color.Black;
-            this.lblSearch.Location = new System.Drawing.Point(100, 150);
+            this.lblSearch.Location = new System.Drawing.Point(100, 102);
             this.lblSearch.Name = "lblSearch";
             this.lblSearch.Size = new System.Drawing.Size(117, 19);
             this.lblSearch.TabIndex = 47;
@@ -135,7 +134,7 @@
             this.btnCheckDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCheckDetails.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCheckDetails.ForeColor = System.Drawing.Color.Black;
-            this.btnCheckDetails.Location = new System.Drawing.Point(460, 425);
+            this.btnCheckDetails.Location = new System.Drawing.Point(460, 377);
             this.btnCheckDetails.Name = "btnCheckDetails";
             this.btnCheckDetails.Size = new System.Drawing.Size(200, 50);
             this.btnCheckDetails.TabIndex = 46;
@@ -149,20 +148,11 @@
             this.lblDocu.BackColor = System.Drawing.Color.Transparent;
             this.lblDocu.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDocu.ForeColor = System.Drawing.Color.Black;
-            this.lblDocu.Location = new System.Drawing.Point(25, 75);
+            this.lblDocu.Location = new System.Drawing.Point(25, 27);
             this.lblDocu.Name = "lblDocu";
-            this.lblDocu.Size = new System.Drawing.Size(259, 39);
+            this.lblDocu.Size = new System.Drawing.Size(365, 39);
             this.lblDocu.TabIndex = 45;
-            this.lblDocu.Text = "Documentation";
-            // 
-            // pnlTabs
-            // 
-            this.pnlTabs.BackColor = System.Drawing.Color.White;
-            this.pnlTabs.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlTabs.Location = new System.Drawing.Point(0, 0);
-            this.pnlTabs.Name = "pnlTabs";
-            this.pnlTabs.Size = new System.Drawing.Size(1118, 50);
-            this.pnlTabs.TabIndex = 59;
+            this.lblDocu.Text = "Documents Collection";
             // 
             // ucDocAppDetails
             // 
@@ -179,7 +169,6 @@
             // ucDocumentation
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.Controls.Add(this.pnlTabs);
             this.Controls.Add(this.ucDocAppDetails);
             this.Controls.Add(this.dgvDocumentation);
             this.Controls.Add(this.btnAdvSe);
@@ -207,7 +196,6 @@
         private System.Windows.Forms.Button btnCheckDetails;
         private System.Windows.Forms.Label lblDocu;
         private ucDocAppDetails ucDocAppDetails;
-        private System.Windows.Forms.Panel pnlTabs;
         public System.Windows.Forms.DataGridView dgvDocumentation;
     }
 }

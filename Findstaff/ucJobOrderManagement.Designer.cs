@@ -31,7 +31,6 @@
             this.pnlTabs = new System.Windows.Forms.Panel();
             this.rbJobFees = new System.Windows.Forms.RadioButton();
             this.rbJobList = new System.Windows.Forms.RadioButton();
-            this.rbJobOrder = new System.Windows.Forms.RadioButton();
             this.rbEmployer = new System.Windows.Forms.RadioButton();
             this.ucJobFees = new Findstaff.ucJobFees();
             this.ucJobList = new Findstaff.ucJobList();
@@ -44,7 +43,6 @@
             this.pnlTabs.BackColor = System.Drawing.Color.Gainsboro;
             this.pnlTabs.Controls.Add(this.rbJobFees);
             this.pnlTabs.Controls.Add(this.rbJobList);
-            this.pnlTabs.Controls.Add(this.rbJobOrder);
             this.pnlTabs.Controls.Add(this.rbEmployer);
             this.pnlTabs.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTabs.Location = new System.Drawing.Point(0, 0);
@@ -64,7 +62,7 @@
             this.rbJobFees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbJobFees.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbJobFees.ForeColor = System.Drawing.Color.White;
-            this.rbJobFees.Location = new System.Drawing.Point(327, 10);
+            this.rbJobFees.Location = new System.Drawing.Point(222, 10);
             this.rbJobFees.Name = "rbJobFees";
             this.rbJobFees.Size = new System.Drawing.Size(100, 40);
             this.rbJobFees.TabIndex = 4;
@@ -85,7 +83,7 @@
             this.rbJobList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbJobList.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbJobList.ForeColor = System.Drawing.Color.White;
-            this.rbJobList.Location = new System.Drawing.Point(221, 10);
+            this.rbJobList.Location = new System.Drawing.Point(116, 10);
             this.rbJobList.Name = "rbJobList";
             this.rbJobList.Size = new System.Drawing.Size(100, 40);
             this.rbJobList.TabIndex = 3;
@@ -93,27 +91,6 @@
             this.rbJobList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbJobList.UseVisualStyleBackColor = false;
             this.rbJobList.CheckedChanged += new System.EventHandler(this.rbJobList_CheckedChanged);
-            // 
-            // rbJobOrder
-            // 
-            this.rbJobOrder.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbJobOrder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(63)))));
-            this.rbJobOrder.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.rbJobOrder.FlatAppearance.BorderSize = 0;
-            this.rbJobOrder.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
-            this.rbJobOrder.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.rbJobOrder.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rbJobOrder.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbJobOrder.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbJobOrder.ForeColor = System.Drawing.Color.White;
-            this.rbJobOrder.Location = new System.Drawing.Point(115, 10);
-            this.rbJobOrder.Name = "rbJobOrder";
-            this.rbJobOrder.Size = new System.Drawing.Size(100, 40);
-            this.rbJobOrder.TabIndex = 2;
-            this.rbJobOrder.Text = "Job Order";
-            this.rbJobOrder.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbJobOrder.UseVisualStyleBackColor = false;
-            this.rbJobOrder.CheckedChanged += new System.EventHandler(this.rbJobOrder_CheckedChanged);
             // 
             // rbEmployer
             // 
@@ -140,7 +117,7 @@
             // 
             this.ucJobFees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ucJobFees.ForeColor = System.Drawing.Color.Black;
-            this.ucJobFees.Location = new System.Drawing.Point(327, 56);
+            this.ucJobFees.Location = new System.Drawing.Point(222, 56);
             this.ucJobFees.Name = "ucJobFees";
             this.ucJobFees.Size = new System.Drawing.Size(100, 100);
             this.ucJobFees.TabIndex = 36;
@@ -150,7 +127,7 @@
             // 
             this.ucJobList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ucJobList.ForeColor = System.Drawing.Color.Black;
-            this.ucJobList.Location = new System.Drawing.Point(221, 56);
+            this.ucJobList.Location = new System.Drawing.Point(116, 56);
             this.ucJobList.Name = "ucJobList";
             this.ucJobList.Size = new System.Drawing.Size(100, 100);
             this.ucJobList.TabIndex = 35;
@@ -188,7 +165,6 @@
         private System.Windows.Forms.Panel pnlTabs;
         private System.Windows.Forms.RadioButton rbJobFees;
         private System.Windows.Forms.RadioButton rbJobList;
-        private System.Windows.Forms.RadioButton rbJobOrder;
         private System.Windows.Forms.RadioButton rbEmployer;
         private ucEmployer ucEmployer;
         private ucJobList ucJobList;

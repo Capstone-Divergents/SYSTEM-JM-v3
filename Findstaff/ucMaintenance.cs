@@ -22,7 +22,7 @@ namespace Findstaff
         {
             InitializeComponent();
             ucEmployee.Dock = DockStyle.Fill;
-            ucApplicant.Dock = DockStyle.Fill;
+            //ucApplicant.Dock = DockStyle.Fill;
             ucCountry.Dock = DockStyle.Fill;
             ucGenReqs.Dock = DockStyle.Fill;
         }
@@ -30,7 +30,7 @@ namespace Findstaff
         private void rbEmployee_CheckedChanged(object sender, EventArgs e)
         {
             ucEmployee.Visible = true;
-            ucApplicant.Visible = false;
+            //ucApplicant.Visible = false;
             ucCountry.Visible = false;
             ucGenReqs.Visible = false;
 
@@ -46,7 +46,7 @@ namespace Findstaff
             }
         }
 
-        private void rbApplicant_CheckedChanged(object sender, EventArgs e)
+        /*private void rbApplicant_CheckedChanged(object sender, EventArgs e)
         {
             ucEmployee.Visible = false;
             ucApplicant.Visible = true;
@@ -66,12 +66,12 @@ namespace Findstaff
                     ucApplicant.dgvApplicant.DataSource = ds.Tables[0];
                 }
             }
-        }
+        }*/
 
         private void rbCountry_CheckedChanged(object sender, EventArgs e)
         {
             ucEmployee.Visible = false;
-            ucApplicant.Visible = false;
+            //ucApplicant.Visible = false;
             ucCountry.Visible = true;
             ucGenReqs.Visible = false;
 
@@ -93,7 +93,7 @@ namespace Findstaff
         private void rbGeneralRequirements_CheckedChanged(object sender, EventArgs e)
         {
             ucEmployee.Visible = false;
-            ucApplicant.Visible = false;
+            //ucApplicant.Visible = false;
             ucCountry.Visible = false;
             ucGenReqs.Visible = true;
         }

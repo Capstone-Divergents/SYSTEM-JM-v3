@@ -31,9 +31,7 @@
             this.pnlTabs = new System.Windows.Forms.Panel();
             this.rbGeneralRequirements = new System.Windows.Forms.RadioButton();
             this.rbCountry = new System.Windows.Forms.RadioButton();
-            this.rbApplicant = new System.Windows.Forms.RadioButton();
             this.rbEmployee = new System.Windows.Forms.RadioButton();
-            this.ucApplicant = new Findstaff.ucApplicant();
             this.ucEmployee = new Findstaff.ucEmployee();
             this.ucCountry = new Findstaff.ucCountry();
             this.ucGenReqs = new Findstaff.ucGenReqs();
@@ -45,7 +43,6 @@
             this.pnlTabs.BackColor = System.Drawing.Color.Gainsboro;
             this.pnlTabs.Controls.Add(this.rbGeneralRequirements);
             this.pnlTabs.Controls.Add(this.rbCountry);
-            this.pnlTabs.Controls.Add(this.rbApplicant);
             this.pnlTabs.Controls.Add(this.rbEmployee);
             this.pnlTabs.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTabs.Location = new System.Drawing.Point(0, 0);
@@ -65,7 +62,7 @@
             this.rbGeneralRequirements.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbGeneralRequirements.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbGeneralRequirements.ForeColor = System.Drawing.Color.White;
-            this.rbGeneralRequirements.Location = new System.Drawing.Point(327, 10);
+            this.rbGeneralRequirements.Location = new System.Drawing.Point(221, 10);
             this.rbGeneralRequirements.Name = "rbGeneralRequirements";
             this.rbGeneralRequirements.Size = new System.Drawing.Size(200, 40);
             this.rbGeneralRequirements.TabIndex = 8;
@@ -86,7 +83,7 @@
             this.rbCountry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbCountry.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbCountry.ForeColor = System.Drawing.Color.White;
-            this.rbCountry.Location = new System.Drawing.Point(221, 10);
+            this.rbCountry.Location = new System.Drawing.Point(115, 10);
             this.rbCountry.Name = "rbCountry";
             this.rbCountry.Size = new System.Drawing.Size(100, 40);
             this.rbCountry.TabIndex = 3;
@@ -94,27 +91,6 @@
             this.rbCountry.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbCountry.UseVisualStyleBackColor = false;
             this.rbCountry.CheckedChanged += new System.EventHandler(this.rbCountry_CheckedChanged);
-            // 
-            // rbApplicant
-            // 
-            this.rbApplicant.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbApplicant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(63)))));
-            this.rbApplicant.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.rbApplicant.FlatAppearance.BorderSize = 0;
-            this.rbApplicant.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
-            this.rbApplicant.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.rbApplicant.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rbApplicant.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbApplicant.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbApplicant.ForeColor = System.Drawing.Color.White;
-            this.rbApplicant.Location = new System.Drawing.Point(115, 10);
-            this.rbApplicant.Name = "rbApplicant";
-            this.rbApplicant.Size = new System.Drawing.Size(100, 40);
-            this.rbApplicant.TabIndex = 2;
-            this.rbApplicant.Text = "Applicant";
-            this.rbApplicant.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbApplicant.UseVisualStyleBackColor = false;
-            this.rbApplicant.CheckedChanged += new System.EventHandler(this.rbApplicant_CheckedChanged);
             // 
             // rbEmployee
             // 
@@ -137,16 +113,6 @@
             this.rbEmployee.UseVisualStyleBackColor = false;
             this.rbEmployee.CheckedChanged += new System.EventHandler(this.rbEmployee_CheckedChanged);
             // 
-            // ucApplicant
-            // 
-            this.ucApplicant.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucApplicant.ForeColor = System.Drawing.Color.Black;
-            this.ucApplicant.Location = new System.Drawing.Point(115, 56);
-            this.ucApplicant.Name = "ucApplicant";
-            this.ucApplicant.Size = new System.Drawing.Size(100, 100);
-            this.ucApplicant.TabIndex = 39;
-            this.ucApplicant.Visible = false;
-            // 
             // ucEmployee
             // 
             this.ucEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -161,7 +127,7 @@
             // 
             this.ucCountry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.ucCountry.ForeColor = System.Drawing.Color.Black;
-            this.ucCountry.Location = new System.Drawing.Point(221, 56);
+            this.ucCountry.Location = new System.Drawing.Point(115, 56);
             this.ucCountry.Name = "ucCountry";
             this.ucCountry.Size = new System.Drawing.Size(100, 100);
             this.ucCountry.TabIndex = 32;
@@ -170,7 +136,7 @@
             // ucGenReqs
             // 
             this.ucGenReqs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucGenReqs.Location = new System.Drawing.Point(327, 56);
+            this.ucGenReqs.Location = new System.Drawing.Point(221, 56);
             this.ucGenReqs.Name = "ucGenReqs";
             this.ucGenReqs.Size = new System.Drawing.Size(200, 200);
             this.ucGenReqs.TabIndex = 41;
@@ -182,7 +148,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.Controls.Add(this.ucGenReqs);
-            this.Controls.Add(this.ucApplicant);
             this.Controls.Add(this.ucEmployee);
             this.Controls.Add(this.ucCountry);
             this.Controls.Add(this.pnlTabs);
@@ -197,13 +162,11 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlTabs;
-        private System.Windows.Forms.RadioButton rbApplicant;
         private System.Windows.Forms.RadioButton rbEmployee;
         private System.Windows.Forms.RadioButton rbCountry;
         private System.Windows.Forms.RadioButton rbGeneralRequirements;
         public ucCountry ucCountry;
         public ucEmployee ucEmployee;
-        public ucApplicant ucApplicant;
         public ucGenReqs ucGenReqs;
     }
 }

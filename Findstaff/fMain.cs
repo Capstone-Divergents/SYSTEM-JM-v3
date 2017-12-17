@@ -24,7 +24,7 @@ namespace Findstaff
             InitializeComponent();
             ucJobOrderManagement.Dock = DockStyle.Fill;
             ucRecruitment.Dock = DockStyle.Fill;
-            ucDocumentation.Dock = DockStyle.Fill;
+            //ucDocumentation.Dock = DockStyle.Fill;
             ucAcco.Dock = DockStyle.Fill;
             ucMaintenance.Dock = DockStyle.Fill;
             ucReports.Dock = DockStyle.Fill;
@@ -57,7 +57,7 @@ namespace Findstaff
             {
                 rbJobOrderManagement.Enabled = false;
                 rbRecruitment.Enabled = true;
-                rbDocumentation.Enabled = false;
+                //rbDocumentation.Enabled = false;
                 rbAcco.Enabled = false;
                 rbMaintenance.Enabled = false;
                 rbReports.Enabled = false;
@@ -66,7 +66,7 @@ namespace Findstaff
             {
                 rbJobOrderManagement.Enabled = false;
                 rbRecruitment.Enabled = false;
-                rbDocumentation.Enabled = true;
+                //rbDocumentation.Enabled = true;
                 rbAcco.Enabled = false;
                 rbMaintenance.Enabled = false;
                 rbReports.Enabled = false;
@@ -75,7 +75,7 @@ namespace Findstaff
             {
                 rbJobOrderManagement.Enabled = false;
                 rbRecruitment.Enabled = false;
-                rbDocumentation.Enabled = false;
+                //rbDocumentation.Enabled = false;
                 rbAcco.Enabled = true;
                 rbMaintenance.Enabled = false;
                 rbReports.Enabled = false;
@@ -84,7 +84,7 @@ namespace Findstaff
             {
                 rbJobOrderManagement.Enabled = false;
                 rbRecruitment.Enabled = false;
-                rbDocumentation.Enabled = false;
+                //rbDocumentation.Enabled = false;
                 rbAcco.Enabled = false;
                 rbMaintenance.Enabled = true;
                 rbReports.Enabled = false;
@@ -130,7 +130,7 @@ namespace Findstaff
         {
             ucJobOrderManagement.Visible = true;
             ucRecruitment.Visible = false;
-            ucDocumentation.Visible = false;
+            //ucDocumentation.Visible = false;
             ucAcco.Visible = false;
             ucMaintenance.Visible = false;
             ucReports.Visible = false;
@@ -140,7 +140,7 @@ namespace Findstaff
         {
             ucJobOrderManagement.Visible = false;
             ucRecruitment.Visible = true;
-            ucDocumentation.Visible = false;
+            //ucDocumentation.Visible = false;
             ucAcco.Visible = false;
             ucMaintenance.Visible = false;
             ucReports.Visible = false;
@@ -150,7 +150,7 @@ namespace Findstaff
         {
             ucJobOrderManagement.Visible = false;
             ucRecruitment.Visible = false;
-            ucDocumentation.Visible = true;
+            //ucDocumentation.Visible = true;
             ucAcco.Visible = false;
             ucMaintenance.Visible = false;
             ucReports.Visible = false;
@@ -160,7 +160,7 @@ namespace Findstaff
         {
             ucJobOrderManagement.Visible = false;
             ucRecruitment.Visible = false;
-            ucDocumentation.Visible = false;
+            //ucDocumentation.Visible = false;
             ucAcco.Visible = true;
             ucMaintenance.Visible = false;
             ucReports.Visible = false;
@@ -170,7 +170,7 @@ namespace Findstaff
         {
             ucJobOrderManagement.Visible = false;
             ucRecruitment.Visible = false;
-            ucDocumentation.Visible = false;
+            //ucDocumentation.Visible = false;
             ucAcco.Visible = false;
             ucMaintenance.Visible = false;
             ucReports.Visible = false;
@@ -180,7 +180,7 @@ namespace Findstaff
         {
             ucJobOrderManagement.Visible = false;
             ucRecruitment.Visible = false;
-            ucDocumentation.Visible = false;
+            //ucDocumentation.Visible = false;
             ucAcco.Visible = false;
             ucMaintenance.Visible = true;
             ucReports.Visible = false;
@@ -190,7 +190,7 @@ namespace Findstaff
         {
             ucJobOrderManagement.Visible = false;
             ucRecruitment.Visible = false;
-            ucDocumentation.Visible = false;
+            //ucDocumentation.Visible = false;
             ucAcco.Visible = false;
             ucMaintenance.Visible = false;
             ucReports.Visible = true;
