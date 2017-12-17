@@ -32,10 +32,13 @@ namespace Findstaff
 
         private void btnCheckDetails_Click(object sender, EventArgs e)
         {
-            string appno = dgvDocumentation.SelectedRows[0].Cells[0].Value.ToString(), appname = dgvDocumentation.SelectedRows[0].Cells[1].Value.ToString();
-            ucDocAppDetails.init(appno, appname);
-            ucDocAppDetails.Dock = DockStyle.Fill;
-            ucDocAppDetails.Visible = true;
+            if(dgvDocumentation.Rows.Count != 0)
+            {
+                string appno = dgvDocumentation.SelectedRows[0].Cells[0].Value.ToString(), appname = dgvDocumentation.SelectedRows[0].Cells[1].Value.ToString();
+                ucDocAppDetails.init(appno, appname);
+                ucDocAppDetails.Dock = DockStyle.Fill;
+                ucDocAppDetails.Visible = true;
+            }
         }
 
         private void ucDocAppDetails_VisibleChanged(object sender, EventArgs e)
@@ -67,7 +70,7 @@ namespace Findstaff
                     + "from app_t app join appdoc_t ad "
                     + "on app.app_id = ad.app_id "
                     + "join applications_t a on a.app_no = ad.app_no "
-                    + "where a.appstatus = 'Documentation' and a.appstats = 'Active' "
+                    + "where app.appstatus = 'Documentation' and a.appstats = 'Active' "
                     + "group by ad.app_no";
             using (connection)
             {
@@ -90,7 +93,7 @@ namespace Findstaff
                     + "from app_t app join appdoc_t ad "
                     + "on app.app_id = ad.app_id "
                     + "join applications_t a on a.app_no = ad.app_no "
-                    + "where a.appstatus = 'Documentation' and a.appstats = 'Active' and concat(app.app_id , ' ', app.lname, ', ', app.fname, ' ', app.mname) LIKE '%" + valueToFind + "%' "
+                    + "where app.appstatus = 'Documentation' and a.appstats = 'Active' and concat(app.app_id , ' ', app.lname, ', ', app.fname, ' ', app.mname) LIKE '%" + valueToFind + "%' "
                     + "group by ad.app_no ";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();

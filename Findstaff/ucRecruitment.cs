@@ -64,7 +64,7 @@ namespace Findstaff
         
         private void rbInterview_CheckedChanged(object sender, EventArgs e)
         {
-            cmd = "Select j.jorder_id'Job Order No.', jb.jobname'Job Name', count(a.appstats)'No. of Interviewees' from joblist_t j "
+            cmd = "Select j.jorder_id'Job Order No.', jb.jobname'Job Name', count(a.appstats)'No. of Interviewees' from joborder_t j "
                 + "join job_t jb on j.job_id = jb.job_id join applications_t a "
                 + "on a.jorder_id = j.jorder_id and a.job_id = jb.job_id "
                 + "where a.appstats = 'Active' and a.initinterviewstatus is null group by j.jorder_id, jb.jobname";
@@ -87,7 +87,7 @@ namespace Findstaff
 
         private void rbInterviewFin_CheckedChanged(object sender, EventArgs e)
         {
-            cmd = "Select j.jorder_id'Job Order No.', jb.jobname'Job Name', count(a.appstats)'No. of Interviewees' from joblist_t j "
+            cmd = "Select j.jorder_id'Job Order No.', jb.jobname'Job Name', count(a.appstats)'No. of Interviewees' from joborder_t j "
                 + "join job_t jb on j.job_id = jb.job_id join applications_t a "
                 + "on a.jorder_id = j.jorder_id and a.job_id = jb.job_id "
                 + "where a.appstats = 'Active' and a.finalinterviewstatus is null and a.initinterviewstatus = 'passed' group by j.jorder_id, jb.jobname";
@@ -110,7 +110,7 @@ namespace Findstaff
 
         private void rbApplicant_CheckedChanged(object sender, EventArgs e)
         {
-            cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', job.jobname'Applying for', a.appstatus'Under Department' "
+            cmd = "select app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', job.jobname'Applying for', app.appstatus'Status' "
                     + "from app_t app join job_t job "
                     + "on app.position = job.jobname "
                     + "left join applications_t a on app.app_id = a.app_id ";

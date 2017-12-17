@@ -43,7 +43,7 @@ namespace Findstaff
                         countID = dr[0].ToString();
                     }
                     dr.Close();
-                    string cmd = "Insert into Employer_t (employername, foreignprin, country_id) values ('" + txtEmp1.Text + "','"+txtPrincipal1.Text+"','"+countID+"')";
+                    string cmd = "Insert into Employer_t (employername, foreignprin, country_id, email, contact, companyadd) values ('" + txtEmp1.Text + "','"+txtPrincipal1.Text+"','"+countID+"','"+txtEmail1.Text+"','"+txtContact1.Text+"','"+txtCompAddress1.Text+"')";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Added!", "Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -94,7 +94,7 @@ namespace Findstaff
                     }
                     dr.Close();
 
-                    cmd = "Update Employer_T set Employername = '" + txtEmp2.Text + "', Foreignprin = '" + txtPrincipal2.Text + "', Country_id = '" + countID + "' where Employer_id = '" + txtEmpID.Text + "';";
+                    cmd = "Update Employer_T set Employername = '" + txtEmp2.Text + "', Foreignprin = '" + txtPrincipal2.Text + "', Country_id = '" + countID + "', contact = '"+txtContact2.Text+"', email = '"+txtEmail2.Text+"', companyadd = '"+txtCompAddress2.Text+"' where Employer_id = '" + txtEmpID.Text + "';";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Changes Saved!", "Updated Employer Record!", MessageBoxButtons.OK, MessageBoxIcon.Information);

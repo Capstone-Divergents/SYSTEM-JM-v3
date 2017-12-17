@@ -45,7 +45,7 @@ namespace Findstaff
                     + "from app_t app join payables_t p "
                     + "on app.app_id = p.app_id "
                     + "join applications_t a on a.app_no = p.app_no "
-                    + "where a.appstatus = 'Accounting' and a.appstats = 'Active' "
+                    + "where app.appstatus = 'Payment' and a.appstats = 'Active' "
                     + "group by p.app_no";
             using (connection)
             {
@@ -89,7 +89,7 @@ namespace Findstaff
                     + "from app_t app join payables_t p "
                     + "on app.app_id = p.app_id "
                     + "join applications_t a on a.app_no = p.app_no "
-                    + "where a.appstatus = 'Accounting' and a.appstats = 'Active' and concat(app.app_id , ' ', app.lname, ', ', app.fname, ' ', app.mname) LIKE '%" + valueToFind + "%' "
+                    + "where app.appstatus = 'Accounting' and a.appstats = 'Active' and concat(app.app_id , ' ', app.lname, ', ', app.fname, ' ', app.mname) LIKE '%" + valueToFind + "%' "
                     + "group by p.app_no ";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();

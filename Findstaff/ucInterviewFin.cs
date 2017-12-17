@@ -79,7 +79,7 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            cmd = "Select j.jorder_id'Job Order No.', jb.jobname'Job Name', count(a.appstats)'No. of Interviewees' from joblist_t j "
+            cmd = "Select j.jorder_id'Job Order No.', jb.jobname'Job Name', count(a.appstats)'No. of Interviewees' from joborder_t j "
                 + "join job_t jb on j.job_id = jb.job_id join applications_t a "
                 + "on a.jorder_id = j.jorder_id and a.job_id = jb.job_id "
                 + "where a.appstats = 'Active' and a.initinterviewstatus = 'Passed' and a.finalinterviewstatus is null group by j.jorder_id, jb.jobname";
