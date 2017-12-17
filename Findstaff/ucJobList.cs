@@ -40,20 +40,20 @@ namespace Findstaff
 
         private void btnEmpEdit_Click(object sender, EventArgs e)
         {
-            ucJobListAddEdit.cbJOrder2.Text = dgvJobList.SelectedRows[0].Cells[0].Value.ToString();
-            ucJobListAddEdit.cbJob2.Text = dgvJobList.SelectedRows[0].Cells[1].Value.ToString();
-            ucJobListAddEdit.txtEmployer2.Text = dgvJobList.SelectedRows[0].Cells[2].Value.ToString();
-            ucJobListAddEdit.txtReqApp2.Text = dgvJobList.SelectedRows[0].Cells[3].Value.ToString();
+            ucJobListAddEdit.lblJOrder.Text = dgvJobList.SelectedRows[0].Cells[0].Value.ToString();
+            ucJobListAddEdit.cbJobName2.Text = dgvJobList.SelectedRows[0].Cells[1].Value.ToString();
+            ucJobListAddEdit.cbEmployer2.Text = dgvJobList.SelectedRows[0].Cells[2].Value.ToString();
+            ucJobListAddEdit.nddEmployees2.Value = Convert.ToInt32(dgvJobList.SelectedRows[0].Cells[3].Value);
 
             Connection con = new Connection();
             connection = con.dbConnection();
             connection.Open();
-            string cmd = "select e.employername from employer_t e join joblist_t jl on e.employer_id = jl.employer_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            string cmd = "select employername from employer_t where employername <> '"+ dgvJobList.SelectedRows[0].Cells[2].Value.ToString() +"' ";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
             {
-                ucJobListAddEdit.txtEmployer2.Text = dr[0].ToString();
+                ucJobListAddEdit.cbEmployer2.Items.Add(dr[0].ToString());
             }
             dr.Close();
 
@@ -62,19 +62,19 @@ namespace Findstaff
             dr = com.ExecuteReader();
             while (dr.Read())
             {
-                ucJobListAddEdit.txtReqApp2.Text = dr[0].ToString();
+                ucJobListAddEdit.nddEmployees2.Text = dr[0].ToString();
                 ucJobListAddEdit.txtSalary2.Text = dr[1].ToString();
                 ucJobListAddEdit.txtHeight2.Text = dr[2].ToString();
                 ucJobListAddEdit.txtWeight2.Text = dr[3].ToString();
             }
             dr.Close();
 
-            cmd = "select j.jobname from job_t j join joblist_t jl on j.job_id = jl.job_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select jobname from job_t where jobname <> '"+ dgvJobList.SelectedRows[0].Cells[1].Value.ToString() +"'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
             {
-                ucJobListAddEdit.cbJob2.Text = dr[0].ToString();
+                ucJobListAddEdit.cbJobName2.Text = dr[0].ToString();
             }
             dr.Close();
 
