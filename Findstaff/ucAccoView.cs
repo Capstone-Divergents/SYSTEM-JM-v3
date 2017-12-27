@@ -139,12 +139,11 @@ namespace Findstaff
                 employer.Text = employerName;
                 applicant.Text = appName;
                 dr.Close();
-                cmd = "SELECT f.feename'Fee Name', j.amount'Amount', p.feestatus'Status' FROM genfees_t f "
-                    + "join payables_t p on f.fee_id = p.fee_id "
-                    + "join applications_t app on app.App_no = p.App_no "
-                    + "join jobfees_t j on j.jorder_id = app.jorder_id "
-                    + "where app.appstats = 'Active' and app.app_no = '" + appNo + "' and app.appstats = 'Active' "
-                    + "group by f.feename";
+                cmd = "select f.feename'Fee Name', j.amount'Amount', p.feestatus'Status' "
+                    + "from payables_t p join genfees_t f on p.fee_id = f.fee_id "
+                    + "join jobfees_t j on p.fee_id = j.fee_id "
+                    + "join applications_t app on app.app_no = p.app_no "
+                    + "where app.appstats = 'Active' and app.app_no = '" + appNo + "'";
                 using (adapter = new MySqlDataAdapter(cmd, connection))
                 {
                     DataSet ds = new DataSet();

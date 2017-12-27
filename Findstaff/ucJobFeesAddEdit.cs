@@ -40,7 +40,7 @@ namespace Findstaff
                 }
                 dr.Close();
                 int rowcount = dgvFees1.Rows.Count;
-                cmd = "insert into jobfees_t values ";
+                cmd = "insert into jobfees_t (jorder_id, employer_id, fee_id, amount) values ";
                 for(int x = 0; x < rowcount; x++)
                 {
                     cmd2 = "select fee_id from genfees_t where feename = '" + dgvFees1.Rows[x].Cells[0].Value.ToString() + "';";
@@ -89,7 +89,7 @@ namespace Findstaff
             if (this.Visible == true)
             {
                 connection.Open();
-                cmd = "Select Jorder_id from joborder_t where cntrctstat = 'Active';";
+                cmd = "Select jorder_id from joborder_t where cntrctstat = 'Active';";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
@@ -135,6 +135,7 @@ namespace Findstaff
         {
             if(dgvFees1.Rows.Count != 0)
             {
+                cbFees1.Items.Add(dgvFees1.SelectedRows[0].Cells[0].Value.ToString());
                 dgvFees1.Rows.Remove(dgvFees1.SelectedRows[0]);
             }
         }

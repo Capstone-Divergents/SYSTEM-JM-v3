@@ -102,7 +102,7 @@ namespace Findstaff
                     int cnt = int.Parse(com.ExecuteScalar() + "");
                     if(cnt == 0)
                     {
-                        cmd = "update applications_t set appstatus = 'Deployed' where app_no = '" + appNo + "'";
+                        cmd = "update app_t set appstatus = 'Deployed' where app_id = '" + appID + "'";
                         com = new MySqlCommand(cmd, connection);
                         com.ExecuteNonQuery();
                         MessageBox.Show("All fees are paid. Applicant status is deployed.", "Payment of Fees");

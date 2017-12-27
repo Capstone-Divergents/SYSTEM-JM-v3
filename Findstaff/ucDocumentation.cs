@@ -49,7 +49,7 @@ namespace Findstaff
                     + "from app_t app join appdoc_t ad "
                     + "on app.app_id = ad.app_id "
                     + "join applications_t a on a.app_no = ad.app_no "
-                    + "where a.appstatus = 'Documentation' and a.appstats = 'Active' "
+                    + "where app.appstatus = 'Selected' and a.appstats = 'Active' "
                     + "group by ad.app_no";
             using (connection)
             {
@@ -70,7 +70,7 @@ namespace Findstaff
                     + "from app_t app join appdoc_t ad "
                     + "on app.app_id = ad.app_id "
                     + "join applications_t a on a.app_no = ad.app_no "
-                    + "where app.appstatus = 'Documentation' and a.appstats = 'Active' "
+                    + "where app.appstatus = 'Selected' and a.appstats = 'Active' "
                     + "group by ad.app_no";
             using (connection)
             {

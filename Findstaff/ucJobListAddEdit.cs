@@ -28,7 +28,7 @@ namespace Findstaff
 
         private void btnAddAll_Click(object sender, EventArgs e)
         {
-            string empID = "", catID = "", jobID = "";
+            string empID = "", catID = "", jobID = "", gender = "";
             connection.Open();
             cmd = "select employer_id from employer_t where employername = '" + cbEmployer1.Text + "'";
             com = new MySqlCommand(cmd, connection);
@@ -54,16 +54,36 @@ namespace Findstaff
                 jobID = dr[0].ToString();
             }
             dr.Close();
-            cmd = "Select count(*) from joblist_t where jorder_id = '" + cbEmployer1.Text + "' and employer_id = '" + empID + "' and category_id = '" + catID + "' and job_id = '" + jobID + "'";
+            if(rbMale1.Checked == true)
+            {
+                gender = rbMale1.Text;
+            }
+            else if (rbFemale1.Checked == true)
+            {
+                gender = rbFemale1.Text;
+            }
+            else if (rbAll1.Checked == true)
+            {
+                gender = rbAll1.Text;
+            }
+            cmd = "Select count(*) from joborder_t where  employer_id = '" + empID + "' and category_id = '" + catID + "' and job_id = '" + jobID + "' and monthname(CNTRCTSTART) = '"+cbMonth.Text+"' and day(cntrctstart) = '"+cbDay.Text+"' and year(cntrctstart) = '"+cbYear.Text+"'";
             com = new MySqlCommand(cmd, connection);
             int ctr = int.Parse(com.ExecuteScalar() + "");
             if(ctr == 0)
             {
-                cmd = "insert into joblist_t(jorder_id, Employer_id, category_id, job_id, reqapp, salary, heightreq, weightreq, placementfee)"
-                + "values ('" + cbEmployer1.Text + "','" + empID + "','" + catID + "','" + jobID + "','" + nddEmployees1.Value + "','" + txtSalary1.Text + "','" + txtHeight.Text + "','" + txtWeight.Text + "','" + txtSalary1.Text + "')";
+                cmd = "insert into joborder_t (Employer_id, category_id, job_id, reqapp, salary, gender, heightreq, weightreq, cntrctstart, cntrctend, cntrctstat) "
+                + "values ('" + empID + "','" + catID + "','" + jobID + "','" + nddEmployees1.Value + "','" + txtSalary1.Text + "','"+gender+"','" + txtHeight.Text + "','" + txtWeight.Text + "', '" + cbYear.Text + "-" + (cbMonth.SelectedIndex+1).ToString() + "-" + cbDay.Text + "','" + (Convert.ToInt32(cbYear.Text)+5).ToString() + "-" + (cbMonth.SelectedIndex + 1).ToString() + "-" + cbDay.Text + "', 'Active')";
                 com = new MySqlCommand(cmd, connection);
                 com.ExecuteNonQuery();
-                string cmd2 = "", sID = "", reqID = "";
+                string cmd2 = "",joID = "", sID = "", reqID = "";
+                cmd = "Select max(jorder_id) from joborder_t";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    joID = dr[0].ToString();
+                }
+                dr.Close();
                 cmd = "insert into jobskills_t values ";
                 for (int x = 0; x < dgvSkills1.Rows.Count; x++)
                 {
@@ -75,7 +95,7 @@ namespace Findstaff
                         sID = dr[0].ToString();
                     }
                     dr.Close();
-                    cmd += "('" + cbEmployer1.Text + "','" + empID + "','" + catID + "','" + jobID + "','" + sID + "','" + dgvSkills1.Rows[x].Cells[1].Value.ToString() + "')";
+                    cmd += "('" + joID + "','" + empID + "','" + catID + "','" + jobID + "','" + sID + "','" + dgvSkills1.Rows[x].Cells[1].Value.ToString() + "')";
                     if (x < dgvSkills1.Rows.Count - 1)
                     {
                         cmd += ",";
@@ -94,7 +114,7 @@ namespace Findstaff
                         reqID = dr[0].ToString();
                     }
                     dr.Close();
-                    cmd += "('" + cbEmployer1.Text + "','" + empID + "','" + catID + "','" + jobID + "','" + reqID + "')";
+                    cmd += "('" + joID + "','" + empID + "','" + catID + "','" + jobID + "','" + reqID + "')";
                     if (x < dgvReqdDocs1.Rows.Count - 1)
                     {
                         cmd += ",";
@@ -104,8 +124,15 @@ namespace Findstaff
                 com.ExecuteNonQuery();
                 MessageBox.Show("Job Added!", "Added", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 connection.Close();
-                cbCategory1.SelectedIndex = -1;
-                cbJob1.SelectedIndex = -1;
+                cbEmployer1.Items.Clear();
+                cbCategory1.Items.Clear();
+                cbJob1.Items.Clear();
+                cbMonth.SelectedIndex = -1;
+                cbDay.SelectedIndex = -1;
+                cbYear.SelectedIndex = -1;
+                rbMale1.Checked = false;
+                rbFemale1.Checked = false;
+                rbAll1.Checked = false;
                 nddEmployees1.Value = 1;
                 txtSalary1.Clear();
                 txtHeight.Clear();
@@ -155,10 +182,6 @@ namespace Findstaff
                 cbSkillName.Items.Add(dgvReqdDocs1.Rows[x].Cells[0].Value.ToString());
             }
             dgvReqdDocs1.Rows.Clear();
-            cbEmployer1.Enabled = true;
-            btnAddSkill.Enabled = false;
-            btnReqAdd.Enabled = false;
-            btnAddAll.Enabled = false;
             this.Hide();
         }
 
@@ -191,12 +214,13 @@ namespace Findstaff
             if(this.Visible == true)
             {
                 connection.Open();
-                cmd = "Select jorder_id from joborder_t where cntrctstat = 'Active'";
+                cmd = "Select employername from employer_t";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
                 {
                     cbEmployer1.Items.Add(dr[0]);
+                    cbEmployer2.Items.Add(dr[0]);
                 }
                 dr.Close();
 
@@ -375,6 +399,60 @@ namespace Findstaff
             rbMale2.Checked = false;
             rbFemale2.Checked = false;
             rbAll2.Checked = true;
+        }
+
+        private void cbMonth2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbDay2.Items.Clear();
+            if(cbMonth2.SelectedIndex == 0 || cbMonth2.SelectedIndex == 2 || cbMonth2.SelectedIndex == 4 || cbMonth2.SelectedIndex == 6 ||
+                cbMonth2.SelectedIndex == 7 || cbMonth2.SelectedIndex == 9 || cbMonth2.SelectedIndex == 11)
+            {
+                for(int x = 1; x <= 31; x++)
+                {
+                    cbDay2.Items.Add(x);
+                }
+            }
+            else if (cbMonth2.SelectedIndex == 3 || cbMonth2.SelectedIndex == 5 || cbMonth2.SelectedIndex == 8)
+            {
+                for (int x = 1; x <= 30; x++)
+                {
+                    cbDay2.Items.Add(x);
+                }
+            }
+            else
+            {
+                for (int x = 1; x <= 28; x++)
+                {
+                    cbDay2.Items.Add(x);
+                }
+            }
+        }
+
+        private void cbMonth_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            cbDay.Items.Clear();
+            if (cbMonth.SelectedIndex == 0 || cbMonth.SelectedIndex == 2 || cbMonth.SelectedIndex == 4 || cbMonth.SelectedIndex == 6 ||
+                cbMonth.SelectedIndex == 7 || cbMonth.SelectedIndex == 9 || cbMonth.SelectedIndex == 11)
+            {
+                for (int x = 1; x <= 31; x++)
+                {
+                    cbDay.Items.Add(x);
+                }
+            }
+            else if (cbMonth.SelectedIndex == 3 || cbMonth.SelectedIndex == 5 || cbMonth.SelectedIndex == 8)
+            {
+                for (int x = 1; x <= 30; x++)
+                {
+                    cbDay.Items.Add(x);
+                }
+            }
+            else
+            {
+                for (int x = 1; x <= 28; x++)
+                {
+                    cbDay.Items.Add(x);
+                }
+            }
         }
     }
 }

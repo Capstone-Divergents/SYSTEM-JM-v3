@@ -91,12 +91,12 @@ namespace Findstaff
             if (cbMonth.Text != "" && cbDay.Text != "" && cbYear.Text != "")
             {
                 string jorder = "", empId = "", jobId = "", jobcateg = "";
-                cmd = "Select jl.jorder_id, jl.employer_id, jl.job_id, jc.category_id from joblist_t jl join joborder_t jo "
-                    + "on jl.jorder_id = jo.jorder_id join job_t j "
-                    + "on jl.job_id = j.job_id join jobcategory_t jc "
-                    + "on jl.category_id = jc.category_id join employer_t e "
-                    + "on jl.employer_id = e.employer_id "
-                    + "where jl.jorder_id = '" + details[1] + "' and e.employername = '" + details[0] + "' "
+                cmd = "Select jo.jorder_id, jo.employer_id, jo.job_id, jc.category_id from joborder_t jo"
+                    + " join job_t j "
+                    + "on jo.job_id = j.job_id join jobcategory_t jc "
+                    + "on jo.category_id = jc.category_id join employer_t e "
+                    + "on jo.employer_id = e.employer_id "
+                    + "where jo.jorder_id = '" + details[1] + "' and e.employername = '" + details[0] + "' "
                     + "and j.jobname = '" + details[2] + "'";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
@@ -157,8 +157,8 @@ namespace Findstaff
                     }
                     if (appNo != "")
                     {
-                        cmd = "insert into applications_t (app_no, app_id, jorder_id, employer_id, category_id, job_id, initinterviewdate, appstats, appstatus) "
-                            + "values ('" + appNo + "','" + apps[x] + "','" + jorder + "','" + empId + "','" + jobcateg + "','" + jobId + "','" + cbYear.Text + "-" + (cbMonth.SelectedIndex + 1) + "-" + cbDay.Text + "','Active','Recruitment')";
+                        cmd = "insert into applications_t (app_no, app_id, jorder_id, employer_id, category_id, job_id, initinterviewdate, appstats) "
+                            + "values ('" + appNo + "','" + apps[x] + "','" + details[1] + "','" + empId + "','" + jobcateg + "','" + jobId + "','" + cbYear.Text + "-" + (cbMonth.SelectedIndex + 1) + "-" + cbDay.Text + "','Active')";
                         com = new MySqlCommand(cmd, connection);
                         com.ExecuteNonQuery();
                     }

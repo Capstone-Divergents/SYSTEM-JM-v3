@@ -53,7 +53,7 @@ namespace Findstaff
                 }
                 dr.Close();
                 int ctr = 0;
-                cmd = "select reqapp from joblist_t where jorder_id = '"+joborder.Text+"' and job_id = '"+jobID+"'";
+                cmd = "select reqapp from joborder_t where jorder_id = '"+joborder.Text+"' and job_id = '"+jobID+"'";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
@@ -64,7 +64,10 @@ namespace Findstaff
                 if(ctr != 0)
                 {
                     int ctrB = 0, ctrJ = 0, ctrC = 0, x = 0, y = 0, z = 0;
-                    cmd = "update applications_t set finalinterviewstatus = 'Passed', appstatus = 'Documentation' where app_no = '" + dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                    cmd = "update applications_t set finalinterviewstatus = 'Passed' where app_no = '" + dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+                    com = new MySqlCommand(cmd, connection);
+                    com.ExecuteNonQuery();
+                    cmd = "update app_t set appstatus = 'Selected' where app_id = '" + dgvIntervieweeList.SelectedRows[0].Cells[1].Value.ToString() + "'";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     cmd = "select count(req_id) from genreqs_t where allocation = 'Basic'";
@@ -126,7 +129,7 @@ namespace Findstaff
                         com.ExecuteNonQuery();
                     }
                     MessageBox.Show(dgvIntervieweeList.SelectedRows[0].Cells[2].Value.ToString() + " Passed Final Interview!", "Final Interview Results", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    cmd = "update joblist_t set reqapp = reqapp - 1 where jorder_id = '" + joborder.Text + "' and job_id = '" + jobID + "'";
+                    cmd = "update joborder_t set reqapp = reqapp - 1 where jorder_id = '" + joborder.Text + "' and job_id = '" + jobID + "'";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     string empID = "";
@@ -139,7 +142,7 @@ namespace Findstaff
                     }
                     dr.Close();
                     cmd = "select app.app_no'Application No.', a.app_id'Applicant ID', concat(a.lname, ', ', a.fname, ' ', a.mname)'Applicant Name' from applications_t app "
-                        + "join app_t a on app.app_id = a.app_id where app.appstats = 'Active' and app.appstatus = 'Recruitment' "
+                        + "join app_t a on app.app_id = a.app_id where app.appstats = 'Active' and a.appstatus = 'For Final Interview' "
                         + "and app.jorder_id = '" + joborder.Text + "' and app.job_id = '" + jobID + "' and app.employer_id = '" + empID + "' and finalinterviewstatus is null and initinterviewstatus = 'Passed'";
                     using (connection)
                     {
@@ -163,6 +166,9 @@ namespace Findstaff
         {
             connection.Open();
             cmd = "update applications_t set finalinterviewstatus = 'Passed' where app_no = '" + dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            com.ExecuteNonQuery();
+            cmd = "update app_t set appstatus = 'Archived' where Concat(lname, ', ', fname, ' ', mname) = '" + dgvIntervieweeList.SelectedRows[0].Cells[1].Value.ToString() + "'";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();
             MessageBox.Show(dgvIntervieweeList.SelectedRows[0].Cells[2].Value.ToString() + " Failed Final Interview!", "Final Interview Results", MessageBoxButtons.OK, MessageBoxIcon.Information);

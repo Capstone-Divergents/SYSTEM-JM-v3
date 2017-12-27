@@ -49,21 +49,19 @@ namespace Findstaff
             {
                 cbEmployer.Items.Clear();
                 cbJobOrder.Items.Clear();
-                cbJob.Items.Clear();
+                txtJob.Text = "";
             }
         }
 
         private void cbEmployer_SelectedIndexChanged(object sender, EventArgs e)
         {
             cbJobOrder.Items.Clear();
-            cbJob.Items.Clear();
+            txtJob.Text = "";
             connection.Open();
             cmd = "Select j.jorder_id from joborder_t j join employer_t e "
                 + "on j.employer_id = e.employer_id "
-                + "join joblist_t jl on j.jorder_id = jl.jorder_id "
                 + "where j.cntrctstat = 'Active' and e.employername = '"+cbEmployer.Text+"' "
-                + "and (select count(jl.job_id) from joblist_t jl join joborder_t j "
-                + "on j.jorder_id = jl.jorder_id) <> 0 "
+                + "and (select count(job_id) from joborder_t) <> 0 "
                 + "group by j.jorder_id";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
@@ -77,14 +75,13 @@ namespace Findstaff
 
         private void cbJobOrder_SelectedIndexChanged(object sender, EventArgs e)
         {
-            cbJob.Items.Clear();
             connection.Open();
-            cmd = "select job.jobname from joblist_t j join job_t job on j.job_id = job.job_id where j.jorder_id = '"+cbJobOrder.Text+"'";
+            cmd = "select job.jobname from joborder_t j join job_t job on j.job_id = job.job_id where j.jorder_id = '"+cbJobOrder.Text+"'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
             {
-                cbJob.Items.Add(dr[0].ToString());
+                txtJob.Text = dr[0].ToString();
             }
             dr.Close();
             connection.Close();
@@ -95,12 +92,12 @@ namespace Findstaff
             dgvAppMatch.Rows.Clear();
             connection.Open();
             int y = 0;
-            cmd = "Select count(*) from jobskills_t where jorder_id = '" + cbJobOrder.Text + "' and job_id = (select job_id from job_t where jobname = '" + cbJob.Text + "')";
+            cmd = "Select count(*) from jobskills_t where jorder_id = '" + cbJobOrder.Text + "' and job_id = (select job_id from job_t where jobname = '" + txtJob.Text + "')";
             com = new MySqlCommand(cmd, connection);
             y = int.Parse(com.ExecuteScalar() + "");
             string[,] skills = new string[y, 2];
             int z = 0;
-            cmd = "Select skill_id, proflevel from jobskills_t where jorder_id = '" + cbJobOrder.Text + "' and job_id = (select job_id from job_t where jobname = '" + cbJob.Text + "')";
+            cmd = "Select skill_id, proflevel from jobskills_t where jorder_id = '" + cbJobOrder.Text + "' and job_id = (select job_id from job_t where jobname = '" + txtJob.Text + "')";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
@@ -112,13 +109,13 @@ namespace Findstaff
             dr.Close();
             y = 0;
             int a = 0;
-            cmd = "select count(a.app_id) from app_t a left join applications_t b on a.app_id = b.app_id where (b.appstats is null or b.appstats <> 'Active') and position = '" + cbJob.Text + "'";
+            cmd = "select count(a.app_id) from app_t a left join applications_t b on a.app_id = b.app_id where (b.appstats is null or b.appstats <> 'Active') and position = '" + txtJob.Text + "'";
             com = new MySqlCommand(cmd, connection);
             y = int.Parse(com.ExecuteScalar() + "");
             if (y != 0)
             {
                 string[,] apps = new string[y, 2];
-                cmd = "select a.app_id, concat(a.lname, ', ', a.fname, ' ', a.mname) from app_t a left join applications_t b on a.app_id = b.app_id where (b.appstats is null or b.appstats <> 'Active') and position = '" + cbJob.Text + "'";
+                cmd = "select a.app_id, concat(a.lname, ', ', a.fname, ' ', a.mname) from app_t a left join applications_t b on a.app_id = b.app_id where (b.appstats is null or b.appstats <> 'Active') and position = '" + txtJob.Text + "'";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
@@ -250,10 +247,8 @@ namespace Findstaff
             dr.Close();
             cmd = "Select j.jorder_id from joborder_t j join employer_t e "
                 + "on j.employer_id = e.employer_id "
-                + "join joblist_t jl on j.jorder_id = jl.jorder_id "
                 + "where j.cntrctstat = 'Active' "
-                + "and (select count(jl.job_id) from joblist_t jl join joborder_t j "
-                + "on j.jorder_id = jl.jorder_id) <> 0 "
+                + "and (select count(job_id) from joborder_t ) <> 0 "
                 + "group by j.jorder_id";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
@@ -266,10 +261,8 @@ namespace Findstaff
             joctr = 0;
             cmd = "Select j.jorder_id from joborder_t j join employer_t e "
                 + "on j.employer_id = e.employer_id "
-                + "join joblist_t jl on j.jorder_id = jl.jorder_id "
                 + "where j.cntrctstat = 'Active' "
-                + "and (select count(jl.job_id) from joblist_t jl join joborder_t j "
-                + "on j.jorder_id = jl.jorder_id) <> 0 "
+                + "and (select count(job_id) from join joborder_t) <> 0 "
                 + "group by j.jorder_id";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
@@ -282,7 +275,7 @@ namespace Findstaff
             for (int x = 0; x < joctr; x++)
             {
                 int jobctr = 0;
-                cmd = "select job_id from joblist_t where jorder_id = '"+jorders[x]+"'";
+                cmd = "select job_id from joborder_t where jorder_id = '"+jorders[x]+"'";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
@@ -292,7 +285,7 @@ namespace Findstaff
                 dr.Close();
                 string[] jobs = new string[jobctr];
                 jobctr = 0;
-                cmd = "select job_id from joblist_t where jorder_id = '" + jorders[x] + "'";
+                cmd = "select job_id from joborder_t where jorder_id = '" + jorders[x] + "'";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
                 while (dr.Read())
@@ -365,7 +358,7 @@ namespace Findstaff
                 string[] job = new string[3];
                 job[0] = cbEmployer.Text;
                 job[1] = cbJobOrder.Text;
-                job[2] = cbJob.Text;
+                job[2] = txtJob.Text;
                 for (int x = 0; x < length; x++)
                 {
                     apps[x] = dgvAppMatch.SelectedRows[x].Cells[0].Value.ToString();
