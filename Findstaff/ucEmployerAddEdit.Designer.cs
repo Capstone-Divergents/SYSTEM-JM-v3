@@ -91,15 +91,15 @@
             // 
             // btnCancel1
             // 
-            this.btnCancel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCancel1.BackColor = System.Drawing.Color.White;
             this.btnCancel1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCancel1.FlatAppearance.BorderSize = 0;
             this.btnCancel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel1.ForeColor = System.Drawing.Color.Black;
             this.btnCancel1.Location = new System.Drawing.Point(563, 330);
             this.btnCancel1.Name = "btnCancel1";
-            this.btnCancel1.Size = new System.Drawing.Size(100, 50);
+            this.btnCancel1.Size = new System.Drawing.Size(100, 38);
             this.btnCancel1.TabIndex = 14;
             this.btnCancel1.Text = "CANCEL";
             this.btnCancel1.UseVisualStyleBackColor = false;
@@ -107,23 +107,23 @@
             // 
             // btnAddEmp
             // 
-            this.btnAddEmp.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddEmp.BackColor = System.Drawing.Color.White;
             this.btnAddEmp.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAddEmp.FlatAppearance.BorderSize = 0;
             this.btnAddEmp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddEmp.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddEmp.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddEmp.ForeColor = System.Drawing.Color.Black;
-            this.btnAddEmp.Location = new System.Drawing.Point(407, 330);
+            this.btnAddEmp.Location = new System.Drawing.Point(457, 330);
             this.btnAddEmp.Name = "btnAddEmp";
-            this.btnAddEmp.Size = new System.Drawing.Size(150, 50);
+            this.btnAddEmp.Size = new System.Drawing.Size(100, 38);
             this.btnAddEmp.TabIndex = 13;
-            this.btnAddEmp.Text = "ADD EMPLOYER";
+            this.btnAddEmp.Text = "ADD";
             this.btnAddEmp.UseVisualStyleBackColor = false;
             this.btnAddEmp.Click += new System.EventHandler(this.btnAddEmp_Click);
             // 
             // cbCountry1
             // 
-            this.cbCountry1.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbCountry1.BackColor = System.Drawing.Color.White;
             this.cbCountry1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbCountry1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCountry1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -136,7 +136,7 @@
             // 
             // txtPrincipal1
             // 
-            this.txtPrincipal1.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtPrincipal1.BackColor = System.Drawing.Color.White;
             this.txtPrincipal1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrincipal1.ForeColor = System.Drawing.Color.Black;
             this.txtPrincipal1.Location = new System.Drawing.Point(428, 167);
@@ -147,7 +147,7 @@
             // 
             // txtEmp1
             // 
-            this.txtEmp1.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtEmp1.BackColor = System.Drawing.Color.White;
             this.txtEmp1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmp1.ForeColor = System.Drawing.Color.Black;
             this.txtEmp1.Location = new System.Drawing.Point(428, 102);
@@ -160,11 +160,11 @@
             // 
             this.lblPrincipal1.AutoSize = true;
             this.lblPrincipal1.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrincipal1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrincipal1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrincipal1.ForeColor = System.Drawing.Color.Black;
             this.lblPrincipal1.Location = new System.Drawing.Point(279, 170);
             this.lblPrincipal1.Name = "lblPrincipal1";
-            this.lblPrincipal1.Size = new System.Drawing.Size(143, 19);
+            this.lblPrincipal1.Size = new System.Drawing.Size(147, 20);
             this.lblPrincipal1.TabIndex = 7;
             this.lblPrincipal1.Text = "Foreign Principal :";
             // 
@@ -172,11 +172,11 @@
             // 
             this.lblCountry1.AutoSize = true;
             this.lblCountry1.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountry1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountry1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCountry1.ForeColor = System.Drawing.Color.Black;
             this.lblCountry1.Location = new System.Drawing.Point(344, 137);
             this.lblCountry1.Name = "lblCountry1";
-            this.lblCountry1.Size = new System.Drawing.Size(78, 19);
+            this.lblCountry1.Size = new System.Drawing.Size(79, 20);
             this.lblCountry1.TabIndex = 6;
             this.lblCountry1.Text = "Country :";
             // 
@@ -184,11 +184,11 @@
             // 
             this.lblEmp1.AutoSize = true;
             this.lblEmp1.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmp1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmp1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmp1.ForeColor = System.Drawing.Color.Black;
             this.lblEmp1.Location = new System.Drawing.Point(332, 105);
             this.lblEmp1.Name = "lblEmp1";
-            this.lblEmp1.Size = new System.Drawing.Size(90, 19);
+            this.lblEmp1.Size = new System.Drawing.Size(89, 20);
             this.lblEmp1.TabIndex = 5;
             this.lblEmp1.Text = "Employer :";
             // 
@@ -196,11 +196,11 @@
             // 
             this.lblAddEmp.AutoSize = true;
             this.lblAddEmp.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddEmp.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddEmp.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddEmp.ForeColor = System.Drawing.Color.Black;
             this.lblAddEmp.Location = new System.Drawing.Point(25, 25);
             this.lblAddEmp.Name = "lblAddEmp";
-            this.lblAddEmp.Size = new System.Drawing.Size(240, 39);
+            this.lblAddEmp.Size = new System.Drawing.Size(184, 28);
             this.lblAddEmp.TabIndex = 2;
             this.lblAddEmp.Text = "Add Employer";
             // 
@@ -231,15 +231,15 @@
             // 
             // btnCancel2
             // 
-            this.btnCancel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCancel2.BackColor = System.Drawing.Color.White;
             this.btnCancel2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCancel2.FlatAppearance.BorderSize = 0;
             this.btnCancel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel2.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel2.Location = new System.Drawing.Point(612, 330);
+            this.btnCancel2.Location = new System.Drawing.Point(563, 330);
             this.btnCancel2.Name = "btnCancel2";
-            this.btnCancel2.Size = new System.Drawing.Size(100, 50);
+            this.btnCancel2.Size = new System.Drawing.Size(100, 38);
             this.btnCancel2.TabIndex = 27;
             this.btnCancel2.Text = "CANCEL";
             this.btnCancel2.UseVisualStyleBackColor = false;
@@ -247,23 +247,23 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEdit.BackColor = System.Drawing.Color.White;
             this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEdit.Location = new System.Drawing.Point(456, 330);
+            this.btnEdit.Location = new System.Drawing.Point(457, 330);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(150, 50);
+            this.btnEdit.Size = new System.Drawing.Size(100, 38);
             this.btnEdit.TabIndex = 26;
-            this.btnEdit.Text = "EDIT EMPLOYER";
+            this.btnEdit.Text = "EDIT";
             this.btnEdit.UseVisualStyleBackColor = false;
             this.btnEdit.Click += new System.EventHandler(this.btnEditEmp_Click);
             // 
             // cbCountry2
             // 
-            this.cbCountry2.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbCountry2.BackColor = System.Drawing.Color.White;
             this.cbCountry2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbCountry2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbCountry2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -276,7 +276,7 @@
             // 
             // txtPrincipal2
             // 
-            this.txtPrincipal2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtPrincipal2.BackColor = System.Drawing.Color.White;
             this.txtPrincipal2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrincipal2.ForeColor = System.Drawing.Color.Black;
             this.txtPrincipal2.Location = new System.Drawing.Point(469, 192);
@@ -287,7 +287,7 @@
             // 
             // txtEmp2
             // 
-            this.txtEmp2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtEmp2.BackColor = System.Drawing.Color.White;
             this.txtEmp2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmp2.ForeColor = System.Drawing.Color.Black;
             this.txtEmp2.Location = new System.Drawing.Point(469, 128);
@@ -298,7 +298,7 @@
             // 
             // txtEmpID
             // 
-            this.txtEmpID.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtEmpID.BackColor = System.Drawing.Color.White;
             this.txtEmpID.Enabled = false;
             this.txtEmpID.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpID.ForeColor = System.Drawing.Color.Black;
@@ -312,11 +312,11 @@
             // 
             this.lblPrincipal2.AutoSize = true;
             this.lblPrincipal2.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrincipal2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrincipal2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrincipal2.ForeColor = System.Drawing.Color.Black;
             this.lblPrincipal2.Location = new System.Drawing.Point(320, 195);
             this.lblPrincipal2.Name = "lblPrincipal2";
-            this.lblPrincipal2.Size = new System.Drawing.Size(143, 19);
+            this.lblPrincipal2.Size = new System.Drawing.Size(147, 20);
             this.lblPrincipal2.TabIndex = 20;
             this.lblPrincipal2.Text = "Foreign Principal :";
             // 
@@ -324,11 +324,11 @@
             // 
             this.lblCountry2.AutoSize = true;
             this.lblCountry2.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountry2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountry2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCountry2.ForeColor = System.Drawing.Color.Black;
             this.lblCountry2.Location = new System.Drawing.Point(385, 163);
             this.lblCountry2.Name = "lblCountry2";
-            this.lblCountry2.Size = new System.Drawing.Size(78, 19);
+            this.lblCountry2.Size = new System.Drawing.Size(79, 20);
             this.lblCountry2.TabIndex = 19;
             this.lblCountry2.Text = "Country :";
             // 
@@ -336,11 +336,11 @@
             // 
             this.lblEmp2.AutoSize = true;
             this.lblEmp2.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmp2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmp2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmp2.ForeColor = System.Drawing.Color.Black;
             this.lblEmp2.Location = new System.Drawing.Point(373, 131);
             this.lblEmp2.Name = "lblEmp2";
-            this.lblEmp2.Size = new System.Drawing.Size(90, 19);
+            this.lblEmp2.Size = new System.Drawing.Size(89, 20);
             this.lblEmp2.TabIndex = 18;
             this.lblEmp2.Text = "Employer :";
             // 
@@ -348,11 +348,11 @@
             // 
             this.lblEmpID.AutoSize = true;
             this.lblEmpID.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmpID.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpID.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpID.ForeColor = System.Drawing.Color.Black;
             this.lblEmpID.Location = new System.Drawing.Point(352, 99);
             this.lblEmpID.Name = "lblEmpID";
-            this.lblEmpID.Size = new System.Drawing.Size(111, 19);
+            this.lblEmpID.Size = new System.Drawing.Size(112, 20);
             this.lblEmpID.TabIndex = 17;
             this.lblEmpID.Text = "Employer ID :";
             // 
@@ -360,11 +360,11 @@
             // 
             this.lblEditEmp.AutoSize = true;
             this.lblEditEmp.BackColor = System.Drawing.Color.Transparent;
-            this.lblEditEmp.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEditEmp.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEditEmp.ForeColor = System.Drawing.Color.Black;
             this.lblEditEmp.Location = new System.Drawing.Point(25, 25);
             this.lblEditEmp.Name = "lblEditEmp";
-            this.lblEditEmp.Size = new System.Drawing.Size(241, 39);
+            this.lblEditEmp.Size = new System.Drawing.Size(188, 28);
             this.lblEditEmp.TabIndex = 16;
             this.lblEditEmp.Text = "Edit Employer";
             // 
@@ -510,7 +510,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ucEmployerAddEdit";
