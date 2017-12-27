@@ -62,11 +62,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(25, 605);
+            this.label10.Location = new System.Drawing.Point(25, 576);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(275, 25);
+            this.label10.Size = new System.Drawing.Size(215, 20);
             this.label10.TabIndex = 47;
             this.label10.Text = "REQUIRED DOCUMENTS";
             // 
@@ -74,11 +74,11 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(25, 376);
+            this.label7.Location = new System.Drawing.Point(25, 352);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(86, 25);
+            this.label7.Size = new System.Drawing.Size(70, 20);
             this.label7.TabIndex = 46;
             this.label7.Text = "SKILLS";
             // 
@@ -86,11 +86,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(490, 316);
+            this.label6.Location = new System.Drawing.Point(483, 292);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(71, 19);
+            this.label6.Size = new System.Drawing.Size(71, 20);
             this.label6.TabIndex = 45;
             this.label6.Text = "Weight :";
             // 
@@ -98,11 +98,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(495, 280);
+            this.label5.Location = new System.Drawing.Point(487, 256);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 19);
+            this.label5.Size = new System.Drawing.Size(68, 20);
             this.label5.TabIndex = 44;
             this.label5.Text = "Height :";
             // 
@@ -110,11 +110,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(479, 244);
+            this.label1.Location = new System.Drawing.Point(490, 220);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 19);
+            this.label1.Size = new System.Drawing.Size(85, 20);
             this.label1.TabIndex = 43;
             this.label1.Text = "Salary :  P";
             // 
@@ -122,11 +122,11 @@
             // 
             this.lblNoOfEmpReqd.AutoSize = true;
             this.lblNoOfEmpReqd.BackColor = System.Drawing.Color.Transparent;
-            this.lblNoOfEmpReqd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNoOfEmpReqd.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNoOfEmpReqd.ForeColor = System.Drawing.Color.Black;
-            this.lblNoOfEmpReqd.Location = new System.Drawing.Point(342, 208);
+            this.lblNoOfEmpReqd.Location = new System.Drawing.Point(342, 184);
             this.lblNoOfEmpReqd.Name = "lblNoOfEmpReqd";
-            this.lblNoOfEmpReqd.Size = new System.Drawing.Size(219, 19);
+            this.lblNoOfEmpReqd.Size = new System.Drawing.Size(215, 20);
             this.lblNoOfEmpReqd.TabIndex = 42;
             this.lblNoOfEmpReqd.Text = "No. of Employees Required :";
             // 
@@ -134,11 +134,11 @@
             // 
             this.lblPrincipal1.AutoSize = true;
             this.lblPrincipal1.BackColor = System.Drawing.Color.Transparent;
-            this.lblPrincipal1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrincipal1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPrincipal1.ForeColor = System.Drawing.Color.Black;
-            this.lblPrincipal1.Location = new System.Drawing.Point(471, 172);
+            this.lblPrincipal1.Location = new System.Drawing.Point(466, 148);
             this.lblPrincipal1.Name = "lblPrincipal1";
-            this.lblPrincipal1.Size = new System.Drawing.Size(90, 19);
+            this.lblPrincipal1.Size = new System.Drawing.Size(91, 20);
             this.lblPrincipal1.TabIndex = 40;
             this.lblPrincipal1.Text = "Job Name :";
             // 
@@ -146,11 +146,11 @@
             // 
             this.lblCountry1.AutoSize = true;
             this.lblCountry1.BackColor = System.Drawing.Color.Transparent;
-            this.lblCountry1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountry1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCountry1.ForeColor = System.Drawing.Color.Black;
-            this.lblCountry1.Location = new System.Drawing.Point(473, 136);
+            this.lblCountry1.Location = new System.Drawing.Point(473, 112);
             this.lblCountry1.Name = "lblCountry1";
-            this.lblCountry1.Size = new System.Drawing.Size(88, 19);
+            this.lblCountry1.Size = new System.Drawing.Size(85, 20);
             this.lblCountry1.TabIndex = 39;
             this.lblCountry1.Text = "Category :";
             // 
@@ -158,33 +158,33 @@
             // 
             this.lblEmp1.AutoSize = true;
             this.lblEmp1.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmp1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmp1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmp1.ForeColor = System.Drawing.Color.Black;
-            this.lblEmp1.Location = new System.Drawing.Point(471, 100);
+            this.lblEmp1.Location = new System.Drawing.Point(471, 76);
             this.lblEmp1.Name = "lblEmp1";
-            this.lblEmp1.Size = new System.Drawing.Size(90, 19);
+            this.lblEmp1.Size = new System.Drawing.Size(89, 20);
             this.lblEmp1.TabIndex = 38;
             this.lblEmp1.Text = "Employer :";
             // 
             // pnlEmpBtn
             // 
             this.pnlEmpBtn.Controls.Add(this.btnClose);
-            this.pnlEmpBtn.Location = new System.Drawing.Point(506, 850);
+            this.pnlEmpBtn.Location = new System.Drawing.Point(506, 827);
             this.pnlEmpBtn.Name = "pnlEmpBtn";
-            this.pnlEmpBtn.Size = new System.Drawing.Size(106, 80);
+            this.pnlEmpBtn.Size = new System.Drawing.Size(106, 63);
             this.pnlEmpBtn.TabIndex = 52;
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnClose.BackColor = System.Drawing.Color.White;
             this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Black;
             this.btnClose.Location = new System.Drawing.Point(3, 1);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 50);
+            this.btnClose.Size = new System.Drawing.Size(100, 38);
             this.btnClose.TabIndex = 9;
             this.btnClose.Text = "CLOSE";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -201,7 +201,7 @@
             this.dgvSkills.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
@@ -210,14 +210,14 @@
             this.dgvSkills.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century", 12F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvSkills.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvSkills.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvSkills.Location = new System.Drawing.Point(106, 416);
+            this.dgvSkills.Location = new System.Drawing.Point(106, 392);
             this.dgvSkills.MultiSelect = false;
             this.dgvSkills.Name = "dgvSkills";
             this.dgvSkills.ReadOnly = true;
@@ -231,11 +231,11 @@
             // 
             this.weight.AutoSize = true;
             this.weight.BackColor = System.Drawing.Color.Transparent;
-            this.weight.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.weight.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weight.ForeColor = System.Drawing.Color.Black;
-            this.weight.Location = new System.Drawing.Point(588, 316);
+            this.weight.Location = new System.Drawing.Point(588, 292);
             this.weight.Name = "weight";
-            this.weight.Size = new System.Drawing.Size(63, 19);
+            this.weight.Size = new System.Drawing.Size(58, 20);
             this.weight.TabIndex = 60;
             this.weight.Text = "weight";
             // 
@@ -243,11 +243,11 @@
             // 
             this.height.AutoSize = true;
             this.height.BackColor = System.Drawing.Color.Transparent;
-            this.height.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.height.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.height.ForeColor = System.Drawing.Color.Black;
-            this.height.Location = new System.Drawing.Point(588, 280);
+            this.height.Location = new System.Drawing.Point(588, 256);
             this.height.Name = "height";
-            this.height.Size = new System.Drawing.Size(60, 19);
+            this.height.Size = new System.Drawing.Size(57, 20);
             this.height.TabIndex = 59;
             this.height.Text = "height";
             // 
@@ -255,11 +255,11 @@
             // 
             this.salary.AutoSize = true;
             this.salary.BackColor = System.Drawing.Color.Transparent;
-            this.salary.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salary.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salary.ForeColor = System.Drawing.Color.Black;
-            this.salary.Location = new System.Drawing.Point(588, 244);
+            this.salary.Location = new System.Drawing.Point(588, 220);
             this.salary.Name = "salary";
-            this.salary.Size = new System.Drawing.Size(58, 19);
+            this.salary.Size = new System.Drawing.Size(55, 20);
             this.salary.TabIndex = 58;
             this.salary.Text = "salary";
             // 
@@ -267,11 +267,11 @@
             // 
             this.noofempreq.AutoSize = true;
             this.noofempreq.BackColor = System.Drawing.Color.Transparent;
-            this.noofempreq.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.noofempreq.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.noofempreq.ForeColor = System.Drawing.Color.Black;
-            this.noofempreq.Location = new System.Drawing.Point(588, 208);
+            this.noofempreq.Location = new System.Drawing.Point(588, 184);
             this.noofempreq.Name = "noofempreq";
-            this.noofempreq.Size = new System.Drawing.Size(104, 19);
+            this.noofempreq.Size = new System.Drawing.Size(95, 20);
             this.noofempreq.TabIndex = 57;
             this.noofempreq.Text = "noofempreq";
             // 
@@ -279,11 +279,11 @@
             // 
             this.jobname.AutoSize = true;
             this.jobname.BackColor = System.Drawing.Color.Transparent;
-            this.jobname.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jobname.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jobname.ForeColor = System.Drawing.Color.Black;
-            this.jobname.Location = new System.Drawing.Point(588, 172);
+            this.jobname.Location = new System.Drawing.Point(588, 148);
             this.jobname.Name = "jobname";
-            this.jobname.Size = new System.Drawing.Size(78, 19);
+            this.jobname.Size = new System.Drawing.Size(72, 20);
             this.jobname.TabIndex = 56;
             this.jobname.Text = "jobname";
             // 
@@ -291,11 +291,11 @@
             // 
             this.category.AutoSize = true;
             this.category.BackColor = System.Drawing.Color.Transparent;
-            this.category.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.category.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.category.ForeColor = System.Drawing.Color.Black;
-            this.category.Location = new System.Drawing.Point(588, 136);
+            this.category.Location = new System.Drawing.Point(588, 112);
             this.category.Name = "category";
-            this.category.Size = new System.Drawing.Size(78, 19);
+            this.category.Size = new System.Drawing.Size(72, 20);
             this.category.TabIndex = 55;
             this.category.Text = "category";
             // 
@@ -303,11 +303,11 @@
             // 
             this.employer.AutoSize = true;
             this.employer.BackColor = System.Drawing.Color.Transparent;
-            this.employer.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employer.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employer.ForeColor = System.Drawing.Color.Black;
-            this.employer.Location = new System.Drawing.Point(588, 100);
+            this.employer.Location = new System.Drawing.Point(588, 76);
             this.employer.Name = "employer";
-            this.employer.Size = new System.Drawing.Size(85, 19);
+            this.employer.Size = new System.Drawing.Size(77, 20);
             this.employer.TabIndex = 54;
             this.employer.Text = "employer";
             // 
@@ -322,7 +322,7 @@
             this.dgvRequiredDocs.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
@@ -331,14 +331,14 @@
             this.dgvRequiredDocs.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century", 12F);
             dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvRequiredDocs.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgvRequiredDocs.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvRequiredDocs.Location = new System.Drawing.Point(106, 650);
+            this.dgvRequiredDocs.Location = new System.Drawing.Point(106, 621);
             this.dgvRequiredDocs.MultiSelect = false;
             this.dgvRequiredDocs.Name = "dgvRequiredDocs";
             this.dgvRequiredDocs.ReadOnly = true;
@@ -351,11 +351,11 @@
             // lblViewJobList
             // 
             this.lblViewJobList.AutoSize = true;
-            this.lblViewJobList.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViewJobList.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblViewJobList.ForeColor = System.Drawing.Color.Black;
             this.lblViewJobList.Location = new System.Drawing.Point(25, 25);
             this.lblViewJobList.Name = "lblViewJobList";
-            this.lblViewJobList.Size = new System.Drawing.Size(220, 39);
+            this.lblViewJobList.Size = new System.Drawing.Size(177, 28);
             this.lblViewJobList.TabIndex = 69;
             this.lblViewJobList.Text = "View Job List";
             // 
@@ -364,7 +364,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.lblViewJobList);
             this.Controls.Add(this.dgvRequiredDocs);
             this.Controls.Add(this.weight);
@@ -386,7 +386,7 @@
             this.Controls.Add(this.lblCountry1);
             this.Controls.Add(this.lblEmp1);
             this.Name = "ucJobListView";
-            this.Size = new System.Drawing.Size(1101, 450);
+            this.Size = new System.Drawing.Size(1138, 500);
             this.pnlEmpBtn.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSkills)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRequiredDocs)).EndInit();

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvIntervieweeList = new System.Windows.Forms.DataGridView();
             this.lblJob = new System.Windows.Forms.Label();
             this.lblEmp = new System.Windows.Forms.Label();
@@ -53,75 +53,75 @@
             this.dgvIntervieweeList.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvIntervieweeList.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvIntervieweeList.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvIntervieweeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvIntervieweeList.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
             this.dgvIntervieweeList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvIntervieweeList.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Century", 12F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvIntervieweeList.DefaultCellStyle = dataGridViewCellStyle8;
             this.dgvIntervieweeList.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvIntervieweeList.Location = new System.Drawing.Point(52, 140);
+            this.dgvIntervieweeList.Location = new System.Drawing.Point(53, 106);
             this.dgvIntervieweeList.MultiSelect = false;
             this.dgvIntervieweeList.Name = "dgvIntervieweeList";
             this.dgvIntervieweeList.ReadOnly = true;
             this.dgvIntervieweeList.RowHeadersVisible = false;
             this.dgvIntervieweeList.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvIntervieweeList.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvIntervieweeList.Size = new System.Drawing.Size(1018, 200);
+            this.dgvIntervieweeList.Size = new System.Drawing.Size(1056, 327);
             this.dgvIntervieweeList.TabIndex = 51;
             // 
             // lblJob
             // 
             this.lblJob.AutoSize = true;
-            this.lblJob.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJob.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJob.ForeColor = System.Drawing.Color.Black;
-            this.lblJob.Location = new System.Drawing.Point(448, 100);
+            this.lblJob.Location = new System.Drawing.Point(448, 74);
             this.lblJob.Name = "lblJob";
-            this.lblJob.Size = new System.Drawing.Size(42, 19);
+            this.lblJob.Size = new System.Drawing.Size(43, 20);
             this.lblJob.TabIndex = 50;
             this.lblJob.Text = "Job :";
             // 
             // lblEmp
             // 
             this.lblEmp.AutoSize = true;
-            this.lblEmp.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmp.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmp.ForeColor = System.Drawing.Color.Black;
-            this.lblEmp.Location = new System.Drawing.Point(761, 100);
+            this.lblEmp.Location = new System.Drawing.Point(761, 74);
             this.lblEmp.Name = "lblEmp";
-            this.lblEmp.Size = new System.Drawing.Size(90, 19);
+            this.lblEmp.Size = new System.Drawing.Size(89, 20);
             this.lblEmp.TabIndex = 49;
             this.lblEmp.Text = "Employer :";
             // 
             // lblJobOrder
             // 
             this.lblJobOrder.AutoSize = true;
-            this.lblJobOrder.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJobOrder.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJobOrder.ForeColor = System.Drawing.Color.Black;
-            this.lblJobOrder.Location = new System.Drawing.Point(100, 100);
+            this.lblJobOrder.Location = new System.Drawing.Point(100, 74);
             this.lblJobOrder.Name = "lblJobOrder";
-            this.lblJobOrder.Size = new System.Drawing.Size(92, 19);
+            this.lblJobOrder.Size = new System.Drawing.Size(90, 20);
             this.lblJobOrder.TabIndex = 48;
             this.lblJobOrder.Text = "Job Order :";
             // 
             // lblIntervieweeList
             // 
             this.lblIntervieweeList.AutoSize = true;
-            this.lblIntervieweeList.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIntervieweeList.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblIntervieweeList.ForeColor = System.Drawing.Color.Black;
             this.lblIntervieweeList.Location = new System.Drawing.Point(25, 25);
             this.lblIntervieweeList.Name = "lblIntervieweeList";
-            this.lblIntervieweeList.Size = new System.Drawing.Size(269, 39);
+            this.lblIntervieweeList.Size = new System.Drawing.Size(212, 28);
             this.lblIntervieweeList.TabIndex = 47;
             this.lblIntervieweeList.Text = "Interviewee List";
             // 
@@ -129,11 +129,11 @@
             // 
             this.employer.AutoSize = true;
             this.employer.BackColor = System.Drawing.Color.Transparent;
-            this.employer.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employer.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employer.ForeColor = System.Drawing.Color.Black;
-            this.employer.Location = new System.Drawing.Point(857, 100);
+            this.employer.Location = new System.Drawing.Point(857, 74);
             this.employer.Name = "employer";
-            this.employer.Size = new System.Drawing.Size(85, 19);
+            this.employer.Size = new System.Drawing.Size(77, 20);
             this.employer.TabIndex = 487;
             this.employer.Text = "employer";
             // 
@@ -141,11 +141,11 @@
             // 
             this.joborder.AutoSize = true;
             this.joborder.BackColor = System.Drawing.Color.Transparent;
-            this.joborder.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.joborder.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.joborder.ForeColor = System.Drawing.Color.Black;
-            this.joborder.Location = new System.Drawing.Point(198, 100);
+            this.joborder.Location = new System.Drawing.Point(198, 74);
             this.joborder.Name = "joborder";
-            this.joborder.Size = new System.Drawing.Size(76, 19);
+            this.joborder.Size = new System.Drawing.Size(70, 20);
             this.joborder.TabIndex = 486;
             this.joborder.Text = "joborder";
             // 
@@ -153,25 +153,25 @@
             // 
             this.jobname.AutoSize = true;
             this.jobname.BackColor = System.Drawing.Color.Transparent;
-            this.jobname.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.jobname.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.jobname.ForeColor = System.Drawing.Color.Black;
-            this.jobname.Location = new System.Drawing.Point(496, 100);
+            this.jobname.Location = new System.Drawing.Point(496, 74);
             this.jobname.Name = "jobname";
-            this.jobname.Size = new System.Drawing.Size(78, 19);
+            this.jobname.Size = new System.Drawing.Size(72, 20);
             this.jobname.TabIndex = 485;
             this.jobname.Text = "jobname";
             // 
             // btnPassInt
             // 
-            this.btnPassInt.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPassInt.BackColor = System.Drawing.Color.White;
             this.btnPassInt.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnPassInt.FlatAppearance.BorderSize = 0;
             this.btnPassInt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPassInt.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPassInt.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPassInt.ForeColor = System.Drawing.Color.Black;
-            this.btnPassInt.Location = new System.Drawing.Point(357, 366);
+            this.btnPassInt.Location = new System.Drawing.Point(267, 450);
             this.btnPassInt.Name = "btnPassInt";
-            this.btnPassInt.Size = new System.Drawing.Size(200, 30);
+            this.btnPassInt.Size = new System.Drawing.Size(238, 38);
             this.btnPassInt.TabIndex = 52;
             this.btnPassInt.Text = "PASS INTERVIEWEE";
             this.btnPassInt.UseVisualStyleBackColor = false;
@@ -179,15 +179,15 @@
             // 
             // btnFailInt
             // 
-            this.btnFailInt.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnFailInt.BackColor = System.Drawing.Color.White;
             this.btnFailInt.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnFailInt.FlatAppearance.BorderSize = 0;
             this.btnFailInt.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFailInt.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFailInt.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnFailInt.ForeColor = System.Drawing.Color.Black;
-            this.btnFailInt.Location = new System.Drawing.Point(563, 366);
+            this.btnFailInt.Location = new System.Drawing.Point(511, 450);
             this.btnFailInt.Name = "btnFailInt";
-            this.btnFailInt.Size = new System.Drawing.Size(200, 30);
+            this.btnFailInt.Size = new System.Drawing.Size(238, 38);
             this.btnFailInt.TabIndex = 53;
             this.btnFailInt.Text = "FAIL INTERVIEWEE";
             this.btnFailInt.UseVisualStyleBackColor = false;
@@ -195,15 +195,15 @@
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnClose.BackColor = System.Drawing.Color.White;
             this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Location = new System.Drawing.Point(509, 402);
+            this.btnClose.Location = new System.Drawing.Point(755, 450);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(100, 30);
+            this.btnClose.Size = new System.Drawing.Size(106, 38);
             this.btnClose.TabIndex = 54;
             this.btnClose.Text = "CLOSE";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -213,7 +213,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.employer);
             this.Controls.Add(this.joborder);
             this.Controls.Add(this.jobname);
@@ -227,7 +227,7 @@
             this.Controls.Add(this.lblIntervieweeList);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucIntListFinal";
-            this.Size = new System.Drawing.Size(1118, 450);
+            this.Size = new System.Drawing.Size(1155, 500);
             this.Load += new System.EventHandler(this.ucIntListFinal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvIntervieweeList)).EndInit();
             this.ResumeLayout(false);

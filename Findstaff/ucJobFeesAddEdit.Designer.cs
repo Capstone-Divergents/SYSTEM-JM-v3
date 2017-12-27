@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnRemoveFee = new System.Windows.Forms.Button();
             this.btnStart1 = new System.Windows.Forms.Button();
@@ -98,19 +98,19 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 450);
+            this.panel1.Size = new System.Drawing.Size(10, 500);
             this.panel1.TabIndex = 0;
             // 
             // btnRemoveFee
             // 
-            this.btnRemoveFee.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnRemoveFee.BackColor = System.Drawing.Color.White;
             this.btnRemoveFee.Enabled = false;
             this.btnRemoveFee.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRemoveFee.FlatAppearance.BorderSize = 0;
             this.btnRemoveFee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemoveFee.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveFee.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveFee.ForeColor = System.Drawing.Color.Black;
-            this.btnRemoveFee.Location = new System.Drawing.Point(900, 397);
+            this.btnRemoveFee.Location = new System.Drawing.Point(953, 370);
             this.btnRemoveFee.Name = "btnRemoveFee";
             this.btnRemoveFee.Size = new System.Drawing.Size(100, 30);
             this.btnRemoveFee.TabIndex = 277;
@@ -120,13 +120,13 @@
             // 
             // btnStart1
             // 
-            this.btnStart1.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnStart1.BackColor = System.Drawing.Color.White;
             this.btnStart1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnStart1.FlatAppearance.BorderSize = 0;
             this.btnStart1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStart1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStart1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStart1.ForeColor = System.Drawing.Color.Black;
-            this.btnStart1.Location = new System.Drawing.Point(773, 95);
+            this.btnStart1.Location = new System.Drawing.Point(773, 71);
             this.btnStart1.Name = "btnStart1";
             this.btnStart1.Size = new System.Drawing.Size(100, 30);
             this.btnStart1.TabIndex = 286;
@@ -136,39 +136,39 @@
             // 
             // cbJobOrder1
             // 
-            this.cbJobOrder1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbJobOrder1.BackColor = System.Drawing.Color.White;
             this.cbJobOrder1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbJobOrder1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbJobOrder1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbJobOrder1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbJobOrder1.ForeColor = System.Drawing.Color.Black;
             this.cbJobOrder1.FormattingEnabled = true;
-            this.cbJobOrder1.Location = new System.Drawing.Point(215, 98);
+            this.cbJobOrder1.Location = new System.Drawing.Point(215, 74);
             this.cbJobOrder1.Name = "cbJobOrder1";
-            this.cbJobOrder1.Size = new System.Drawing.Size(254, 27);
+            this.cbJobOrder1.Size = new System.Drawing.Size(254, 28);
             this.cbJobOrder1.TabIndex = 285;
             this.cbJobOrder1.SelectedIndexChanged += new System.EventHandler(this.cbJobOrder1_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(28, 160);
+            this.label3.Location = new System.Drawing.Point(28, 120);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 25);
+            this.label3.Size = new System.Drawing.Size(155, 20);
             this.label3.TabIndex = 284;
             this.label3.Text = "JOB ORDER FEES";
             // 
             // txtAmount1
             // 
-            this.txtAmount1.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtAmount1.BackColor = System.Drawing.Color.White;
             this.txtAmount1.Enabled = false;
-            this.txtAmount1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAmount1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmount1.ForeColor = System.Drawing.Color.Black;
-            this.txtAmount1.Location = new System.Drawing.Point(543, 207);
+            this.txtAmount1.Location = new System.Drawing.Point(543, 158);
             this.txtAmount1.MaxLength = 30;
             this.txtAmount1.Name = "txtAmount1";
-            this.txtAmount1.Size = new System.Drawing.Size(200, 26);
+            this.txtAmount1.Size = new System.Drawing.Size(200, 27);
             this.txtAmount1.TabIndex = 283;
             this.txtAmount1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtAmount1_KeyPress);
             // 
@@ -176,35 +176,35 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(453, 210);
+            this.label2.Location = new System.Drawing.Point(453, 161);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 19);
+            this.label2.Size = new System.Drawing.Size(88, 20);
             this.label2.TabIndex = 282;
             this.label2.Text = "Amount: P";
             // 
             // txtEmployer1
             // 
-            this.txtEmployer1.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtEmployer1.BackColor = System.Drawing.Color.White;
             this.txtEmployer1.Enabled = false;
-            this.txtEmployer1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployer1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmployer1.ForeColor = System.Drawing.Color.Black;
-            this.txtEmployer1.Location = new System.Drawing.Point(567, 97);
+            this.txtEmployer1.Location = new System.Drawing.Point(567, 73);
             this.txtEmployer1.MaxLength = 30;
             this.txtEmployer1.Name = "txtEmployer1";
-            this.txtEmployer1.Size = new System.Drawing.Size(200, 26);
+            this.txtEmployer1.Size = new System.Drawing.Size(200, 27);
             this.txtEmployer1.TabIndex = 281;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(475, 100);
+            this.label1.Location = new System.Drawing.Point(475, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 19);
+            this.label1.Size = new System.Drawing.Size(85, 20);
             this.label1.TabIndex = 280;
             this.label1.Text = "Employer:";
             // 
@@ -214,25 +214,25 @@
             this.panel4.Controls.Add(this.btnCancel1);
             this.panel4.Controls.Add(this.btnAddAll);
             this.panel4.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel4.Location = new System.Drawing.Point(435, 460);
+            this.panel4.Location = new System.Drawing.Point(443, 434);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(249, 80);
+            this.panel4.Size = new System.Drawing.Size(215, 64);
             this.panel4.TabIndex = 279;
             // 
             // btnCancel1
             // 
-            this.btnCancel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCancel1.BackColor = System.Drawing.Color.White;
             this.btnCancel1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCancel1.FlatAppearance.BorderSize = 0;
             this.btnCancel1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnCancel1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnCancel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel1.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel1.Location = new System.Drawing.Point(128, 3);
+            this.btnCancel1.Location = new System.Drawing.Point(111, 3);
             this.btnCancel1.Name = "btnCancel1";
-            this.btnCancel1.Size = new System.Drawing.Size(120, 50);
+            this.btnCancel1.Size = new System.Drawing.Size(100, 38);
             this.btnCancel1.TabIndex = 57;
             this.btnCancel1.Text = "CANCEL";
             this.btnCancel1.UseVisualStyleBackColor = false;
@@ -240,7 +240,7 @@
             // 
             // btnAddAll
             // 
-            this.btnAddAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAddAll.BackColor = System.Drawing.Color.White;
             this.btnAddAll.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddAll.Enabled = false;
             this.btnAddAll.FlatAppearance.BorderColor = System.Drawing.Color.Black;
@@ -248,11 +248,11 @@
             this.btnAddAll.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnAddAll.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnAddAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddAll.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddAll.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddAll.ForeColor = System.Drawing.Color.Black;
-            this.btnAddAll.Location = new System.Drawing.Point(2, 3);
+            this.btnAddAll.Location = new System.Drawing.Point(3, 3);
             this.btnAddAll.Name = "btnAddAll";
-            this.btnAddAll.Size = new System.Drawing.Size(120, 50);
+            this.btnAddAll.Size = new System.Drawing.Size(100, 38);
             this.btnAddAll.TabIndex = 56;
             this.btnAddAll.Text = "ADD ALL";
             this.btnAddAll.UseVisualStyleBackColor = false;
@@ -267,35 +267,35 @@
             this.dgvFees1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFees1.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvFees1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFees1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle13.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle13.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle13.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle13.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFees1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvFees1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvFees1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFees1.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFees1.DefaultCellStyle = dataGridViewCellStyle14;
             this.dgvFees1.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvFees1.Location = new System.Drawing.Point(100, 240);
+            this.dgvFees1.Location = new System.Drawing.Point(100, 194);
             this.dgvFees1.MultiSelect = false;
             this.dgvFees1.Name = "dgvFees1";
             this.dgvFees1.ReadOnly = true;
             this.dgvFees1.RowHeadersVisible = false;
             this.dgvFees1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvFees1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFees1.Size = new System.Drawing.Size(900, 150);
+            this.dgvFees1.Size = new System.Drawing.Size(953, 174);
             this.dgvFees1.TabIndex = 278;
             // 
             // Column1
@@ -312,14 +312,14 @@
             // 
             // btnAddFee1
             // 
-            this.btnAddFee1.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddFee1.BackColor = System.Drawing.Color.White;
             this.btnAddFee1.Enabled = false;
             this.btnAddFee1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAddFee1.FlatAppearance.BorderSize = 0;
             this.btnAddFee1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddFee1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFee1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddFee1.ForeColor = System.Drawing.Color.Black;
-            this.btnAddFee1.Location = new System.Drawing.Point(749, 204);
+            this.btnAddFee1.Location = new System.Drawing.Point(749, 155);
             this.btnAddFee1.Name = "btnAddFee1";
             this.btnAddFee1.Size = new System.Drawing.Size(100, 30);
             this.btnAddFee1.TabIndex = 276;
@@ -329,26 +329,26 @@
             // 
             // cbFees1
             // 
-            this.cbFees1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbFees1.BackColor = System.Drawing.Color.White;
             this.cbFees1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbFees1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbFees1.Enabled = false;
-            this.cbFees1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFees1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbFees1.ForeColor = System.Drawing.Color.Black;
             this.cbFees1.FormattingEnabled = true;
-            this.cbFees1.Location = new System.Drawing.Point(193, 207);
+            this.cbFees1.Location = new System.Drawing.Point(193, 158);
             this.cbFees1.Name = "cbFees1";
-            this.cbFees1.Size = new System.Drawing.Size(254, 27);
+            this.cbFees1.Size = new System.Drawing.Size(254, 28);
             this.cbFees1.TabIndex = 275;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(100, 210);
+            this.label7.Location = new System.Drawing.Point(100, 161);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 19);
+            this.label7.Size = new System.Drawing.Size(88, 20);
             this.label7.TabIndex = 274;
             this.label7.Text = "Fee Name:";
             // 
@@ -356,22 +356,22 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(100, 100);
+            this.label8.Location = new System.Drawing.Point(100, 76);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 19);
+            this.label8.Size = new System.Drawing.Size(109, 20);
             this.label8.TabIndex = 272;
             this.label8.Text = "Job Order ID:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(25, 25);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(219, 39);
+            this.label9.Size = new System.Drawing.Size(172, 28);
             this.label9.TabIndex = 271;
             this.label9.Text = "Add Job Fees";
             // 
@@ -393,20 +393,20 @@
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(52, 0);
+            this.panel2.Location = new System.Drawing.Point(1145, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1066, 450);
+            this.panel2.Size = new System.Drawing.Size(10, 500);
             this.panel2.TabIndex = 1;
             // 
             // btnRemoveFee2
             // 
-            this.btnRemoveFee2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnRemoveFee2.BackColor = System.Drawing.Color.White;
             this.btnRemoveFee2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnRemoveFee2.FlatAppearance.BorderSize = 0;
             this.btnRemoveFee2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRemoveFee2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRemoveFee2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnRemoveFee2.ForeColor = System.Drawing.Color.Black;
-            this.btnRemoveFee2.Location = new System.Drawing.Point(900, 394);
+            this.btnRemoveFee2.Location = new System.Drawing.Point(953, 370);
             this.btnRemoveFee2.Name = "btnRemoveFee2";
             this.btnRemoveFee2.Size = new System.Drawing.Size(100, 30);
             this.btnRemoveFee2.TabIndex = 277;
@@ -416,20 +416,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Rockwell", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(25, 160);
+            this.label4.Location = new System.Drawing.Point(28, 120);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(195, 25);
+            this.label4.Size = new System.Drawing.Size(155, 20);
             this.label4.TabIndex = 284;
             this.label4.Text = "JOB ORDER FEES";
             // 
             // txtAmount2
             // 
-            this.txtAmount2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtAmount2.BackColor = System.Drawing.Color.White;
             this.txtAmount2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAmount2.ForeColor = System.Drawing.Color.Black;
-            this.txtAmount2.Location = new System.Drawing.Point(543, 207);
+            this.txtAmount2.Location = new System.Drawing.Point(547, 159);
             this.txtAmount2.MaxLength = 30;
             this.txtAmount2.Name = "txtAmount2";
             this.txtAmount2.Size = new System.Drawing.Size(200, 26);
@@ -439,35 +439,35 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(453, 210);
+            this.label5.Location = new System.Drawing.Point(453, 161);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(84, 19);
+            this.label5.Size = new System.Drawing.Size(88, 20);
             this.label5.TabIndex = 282;
             this.label5.Text = "Amount: P";
             // 
             // txtEmployer2
             // 
-            this.txtEmployer2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtEmployer2.BackColor = System.Drawing.Color.White;
             this.txtEmployer2.Enabled = false;
-            this.txtEmployer2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmployer2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmployer2.ForeColor = System.Drawing.Color.Black;
-            this.txtEmployer2.Location = new System.Drawing.Point(513, 97);
+            this.txtEmployer2.Location = new System.Drawing.Point(543, 73);
             this.txtEmployer2.MaxLength = 30;
             this.txtEmployer2.Name = "txtEmployer2";
-            this.txtEmployer2.Size = new System.Drawing.Size(200, 26);
+            this.txtEmployer2.Size = new System.Drawing.Size(200, 27);
             this.txtEmployer2.TabIndex = 281;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(421, 100);
+            this.label6.Location = new System.Drawing.Point(453, 76);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(86, 19);
+            this.label6.Size = new System.Drawing.Size(85, 20);
             this.label6.TabIndex = 280;
             this.label6.Text = "Employer:";
             // 
@@ -477,25 +477,25 @@
             this.panel3.Controls.Add(this.btnCancel2);
             this.panel3.Controls.Add(this.btnSave);
             this.panel3.Font = new System.Drawing.Font("Rockwell", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(435, 460);
+            this.panel3.Location = new System.Drawing.Point(443, 434);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(249, 80);
+            this.panel3.Size = new System.Drawing.Size(212, 64);
             this.panel3.TabIndex = 279;
             // 
             // btnCancel2
             // 
-            this.btnCancel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCancel2.BackColor = System.Drawing.Color.White;
             this.btnCancel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCancel2.FlatAppearance.BorderSize = 0;
             this.btnCancel2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnCancel2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnCancel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel2.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel2.Location = new System.Drawing.Point(128, 3);
+            this.btnCancel2.Location = new System.Drawing.Point(111, 3);
             this.btnCancel2.Name = "btnCancel2";
-            this.btnCancel2.Size = new System.Drawing.Size(120, 50);
+            this.btnCancel2.Size = new System.Drawing.Size(100, 38);
             this.btnCancel2.TabIndex = 57;
             this.btnCancel2.Text = "CANCEL";
             this.btnCancel2.UseVisualStyleBackColor = false;
@@ -503,18 +503,18 @@
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSave.BackColor = System.Drawing.Color.White;
             this.btnSave.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnSave.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
             this.btnSave.Location = new System.Drawing.Point(2, 3);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(120, 50);
+            this.btnSave.Size = new System.Drawing.Size(100, 38);
             this.btnSave.TabIndex = 56;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -529,43 +529,43 @@
             this.dgvFees2.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvFees2.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvFees2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvFees2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvFees2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.dgvFees2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvFees2.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle16.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvFees2.DefaultCellStyle = dataGridViewCellStyle16;
             this.dgvFees2.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvFees2.Location = new System.Drawing.Point(100, 240);
+            this.dgvFees2.Location = new System.Drawing.Point(100, 194);
             this.dgvFees2.MultiSelect = false;
             this.dgvFees2.Name = "dgvFees2";
             this.dgvFees2.ReadOnly = true;
             this.dgvFees2.RowHeadersVisible = false;
             this.dgvFees2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvFees2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFees2.Size = new System.Drawing.Size(900, 150);
+            this.dgvFees2.Size = new System.Drawing.Size(953, 174);
             this.dgvFees2.TabIndex = 278;
             // 
             // btnAddFee2
             // 
-            this.btnAddFee2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAddFee2.BackColor = System.Drawing.Color.White;
             this.btnAddFee2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAddFee2.FlatAppearance.BorderSize = 0;
             this.btnAddFee2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddFee2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddFee2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddFee2.ForeColor = System.Drawing.Color.Black;
-            this.btnAddFee2.Location = new System.Drawing.Point(749, 204);
+            this.btnAddFee2.Location = new System.Drawing.Point(753, 156);
             this.btnAddFee2.Name = "btnAddFee2";
             this.btnAddFee2.Size = new System.Drawing.Size(100, 30);
             this.btnAddFee2.TabIndex = 276;
@@ -574,60 +574,60 @@
             // 
             // cbFees2
             // 
-            this.cbFees2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbFees2.BackColor = System.Drawing.Color.White;
             this.cbFees2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbFees2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbFees2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbFees2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbFees2.ForeColor = System.Drawing.Color.Black;
             this.cbFees2.FormattingEnabled = true;
-            this.cbFees2.Location = new System.Drawing.Point(195, 206);
+            this.cbFees2.Location = new System.Drawing.Point(195, 158);
             this.cbFees2.Name = "cbFees2";
-            this.cbFees2.Size = new System.Drawing.Size(184, 27);
+            this.cbFees2.Size = new System.Drawing.Size(220, 28);
             this.cbFees2.TabIndex = 275;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(100, 210);
+            this.label10.Location = new System.Drawing.Point(100, 161);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(89, 19);
+            this.label10.Size = new System.Drawing.Size(88, 20);
             this.label10.TabIndex = 274;
             this.label10.Text = "Fee Name:";
             // 
             // txtJobOrder2
             // 
-            this.txtJobOrder2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtJobOrder2.BackColor = System.Drawing.Color.White;
             this.txtJobOrder2.Enabled = false;
-            this.txtJobOrder2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtJobOrder2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJobOrder2.ForeColor = System.Drawing.Color.Black;
-            this.txtJobOrder2.Location = new System.Drawing.Point(215, 97);
+            this.txtJobOrder2.Location = new System.Drawing.Point(215, 73);
             this.txtJobOrder2.MaxLength = 30;
             this.txtJobOrder2.Name = "txtJobOrder2";
-            this.txtJobOrder2.Size = new System.Drawing.Size(200, 26);
+            this.txtJobOrder2.Size = new System.Drawing.Size(200, 27);
             this.txtJobOrder2.TabIndex = 273;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(100, 100);
+            this.label11.Location = new System.Drawing.Point(100, 76);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(109, 19);
+            this.label11.Size = new System.Drawing.Size(109, 20);
             this.label11.TabIndex = 272;
             this.label11.Text = "Job Order ID:";
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(25, 25);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(220, 39);
+            this.label12.Size = new System.Drawing.Size(176, 28);
             this.label12.TabIndex = 271;
             this.label12.Text = "Edit Job Fees";
             // 
@@ -635,11 +635,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ucJobFeesAddEdit";
-            this.Size = new System.Drawing.Size(1118, 450);
+            this.Size = new System.Drawing.Size(1155, 500);
             this.VisibleChanged += new System.EventHandler(this.ucJobFeesAddEdit_VisibleChanged);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

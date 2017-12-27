@@ -30,7 +30,6 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.lblReports = new System.Windows.Forms.Label();
             this.dgvReports = new System.Windows.Forms.DataGridView();
             this.cbUnderDept = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -39,18 +38,6 @@
             this.btnCreatePdf = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvReports)).BeginInit();
             this.SuspendLayout();
-            // 
-            // lblReports
-            // 
-            this.lblReports.AutoSize = true;
-            this.lblReports.BackColor = System.Drawing.Color.Transparent;
-            this.lblReports.Font = new System.Drawing.Font("Rockwell", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReports.ForeColor = System.Drawing.Color.Black;
-            this.lblReports.Location = new System.Drawing.Point(25, 75);
-            this.lblReports.Name = "lblReports";
-            this.lblReports.Size = new System.Drawing.Size(161, 46);
-            this.lblReports.TabIndex = 87;
-            this.lblReports.Text = "Reports";
             // 
             // dgvReports
             // 
@@ -79,22 +66,22 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvReports.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvReports.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvReports.Location = new System.Drawing.Point(50, 200);
+            this.dgvReports.Location = new System.Drawing.Point(50, 111);
             this.dgvReports.MultiSelect = false;
             this.dgvReports.Name = "dgvReports";
             this.dgvReports.ReadOnly = true;
             this.dgvReports.RowHeadersVisible = false;
             this.dgvReports.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvReports.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvReports.Size = new System.Drawing.Size(1018, 200);
+            this.dgvReports.Size = new System.Drawing.Size(1059, 373);
             this.dgvReports.TabIndex = 57;
             // 
             // cbUnderDept
             // 
-            this.cbUnderDept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbUnderDept.BackColor = System.Drawing.Color.White;
             this.cbUnderDept.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbUnderDept.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbUnderDept.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbUnderDept.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbUnderDept.ForeColor = System.Drawing.Color.Black;
             this.cbUnderDept.FormattingEnabled = true;
             this.cbUnderDept.Items.AddRange(new object[] {
@@ -104,33 +91,33 @@
             "Deployed",
             "Withdrawn",
             "Select All"});
-            this.cbUnderDept.Location = new System.Drawing.Point(251, 147);
+            this.cbUnderDept.Location = new System.Drawing.Point(197, 73);
             this.cbUnderDept.Name = "cbUnderDept";
-            this.cbUnderDept.Size = new System.Drawing.Size(211, 27);
+            this.cbUnderDept.Size = new System.Drawing.Size(211, 28);
             this.cbUnderDept.TabIndex = 307;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(100, 150);
+            this.label8.Location = new System.Drawing.Point(46, 76);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(145, 19);
+            this.label8.Size = new System.Drawing.Size(150, 20);
             this.label8.TabIndex = 306;
             this.label8.Text = "Application Status:";
             // 
             // btnLoad
             // 
-            this.btnLoad.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnLoad.BackColor = System.Drawing.Color.White;
             this.btnLoad.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnLoad.FlatAppearance.BorderSize = 0;
             this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLoad.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoad.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLoad.ForeColor = System.Drawing.Color.Black;
-            this.btnLoad.Location = new System.Drawing.Point(468, 144);
+            this.btnLoad.Location = new System.Drawing.Point(414, 70);
             this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(108, 30);
+            this.btnLoad.Size = new System.Drawing.Size(114, 30);
             this.btnLoad.TabIndex = 308;
             this.btnLoad.Text = "GENERATE";
             this.btnLoad.UseVisualStyleBackColor = false;
@@ -142,23 +129,23 @@
             this.pnlTabs.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTabs.Location = new System.Drawing.Point(0, 0);
             this.pnlTabs.Name = "pnlTabs";
-            this.pnlTabs.Size = new System.Drawing.Size(1118, 50);
+            this.pnlTabs.Size = new System.Drawing.Size(1155, 50);
             this.pnlTabs.TabIndex = 309;
             // 
             // btnCreatePdf
             // 
-            this.btnCreatePdf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCreatePdf.BackColor = System.Drawing.Color.White;
             this.btnCreatePdf.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCreatePdf.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCreatePdf.FlatAppearance.BorderSize = 0;
             this.btnCreatePdf.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnCreatePdf.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnCreatePdf.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCreatePdf.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCreatePdf.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCreatePdf.ForeColor = System.Drawing.Color.Black;
-            this.btnCreatePdf.Location = new System.Drawing.Point(499, 425);
+            this.btnCreatePdf.Location = new System.Drawing.Point(479, 492);
             this.btnCreatePdf.Name = "btnCreatePdf";
-            this.btnCreatePdf.Size = new System.Drawing.Size(120, 50);
+            this.btnCreatePdf.Size = new System.Drawing.Size(200, 39);
             this.btnCreatePdf.TabIndex = 310;
             this.btnCreatePdf.Text = "CREATE PDF";
             this.btnCreatePdf.UseVisualStyleBackColor = false;
@@ -169,17 +156,16 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.btnCreatePdf);
             this.Controls.Add(this.pnlTabs);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.cbUnderDept);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dgvReports);
-            this.Controls.Add(this.lblReports);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucReports";
-            this.Size = new System.Drawing.Size(1118, 500);
+            this.Size = new System.Drawing.Size(1155, 547);
             ((System.ComponentModel.ISupportInitialize)(this.dgvReports)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -187,7 +173,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label lblReports;
         private System.Windows.Forms.ComboBox cbUnderDept;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.DataGridView dgvReports;
