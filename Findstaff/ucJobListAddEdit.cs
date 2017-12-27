@@ -228,30 +228,25 @@ namespace Findstaff
                     cbReqName2.Items.Add(dr[0]);
                 }
                 dr.Close();
+                cmd = "select count(*) from joborder_t";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    txtJobOrder1.Text = (Convert.ToUInt32(dr[0].ToString()) + 1).ToString();
+                }
+                dr.Close();
                 connection.Close();
             }
             else
             {
                 cbEmployer1.Items.Clear();
+                cbEmployer2.Items.Clear();
                 cbSkillName.Items.Clear();
-                cbReqName.Items.Clear();
                 cbSkillName2.Items.Clear();
+                cbReqName.Items.Clear();
                 cbReqName2.Items.Clear();
             }
-        }
-
-        private void cbJOrder1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            connection.Open();
-            cmd = "select e.employername from joborder_t j join employer_t e on j.employer_id = e.employer_id where j.jorder_id = '"+cbEmployer1.Text+"'";
-            com = new MySqlCommand(cmd, connection);
-            dr = com.ExecuteReader();
-            while (dr.Read())
-            {
-                cbEmployer2.Text = dr[0].ToString();
-            }
-            dr.Close();
-            connection.Close();
         }
 
         private void btnAddSkill_Click(object sender, EventArgs e)

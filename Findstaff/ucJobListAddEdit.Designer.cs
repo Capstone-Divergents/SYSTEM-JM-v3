@@ -883,7 +883,7 @@
             this.panel1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 450);
+            this.panel1.Size = new System.Drawing.Size(813, 450);
             this.panel1.TabIndex = 16;
             // 
             // cbYear
@@ -1100,7 +1100,6 @@
             this.cbEmployer1.Name = "cbEmployer1";
             this.cbEmployer1.Size = new System.Drawing.Size(300, 28);
             this.cbEmployer1.TabIndex = 64;
-            this.cbEmployer1.SelectedIndexChanged += new System.EventHandler(this.cbJOrder1_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -1667,13 +1666,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtJobOrder1;
         private System.Windows.Forms.NumericUpDown nddEmployees1;
-        private System.Windows.Forms.NumericUpDown nddEmployees2;
         private System.Windows.Forms.RadioButton rbAll2;
         private System.Windows.Forms.RadioButton rbFemale2;
         private System.Windows.Forms.RadioButton rbMale2;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label lblJOrder;
         private System.Windows.Forms.Button btnAddSkills2;
         public System.Windows.Forms.ComboBox cbJobName2;
         public System.Windows.Forms.ComboBox cbEmployer2;
@@ -1685,5 +1682,7 @@
         public System.Windows.Forms.ComboBox cbDay2;
         private System.Windows.Forms.Label label14;
         public System.Windows.Forms.ComboBox cbMonth2;
+        public System.Windows.Forms.Label lblJOrder;
+        public System.Windows.Forms.NumericUpDown nddEmployees2;
     }
 }
