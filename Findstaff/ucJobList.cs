@@ -57,7 +57,7 @@ namespace Findstaff
             }
             dr.Close();
 
-            cmd = "select reqapp, salary, heightreq, weightreq from joblist_t where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select reqapp, salary, heightreq, weightreq, gender, monthname(CNTRCTSTART), day(cntrctstart), year(cntrctstart) from joborder_t where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
@@ -66,6 +66,21 @@ namespace Findstaff
                 ucJobListAddEdit.txtSalary2.Text = dr[1].ToString();
                 ucJobListAddEdit.txtHeight2.Text = dr[2].ToString();
                 ucJobListAddEdit.txtWeight2.Text = dr[3].ToString();
+                if(ucJobListAddEdit.rbMale2.Text == dr[4].ToString())
+                {
+                    ucJobListAddEdit.rbMale2.Checked = true;
+                }
+                else if (ucJobListAddEdit.rbFemale2.Text == dr[4].ToString())
+                {
+                    ucJobListAddEdit.rbFemale2.Checked = true;
+                }
+                else if (ucJobListAddEdit.rbAll2.Text == dr[4].ToString())
+                {
+                    ucJobListAddEdit.rbAll2.Checked = true;
+                }
+                ucJobListAddEdit.cbMonth2.Text = dr[5].ToString();
+                ucJobListAddEdit.cbDay2.Text = dr[6].ToString();
+                ucJobListAddEdit.cbYear2.Text = dr[7].ToString();
             }
             dr.Close();
 
@@ -78,7 +93,7 @@ namespace Findstaff
             }
             dr.Close();
 
-            cmd = "select jc.categoryname from jobcategory_t jc join joblist_t jl on jc.category_id = jl.category_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select jc.categoryname from jobcategory_t jc join joborder_t jo on jc.category_id = jo.category_id where jo.jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
@@ -87,7 +102,7 @@ namespace Findstaff
             }
             dr.Close();
 
-            cmd = "select g.skillname'Skill Name', js.proflevel'Proficiency Level' from jobskills_t js join genskills_t g on js.skill_id = g.skill_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select g.skillname'Skill Name', js.proflevel'Proficiency Level' from jobskills_t js join genskills_t g on js.skill_id = g.skill_id where js.jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
@@ -98,7 +113,7 @@ namespace Findstaff
                 }
             }
 
-            cmd = "select g.reqname'Requirement Name' from jobdocs_t j join genreqs_t g on j.req_id = g.req_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select g.reqname'Requirement Name' from jobdocs_t j join genreqs_t g on j.req_id = g.req_id where j.jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
@@ -134,7 +149,7 @@ namespace Findstaff
             }
             dr.Close();
 
-            cmd = "select reqapp, salary, heightreq, weightreq from joblist_t where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select reqapp, salary, heightreq, weightreq from joborder_t where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
@@ -213,9 +228,9 @@ namespace Findstaff
             Connection con = new Connection();
             connection = con.dbConnection();
             connection.Open();
-            cmd = "select jo.jorder_id'Job Order ID', j.jobname'Job', e.employername'Employer', jl.reqapp'No. of Required Applicants' " +
-                "from joborder_t jo join joblist_t jl on jo.JORDER_ID = jl.jorder_id join employer_t e on jo.employer_id = e.employer_id " +
-                "join job_t j on jl.job_id = j.job_id where jo.cntrctstat = 'Active' or jo.cntrctstat = 'Renewed';";
+            cmd = "select jo.jorder_id'Job Order ID', j.jobname'Job', e.employername'Employer', jo.reqapp'No. of Required Applicants' " +
+                "from joborder_t jo join employer_t e on jo.employer_id = e.employer_id " +
+                "join job_t j on jo.job_id = j.job_id where jo.cntrctstat = 'Active' or jo.cntrctstat = 'Renewed';";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))

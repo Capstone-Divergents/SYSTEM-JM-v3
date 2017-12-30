@@ -40,7 +40,7 @@ namespace Findstaff
             }
             dr.Close();
             cmd = "select app.app_no'Application No.', a.app_id'Applicant ID', concat(a.lname, ', ', a.fname, ' ', a.mname)'Applicant Name', app.initinterviewdate'Interview Date' from applications_t app "
-                    + "join app_t a on app.app_id = a.app_id where app.appstats = 'Active' and app.appstatus = 'Recruitment' "
+                    + "join app_t a on app.app_id = a.app_id where app.appstats = 'Active' and a.appstatus = 'For Initial Interview' "
                     + "and app.jorder_id = '" + jorder + "' and app.job_id = '" + jobID + "' and app.employer_id = '" + empID + "' and initinterviewstatus is null";
             using (connection)
             {
@@ -67,18 +67,21 @@ namespace Findstaff
 
         private void btnIntApp_Click(object sender, EventArgs e)
         {
-            jorder = joborder.Text;
-            job = jobname.Text;
-            employername = employer.Text;
-            appno = dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString();
-            appname = dgvIntervieweeList.SelectedRows[0].Cells[2].Value.ToString();
-            ucInterviewCriteria.txtAppName.Text = appname;
-            ucInterviewCriteria.txtAppNo.Text = appno;
-            ucInterviewCriteria.txtJobOrderId.Text = jorder;
-            ucInterviewCriteria.txtJobName.Text = job;
-            ucInterviewCriteria.txtEmpName.Text = employername;
-            ucInterviewCriteria.Dock = DockStyle.Fill;
-            ucInterviewCriteria.Visible = true;
+            if(dgvIntervieweeList.Rows.Count != 0)
+            {
+                jorder = joborder.Text;
+                job = jobname.Text;
+                employername = employer.Text;
+                appno = dgvIntervieweeList.SelectedRows[0].Cells[0].Value.ToString();
+                appname = dgvIntervieweeList.SelectedRows[0].Cells[2].Value.ToString();
+                ucInterviewCriteria.txtAppName.Text = appname;
+                ucInterviewCriteria.txtAppNo.Text = appno;
+                ucInterviewCriteria.txtJobOrderId.Text = jorder;
+                ucInterviewCriteria.txtJobName.Text = job;
+                ucInterviewCriteria.txtEmpName.Text = employername;
+                ucInterviewCriteria.Dock = DockStyle.Fill;
+                ucInterviewCriteria.Visible = true;
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)

@@ -31,17 +31,20 @@ namespace Findstaff
 
         private void btnViewAcco_Click(object sender, EventArgs e)
         {
-            string appNo = dgvAccounting.SelectedRows[0].Cells[0].Value.ToString(), appName = dgvAccounting.SelectedRows[0].Cells[1].Value.ToString();
-            ucAccoView.init(appNo, appName);
-            ucAccoView.Dock = DockStyle.Fill;
-            ucAccoView.Visible = true;
+            if(dgvAccounting.Rows.Count != 0)
+            {
+                string appNo = dgvAccounting.SelectedRows[0].Cells[0].Value.ToString(), appName = dgvAccounting.SelectedRows[0].Cells[1].Value.ToString();
+                ucAccoView.init(appNo, appName);
+                ucAccoView.Dock = DockStyle.Fill;
+                ucAccoView.Visible = true;
+            }
         }
 
         private void ucAcco_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            cmd = "select a.app_no, app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', count(p.fee_id)'No. of Fees to be payed' "
+            cmd = "select a.app_no'Application No.', app.app_id'App ID', concat(app.lname, ', ', app.fname, ' ', app.mname)'Applicant Name', count(p.fee_id)'No. of Fees to be payed' "
                     + "from app_t app join payables_t p "
                     + "on app.app_id = p.app_id "
                     + "join applications_t a on a.app_no = p.app_no "
@@ -66,7 +69,7 @@ namespace Findstaff
                     + "from app_t app join payables_t p "
                     + "on app.app_id = p.app_id "
                     + "join applications_t a on a.app_no = p.app_no "
-                    + "where a.appstatus = 'Accounting' and a.appstats = 'Active' "
+                    + "where app.appstatus = 'Payment' and a.appstats = 'Active' "
                     + "group by p.app_no";
             using (connection)
             {
@@ -89,7 +92,7 @@ namespace Findstaff
                     + "from app_t app join payables_t p "
                     + "on app.app_id = p.app_id "
                     + "join applications_t a on a.app_no = p.app_no "
-                    + "where app.appstatus = 'Accounting' and a.appstats = 'Active' and concat(app.app_id , ' ', app.lname, ', ', app.fname, ' ', app.mname) LIKE '%" + valueToFind + "%' "
+                    + "where app.appstatus = 'Payment' and a.appstats = 'Active' and concat(app.app_id , ' ', app.lname, ', ', app.fname, ' ', app.mname) LIKE '%" + valueToFind + "%' "
                     + "group by p.app_no ";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();

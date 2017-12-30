@@ -58,7 +58,7 @@ namespace Findstaff
             }
             if(ctr == 0)
             {
-                cmd = "update applications_t set appstatus = 'Accounting' where app_no = '"+appNo+"'";
+                cmd = "update app_t set appstatus = 'Payment' where app_id = '"+appID+"'";
                 com = new MySqlCommand(cmd, connection);
                 com.ExecuteNonQuery();
                 cmd = "select count(fee_id) from jobfees_t where jorder_id = '" + jorder + "'";

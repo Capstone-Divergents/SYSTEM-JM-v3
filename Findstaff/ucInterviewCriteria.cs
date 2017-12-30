@@ -759,11 +759,17 @@ namespace Findstaff
                                                                                                                                 cmd = "update applications_t set initinterviewstatus = 'Passed' where app_no = '" + txtAppNo.Text + "'";
                                                                                                                                 com = new MySqlCommand(cmd, connection);
                                                                                                                                 com.ExecuteNonQuery();
+                                                                                                                                cmd = "update app_t set appstatus = 'For Final Interview' where Concat(lname, ', ', fname, ' ', mname) = '" + txtAppName.Text + "'";
+                                                                                                                                com = new MySqlCommand(cmd, connection);
+                                                                                                                                com.ExecuteNonQuery();
                                                                                                                                 MessageBox.Show("Evaluation Result\n\nEvaluation Score : " + ctr.ToString() + " / 140\nInitial Interview Status: Passed");
                                                                                                                             }
                                                                                                                             else
                                                                                                                             {
                                                                                                                                 cmd = "update applications_t set initinterviewstatus = 'Failed' where app_no = '" + txtAppNo.Text + "'";
+                                                                                                                                com = new MySqlCommand(cmd, connection);
+                                                                                                                                com.ExecuteNonQuery();
+                                                                                                                                cmd = "update app_t set appstatus = 'Archived' where Concat(lname, ', ', fname, ' ', mname) = '" + txtAppName.Text + "'";
                                                                                                                                 com = new MySqlCommand(cmd, connection);
                                                                                                                                 com.ExecuteNonQuery();
                                                                                                                                 MessageBox.Show("Evaluation Result\n\nEvaluation Score : " + ctr.ToString() + " / 140\nInitial Interview Status: Failed");
