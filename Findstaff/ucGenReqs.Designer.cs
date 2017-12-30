@@ -44,7 +44,7 @@
             // 
             // pnlTabs
             // 
-            this.pnlTabs.BackColor = System.Drawing.Color.Gainsboro;
+            this.pnlTabs.BackColor = System.Drawing.Color.White;
             this.pnlTabs.Controls.Add(this.rbJobs);
             this.pnlTabs.Controls.Add(this.rbRequirements);
             this.pnlTabs.Controls.Add(this.rbSkills);
@@ -66,7 +66,7 @@
             this.rbJobs.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.rbJobs.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rbJobs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbJobs.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbJobs.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbJobs.ForeColor = System.Drawing.Color.White;
             this.rbJobs.Location = new System.Drawing.Point(822, 10);
             this.rbJobs.Name = "rbJobs";
@@ -87,7 +87,7 @@
             this.rbRequirements.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.rbRequirements.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rbRequirements.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbRequirements.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbRequirements.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbRequirements.ForeColor = System.Drawing.Color.White;
             this.rbRequirements.Location = new System.Drawing.Point(666, 10);
             this.rbRequirements.Name = "rbRequirements";
@@ -108,7 +108,7 @@
             this.rbSkills.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.rbSkills.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rbSkills.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbSkills.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbSkills.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbSkills.ForeColor = System.Drawing.Color.White;
             this.rbSkills.Location = new System.Drawing.Point(560, 10);
             this.rbSkills.Name = "rbSkills";
@@ -129,7 +129,7 @@
             this.rbJobCategory.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.rbJobCategory.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rbJobCategory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbJobCategory.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbJobCategory.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbJobCategory.ForeColor = System.Drawing.Color.White;
             this.rbJobCategory.Location = new System.Drawing.Point(434, 10);
             this.rbJobCategory.Name = "rbJobCategory";
@@ -150,7 +150,7 @@
             this.rbFees.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.rbFees.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.rbFees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbFees.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFees.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbFees.ForeColor = System.Drawing.Color.White;
             this.rbFees.Location = new System.Drawing.Point(328, 10);
             this.rbFees.Name = "rbFees";
@@ -215,7 +215,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.ucJobs);
             this.Controls.Add(this.ucRequirements);
             this.Controls.Add(this.ucSkills);

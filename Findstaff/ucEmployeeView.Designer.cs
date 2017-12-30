@@ -52,11 +52,11 @@
             // 
             this.gender.AutoSize = true;
             this.gender.BackColor = System.Drawing.Color.Transparent;
-            this.gender.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gender.ForeColor = System.Drawing.Color.Black;
-            this.gender.Location = new System.Drawing.Point(558, 174);
+            this.gender.Location = new System.Drawing.Point(558, 193);
             this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(64, 19);
+            this.gender.Size = new System.Drawing.Size(60, 20);
             this.gender.TabIndex = 94;
             this.gender.Text = "gender";
             // 
@@ -64,11 +64,11 @@
             // 
             this.lblGender.AutoSize = true;
             this.lblGender.BackColor = System.Drawing.Color.Transparent;
-            this.lblGender.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGender.ForeColor = System.Drawing.Color.Black;
-            this.lblGender.Location = new System.Drawing.Point(458, 174);
+            this.lblGender.Location = new System.Drawing.Point(458, 193);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(75, 19);
+            this.lblGender.Size = new System.Drawing.Size(71, 20);
             this.lblGender.TabIndex = 93;
             this.lblGender.Text = "Gender :";
             // 
@@ -76,11 +76,11 @@
             // 
             this.bday.AutoSize = true;
             this.bday.BackColor = System.Drawing.Color.Transparent;
-            this.bday.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bday.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bday.ForeColor = System.Drawing.Color.Black;
-            this.bday.Location = new System.Drawing.Point(559, 204);
+            this.bday.Location = new System.Drawing.Point(559, 223);
             this.bday.Name = "bday";
-            this.bday.Size = new System.Drawing.Size(48, 19);
+            this.bday.Size = new System.Drawing.Size(45, 20);
             this.bday.TabIndex = 92;
             this.bday.Text = "bday";
             // 
@@ -88,28 +88,28 @@
             // 
             this.lblBirthday.AutoSize = true;
             this.lblBirthday.BackColor = System.Drawing.Color.Transparent;
-            this.lblBirthday.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthday.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBirthday.ForeColor = System.Drawing.Color.Black;
-            this.lblBirthday.Location = new System.Drawing.Point(453, 204);
+            this.lblBirthday.Location = new System.Drawing.Point(445, 223);
             this.lblBirthday.Name = "lblBirthday";
-            this.lblBirthday.Size = new System.Drawing.Size(80, 19);
+            this.lblBirthday.Size = new System.Drawing.Size(84, 20);
             this.lblBirthday.TabIndex = 91;
             this.lblBirthday.Text = "Birthday :";
             // 
             // btnClose
             // 
-            this.btnClose.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnClose.BackColor = System.Drawing.Color.White;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnClose.FlatAppearance.BorderSize = 0;
             this.btnClose.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnClose.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClose.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnClose.ForeColor = System.Drawing.Color.Black;
-            this.btnClose.Location = new System.Drawing.Point(500, 375);
+            this.btnClose.Location = new System.Drawing.Point(504, 430);
             this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(120, 50);
+            this.btnClose.Size = new System.Drawing.Size(100, 38);
             this.btnClose.TabIndex = 90;
             this.btnClose.Text = "CLOSE";
             this.btnClose.UseVisualStyleBackColor = false;
@@ -119,11 +119,11 @@
             // 
             this.empID.AutoSize = true;
             this.empID.BackColor = System.Drawing.Color.Transparent;
-            this.empID.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.empID.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.empID.ForeColor = System.Drawing.Color.Black;
-            this.empID.Location = new System.Drawing.Point(557, 80);
+            this.empID.Location = new System.Drawing.Point(557, 99);
             this.empID.Name = "empID";
-            this.empID.Size = new System.Drawing.Size(63, 19);
+            this.empID.Size = new System.Drawing.Size(59, 20);
             this.empID.TabIndex = 89;
             this.empID.Text = "empID";
             // 
@@ -131,11 +131,11 @@
             // 
             this.lblEmpID.AutoSize = true;
             this.lblEmpID.BackColor = System.Drawing.Color.Transparent;
-            this.lblEmpID.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEmpID.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEmpID.ForeColor = System.Drawing.Color.Black;
-            this.lblEmpID.Location = new System.Drawing.Point(420, 80);
+            this.lblEmpID.Location = new System.Drawing.Point(420, 99);
             this.lblEmpID.Name = "lblEmpID";
-            this.lblEmpID.Size = new System.Drawing.Size(113, 19);
+            this.lblEmpID.Size = new System.Drawing.Size(113, 20);
             this.lblEmpID.TabIndex = 88;
             this.lblEmpID.Text = "Employee ID :";
             // 
@@ -143,11 +143,11 @@
             // 
             this.dept.AutoSize = true;
             this.dept.BackColor = System.Drawing.Color.Transparent;
-            this.dept.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dept.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dept.ForeColor = System.Drawing.Color.Black;
-            this.dept.Location = new System.Drawing.Point(558, 301);
+            this.dept.Location = new System.Drawing.Point(558, 320);
             this.dept.Name = "dept";
-            this.dept.Size = new System.Drawing.Size(44, 19);
+            this.dept.Size = new System.Drawing.Size(41, 20);
             this.dept.TabIndex = 86;
             this.dept.Text = "dept";
             // 
@@ -155,11 +155,11 @@
             // 
             this.contactNum.AutoSize = true;
             this.contactNum.BackColor = System.Drawing.Color.Transparent;
-            this.contactNum.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contactNum.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.contactNum.ForeColor = System.Drawing.Color.Black;
-            this.contactNum.Location = new System.Drawing.Point(558, 268);
+            this.contactNum.Location = new System.Drawing.Point(558, 287);
             this.contactNum.Name = "contactNum";
-            this.contactNum.Size = new System.Drawing.Size(106, 19);
+            this.contactNum.Size = new System.Drawing.Size(99, 20);
             this.contactNum.TabIndex = 85;
             this.contactNum.Text = "contactNum";
             // 
@@ -167,11 +167,11 @@
             // 
             this.address.AutoSize = true;
             this.address.BackColor = System.Drawing.Color.Transparent;
-            this.address.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.address.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.address.ForeColor = System.Drawing.Color.Black;
-            this.address.Location = new System.Drawing.Point(557, 235);
+            this.address.Location = new System.Drawing.Point(557, 254);
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(70, 19);
+            this.address.Size = new System.Drawing.Size(65, 20);
             this.address.TabIndex = 84;
             this.address.Text = "address";
             // 
@@ -179,11 +179,11 @@
             // 
             this.name.AutoSize = true;
             this.name.BackColor = System.Drawing.Color.Transparent;
-            this.name.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.name.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name.ForeColor = System.Drawing.Color.Black;
-            this.name.Location = new System.Drawing.Point(557, 141);
+            this.name.Location = new System.Drawing.Point(557, 160);
             this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(53, 19);
+            this.name.Size = new System.Drawing.Size(50, 20);
             this.name.TabIndex = 83;
             this.name.Text = "name";
             // 
@@ -191,11 +191,11 @@
             // 
             this.username.AutoSize = true;
             this.username.BackColor = System.Drawing.Color.Transparent;
-            this.username.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.ForeColor = System.Drawing.Color.Black;
-            this.username.Location = new System.Drawing.Point(557, 110);
+            this.username.Location = new System.Drawing.Point(557, 129);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(87, 19);
+            this.username.Size = new System.Drawing.Size(82, 20);
             this.username.TabIndex = 82;
             this.username.Text = "username";
             // 
@@ -203,11 +203,11 @@
             // 
             this.lblDept.AutoSize = true;
             this.lblDept.BackColor = System.Drawing.Color.Transparent;
-            this.lblDept.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDept.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDept.ForeColor = System.Drawing.Color.Black;
-            this.lblDept.Location = new System.Drawing.Point(426, 301);
+            this.lblDept.Location = new System.Drawing.Point(426, 320);
             this.lblDept.Name = "lblDept";
-            this.lblDept.Size = new System.Drawing.Size(107, 19);
+            this.lblDept.Size = new System.Drawing.Size(106, 20);
             this.lblDept.TabIndex = 80;
             this.lblDept.Text = "Department :";
             // 
@@ -215,11 +215,11 @@
             // 
             this.lblContact.AutoSize = true;
             this.lblContact.BackColor = System.Drawing.Color.Transparent;
-            this.lblContact.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContact.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContact.ForeColor = System.Drawing.Color.Black;
-            this.lblContact.Location = new System.Drawing.Point(393, 269);
+            this.lblContact.Location = new System.Drawing.Point(393, 288);
             this.lblContact.Name = "lblContact";
-            this.lblContact.Size = new System.Drawing.Size(140, 19);
+            this.lblContact.Size = new System.Drawing.Size(140, 20);
             this.lblContact.TabIndex = 79;
             this.lblContact.Text = "Contact Number :";
             // 
@@ -227,11 +227,11 @@
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddress.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.ForeColor = System.Drawing.Color.Black;
-            this.lblAddress.Location = new System.Drawing.Point(454, 235);
+            this.lblAddress.Location = new System.Drawing.Point(454, 254);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(79, 19);
+            this.lblAddress.Size = new System.Drawing.Size(76, 20);
             this.lblAddress.TabIndex = 78;
             this.lblAddress.Text = "Address :";
             // 
@@ -239,11 +239,11 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.Transparent;
-            this.lblName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.Black;
-            this.lblName.Location = new System.Drawing.Point(471, 141);
+            this.lblName.Location = new System.Drawing.Point(471, 160);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(62, 19);
+            this.lblName.Size = new System.Drawing.Size(61, 20);
             this.lblName.TabIndex = 77;
             this.lblName.Text = "Name :";
             // 
@@ -251,11 +251,11 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.Black;
-            this.lblUsername.Location = new System.Drawing.Point(440, 110);
+            this.lblUsername.Location = new System.Drawing.Point(440, 129);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(93, 19);
+            this.lblUsername.Size = new System.Drawing.Size(93, 20);
             this.lblUsername.TabIndex = 76;
             this.lblUsername.Text = "Username :";
             // 
@@ -263,11 +263,11 @@
             // 
             this.lblViewEmp.AutoSize = true;
             this.lblViewEmp.BackColor = System.Drawing.Color.Transparent;
-            this.lblViewEmp.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblViewEmp.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblViewEmp.ForeColor = System.Drawing.Color.Black;
             this.lblViewEmp.Location = new System.Drawing.Point(25, 25);
             this.lblViewEmp.Name = "lblViewEmp";
-            this.lblViewEmp.Size = new System.Drawing.Size(259, 39);
+            this.lblViewEmp.Size = new System.Drawing.Size(197, 28);
             this.lblViewEmp.TabIndex = 75;
             this.lblViewEmp.Text = "View Employee";
             // 
@@ -275,7 +275,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.gender);
             this.Controls.Add(this.lblGender);
             this.Controls.Add(this.bday);
@@ -295,7 +295,7 @@
             this.Controls.Add(this.lblUsername);
             this.Controls.Add(this.lblViewEmp);
             this.Name = "ucEmployeeView";
-            this.Size = new System.Drawing.Size(1118, 450);
+            this.Size = new System.Drawing.Size(1155, 500);
             this.ResumeLayout(false);
             this.PerformLayout();
 

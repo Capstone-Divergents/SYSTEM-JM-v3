@@ -152,29 +152,30 @@
             this.panel1.Controls.Add(this.lblAddEmp);
             this.panel1.Controls.Add(this.txtUsername);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 450);
+            this.panel1.Size = new System.Drawing.Size(10, 500);
             this.panel1.TabIndex = 2;
             // 
             // lblDeptStatus
             // 
             this.lblDeptStatus.AutoSize = true;
             this.lblDeptStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblDeptStatus.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeptStatus.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeptStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblDeptStatus.Location = new System.Drawing.Point(506, 505);
+            this.lblDeptStatus.Location = new System.Drawing.Point(506, 446);
             this.lblDeptStatus.Name = "lblDeptStatus";
-            this.lblDeptStatus.Size = new System.Drawing.Size(17, 19);
+            this.lblDeptStatus.Size = new System.Drawing.Size(17, 20);
             this.lblDeptStatus.TabIndex = 105;
             this.lblDeptStatus.Text = "*";
             // 
             // cbYear
             // 
-            this.cbYear.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbYear.BackColor = System.Drawing.Color.White;
             this.cbYear.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYear.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYear.ForeColor = System.Drawing.Color.Black;
             this.cbYear.FormattingEnabled = true;
             this.cbYear.Items.AddRange(new object[] {
@@ -221,18 +222,18 @@
             "1959",
             "1958",
             "1957"});
-            this.cbYear.Location = new System.Drawing.Point(522, 396);
+            this.cbYear.Location = new System.Drawing.Point(522, 337);
             this.cbYear.Name = "cbYear";
-            this.cbYear.Size = new System.Drawing.Size(100, 27);
+            this.cbYear.Size = new System.Drawing.Size(100, 28);
             this.cbYear.TabIndex = 104;
             this.cbYear.SelectedIndexChanged += new System.EventHandler(this.cbYear_SelectedIndexChanged);
             // 
             // cbDay
             // 
-            this.cbDay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbDay.BackColor = System.Drawing.Color.White;
             this.cbDay.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDay.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDay.ForeColor = System.Drawing.Color.Black;
             this.cbDay.FormattingEnabled = true;
             this.cbDay.Items.AddRange(new object[] {
@@ -267,18 +268,18 @@
             "29",
             "30",
             "31"});
-            this.cbDay.Location = new System.Drawing.Point(441, 396);
+            this.cbDay.Location = new System.Drawing.Point(441, 337);
             this.cbDay.Name = "cbDay";
-            this.cbDay.Size = new System.Drawing.Size(75, 27);
+            this.cbDay.Size = new System.Drawing.Size(75, 28);
             this.cbDay.TabIndex = 103;
             this.cbDay.SelectedIndexChanged += new System.EventHandler(this.cbDay_SelectedIndexChanged);
             // 
             // cbMonth
             // 
-            this.cbMonth.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbMonth.BackColor = System.Drawing.Color.White;
             this.cbMonth.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonth.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonth.ForeColor = System.Drawing.Color.Black;
             this.cbMonth.FormattingEnabled = true;
             this.cbMonth.Items.AddRange(new object[] {
@@ -294,9 +295,9 @@
             "October",
             "November",
             "December"});
-            this.cbMonth.Location = new System.Drawing.Point(304, 396);
+            this.cbMonth.Location = new System.Drawing.Point(304, 337);
             this.cbMonth.Name = "cbMonth";
-            this.cbMonth.Size = new System.Drawing.Size(131, 27);
+            this.cbMonth.Size = new System.Drawing.Size(131, 28);
             this.cbMonth.TabIndex = 102;
             this.cbMonth.SelectedIndexChanged += new System.EventHandler(this.cbMonth_SelectedIndexChanged);
             // 
@@ -304,11 +305,11 @@
             // 
             this.lblGenderStatus.AutoSize = true;
             this.lblGenderStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblGenderStatus.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenderStatus.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGenderStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblGenderStatus.Location = new System.Drawing.Point(470, 365);
+            this.lblGenderStatus.Location = new System.Drawing.Point(470, 306);
             this.lblGenderStatus.Name = "lblGenderStatus";
-            this.lblGenderStatus.Size = new System.Drawing.Size(17, 19);
+            this.lblGenderStatus.Size = new System.Drawing.Size(17, 20);
             this.lblGenderStatus.TabIndex = 101;
             this.lblGenderStatus.Text = "*";
             // 
@@ -316,11 +317,11 @@
             // 
             this.lblBirthdayStatus.AutoSize = true;
             this.lblBirthdayStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblBirthdayStatus.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthdayStatus.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBirthdayStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblBirthdayStatus.Location = new System.Drawing.Point(628, 399);
+            this.lblBirthdayStatus.Location = new System.Drawing.Point(628, 340);
             this.lblBirthdayStatus.Name = "lblBirthdayStatus";
-            this.lblBirthdayStatus.Size = new System.Drawing.Size(17, 19);
+            this.lblBirthdayStatus.Size = new System.Drawing.Size(17, 20);
             this.lblBirthdayStatus.TabIndex = 100;
             this.lblBirthdayStatus.Text = "*";
             // 
@@ -328,11 +329,11 @@
             // 
             this.lblBirthday.AutoSize = true;
             this.lblBirthday.BackColor = System.Drawing.Color.Transparent;
-            this.lblBirthday.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthday.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBirthday.ForeColor = System.Drawing.Color.Black;
-            this.lblBirthday.Location = new System.Drawing.Point(93, 399);
+            this.lblBirthday.Location = new System.Drawing.Point(93, 340);
             this.lblBirthday.Name = "lblBirthday";
-            this.lblBirthday.Size = new System.Drawing.Size(80, 19);
+            this.lblBirthday.Size = new System.Drawing.Size(84, 20);
             this.lblBirthday.TabIndex = 94;
             this.lblBirthday.Text = "Birthday :";
             // 
@@ -340,11 +341,11 @@
             // 
             this.lblContactStatus.AutoSize = true;
             this.lblContactStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblContactStatus.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContactStatus.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContactStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblContactStatus.Location = new System.Drawing.Point(611, 472);
+            this.lblContactStatus.Location = new System.Drawing.Point(611, 413);
             this.lblContactStatus.Name = "lblContactStatus";
-            this.lblContactStatus.Size = new System.Drawing.Size(17, 19);
+            this.lblContactStatus.Size = new System.Drawing.Size(17, 20);
             this.lblContactStatus.TabIndex = 93;
             this.lblContactStatus.Text = "*";
             // 
@@ -352,11 +353,11 @@
             // 
             this.lblAddressStatus.AutoSize = true;
             this.lblAddressStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddressStatus.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddressStatus.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddressStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblAddressStatus.Location = new System.Drawing.Point(746, 436);
+            this.lblAddressStatus.Location = new System.Drawing.Point(746, 377);
             this.lblAddressStatus.Name = "lblAddressStatus";
-            this.lblAddressStatus.Size = new System.Drawing.Size(17, 19);
+            this.lblAddressStatus.Size = new System.Drawing.Size(17, 20);
             this.lblAddressStatus.TabIndex = 92;
             this.lblAddressStatus.Text = "*";
             // 
@@ -364,26 +365,26 @@
             // 
             this.pnlButtons1.Controls.Add(this.btnAdd);
             this.pnlButtons1.Controls.Add(this.btnCancel);
-            this.pnlButtons1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pnlButtons1.Location = new System.Drawing.Point(287, 600);
+            this.pnlButtons1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pnlButtons1.Location = new System.Drawing.Point(287, 522);
             this.pnlButtons1.Name = "pnlButtons1";
-            this.pnlButtons1.Size = new System.Drawing.Size(250, 80);
+            this.pnlButtons1.Size = new System.Drawing.Size(250, 59);
             this.pnlButtons1.TabIndex = 87;
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnAdd.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(2, 3);
+            this.btnAdd.Location = new System.Drawing.Point(21, 3);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(120, 50);
+            this.btnAdd.Size = new System.Drawing.Size(100, 38);
             this.btnAdd.TabIndex = 56;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -391,18 +392,18 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCancel.BackColor = System.Drawing.Color.White;
             this.btnCancel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnCancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(128, 3);
+            this.btnCancel.Location = new System.Drawing.Point(129, 3);
             this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(120, 50);
+            this.btnCancel.Size = new System.Drawing.Size(100, 38);
             this.btnCancel.TabIndex = 57;
             this.btnCancel.Text = "CANCEL";
             this.btnCancel.UseVisualStyleBackColor = false;
@@ -410,10 +411,10 @@
             // 
             // cbDept
             // 
-            this.cbDept.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbDept.BackColor = System.Drawing.Color.White;
             this.cbDept.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDept.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDept.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDept.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDept.FormattingEnabled = true;
             this.cbDept.Items.AddRange(new object[] {
             "Recruitment",
@@ -421,34 +422,34 @@
             "Accounting",
             "Marketing",
             "Operations"});
-            this.cbDept.Location = new System.Drawing.Point(305, 505);
+            this.cbDept.Location = new System.Drawing.Point(305, 446);
             this.cbDept.Name = "cbDept";
-            this.cbDept.Size = new System.Drawing.Size(195, 27);
+            this.cbDept.Size = new System.Drawing.Size(195, 28);
             this.cbDept.TabIndex = 83;
             this.cbDept.SelectedIndexChanged += new System.EventHandler(this.cbDept_SelectedIndexChanged);
             // 
             // txtContact
             // 
-            this.txtContact.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtContact.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContact.BackColor = System.Drawing.Color.White;
+            this.txtContact.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContact.ForeColor = System.Drawing.Color.Black;
-            this.txtContact.Location = new System.Drawing.Point(305, 469);
+            this.txtContact.Location = new System.Drawing.Point(305, 410);
             this.txtContact.MaxLength = 11;
             this.txtContact.Name = "txtContact";
-            this.txtContact.Size = new System.Drawing.Size(300, 26);
+            this.txtContact.Size = new System.Drawing.Size(300, 27);
             this.txtContact.TabIndex = 82;
             this.txtContact.TextChanged += new System.EventHandler(this.txtContact_TextChanged);
             this.txtContact.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContact_KeyPress);
             // 
             // txtAddress
             // 
-            this.txtAddress.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtAddress.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress.BackColor = System.Drawing.Color.White;
+            this.txtAddress.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAddress.Location = new System.Drawing.Point(304, 433);
+            this.txtAddress.Location = new System.Drawing.Point(304, 374);
             this.txtAddress.MaxLength = 100;
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(436, 26);
+            this.txtAddress.Size = new System.Drawing.Size(436, 27);
             this.txtAddress.TabIndex = 81;
             this.txtAddress.Text = "House Number, Street, City/Province";
             this.txtAddress.TextChanged += new System.EventHandler(this.txtAddress_TextChanged);
@@ -459,11 +460,11 @@
             this.rbFemale.AutoSize = true;
             this.rbFemale.BackColor = System.Drawing.Color.Transparent;
             this.rbFemale.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbFemale.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFemale.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbFemale.ForeColor = System.Drawing.Color.Black;
-            this.rbFemale.Location = new System.Drawing.Point(383, 365);
+            this.rbFemale.Location = new System.Drawing.Point(383, 306);
             this.rbFemale.Name = "rbFemale";
-            this.rbFemale.Size = new System.Drawing.Size(81, 23);
+            this.rbFemale.Size = new System.Drawing.Size(82, 24);
             this.rbFemale.TabIndex = 80;
             this.rbFemale.TabStop = true;
             this.rbFemale.Text = "Female";
@@ -475,11 +476,11 @@
             this.rbMale.AutoSize = true;
             this.rbMale.BackColor = System.Drawing.Color.Transparent;
             this.rbMale.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbMale.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMale.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMale.ForeColor = System.Drawing.Color.Black;
-            this.rbMale.Location = new System.Drawing.Point(305, 365);
+            this.rbMale.Location = new System.Drawing.Point(305, 306);
             this.rbMale.Name = "rbMale";
-            this.rbMale.Size = new System.Drawing.Size(63, 23);
+            this.rbMale.Size = new System.Drawing.Size(64, 24);
             this.rbMale.TabIndex = 79;
             this.rbMale.TabStop = true;
             this.rbMale.Text = "Male";
@@ -490,11 +491,11 @@
             // 
             this.lblDept.AutoSize = true;
             this.lblDept.BackColor = System.Drawing.Color.Transparent;
-            this.lblDept.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDept.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDept.ForeColor = System.Drawing.Color.Black;
-            this.lblDept.Location = new System.Drawing.Point(94, 507);
+            this.lblDept.Location = new System.Drawing.Point(94, 448);
             this.lblDept.Name = "lblDept";
-            this.lblDept.Size = new System.Drawing.Size(107, 19);
+            this.lblDept.Size = new System.Drawing.Size(106, 20);
             this.lblDept.TabIndex = 77;
             this.lblDept.Text = "Department :";
             // 
@@ -502,11 +503,11 @@
             // 
             this.lblContact.AutoSize = true;
             this.lblContact.BackColor = System.Drawing.Color.Transparent;
-            this.lblContact.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContact.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContact.ForeColor = System.Drawing.Color.Black;
-            this.lblContact.Location = new System.Drawing.Point(94, 472);
+            this.lblContact.Location = new System.Drawing.Point(94, 413);
             this.lblContact.Name = "lblContact";
-            this.lblContact.Size = new System.Drawing.Size(140, 19);
+            this.lblContact.Size = new System.Drawing.Size(140, 20);
             this.lblContact.TabIndex = 76;
             this.lblContact.Text = "Contact Number :";
             // 
@@ -514,11 +515,11 @@
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddress.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddress.ForeColor = System.Drawing.Color.Black;
-            this.lblAddress.Location = new System.Drawing.Point(94, 436);
+            this.lblAddress.Location = new System.Drawing.Point(94, 377);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(79, 19);
+            this.lblAddress.Size = new System.Drawing.Size(76, 20);
             this.lblAddress.TabIndex = 75;
             this.lblAddress.Text = "Address :";
             // 
@@ -526,11 +527,11 @@
             // 
             this.lblGender.AutoSize = true;
             this.lblGender.BackColor = System.Drawing.Color.Transparent;
-            this.lblGender.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGender.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGender.ForeColor = System.Drawing.Color.Black;
-            this.lblGender.Location = new System.Drawing.Point(93, 366);
+            this.lblGender.Location = new System.Drawing.Point(93, 307);
             this.lblGender.Name = "lblGender";
-            this.lblGender.Size = new System.Drawing.Size(75, 19);
+            this.lblGender.Size = new System.Drawing.Size(71, 20);
             this.lblGender.TabIndex = 74;
             this.lblGender.Text = "Gender :";
             // 
@@ -538,11 +539,11 @@
             // 
             this.lblFNameStatus.AutoSize = true;
             this.lblFNameStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblFNameStatus.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFNameStatus.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFNameStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblFNameStatus.Location = new System.Drawing.Point(611, 296);
+            this.lblFNameStatus.Location = new System.Drawing.Point(611, 237);
             this.lblFNameStatus.Name = "lblFNameStatus";
-            this.lblFNameStatus.Size = new System.Drawing.Size(17, 19);
+            this.lblFNameStatus.Size = new System.Drawing.Size(17, 20);
             this.lblFNameStatus.TabIndex = 67;
             this.lblFNameStatus.Text = "*";
             // 
@@ -550,11 +551,11 @@
             // 
             this.lblLNameStatus.AutoSize = true;
             this.lblLNameStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblLNameStatus.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLNameStatus.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLNameStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblLNameStatus.Location = new System.Drawing.Point(611, 260);
+            this.lblLNameStatus.Location = new System.Drawing.Point(611, 201);
             this.lblLNameStatus.Name = "lblLNameStatus";
-            this.lblLNameStatus.Size = new System.Drawing.Size(17, 19);
+            this.lblLNameStatus.Size = new System.Drawing.Size(17, 20);
             this.lblLNameStatus.TabIndex = 66;
             this.lblLNameStatus.Text = "*";
             // 
@@ -562,11 +563,11 @@
             // 
             this.lblConPassStatus.AutoSize = true;
             this.lblConPassStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblConPassStatus.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConPassStatus.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConPassStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblConPassStatus.Location = new System.Drawing.Point(610, 172);
+            this.lblConPassStatus.Location = new System.Drawing.Point(610, 145);
             this.lblConPassStatus.Name = "lblConPassStatus";
-            this.lblConPassStatus.Size = new System.Drawing.Size(17, 19);
+            this.lblConPassStatus.Size = new System.Drawing.Size(17, 20);
             this.lblConPassStatus.TabIndex = 65;
             this.lblConPassStatus.Text = "*";
             // 
@@ -574,11 +575,11 @@
             // 
             this.lblPassStatus.AutoSize = true;
             this.lblPassStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblPassStatus.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassStatus.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblPassStatus.Location = new System.Drawing.Point(610, 136);
+            this.lblPassStatus.Location = new System.Drawing.Point(610, 109);
             this.lblPassStatus.Name = "lblPassStatus";
-            this.lblPassStatus.Size = new System.Drawing.Size(17, 19);
+            this.lblPassStatus.Size = new System.Drawing.Size(17, 20);
             this.lblPassStatus.TabIndex = 64;
             this.lblPassStatus.Text = "*";
             // 
@@ -586,23 +587,23 @@
             // 
             this.lblUserStatus.AutoSize = true;
             this.lblUserStatus.BackColor = System.Drawing.Color.Transparent;
-            this.lblUserStatus.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserStatus.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserStatus.ForeColor = System.Drawing.Color.Red;
-            this.lblUserStatus.Location = new System.Drawing.Point(610, 100);
+            this.lblUserStatus.Location = new System.Drawing.Point(610, 73);
             this.lblUserStatus.Name = "lblUserStatus";
-            this.lblUserStatus.Size = new System.Drawing.Size(17, 19);
+            this.lblUserStatus.Size = new System.Drawing.Size(17, 20);
             this.lblUserStatus.TabIndex = 63;
             this.lblUserStatus.Text = "*";
             // 
             // txtMiddleName
             // 
-            this.txtMiddleName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtMiddleName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMiddleName.BackColor = System.Drawing.Color.White;
+            this.txtMiddleName.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMiddleName.ForeColor = System.Drawing.Color.DimGray;
-            this.txtMiddleName.Location = new System.Drawing.Point(304, 329);
+            this.txtMiddleName.Location = new System.Drawing.Point(304, 270);
             this.txtMiddleName.MaxLength = 30;
             this.txtMiddleName.Name = "txtMiddleName";
-            this.txtMiddleName.Size = new System.Drawing.Size(300, 26);
+            this.txtMiddleName.Size = new System.Drawing.Size(300, 27);
             this.txtMiddleName.TabIndex = 45;
             this.txtMiddleName.Text = "Middle Name";
             this.txtMiddleName.TextChanged += new System.EventHandler(this.txtMiddleName_TextChanged);
@@ -611,13 +612,13 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtFirstName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName.BackColor = System.Drawing.Color.White;
+            this.txtFirstName.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.ForeColor = System.Drawing.Color.DimGray;
-            this.txtFirstName.Location = new System.Drawing.Point(304, 293);
+            this.txtFirstName.Location = new System.Drawing.Point(304, 234);
             this.txtFirstName.MaxLength = 30;
             this.txtFirstName.Name = "txtFirstName";
-            this.txtFirstName.Size = new System.Drawing.Size(300, 26);
+            this.txtFirstName.Size = new System.Drawing.Size(300, 27);
             this.txtFirstName.TabIndex = 44;
             this.txtFirstName.Text = "First Name";
             this.txtFirstName.TextChanged += new System.EventHandler(this.txtFirstName_TextChanged);
@@ -626,13 +627,13 @@
             // 
             // txtLastName
             // 
-            this.txtLastName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtLastName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName.BackColor = System.Drawing.Color.White;
+            this.txtLastName.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.ForeColor = System.Drawing.Color.DimGray;
-            this.txtLastName.Location = new System.Drawing.Point(304, 257);
+            this.txtLastName.Location = new System.Drawing.Point(304, 198);
             this.txtLastName.MaxLength = 30;
             this.txtLastName.Name = "txtLastName";
-            this.txtLastName.Size = new System.Drawing.Size(300, 26);
+            this.txtLastName.Size = new System.Drawing.Size(300, 27);
             this.txtLastName.TabIndex = 43;
             this.txtLastName.Text = "Last Name";
             this.txtLastName.TextChanged += new System.EventHandler(this.txtLastName_TextChanged);
@@ -643,11 +644,11 @@
             // 
             this.lblName.AutoSize = true;
             this.lblName.BackColor = System.Drawing.Color.Transparent;
-            this.lblName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblName.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblName.ForeColor = System.Drawing.Color.Black;
-            this.lblName.Location = new System.Drawing.Point(100, 260);
+            this.lblName.Location = new System.Drawing.Point(100, 201);
             this.lblName.Name = "lblName";
-            this.lblName.Size = new System.Drawing.Size(62, 19);
+            this.lblName.Size = new System.Drawing.Size(61, 20);
             this.lblName.TabIndex = 37;
             this.lblName.Text = "Name :";
             // 
@@ -655,11 +656,11 @@
             // 
             this.lblConPass.AutoSize = true;
             this.lblConPass.BackColor = System.Drawing.Color.Transparent;
-            this.lblConPass.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConPass.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConPass.ForeColor = System.Drawing.Color.Black;
-            this.lblConPass.Location = new System.Drawing.Point(100, 172);
+            this.lblConPass.Location = new System.Drawing.Point(100, 145);
             this.lblConPass.Name = "lblConPass";
-            this.lblConPass.Size = new System.Drawing.Size(152, 19);
+            this.lblConPass.Size = new System.Drawing.Size(151, 20);
             this.lblConPass.TabIndex = 36;
             this.lblConPass.Text = "Confirm Password :";
             // 
@@ -667,11 +668,11 @@
             // 
             this.lblPass.AutoSize = true;
             this.lblPass.BackColor = System.Drawing.Color.Transparent;
-            this.lblPass.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPass.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPass.ForeColor = System.Drawing.Color.Black;
-            this.lblPass.Location = new System.Drawing.Point(100, 136);
+            this.lblPass.Location = new System.Drawing.Point(100, 109);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(88, 19);
+            this.lblPass.Size = new System.Drawing.Size(86, 20);
             this.lblPass.TabIndex = 35;
             this.lblPass.Text = "Password :";
             // 
@@ -679,38 +680,38 @@
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.BackColor = System.Drawing.Color.Transparent;
-            this.lblUsername.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUsername.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUsername.ForeColor = System.Drawing.Color.Black;
-            this.lblUsername.Location = new System.Drawing.Point(100, 100);
+            this.lblUsername.Location = new System.Drawing.Point(100, 73);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(93, 19);
+            this.lblUsername.Size = new System.Drawing.Size(93, 20);
             this.lblUsername.TabIndex = 34;
             this.lblUsername.Text = "Username :";
             // 
             // txtConPass
             // 
-            this.txtConPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtConPass.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConPass.BackColor = System.Drawing.Color.White;
+            this.txtConPass.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConPass.ForeColor = System.Drawing.Color.Black;
-            this.txtConPass.Location = new System.Drawing.Point(304, 169);
+            this.txtConPass.Location = new System.Drawing.Point(304, 142);
             this.txtConPass.MaxLength = 30;
             this.txtConPass.Name = "txtConPass";
             this.txtConPass.PasswordChar = '•';
-            this.txtConPass.Size = new System.Drawing.Size(300, 26);
+            this.txtConPass.Size = new System.Drawing.Size(300, 27);
             this.txtConPass.TabIndex = 33;
             this.txtConPass.TextChanged += new System.EventHandler(this.txtConPass_TextChanged);
             this.txtConPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtConPass_KeyPress);
             // 
             // txtPass
             // 
-            this.txtPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtPass.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPass.BackColor = System.Drawing.Color.White;
+            this.txtPass.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPass.ForeColor = System.Drawing.Color.Black;
-            this.txtPass.Location = new System.Drawing.Point(304, 133);
+            this.txtPass.Location = new System.Drawing.Point(304, 106);
             this.txtPass.MaxLength = 30;
             this.txtPass.Name = "txtPass";
             this.txtPass.PasswordChar = '•';
-            this.txtPass.Size = new System.Drawing.Size(300, 26);
+            this.txtPass.Size = new System.Drawing.Size(300, 27);
             this.txtPass.TabIndex = 32;
             this.txtPass.TextChanged += new System.EventHandler(this.txtPass_TextChanged);
             this.txtPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPass_KeyPress);
@@ -719,23 +720,23 @@
             // 
             this.lblAddEmp.AutoSize = true;
             this.lblAddEmp.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddEmp.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddEmp.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddEmp.ForeColor = System.Drawing.Color.Black;
             this.lblAddEmp.Location = new System.Drawing.Point(25, 25);
             this.lblAddEmp.Name = "lblAddEmp";
-            this.lblAddEmp.Size = new System.Drawing.Size(244, 39);
+            this.lblAddEmp.Size = new System.Drawing.Size(185, 28);
             this.lblAddEmp.TabIndex = 31;
             this.lblAddEmp.Text = "Add Employee";
             // 
             // txtUsername
             // 
-            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtUsername.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername.BackColor = System.Drawing.Color.White;
+            this.txtUsername.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername.Location = new System.Drawing.Point(304, 97);
+            this.txtUsername.Location = new System.Drawing.Point(304, 70);
             this.txtUsername.MaxLength = 30;
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(300, 26);
+            this.txtUsername.Size = new System.Drawing.Size(300, 27);
             this.txtUsername.TabIndex = 30;
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             this.txtUsername.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtUsername_KeyPress);
@@ -781,30 +782,31 @@
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.txtEmpId);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.panel2.ForeColor = System.Drawing.Color.Black;
-            this.panel2.Location = new System.Drawing.Point(1108, 0);
+            this.panel2.Location = new System.Drawing.Point(1145, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 450);
+            this.panel2.Size = new System.Drawing.Size(10, 500);
             this.panel2.TabIndex = 3;
             // 
             // lblDeptStatus2
             // 
             this.lblDeptStatus2.AutoSize = true;
             this.lblDeptStatus2.BackColor = System.Drawing.Color.Transparent;
-            this.lblDeptStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDeptStatus2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDeptStatus2.ForeColor = System.Drawing.Color.Red;
-            this.lblDeptStatus2.Location = new System.Drawing.Point(507, 542);
+            this.lblDeptStatus2.Location = new System.Drawing.Point(507, 493);
             this.lblDeptStatus2.Name = "lblDeptStatus2";
-            this.lblDeptStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblDeptStatus2.Size = new System.Drawing.Size(17, 20);
             this.lblDeptStatus2.TabIndex = 147;
             this.lblDeptStatus2.Text = "*";
             // 
             // cbYear2
             // 
-            this.cbYear2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbYear2.BackColor = System.Drawing.Color.White;
             this.cbYear2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbYear2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbYear2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYear2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYear2.ForeColor = System.Drawing.Color.Black;
             this.cbYear2.FormattingEnabled = true;
             this.cbYear2.Items.AddRange(new object[] {
@@ -851,18 +853,18 @@
             "1959",
             "1958",
             "1957"});
-            this.cbYear2.Location = new System.Drawing.Point(523, 430);
+            this.cbYear2.Location = new System.Drawing.Point(523, 381);
             this.cbYear2.Name = "cbYear2";
-            this.cbYear2.Size = new System.Drawing.Size(100, 27);
+            this.cbYear2.Size = new System.Drawing.Size(100, 28);
             this.cbYear2.TabIndex = 146;
             this.cbYear2.SelectedIndexChanged += new System.EventHandler(this.cbYear2_SelectedIndexChanged);
             // 
             // cbDay2
             // 
-            this.cbDay2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbDay2.BackColor = System.Drawing.Color.White;
             this.cbDay2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDay2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDay2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDay2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDay2.ForeColor = System.Drawing.Color.Black;
             this.cbDay2.FormattingEnabled = true;
             this.cbDay2.Items.AddRange(new object[] {
@@ -897,18 +899,18 @@
             "29",
             "30",
             "31"});
-            this.cbDay2.Location = new System.Drawing.Point(442, 430);
+            this.cbDay2.Location = new System.Drawing.Point(442, 381);
             this.cbDay2.Name = "cbDay2";
-            this.cbDay2.Size = new System.Drawing.Size(75, 27);
+            this.cbDay2.Size = new System.Drawing.Size(75, 28);
             this.cbDay2.TabIndex = 145;
             this.cbDay2.SelectedIndexChanged += new System.EventHandler(this.cbDay2_SelectedIndexChanged);
             // 
             // cbMonth2
             // 
-            this.cbMonth2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbMonth2.BackColor = System.Drawing.Color.White;
             this.cbMonth2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbMonth2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMonth2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonth2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonth2.ForeColor = System.Drawing.Color.Black;
             this.cbMonth2.FormattingEnabled = true;
             this.cbMonth2.Items.AddRange(new object[] {
@@ -924,9 +926,9 @@
             "October",
             "November",
             "December"});
-            this.cbMonth2.Location = new System.Drawing.Point(305, 430);
+            this.cbMonth2.Location = new System.Drawing.Point(305, 381);
             this.cbMonth2.Name = "cbMonth2";
-            this.cbMonth2.Size = new System.Drawing.Size(131, 27);
+            this.cbMonth2.Size = new System.Drawing.Size(131, 28);
             this.cbMonth2.TabIndex = 144;
             this.cbMonth2.SelectedIndexChanged += new System.EventHandler(this.cbMonth2_SelectedIndexChanged);
             // 
@@ -934,11 +936,11 @@
             // 
             this.lblGenderStatus2.AutoSize = true;
             this.lblGenderStatus2.BackColor = System.Drawing.Color.Transparent;
-            this.lblGenderStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGenderStatus2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGenderStatus2.ForeColor = System.Drawing.Color.Red;
-            this.lblGenderStatus2.Location = new System.Drawing.Point(482, 400);
+            this.lblGenderStatus2.Location = new System.Drawing.Point(482, 351);
             this.lblGenderStatus2.Name = "lblGenderStatus2";
-            this.lblGenderStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblGenderStatus2.Size = new System.Drawing.Size(17, 20);
             this.lblGenderStatus2.TabIndex = 143;
             this.lblGenderStatus2.Text = "*";
             // 
@@ -946,11 +948,11 @@
             // 
             this.lblBirthdayStatus2.AutoSize = true;
             this.lblBirthdayStatus2.BackColor = System.Drawing.Color.Transparent;
-            this.lblBirthdayStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBirthdayStatus2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBirthdayStatus2.ForeColor = System.Drawing.Color.Red;
-            this.lblBirthdayStatus2.Location = new System.Drawing.Point(629, 433);
+            this.lblBirthdayStatus2.Location = new System.Drawing.Point(629, 384);
             this.lblBirthdayStatus2.Name = "lblBirthdayStatus2";
-            this.lblBirthdayStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblBirthdayStatus2.Size = new System.Drawing.Size(17, 20);
             this.lblBirthdayStatus2.TabIndex = 142;
             this.lblBirthdayStatus2.Text = "*";
             // 
@@ -958,11 +960,11 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(94, 433);
+            this.label4.Location = new System.Drawing.Point(94, 384);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(80, 19);
+            this.label4.Size = new System.Drawing.Size(84, 20);
             this.label4.TabIndex = 141;
             this.label4.Text = "Birthday :";
             // 
@@ -970,11 +972,11 @@
             // 
             this.lblContactStatus2.AutoSize = true;
             this.lblContactStatus2.BackColor = System.Drawing.Color.Transparent;
-            this.lblContactStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContactStatus2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContactStatus2.ForeColor = System.Drawing.Color.Red;
-            this.lblContactStatus2.Location = new System.Drawing.Point(612, 506);
+            this.lblContactStatus2.Location = new System.Drawing.Point(612, 457);
             this.lblContactStatus2.Name = "lblContactStatus2";
-            this.lblContactStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblContactStatus2.Size = new System.Drawing.Size(17, 20);
             this.lblContactStatus2.TabIndex = 140;
             this.lblContactStatus2.Text = "*";
             // 
@@ -982,11 +984,11 @@
             // 
             this.lblAddressStatus2.AutoSize = true;
             this.lblAddressStatus2.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddressStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddressStatus2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddressStatus2.ForeColor = System.Drawing.Color.Red;
-            this.lblAddressStatus2.Location = new System.Drawing.Point(747, 470);
+            this.lblAddressStatus2.Location = new System.Drawing.Point(747, 421);
             this.lblAddressStatus2.Name = "lblAddressStatus2";
-            this.lblAddressStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblAddressStatus2.Size = new System.Drawing.Size(17, 20);
             this.lblAddressStatus2.TabIndex = 139;
             this.lblAddressStatus2.Text = "*";
             // 
@@ -994,26 +996,26 @@
             // 
             this.panel3.Controls.Add(this.btnSave2);
             this.panel3.Controls.Add(this.btnCancel2);
-            this.panel3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel3.Location = new System.Drawing.Point(434, 635);
+            this.panel3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(434, 555);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(250, 80);
+            this.panel3.Size = new System.Drawing.Size(250, 62);
             this.panel3.TabIndex = 134;
             // 
             // btnSave2
             // 
-            this.btnSave2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnSave2.BackColor = System.Drawing.Color.White;
             this.btnSave2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSave2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSave2.FlatAppearance.BorderSize = 0;
             this.btnSave2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnSave2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnSave2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave2.ForeColor = System.Drawing.Color.Black;
-            this.btnSave2.Location = new System.Drawing.Point(2, 3);
+            this.btnSave2.Location = new System.Drawing.Point(21, 3);
             this.btnSave2.Name = "btnSave2";
-            this.btnSave2.Size = new System.Drawing.Size(120, 50);
+            this.btnSave2.Size = new System.Drawing.Size(100, 38);
             this.btnSave2.TabIndex = 56;
             this.btnSave2.Text = "SAVE";
             this.btnSave2.UseVisualStyleBackColor = false;
@@ -1021,18 +1023,18 @@
             // 
             // btnCancel2
             // 
-            this.btnCancel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btnCancel2.BackColor = System.Drawing.Color.White;
             this.btnCancel2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCancel2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCancel2.FlatAppearance.BorderSize = 0;
             this.btnCancel2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
             this.btnCancel2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Silver;
             this.btnCancel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel2.ForeColor = System.Drawing.Color.Black;
             this.btnCancel2.Location = new System.Drawing.Point(128, 3);
             this.btnCancel2.Name = "btnCancel2";
-            this.btnCancel2.Size = new System.Drawing.Size(120, 50);
+            this.btnCancel2.Size = new System.Drawing.Size(100, 38);
             this.btnCancel2.TabIndex = 57;
             this.btnCancel2.Text = "CANCEL";
             this.btnCancel2.UseVisualStyleBackColor = false;
@@ -1040,10 +1042,10 @@
             // 
             // cbDept2
             // 
-            this.cbDept2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbDept2.BackColor = System.Drawing.Color.White;
             this.cbDept2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDept2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDept2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDept2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDept2.FormattingEnabled = true;
             this.cbDept2.Items.AddRange(new object[] {
             "Recruitment",
@@ -1051,34 +1053,34 @@
             "Accounting",
             "Marketing",
             "Operations"});
-            this.cbDept2.Location = new System.Drawing.Point(306, 539);
+            this.cbDept2.Location = new System.Drawing.Point(306, 490);
             this.cbDept2.Name = "cbDept2";
-            this.cbDept2.Size = new System.Drawing.Size(195, 27);
+            this.cbDept2.Size = new System.Drawing.Size(195, 28);
             this.cbDept2.TabIndex = 130;
             this.cbDept2.SelectedIndexChanged += new System.EventHandler(this.cbDept2_SelectedIndexChanged);
             // 
             // txtContact2
             // 
-            this.txtContact2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtContact2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContact2.BackColor = System.Drawing.Color.White;
+            this.txtContact2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContact2.ForeColor = System.Drawing.Color.Black;
-            this.txtContact2.Location = new System.Drawing.Point(306, 503);
+            this.txtContact2.Location = new System.Drawing.Point(306, 454);
             this.txtContact2.MaxLength = 11;
             this.txtContact2.Name = "txtContact2";
-            this.txtContact2.Size = new System.Drawing.Size(300, 26);
+            this.txtContact2.Size = new System.Drawing.Size(300, 27);
             this.txtContact2.TabIndex = 129;
             this.txtContact2.TextChanged += new System.EventHandler(this.txtContact2_TextChanged);
             this.txtContact2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtContact2_KeyPress);
             // 
             // txtAddress2
             // 
-            this.txtAddress2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtAddress2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAddress2.BackColor = System.Drawing.Color.White;
+            this.txtAddress2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtAddress2.ForeColor = System.Drawing.Color.DimGray;
-            this.txtAddress2.Location = new System.Drawing.Point(305, 467);
+            this.txtAddress2.Location = new System.Drawing.Point(305, 418);
             this.txtAddress2.MaxLength = 100;
             this.txtAddress2.Name = "txtAddress2";
-            this.txtAddress2.Size = new System.Drawing.Size(436, 26);
+            this.txtAddress2.Size = new System.Drawing.Size(436, 27);
             this.txtAddress2.TabIndex = 128;
             this.txtAddress2.Text = "House Number, Street, City/Province";
             this.txtAddress2.TextChanged += new System.EventHandler(this.txtAddress2_TextChanged);
@@ -1088,11 +1090,11 @@
             this.rbFemale2.AutoSize = true;
             this.rbFemale2.BackColor = System.Drawing.Color.Transparent;
             this.rbFemale2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbFemale2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbFemale2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbFemale2.ForeColor = System.Drawing.Color.Black;
-            this.rbFemale2.Location = new System.Drawing.Point(384, 399);
+            this.rbFemale2.Location = new System.Drawing.Point(384, 350);
             this.rbFemale2.Name = "rbFemale2";
-            this.rbFemale2.Size = new System.Drawing.Size(81, 23);
+            this.rbFemale2.Size = new System.Drawing.Size(82, 24);
             this.rbFemale2.TabIndex = 127;
             this.rbFemale2.TabStop = true;
             this.rbFemale2.Text = "Female";
@@ -1104,11 +1106,11 @@
             this.rbMale2.AutoSize = true;
             this.rbMale2.BackColor = System.Drawing.Color.Transparent;
             this.rbMale2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rbMale2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbMale2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbMale2.ForeColor = System.Drawing.Color.Black;
-            this.rbMale2.Location = new System.Drawing.Point(306, 399);
+            this.rbMale2.Location = new System.Drawing.Point(306, 350);
             this.rbMale2.Name = "rbMale2";
-            this.rbMale2.Size = new System.Drawing.Size(63, 23);
+            this.rbMale2.Size = new System.Drawing.Size(64, 24);
             this.rbMale2.TabIndex = 126;
             this.rbMale2.TabStop = true;
             this.rbMale2.Text = "Male";
@@ -1119,11 +1121,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(95, 541);
+            this.label8.Location = new System.Drawing.Point(95, 492);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(107, 19);
+            this.label8.Size = new System.Drawing.Size(106, 20);
             this.label8.TabIndex = 124;
             this.label8.Text = "Department :";
             // 
@@ -1131,11 +1133,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(95, 506);
+            this.label9.Location = new System.Drawing.Point(95, 457);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(140, 19);
+            this.label9.Size = new System.Drawing.Size(140, 20);
             this.label9.TabIndex = 123;
             this.label9.Text = "Contact Number :";
             // 
@@ -1143,11 +1145,11 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(95, 470);
+            this.label10.Location = new System.Drawing.Point(95, 421);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(79, 19);
+            this.label10.Size = new System.Drawing.Size(76, 20);
             this.label10.TabIndex = 122;
             this.label10.Text = "Address :";
             // 
@@ -1155,11 +1157,11 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(94, 400);
+            this.label11.Location = new System.Drawing.Point(94, 351);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(75, 19);
+            this.label11.Size = new System.Drawing.Size(71, 20);
             this.label11.TabIndex = 121;
             this.label11.Text = "Gender :";
             // 
@@ -1167,11 +1169,11 @@
             // 
             this.lblFNameStatus2.AutoSize = true;
             this.lblFNameStatus2.BackColor = System.Drawing.Color.Transparent;
-            this.lblFNameStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFNameStatus2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblFNameStatus2.ForeColor = System.Drawing.Color.Red;
-            this.lblFNameStatus2.Location = new System.Drawing.Point(612, 330);
+            this.lblFNameStatus2.Location = new System.Drawing.Point(612, 281);
             this.lblFNameStatus2.Name = "lblFNameStatus2";
-            this.lblFNameStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblFNameStatus2.Size = new System.Drawing.Size(17, 20);
             this.lblFNameStatus2.TabIndex = 120;
             this.lblFNameStatus2.Text = "*";
             // 
@@ -1179,11 +1181,11 @@
             // 
             this.lblLNameStatus2.AutoSize = true;
             this.lblLNameStatus2.BackColor = System.Drawing.Color.Transparent;
-            this.lblLNameStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLNameStatus2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLNameStatus2.ForeColor = System.Drawing.Color.Red;
-            this.lblLNameStatus2.Location = new System.Drawing.Point(612, 294);
+            this.lblLNameStatus2.Location = new System.Drawing.Point(612, 245);
             this.lblLNameStatus2.Name = "lblLNameStatus2";
-            this.lblLNameStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblLNameStatus2.Size = new System.Drawing.Size(17, 20);
             this.lblLNameStatus2.TabIndex = 119;
             this.lblLNameStatus2.Text = "*";
             // 
@@ -1191,11 +1193,11 @@
             // 
             this.lblConPassStatus2.AutoSize = true;
             this.lblConPassStatus2.BackColor = System.Drawing.Color.Transparent;
-            this.lblConPassStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblConPassStatus2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblConPassStatus2.ForeColor = System.Drawing.Color.Red;
-            this.lblConPassStatus2.Location = new System.Drawing.Point(611, 206);
+            this.lblConPassStatus2.Location = new System.Drawing.Point(611, 183);
             this.lblConPassStatus2.Name = "lblConPassStatus2";
-            this.lblConPassStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblConPassStatus2.Size = new System.Drawing.Size(17, 20);
             this.lblConPassStatus2.TabIndex = 118;
             this.lblConPassStatus2.Text = "*";
             // 
@@ -1203,11 +1205,11 @@
             // 
             this.lblPassStatus2.AutoSize = true;
             this.lblPassStatus2.BackColor = System.Drawing.Color.Transparent;
-            this.lblPassStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPassStatus2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassStatus2.ForeColor = System.Drawing.Color.Red;
-            this.lblPassStatus2.Location = new System.Drawing.Point(611, 170);
+            this.lblPassStatus2.Location = new System.Drawing.Point(611, 147);
             this.lblPassStatus2.Name = "lblPassStatus2";
-            this.lblPassStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblPassStatus2.Size = new System.Drawing.Size(17, 20);
             this.lblPassStatus2.TabIndex = 117;
             this.lblPassStatus2.Text = "*";
             // 
@@ -1215,23 +1217,23 @@
             // 
             this.lblUserStatus2.AutoSize = true;
             this.lblUserStatus2.BackColor = System.Drawing.Color.Transparent;
-            this.lblUserStatus2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblUserStatus2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblUserStatus2.ForeColor = System.Drawing.Color.Red;
-            this.lblUserStatus2.Location = new System.Drawing.Point(611, 134);
+            this.lblUserStatus2.Location = new System.Drawing.Point(611, 111);
             this.lblUserStatus2.Name = "lblUserStatus2";
-            this.lblUserStatus2.Size = new System.Drawing.Size(17, 19);
+            this.lblUserStatus2.Size = new System.Drawing.Size(17, 20);
             this.lblUserStatus2.TabIndex = 116;
             this.lblUserStatus2.Text = "*";
             // 
             // txtMiddleName2
             // 
-            this.txtMiddleName2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtMiddleName2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtMiddleName2.BackColor = System.Drawing.Color.White;
+            this.txtMiddleName2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMiddleName2.ForeColor = System.Drawing.Color.DimGray;
-            this.txtMiddleName2.Location = new System.Drawing.Point(305, 363);
+            this.txtMiddleName2.Location = new System.Drawing.Point(305, 314);
             this.txtMiddleName2.MaxLength = 30;
             this.txtMiddleName2.Name = "txtMiddleName2";
-            this.txtMiddleName2.Size = new System.Drawing.Size(300, 26);
+            this.txtMiddleName2.Size = new System.Drawing.Size(300, 27);
             this.txtMiddleName2.TabIndex = 115;
             this.txtMiddleName2.Text = "Middle Name";
             this.txtMiddleName2.TextChanged += new System.EventHandler(this.txtMiddleName2_TextChanged);
@@ -1239,13 +1241,13 @@
             // 
             // txtFirstName2
             // 
-            this.txtFirstName2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtFirstName2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFirstName2.BackColor = System.Drawing.Color.White;
+            this.txtFirstName2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName2.ForeColor = System.Drawing.Color.DimGray;
-            this.txtFirstName2.Location = new System.Drawing.Point(305, 327);
+            this.txtFirstName2.Location = new System.Drawing.Point(305, 278);
             this.txtFirstName2.MaxLength = 30;
             this.txtFirstName2.Name = "txtFirstName2";
-            this.txtFirstName2.Size = new System.Drawing.Size(300, 26);
+            this.txtFirstName2.Size = new System.Drawing.Size(300, 27);
             this.txtFirstName2.TabIndex = 114;
             this.txtFirstName2.Text = "First Name";
             this.txtFirstName2.TextChanged += new System.EventHandler(this.txtFirstName2_TextChanged);
@@ -1253,13 +1255,13 @@
             // 
             // txtLastName2
             // 
-            this.txtLastName2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtLastName2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtLastName2.BackColor = System.Drawing.Color.White;
+            this.txtLastName2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName2.ForeColor = System.Drawing.Color.DimGray;
-            this.txtLastName2.Location = new System.Drawing.Point(305, 291);
+            this.txtLastName2.Location = new System.Drawing.Point(305, 242);
             this.txtLastName2.MaxLength = 30;
             this.txtLastName2.Name = "txtLastName2";
-            this.txtLastName2.Size = new System.Drawing.Size(300, 26);
+            this.txtLastName2.Size = new System.Drawing.Size(300, 27);
             this.txtLastName2.TabIndex = 113;
             this.txtLastName2.Text = "Last Name";
             this.txtLastName2.TextChanged += new System.EventHandler(this.txtLastName2_TextChanged);
@@ -1269,11 +1271,11 @@
             // 
             this.label17.AutoSize = true;
             this.label17.BackColor = System.Drawing.Color.Transparent;
-            this.label17.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(101, 294);
+            this.label17.Location = new System.Drawing.Point(101, 245);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(62, 19);
+            this.label17.Size = new System.Drawing.Size(61, 20);
             this.label17.TabIndex = 112;
             this.label17.Text = "Name :";
             // 
@@ -1281,11 +1283,11 @@
             // 
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.Transparent;
-            this.label18.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(101, 206);
+            this.label18.Location = new System.Drawing.Point(101, 183);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(152, 19);
+            this.label18.Size = new System.Drawing.Size(151, 20);
             this.label18.TabIndex = 111;
             this.label18.Text = "Confirm Password :";
             // 
@@ -1293,11 +1295,11 @@
             // 
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.Transparent;
-            this.label19.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(101, 170);
+            this.label19.Location = new System.Drawing.Point(101, 147);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(88, 19);
+            this.label19.Size = new System.Drawing.Size(86, 20);
             this.label19.TabIndex = 110;
             this.label19.Text = "Password :";
             // 
@@ -1305,38 +1307,38 @@
             // 
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.Transparent;
-            this.label20.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label20.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(101, 134);
+            this.label20.Location = new System.Drawing.Point(101, 111);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(93, 19);
+            this.label20.Size = new System.Drawing.Size(93, 20);
             this.label20.TabIndex = 109;
             this.label20.Text = "Username :";
             // 
             // txtConPass2
             // 
-            this.txtConPass2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtConPass2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtConPass2.BackColor = System.Drawing.Color.White;
+            this.txtConPass2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtConPass2.ForeColor = System.Drawing.Color.Black;
-            this.txtConPass2.Location = new System.Drawing.Point(305, 203);
+            this.txtConPass2.Location = new System.Drawing.Point(305, 180);
             this.txtConPass2.MaxLength = 30;
             this.txtConPass2.Name = "txtConPass2";
             this.txtConPass2.PasswordChar = '•';
-            this.txtConPass2.Size = new System.Drawing.Size(300, 26);
+            this.txtConPass2.Size = new System.Drawing.Size(300, 27);
             this.txtConPass2.TabIndex = 108;
             this.txtConPass2.TextChanged += new System.EventHandler(this.txtConPass2_TextChanged);
             this.txtConPass2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtConPass2_KeyPress);
             // 
             // txtPassword2
             // 
-            this.txtPassword2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtPassword2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPassword2.BackColor = System.Drawing.Color.White;
+            this.txtPassword2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPassword2.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword2.Location = new System.Drawing.Point(305, 167);
+            this.txtPassword2.Location = new System.Drawing.Point(305, 144);
             this.txtPassword2.MaxLength = 30;
             this.txtPassword2.Name = "txtPassword2";
             this.txtPassword2.PasswordChar = '•';
-            this.txtPassword2.Size = new System.Drawing.Size(300, 26);
+            this.txtPassword2.Size = new System.Drawing.Size(300, 27);
             this.txtPassword2.TabIndex = 107;
             this.txtPassword2.TextChanged += new System.EventHandler(this.txtPassword2_TextChanged);
             this.txtPassword2.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPassword2_KeyPress);
@@ -1345,23 +1347,23 @@
             // 
             this.label21.AutoSize = true;
             this.label21.BackColor = System.Drawing.Color.Transparent;
-            this.label21.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(25, 25);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(245, 39);
+            this.label21.Size = new System.Drawing.Size(189, 28);
             this.label21.TabIndex = 106;
             this.label21.Text = "Edit Employee";
             // 
             // txtUsername2
             // 
-            this.txtUsername2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtUsername2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsername2.BackColor = System.Drawing.Color.White;
+            this.txtUsername2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsername2.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername2.Location = new System.Drawing.Point(305, 131);
+            this.txtUsername2.Location = new System.Drawing.Point(305, 108);
             this.txtUsername2.MaxLength = 30;
             this.txtUsername2.Name = "txtUsername2";
-            this.txtUsername2.Size = new System.Drawing.Size(300, 26);
+            this.txtUsername2.Size = new System.Drawing.Size(300, 27);
             this.txtUsername2.TabIndex = 105;
             this.txtUsername2.TextChanged += new System.EventHandler(this.txtUsername2_TextChanged);
             // 
@@ -1369,35 +1371,35 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(100, 100);
+            this.label1.Location = new System.Drawing.Point(100, 77);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(113, 19);
+            this.label1.Size = new System.Drawing.Size(113, 20);
             this.label1.TabIndex = 36;
             this.label1.Text = "Employee ID :";
             // 
             // txtEmpId
             // 
-            this.txtEmpId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.txtEmpId.BackColor = System.Drawing.Color.White;
             this.txtEmpId.Enabled = false;
-            this.txtEmpId.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmpId.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEmpId.ForeColor = System.Drawing.Color.Black;
-            this.txtEmpId.Location = new System.Drawing.Point(305, 95);
+            this.txtEmpId.Location = new System.Drawing.Point(305, 72);
             this.txtEmpId.MaxLength = 30;
             this.txtEmpId.Name = "txtEmpId";
-            this.txtEmpId.Size = new System.Drawing.Size(300, 26);
+            this.txtEmpId.Size = new System.Drawing.Size(300, 27);
             this.txtEmpId.TabIndex = 35;
             // 
             // ucEmployeeAddEdit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ucEmployeeAddEdit";
-            this.Size = new System.Drawing.Size(1118, 450);
+            this.Size = new System.Drawing.Size(1155, 500);
             this.VisibleChanged += new System.EventHandler(this.ucEmployeeAddEdit_VisibleChanged);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

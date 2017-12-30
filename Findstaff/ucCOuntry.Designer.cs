@@ -31,7 +31,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.dgvCountry = new System.Windows.Forms.DataGridView();
-            this.lblCountry = new System.Windows.Forms.Label();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
@@ -54,7 +53,7 @@
             this.dgvCountry.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
@@ -63,45 +62,34 @@
             this.dgvCountry.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century", 12F);
             dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgvCountry.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvCountry.GridColor = System.Drawing.Color.Gainsboro;
-            this.dgvCountry.Location = new System.Drawing.Point(54, 120);
+            this.dgvCountry.Location = new System.Drawing.Point(48, 62);
             this.dgvCountry.MultiSelect = false;
             this.dgvCountry.Name = "dgvCountry";
             this.dgvCountry.ReadOnly = true;
             this.dgvCountry.RowHeadersVisible = false;
             this.dgvCountry.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvCountry.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCountry.Size = new System.Drawing.Size(1018, 200);
+            this.dgvCountry.Size = new System.Drawing.Size(1056, 360);
             this.dgvCountry.TabIndex = 43;
-            // 
-            // lblCountry
-            // 
-            this.lblCountry.AutoSize = true;
-            this.lblCountry.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountry.ForeColor = System.Drawing.Color.Black;
-            this.lblCountry.Location = new System.Drawing.Point(25, 25);
-            this.lblCountry.Name = "lblCountry";
-            this.lblCountry.Size = new System.Drawing.Size(144, 39);
-            this.lblCountry.TabIndex = 38;
-            this.lblCountry.Text = "Country";
             // 
             // btnDelete
             // 
-            this.btnDelete.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnDelete.BackColor = System.Drawing.Color.White;
             this.btnDelete.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnDelete.FlatAppearance.BorderSize = 0;
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDelete.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(565, 350);
+            this.btnDelete.Location = new System.Drawing.Point(579, 439);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(100, 50);
+            this.btnDelete.Size = new System.Drawing.Size(100, 38);
             this.btnDelete.TabIndex = 50;
             this.btnDelete.Text = "DELETE";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -109,15 +97,15 @@
             // 
             // btnEdit
             // 
-            this.btnEdit.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnEdit.BackColor = System.Drawing.Color.White;
             this.btnEdit.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnEdit.FlatAppearance.BorderSize = 0;
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEdit.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEdit.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEdit.Location = new System.Drawing.Point(459, 350);
+            this.btnEdit.Location = new System.Drawing.Point(473, 439);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(100, 50);
+            this.btnEdit.Size = new System.Drawing.Size(100, 38);
             this.btnEdit.TabIndex = 49;
             this.btnEdit.Text = "EDIT";
             this.btnEdit.UseVisualStyleBackColor = false;
@@ -125,15 +113,15 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(353, 350);
+            this.btnAdd.Location = new System.Drawing.Point(367, 439);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(100, 50);
+            this.btnAdd.Size = new System.Drawing.Size(100, 38);
             this.btnAdd.TabIndex = 48;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -141,13 +129,13 @@
             // 
             // txtName
             // 
-            this.txtName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.txtName.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtName.BackColor = System.Drawing.Color.White;
+            this.txtName.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtName.ForeColor = System.Drawing.Color.DimGray;
-            this.txtName.Location = new System.Drawing.Point(166, 81);
+            this.txtName.Location = new System.Drawing.Point(99, 20);
             this.txtName.MaxLength = 30;
             this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(231, 26);
+            this.txtName.Size = new System.Drawing.Size(231, 27);
             this.txtName.TabIndex = 116;
             this.txtName.TextChanged += new System.EventHandler(this.txtName_TextChanged);
             // 
@@ -155,25 +143,25 @@
             // 
             this.lbl.AutoSize = true;
             this.lbl.BackColor = System.Drawing.Color.Transparent;
-            this.lbl.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl.ForeColor = System.Drawing.Color.Black;
-            this.lbl.Location = new System.Drawing.Point(100, 86);
+            this.lbl.Location = new System.Drawing.Point(25, 25);
             this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(65, 19);
+            this.lbl.Size = new System.Drawing.Size(64, 20);
             this.lbl.TabIndex = 117;
             this.lbl.Text = "Search:";
             // 
             // btnView
             // 
-            this.btnView.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnView.BackColor = System.Drawing.Color.White;
             this.btnView.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnView.FlatAppearance.BorderSize = 0;
             this.btnView.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnView.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnView.ForeColor = System.Drawing.Color.Black;
-            this.btnView.Location = new System.Drawing.Point(671, 350);
+            this.btnView.Location = new System.Drawing.Point(685, 439);
             this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(100, 50);
+            this.btnView.Size = new System.Drawing.Size(100, 38);
             this.btnView.TabIndex = 118;
             this.btnView.Text = "VIEW";
             this.btnView.UseVisualStyleBackColor = false;
@@ -181,41 +169,40 @@
             // 
             // ucCountryAddEdit
             // 
-            this.ucCountryAddEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucCountryAddEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ucCountryAddEdit.ForeColor = System.Drawing.Color.Black;
-            this.ucCountryAddEdit.Location = new System.Drawing.Point(0, -2);
+            this.ucCountryAddEdit.Location = new System.Drawing.Point(3, 3);
             this.ucCountryAddEdit.Name = "ucCountryAddEdit";
-            this.ucCountryAddEdit.Size = new System.Drawing.Size(26, 24);
-            this.ucCountryAddEdit.TabIndex = 51;
-            this.ucCountryAddEdit.VisibleChanged += new System.EventHandler(this.ucCountryAddEdit1_VisibleChanged);
+            this.ucCountryAddEdit.Size = new System.Drawing.Size(10, 10);
+            this.ucCountryAddEdit.TabIndex = 120;
+            this.ucCountryAddEdit.Visible = false;
             // 
             // ucCountryView
             // 
-            this.ucCountryView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucCountryView.Location = new System.Drawing.Point(32, 3);
+            this.ucCountryView.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucCountryView.Location = new System.Drawing.Point(29, 3);
             this.ucCountryView.Name = "ucCountryView";
             this.ucCountryView.Size = new System.Drawing.Size(10, 10);
-            this.ucCountryView.TabIndex = 119;
+            this.ucCountryView.TabIndex = 121;
             this.ucCountryView.Visible = false;
             // 
             // ucCountry
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.ucCountryView);
             this.Controls.Add(this.ucCountryAddEdit);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dgvCountry);
-            this.Controls.Add(this.lblCountry);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.btnView);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucCountry";
-            this.Size = new System.Drawing.Size(1118, 450);
+            this.Size = new System.Drawing.Size(1155, 500);
             this.Load += new System.EventHandler(this.ucCountry_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCountry)).EndInit();
             this.ResumeLayout(false);
@@ -223,15 +210,14 @@
 
         }
         #endregion
-        private System.Windows.Forms.Label lblCountry;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnEdit;
         private System.Windows.Forms.Button btnAdd;
         public System.Windows.Forms.DataGridView dgvCountry;
-        private ucCountryAddEdit ucCountryAddEdit;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Button btnView;
+        private ucCountryAddEdit ucCountryAddEdit;
         private ucCountryView ucCountryView;
     }
 }
