@@ -100,5 +100,21 @@ namespace Findstaff
         {
             searchData(txtSkillName.Text);
         }
+
+        private void ucSkillsAddEdit_VisibleChanged_1(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            string com = "Select skill_id 'Skill ID', skillname 'Skill Name' from Genskills_t";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvSkills.DataSource = ds.Tables[0];
+                }
+            }
+        }
     }
 }

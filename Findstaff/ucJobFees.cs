@@ -141,5 +141,23 @@ namespace Findstaff
             ucJobFeesView.Dock = DockStyle.Fill;
             ucJobFeesView.Visible = true;
         }
+
+        private void ucJobFeesAddEdit_VisibleChanged_1(object sender, EventArgs e)
+        {
+            Connection con = new Findstaff.Connection();
+            connection = con.dbConnection();
+            connection.Open();
+            cmd = "select jo.jorder_id'Job Order ID', count(jf.fee_id)'No. of Fees' from joborder_t jo join jobfees_t jf on jo.jorder_id = jf.jorder_id group by jo.jorder_id";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvJobFees.DataSource = ds.Tables[0];
+                }
+            }
+            connection.Close();
+        }
     }
 }

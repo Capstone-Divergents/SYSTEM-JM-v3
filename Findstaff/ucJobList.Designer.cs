@@ -193,6 +193,7 @@
             this.ucJobListAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucJobListAddEdit.TabIndex = 63;
             this.ucJobListAddEdit.Visible = false;
+            this.ucJobListAddEdit.VisibleChanged += new System.EventHandler(this.ucJobListAddEdit_VisibleChanged_1);
             // 
             // ucJobListView
             // 

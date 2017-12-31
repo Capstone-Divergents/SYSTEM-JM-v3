@@ -139,5 +139,23 @@ namespace Findstaff
             searchData(txtName.Text);
         }
 
+        private void ucCountryAddEdit_VisibleChanged(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            string com = "select c.COUNTRY_ID'Country ID', c.COUNTRYNAME'Name of Country', count(cr.req_id)'No. of requirements'"
+                    + " from country_t c join countryreqs_t cr on"
+                    + " c.country_id = cr.country_id"
+                    + " group by c.country_id";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvCountry.DataSource = ds.Tables[0];
+                }
+            }
+        }
     }
 }

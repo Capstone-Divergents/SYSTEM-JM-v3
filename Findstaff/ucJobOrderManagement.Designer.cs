@@ -33,8 +33,8 @@
             this.rbJobList = new System.Windows.Forms.RadioButton();
             this.rbEmployer = new System.Windows.Forms.RadioButton();
             this.ucJobFees = new Findstaff.ucJobFees();
-            this.ucJobList = new Findstaff.ucJobList();
             this.ucEmployer = new Findstaff.ucEmployer();
+            this.ucJobList = new Findstaff.ucJobList();
             this.pnlTabs.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,15 +122,6 @@
             this.ucJobFees.Size = new System.Drawing.Size(100, 100);
             this.ucJobFees.TabIndex = 39;
             // 
-            // ucJobList
-            // 
-            this.ucJobList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucJobList.ForeColor = System.Drawing.Color.Black;
-            this.ucJobList.Location = new System.Drawing.Point(107, 56);
-            this.ucJobList.Name = "ucJobList";
-            this.ucJobList.Size = new System.Drawing.Size(100, 100);
-            this.ucJobList.TabIndex = 38;
-            // 
             // ucEmployer
             // 
             this.ucEmployer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -139,6 +130,15 @@
             this.ucEmployer.Name = "ucEmployer";
             this.ucEmployer.Size = new System.Drawing.Size(100, 100);
             this.ucEmployer.TabIndex = 37;
+            // 
+            // ucJobList
+            // 
+            this.ucJobList.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucJobList.ForeColor = System.Drawing.Color.Black;
+            this.ucJobList.Location = new System.Drawing.Point(107, 56);
+            this.ucJobList.Name = "ucJobList";
+            this.ucJobList.Size = new System.Drawing.Size(100, 100);
+            this.ucJobList.TabIndex = 38;
             // 
             // ucJobOrderManagement
             // 
@@ -164,7 +164,7 @@
         private System.Windows.Forms.RadioButton rbJobList;
         private System.Windows.Forms.RadioButton rbEmployer;
         private ucEmployer ucEmployer;
-        private ucJobList ucJobList;
         private ucJobFees ucJobFees;
+        private ucJobList ucJobList;
     }
 }

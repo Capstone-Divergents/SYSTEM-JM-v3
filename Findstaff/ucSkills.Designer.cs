@@ -48,7 +48,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(632, 438);
+            this.btnDelete.Location = new System.Drawing.Point(632, 394);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(100, 38);
             this.btnDelete.TabIndex = 105;
@@ -64,7 +64,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEdit.Location = new System.Drawing.Point(526, 438);
+            this.btnEdit.Location = new System.Drawing.Point(526, 394);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(100, 38);
             this.btnEdit.TabIndex = 104;
@@ -106,7 +106,7 @@
             this.dgvSkills.RowHeadersVisible = false;
             this.dgvSkills.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvSkills.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvSkills.Size = new System.Drawing.Size(1056, 360);
+            this.dgvSkills.Size = new System.Drawing.Size(1056, 319);
             this.dgvSkills.TabIndex = 103;
             // 
             // btnAdd
@@ -117,7 +117,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(420, 438);
+            this.btnAdd.Location = new System.Drawing.Point(420, 394);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 38);
             this.btnAdd.TabIndex = 101;
@@ -157,6 +157,7 @@
             this.ucSkillsAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucSkillsAddEdit.TabIndex = 110;
             this.ucSkillsAddEdit.Visible = false;
+            this.ucSkillsAddEdit.VisibleChanged += new System.EventHandler(this.ucSkillsAddEdit_VisibleChanged_1);
             // 
             // ucSkills
             // 

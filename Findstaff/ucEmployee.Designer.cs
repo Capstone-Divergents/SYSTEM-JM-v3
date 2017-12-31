@@ -175,6 +175,7 @@
             this.ucEmployeeAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucEmployeeAddEdit.TabIndex = 118;
             this.ucEmployeeAddEdit.Visible = false;
+            this.ucEmployeeAddEdit.VisibleChanged += new System.EventHandler(this.ucEmployeeAddEdit_VisibleChanged_1);
             // 
             // ucEmployeeView
             // 

@@ -184,6 +184,7 @@
             this.ucEmployerAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucEmployerAddEdit.TabIndex = 50;
             this.ucEmployerAddEdit.Visible = false;
+            this.ucEmployerAddEdit.VisibleChanged += new System.EventHandler(this.ucEmployerAddEdit_VisibleChanged_1);
             // 
             // ucEmployer
             // 

@@ -48,7 +48,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(420, 439);
+            this.btnAdd.Location = new System.Drawing.Point(420, 394);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(100, 38);
             this.btnAdd.TabIndex = 91;
@@ -64,7 +64,7 @@
             this.btnDelete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDelete.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDelete.ForeColor = System.Drawing.Color.Black;
-            this.btnDelete.Location = new System.Drawing.Point(632, 439);
+            this.btnDelete.Location = new System.Drawing.Point(632, 394);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(100, 38);
             this.btnDelete.TabIndex = 100;
@@ -80,7 +80,7 @@
             this.btnEdit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEdit.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEdit.ForeColor = System.Drawing.Color.Black;
-            this.btnEdit.Location = new System.Drawing.Point(526, 439);
+            this.btnEdit.Location = new System.Drawing.Point(526, 394);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(100, 38);
             this.btnEdit.TabIndex = 99;
@@ -123,7 +123,7 @@
             this.dgvFees.RowHeadersVisible = false;
             this.dgvFees.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvFees.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvFees.Size = new System.Drawing.Size(1056, 360);
+            this.dgvFees.Size = new System.Drawing.Size(1056, 319);
             this.dgvFees.TabIndex = 106;
             // 
             // txtFeeName
@@ -158,6 +158,7 @@
             this.ucFeesAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucFeesAddEdit.TabIndex = 112;
             this.ucFeesAddEdit.Visible = false;
+            this.ucFeesAddEdit.VisibleChanged += new System.EventHandler(this.ucFeesAddEdit_VisibleChanged_1);
             // 
             // ucFees
             // 

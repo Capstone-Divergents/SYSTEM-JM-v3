@@ -101,5 +101,21 @@ namespace Findstaff
         {
             searchData(txtName.Text);
         }
+
+        private void ucRequirementsAddEdit_VisibleChanged_1(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            string com = "Select Req_ID'Requirement ID', Reqname'Requirement Name', Allocation'Requirement for' from Genreqs_t";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvRequirements.DataSource = ds.Tables[0];
+                }
+            }
+        }
     }
 }

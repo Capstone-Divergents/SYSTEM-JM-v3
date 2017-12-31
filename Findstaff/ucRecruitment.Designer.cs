@@ -34,11 +34,11 @@
             this.rbDocu = new System.Windows.Forms.RadioButton();
             this.rbInterviewFin = new System.Windows.Forms.RadioButton();
             this.rbInterviewInit = new System.Windows.Forms.RadioButton();
+            this.ucDocumentation = new Findstaff.ucDocumentation();
             this.ucInterviewFin = new Findstaff.ucInterviewFin();
             this.ucInterviewInit = new Findstaff.ucInterviewInit();
-            this.ucJobApp = new Findstaff.ucJobApp();
             this.ucApplicant = new Findstaff.ucApplicant();
-            this.ucDocumentation = new Findstaff.ucDocumentation();
+            this.ucJobApp = new Findstaff.ucJobApp();
             this.pnlTabs.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -161,6 +161,16 @@
             this.rbInterviewInit.UseVisualStyleBackColor = false;
             this.rbInterviewInit.CheckedChanged += new System.EventHandler(this.rbInterview_CheckedChanged);
             // 
+            // ucDocumentation
+            // 
+            this.ucDocumentation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucDocumentation.ForeColor = System.Drawing.Color.Black;
+            this.ucDocumentation.Location = new System.Drawing.Point(800, 56);
+            this.ucDocumentation.Name = "ucDocumentation";
+            this.ucDocumentation.Size = new System.Drawing.Size(100, 100);
+            this.ucDocumentation.TabIndex = 41;
+            this.ucDocumentation.Visible = false;
+            // 
             // ucInterviewFin
             // 
             this.ucInterviewFin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -169,6 +179,7 @@
             this.ucInterviewFin.Name = "ucInterviewFin";
             this.ucInterviewFin.Size = new System.Drawing.Size(100, 100);
             this.ucInterviewFin.TabIndex = 40;
+            this.ucInterviewFin.Visible = false;
             // 
             // ucInterviewInit
             // 
@@ -178,15 +189,7 @@
             this.ucInterviewInit.Name = "ucInterviewInit";
             this.ucInterviewInit.Size = new System.Drawing.Size(100, 100);
             this.ucInterviewInit.TabIndex = 39;
-            // 
-            // ucJobApp
-            // 
-            this.ucJobApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucJobApp.ForeColor = System.Drawing.Color.Black;
-            this.ucJobApp.Location = new System.Drawing.Point(146, 56);
-            this.ucJobApp.Name = "ucJobApp";
-            this.ucJobApp.Size = new System.Drawing.Size(100, 100);
-            this.ucJobApp.TabIndex = 38;
+            this.ucInterviewInit.Visible = false;
             // 
             // ucApplicant
             // 
@@ -196,25 +199,27 @@
             this.ucApplicant.Name = "ucApplicant";
             this.ucApplicant.Size = new System.Drawing.Size(100, 100);
             this.ucApplicant.TabIndex = 37;
+            this.ucApplicant.Visible = false;
             // 
-            // ucDocumentation
+            // ucJobApp
             // 
-            this.ucDocumentation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucDocumentation.ForeColor = System.Drawing.Color.Black;
-            this.ucDocumentation.Location = new System.Drawing.Point(800, 56);
-            this.ucDocumentation.Name = "ucDocumentation";
-            this.ucDocumentation.Size = new System.Drawing.Size(100, 100);
-            this.ucDocumentation.TabIndex = 41;
+            this.ucJobApp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucJobApp.ForeColor = System.Drawing.Color.Black;
+            this.ucJobApp.Location = new System.Drawing.Point(146, 56);
+            this.ucJobApp.Name = "ucJobApp";
+            this.ucJobApp.Size = new System.Drawing.Size(100, 100);
+            this.ucJobApp.TabIndex = 42;
+            this.ucJobApp.Visible = false;
             // 
             // ucRecruitment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.Controls.Add(this.ucJobApp);
             this.Controls.Add(this.ucDocumentation);
             this.Controls.Add(this.ucInterviewFin);
             this.Controls.Add(this.ucInterviewInit);
-            this.Controls.Add(this.ucJobApp);
             this.Controls.Add(this.ucApplicant);
             this.Controls.Add(this.pnlTabs);
             this.Name = "ucRecruitment";
@@ -233,9 +238,9 @@
         private System.Windows.Forms.RadioButton rbInterviewFin;
         private System.Windows.Forms.RadioButton rbDocu;
         private ucApplicant ucApplicant;
-        private ucJobApp ucJobApp;
         private ucInterviewInit ucInterviewInit;
         private ucInterviewFin ucInterviewFin;
         private ucDocumentation ucDocumentation;
+        private ucJobApp ucJobApp;
     }
 }

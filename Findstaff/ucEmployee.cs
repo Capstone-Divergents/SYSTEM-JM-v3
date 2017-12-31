@@ -161,5 +161,21 @@ namespace Findstaff
         {
             searchData(txtName.Text);
         }
+
+        private void ucEmployeeAddEdit_VisibleChanged_1(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            string com = "select username'Username', Concat(fname , ' ' , lname)'Employee Name', DEPTNAME'Department' from Emp_t;";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvEmployee.DataSource = ds.Tables[0];
+                }
+            }
+        }
     }
 }

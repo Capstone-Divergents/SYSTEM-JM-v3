@@ -105,5 +105,23 @@ namespace Findstaff
         {
             searchData(txtName.Text);
         }
+
+        private void ucEmployerAddEdit_VisibleChanged_1(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            string com = "select e.employer_id'Employer ID', e.employername'Name of Employer', e.foreignprin'Foreign Principal', c.countryname'Country' "
+                + "from employer_t e join country_t c "
+                + "on e.country_id = c.country_id;";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvEmployer.DataSource = ds.Tables[0];
+                }
+            }
+        }
     }
 }

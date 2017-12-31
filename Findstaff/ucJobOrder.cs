@@ -135,5 +135,21 @@ namespace Findstaff
         {
             searchData(txtName.Text);
         }
+
+        private void ucJobOrderAddEdit_VisibleChanged_1(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            string com = "Select J.jorder_id 'Job Order ID', e.employername'Employer', j.Cntrctstart 'Contract Start' from Joborder_t j join employer_t e on j.employer_id = e.employer_id";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvJobOrder.DataSource = ds.Tables[0];
+                }
+            }
+        }
     }
 }

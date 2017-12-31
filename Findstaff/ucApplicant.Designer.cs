@@ -186,6 +186,7 @@
             this.ucAppAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucAppAddEdit.TabIndex = 53;
             this.ucAppAddEdit.Visible = false;
+            this.ucAppAddEdit.VisibleChanged += new System.EventHandler(this.ucAppAddEdit_VisibleChanged_1);
             // 
             // ucApplicant
             // 

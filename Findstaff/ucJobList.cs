@@ -252,5 +252,24 @@ namespace Findstaff
         {
             searchData(txtName.Text);
         }
+
+        private void ucJobListAddEdit_VisibleChanged_1(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+            cmd = "select jo.jorder_id'Job Order ID', j.jobname'Job', e.employername'Employer', jo.reqapp'No. of Required Applicants' " +
+                "from joborder_t jo join employer_t e on jo.employer_id = e.employer_id " +
+                "join job_t j on jo.job_id = j.job_id where jo.cntrctstat = 'Active' or jo.cntrctstat = 'Renewed';";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvJobList.DataSource = ds.Tables[0];
+                }
+            }
+        }
     }
 }

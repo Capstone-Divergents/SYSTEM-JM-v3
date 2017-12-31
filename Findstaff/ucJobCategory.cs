@@ -101,5 +101,21 @@ namespace Findstaff
         {
             searchData(txtCategoryName.Text);
         }
+
+        private void ucJobCategoryAddEdit_VisibleChanged_1(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            string com = "Select Category_ID'Category ID', categoryname'Category Name' from jobcategory_t";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvJobCategory.DataSource = ds.Tables[0];
+                }
+            }
+        }
     }
 }

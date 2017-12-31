@@ -100,5 +100,21 @@ namespace Findstaff
                 }
             }
         }
+
+        private void ucFeesAddEdit_VisibleChanged_1(object sender, EventArgs e)
+        {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            string com = "Select Fee_ID'Fee ID', Feename'Fee Name' from Genfees_t";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvFees.DataSource = ds.Tables[0];
+                }
+            }
+        }
     }
 }

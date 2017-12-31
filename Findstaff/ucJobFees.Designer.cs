@@ -168,6 +168,7 @@
             this.ucJobFeesAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucJobFeesAddEdit.TabIndex = 273;
             this.ucJobFeesAddEdit.Visible = false;
+            this.ucJobFeesAddEdit.VisibleChanged += new System.EventHandler(this.ucJobFeesAddEdit_VisibleChanged_1);
             // 
             // ucJobFees
             // 

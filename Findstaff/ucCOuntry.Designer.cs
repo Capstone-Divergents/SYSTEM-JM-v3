@@ -176,6 +176,7 @@
             this.ucCountryAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucCountryAddEdit.TabIndex = 120;
             this.ucCountryAddEdit.Visible = false;
+            this.ucCountryAddEdit.VisibleChanged += new System.EventHandler(this.ucCountryAddEdit_VisibleChanged);
             // 
             // ucCountryView
             // 
