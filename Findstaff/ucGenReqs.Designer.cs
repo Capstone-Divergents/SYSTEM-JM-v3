@@ -34,11 +34,11 @@
             this.rbSkills = new System.Windows.Forms.RadioButton();
             this.rbJobCategory = new System.Windows.Forms.RadioButton();
             this.rbFees = new System.Windows.Forms.RadioButton();
-            this.ucJobs = new Findstaff.ucJobs();
             this.ucRequirements = new Findstaff.ucRequirements();
             this.ucSkills = new Findstaff.ucSkills();
             this.ucJobCategory = new Findstaff.ucJobCategory();
             this.ucFees = new Findstaff.ucFees();
+            this.ucJobs = new Findstaff.ucJobs();
             this.pnlTabs.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             this.pnlTabs.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTabs.Location = new System.Drawing.Point(0, 0);
             this.pnlTabs.Name = "pnlTabs";
-            this.pnlTabs.Size = new System.Drawing.Size(1118, 50);
+            this.pnlTabs.Size = new System.Drawing.Size(1155, 50);
             this.pnlTabs.TabIndex = 32;
             // 
             // rbJobs
@@ -161,55 +161,51 @@
             this.rbFees.UseVisualStyleBackColor = false;
             this.rbFees.CheckedChanged += new System.EventHandler(this.rbFees_CheckedChanged);
             // 
-            // ucJobs
-            // 
-            this.ucJobs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucJobs.ForeColor = System.Drawing.Color.Black;
-            this.ucJobs.Location = new System.Drawing.Point(822, 56);
-            this.ucJobs.Name = "ucJobs";
-            this.ucJobs.Size = new System.Drawing.Size(100, 100);
-            this.ucJobs.TabIndex = 37;
-            this.ucJobs.Visible = false;
-            // 
             // ucRequirements
             // 
-            this.ucRequirements.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucRequirements.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ucRequirements.ForeColor = System.Drawing.Color.Black;
             this.ucRequirements.Location = new System.Drawing.Point(666, 56);
             this.ucRequirements.Name = "ucRequirements";
-            this.ucRequirements.Size = new System.Drawing.Size(150, 100);
-            this.ucRequirements.TabIndex = 36;
-            this.ucRequirements.Visible = false;
+            this.ucRequirements.Size = new System.Drawing.Size(100, 100);
+            this.ucRequirements.TabIndex = 41;
             // 
             // ucSkills
             // 
-            this.ucSkills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucSkills.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ucSkills.ForeColor = System.Drawing.Color.Black;
             this.ucSkills.Location = new System.Drawing.Point(560, 56);
             this.ucSkills.Name = "ucSkills";
             this.ucSkills.Size = new System.Drawing.Size(100, 100);
-            this.ucSkills.TabIndex = 35;
-            this.ucSkills.Visible = false;
+            this.ucSkills.TabIndex = 40;
             // 
             // ucJobCategory
             // 
-            this.ucJobCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucJobCategory.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ucJobCategory.ForeColor = System.Drawing.Color.Black;
             this.ucJobCategory.Location = new System.Drawing.Point(434, 56);
             this.ucJobCategory.Name = "ucJobCategory";
-            this.ucJobCategory.Size = new System.Drawing.Size(120, 100);
-            this.ucJobCategory.TabIndex = 34;
-            this.ucJobCategory.Visible = false;
+            this.ucJobCategory.Size = new System.Drawing.Size(100, 100);
+            this.ucJobCategory.TabIndex = 39;
             // 
             // ucFees
             // 
-            this.ucFees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.ucFees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ucFees.ForeColor = System.Drawing.Color.Black;
             this.ucFees.Location = new System.Drawing.Point(328, 56);
             this.ucFees.Name = "ucFees";
             this.ucFees.Size = new System.Drawing.Size(100, 100);
-            this.ucFees.TabIndex = 33;
+            this.ucFees.TabIndex = 38;
             this.ucFees.Visible = false;
+            // 
+            // ucJobs
+            // 
+            this.ucJobs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucJobs.ForeColor = System.Drawing.Color.Black;
+            this.ucJobs.Location = new System.Drawing.Point(822, 56);
+            this.ucJobs.Name = "ucJobs";
+            this.ucJobs.Size = new System.Drawing.Size(100, 100);
+            this.ucJobs.TabIndex = 42;
             // 
             // ucGenReqs
             // 
@@ -223,7 +219,7 @@
             this.Controls.Add(this.ucFees);
             this.Controls.Add(this.pnlTabs);
             this.Name = "ucGenReqs";
-            this.Size = new System.Drawing.Size(1118, 450);
+            this.Size = new System.Drawing.Size(1155, 500);
             this.VisibleChanged += new System.EventHandler(this.ucGenReqs_VisibleChanged);
             this.pnlTabs.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -238,10 +234,10 @@
         private System.Windows.Forms.RadioButton rbSkills;
         private System.Windows.Forms.RadioButton rbJobCategory;
         private System.Windows.Forms.RadioButton rbFees;
-        public ucFees ucFees;
-        public ucJobCategory ucJobCategory;
-        public ucSkills ucSkills;
-        public ucRequirements ucRequirements;
-        public ucJobs ucJobs;
+        private ucFees ucFees;
+        private ucJobCategory ucJobCategory;
+        private ucSkills ucSkills;
+        private ucRequirements ucRequirements;
+        private ucJobs ucJobs;
     }
 }

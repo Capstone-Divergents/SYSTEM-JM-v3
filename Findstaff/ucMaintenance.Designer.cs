@@ -32,9 +32,9 @@
             this.rbGeneralRequirements = new System.Windows.Forms.RadioButton();
             this.rbCountry = new System.Windows.Forms.RadioButton();
             this.rbEmployee = new System.Windows.Forms.RadioButton();
+            this.ucCountry = new Findstaff.ucCountry();
             this.ucEmployee = new Findstaff.ucEmployee();
             this.ucGenReqs = new Findstaff.ucGenReqs();
-            this.ucCountry = new Findstaff.ucCountry();
             this.pnlTabs.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -113,6 +113,16 @@
             this.rbEmployee.UseVisualStyleBackColor = false;
             this.rbEmployee.CheckedChanged += new System.EventHandler(this.rbEmployee_CheckedChanged);
             // 
+            // ucCountry
+            // 
+            this.ucCountry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucCountry.ForeColor = System.Drawing.Color.Black;
+            this.ucCountry.Location = new System.Drawing.Point(107, 56);
+            this.ucCountry.Name = "ucCountry";
+            this.ucCountry.Size = new System.Drawing.Size(100, 100);
+            this.ucCountry.TabIndex = 43;
+            this.ucCountry.Visible = false;
+            // 
             // ucEmployee
             // 
             this.ucEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
@@ -125,31 +135,21 @@
             // 
             // ucGenReqs
             // 
-            this.ucGenReqs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.ucGenReqs.Location = new System.Drawing.Point(221, 56);
+            this.ucGenReqs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucGenReqs.Location = new System.Drawing.Point(213, 56);
             this.ucGenReqs.Name = "ucGenReqs";
-            this.ucGenReqs.Size = new System.Drawing.Size(200, 200);
-            this.ucGenReqs.TabIndex = 41;
+            this.ucGenReqs.Size = new System.Drawing.Size(100, 100);
+            this.ucGenReqs.TabIndex = 44;
             this.ucGenReqs.Visible = false;
-            // 
-            // ucCountry
-            // 
-            this.ucCountry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucCountry.ForeColor = System.Drawing.Color.Black;
-            this.ucCountry.Location = new System.Drawing.Point(107, 56);
-            this.ucCountry.Name = "ucCountry";
-            this.ucCountry.Size = new System.Drawing.Size(100, 100);
-            this.ucCountry.TabIndex = 43;
-            this.ucCountry.Visible = false;
             // 
             // ucMaintenance
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.Controls.Add(this.ucGenReqs);
             this.Controls.Add(this.ucCountry);
             this.Controls.Add(this.ucEmployee);
-            this.Controls.Add(this.ucGenReqs);
             this.Controls.Add(this.pnlTabs);
             this.Name = "ucMaintenance";
             this.Size = new System.Drawing.Size(1118, 500);
@@ -165,8 +165,8 @@
         private System.Windows.Forms.RadioButton rbEmployee;
         private System.Windows.Forms.RadioButton rbCountry;
         private System.Windows.Forms.RadioButton rbGeneralRequirements;
-        public ucGenReqs ucGenReqs;
         private ucEmployee ucEmployee;
         private ucCountry ucCountry;
+        private ucGenReqs ucGenReqs;
     }
 }

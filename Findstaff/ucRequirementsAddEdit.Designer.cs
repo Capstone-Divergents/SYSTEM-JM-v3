@@ -62,20 +62,20 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 400);
+            this.panel1.Size = new System.Drawing.Size(10, 500);
             this.panel1.TabIndex = 1;
             // 
             // btnCancel1
             // 
-            this.btnCancel1.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCancel1.BackColor = System.Drawing.Color.White;
             this.btnCancel1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCancel1.FlatAppearance.BorderSize = 0;
             this.btnCancel1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel1.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel1.Location = new System.Drawing.Point(563, 270);
+            this.btnCancel1.Location = new System.Drawing.Point(574, 294);
             this.btnCancel1.Name = "btnCancel1";
-            this.btnCancel1.Size = new System.Drawing.Size(100, 50);
+            this.btnCancel1.Size = new System.Drawing.Size(100, 38);
             this.btnCancel1.TabIndex = 274;
             this.btnCancel1.Text = "CANCEL";
             this.btnCancel1.UseVisualStyleBackColor = false;
@@ -83,44 +83,44 @@
             // 
             // cbDesignation
             // 
-            this.cbDesignation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbDesignation.BackColor = System.Drawing.Color.White;
             this.cbDesignation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDesignation.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDesignation.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDesignation.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDesignation.ForeColor = System.Drawing.Color.Black;
             this.cbDesignation.FormattingEnabled = true;
             this.cbDesignation.Items.AddRange(new object[] {
             "Country",
             "Job",
             "Basic"});
-            this.cbDesignation.Location = new System.Drawing.Point(524, 167);
+            this.cbDesignation.Location = new System.Drawing.Point(573, 184);
             this.cbDesignation.Name = "cbDesignation";
-            this.cbDesignation.Size = new System.Drawing.Size(200, 27);
+            this.cbDesignation.Size = new System.Drawing.Size(200, 28);
             this.cbDesignation.TabIndex = 273;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(417, 170);
+            this.label1.Location = new System.Drawing.Point(466, 187);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(101, 19);
+            this.label1.Size = new System.Drawing.Size(102, 20);
             this.label1.TabIndex = 272;
             this.label1.Text = "Designation:";
             // 
             // btnAdd
             // 
-            this.btnAdd.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdd.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdd.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAdd.ForeColor = System.Drawing.Color.Black;
-            this.btnAdd.Location = new System.Drawing.Point(457, 270);
+            this.btnAdd.Location = new System.Drawing.Point(468, 294);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(100, 50);
+            this.btnAdd.Size = new System.Drawing.Size(100, 38);
             this.btnAdd.TabIndex = 271;
             this.btnAdd.Text = "ADD";
             this.btnAdd.UseVisualStyleBackColor = false;
@@ -129,34 +129,34 @@
             // lblAddRequirement
             // 
             this.lblAddRequirement.AutoSize = true;
-            this.lblAddRequirement.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddRequirement.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAddRequirement.ForeColor = System.Drawing.Color.Black;
             this.lblAddRequirement.Location = new System.Drawing.Point(25, 25);
             this.lblAddRequirement.Name = "lblAddRequirement";
-            this.lblAddRequirement.Size = new System.Drawing.Size(266, 39);
+            this.lblAddRequirement.Size = new System.Drawing.Size(202, 28);
             this.lblAddRequirement.TabIndex = 270;
             this.lblAddRequirement.Text = "Add Documents";
             // 
             // txtRequirement
             // 
-            this.txtRequirement.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtRequirement.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRequirement.BackColor = System.Drawing.Color.White;
+            this.txtRequirement.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRequirement.ForeColor = System.Drawing.Color.Black;
-            this.txtRequirement.Location = new System.Drawing.Point(524, 135);
+            this.txtRequirement.Location = new System.Drawing.Point(573, 152);
             this.txtRequirement.MaxLength = 30;
             this.txtRequirement.Name = "txtRequirement";
-            this.txtRequirement.Size = new System.Drawing.Size(200, 26);
+            this.txtRequirement.Size = new System.Drawing.Size(200, 27);
             this.txtRequirement.TabIndex = 268;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(361, 138);
+            this.label8.Location = new System.Drawing.Point(409, 155);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(157, 19);
+            this.label8.Size = new System.Drawing.Size(158, 20);
             this.label8.TabIndex = 267;
             this.label8.Text = "Requirement Name:";
             // 
@@ -172,22 +172,22 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblEditRequirements);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1108, 0);
+            this.panel2.Location = new System.Drawing.Point(1145, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 400);
+            this.panel2.Size = new System.Drawing.Size(10, 500);
             this.panel2.TabIndex = 2;
             // 
             // btnCancel2
             // 
-            this.btnCancel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCancel2.BackColor = System.Drawing.Color.White;
             this.btnCancel2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCancel2.FlatAppearance.BorderSize = 0;
             this.btnCancel2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel2.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel2.Location = new System.Drawing.Point(563, 270);
+            this.btnCancel2.Location = new System.Drawing.Point(574, 294);
             this.btnCancel2.Name = "btnCancel2";
-            this.btnCancel2.Size = new System.Drawing.Size(100, 50);
+            this.btnCancel2.Size = new System.Drawing.Size(100, 38);
             this.btnCancel2.TabIndex = 282;
             this.btnCancel2.Text = "CANCEL";
             this.btnCancel2.UseVisualStyleBackColor = false;
@@ -199,67 +199,67 @@
             "Country",
             "Job",
             "Basic"});
-            this.cbDesignation1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.cbDesignation1.BackColor = System.Drawing.Color.White;
             this.cbDesignation1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.cbDesignation1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDesignation1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDesignation1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDesignation1.ForeColor = System.Drawing.Color.Black;
             this.cbDesignation1.FormattingEnabled = true;
             this.cbDesignation1.Items.AddRange(new object[] {
             "Country",
             "Job",
             "Basic"});
-            this.cbDesignation1.Location = new System.Drawing.Point(516, 187);
+            this.cbDesignation1.Location = new System.Drawing.Point(548, 217);
             this.cbDesignation1.Name = "cbDesignation1";
-            this.cbDesignation1.Size = new System.Drawing.Size(200, 27);
+            this.cbDesignation1.Size = new System.Drawing.Size(200, 28);
             this.cbDesignation1.TabIndex = 281;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(409, 190);
+            this.label3.Location = new System.Drawing.Point(437, 220);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 19);
+            this.label3.Size = new System.Drawing.Size(102, 20);
             this.label3.TabIndex = 280;
             this.label3.Text = "Designation:";
             // 
             // txtRequirement2
             // 
-            this.txtRequirement2.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtRequirement2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRequirement2.BackColor = System.Drawing.Color.White;
+            this.txtRequirement2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRequirement2.ForeColor = System.Drawing.Color.Black;
-            this.txtRequirement2.Location = new System.Drawing.Point(516, 154);
+            this.txtRequirement2.Location = new System.Drawing.Point(548, 184);
             this.txtRequirement2.MaxLength = 30;
             this.txtRequirement2.Name = "txtRequirement2";
-            this.txtRequirement2.Size = new System.Drawing.Size(200, 26);
+            this.txtRequirement2.Size = new System.Drawing.Size(200, 27);
             this.txtRequirement2.TabIndex = 279;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(356, 157);
+            this.label4.Location = new System.Drawing.Point(381, 187);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(157, 19);
+            this.label4.Size = new System.Drawing.Size(158, 20);
             this.label4.TabIndex = 278;
             this.label4.Text = "Requirement Name:";
             // 
             // btnSave
             // 
-            this.btnSave.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSave.BackColor = System.Drawing.Color.White;
             this.btnSave.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSave.FlatAppearance.BorderSize = 0;
             this.btnSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSave.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.ForeColor = System.Drawing.Color.Black;
-            this.btnSave.Location = new System.Drawing.Point(457, 270);
+            this.btnSave.Location = new System.Drawing.Point(468, 294);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(100, 50);
+            this.btnSave.Size = new System.Drawing.Size(100, 38);
             this.btnSave.TabIndex = 277;
             this.btnSave.Text = "SAVE";
             this.btnSave.UseVisualStyleBackColor = false;
@@ -267,36 +267,36 @@
             // 
             // txtRequirementID
             // 
-            this.txtRequirementID.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtRequirementID.BackColor = System.Drawing.Color.White;
             this.txtRequirementID.Enabled = false;
-            this.txtRequirementID.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtRequirementID.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtRequirementID.ForeColor = System.Drawing.Color.Black;
-            this.txtRequirementID.Location = new System.Drawing.Point(516, 122);
+            this.txtRequirementID.Location = new System.Drawing.Point(548, 152);
             this.txtRequirementID.MaxLength = 30;
             this.txtRequirementID.Name = "txtRequirementID";
-            this.txtRequirementID.Size = new System.Drawing.Size(200, 26);
+            this.txtRequirementID.Size = new System.Drawing.Size(200, 27);
             this.txtRequirementID.TabIndex = 276;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(380, 125);
+            this.label2.Location = new System.Drawing.Point(409, 155);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(130, 19);
+            this.label2.Size = new System.Drawing.Size(133, 20);
             this.label2.TabIndex = 275;
             this.label2.Text = "Requirement ID:";
             // 
             // lblEditRequirements
             // 
             this.lblEditRequirements.AutoSize = true;
-            this.lblEditRequirements.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEditRequirements.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEditRequirements.ForeColor = System.Drawing.Color.Black;
             this.lblEditRequirements.Location = new System.Drawing.Point(25, 25);
             this.lblEditRequirements.Name = "lblEditRequirements";
-            this.lblEditRequirements.Size = new System.Drawing.Size(267, 39);
+            this.lblEditRequirements.Size = new System.Drawing.Size(206, 28);
             this.lblEditRequirements.TabIndex = 274;
             this.lblEditRequirements.Text = "Edit Documents";
             // 
@@ -304,11 +304,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "ucRequirementsAddEdit";
-            this.Size = new System.Drawing.Size(1118, 400);
+            this.Size = new System.Drawing.Size(1155, 500);
             this.VisibleChanged += new System.EventHandler(this.ucRequirementsAddEdit_VisibleChanged);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
