@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtEmail1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtContact1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtCompAddress1 = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.btnCancel1 = new System.Windows.Forms.Button();
             this.btnAddEmp = new System.Windows.Forms.Button();
             this.cbCountry1 = new System.Windows.Forms.ComboBox();
@@ -39,6 +45,12 @@
             this.lblEmp1 = new System.Windows.Forms.Label();
             this.lblAddEmp = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.txtEmail2 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtContact2 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCompAddress2 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnCancel2 = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.cbCountry2 = new System.Windows.Forms.ComboBox();
@@ -50,18 +62,6 @@
             this.lblEmp2 = new System.Windows.Forms.Label();
             this.lblEmpID = new System.Windows.Forms.Label();
             this.lblEditEmp = new System.Windows.Forms.Label();
-            this.txtCompAddress1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtEmail1 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtContact1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtEmail2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtContact2 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtCompAddress2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -88,6 +88,75 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(10, 450);
             this.panel1.TabIndex = 0;
+            // 
+            // txtEmail1
+            // 
+            this.txtEmail1.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtEmail1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail1.ForeColor = System.Drawing.Color.Black;
+            this.txtEmail1.Location = new System.Drawing.Point(428, 260);
+            this.txtEmail1.MaxLength = 30;
+            this.txtEmail1.Name = "txtEmail1";
+            this.txtEmail1.Size = new System.Drawing.Size(317, 26);
+            this.txtEmail1.TabIndex = 20;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(284, 263);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 19);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Company Email :";
+            // 
+            // txtContact1
+            // 
+            this.txtContact1.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtContact1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContact1.ForeColor = System.Drawing.Color.Black;
+            this.txtContact1.Location = new System.Drawing.Point(428, 229);
+            this.txtContact1.MaxLength = 30;
+            this.txtContact1.Name = "txtContact1";
+            this.txtContact1.Size = new System.Drawing.Size(317, 26);
+            this.txtContact1.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(330, 232);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(90, 19);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Contact # :";
+            // 
+            // txtCompAddress1
+            // 
+            this.txtCompAddress1.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtCompAddress1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompAddress1.ForeColor = System.Drawing.Color.Black;
+            this.txtCompAddress1.Location = new System.Drawing.Point(428, 198);
+            this.txtCompAddress1.MaxLength = 30;
+            this.txtCompAddress1.Name = "txtCompAddress1";
+            this.txtCompAddress1.Size = new System.Drawing.Size(317, 26);
+            this.txtCompAddress1.TabIndex = 16;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(266, 201);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(155, 19);
+            this.label1.TabIndex = 15;
+            this.label1.Text = "Company Address :";
             // 
             // btnCancel1
             // 
@@ -224,10 +293,79 @@
             this.panel2.Controls.Add(this.lblEmpID);
             this.panel2.Controls.Add(this.lblEditEmp);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(243, 0);
+            this.panel2.Location = new System.Drawing.Point(194, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(875, 450);
+            this.panel2.Size = new System.Drawing.Size(924, 450);
             this.panel2.TabIndex = 15;
+            // 
+            // txtEmail2
+            // 
+            this.txtEmail2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtEmail2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail2.ForeColor = System.Drawing.Color.Black;
+            this.txtEmail2.Location = new System.Drawing.Point(469, 286);
+            this.txtEmail2.MaxLength = 30;
+            this.txtEmail2.Name = "txtEmail2";
+            this.txtEmail2.Size = new System.Drawing.Size(317, 26);
+            this.txtEmail2.TabIndex = 33;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(325, 289);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(135, 19);
+            this.label4.TabIndex = 32;
+            this.label4.Text = "Company Email :";
+            // 
+            // txtContact2
+            // 
+            this.txtContact2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtContact2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContact2.ForeColor = System.Drawing.Color.Black;
+            this.txtContact2.Location = new System.Drawing.Point(469, 255);
+            this.txtContact2.MaxLength = 30;
+            this.txtContact2.Name = "txtContact2";
+            this.txtContact2.Size = new System.Drawing.Size(317, 26);
+            this.txtContact2.TabIndex = 31;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(371, 258);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(90, 19);
+            this.label5.TabIndex = 30;
+            this.label5.Text = "Contact # :";
+            // 
+            // txtCompAddress2
+            // 
+            this.txtCompAddress2.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtCompAddress2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCompAddress2.ForeColor = System.Drawing.Color.Black;
+            this.txtCompAddress2.Location = new System.Drawing.Point(469, 224);
+            this.txtCompAddress2.MaxLength = 30;
+            this.txtCompAddress2.Name = "txtCompAddress2";
+            this.txtCompAddress2.Size = new System.Drawing.Size(317, 26);
+            this.txtCompAddress2.TabIndex = 29;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(307, 227);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(155, 19);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Company Address :";
             // 
             // btnCancel2
             // 
@@ -367,144 +505,6 @@
             this.lblEditEmp.Size = new System.Drawing.Size(188, 28);
             this.lblEditEmp.TabIndex = 16;
             this.lblEditEmp.Text = "Edit Employer";
-            // 
-            // txtCompAddress1
-            // 
-            this.txtCompAddress1.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtCompAddress1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompAddress1.ForeColor = System.Drawing.Color.Black;
-            this.txtCompAddress1.Location = new System.Drawing.Point(428, 198);
-            this.txtCompAddress1.MaxLength = 30;
-            this.txtCompAddress1.Name = "txtCompAddress1";
-            this.txtCompAddress1.Size = new System.Drawing.Size(317, 26);
-            this.txtCompAddress1.TabIndex = 16;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(266, 201);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(155, 19);
-            this.label1.TabIndex = 15;
-            this.label1.Text = "Company Address :";
-            // 
-            // txtEmail1
-            // 
-            this.txtEmail1.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtEmail1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail1.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail1.Location = new System.Drawing.Point(428, 260);
-            this.txtEmail1.MaxLength = 30;
-            this.txtEmail1.Name = "txtEmail1";
-            this.txtEmail1.Size = new System.Drawing.Size(317, 26);
-            this.txtEmail1.TabIndex = 20;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(284, 263);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 19);
-            this.label2.TabIndex = 19;
-            this.label2.Text = "Company Email :";
-            // 
-            // txtContact1
-            // 
-            this.txtContact1.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtContact1.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContact1.ForeColor = System.Drawing.Color.Black;
-            this.txtContact1.Location = new System.Drawing.Point(428, 229);
-            this.txtContact1.MaxLength = 30;
-            this.txtContact1.Name = "txtContact1";
-            this.txtContact1.Size = new System.Drawing.Size(317, 26);
-            this.txtContact1.TabIndex = 18;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(330, 232);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(90, 19);
-            this.label3.TabIndex = 17;
-            this.label3.Text = "Contact # :";
-            // 
-            // txtEmail2
-            // 
-            this.txtEmail2.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtEmail2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEmail2.ForeColor = System.Drawing.Color.Black;
-            this.txtEmail2.Location = new System.Drawing.Point(469, 286);
-            this.txtEmail2.MaxLength = 30;
-            this.txtEmail2.Name = "txtEmail2";
-            this.txtEmail2.Size = new System.Drawing.Size(317, 26);
-            this.txtEmail2.TabIndex = 33;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(325, 289);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(135, 19);
-            this.label4.TabIndex = 32;
-            this.label4.Text = "Company Email :";
-            // 
-            // txtContact2
-            // 
-            this.txtContact2.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtContact2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtContact2.ForeColor = System.Drawing.Color.Black;
-            this.txtContact2.Location = new System.Drawing.Point(469, 255);
-            this.txtContact2.MaxLength = 30;
-            this.txtContact2.Name = "txtContact2";
-            this.txtContact2.Size = new System.Drawing.Size(317, 26);
-            this.txtContact2.TabIndex = 31;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(371, 258);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 19);
-            this.label5.TabIndex = 30;
-            this.label5.Text = "Contact # :";
-            // 
-            // txtCompAddress2
-            // 
-            this.txtCompAddress2.BackColor = System.Drawing.Color.Gainsboro;
-            this.txtCompAddress2.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCompAddress2.ForeColor = System.Drawing.Color.Black;
-            this.txtCompAddress2.Location = new System.Drawing.Point(469, 224);
-            this.txtCompAddress2.MaxLength = 30;
-            this.txtCompAddress2.Name = "txtCompAddress2";
-            this.txtCompAddress2.Size = new System.Drawing.Size(317, 26);
-            this.txtCompAddress2.TabIndex = 29;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(307, 227);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 19);
-            this.label6.TabIndex = 28;
-            this.label6.Text = "Company Address :";
             // 
             // ucEmployerAddEdit
             // 
