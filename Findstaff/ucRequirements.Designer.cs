@@ -79,6 +79,7 @@
             this.dgvRequirements.AllowUserToResizeColumns = false;
             this.dgvRequirements.AllowUserToResizeRows = false;
             this.dgvRequirements.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvRequirements.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dgvRequirements.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvRequirements.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
@@ -157,7 +158,7 @@
             this.ucRequirementsAddEdit.Size = new System.Drawing.Size(10, 10);
             this.ucRequirementsAddEdit.TabIndex = 116;
             this.ucRequirementsAddEdit.Visible = false;
-            this.ucRequirementsAddEdit.VisibleChanged += new System.EventHandler(this.ucRequirementsAddEdit_VisibleChanged_1);
+            this.ucRequirementsAddEdit.VisibleChanged += new System.EventHandler(this.ucRequirementsAddEdit_VisibleChanged);
             // 
             // ucRequirements
             // 

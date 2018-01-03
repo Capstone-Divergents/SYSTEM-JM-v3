@@ -40,6 +40,7 @@ namespace Findstaff
                 ucRequirementsAddEdit.panel1.Visible = false;
                 ucRequirementsAddEdit.panel2.Visible = true;
                 ucRequirementsAddEdit.cbDesignation1.Text = dgvRequirements.SelectedRows[0].Cells[2].Value.ToString();
+                ucRequirementsAddEdit.rtbDesc2.Text = dgvRequirements.SelectedRows[0].Cells[3].Value.ToString();
             }
             else
             {
@@ -66,7 +67,7 @@ namespace Findstaff
             connection = con.dbConnection();
             connection.Open();
 
-            string cmd = "Select Req_ID'Requirement ID', Reqname'Requirement Name', Allocation'Requirement for' from Genreqs_t WHERE concat(Req_ID, Reqname, Allocation) LIKE '%" + valueToFind + "%'";
+            string cmd = "Select Req_ID'Requirement ID', Reqname'Requirement Name', Allocation'Purpose', Description from Genreqs_t WHERE concat(Req_ID, Reqname, Allocation, Description) LIKE '%" + valueToFind + "%'";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();
 
@@ -80,7 +81,7 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            string com = "Select Req_ID'Requirement ID', Reqname'Requirement Name', Allocation'Requirement for' from Genreqs_t";
+            string com = "Select Req_ID'Requirement ID', Reqname'Requirement Name', Allocation'Purpose', Description from Genreqs_t";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
@@ -100,22 +101,6 @@ namespace Findstaff
         private void ucRequirements_Load(object sender, EventArgs e)
         {
             searchData(txtName.Text);
-        }
-
-        private void ucRequirementsAddEdit_VisibleChanged_1(object sender, EventArgs e)
-        {
-            Connection con = new Connection();
-            connection = con.dbConnection();
-            string com = "Select Req_ID'Requirement ID', Reqname'Requirement Name', Allocation'Requirement for' from Genreqs_t";
-            using (connection)
-            {
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
-                {
-                    DataSet ds = new DataSet();
-                    adapter.Fill(ds);
-                    dgvRequirements.DataSource = ds.Tables[0];
-                }
-            }
         }
     }
 }

@@ -37,7 +37,7 @@ namespace Findstaff
                 {
                     if (cbDesignation.SelectedIndex != -1)
                     {
-                        string cmd = "Insert into Genreqs_t (reqname, allocation) values ('" + txtRequirement.Text + "','" + cbDesignation.Text + "')";
+                        string cmd = "Insert into Genreqs_t (reqname, allocation, Description) values ('" + txtRequirement.Text + "','" + cbDesignation.Text + "', '"+rtbDesc1.Text+"')";
                         com = new MySqlCommand(cmd, connection);
                         com.ExecuteNonQuery();
                         MessageBox.Show("Requirement Record Added!", "Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -81,10 +81,10 @@ namespace Findstaff
             {
                 DialogResult rs = MessageBox.Show("Are you sure You want to update the record with the following details?"
                     + "\nRequirement ID: " + txtRequirementID.Text + "\nNew Requirement Name: " + txtRequirement2.Text
-                    +"\nNew Designation: "+ cbDesignation1.Text, "Confirmation", MessageBoxButtons.YesNo);
+                    +"\nNew Designation: "+ cbDesignation1.Text + "\nNew Description: "+rtbDesc2.Text, "Confirmation", MessageBoxButtons.YesNo);
                 if (rs == DialogResult.Yes)
                 {
-                    cmd = "Update Genreqs_t set reqname = '" + txtRequirement2.Text + "', Allocation = '"+cbDesignation1.Text+"' where Req_id = '" + txtRequirementID.Text + "';";
+                    cmd = "Update Genreqs_t set reqname = '" + txtRequirement2.Text + "', Allocation = '"+cbDesignation1.Text+"', Description = '"+rtbDesc2.Text+"'  where Req_id = '" + txtRequirementID.Text + "';";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Changes Saved!", "Updated Requirement Record!", MessageBoxButtons.OK, MessageBoxIcon.Information);

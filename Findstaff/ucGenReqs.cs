@@ -94,7 +94,7 @@ namespace Findstaff
             ucRequirements.Visible = true;
             ucJobs.Visible = false;
 
-            string com = "Select Req_ID'Requirement ID', Reqname'Requirement Name', Allocation'Requirement for' from Genreqs_t;";
+            string com = "Select Req_ID'Requirement ID', Reqname'Requirement Name', Allocation'Purpose', Description from Genreqs_t;";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
