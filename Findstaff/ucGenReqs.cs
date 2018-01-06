@@ -120,7 +120,7 @@ namespace Findstaff
             ucJobs.Visible = true;
             ucJobType.Visible = false;
 
-            string com = "select j.job_id'Job ID', j.Jobname'Job Name', c.categoryname'Category', j.jobtype'Type of Job' from jobcategory_t c join job_t j on c.category_id = j.category_id;";
+            string com = "select j.job_id'Job ID', j.Jobname'Job Name', c.categoryname'Category', jt.typename'Type of Job' from jobcategory_t c join job_t j on c.category_id = j.category_id join jobtype_t jt where j.jobtype_id = jt.jobtype_id;";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))

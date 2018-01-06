@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnEdit = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.txtName = new System.Windows.Forms.TextBox();
             this.lbl = new System.Windows.Forms.Label();
             this.dgvJobType = new System.Windows.Forms.DataGridView();
-            this.ucJobTypeAddEdit = new Findstaff.ucJobTypeAddEdit();
+            this.ucJobTypeAddEdit1 = new Findstaff.ucJobTypeAddEdit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJobType)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,23 +119,23 @@
             this.dgvJobType.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvJobType.BackgroundColor = System.Drawing.Color.Gainsboro;
             this.dgvJobType.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvJobType.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvJobType.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvJobType.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century", 12F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvJobType.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvJobType.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvJobType.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvJobType.Location = new System.Drawing.Point(48, 62);
             this.dgvJobType.MultiSelect = false;
@@ -147,22 +147,22 @@
             this.dgvJobType.Size = new System.Drawing.Size(1056, 319);
             this.dgvJobType.TabIndex = 118;
             // 
-            // ucJobTypeAddEdit
+            // ucJobTypeAddEdit1
             // 
-            this.ucJobTypeAddEdit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucJobTypeAddEdit.ForeColor = System.Drawing.Color.Black;
-            this.ucJobTypeAddEdit.Location = new System.Drawing.Point(3, 3);
-            this.ucJobTypeAddEdit.Name = "ucJobTypeAddEdit";
-            this.ucJobTypeAddEdit.Size = new System.Drawing.Size(10, 10);
-            this.ucJobTypeAddEdit.TabIndex = 119;
-            this.ucJobTypeAddEdit.Visible = false;
+            this.ucJobTypeAddEdit1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucJobTypeAddEdit1.ForeColor = System.Drawing.Color.Black;
+            this.ucJobTypeAddEdit1.Location = new System.Drawing.Point(0, 0);
+            this.ucJobTypeAddEdit1.Name = "ucJobTypeAddEdit1";
+            this.ucJobTypeAddEdit1.Size = new System.Drawing.Size(19, 21);
+            this.ucJobTypeAddEdit1.TabIndex = 119;
+            this.ucJobTypeAddEdit1.VisibleChanged += new System.EventHandler(this.ucJobTypeAddEdit1_VisibleChanged);
             // 
             // ucJobType
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Controls.Add(this.ucJobTypeAddEdit);
+            this.Controls.Add(this.ucJobTypeAddEdit1);
             this.Controls.Add(this.dgvJobType);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnEdit);
@@ -187,5 +187,6 @@
         private System.Windows.Forms.Label lbl;
         public System.Windows.Forms.DataGridView dgvJobType;
         private ucJobTypeAddEdit ucJobTypeAddEdit;
+        private ucJobTypeAddEdit ucJobTypeAddEdit1;
     }
 }

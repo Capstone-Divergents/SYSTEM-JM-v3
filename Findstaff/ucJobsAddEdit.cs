@@ -33,7 +33,7 @@ namespace Findstaff
             string jobname = txtJobs.Text;
             string categ = cbCategory.Text;
             string jobtype = cbJobType.Text;
-            string categID = "";
+            string categID = "", jobtypeID = "";
             if (jobname != "" && categ != "" && jobtype != "")
             {
                 int ctr = 0;
@@ -50,7 +50,17 @@ namespace Findstaff
                         categID = dr[0].ToString();
                     }
                     dr.Close();
-                    cmd = "insert into job_t (category_id, jobname, jobtype) values ('" + categID + "','" + jobname + "','" + jobtype + "');";
+
+                    cmd = "select jobtype_id from jobtype_t where typename = '" + cbJobType.Text + "'";
+                    com = new MySqlCommand(cmd, connection);
+                    dr = com.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        jobtypeID = dr[0].ToString();
+                    }
+                    dr.Close();
+
+                    cmd = "insert into job_t (category_id, jobname, jobtype_id) values ('" + categID + "','" + jobname + "','" + jobtypeID + "');";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Job Record Added!", "New Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -88,10 +98,11 @@ namespace Findstaff
                 DialogResult rs = MessageBox.Show("Are you sure You want to update the record with the following details?"
                     + "\nJob ID: " + txtID.Text
                     + "\nNew Category: " + cbCategory1.Text
-                    + "\nNew Job Name: " + txtJobs2.Text, "Confirmation", MessageBoxButtons.YesNo);
+                    + "\nNew Job Name: " + txtJobs2.Text
+                    + "\nNew TobType: " + cbJobType2.Text, "Confirmation", MessageBoxButtons.YesNo);
                 if (rs == DialogResult.Yes)
                 {
-                    string categID = "";
+                    string categID = "", jobtypeID = "";
                     cmd = "select category_id from jobcategory_t where categoryname = '" + cbCategory1.Text + "'";
                     com = new MySqlCommand(cmd, connection);
                     dr = com.ExecuteReader();
@@ -101,7 +112,16 @@ namespace Findstaff
                     }
                     dr.Close();
 
-                    cmd = "Update Job_t set category_id = '" + categID + "', jobname = '" + txtJobs2.Text + "' where job_id = '" + txtID.Text + "';";
+                    cmd = "select jobtype_id from jobtype_t where typename = '" + cbJobType2.Text + "'";
+                    com = new MySqlCommand(cmd, connection);
+                    dr = com.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        jobtypeID = dr[0].ToString();
+                    }
+                    dr.Close();
+
+                    cmd = "Update Job_t set category_id = '" + categID + "', jobname = '" + txtJobs2.Text + "', jobtype_id = '"+jobtypeID+"' where job_id = '" + txtID.Text + "';";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Changes Saved!", "Updated Requirement Record!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -130,13 +150,22 @@ namespace Findstaff
             if(this.Visible == true)
             {
                 connection.Open();
-                string cmd = "Select categoryname from jobcategory_t;";
+                cmd = "Select categoryname from jobcategory_t;";
                 com = new MySqlCommand(cmd, connection);
-                MySqlDataReader dr = com.ExecuteReader();
+                dr = com.ExecuteReader();
                 while (dr.Read())
                 {
                     cbCategory.Items.Add(dr[0].ToString());
                     cbCategory1.Items.Add(dr[0].ToString());
+                }
+                dr.Close();
+                cmd = "Select typename from jobtype_t;";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    cbJobType.Items.Add(dr[0].ToString());
+                    cbJobType2.Items.Add(dr[0].ToString());
                 }
                 dr.Close();
                 connection.Close();
@@ -145,6 +174,8 @@ namespace Findstaff
             {
                 cbCategory.Items.Clear();
                 cbCategory1.Items.Clear();
+                cbJobType.Items.Clear();
+                cbJobType2.Items.Clear();
             }
         }
 

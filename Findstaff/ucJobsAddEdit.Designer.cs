@@ -48,6 +48,8 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblEditJobs = new System.Windows.Forms.Label();
+            this.cbJobType2 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -109,9 +111,6 @@
             this.cbJobType.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbJobType.ForeColor = System.Drawing.Color.Black;
             this.cbJobType.FormattingEnabled = true;
-            this.cbJobType.Items.AddRange(new object[] {
-            "Vulnerable",
-            "Skilled"});
             this.cbJobType.Location = new System.Drawing.Point(505, 221);
             this.cbJobType.Name = "cbJobType";
             this.cbJobType.Size = new System.Drawing.Size(216, 28);
@@ -191,6 +190,8 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.cbJobType2);
+            this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.cbCategory1);
             this.panel2.Controls.Add(this.btnCancel2);
             this.panel2.Controls.Add(this.label3);
@@ -201,9 +202,9 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblEditJobs);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1145, 0);
+            this.panel2.Location = new System.Drawing.Point(314, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 500);
+            this.panel2.Size = new System.Drawing.Size(841, 500);
             this.panel2.TabIndex = 3;
             // 
             // cbCategory1
@@ -214,7 +215,7 @@
             this.cbCategory1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbCategory1.ForeColor = System.Drawing.Color.Black;
             this.cbCategory1.FormattingEnabled = true;
-            this.cbCategory1.Location = new System.Drawing.Point(477, 184);
+            this.cbCategory1.Location = new System.Drawing.Point(477, 176);
             this.cbCategory1.Name = "cbCategory1";
             this.cbCategory1.Size = new System.Drawing.Size(216, 28);
             this.cbCategory1.TabIndex = 283;
@@ -241,7 +242,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(385, 220);
+            this.label3.Location = new System.Drawing.Point(385, 212);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 20);
             this.label3.TabIndex = 280;
@@ -252,7 +253,7 @@
             this.txtJobs2.BackColor = System.Drawing.Color.White;
             this.txtJobs2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtJobs2.ForeColor = System.Drawing.Color.Black;
-            this.txtJobs2.Location = new System.Drawing.Point(477, 217);
+            this.txtJobs2.Location = new System.Drawing.Point(477, 209);
             this.txtJobs2.MaxLength = 30;
             this.txtJobs2.Name = "txtJobs2";
             this.txtJobs2.Size = new System.Drawing.Size(216, 27);
@@ -265,7 +266,7 @@
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(391, 187);
+            this.label4.Location = new System.Drawing.Point(391, 179);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 20);
             this.label4.TabIndex = 278;
@@ -293,7 +294,7 @@
             this.txtID.Enabled = false;
             this.txtID.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtID.ForeColor = System.Drawing.Color.Black;
-            this.txtID.Location = new System.Drawing.Point(477, 152);
+            this.txtID.Location = new System.Drawing.Point(477, 144);
             this.txtID.MaxLength = 30;
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(216, 27);
@@ -305,7 +306,7 @@
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(409, 155);
+            this.label2.Location = new System.Drawing.Point(409, 147);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(62, 20);
             this.label2.TabIndex = 275;
@@ -321,6 +322,31 @@
             this.lblEditJobs.Size = new System.Drawing.Size(125, 28);
             this.lblEditJobs.TabIndex = 274;
             this.lblEditJobs.Text = "Edit Jobs";
+            // 
+            // cbJobType2
+            // 
+            this.cbJobType2.BackColor = System.Drawing.Color.White;
+            this.cbJobType2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbJobType2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbJobType2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbJobType2.ForeColor = System.Drawing.Color.Black;
+            this.cbJobType2.FormattingEnabled = true;
+            this.cbJobType2.Location = new System.Drawing.Point(477, 242);
+            this.cbJobType2.Name = "cbJobType2";
+            this.cbJobType2.Size = new System.Drawing.Size(216, 28);
+            this.cbJobType2.TabIndex = 285;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(391, 245);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 20);
+            this.label6.TabIndex = 284;
+            this.label6.Text = "Job Type:";
             // 
             // ucJobsAddEdit
             // 
@@ -361,5 +387,7 @@
         public System.Windows.Forms.TextBox txtJobs2;
         public System.Windows.Forms.TextBox txtID;
         public System.Windows.Forms.ComboBox cbCategory1;
+        public System.Windows.Forms.ComboBox cbJobType2;
+        private System.Windows.Forms.Label label6;
     }
 }

@@ -36,10 +36,11 @@ namespace Findstaff
                 ucJobsAddEdit.Dock = DockStyle.Fill;
                 ucJobsAddEdit.txtID.Text = dgvJobs.SelectedRows[0].Cells[0].Value.ToString();
                 ucJobsAddEdit.txtJobs2.Text = dgvJobs.SelectedRows[0].Cells[1].Value.ToString();
+                ucJobsAddEdit.cbCategory1.Text = dgvJobs.SelectedRows[0].Cells[2].Value.ToString();
+                ucJobsAddEdit.cbJobType2.Text = dgvJobs.SelectedRows[0].Cells[3].Value.ToString();
                 ucJobsAddEdit.Visible = true;
                 ucJobsAddEdit.panel1.Visible = false;
                 ucJobsAddEdit.panel2.Visible = true;
-                ucJobsAddEdit.cbCategory1.Text = dgvJobs.SelectedRows[0].Cells[2].Value.ToString();
             }
             else
             {
@@ -66,24 +67,26 @@ namespace Findstaff
             connection = con.dbConnection();
             connection.Open();
 
-            string cmd = "select j.job_id'Job ID', j.Jobname'Job Name', c.categoryname'Category', j.jobtype'Type of Job' from jobcategory_t c join job_t j on c.category_id = j.category_id WHERE concat(j.job_id, j.Jobname, c.categoryname, j.jobtype) LIKE '%" + valueToFind + "%'";
-            com = new MySqlCommand(cmd, connection);
-            com.ExecuteNonQuery();
-
-            MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection);
-            DataTable table = new DataTable();
-            adapter.Fill(table);
-            dgvJobs.DataSource = table;
+            string cmd = "select j.job_id'Job ID', j.Jobname'Job Name', c.categoryname'Category', jt.typename'Type of Job' from jobcategory_t c join job_t j on c.category_id = j.category_id join jobtype_t jt on j.jobtype_id = jt.jobtype_id WHERE concat(j.job_id, j.Jobname, c.categoryname, jt.typename) LIKE '%" + valueToFind + "%'";
+            using (connection)
+            {
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
+                {
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    dgvJobs.DataSource = ds.Tables[0];
+                }
+            }
         }
 
         private void ucJobsAddEdit_VisibleChanged(object sender, EventArgs e)
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            string com = "select j.job_id'Job ID', j.Jobname'Job Name', c.categoryname'Category', j.jobtype'Type of Job' from jobcategory_t c join job_t j on c.category_id = j.category_id";
+            string cmd = "select j.job_id'Job ID', j.Jobname'Job Name', c.categoryname'Category', jt.jobtype'Type of Job' from jobcategory_t c join job_t j on c.category_id = j.category_id join jobtype_t jt on j.jobtype_id = jt.jobtype_id";
             using (connection)
             {
-                using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
+                using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd, connection))
                 {
                     DataSet ds = new DataSet();
                     adapter.Fill(ds);
@@ -106,7 +109,7 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            string com = "select j.job_id'Job ID', j.Jobname'Job Name', c.categoryname'Category', j.jobtype'Type of Job' from jobcategory_t c join job_t j on c.category_id = j.category_id";
+            string com = "select j.job_id'Job ID', j.Jobname'Job Name', c.categoryname'Category', jt.typename'Type of Job' from jobcategory_t c join job_t j on c.category_id = j.category_id join jobtype_t jt where j.jobtype_id = jt.jobtype_id";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))

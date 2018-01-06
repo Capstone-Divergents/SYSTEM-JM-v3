@@ -56,7 +56,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(10, 500);
+            this.panel1.Size = new System.Drawing.Size(1036, 500);
             this.panel1.TabIndex = 2;
             // 
             // btnCancel1
@@ -89,6 +89,7 @@
             this.btnAdd1.TabIndex = 275;
             this.btnAdd1.Text = "ADD";
             this.btnAdd1.UseVisualStyleBackColor = false;
+            this.btnAdd1.Click += new System.EventHandler(this.btnAdd1_Click);
             // 
             // lblAddJobType
             // 
@@ -134,9 +135,9 @@
             this.panel2.Controls.Add(this.txtType2);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(1145, 0);
+            this.panel2.Location = new System.Drawing.Point(3, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(10, 500);
+            this.panel2.Size = new System.Drawing.Size(1152, 500);
             this.panel2.TabIndex = 3;
             // 
             // btnCancel2
@@ -233,11 +234,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "ucJobTypeAddEdit";
             this.Size = new System.Drawing.Size(1155, 500);
+            this.VisibleChanged += new System.EventHandler(this.ucJobTypeAddEdit_VisibleChanged);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
