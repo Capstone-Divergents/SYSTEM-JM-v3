@@ -82,7 +82,7 @@ namespace Findstaff
             connection = con.dbConnection();
             connection.Open();
 
-            string cmd = "Select J.jorder_id 'Job Order ID', e.employername'Employer', j.Cntrctstart 'Contract Start' from Joborder_t j join employer_t e on j.employer_id = e.employer_id WHERE concat(j.jorder_id, e.employername, j.Cntrctstart) LIKE '%" + valueToFind + "%'";
+            string cmd = "Select J.jorder_id 'Job Order ID', e.employername'Employer', j.Cntrctstart 'Contract Start', j.cntrctend'End of Contract' from Joborder_t j join employer_t e on j.employer_id = e.employer_id WHERE concat(j.jorder_id, e.employername, j.Cntrctstart) LIKE '%" + valueToFind + "%'";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();
 
@@ -96,7 +96,7 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            string com = "Select J.jorder_id 'Job Order ID', e.employername'Employer', j.Cntrctstart 'Contract Start' from Joborder_t j join employer_t e on j.employer_id = e.employer_id";
+            string com = "Select J.jorder_id 'Job Order ID', e.employername'Employer', j.Cntrctstart 'Contract Start', j.cntrctend'End of Contract' from Joborder_t j join employer_t e on j.employer_id = e.employer_id";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
@@ -140,7 +140,7 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            string com = "Select J.jorder_id 'Job Order ID', e.employername'Employer', j.Cntrctstart 'Contract Start' from Joborder_t j join employer_t e on j.employer_id = e.employer_id";
+            string com = "Select J.jorder_id 'Job Order ID', e.employername'Employer', j.Cntrctstart 'Contract Start', j.cntrctend'End of Contract' from Joborder_t j join employer_t e on j.employer_id = e.employer_id";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))

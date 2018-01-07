@@ -83,6 +83,9 @@ namespace Findstaff
 
         private void btnCancel1_Click(object sender, EventArgs e)
         {
+            txtJobs.Clear();
+            cbCategory.SelectedIndex = -1;
+            cbJobType.SelectedIndex = -1;
             this.Hide();
         }
 
@@ -139,7 +142,7 @@ namespace Findstaff
             txtID.Clear();
             cbCategory1.SelectedIndex = -1;
             txtJobs2.Clear();
-
+            cbJobType2.SelectedIndex = -1;
             this.Hide();
         }
 
