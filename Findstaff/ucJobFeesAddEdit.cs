@@ -97,16 +97,6 @@ namespace Findstaff
                     cbJobOrder1.Items.Add(dr[0]);
                 }
                 dr.Close();
-
-                cmd = "Select feename from genfees_t;";
-                com = new MySqlCommand(cmd, connection);
-                dr = com.ExecuteReader();
-                while (dr.Read())
-                {
-                    cbFees1.Items.Add(dr[0]);
-                    cbFees2.Items.Add(dr[0]);
-                }
-                dr.Close();
                 connection.Close();
             }
         }
@@ -166,6 +156,28 @@ namespace Findstaff
                 btnAddFee1.Enabled = true;
                 btnRemoveFee.Enabled = true;
                 btnAddAll.Enabled = true;
+                connection.Open();
+                string type = "";
+                cmd = "select jt.jobtype_id from jobtype_t jt join job_t j on jt.jobtype = j.jobtype_id "
+                    + "join joborder_t jo on jo.job_id = j.job_id where jo.jorder_id = '"+cbJobOrder1.Text+"'";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    type = dr[0].ToString();
+                }
+                dr.Close();
+
+                cmd = "Select feename from genfees_t where jobtype_id = '"+type+"';";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    cbFees1.Items.Add(dr[0]);
+                }
+                dr.Close();
+
+                connection.Close();
             }
         }
     }

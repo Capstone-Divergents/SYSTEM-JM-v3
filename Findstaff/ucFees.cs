@@ -65,7 +65,9 @@ namespace Findstaff
             connection = con.dbConnection();
             connection.Open();
 
-            string cmd = "Select Fee_ID'Fee ID', Feename'Fee Name' from Genfees_t WHERE concat(Fee_ID , ' ', Feename) LIKE '%" + valueToFind + "%'";
+            string cmd = "Select g.Fee_ID'Fee ID', g.Feename'Fee Name', count(f.fee_id)'No. of Types' from Genfees_t g join feetype_t f "
+                + "on g.fee_id = f.fee_id "
+                + "group by g.fee_id WHERE concat(Fee_ID , ' ', Feename) LIKE '%" + valueToFind + "%'";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();
 
@@ -89,7 +91,9 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            string com = "Select Fee_ID'Fee ID', Feename'Fee Name' from Genfees_t";
+            string com = "Select g.Fee_ID'Fee ID', g.Feename'Fee Name', count(f.fee_id)'No. of Types' from Genfees_t g join feetype_t f "
+                + "on g.fee_id = f.fee_id "
+                + "group by g.fee_id";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))
@@ -105,7 +109,9 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
-            string com = "Select Fee_ID'Fee ID', Feename'Fee Name' from Genfees_t";
+            string com = "Select g.Fee_ID'Fee ID', g.Feename'Fee Name', count(f.fee_id)'No. of Types' from Genfees_t g join feetype_t f "
+                + "on g.fee_id = f.fee_id "
+                + "group by g.fee_id";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))

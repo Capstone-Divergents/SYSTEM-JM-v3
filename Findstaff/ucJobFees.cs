@@ -59,6 +59,34 @@ namespace Findstaff
                 }
             }
 
+            string type = "";
+            cmd = "select jt.jobtype_id from jobtype_t jt join job_t j on jt.jobtype = j.jobtype_id "
+                + "join joborder_t jo on jo.job_id = j.job_id where jo.jorder_id = '" + dgvJobFees.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                type = dr[0].ToString();
+            }
+            dr.Close();
+
+            cmd = "Select feename from genfees_t where jobtype_id = '" + type + "';";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucJobFeesAddEdit.cbFees2.Items.Add(dr[0]);
+            }
+            dr.Close();
+
+            for(int x = 0; x < ucJobFeesAddEdit.dgvFees2.Rows.Count; x++)
+            {
+                if (ucJobFeesAddEdit.cbFees2.Items.Contains(ucJobFeesAddEdit.dgvFees2.Rows[x].Cells[0].Value.ToString()))
+                {
+                    ucJobFeesAddEdit.cbFees2.Items.Remove(ucJobFeesAddEdit.dgvFees2.Rows[x].Cells[0].Value.ToString());
+                }
+            }
+
             ucJobFeesAddEdit.Dock = DockStyle.Fill;
             ucJobFeesAddEdit.Visible = true;
             ucJobFeesAddEdit.panel1.Visible = false;
