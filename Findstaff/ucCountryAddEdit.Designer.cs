@@ -46,6 +46,7 @@ namespace Findstaff
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.btnCancel2 = new System.Windows.Forms.Button();
             this.btnSave2 = new System.Windows.Forms.Button();
             this.txtCountryID2 = new System.Windows.Forms.TextBox();
@@ -60,6 +61,7 @@ namespace Findstaff
             this.txtCountryName2 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
             this.btnCancel1 = new System.Windows.Forms.Button();
             this.btnAddCountry = new System.Windows.Forms.Button();
             this.dgvCountry = new System.Windows.Forms.DataGridView();
@@ -70,8 +72,6 @@ namespace Findstaff
             this.label7 = new System.Windows.Forms.Label();
             this.txtCountryName1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridEduc)).BeginInit();
             this.pnlButtons1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -256,6 +256,18 @@ namespace Findstaff
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(10, 500);
             this.panel2.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Black;
+            this.label4.Location = new System.Drawing.Point(25, 25);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(171, 28);
+            this.label4.TabIndex = 278;
+            this.label4.Text = "Edit Country";
             // 
             // btnCancel2
             // 
@@ -462,6 +474,18 @@ namespace Findstaff
             this.panel1.Size = new System.Drawing.Size(10, 500);
             this.panel1.TabIndex = 2;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(25, 25);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(167, 28);
+            this.label6.TabIndex = 279;
+            this.label6.Text = "Add Country";
+            // 
             // btnCancel1
             // 
             this.btnCancel1.BackColor = System.Drawing.Color.White;
@@ -623,30 +647,6 @@ namespace Findstaff
             this.label8.Size = new System.Drawing.Size(123, 20);
             this.label8.TabIndex = 106;
             this.label8.Text = "Country Name:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(25, 25);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 28);
-            this.label4.TabIndex = 278;
-            this.label4.Text = "Edit Country";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(25, 25);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(167, 28);
-            this.label6.TabIndex = 279;
-            this.label6.Text = "Add Country";
             // 
             // ucCountryAddEdit
             // 

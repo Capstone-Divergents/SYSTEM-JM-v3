@@ -16,6 +16,8 @@ namespace Findstaff
     {
         private MySqlConnection connection;
         private MySqlCommand com = new MySqlCommand();
+        private string cmd = "";
+        private MySqlDataReader dr;
 
         public ucFeesAddEdit()
         {
@@ -28,14 +30,41 @@ namespace Findstaff
         {
             connection.Open();
             int ctr = 0;
-            if(txtFees1.Text != "")
+            string fID = "", cmd2 = "";
+            if(dgvFees.Rows.Count != 0)
             {
                 string check = "Select Count(Feename) from Genfees_t where Feename = '" + txtFees1.Text + "'";
                 com = new MySqlCommand(check, connection);
                 ctr = int.Parse(com.ExecuteScalar() + "");
                 if (ctr == 0)
                 {
-                    string cmd = "Insert into Genfees_t (Feename) values ('" + txtFees1.Text + "')";
+                    string cmd = "Insert into Genfees_t (Feename) values ('" + txtFees1.Text + "', )";
+                    com = new MySqlCommand(cmd, connection);
+                    com.ExecuteNonQuery();
+                    cmd = "select fee_id from genfees_t where feename = '"+txtFees1.Text+"'";
+                    com = new MySqlCommand(cmd, connection);
+                    dr = com.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        fID = dr[0].ToString();
+                    }
+                    dr.Close();
+                    cmd = "Insert into feetype_t (fee_id, jobtype_id) values ";
+                    for (int x = 0; x < dgvFees.Rows.Count; x++)
+                    {
+                        cmd2 = "select req_id from genreqs_t where reqname = '" + dgvFees.Rows[x].Cells[0].Value.ToString() + "'";
+                        com = new MySqlCommand(cmd2, connection);
+                        dr = com.ExecuteReader();
+                        while (dr.Read())
+                        {
+                            cmd += "('" + fID + "','" + dr[0].ToString() + "')";
+                        }
+                        dr.Close();
+                        if (x < dgvFees.Rows.Count - 1)
+                        {
+                            cmd += ",";
+                        }
+                    }
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     MessageBox.Show("Added!", "Added!", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -98,6 +127,65 @@ namespace Findstaff
         {
             Connection con = new Connection();
             connection = con.dbConnection();
+            if(this.Visible == true)
+            {
+                connection.Open();
+                cmd = "select typename from jobtype_t";
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    cbType1.Items.Add(dr[0]);
+                }
+                dr.Close();
+
+                cmd = "Select f.Fee_ID, t.typename'Requirement Name' from genfees_t f join feetype_t t"
+                + " on f.fee_id = t.fee_id join jobtype_t j on j.jobtype_id = t.jobtype_id"
+                + " where f.feename = '" + txtFee2.Text + "'";
+                int y = 0;
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    y++;
+                }
+                dr.Close();
+
+                string[,] typelist = new string[2, y];
+                cmd = "Select f.Fee_ID, t.typename'Requirement Name' from genfees_t f join feetype_t t"
+                + " on f.fee_id = t.fee_id join jobtype_t j on j.jobtype_id = t.jobtype_id"
+                + " where f.feename = '" + txtFee2.Text + "'";
+                int z = 0;
+                com = new MySqlCommand(cmd, connection);
+                dr = com.ExecuteReader();
+                while (dr.Read())
+                {
+                    typelist[0, z] = dr[0].ToString();
+                    typelist[1, z] = dr[1].ToString();
+                    z++;
+                }
+                dr.Close();
+                dgvFees1.ColumnCount = 2;
+                for (int x = 0; x < y; x++)
+                {
+                    dgvFees1.Rows.Add(typelist[0, x], typelist[1, x]);
+                }
+
+                for (int x = 0; x < dgvFees1.Rows.Count; x++)
+                {
+                    if (cbType2.Items.Contains(dgvFees1.Rows[x].Cells[1].Value.ToString()))
+                    {
+                        cbType2.Items.Remove(dgvFees1.Rows[x].Cells[1].Value.ToString());
+                    }
+                }
+
+                connection.Close();
+            }
+            else
+            {
+                cbType2.Items.Clear();
+                cbType2.Items.Clear();
+            }
         }
 
         private void txtFees1_TextChanged(object sender, EventArgs e)
@@ -113,6 +201,26 @@ namespace Findstaff
             if (!(new Regex(@"^[a-zA-Z ]*$").IsMatch(txtFee2.Text)))
             {
                 txtFee2.Text = "";
+            }
+        }
+
+        private void btnAddFee1_Click(object sender, EventArgs e)
+        {
+            if(txtFees1.Text != "" && cbType1.Text != "")
+            {
+                dgvFees.ColumnCount = 1;
+                dgvFees.Rows.Add(cbType1.Text);
+                cbType1.Items.Remove(cbType1.Text);
+                cbType1.SelectedIndex = -1;
+            }
+        }
+
+        private void btnRemoveType_Click(object sender, EventArgs e)
+        {
+            if(dgvFees.Rows.Count != 0)
+            {
+                cbType1.Items.Add(dgvFees.SelectedRows[0].Cells[0].Value.ToString());
+                dgvFees.Rows.Remove(dgvFees.SelectedRows[0]);
             }
         }
     }
