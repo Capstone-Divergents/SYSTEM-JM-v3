@@ -33,13 +33,18 @@
             this.lblName = new System.Windows.Forms.Label();
             this.lblDept = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.rbQueries = new System.Windows.Forms.RadioButton();
+            this.rbUtilities = new System.Windows.Forms.RadioButton();
             this.rbReports = new System.Windows.Forms.RadioButton();
             this.rbMaintenance = new System.Windows.Forms.RadioButton();
             this.rbAcco = new System.Windows.Forms.RadioButton();
             this.rbRecruitment = new System.Windows.Forms.RadioButton();
             this.rbJobOrderManagement = new System.Windows.Forms.RadioButton();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.ucRecruitment = new Findstaff.ucRecruitment();
+            this.ucMaintenance = new Findstaff.ucMaintenance();
+            this.ucAcco = new Findstaff.ucAcco();
+            this.ucReports = new Findstaff.ucReports();
+            this.ucJobOrderManagement = new Findstaff.ucJobOrderManagement();
             this.btnX = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
@@ -47,11 +52,7 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lblCopyright = new System.Windows.Forms.Label();
-            this.ucMaintenance = new Findstaff.ucMaintenance();
-            this.ucAcco = new Findstaff.ucAcco();
-            this.ucReports = new Findstaff.ucReports();
-            this.ucJobOrderManagement = new Findstaff.ucJobOrderManagement();
-            this.ucRecruitment = new Findstaff.ucRecruitment();
+            this.rbQueries = new System.Windows.Forms.RadioButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -82,6 +83,7 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.rbQueries);
+            this.panel1.Controls.Add(this.rbUtilities);
             this.panel1.Controls.Add(this.rbReports);
             this.panel1.Controls.Add(this.rbMaintenance);
             this.panel1.Controls.Add(this.rbAcco);
@@ -89,35 +91,34 @@
             this.panel1.Controls.Add(this.rbJobOrderManagement);
             this.panel1.Location = new System.Drawing.Point(1, 187);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(156, 328);
+            this.panel1.Size = new System.Drawing.Size(156, 370);
             this.panel1.TabIndex = 17;
             // 
-            // rbQueries
+            // rbUtilities
             // 
-            this.rbQueries.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbQueries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(80)))));
-            this.rbQueries.Dock = System.Windows.Forms.DockStyle.Top;
-            this.rbQueries.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.rbQueries.FlatAppearance.BorderSize = 0;
-            this.rbQueries.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
-            this.rbQueries.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.rbQueries.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rbQueries.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbQueries.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
-            this.rbQueries.ForeColor = System.Drawing.Color.White;
-            this.rbQueries.Location = new System.Drawing.Point(0, 246);
-            this.rbQueries.Name = "rbQueries";
-            this.rbQueries.Size = new System.Drawing.Size(156, 48);
-            this.rbQueries.TabIndex = 15;
-            this.rbQueries.Text = "Queries";
-            this.rbQueries.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbQueries.UseVisualStyleBackColor = false;
+            this.rbUtilities.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbUtilities.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(80)))));
+            this.rbUtilities.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rbUtilities.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.rbUtilities.FlatAppearance.BorderSize = 0;
+            this.rbUtilities.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.rbUtilities.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.rbUtilities.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbUtilities.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbUtilities.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
+            this.rbUtilities.ForeColor = System.Drawing.Color.White;
+            this.rbUtilities.Location = new System.Drawing.Point(0, 198);
+            this.rbUtilities.Name = "rbUtilities";
+            this.rbUtilities.Size = new System.Drawing.Size(156, 48);
+            this.rbUtilities.TabIndex = 15;
+            this.rbUtilities.Text = "Utilities";
+            this.rbUtilities.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbUtilities.UseVisualStyleBackColor = false;
             // 
             // rbReports
             // 
             this.rbReports.Appearance = System.Windows.Forms.Appearance.Button;
             this.rbReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(80)))));
-            this.rbReports.Dock = System.Windows.Forms.DockStyle.Top;
             this.rbReports.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.rbReports.FlatAppearance.BorderSize = 0;
             this.rbReports.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
@@ -126,7 +127,7 @@
             this.rbReports.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbReports.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbReports.ForeColor = System.Drawing.Color.White;
-            this.rbReports.Location = new System.Drawing.Point(0, 198);
+            this.rbReports.Location = new System.Drawing.Point(0, 308);
             this.rbReports.Name = "rbReports";
             this.rbReports.Size = new System.Drawing.Size(156, 48);
             this.rbReports.TabIndex = 14;
@@ -240,6 +241,49 @@
             this.panel2.Size = new System.Drawing.Size(1150, 548);
             this.panel2.TabIndex = 18;
             // 
+            // ucRecruitment
+            // 
+            this.ucRecruitment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucRecruitment.Location = new System.Drawing.Point(3, 55);
+            this.ucRecruitment.Name = "ucRecruitment";
+            this.ucRecruitment.Size = new System.Drawing.Size(200, 50);
+            this.ucRecruitment.TabIndex = 14;
+            // 
+            // ucMaintenance
+            // 
+            this.ucMaintenance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucMaintenance.Location = new System.Drawing.Point(3, 155);
+            this.ucMaintenance.Name = "ucMaintenance";
+            this.ucMaintenance.Size = new System.Drawing.Size(200, 50);
+            this.ucMaintenance.TabIndex = 13;
+            // 
+            // ucAcco
+            // 
+            this.ucAcco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucAcco.ForeColor = System.Drawing.Color.Black;
+            this.ucAcco.Location = new System.Drawing.Point(3, 105);
+            this.ucAcco.Name = "ucAcco";
+            this.ucAcco.Size = new System.Drawing.Size(200, 50);
+            this.ucAcco.TabIndex = 12;
+            // 
+            // ucReports
+            // 
+            this.ucReports.AutoScroll = true;
+            this.ucReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucReports.ForeColor = System.Drawing.Color.Black;
+            this.ucReports.Location = new System.Drawing.Point(3, 311);
+            this.ucReports.Name = "ucReports";
+            this.ucReports.Size = new System.Drawing.Size(200, 50);
+            this.ucReports.TabIndex = 11;
+            // 
+            // ucJobOrderManagement
+            // 
+            this.ucJobOrderManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.ucJobOrderManagement.Location = new System.Drawing.Point(3, 3);
+            this.ucJobOrderManagement.Name = "ucJobOrderManagement";
+            this.ucJobOrderManagement.Size = new System.Drawing.Size(200, 50);
+            this.ucJobOrderManagement.TabIndex = 8;
+            // 
             // btnX
             // 
             this.btnX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -334,48 +378,26 @@
             this.lblCopyright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.lblCopyright.Visible = false;
             // 
-            // ucMaintenance
+            // rbQueries
             // 
-            this.ucMaintenance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucMaintenance.Location = new System.Drawing.Point(3, 155);
-            this.ucMaintenance.Name = "ucMaintenance";
-            this.ucMaintenance.Size = new System.Drawing.Size(200, 50);
-            this.ucMaintenance.TabIndex = 13;
-            // 
-            // ucAcco
-            // 
-            this.ucAcco.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucAcco.ForeColor = System.Drawing.Color.Black;
-            this.ucAcco.Location = new System.Drawing.Point(3, 105);
-            this.ucAcco.Name = "ucAcco";
-            this.ucAcco.Size = new System.Drawing.Size(200, 50);
-            this.ucAcco.TabIndex = 12;
-            // 
-            // ucReports
-            // 
-            this.ucReports.AutoScroll = true;
-            this.ucReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucReports.ForeColor = System.Drawing.Color.Black;
-            this.ucReports.Location = new System.Drawing.Point(3, 203);
-            this.ucReports.Name = "ucReports";
-            this.ucReports.Size = new System.Drawing.Size(200, 50);
-            this.ucReports.TabIndex = 11;
-            // 
-            // ucJobOrderManagement
-            // 
-            this.ucJobOrderManagement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucJobOrderManagement.Location = new System.Drawing.Point(3, 3);
-            this.ucJobOrderManagement.Name = "ucJobOrderManagement";
-            this.ucJobOrderManagement.Size = new System.Drawing.Size(200, 50);
-            this.ucJobOrderManagement.TabIndex = 8;
-            // 
-            // ucRecruitment
-            // 
-            this.ucRecruitment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucRecruitment.Location = new System.Drawing.Point(3, 55);
-            this.ucRecruitment.Name = "ucRecruitment";
-            this.ucRecruitment.Size = new System.Drawing.Size(200, 50);
-            this.ucRecruitment.TabIndex = 14;
+            this.rbQueries.Appearance = System.Windows.Forms.Appearance.Button;
+            this.rbQueries.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(80)))));
+            this.rbQueries.Dock = System.Windows.Forms.DockStyle.Top;
+            this.rbQueries.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.rbQueries.FlatAppearance.BorderSize = 0;
+            this.rbQueries.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
+            this.rbQueries.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.rbQueries.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.rbQueries.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbQueries.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
+            this.rbQueries.ForeColor = System.Drawing.Color.White;
+            this.rbQueries.Location = new System.Drawing.Point(0, 246);
+            this.rbQueries.Name = "rbQueries";
+            this.rbQueries.Size = new System.Drawing.Size(156, 48);
+            this.rbQueries.TabIndex = 16;
+            this.rbQueries.Text = "Queries";
+            this.rbQueries.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.rbQueries.UseVisualStyleBackColor = false;
             // 
             // fMain
             // 
@@ -424,11 +446,12 @@
         public System.Windows.Forms.RadioButton rbRecruitment;
         private System.Windows.Forms.RadioButton rbMaintenance;
         private System.Windows.Forms.RadioButton rbReports;
-        private System.Windows.Forms.RadioButton rbQueries;
+        private System.Windows.Forms.RadioButton rbUtilities;
         private ucJobOrderManagement ucJobOrderManagement;
         private ucReports ucReports;
         private ucAcco ucAcco;
         private ucMaintenance ucMaintenance;
         private ucRecruitment ucRecruitment;
+        private System.Windows.Forms.RadioButton rbQueries;
     }
 }

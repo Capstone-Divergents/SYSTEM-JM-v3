@@ -123,5 +123,11 @@ namespace Findstaff
                 }
             }
         }
+
+        private void btnView_Click(object sender, EventArgs e)
+        {
+            ucEmployerView.Dock = DockStyle.Fill;
+            ucEmployerView.Visible = true;
+        }
     }
 }
