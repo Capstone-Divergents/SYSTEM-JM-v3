@@ -67,7 +67,7 @@ namespace Findstaff
 
             string cmd = "Select g.Fee_ID'Fee ID', g.Feename'Fee Name', count(f.fee_id)'No. of Types' from Genfees_t g join feetype_t f "
                 + "on g.fee_id = f.fee_id "
-                + "group by g.fee_id WHERE concat(Fee_ID , ' ', Feename) LIKE '%" + valueToFind + "%'";
+                + "WHERE concat(g.Fee_ID , ' ', g.Feename) LIKE '%" + valueToFind + "%' group by g.fee_id ";
             com = new MySqlCommand(cmd, connection);
             com.ExecuteNonQuery();
 

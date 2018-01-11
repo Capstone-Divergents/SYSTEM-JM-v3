@@ -36,7 +36,9 @@ namespace Findstaff
             ucJobs.Visible = false;
             ucJobType.Visible = false;
 
-            string com = "Select Fee_ID'Fee ID', Feename'Fee Name' from Genfees_t";
+            string com = "Select g.Fee_ID'Fee ID', g.Feename'Fee Name', count(f.fee_id)'No. of Types' from Genfees_t g join feetype_t f "
+                + "on g.fee_id = f.fee_id "
+                + "group by g.fee_id";
             using (connection)
             {
                 using (MySqlDataAdapter adapter = new MySqlDataAdapter(com, connection))

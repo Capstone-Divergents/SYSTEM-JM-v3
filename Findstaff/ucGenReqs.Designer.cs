@@ -71,7 +71,7 @@
             this.rbJobType.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbJobType.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbJobType.ForeColor = System.Drawing.Color.White;
-            this.rbJobType.Location = new System.Drawing.Point(454, 10);
+            this.rbJobType.Location = new System.Drawing.Point(328, 10);
             this.rbJobType.Name = "rbJobType";
             this.rbJobType.Size = new System.Drawing.Size(120, 40);
             this.rbJobType.TabIndex = 43;
@@ -92,7 +92,7 @@
             this.rbJobs.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbJobs.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbJobs.ForeColor = System.Drawing.Color.White;
-            this.rbJobs.Location = new System.Drawing.Point(328, 10);
+            this.rbJobs.Location = new System.Drawing.Point(454, 10);
             this.rbJobs.Name = "rbJobs";
             this.rbJobs.Size = new System.Drawing.Size(120, 40);
             this.rbJobs.TabIndex = 6;
@@ -226,7 +226,7 @@
             // 
             this.ucJobs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ucJobs.ForeColor = System.Drawing.Color.Black;
-            this.ucJobs.Location = new System.Drawing.Point(328, 56);
+            this.ucJobs.Location = new System.Drawing.Point(454, 56);
             this.ucJobs.Name = "ucJobs";
             this.ucJobs.Size = new System.Drawing.Size(100, 100);
             this.ucJobs.TabIndex = 42;
@@ -235,7 +235,7 @@
             // 
             this.ucJobType.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ucJobType.ForeColor = System.Drawing.Color.Black;
-            this.ucJobType.Location = new System.Drawing.Point(454, 56);
+            this.ucJobType.Location = new System.Drawing.Point(328, 56);
             this.ucJobType.Name = "ucJobType";
             this.ucJobType.Size = new System.Drawing.Size(100, 100);
             this.ucJobType.TabIndex = 43;

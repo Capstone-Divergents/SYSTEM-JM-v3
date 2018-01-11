@@ -38,7 +38,7 @@ namespace Findstaff
                 ctr = int.Parse(com.ExecuteScalar() + "");
                 if (ctr == 0)
                 {
-                    string cmd = "Insert into Genfees_t (Feename) values ('" + txtFees1.Text + "', )";
+                    string cmd = "Insert into Genfees_t (Feename) values ('" + txtFees1.Text + "')";
                     com = new MySqlCommand(cmd, connection);
                     com.ExecuteNonQuery();
                     cmd = "select fee_id from genfees_t where feename = '"+txtFees1.Text+"'";
@@ -52,7 +52,7 @@ namespace Findstaff
                     cmd = "Insert into feetype_t (fee_id, jobtype_id) values ";
                     for (int x = 0; x < dgvFees.Rows.Count; x++)
                     {
-                        cmd2 = "select req_id from genreqs_t where reqname = '" + dgvFees.Rows[x].Cells[0].Value.ToString() + "'";
+                        cmd2 = "select jobtype_id from jobtype_t where typename = '" + dgvFees.Rows[x].Cells[0].Value.ToString() + "'";
                         com = new MySqlCommand(cmd2, connection);
                         dr = com.ExecuteReader();
                         while (dr.Read())
@@ -139,7 +139,7 @@ namespace Findstaff
                 }
                 dr.Close();
 
-                cmd = "Select f.Fee_ID, t.typename'Requirement Name' from genfees_t f join feetype_t t"
+                cmd = "Select f.Fee_ID, j.typename'Requirement Name' from genfees_t f join feetype_t t"
                 + " on f.fee_id = t.fee_id join jobtype_t j on j.jobtype_id = t.jobtype_id"
                 + " where f.feename = '" + txtFee2.Text + "'";
                 int y = 0;
@@ -152,7 +152,7 @@ namespace Findstaff
                 dr.Close();
 
                 string[,] typelist = new string[2, y];
-                cmd = "Select f.Fee_ID, t.typename'Requirement Name' from genfees_t f join feetype_t t"
+                cmd = "Select f.Fee_ID, j.typename'Requirement Name' from genfees_t f join feetype_t t"
                 + " on f.fee_id = t.fee_id join jobtype_t j on j.jobtype_id = t.jobtype_id"
                 + " where f.feename = '" + txtFee2.Text + "'";
                 int z = 0;
