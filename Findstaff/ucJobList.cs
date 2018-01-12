@@ -149,19 +149,22 @@ namespace Findstaff
             }
             dr.Close();
 
-            cmd = "select reqapp, salary, heightreq, weightreq from joborder_t where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select jorder_id, reqapp, salary, gender, heightreq, weightreq, CNTRCTSTART from joborder_t where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
             {
-                ucJobListView.noofempreq.Text = dr[0].ToString();
-                ucJobListView.salary.Text = dr[1].ToString();
-                ucJobListView.height.Text = dr[2].ToString();
-                ucJobListView.weight.Text = dr[3].ToString();
+                ucJobListView.jono.Text = dr[0].ToString();
+                ucJobListView.noofempreq.Text = dr[1].ToString();
+                ucJobListView.salary.Text = dr[2].ToString();
+                ucJobListView.gender.Text = dr[3].ToString();
+                ucJobListView.height.Text = dr[4].ToString();
+                ucJobListView.weight.Text = dr[5].ToString();
+                ucJobListView.contractStart.Text = dr[6].ToString();
             }
             dr.Close();
 
-            cmd = "select j.jobname from job_t j join joblist_t jl on j.job_id = jl.job_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select j.jobname from job_t j join joborder_t jo on j.job_id = jo.job_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())
@@ -170,7 +173,7 @@ namespace Findstaff
             }
             dr.Close();
 
-            cmd = "select jc.categoryname from jobcategory_t jc join joblist_t jl on jc.category_id = jl.category_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            cmd = "select jc.categoryname from jobcategory_t jc join joborder_t jo on jc.category_id = jo.category_id where jorder_id = '" + dgvJobList.SelectedRows[0].Cells[0].Value.ToString() + "'";
             com = new MySqlCommand(cmd, connection);
             dr = com.ExecuteReader();
             while (dr.Read())

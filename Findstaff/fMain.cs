@@ -28,6 +28,7 @@ namespace Findstaff
             ucAcco.Dock = DockStyle.Fill;
             ucMaintenance.Dock = DockStyle.Fill;
             ucReports.Dock = DockStyle.Fill;
+            ucUtilities.Dock = DockStyle.Fill;
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -134,6 +135,7 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucMaintenance.Visible = false;
             ucReports.Visible = false;
+            ucUtilities.Visible = false;
         }
 
         private void rbRecruitment_CheckedChanged(object sender, EventArgs e)
@@ -144,6 +146,7 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucMaintenance.Visible = false;
             ucReports.Visible = false;
+            ucUtilities.Visible = false;
         }
 
         private void rbDocumentation_CheckedChanged(object sender, EventArgs e)
@@ -154,6 +157,7 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucMaintenance.Visible = false;
             ucReports.Visible = false;
+            ucUtilities.Visible = false;
         }
 
         private void rbAcco_CheckedChanged(object sender, EventArgs e)
@@ -164,6 +168,7 @@ namespace Findstaff
             ucAcco.Visible = true;
             ucMaintenance.Visible = false;
             ucReports.Visible = false;
+            ucUtilities.Visible = false;
         }
 
         private void rbFlightBooking_CheckedChanged(object sender, EventArgs e)
@@ -174,6 +179,7 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucMaintenance.Visible = false;
             ucReports.Visible = false;
+            ucUtilities.Visible = false;
         }
 
         private void rbMaintenance_CheckedChanged(object sender, EventArgs e)
@@ -184,6 +190,7 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucMaintenance.Visible = true;
             ucReports.Visible = false;
+            ucUtilities.Visible = false;
         }
 
         private void rbReports_CheckedChanged(object sender, EventArgs e)
@@ -194,6 +201,18 @@ namespace Findstaff
             ucAcco.Visible = false;
             ucMaintenance.Visible = false;
             ucReports.Visible = true;
+            ucUtilities.Visible = false;
+        }
+
+        private void rbUtilities_CheckedChanged(object sender, EventArgs e)
+        {
+            ucJobOrderManagement.Visible = false;
+            ucRecruitment.Visible = false;
+            //ucDocumentation.Visible = false;
+            ucAcco.Visible = false;
+            ucMaintenance.Visible = false;
+            ucReports.Visible = false;
+            ucUtilities.Visible = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)

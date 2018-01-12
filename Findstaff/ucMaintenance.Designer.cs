@@ -31,9 +31,7 @@
             this.pnlTabs = new System.Windows.Forms.Panel();
             this.rbGeneralRequirements = new System.Windows.Forms.RadioButton();
             this.rbCountry = new System.Windows.Forms.RadioButton();
-            this.rbEmployee = new System.Windows.Forms.RadioButton();
             this.ucCountry = new Findstaff.ucCountry();
-            this.ucEmployee = new Findstaff.ucEmployee();
             this.ucGenReqs = new Findstaff.ucGenReqs();
             this.pnlTabs.SuspendLayout();
             this.SuspendLayout();
@@ -43,7 +41,6 @@
             this.pnlTabs.BackColor = System.Drawing.Color.White;
             this.pnlTabs.Controls.Add(this.rbGeneralRequirements);
             this.pnlTabs.Controls.Add(this.rbCountry);
-            this.pnlTabs.Controls.Add(this.rbEmployee);
             this.pnlTabs.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTabs.Location = new System.Drawing.Point(0, 0);
             this.pnlTabs.Name = "pnlTabs";
@@ -62,7 +59,7 @@
             this.rbGeneralRequirements.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbGeneralRequirements.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbGeneralRequirements.ForeColor = System.Drawing.Color.White;
-            this.rbGeneralRequirements.Location = new System.Drawing.Point(213, 10);
+            this.rbGeneralRequirements.Location = new System.Drawing.Point(106, 10);
             this.rbGeneralRequirements.Name = "rbGeneralRequirements";
             this.rbGeneralRequirements.Size = new System.Drawing.Size(200, 40);
             this.rbGeneralRequirements.TabIndex = 8;
@@ -83,7 +80,7 @@
             this.rbCountry.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbCountry.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rbCountry.ForeColor = System.Drawing.Color.White;
-            this.rbCountry.Location = new System.Drawing.Point(107, 10);
+            this.rbCountry.Location = new System.Drawing.Point(0, 10);
             this.rbCountry.Name = "rbCountry";
             this.rbCountry.Size = new System.Drawing.Size(100, 40);
             this.rbCountry.TabIndex = 3;
@@ -92,51 +89,20 @@
             this.rbCountry.UseVisualStyleBackColor = false;
             this.rbCountry.CheckedChanged += new System.EventHandler(this.rbCountry_CheckedChanged);
             // 
-            // rbEmployee
-            // 
-            this.rbEmployee.Appearance = System.Windows.Forms.Appearance.Button;
-            this.rbEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(63)))));
-            this.rbEmployee.FlatAppearance.BorderColor = System.Drawing.Color.Black;
-            this.rbEmployee.FlatAppearance.BorderSize = 0;
-            this.rbEmployee.FlatAppearance.CheckedBackColor = System.Drawing.Color.DimGray;
-            this.rbEmployee.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.rbEmployee.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.rbEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rbEmployee.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rbEmployee.ForeColor = System.Drawing.Color.White;
-            this.rbEmployee.Location = new System.Drawing.Point(1, 10);
-            this.rbEmployee.Name = "rbEmployee";
-            this.rbEmployee.Size = new System.Drawing.Size(100, 40);
-            this.rbEmployee.TabIndex = 1;
-            this.rbEmployee.Text = "Employee";
-            this.rbEmployee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.rbEmployee.UseVisualStyleBackColor = false;
-            this.rbEmployee.CheckedChanged += new System.EventHandler(this.rbEmployee_CheckedChanged);
-            // 
             // ucCountry
             // 
             this.ucCountry.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ucCountry.ForeColor = System.Drawing.Color.Black;
-            this.ucCountry.Location = new System.Drawing.Point(107, 56);
+            this.ucCountry.Location = new System.Drawing.Point(0, 56);
             this.ucCountry.Name = "ucCountry";
             this.ucCountry.Size = new System.Drawing.Size(100, 100);
             this.ucCountry.TabIndex = 43;
             this.ucCountry.Visible = false;
             // 
-            // ucEmployee
-            // 
-            this.ucEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucEmployee.ForeColor = System.Drawing.Color.Black;
-            this.ucEmployee.Location = new System.Drawing.Point(0, 56);
-            this.ucEmployee.Name = "ucEmployee";
-            this.ucEmployee.Size = new System.Drawing.Size(100, 100);
-            this.ucEmployee.TabIndex = 42;
-            this.ucEmployee.Visible = false;
-            // 
             // ucGenReqs
             // 
             this.ucGenReqs.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ucGenReqs.Location = new System.Drawing.Point(213, 56);
+            this.ucGenReqs.Location = new System.Drawing.Point(106, 56);
             this.ucGenReqs.Name = "ucGenReqs";
             this.ucGenReqs.Size = new System.Drawing.Size(100, 100);
             this.ucGenReqs.TabIndex = 44;
@@ -149,7 +115,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.Controls.Add(this.ucGenReqs);
             this.Controls.Add(this.ucCountry);
-            this.Controls.Add(this.ucEmployee);
             this.Controls.Add(this.pnlTabs);
             this.Name = "ucMaintenance";
             this.Size = new System.Drawing.Size(1118, 500);
@@ -162,10 +127,8 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlTabs;
-        private System.Windows.Forms.RadioButton rbEmployee;
         private System.Windows.Forms.RadioButton rbCountry;
         private System.Windows.Forms.RadioButton rbGeneralRequirements;
-        private ucEmployee ucEmployee;
         private ucCountry ucCountry;
         private ucGenReqs ucGenReqs;
     }
