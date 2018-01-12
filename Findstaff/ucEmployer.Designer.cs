@@ -39,7 +39,7 @@
             this.btnEmpEdit = new System.Windows.Forms.Button();
             this.btnEmpAdd = new System.Windows.Forms.Button();
             this.btnView = new System.Windows.Forms.Button();
-            this.ucEmployerView = new Findstaff.country();
+            this.ucEmployerView = new Findstaff.ucEmployerView();
             this.ucEmployerAddEdit = new Findstaff.ucEmployerAddEdit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmployer)).BeginInit();
             this.SuspendLayout();
@@ -248,6 +248,6 @@
         public System.Windows.Forms.DataGridView dgvEmployer;
         private ucEmployerAddEdit ucEmployerAddEdit;
         private System.Windows.Forms.Button btnView;
-        private country ucEmployerView;
+        private ucEmployerView ucEmployerView;
     }
 }

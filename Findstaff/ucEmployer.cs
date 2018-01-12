@@ -15,6 +15,8 @@ namespace Findstaff
     {
         private MySqlConnection connection;
         MySqlCommand com = new MySqlCommand();
+        MySqlDataReader dr;
+        private string cmd = "";
 
         public ucEmployer()
         {
@@ -126,6 +128,32 @@ namespace Findstaff
 
         private void btnView_Click(object sender, EventArgs e)
         {
+            Connection con = new Connection();
+            connection = con.dbConnection();
+            connection.Open();
+            string cmd = "select employer_id, employername, foreignprin, email, contact, companyadd from employer_t where employer_id = '" + dgvEmployer.SelectedRows[0].Cells[0].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucEmployerView.empID.Text = dr[0].ToString();
+                ucEmployerView.employer.Text = dr[1].ToString();
+                ucEmployerView.forPrincipal.Text = dr[2].ToString();
+                ucEmployerView.compEmail.Text = dr[3].ToString();
+                ucEmployerView.contact.Text = dr[4].ToString();
+                ucEmployerView.compAdd.Text = dr[5].ToString(); 
+            }
+            dr.Close();
+
+            cmd = "select countryname from country_t where countryname = '" + dgvEmployer.SelectedRows[0].Cells[3].Value.ToString() + "'";
+            com = new MySqlCommand(cmd, connection);
+            dr = com.ExecuteReader();
+            while (dr.Read())
+            {
+                ucEmployerView.country.Text = dr[0].ToString();
+            }
+            dr.Close();
+
             ucEmployerView.Dock = DockStyle.Fill;
             ucEmployerView.Visible = true;
         }

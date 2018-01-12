@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Findstaff
 {
-    public partial class country : UserControl
+    public partial class ucEmployerView : UserControl
     {
-        public country()
+        public ucEmployerView()
         {
             InitializeComponent();
         }

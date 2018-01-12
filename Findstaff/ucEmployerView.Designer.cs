@@ -1,6 +1,6 @@
 ﻿namespace Findstaff
 {
-    partial class country
+    partial class ucEmployerView
     {
         /// <summary> 
         /// Required designer variable.
@@ -41,7 +41,7 @@
             this.contact = new System.Windows.Forms.Label();
             this.compAdd = new System.Windows.Forms.Label();
             this.forPrincipal = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.country = new System.Windows.Forms.Label();
             this.employer = new System.Windows.Forms.Label();
             this.empID = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -206,17 +206,17 @@
             this.forPrincipal.TabIndex = 46;
             this.forPrincipal.Text = "forPrincipal";
             // 
-            // label8
+            // country
             // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.Color.Transparent;
-            this.label8.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(563, 163);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 20);
-            this.label8.TabIndex = 45;
-            this.label8.Text = "country";
+            this.country.AutoSize = true;
+            this.country.BackColor = System.Drawing.Color.Transparent;
+            this.country.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.country.ForeColor = System.Drawing.Color.Black;
+            this.country.Location = new System.Drawing.Point(563, 163);
+            this.country.Name = "country";
+            this.country.Size = new System.Drawing.Size(66, 20);
+            this.country.TabIndex = 45;
+            this.country.Text = "country";
             // 
             // employer
             // 
@@ -242,7 +242,7 @@
             this.empID.TabIndex = 43;
             this.empID.Text = "empID";
             // 
-            // country
+            // ucEmployerView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -251,7 +251,7 @@
             this.Controls.Add(this.contact);
             this.Controls.Add(this.compAdd);
             this.Controls.Add(this.forPrincipal);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.country);
             this.Controls.Add(this.employer);
             this.Controls.Add(this.empID);
             this.Controls.Add(this.btnClose);
@@ -263,7 +263,7 @@
             this.Controls.Add(this.lblCountry);
             this.Controls.Add(this.lblEmp);
             this.Controls.Add(this.lblEmpID);
-            this.Name = "country";
+            this.Name = "ucEmployerView";
             this.Size = new System.Drawing.Size(1118, 450);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -281,12 +281,12 @@
         private System.Windows.Forms.Label lblEmpID;
         private System.Windows.Forms.Label lblViewEmp;
         private System.Windows.Forms.Button btnClose;
-        private System.Windows.Forms.Label compEmail;
-        private System.Windows.Forms.Label contact;
-        private System.Windows.Forms.Label compAdd;
-        private System.Windows.Forms.Label forPrincipal;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label employer;
-        private System.Windows.Forms.Label empID;
+        public System.Windows.Forms.Label compEmail;
+        public System.Windows.Forms.Label contact;
+        public System.Windows.Forms.Label compAdd;
+        public System.Windows.Forms.Label forPrincipal;
+        public System.Windows.Forms.Label country;
+        public System.Windows.Forms.Label employer;
+        public System.Windows.Forms.Label empID;
     }
 }
