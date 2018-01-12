@@ -39,33 +39,33 @@
             // 
             // cbYear
             // 
-            this.cbYear.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbYear.BackColor = System.Drawing.Color.White;
             this.cbYear.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbYear.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbYear.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbYear.ForeColor = System.Drawing.Color.Black;
             this.cbYear.FormattingEnabled = true;
-            this.cbYear.Location = new System.Drawing.Point(394, 82);
+            this.cbYear.Location = new System.Drawing.Point(394, 74);
             this.cbYear.Name = "cbYear";
-            this.cbYear.Size = new System.Drawing.Size(110, 27);
+            this.cbYear.Size = new System.Drawing.Size(110, 28);
             this.cbYear.TabIndex = 53;
             // 
             // cbDay
             // 
-            this.cbDay.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbDay.BackColor = System.Drawing.Color.White;
             this.cbDay.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbDay.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbDay.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbDay.ForeColor = System.Drawing.Color.Black;
             this.cbDay.FormattingEnabled = true;
-            this.cbDay.Location = new System.Drawing.Point(311, 81);
+            this.cbDay.Location = new System.Drawing.Point(311, 73);
             this.cbDay.Name = "cbDay";
-            this.cbDay.Size = new System.Drawing.Size(77, 27);
+            this.cbDay.Size = new System.Drawing.Size(77, 28);
             this.cbDay.TabIndex = 52;
             // 
             // cbMonth
             // 
-            this.cbMonth.BackColor = System.Drawing.Color.Gainsboro;
+            this.cbMonth.BackColor = System.Drawing.Color.White;
             this.cbMonth.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbMonth.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbMonth.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbMonth.ForeColor = System.Drawing.Color.Black;
             this.cbMonth.FormattingEnabled = true;
             this.cbMonth.Items.AddRange(new object[] {
@@ -81,9 +81,9 @@
             "October",
             "November",
             "December"});
-            this.cbMonth.Location = new System.Drawing.Point(105, 81);
+            this.cbMonth.Location = new System.Drawing.Point(105, 73);
             this.cbMonth.Name = "cbMonth";
-            this.cbMonth.Size = new System.Drawing.Size(200, 27);
+            this.cbMonth.Size = new System.Drawing.Size(200, 28);
             this.cbMonth.TabIndex = 51;
             this.cbMonth.SelectedIndexChanged += new System.EventHandler(this.cbMonth_SelectedIndexChanged);
             // 
@@ -91,32 +91,32 @@
             // 
             this.lblJob.AutoSize = true;
             this.lblJob.BackColor = System.Drawing.Color.Transparent;
-            this.lblJob.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJob.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblJob.ForeColor = System.Drawing.Color.Black;
-            this.lblJob.Location = new System.Drawing.Point(51, 85);
+            this.lblJob.Location = new System.Drawing.Point(51, 77);
             this.lblJob.Name = "lblJob";
-            this.lblJob.Size = new System.Drawing.Size(49, 19);
+            this.lblJob.Size = new System.Drawing.Size(48, 20);
             this.lblJob.TabIndex = 50;
             this.lblJob.Text = "Date:";
             // 
             // lblCountry
             // 
             this.lblCountry.AutoSize = true;
-            this.lblCountry.Font = new System.Drawing.Font("Rockwell", 24F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountry.Font = new System.Drawing.Font("Century", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCountry.ForeColor = System.Drawing.Color.Black;
-            this.lblCountry.Location = new System.Drawing.Point(78, 18);
+            this.lblCountry.Location = new System.Drawing.Point(137, 23);
             this.lblCountry.Name = "lblCountry";
-            this.lblCountry.Size = new System.Drawing.Size(403, 39);
+            this.lblCountry.Size = new System.Drawing.Size(260, 23);
             this.lblCountry.TabIndex = 49;
             this.lblCountry.Text = "Date for Initial Interview";
             // 
             // btnCancel
             // 
-            this.btnCancel.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnCancel.BackColor = System.Drawing.Color.White;
             this.btnCancel.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnCancel.FlatAppearance.BorderSize = 0;
             this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancel.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCancel.ForeColor = System.Drawing.Color.Black;
             this.btnCancel.Location = new System.Drawing.Point(282, 133);
             this.btnCancel.Name = "btnCancel";
@@ -128,11 +128,11 @@
             // 
             // btnSchedule
             // 
-            this.btnSchedule.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnSchedule.BackColor = System.Drawing.Color.White;
             this.btnSchedule.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.btnSchedule.FlatAppearance.BorderSize = 0;
             this.btnSchedule.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSchedule.Font = new System.Drawing.Font("Rockwell", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSchedule.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSchedule.ForeColor = System.Drawing.Color.Black;
             this.btnSchedule.Location = new System.Drawing.Point(152, 133);
             this.btnSchedule.Name = "btnSchedule";
@@ -146,7 +146,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ClientSize = new System.Drawing.Size(554, 184);
             this.ControlBox = false;
             this.Controls.Add(this.btnCancel);
