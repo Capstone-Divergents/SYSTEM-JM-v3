@@ -158,7 +158,7 @@ namespace Findstaff
                 btnAddAll.Enabled = true;
                 connection.Open();
                 string type = "";
-                cmd = "select jt.jobtype_id from jobtype_t jt join job_t j on jt.jobtype = j.jobtype_id "
+                cmd = "select jt.jobtype_id from jobtype_t jt join job_t j on jt.jobtype_id = j.jobtype_id "
                     + "join joborder_t jo on jo.job_id = j.job_id where jo.jorder_id = '"+cbJobOrder1.Text+"'";
                 com = new MySqlCommand(cmd, connection);
                 dr = com.ExecuteReader();
