@@ -27,6 +27,8 @@ namespace Findstaff
         {
             if(dgvFinInt.Rows.Count != 0)
             {
+                Connection con = new Connection();
+                connection = con.dbConnection();
                 connection.Open();
                 string jobID = "", empID = "", jorder = dgvFinInt.SelectedRows[0].Cells[0].Value.ToString(), jobname = dgvFinInt.SelectedRows[0].Cells[1].Value.ToString(), employer = "";
                 cmd = "select e.employername from employer_t e join joborder_t j "

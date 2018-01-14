@@ -39,6 +39,8 @@
             this.txtJobs = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbJobType2 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.cbCategory1 = new System.Windows.Forms.ComboBox();
             this.btnCancel2 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
@@ -48,8 +50,6 @@
             this.txtID = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.lblEditJobs = new System.Windows.Forms.Label();
-            this.cbJobType2 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -147,11 +147,11 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(409, 189);
+            this.label1.Location = new System.Drawing.Point(418, 189);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(87, 20);
+            this.label1.Size = new System.Drawing.Size(78, 20);
             this.label1.TabIndex = 272;
-            this.label1.Text = "Job Name:";
+            this.label1.Text = "Job Title:";
             // 
             // lblAddJobs
             // 
@@ -202,10 +202,35 @@
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.lblEditJobs);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel2.Location = new System.Drawing.Point(314, 0);
+            this.panel2.Location = new System.Drawing.Point(1145, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(841, 500);
+            this.panel2.Size = new System.Drawing.Size(10, 500);
             this.panel2.TabIndex = 3;
+            // 
+            // cbJobType2
+            // 
+            this.cbJobType2.BackColor = System.Drawing.Color.White;
+            this.cbJobType2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cbJobType2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbJobType2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbJobType2.ForeColor = System.Drawing.Color.Black;
+            this.cbJobType2.FormattingEnabled = true;
+            this.cbJobType2.Location = new System.Drawing.Point(477, 242);
+            this.cbJobType2.Name = "cbJobType2";
+            this.cbJobType2.Size = new System.Drawing.Size(216, 28);
+            this.cbJobType2.TabIndex = 285;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(391, 245);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(80, 20);
+            this.label6.TabIndex = 284;
+            this.label6.Text = "Job Type:";
             // 
             // cbCategory1
             // 
@@ -242,11 +267,11 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(385, 212);
+            this.label3.Location = new System.Drawing.Point(393, 212);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(87, 20);
+            this.label3.Size = new System.Drawing.Size(78, 20);
             this.label3.TabIndex = 280;
-            this.label3.Text = "Job Name:";
+            this.label3.Text = "Job Title:";
             // 
             // txtJobs2
             // 
@@ -322,31 +347,6 @@
             this.lblEditJobs.Size = new System.Drawing.Size(125, 28);
             this.lblEditJobs.TabIndex = 274;
             this.lblEditJobs.Text = "Edit Jobs";
-            // 
-            // cbJobType2
-            // 
-            this.cbJobType2.BackColor = System.Drawing.Color.White;
-            this.cbJobType2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cbJobType2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbJobType2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbJobType2.ForeColor = System.Drawing.Color.Black;
-            this.cbJobType2.FormattingEnabled = true;
-            this.cbJobType2.Location = new System.Drawing.Point(477, 242);
-            this.cbJobType2.Name = "cbJobType2";
-            this.cbJobType2.Size = new System.Drawing.Size(216, 28);
-            this.cbJobType2.TabIndex = 285;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(391, 245);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 20);
-            this.label6.TabIndex = 284;
-            this.label6.Text = "Job Type:";
             // 
             // ucJobsAddEdit
             // 
