@@ -24,7 +24,10 @@ namespace Findstaff
             //ucEmployee.Dock = DockStyle.Fill;
             //ucApplicant.Dock = DockStyle.Fill;
             ucCountry.Dock = DockStyle.Fill;
-            ucGenReqs.Dock = DockStyle.Fill;
+            ucCurrency.Dock = DockStyle.Fill;
+            ucEmployerMainte.Dock = DockStyle.Fill;
+            ucBanksAllowed.Dock = DockStyle.Fill;
+            ucJobDetails.Dock = DockStyle.Fill;
         }
 
         /*private void rbEmployee_CheckedChanged(object sender, EventArgs e)
@@ -73,7 +76,10 @@ namespace Findstaff
             //ucEmployee.Visible = false;
             //ucApplicant.Visible = false;
             ucCountry.Visible = true;
-            ucGenReqs.Visible = false;
+            ucCurrency.Visible = false;
+            ucEmployerMainte.Visible = false;
+            ucBanksAllowed.Visible = false;
+            ucJobDetails.Visible = false;
 
             cmd = "select c.COUNTRY_ID'Country ID', c.COUNTRYNAME'Name of Country', count(cr.req_id)'No. of requirements'"
                     + " from country_t c join countryreqs_t cr on"
@@ -90,12 +96,42 @@ namespace Findstaff
             }
         }
 
+        private void rbCurrency_CheckedChanged(object sender, EventArgs e)
+        {
+            ucCountry.Visible = false;
+            ucCurrency.Visible = true;
+            ucEmployerMainte.Visible = false;
+            ucBanksAllowed.Visible = false;
+            ucJobDetails.Visible = false;
+        }
+
+        private void rbEmployer_CheckedChanged(object sender, EventArgs e)
+        {
+            ucCountry.Visible = false;
+            ucCurrency.Visible = false;
+            ucEmployerMainte.Visible = true;
+            ucBanksAllowed.Visible = false;
+            ucJobDetails.Visible = false;
+        }
+
+        private void rbBanksAllowed_CheckedChanged(object sender, EventArgs e)
+        {
+            ucCountry.Visible = false;
+            ucCurrency.Visible = false;
+            ucEmployerMainte.Visible = false;
+            ucBanksAllowed.Visible = true;
+            ucJobDetails.Visible = false;
+        }
+
         private void rbGeneralRequirements_CheckedChanged(object sender, EventArgs e)
         {
             //ucEmployee.Visible = false;
             //ucApplicant.Visible = false;
             ucCountry.Visible = false;
-            ucGenReqs.Visible = true;
+            ucCurrency.Visible = false;
+            ucEmployerMainte.Visible = false;
+            ucBanksAllowed.Visible = false;
+            ucJobDetails.Visible = true;
         }
 
         private void ucMaintenance_VisibleChanged(object sender, EventArgs e)

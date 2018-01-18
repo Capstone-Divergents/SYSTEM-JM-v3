@@ -62,7 +62,7 @@
             this.rbJobFees.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.rbJobFees.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
             this.rbJobFees.ForeColor = System.Drawing.Color.White;
-            this.rbJobFees.Location = new System.Drawing.Point(213, 10);
+            this.rbJobFees.Location = new System.Drawing.Point(292, 10);
             this.rbJobFees.Name = "rbJobFees";
             this.rbJobFees.Size = new System.Drawing.Size(100, 40);
             this.rbJobFees.TabIndex = 4;
@@ -85,9 +85,9 @@
             this.rbJobList.ForeColor = System.Drawing.Color.White;
             this.rbJobList.Location = new System.Drawing.Point(107, 10);
             this.rbJobList.Name = "rbJobList";
-            this.rbJobList.Size = new System.Drawing.Size(100, 40);
+            this.rbJobList.Size = new System.Drawing.Size(179, 40);
             this.rbJobList.TabIndex = 3;
-            this.rbJobList.Text = "Job Order";
+            this.rbJobList.Text = "Job Order Requests";
             this.rbJobList.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.rbJobList.UseVisualStyleBackColor = false;
             this.rbJobList.CheckedChanged += new System.EventHandler(this.rbJobList_CheckedChanged);
@@ -117,7 +117,7 @@
             // 
             this.ucJobFees.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ucJobFees.ForeColor = System.Drawing.Color.Black;
-            this.ucJobFees.Location = new System.Drawing.Point(213, 56);
+            this.ucJobFees.Location = new System.Drawing.Point(292, 56);
             this.ucJobFees.Name = "ucJobFees";
             this.ucJobFees.Size = new System.Drawing.Size(100, 100);
             this.ucJobFees.TabIndex = 39;

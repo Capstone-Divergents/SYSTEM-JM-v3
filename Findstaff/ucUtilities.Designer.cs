@@ -68,11 +68,10 @@
             // 
             this.ucEmployee.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
             this.ucEmployee.ForeColor = System.Drawing.Color.Black;
-            this.ucEmployee.Location = new System.Drawing.Point(3, 56);
+            this.ucEmployee.Location = new System.Drawing.Point(0, 56);
             this.ucEmployee.Name = "ucEmployee";
-            this.ucEmployee.Size = new System.Drawing.Size(100, 100);
+            this.ucEmployee.Size = new System.Drawing.Size(101, 84);
             this.ucEmployee.TabIndex = 44;
-            this.ucEmployee.Visible = false;
             // 
             // ucUtilities
             // 

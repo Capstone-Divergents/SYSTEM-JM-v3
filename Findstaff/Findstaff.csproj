@@ -132,6 +132,24 @@
     <Compile Include="ucApplicant.Designer.cs">
       <DependentUpon>ucApplicant.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucBanksAllowed.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBanksAllowed.Designer.cs">
+      <DependentUpon>ucBanksAllowed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBanksAllowedAddEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBanksAllowedAddEdit.Designer.cs">
+      <DependentUpon>ucBanksAllowedAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucBanksAllowedView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucBanksAllowedView.Designer.cs">
+      <DependentUpon>ucBanksAllowedView.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucCountry.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -149,6 +167,24 @@
     </Compile>
     <Compile Include="ucCountryView.Designer.cs">
       <DependentUpon>ucCountryView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCurrency.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCurrency.Designer.cs">
+      <DependentUpon>ucCurrency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCurrencyAddEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCurrencyAddEdit.Designer.cs">
+      <DependentUpon>ucCurrencyAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCurrencyView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCurrencyView.Designer.cs">
+      <DependentUpon>ucCurrencyView.cs</DependentUpon>
     </Compile>
     <Compile Include="ucDocAppDetails.cs">
       <SubType>UserControl</SubType>
@@ -191,6 +227,24 @@
     </Compile>
     <Compile Include="ucEmployer.Designer.cs">
       <DependentUpon>ucEmployer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEmployerMainte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEmployerMainte.Designer.cs">
+      <DependentUpon>ucEmployerMainte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEmployerMainteAddEdit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEmployerMainteAddEdit.Designer.cs">
+      <DependentUpon>ucEmployerMainteAddEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucEmployerMainteView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucEmployerMainteView.Designer.cs">
+      <DependentUpon>ucEmployerMainteView.cs</DependentUpon>
     </Compile>
     <Compile Include="ucEmployerView.cs">
       <SubType>UserControl</SubType>
@@ -458,6 +512,15 @@
     <EmbeddedResource Include="ucAppList.resx">
       <DependentUpon>ucAppList.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucBanksAllowed.resx">
+      <DependentUpon>ucBanksAllowed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBanksAllowedAddEdit.resx">
+      <DependentUpon>ucBanksAllowedAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucBanksAllowedView.resx">
+      <DependentUpon>ucBanksAllowedView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucCountry.resx">
       <DependentUpon>ucCountry.cs</DependentUpon>
     </EmbeddedResource>
@@ -466,6 +529,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucCountryView.resx">
       <DependentUpon>ucCountryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCurrency.resx">
+      <DependentUpon>ucCurrency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCurrencyAddEdit.resx">
+      <DependentUpon>ucCurrencyAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCurrencyView.resx">
+      <DependentUpon>ucCurrencyView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucDocAppDetails.resx">
       <DependentUpon>ucDocAppDetails.cs</DependentUpon>
@@ -487,6 +559,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucEmployer.resx">
       <DependentUpon>ucEmployer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEmployerMainte.resx">
+      <DependentUpon>ucEmployerMainte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEmployerMainteAddEdit.resx">
+      <DependentUpon>ucEmployerMainteAddEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucEmployerMainteView.resx">
+      <DependentUpon>ucEmployerMainteView.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucEmployerView.resx">
       <DependentUpon>ucEmployerView.cs</DependentUpon>
